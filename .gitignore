@@ -1,0 +1,8 @@
+__pycache__/
+.streamlit/secrets.toml
+.venv/
+*.log
+.browser-preview/
+.browser-preview-layout/
+/dashboard-*.png
+/educacion_*_16x9.png
