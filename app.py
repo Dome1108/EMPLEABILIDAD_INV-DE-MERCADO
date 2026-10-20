@@ -136,7 +136,7 @@ else:
         st.error("No fue posible conectar con SQL Server. Puedes activar la vista de demostración en el área de análisis.")
         st.info("Servidor predeterminado: SNBI03 · Autenticación de Windows. Comprueba acceso a la red institucional y permisos de lectura en BDD_IDM y Northwind.")
         with st.expander("Configuración de la conexión"):
-            st.code('[sql]\nserver = "SNBI03"\ndatabase = "BDD_IDM"\ntrusted_connection = true\nencrypt = true\ntrust_server_certificate = false',language="toml")
+            st.code('[sql]\nserver = "SNBI03"\ndatabase = "BDD_IDM"\ntrusted_connection = true\nencrypt = true\ntrust_server_certificate = true',language="toml")
             st.caption("Guardar en .streamlit/secrets.toml. Hay una plantilla incluida en el proyecto.")
             st.code(str(exc))
         st.stop()

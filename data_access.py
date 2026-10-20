@@ -8,16 +8,19 @@ from analytics import SNAPSHOTS
 
 
 def connect(config):
+    server = str(config.get('server', 'SNBI03'))
+    # Configuración del servidor institucional; otros servidores validan su certificado.
+    trust_certificate = config.get('trust_server_certificate', server.casefold() == 'snbi03')
     available = pyodbc.drivers()
     driver = config.get("driver") or next((d for d in ("ODBC Driver 18 for SQL Server", "ODBC Driver 17 for SQL Server") if d in available), None)
     if not driver:
         raise RuntimeError("Instala Microsoft ODBC Driver 17 o 18 for SQL Server.")
     def escape(value):
         return "{" + str(value).replace("}", "}}") + "}"
-    parts = [f"DRIVER={escape(driver)}", f"SERVER={escape(config.get('server', 'SNBI03'))}",
+    parts = [f"DRIVER={escape(driver)}", f"SERVER={escape(server)}",
              f"DATABASE={escape(config.get('database', 'BDD_IDM'))}",
              f"Encrypt={'yes' if config.get('encrypt', True) else 'no'}",
-             f"TrustServerCertificate={'yes' if config.get('trust_server_certificate', False) else 'no'}",
+             f"TrustServerCertificate={'yes' if trust_certificate else 'no'}",
              "APP=Observatorio Empleabilidad"]
     if config.get("trusted_connection", True):
         parts.append("Trusted_Connection=yes")
