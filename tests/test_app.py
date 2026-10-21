@@ -56,7 +56,7 @@ class DashboardFlow(unittest.TestCase):
             combined = int(app.metric[0].value.replace('.', ''))
             recent_2026 = app.metric[2].value
             self.assertGreater(combined, initial)
-            app.selectbox[0].set_value(2023).run()
+            next(w for w in app.selectbox if w.label == "Corte de análisis").set_value(2023).run()
             self.assertFalse(app.exception)
             earlier = int(app.metric[0].value.replace('.', ''))
             self.assertLess(earlier, combined)
@@ -64,6 +64,21 @@ class DashboardFlow(unittest.TestCase):
             app.multiselect[0].set_value([]).run()
             self.assertFalse(app.exception)
             self.assertTrue(any('Selecciona al menos' in x.value for x in app.info))
+
+    def test_academic_level_filters_population(self):
+        from data_access import ACADEMIC_LEVELS, demo_data
+        with patch.dict(os.environ, {"DASHBOARD_DEMO": "1"}):
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30).run()
+            total = int(app.metric[0].value.replace('.', ''))
+            grads, _, _ = demo_data()
+            for level in ACADEMIC_LEVELS:
+                app.selectbox(key="academic_level").set_value(level).run()
+                self.assertFalse(app.exception)
+                self.assertLess(int(app.metric[0].value.replace('.', '')), total)
+                expected = sorted(grads.loc[grads.NIVEL_ACADEMICO.eq(level), 'CARRERA_HOMOLOGADA'].unique())
+                self.assertEqual(app.multiselect[0].options, expected)
+                export = next(d.value for d in app.dataframe if 'Fecha de corte académico' in d.value.columns)
+                self.assertGreater(export.iloc[-1]['Graduados al corte laboral'], 0)
 
 
 if __name__ == '__main__':

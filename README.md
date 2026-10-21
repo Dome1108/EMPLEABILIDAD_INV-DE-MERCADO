@@ -1,6 +1,6 @@
 # Observatorio de empleabilidad
 
-Dashboard ejecutivo en Streamlit con paleta de azules. Un único filtro de carreras homologadas, selección múltiple, cuatro tarjetas de empleo visible y detalle por corte de empleo, salarios e instituciones.
+Dashboard ejecutivo en Streamlit con paleta de azules. Filtros de nivel académico y carreras homologadas, cuatro tarjetas de empleo visible y detalle por corte de empleo, salarios e instituciones.
 
 La pestaña Educación reúne el top 10 nacional y el top 10 de Privadas Sierra en una sola figura, en dos columnas con leyenda compartida. Los nombres abreviados conservan su nombre completo al pasar el cursor. El botón **Descargar educación para diapositiva · PNG 16:9** genera una imagen de 2560 × 1440 para insertar en PowerPoint, con ambos gráficos y las carreras seleccionadas. Las tablas completas quedan dentro de los desplegables.
 
@@ -9,6 +9,8 @@ Los controles están en el área principal de la página. El catálogo consulta 
 La tarjeta **Recién titulados · 2026**, los gráficos de instituciones de 2026 y el conteo de recién titulados del CSV usan desde el 01/01/2026 hasta la última fecha disponible de 2026 para las carreras seleccionadas, excluyendo fechas posteriores a hoy en Ecuador. El histórico de instituciones de 2026 también incorpora todos los registros hasta esa fecha. Los denominadores y resultados laborales conservan el corte de empleo de enero de 2026. El CSV muestra por separado la fecha laboral y la académica. Para 2023–2025 educación conserva el corte correspondiente.
 
 ## Ejecutar
+
+El selector **Paleta de colores** permite alternar entre Azul (predeterminada) y Vino: `#A5133D`, rosa `#E4B6C2` y gris `#F2F2F2`. Se aplica a las tarjetas, gráficos y descarga PNG de educación, conservando los filtros y resultados.
 
 Desde esta carpeta, con Python 3.11 o superior:
 
@@ -31,6 +33,8 @@ Solo se leen las fuentes; las tablas temporales de trabajo se crean en tempdb y 
 
 ## Reglas
 
+- **Panel territorial:** cruza por cédula la cohorte de enero de 2026 con `[BDD_IDM].[modelo].[03_ATLAS_Universo]`, leyendo solo cédula, provincia, cantón y parroquia. Pichincha es la selección inicial cuando tiene registros; provincia, cantón y parroquia solo cambian este panel. La tasa usa empleo visible SIM/SRI sobre graduados de la misma zona. La banda P25–P75 usa los salarios SIM y las reglas nacionales, sin ingresos imputados Atlas. El domicilio disponible en Atlas no garantiza la ubicación histórica ni el lugar de trabajo. Se deduplican domicilios equivalentes; personas con ubicaciones contradictorias se excluyen del panel y se informa la cobertura. Se requiere permiso de lectura en la tabla Atlas. Si falla esa lectura, el nacional continúa disponible.
+
 - **Cortes:** 28/02/2023, 31/05/2024, 31/01/2025 y 31/01/2026. Se asume fin de mes porque las tablas solo identifican el mes. Si la extracción fue anterior, ajustar `Snapshot.date` en `analytics.py`. Los datos no son promedios anuales ni cortes del mismo mes.
 - **Denominador:** personas únicas de las carreras seleccionadas con FECHA_REGISTRO <= corte. La fecha de registro aproxima la fecha de titulación. Identificaciones inválidas y fechas no interpretables se excluyen y se reportan. Se aceptan fechas SQL nativas, ISO y dd/mm/aaaa en las lecturas SQL.
 - **SIM/APOR:** presencia en la tabla correspondiente = dependiente, como se acordó. No se reaplica un filtro de fechas de entrada/salida sobre la foto entregada.
@@ -39,7 +43,8 @@ Solo se leen las fuentes; las tablas temporales de trabajo se crean en tempdb y 
 - **Empleo visible:** (dependientes + independientes) / graduados al corte. Si no hay graduados, mostrar sin dato, sin dividir por cero. Profesionales ejerciendo = numerador; no implica afinidad ocupacional con la carrera.
 - **Salarios:** SALARIO en 2023/2026; SALARIO_TOTAL con respaldo de SALARIO_FIJO vacío/cero en 2024/2025. Máximo por persona y RUC de empleador, suma entre empleadores y exclusión de ingresos no positivos. Si falta RUCEMP, sus filas se agrupan como un único empleador desconocido. Percentiles 25 y 75 con interpolación lineal por persona; no mezclar ingreso mensual con SalarioPromedio12M. No hay ingresos SRI en la fuente proporcionada.
 - **Educación:** recién titulados = personas con registro de ese año, aunque tengan títulos anteriores. En 2026, la ventana se extiende hasta la última fecha disponible sin superar hoy; en años anteriores, hasta el corte. Profesionales históricos = personas acumuladas hasta el corte académico, con o sin empleo. Una persona cuenta una vez en el total y una vez dentro de cada institución; instituciones no sumables entre sí cuando existen múltiples titulaciones.
-- No se aplican filtros adicionales de nivel académico, nacionalidad, edad o país de institución.
+- **Nivel académico:** permite todos los niveles, Tecnológico (incluye técnico superior), Tercer nivel y Cuarto nivel, especialidades y doctorados. Se clasifica el campo de nivel de la fuente, sin inferirlo por el nombre de la carrera. El filtro limita el catálogo de carreras y los registros de titulación antes de calcular cohortes, empleo, salarios e instituciones. Los valores no reconocidos solo se incluyen en Todos los niveles. El CSV identifica el nivel seleccionado. La columna se detecta entre NIVEL_FORMACION, NIVEL_DE_FORMACION, NIVEL_ACADEMICO, NIVEL_DE_TITULO, NIVEL_TITULO o NIVEL; si no existe, se informa el problema para revisar el esquema.
+- No se aplican filtros adicionales de nacionalidad, edad o país de institución.
 
 La normalización espera identificaciones compuestas por dígitos, representadas como texto o enteros; permite completar ceros a la izquierda, pero no convierte formatos decimales o notación científica. Revisar los conteos de calidad al conectar las fuentes reales. Se admiten salarios con punto decimal y con coma decimal, incluido separador de miles con punto (`1.234,56`). La tabla real de 2025 usa coma decimal.
 

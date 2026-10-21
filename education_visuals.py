@@ -9,6 +9,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 from analytics import PRIVATE_ALIASES, institution_key
+from palettes import PALETTES, theme_colors, theme_figure
 
 BLUE = '#087BCC'
 LIGHT = '#76BDED'
@@ -48,7 +49,7 @@ def education_panels(national, private):
                  for data in (national, private))
 
 
-def education_figure(panels):
+def education_figure(panels, palette="Azul"):
     fig = make_subplots(rows=1, cols=2, horizontal_spacing=.23,
                         subplot_titles=['Nacional · top 10', 'Privadas Sierra · top 10'])
     for col, data in enumerate(panels, 1):
@@ -75,11 +76,12 @@ def education_figure(panels):
     for annotation, axis in zip(fig.layout.annotations, (fig.layout.xaxis, fig.layout.xaxis2)):
         annotation.update(x=axis.domain[0], xanchor='left', y=1, yanchor='bottom', yshift=25,
                           font=dict(size=16,color='#123F70'))
-    return fig
+    return theme_figure(fig, palette)
 
 
-def education_png(panels, year, careers, demo=False):
+def education_png(panels, year, careers, demo=False, palette="Azul"):
     """Una sola imagen 2560x1440 con los dos gráficos, sin dependencias de navegador."""
+    blue, light, _ = PALETTES[palette]
     fig = Figure(figsize=(16,9),dpi=160,facecolor='white')
     fig.subplots_adjust(left=.15,right=.96,top=.76,bottom=.17,wspace=.67)
     axes = fig.subplots(1,2)
@@ -94,8 +96,8 @@ def education_png(panels, year, careers, demo=False):
         data=data.iloc[::-1]
         y=np.arange(len(data))
         ax.hlines(y,data.recent,data.professionals,color='#cfdeec',linewidth=2,zorder=1)
-        recent=ax.scatter(data.recent,y,c=LIGHT,s=55,zorder=3,label='Recién titulados')
-        historical=ax.scatter(data.professionals,y,c=BLUE,s=55,zorder=3,label='Profesionales históricos')
+        recent=ax.scatter(data.recent,y,c=light,s=55,zorder=3,label='Recién titulados')
+        historical=ax.scatter(data.professionals,y,c=blue,s=55,zorder=3,label='Profesionales históricos')
         ax.set_yticks(y, data.label,fontsize=11,color='#476783')
         ax.set_ylim(-.7,max(len(data)-.3,.7))
         maximum=max(float(data.professionals.max()),float(data.recent.max()),1) if len(data) else 1
@@ -111,5 +113,16 @@ def education_png(panels, year, careers, demo=False):
         ax.set_title(title,loc='left',fontsize=16,color='#123F70',weight='bold',pad=20)
     fig.legend(handles=[recent,historical],loc='lower center',bbox_to_anchor=(.5,.06),ncol=2,frameon=False,fontsize=12)
     output=BytesIO()
+    if palette != "Azul":
+        from matplotlib.colors import to_hex
+        for artist in fig.findobj():
+            if hasattr(artist, 'get_color') and hasattr(artist, 'set_color'):
+                color = artist.get_color()
+                if isinstance(color, str):
+                    artist.set_color(theme_colors(to_hex(color), palette))
+        for ax in axes:
+            for collection in ax.collections:
+                if hasattr(collection, 'get_colors') and len(collection.get_colors()):
+                    collection.set_color([theme_colors(to_hex(c), palette) for c in collection.get_colors()])
     fig.savefig(output,format='png',facecolor='white')
     return output.getvalue()

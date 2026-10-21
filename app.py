@@ -15,21 +15,23 @@ if getattr(analytics_module, "RESULT_SCHEMA_VERSION", None) != EXPECTED_RESULT_S
     analytics_module = importlib.reload(analytics_module)
 
 from analytics import SNAPSHOTS, calculate
-from data_access import careers, demo_data, load
+from data_access import career_catalog, demo_data, load, ACADEMIC_LEVELS
 import education_visuals as education_visuals_module
 if getattr(education_visuals_module, "VISUAL_LAYOUT_VERSION", None) != 2:
     education_visuals_module = importlib.reload(education_visuals_module)
 from education_visuals import education_panels, education_figure, education_png
+from palettes import PALETTES, theme_colors, theme_figure
+from data_access import load_atlas, demo_atlas
+from geography import locations, territorial_summary
 
 st.set_page_config(page_title="Observatorio de empleabilidad", page_icon="📊", layout="wide")
 
-BLUE = "#087BCC"
-NAVY = "#123F70"
-LIGHT = "#76BDED"
-MUTED = "#B9C9DC"
+palette = st.session_state.get("color_palette", "Azul")
+BLUE, LIGHT, MUTED = PALETTES[palette]
+NAVY = theme_colors("#123F70", palette)
 COLORS = [BLUE, LIGHT, MUTED]
 
-st.markdown("""<style>
+st.markdown(theme_colors("""<style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap');
 html, body, [class*="css"], .stApp {font-family:'DM Sans',sans-serif;}
 .stApp, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {background-color:#FFFFFF;}
@@ -68,7 +70,16 @@ div[data-testid="stVerticalBlockBorderWrapper"]>div {border-color:#e1eaf5!import
 [data-testid="stTabs"] [role="tablist"] {gap:12px;border-bottom:2px solid #dce7f3;}
 [data-testid="stTabs"] [role="tab"][aria-selected="true"] {background:#e4f1ff;border-radius:10px 10px 0 0;}
 @media(max-width:800px){.block-container{padding:1.2rem}.masthead{display:block}.masthead h1{font-size:1.9rem}.badge{display:inline-block;margin-top:1rem}}
-</style>""", unsafe_allow_html=True)
+</style>""", palette), unsafe_allow_html=True)
+
+if palette == "Vino":
+    st.markdown("""<style>
+    .stApp {--primary-color:#A5133D;}
+    [data-baseweb="tag"] {background-color:#A5133D!important;color:white!important;}
+    [data-testid="stTabs"] [role="tab"][aria-selected="true"] {color:#A5133D;}
+    [data-testid="stButton"] button:hover, [data-testid="stDownloadButton"] button:hover {
+        border-color:#A5133D;color:#A5133D;}
+    </style>""", unsafe_allow_html=True)
 
 
 def integer(value):
@@ -85,18 +96,18 @@ def chart_layout(fig, height=300):
     fig.update_layout(height=height, margin=dict(l=5,r=12,t=25,b=15), paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)", font=dict(family="DM Sans, Arial", color="#617d99",size=12),
         hoverlabel=dict(bgcolor="white", font_size=13), separators=",.")
-    return fig
+    return theme_figure(fig, palette)
 
 
 @st.cache_data(ttl=900, show_spinner=False, max_entries=4)
 def cached_careers(config):
-    return careers(config)
+    return career_catalog(config)
 
 
 @st.cache_data(ttl=900, show_spinner=False, max_entries=8)
-def cached_result(config, selected, result_schema_version):
+def cached_result(config, selected, result_schema_version, levels=None):
     with st.status("Consultando fuentes institucionales…", expanded=False) as status:
-        data = load(config, selected, progress=lambda message: status.update(label=message))
+        data = load(config, selected, levels=levels, progress=lambda message: status.update(label=message))
         status.update(label="Calculando indicadores por persona…")
         result = calculate(*data)
         status.update(label="Cuatro cortes calculados", state="complete")
@@ -104,9 +115,16 @@ def cached_result(config, selected, result_schema_version):
 
 
 @st.cache_data(show_spinner=False)
-def demo_result(selected, result_schema_version):
+def demo_result(selected, result_schema_version, level="Todos los niveles"):
     grads, jobs, sri = demo_data()
+    if level != "Todos los niveles":
+        grads = grads[grads.NIVEL_ACADEMICO.eq(level)]
     return calculate(grads[grads.CARRERA_HOMOLOGADA.isin(selected)], jobs, sri)
+
+
+@st.cache_data(ttl=900, show_spinner=False, max_entries=8)
+def cached_atlas(config, people):
+    return load_atlas(config, people)
 
 
 st.markdown('<div class="masthead"><div><div class="eyebrow">Inteligencia de mercado · 2023 — 2026</div><h1>Empleabilidad de graduados</h1><p class="subtitle">Formación académica y presencia laboral, en una sola mirada.</p></div></div>', unsafe_allow_html=True)
@@ -115,7 +133,7 @@ with filters:
     filter_heading, demo_control = st.columns([3, 1])
     with filter_heading:
         st.markdown("**Área de análisis**")
-        st.caption("Selecciona una o varias carreras homologadas. La selección se aplica a todos los gráficos.")
+        st.caption("Selecciona el nivel académico y una o varias carreras homologadas. Los filtros se aplican a todos los gráficos.")
     with demo_control:
         demo = st.toggle("Vista de demostración", value=os.getenv("DASHBOARD_DEMO", "0") == "1", help="Usa exclusivamente datos sintéticos para explorar el dashboard.")
 
@@ -126,11 +144,12 @@ except FileNotFoundError:
     pass
 
 if demo:
-    options = sorted(demo_data()[0].CARRERA_HOMOLOGADA.unique())
+    catalog = demo_data()[0].rename(columns={"CARRERA_HOMOLOGADA": "carrera", "NIVEL_ACADEMICO": "nivel"})
+    catalog["nivel_origen"] = catalog["nivel"]
 else:
     try:
         with st.spinner("Conectando con SQL Server…"):
-            options = cached_careers(config)
+            catalog = cached_careers(config)
     except Exception as exc:
         st.title("Observatorio de empleabilidad")
         st.error("No fue posible conectar con SQL Server. Puedes activar la vista de demostración en el área de análisis.")
@@ -142,9 +161,18 @@ else:
         st.stop()
 
 with filters:
+    st.selectbox("Paleta de colores", list(PALETTES), key="color_palette")
+    level = st.selectbox("Nivel académico", ["Todos los niveles", *ACADEMIC_LEVELS], key="academic_level")
+    filtered_catalog = catalog if level == "Todos los niveles" else catalog[catalog.nivel.eq(level)]
+    options = sorted(filtered_catalog.carrera.unique())
+    levels = None if level == "Todos los niveles" else tuple(sorted(filtered_catalog.nivel_origen.dropna().unique()))
+    if "selected_careers" in st.session_state:
+        st.session_state.selected_careers = [c for c in st.session_state.selected_careers if c in options]
+    else:
+        st.session_state.selected_careers = [next((x for x in options if x.upper() in ('ECONOMÍA', 'ECONOMIA')), options[0])] if options else []
     career_control, cutoff_control, refresh_control = st.columns([3, 1.3, 1], vertical_alignment="bottom")
     with career_control:
-        selected = st.multiselect("Carreras homologadas", options, default=[next((x for x in options if x.upper() in ('ECONOMÍA','ECONOMIA')),options[0])] if options else [], placeholder="Busca una carrera…")
+        selected = st.multiselect("Carreras homologadas", options, key="selected_careers", placeholder="Busca una carrera…")
     with cutoff_control:
         year = st.selectbox("Corte de análisis", [s.year for s in SNAPSHOTS], index=3, format_func=lambda y: next(s.label for s in SNAPSHOTS if s.year==y))
     with refresh_control:
@@ -152,6 +180,7 @@ with filters:
             cached_careers.clear()
             cached_result.clear()
             demo_result.clear()
+            cached_atlas.clear()
             st.rerun()
     st.caption(f"{len(selected)} carrera(s) seleccionada(s) · {len(options):,} disponibles".replace(",", "."))
 if demo:
@@ -164,7 +193,7 @@ employment_tab, education_tab, methodology_tab = st.tabs(["Empleo y salarios", "
 
 with st.spinner("Calculando cohortes y cruces de empleo…"):
     try:
-        summary, institutions, _, quality = demo_result(tuple(sorted(selected)), EXPECTED_RESULT_SCHEMA) if demo else cached_result(config, tuple(sorted(selected)), EXPECTED_RESULT_SCHEMA)
+        summary, institutions, cohorts, quality = demo_result(tuple(sorted(selected)), EXPECTED_RESULT_SCHEMA, level) if demo else cached_result(config, tuple(sorted(selected)), EXPECTED_RESULT_SCHEMA, levels)
     except Exception as exc:
         st.error("No fue posible completar la consulta. Revisa los permisos de lectura, las tablas y los tipos de datos.")
         with st.expander("Detalle técnico"):
@@ -231,6 +260,78 @@ with employment_tab:
             fig.update_xaxes(showgrid=False,type="category", range=[-.3,3.3])
             st.plotly_chart(chart_layout(fig,220),width="stretch",config={"displayModeBar":False})
 
+    with st.container(border=True):
+        latest = SNAPSHOTS[-1]
+        st.markdown(f"**Empleo por domicilio · {latest.label}**")
+        st.caption("Indicador territorial adicional. La selección geográfica solo afecta este panel; las cifras nacionales se conservan.")
+        try:
+            cohort = cohorts[latest.year]
+            ids = tuple(sorted(cohort.person.unique()))
+            with st.spinner("Consultando domicilios en Atlas…"):
+                atlas = demo_atlas(ids) if demo else cached_atlas(config, ids)
+                geo, conflicts = locations(atlas)
+            located = cohort.merge(geo, on='person', how='left', validate='one_to_one')
+            provinces = sorted(x for x in geo.provincia.unique() if x)
+            if not provinces:
+                st.info("No hay provincias identificadas en Atlas para los graduados de este corte.")
+            else:
+                province_col, canton_col, parish_col = st.columns(3)
+                with province_col:
+                    province = st.selectbox("Provincia (domicilio)", provinces, index=provinces.index('PICHINCHA') if 'PICHINCHA' in provinces else 0)
+                cantons = sorted(x for x in geo.loc[geo.provincia.eq(province), 'canton'].unique() if x)
+                with canton_col:
+                    canton = st.selectbox("Cantón (domicilio)", ['', *cantons], format_func=lambda x: x or 'Todos los cantones')
+                parish_rows = geo[geo.provincia.eq(province)]
+                if canton:
+                    parish_rows = parish_rows[parish_rows.canton.eq(canton)]
+                parishes = sorted(x for x in parish_rows.parroquia.unique() if x)
+                with parish_col:
+                    parish = st.selectbox("Parroquia (domicilio)", ['', *parishes], format_func=lambda x: x or 'Todas las parroquias', disabled=not canton)
+                territory = territorial_summary(located, province, canton, parish if canton else '')
+                a, b, c = st.columns(3)
+                a.metric("Tasa de empleo visible · zona", decimal(territory['rate']) + (' %' if territory['graduates'] else ''))
+                b.metric("Graduados · zona", integer(territory['graduates']))
+                c.metric("Profesionales ejerciendo · zona", integer(territory['employed']))
+                composition_col, salary_col = st.columns([1, 1.22])
+                with composition_col:
+                    with st.container(border=True):
+                        st.markdown('<div class="panel-title">Composición del empleo · zona</div>', unsafe_allow_html=True)
+                        labels = ["Dependientes", "Independientes", "Sin información laboral"]
+                        values = [territory[k] for k in ('dependent', 'independent', 'unknown')]
+                        if territory['graduates']:
+                            fig = go.Figure(go.Pie(labels=labels, values=values,
+                                hole=.73, sort=False, marker=dict(colors=COLORS, line=dict(color='white', width=3)),
+                                textinfo='percent', textposition='outside',
+                                hovertemplate='%{label}<br>%{value:,.0f} personas · %{percent}<extra></extra>'))
+                            fig.update_layout(showlegend=False, annotations=[dict(
+                                text=f'<b>{decimal(territory["rate"])}%</b><br><span style="font-size:12px">empleo visible</span>',
+                                x=.5, y=.5, showarrow=False, font=dict(size=29, color=NAVY))])
+                            st.plotly_chart(chart_layout(fig, 300), width='stretch', key='territorial_composition', config={'displayModeBar': False})
+                        else:
+                            st.info('No hay graduados elegibles en esta zona.')
+                        for color, label, value in zip(COLORS, labels, values):
+                            st.markdown(f'<div style="display:flex;justify-content:space-between;margin:9px 4px;font-size:.83rem"><span><span style="color:{color}">●</span> {label}</span><b>{integer(value)}</b></div>', unsafe_allow_html=True)
+                with salary_col:
+                    with st.container(border=True):
+                        st.markdown('<div class="panel-title">Banda salarial · zona</div><div class="panel-caption">Rango intercuartílico</div>', unsafe_allow_html=True)
+                        if territory['salary_n']:
+                            p25, p75 = territory['p25'], territory['p75']
+                            fig = go.Figure(go.Scatter(x=[p25, p75], y=[0, 0], mode='lines+markers+text',
+                                text=[f'${decimal(p25, 0)}', f'${decimal(p75, 0)}'], textposition=['top left', 'top right'],
+                                line=dict(color=BLUE, width=7), marker=dict(size=19, color=BLUE),
+                                hovertemplate='$%{x:,.2f}<extra></extra>'))
+                            span = max(p75-p25, 100)
+                            fig.update_xaxes(range=[max(0, p25-span*.35), p75+span*.35], visible=False)
+                            fig.update_yaxes(range=[-1, 1], visible=False)
+                            fig.update_layout(annotations=[dict(x=p25, y=-.4, text='PERCENTIL 25', showarrow=False, font=dict(size=11)), dict(x=p75, y=-.4, text='PERCENTIL 75', showarrow=False, font=dict(size=11))])
+                            st.plotly_chart(chart_layout(fig, 300), width='stretch', key='territorial_salary', config={'displayModeBar': False})
+                        else:
+                            st.info('Sin salarios válidos para calcular la banda de esta zona.')
+        except Exception as exc:
+            st.warning("No fue posible consultar el panel territorial de Atlas. Los indicadores nacionales siguen disponibles.")
+            with st.expander("Detalle de conexión Atlas"):
+                st.code(str(exc))
+
 with education_tab:
     inst = institutions[institutions.year.eq(year)].sort_values("professionals",ascending=False)
     private = pd.DataFrame(quality['private_institutions'])
@@ -239,11 +340,11 @@ with education_tab:
     with st.container(border=True):
         st.markdown('<div class="panel-title">Instituciones educativas</div>',unsafe_allow_html=True)
         if len(inst):
-            st.plotly_chart(education_figure(panels), width="stretch", config={"displayModeBar":False})
+            st.plotly_chart(education_figure(panels, palette=palette), width="stretch", config={"displayModeBar":False})
         else:
             st.info("No hay instituciones con graduados en este corte.")
     if len(inst):
-        st.download_button("Descargar educación para diapositiva · PNG 16:9", education_png(panels, year, selected, demo=demo),
+        st.download_button("Descargar educación para diapositiva · PNG 16:9", education_png(panels, year, selected, demo=demo, palette=palette),
             file_name=f"educacion_{year}{'_DEMO' if demo else ''}_16x9.png",mime='image/png')
     with st.expander("Ver todas las instituciones"):
         st.dataframe(inst.rename(columns={"INSTITUCION_EDUCACION_SUPERIOR":"Institución","professionals":"Profesionales históricos","recent":"Recién titulados"}).drop(columns="year"),hide_index=True,width="stretch")
@@ -271,12 +372,12 @@ with methodology_tab:
     q1.metric("Filas con identificación inválida",integer(quality['invalid_ids']))
     q2.metric("Filas sin fecha válida",integer(quality['invalid_dates']))
     q3.metric("SRI indeterminado sin SIM · corte",integer(row.sri_uncertain))
-    st.caption("Las filas académicas inválidas se excluyen. Los conteos de calidad son de filas, excepto SRI indeterminado, que cuenta personas. No se aplican filtros de nacionalidad o nivel académico.")
+    st.caption("Las filas académicas inválidas se excluyen. Los conteos de calidad son de filas, excepto SRI indeterminado, que cuenta personas. El nivel académico filtra los registros de titulación antes de calcular los indicadores. No se filtra por nacionalidad.")
 
-if row.sri_uncertain:
-    st.caption(f"Calidad del corte: {integer(row.sri_uncertain)} personas sin SIM tienen vigencia SRI indeterminada y se incluyen en ‘Sin información laboral’.")
 with st.expander("Resumen de los cuatro cortes y descarga"):
+    st.caption(f"Nivel académico: {level}")
     export = summary.rename(columns={"year":"Año","cutoff":"Fecha de corte laboral","academic_cutoff":"Fecha de corte académico","label":"Corte laboral","graduates":"Graduados al corte laboral","employed":"Profesionales ejerciendo","rate":"Empleo visible (%)","dependent":"Dependientes","independent":"Independientes","unknown":"Sin información laboral","sri_uncertain":"SRI indeterminado sin SIM","p25":"Salario P25","p75":"Salario P75","salary_n":"Personas con salario","recent":"Recién titulados"})
     st.dataframe(export,hide_index=True,width="stretch")
+    export = export.assign(**{"Nivel académico": level})
     payload = "# " + ("DEMOSTRACIÓN · DATOS SINTÉTICOS" if demo else "DATOS INSTITUCIONALES") + "\n# Carreras: " + " | ".join(c.replace('\n',' ') for c in selected) + "\n" + export.to_csv(index=False,sep=";",decimal=",")
     st.download_button("Descargar resumen CSV",payload.encode("utf-8-sig"),file_name=f"empleabilidad_{'DEMO' if demo else 'resumen'}.csv",mime="text/csv")

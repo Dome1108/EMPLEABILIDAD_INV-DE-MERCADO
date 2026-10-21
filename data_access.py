@@ -4,7 +4,42 @@ from contextlib import closing
 import pandas as pd
 import pyodbc
 
-from analytics import SNAPSHOTS
+from analytics import SNAPSHOTS, institution_key
+
+ACADEMIC_LEVELS = ("Tecnológico", "Tercer nivel", "Cuarto nivel, especialidades y doctorados")
+
+
+def academic_level(value):
+    text = institution_key(value)
+    if any(word in text for word in ("CUARTO", "MAESTR", "MAGISTER", "ESPECIAL", "DOCTOR", "PHD", "POSGRADO", "POSTGRADO")):
+        return ACADEMIC_LEVELS[2]
+    if any(word in text for word in ("TECNOLOG", "TECNIC", "SUPERIOR NO UNIVERSITARIO")):
+        return ACADEMIC_LEVELS[0]
+    if any(word in text for word in ("TERCER", "PREGRADO", "GRADO", "LICENCI", "INGENIER")):
+        return ACADEMIC_LEVELS[1]
+    return None
+
+
+def level_column(cursor):
+    cursor.execute("SELECT COLUMN_NAME FROM BDD_IDM.INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'senescyt' AND TABLE_NAME = 'Graduados_nueva'")
+    columns = {institution_key(row[0]): row[0] for row in cursor.fetchall()}
+    for candidate in ("NIVEL FORMACION", "NIVEL DE FORMACION", "NIVEL ACADEMICO", "NIVEL DE TITULO", "NIVEL TITULO", "NIVEL"):
+        if candidate in columns:
+            return "[" + columns[candidate].replace("]", "]]") + "]"
+    raise RuntimeError("No se encontró la columna de nivel académico en Graduados_nueva. Revisa el nombre del campo de nivel en la fuente.")
+
+
+def career_catalog(config):
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        column = level_column(cursor)
+        cursor.execute(f"""SELECT DISTINCT LTRIM(RTRIM(CARRERA_HOMOLOGADA)) AS carrera,
+            LTRIM(RTRIM(CONVERT(nvarchar(1000), {column}))) AS nivel_origen
+            FROM [BDD_IDM].[senescyt].[Graduados_nueva]
+            WHERE NULLIF(LTRIM(RTRIM(CARRERA_HOMOLOGADA)), '') IS NOT NULL""")
+        catalog = frame(cursor)
+        catalog["nivel"] = catalog.nivel_origen.map(academic_level)
+        return catalog
 
 
 def connect(config):
@@ -52,22 +87,29 @@ def careers(config):
         return [row[0] for row in cursor.fetchall()]
 
 
-def load(config, selected, progress=None):
+def load(config, selected, progress=None, levels=None):
     if not selected:
         raise ValueError("Selecciona al menos una carrera.")
     progress = progress or (lambda message: None)
     progress("Preparando graduados de las carreras seleccionadas…")
     with closing(connect(config)) as connection:
         cursor = connection.cursor()
+        level_filter = ""
+        if levels is not None:
+            column = level_column(cursor)
+            cursor.execute("CREATE TABLE #levels (name nvarchar(1000) COLLATE DATABASE_DEFAULT)")
+            if levels:
+                cursor.executemany("INSERT INTO #levels (name) VALUES (?)", [(x,) for x in levels])
+            level_filter = f" AND EXISTS (SELECT 1 FROM #levels l WHERE l.name = LTRIM(RTRIM(CONVERT(nvarchar(1000), g.{column}))) COLLATE DATABASE_DEFAULT)"
         # Tabla temporal en tempdb; las fuentes solo se consultan.
         cursor.execute("CREATE TABLE #careers (name nvarchar(1000) COLLATE DATABASE_DEFAULT)")
         cursor.executemany("INSERT INTO #careers (name) VALUES (?)", [(c,) for c in selected])
-        cursor.execute("""SELECT CONVERT(varchar(100), g.IDENTIFICACION) AS IDENTIFICACION,
+        cursor.execute(f"""SELECT CONVERT(varchar(100), g.IDENTIFICACION) AS IDENTIFICACION,
             COALESCE(TRY_CONVERT(date, g.FECHA_REGISTRO, 23), TRY_CONVERT(date, g.FECHA_REGISTRO, 103)) AS FECHA_REGISTRO,
             g.INSTITUCION_EDUCACION_SUPERIOR, LTRIM(RTRIM(g.CARRERA_HOMOLOGADA)) AS CARRERA_HOMOLOGADA
             INTO #graduates FROM [BDD_IDM].[senescyt].[Graduados_nueva] g
             WHERE EXISTS (SELECT 1 FROM #careers c
-                WHERE c.name = LTRIM(RTRIM(g.CARRERA_HOMOLOGADA)) COLLATE DATABASE_DEFAULT)""")
+                WHERE c.name = LTRIM(RTRIM(g.CARRERA_HOMOLOGADA)) COLLATE DATABASE_DEFAULT){level_filter}""")
         cursor.execute("""SELECT DISTINCT RIGHT('0000000000' + LTRIM(RTRIM(IDENTIFICACION)), 10) AS person
             INTO #people FROM #graduates
             WHERE LEN(LTRIM(RTRIM(IDENTIFICACION))) BETWEEN 1 AND 10
@@ -106,6 +148,34 @@ def load(config, selected, progress=None):
         return graduates, employment, sri
 
 
+def load_atlas(config, people):
+    """Lee únicamente cédula y domicilio de la cohorte; fuentes de solo lectura."""
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute("CREATE TABLE #geo_people (person varchar(10) COLLATE DATABASE_DEFAULT PRIMARY KEY)")
+        if people:
+            cursor.executemany("INSERT INTO #geo_people (person) VALUES (?)", [(p,) for p in people])
+        cursor.execute("""SELECT DISTINCT CONVERT(varchar(100), a.cedula) AS cedula,
+            a.provincia, a.canton, a.parroquia
+            FROM [BDD_IDM].[modelo].[03_ATLAS_Universo] a
+            WHERE LEN(LTRIM(RTRIM(CONVERT(varchar(100), a.cedula)))) BETWEEN 1 AND 10
+            AND LTRIM(RTRIM(CONVERT(varchar(100), a.cedula))) NOT LIKE '%[^0-9]%'
+            AND EXISTS (SELECT 1 FROM #geo_people p WHERE p.person =
+                RIGHT('0000000000' + LTRIM(RTRIM(CONVERT(varchar(100), a.cedula))), 10) COLLATE DATABASE_DEFAULT)""")
+        return frame(cursor)
+
+
+def demo_atlas(people):
+    rows = []
+    zones = [('PICHINCHA', 'QUITO', 'IÑAQUITO'), ('PICHINCHA', 'QUITO', 'CALDERON'),
+             ('PICHINCHA', 'RUMIÑAHUI', 'SANGOLQUI'), ('GUAYAS', 'GUAYAQUIL', 'TARQUI')]
+    for i, person in enumerate(sorted(people)):
+        if i % 11:
+            province, canton, parish = zones[i % len(zones)]
+            rows.append(dict(cedula=person, provincia=province, canton=canton, parroquia=parish))
+    return pd.DataFrame(rows, columns=['cedula', 'provincia', 'canton', 'parroquia'])
+
+
 def demo_data():
     """Datos sintéticos reproducibles; nunca se presentan como cifras reales."""
     import numpy as np
@@ -117,6 +187,7 @@ def demo_data():
     dates = pd.to_datetime(rng.integers(pd.Timestamp('2013-01-01').value//10**9, pd.Timestamp('2026-02-01').value//10**9, n), unit='s')
     grads = pd.DataFrame(dict(IDENTIFICACION=ids, FECHA_REGISTRO=dates,
         INSTITUCION_EDUCACION_SUPERIOR=rng.choice(universities, n), CARRERA_HOMOLOGADA=rng.choice(names, n, p=[.4,.28,.18,.14])))
+    grads["NIVEL_ACADEMICO"] = rng.choice(ACADEMIC_LEVELS, n, p=[.2, .6, .2])
     # Duplicados y titulaciones múltiples para ejercitar las reglas.
     grads = pd.concat([grads, grads.iloc[:80]], ignore_index=True)
     employment = {}
