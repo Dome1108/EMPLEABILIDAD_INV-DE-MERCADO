@@ -31,8 +31,9 @@ def render(config, cohort, demo, palette):
             conflicts = 0
         else:
             with st.expander('Fuentes de empresas y ventas SRI'):
-                mapping_path = st.text_input('Archivo de empresas (TXT)', str(Path.home() / 'Downloads' / 'validación.txt'))
-                sales_path = st.text_input('Archivo de ventas SRI (Excel)', str(Path.home() / 'Downloads' / 'consulta_sri_1.xlsx'))
+                data_dir = Path(__file__).resolve().parent / 'data'
+                mapping_path = st.text_input('Archivo de empresas (TXT)', str(data_dir / 'validación.txt'))
+                sales_path = st.text_input('Archivo de ventas SRI (Excel)', str(data_dir / 'consulta_sri_1.xlsx'))
                 if st.button('Actualizar industrias y ventas'):
                     sources.clear()
                     employers.clear()
