@@ -92,6 +92,8 @@ def render(config, cohort, demo, palette):
                                   margin=dict(l=10, r=25, t=35, b=55), legend=dict(orientation='h'),
                                   paper_bgcolor='white', plot_bgcolor='white')
                 st.plotly_chart(theme_figure(fig, palette), width='stretch', key=key)
+                if measure == 'Ventas acumuladas':
+                    st.caption('Escala en USD: B = miles de millones. Ejemplo: 20B = USD 20.000 millones.')
         st.caption(f'Ventas acumuladas enero–mes {month:02d} de {latest}, solo de los CIIU seleccionados. Graduados empleados: corte SIM de enero de 2026; cada persona cuenta una vez dentro de cada macroindustria.')
         with st.expander('Ver cifras por macroindustria'):
             st.dataframe(macro, hide_index=True, width='stretch')
@@ -124,6 +126,7 @@ def render(config, cohort, demo, palette):
             fig.update_layout(title='Evolución anual · ventas 411 + 413', xaxis_title='Año', yaxis_title='USD', legend=dict(orientation='h'), paper_bgcolor='white', plot_bgcolor='white')
             fig.update_xaxes(type='category', categoryorder='array', categoryarray=annual.Año.astype(str).tolist())
             st.plotly_chart(theme_figure(fig, palette), width='stretch', key='industry_annual')
+            st.caption('Escala en USD: B = miles de millones. Ejemplo: 20B = USD 20.000 millones.')
         st.caption(f'Comparación enero–mes {month:02d} en cada año. Los meses y valores ausentes permanecen sin dato; no se sustituyen por cero.')
         fig = go.Figure()
         for label, color in [('Personas naturales', blue), ('Sociedades', light)]:
@@ -131,6 +134,7 @@ def render(config, cohort, demo, palette):
             fig.add_trace(go.Scatter(x=timeline.index, y=timeline, name=label, mode='lines', line=dict(color=color, width=2), connectgaps=False))
         fig.update_layout(title='Serie mensual · ventas 411 + 413', xaxis_title='Periodo', yaxis_title='USD', legend=dict(orientation='h'), paper_bgcolor='white', plot_bgcolor='white')
         st.plotly_chart(theme_figure(fig, palette), width='stretch', key='industry_monthly')
+        st.caption('Escala en USD: B = miles de millones. Ejemplo: 20B = USD 20.000 millones.')
         st.markdown('**Detalle mensual por CIIU**')
         detail = sales[sales.CIIU.isin(codes)].sort_values(['CIIU', 'Año', 'Mes']).copy()
         detail.columns = pd.MultiIndex.from_tuples([('Actividad económica', 'CIIU'), ('Periodo', 'Año fiscal'), ('Periodo', 'Mes fiscal'),
