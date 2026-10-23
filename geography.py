@@ -26,4 +26,5 @@ def territorial_summary(people, province, canton='', parish=''):
     dependent = int(subset.dependent.sum())
     return dict(graduates=n, employed=employed, rate=100 * employed / n if n else float('nan'),
                 dependent=dependent, independent=employed-dependent, unknown=n-employed,
-                p25=salaries.quantile(.25), p75=salaries.quantile(.75), salary_n=len(salaries))
+                p25=salaries.quantile(.25), p75=salaries.quantile(.75), salary_n=len(salaries),
+                salary_mean=salaries.mean())

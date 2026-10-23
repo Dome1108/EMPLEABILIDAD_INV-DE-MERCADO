@@ -25,5 +25,7 @@ class TerritorialRules(unittest.TestCase):
         self.assertEqual(result['rate'], 50)
         self.assertEqual(result['p25'], 1000)
         self.assertEqual(result['p75'], 1000)
+        self.assertEqual(result['salary_mean'], 1000)
         self.assertEqual(len(people), 5)
         self.assertTrue(pd.isna(territorial_summary(joined, 'AZUAY')['rate']))
+        self.assertTrue(pd.isna(territorial_summary(joined, 'AZUAY')['salary_mean']))

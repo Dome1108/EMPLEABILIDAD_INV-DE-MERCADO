@@ -148,6 +148,23 @@ def load(config, selected, progress=None, levels=None):
         return graduates, employment, sri
 
 
+def load_employers(config, people):
+    """Relaciones persona-empleador del último corte SIM."""
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute("CREATE TABLE #industry_people (person varchar(10) COLLATE DATABASE_DEFAULT PRIMARY KEY)")
+        if people:
+            cursor.executemany("INSERT INTO #industry_people VALUES (?)", [(p,) for p in people])
+        cursor.execute("""SELECT DISTINCT RIGHT('0000000000' + LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI))), 10) AS person,
+            LTRIM(RTRIM(CONVERT(varchar(100), e.RUCEMP))) AS RUCEMP
+            FROM [Northwind].[dbo].[SIM_Y_ENE_26] e
+            WHERE LEN(LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI)))) BETWEEN 1 AND 10
+            AND LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI))) NOT LIKE '%[^0-9]%'
+            AND EXISTS (SELECT 1 FROM #industry_people p WHERE p.person =
+                RIGHT('0000000000' + LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI))), 10) COLLATE DATABASE_DEFAULT)""")
+        return frame(cursor)
+
+
 def load_atlas(config, people):
     """Lee únicamente cédula y domicilio de la cohorte; fuentes de solo lectura."""
     with closing(connect(config)) as connection:

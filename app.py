@@ -189,7 +189,7 @@ if not selected:
     st.info("Selecciona al menos una carrera para comenzar el análisis.")
     st.stop()
 
-employment_tab, education_tab, methodology_tab = st.tabs(["Empleo y salarios", "Educación e instituciones", "Metodología y calidad"])
+employment_tab, education_tab, methodology_tab, industry_tab = st.tabs(["Empleo y salarios", "Educación e instituciones", "Metodología y calidad", "Industrias y ventas SRI"])
 
 with st.spinner("Calculando cohortes y cruces de empleo…"):
     try:
@@ -288,10 +288,13 @@ with employment_tab:
                 with parish_col:
                     parish = st.selectbox("Parroquia (domicilio)", ['', *parishes], format_func=lambda x: x or 'Todas las parroquias', disabled=not canton)
                 territory = territorial_summary(located, province, canton, parish if canton else '')
-                a, b, c = st.columns(3)
+                a, b, c, d = st.columns(4)
                 a.metric("Tasa de empleo visible · zona", decimal(territory['rate']) + (' %' if territory['graduates'] else ''))
                 b.metric("Graduados · zona", integer(territory['graduates']))
                 c.metric("Profesionales ejerciendo · zona", integer(territory['employed']))
+                d.metric("Salario promedio mensual · zona",
+                         f"${decimal(territory['salary_mean'], 2)}" if territory['salary_n'] else "Sin datos",
+                         help="Promedio de los ingresos mensuales positivos por persona dependiente en SIM, para la zona seleccionada y el corte de enero de 2026.")
                 composition_col, salary_col = st.columns([1, 1.22])
                 with composition_col:
                     with st.container(border=True):
@@ -331,6 +334,10 @@ with employment_tab:
             st.warning("No fue posible consultar el panel territorial de Atlas. Los indicadores nacionales siguen disponibles.")
             with st.expander("Detalle de conexión Atlas"):
                 st.code(str(exc))
+
+with industry_tab:
+    from industry_view import render as render_industries
+    render_industries(config, cohorts[SNAPSHOTS[-1].year], demo, palette)
 
 with education_tab:
     inst = institutions[institutions.year.eq(year)].sort_values("professionals",ascending=False)
