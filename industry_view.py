@@ -46,7 +46,7 @@ def render(config, cohort, demo, palette):
                 mapping, sales, conflicts = sources(mapping_path, sales_path, Path(mapping_path).stat().st_mtime_ns, Path(sales_path).stat().st_mtime_ns)
                 jobs = employers(config, tuple(sorted(cohort.person.unique())))
         import company_ranking_view as ranking_view_module
-        if getattr(ranking_view_module,'COMPANY_VIEW_VERSION',None)!=3:
+        if getattr(ranking_view_module,'COMPANY_VIEW_VERSION',None)!=4:
             ranking_view_module=importlib.reload(ranking_view_module)
         ranking_view_module.render(list(mapping.CIIU.unique()),palette,demo,jobs=jobs,mapping=mapping)
         catalog, matched, total = match_employers(jobs, mapping)
@@ -55,7 +55,7 @@ def render(config, cohort, demo, palette):
             return
         a, b, c = st.columns(3)
         a.metric('Graduados con CIIU identificado', f'{matched:,}'.replace(',', '.'))
-        b.metric('Graduados con empleador SIM', f'{total:,}'.replace(',', '.'))
+        b.metric('Graduados con empleador identificado', f'{total:,}'.replace(',', '.'))
         c.metric('CIIU identificados', len(catalog))
         with st.expander('Industrias donde trabajan los graduados', expanded=True):
             st.dataframe(catalog, hide_index=True, width='stretch')
@@ -103,7 +103,7 @@ def render(config, cohort, demo, palette):
                 st.plotly_chart(theme_figure(fig, palette), width='stretch', key=key)
                 if measure == 'Ventas acumuladas':
                     st.caption('Escala en USD: B = miles de millones. Ejemplo: 20B = USD 20.000 millones.')
-        st.caption(f'Ventas acumuladas enero–mes {month:02d} de {latest}, solo de los CIIU seleccionados. Graduados empleados: corte SIM de enero de 2026; cada persona cuenta una vez dentro de cada macroindustria.')
+        st.caption(f'Ventas acumuladas enero–mes {month:02d} de {latest}, solo de los CIIU seleccionados. Graduados empleados: corte laboral de enero de 2026; cada persona cuenta una vez dentro de cada macroindustria.')
         with st.expander('Ver cifras por macroindustria'):
             st.dataframe(macro, hide_index=True, width='stretch')
         overview, chart_col = st.columns([1, 2])

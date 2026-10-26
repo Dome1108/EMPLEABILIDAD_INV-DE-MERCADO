@@ -6,7 +6,7 @@ import pandas as pd
 
 from industry import ciiu, ruc, MACRO_BY_SECTION, SECTIONS
 
-MATCH_VERSION = 3
+MATCH_VERSION = 4
 
 
 def graduate_distribution(jobs, mapping, matches=None):
@@ -66,7 +66,7 @@ def company_name_key(value):
 def match_sim_companies(jobs, ranking, year=2025):
     """Coincidencias exactas tras normalización; ambiguas y colisiones no asignan empleados."""
     if 'NOMEMP' not in jobs:
-        raise ValueError('La consulta SIM debe incluir NOMEMP. Actualiza la consulta de empleadores.')
+        raise ValueError('La consulta laboral debe incluir NOMEMP. Actualiza la consulta de empleadores.')
     ranking=ranking[ranking.year.eq(year)].copy()
     ranking['name_key']=ranking.company.map(company_name_key)
     lookup=ranking[ranking.name_key.ne('')].groupby('name_key').company_id.agg(lambda s:set(s))
@@ -82,14 +82,14 @@ def match_sim_companies(jobs, ranking, year=2025):
         names=sorted(set(group.NOMEMP.dropna().astype(str).str.strip())-{''})
         status=('Coincidencia exacta normalizada' if len(candidates)==1 else
                 'Ambigua: varios expedientes' if len(candidates)>1 else
-                'Sin nombre SIM' if not keys else 'Sin coincidencia por nombre')
+                'Sin nombre del empleador' if not keys else 'Sin coincidencia por nombre')
         rows.append(dict(SIM_RUC=employer,SIM_company=' | '.join(names),
                          sim_graduates=group.person.nunique(),company_id=next(iter(candidates)) if len(candidates)==1 else None,
                          match_status=status))
     result=pd.DataFrame(rows,columns=['SIM_RUC','SIM_company','sim_graduates','company_id','match_status'])
     # Un mismo nombre del ranking no identifica automáticamente dos RUC distintos.
     collision=result.company_id.notna() & result.company_id.duplicated(keep=False)
-    result.loc[collision,'match_status']='Ambigua: varios RUC SIM para un expediente'
+    result.loc[collision,'match_status']='Ambigua: varios RUC para un expediente'
     result.loc[collision,'company_id']=None
     result=result.merge(ranking.drop(columns='name_key'),on='company_id',how='left',validate='many_to_one')
     quality={'sim_companies':len(result),'matched':int(result.company_id.notna().sum()),

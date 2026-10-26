@@ -294,7 +294,7 @@ with employment_tab:
                 c.metric("Profesionales ejerciendo · zona", integer(territory['employed']))
                 d.metric("Salario promedio mensual · zona",
                          f"${decimal(territory['salary_mean'], 2)}" if territory['salary_n'] else "Sin datos",
-                         help="Promedio de los ingresos mensuales positivos por persona dependiente en SIM, para la zona seleccionada y el corte de enero de 2026.")
+                         help="Promedio de los ingresos mensuales positivos por persona dependiente, para la zona seleccionada y el corte de enero de 2026.")
                 composition_col, salary_col = st.columns([1, 1.22])
                 with composition_col:
                     with st.container(border=True):
@@ -363,10 +363,10 @@ with methodology_tab:
     st.markdown("""
     - **Población:** personas únicas de las carreras seleccionadas con `FECHA_REGISTRO` hasta el último día del mes de corte. Se usa la fecha de registro como aproximación a la titulación.
     - **Cruce:** cédula y `NUMAFI` normalizados a diez dígitos, conservando ceros iniciales. En SRI se busca exclusivamente **cédula + `001`**.
-    - **Dependientes:** presencia en SIM/APOR del corte. La presencia tiene prioridad incluso si la persona tiene RUC activo.
-    - **Independientes:** RUC con actividad vigente inferida al corte y ausencia en SIM/APOR. Un RUC inactivo no cuenta como empleo independiente.
+    - **Dependientes:** presencia en los registros laborales del corte. La presencia tiene prioridad incluso si la persona tiene RUC activo.
+    - **Independientes:** RUC con actividad vigente inferida al corte y ausencia en los registros de empleo dependiente. Un RUC inactivo no cuenta como empleo independiente.
     - **Profesionales ejerciendo:** unión sin duplicados de dependientes e independientes. Este indicador mide presencia laboral; no determina afinidad del empleo con la carrera.
-    - **Sin información laboral:** no se identifica empleo en las fuentes disponibles, incluidos casos SRI indeterminados sin SIM. No equivale a desempleo.
+    - **Sin información laboral:** no se identifica empleo en las fuentes disponibles, incluidos casos SRI indeterminados sin registro laboral. No equivale a desempleo.
     - **Recién titulados:** personas con al menos un registro académico de las carreras seleccionadas en el año analizado, aunque tengan registros previos. Para 2026 se usa desde enero hasta la última fecha disponible sin superar hoy; para 2023–2025, hasta el corte correspondiente.
     - **Salario:** en 2024 y 2025 se usa `SALARIO_TOTAL`, con respaldo de `SALARIO_FIJO` si está vacío o en cero; en 2023 y 2026, `SALARIO`. Se toma el mayor valor por persona y empleador para deduplicar y se suman empleadores. Se excluyen ingresos no positivos. No se usan salarios promedio de 12 meses ni se atribuyen ingresos al SRI.
     - **Banda salarial:** percentiles 25 y 75 con interpolación lineal sobre el ingreso mensual por persona dependiente.
@@ -378,12 +378,12 @@ with methodology_tab:
     q1,q2,q3 = st.columns(3)
     q1.metric("Filas con identificación inválida",integer(quality['invalid_ids']))
     q2.metric("Filas sin fecha válida",integer(quality['invalid_dates']))
-    q3.metric("SRI indeterminado sin SIM · corte",integer(row.sri_uncertain))
+    q3.metric("SRI indeterminado sin registro laboral · corte",integer(row.sri_uncertain))
     st.caption("Las filas académicas inválidas se excluyen. Los conteos de calidad son de filas, excepto SRI indeterminado, que cuenta personas. El nivel académico filtra los registros de titulación antes de calcular los indicadores. No se filtra por nacionalidad.")
 
 with st.expander("Resumen de los cuatro cortes y descarga"):
     st.caption(f"Nivel académico: {level}")
-    export = summary.rename(columns={"year":"Año","cutoff":"Fecha de corte laboral","academic_cutoff":"Fecha de corte académico","label":"Corte laboral","graduates":"Graduados al corte laboral","employed":"Profesionales ejerciendo","rate":"Empleo visible (%)","dependent":"Dependientes","independent":"Independientes","unknown":"Sin información laboral","sri_uncertain":"SRI indeterminado sin SIM","p25":"Salario P25","p75":"Salario P75","salary_n":"Personas con salario","recent":"Recién titulados"})
+    export = summary.rename(columns={"year":"Año","cutoff":"Fecha de corte laboral","academic_cutoff":"Fecha de corte académico","label":"Corte laboral","graduates":"Graduados al corte laboral","employed":"Profesionales ejerciendo","rate":"Empleo visible (%)","dependent":"Dependientes","independent":"Independientes","unknown":"Sin información laboral","sri_uncertain":"SRI indeterminado sin registro laboral","p25":"Salario P25","p75":"Salario P75","salary_n":"Personas con salario","recent":"Recién titulados"})
     st.dataframe(export,hide_index=True,width="stretch")
     export = export.assign(**{"Nivel académico": level})
     payload = "# " + ("DEMOSTRACIÓN · DATOS SINTÉTICOS" if demo else "DATOS INSTITUCIONALES") + "\n# Carreras: " + " | ".join(c.replace('\n',' ') for c in selected) + "\n" + export.to_csv(index=False,sep=";",decimal=",")

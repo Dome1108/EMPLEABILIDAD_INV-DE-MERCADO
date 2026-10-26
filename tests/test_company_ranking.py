@@ -1,6 +1,7 @@
 import unittest
 import os
 import json
+import re
 from pathlib import Path
 from unittest.mock import patch
 import pandas as pd
@@ -79,24 +80,28 @@ class CompanyRankingRules(unittest.TestCase):
         self.assertTrue(matches.employees.isna().all())
         self.assertTrue(matches.company_id.isna().all())
 
-    def test_ranking_charts_and_grouping_are_available(self):
+    def test_only_company_chart_is_shown_without_source_acronym(self):
         from streamlit.testing.v1 import AppTest
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'1'}):
             app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=60).run()
             self.assertFalse(app.exception)
             self.assertFalse(any('No se pudo leer el ranking' in x.value for x in app.warning))
             self.assertTrue(any(m.label=='Empleados reportados' for m in app.metric))
-            self.assertEqual(app.radio(key='ranking_grouping').value,'Actividad económica · CIIU')
+            self.assertFalse(any(r.key=='ranking_grouping' for r in app.radio))
             chart=next(json.loads(node.proto.spec) for node in app.get('plotly_chart')
                        if json.loads(node.proto.spec).get('layout',{}).get('title',{}).get('text')=='Top 10 empresas por graduados')
-            denominator=int(next(m.value for m in app.metric if m.label=='Graduados empleados con empresa SIM').replace('.',''))
+            denominator=int(next(m.value for m in app.metric if m.label=='Graduados empleados con empresa identificada').replace('.',''))
             self.assertTrue(all(value<=denominator for value in chart['data'][0]['x']))
-            self.assertEqual(chart['layout']['xaxis']['title']['text'],'Cantidad de graduados · SIM enero 2026')
+            self.assertEqual(chart['layout']['xaxis']['title']['text'],'Cantidad de graduados')
             for count,custom in zip(chart['data'][0]['x'],chart['data'][0]['customdata']):
                 self.assertAlmostEqual(custom[1],100*count/denominator)
-            app.radio(key='ranking_grouping').set_value('Macroindustria').run()
-            self.assertFalse(app.exception)
-            self.assertFalse(any('No se pudo leer el ranking' in x.value for x in app.warning))
+            titles=[json.loads(node.proto.spec).get('layout',{}).get('title',{}).get('text','') for node in app.get('plotly_chart')]
+            self.assertNotIn('Top 10 actividades por graduados',titles)
+            self.assertNotIn('Top 10 macroindustrias por graduados',titles)
+            visible=[str(x.value) for kind in ('markdown','caption','info','warning') for x in getattr(app,kind)]
+            visible += [m.label for m in app.metric]
+            visible += [str(d.value.columns.tolist()) for d in app.dataframe]
+            self.assertFalse(any(re.search(r'\bSIM\b',text,re.I) for text in visible))
 
     def raw(self,rows):
         return pd.DataFrame(rows,columns=['Año','Expediente','Nombre','Actividad económica','Cant. Empleados'])
