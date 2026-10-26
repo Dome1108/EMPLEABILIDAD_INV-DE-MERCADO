@@ -1,15 +1,19 @@
 """Pestaña de industrias y ventas sectoriales."""
 from pathlib import Path
+import importlib
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+import data_access as data_access_module
+if getattr(data_access_module,'EMPLOYER_SCHEMA_VERSION',None)!=2:
+    data_access_module=importlib.reload(data_access_module)
 from data_access import load_employers
 from industry import read_sources, match_employers, monthly_sales, macroindustry_summary, growth_summary, compact_usd, SECTIONS, SALES
 from palettes import PALETTES, theme_figure
 
 
 @st.cache_data(ttl=900, show_spinner=False, max_entries=8)
-def employers(config, people):
+def employers(config, people, employer_schema=2):
     return load_employers(config, people)
 
 
@@ -25,6 +29,7 @@ def render(config, cohort, demo, palette):
             codes = ['M711022', 'K641901', 'J620101']
             ids = cohort.loc[cohort.dependent, 'person'].tolist()
             jobs = pd.DataFrame({'person': ids, 'RUCEMP': [str(i % 3 + 1).zfill(13) for i in range(len(ids))]})
+            jobs['NOMEMP']=[f'EMPRESA DE EJEMPLO {i % 3 + 1}.1' for i in range(len(ids))]
             mapping = pd.DataFrame({'RUCEMP': [str(i + 1).zfill(13) for i in range(3)], 'CIIU': codes})
             sales = pd.DataFrame([dict(CIIU=code, Año=year, Mes=month, **{field: float((index+1)*10000 + (year-2023)*700 + month*100 + j*200) for j, field in enumerate(SALES)})
                                   for index, code in enumerate(codes) for year in range(2023, 2027) for month in range(1, 9 if year == 2026 else 13)])
@@ -40,6 +45,10 @@ def render(config, cohort, demo, palette):
             with st.spinner('Cruzando empleadores con CIIU y ventas SRI…'):
                 mapping, sales, conflicts = sources(mapping_path, sales_path, Path(mapping_path).stat().st_mtime_ns, Path(sales_path).stat().st_mtime_ns)
                 jobs = employers(config, tuple(sorted(cohort.person.unique())))
+        import company_ranking_view as ranking_view_module
+        if getattr(ranking_view_module,'COMPANY_VIEW_VERSION',None)!=3:
+            ranking_view_module=importlib.reload(ranking_view_module)
+        ranking_view_module.render(list(mapping.CIIU.unique()),palette,demo,jobs=jobs,mapping=mapping)
         catalog, matched, total = match_employers(jobs, mapping)
         if catalog.empty:
             st.info('No se encontraron CIIU para los empleadores de los graduados seleccionados.')
@@ -128,13 +137,8 @@ def render(config, cohort, demo, palette):
             st.plotly_chart(theme_figure(fig, palette), width='stretch', key='industry_annual')
             st.caption('Escala en USD: B = miles de millones. Ejemplo: 20B = USD 20.000 millones.')
         st.caption(f'Comparación enero–mes {month:02d} en cada año. Los meses y valores ausentes permanecen sin dato; no se sustituyen por cero.')
-        fig = go.Figure()
-        for label, color in [('Personas naturales', blue), ('Sociedades', light)]:
-            timeline = monthly.set_index('Periodo')[label].reindex(pd.date_range(monthly.Periodo.min(), monthly.Periodo.max(), freq='MS'))
-            fig.add_trace(go.Scatter(x=timeline.index, y=timeline, name=label, mode='lines', line=dict(color=color, width=2), connectgaps=False))
-        fig.update_layout(title='Serie mensual · ventas 411 + 413', xaxis_title='Periodo', yaxis_title='USD', legend=dict(orientation='h'), paper_bgcolor='white', plot_bgcolor='white')
-        st.plotly_chart(theme_figure(fig, palette), width='stretch', key='industry_monthly')
-        st.caption('Escala en USD: B = miles de millones. Ejemplo: 20B = USD 20.000 millones.')
+        from time_series_view import render as render_monthly_series
+        render_monthly_series(monthly, sales, codes, palette)
         st.markdown('**Detalle mensual por CIIU**')
         detail = sales[sales.CIIU.isin(codes)].sort_values(['CIIU', 'Año', 'Mes']).copy()
         detail.columns = pd.MultiIndex.from_tuples([('Actividad económica', 'CIIU'), ('Periodo', 'Año fiscal'), ('Periodo', 'Mes fiscal'),

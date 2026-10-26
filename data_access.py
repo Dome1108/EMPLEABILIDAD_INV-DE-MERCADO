@@ -6,6 +6,8 @@ import pyodbc
 
 from analytics import SNAPSHOTS, institution_key
 
+EMPLOYER_SCHEMA_VERSION = 2
+
 ACADEMIC_LEVELS = ("Tecnológico", "Tercer nivel", "Cuarto nivel, especialidades y doctorados")
 
 
@@ -156,7 +158,8 @@ def load_employers(config, people):
         if people:
             cursor.executemany("INSERT INTO #industry_people VALUES (?)", [(p,) for p in people])
         cursor.execute("""SELECT DISTINCT RIGHT('0000000000' + LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI))), 10) AS person,
-            LTRIM(RTRIM(CONVERT(varchar(100), e.RUCEMP))) AS RUCEMP
+            LTRIM(RTRIM(CONVERT(varchar(100), e.RUCEMP))) AS RUCEMP,
+            LTRIM(RTRIM(CONVERT(nvarchar(500), e.NOMEMP))) AS NOMEMP
             FROM [Northwind].[dbo].[SIM_Y_ENE_26] e
             WHERE LEN(LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI)))) BETWEEN 1 AND 10
             AND LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI))) NOT LIKE '%[^0-9]%'
