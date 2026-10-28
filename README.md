@@ -1,3 +1,45 @@
+# Observatorio de empleabilidad y viabilidad académica
+
+Una sola aplicación Streamlit reúne tres áreas en la navegación superior:
+
+1. **Empleabilidad y mercado:** empleo y salarios, educación, territorio, empresas y ventas SRI.
+2. **Viabilidad de carreras:** modelo comparativo de doce carreras, cinco dimensiones y pesos 30/22/28/12/8.
+3. **Viabilidad Educación Continua:** estudios de UDLA · Ecuador y ULatina · Costa Rica, con sus fuentes por programa.
+
+## Abrir el proyecto integrado
+
+Desde la raíz del repositorio:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501
+```
+
+También puede ejecutarse `iniciar_dashboard.bat`. La conexión institucional conserva la configuración existente. Las dos áreas de viabilidad pueden abrirse desde la navegación aunque SQL Server no esté disponible. La demostración sólo se activa explícitamente y conserva su identificación como datos sintéticos.
+
+## Compartir evidencia con viabilidad
+
+Consulta las carreras y el nivel en **Empleabilidad y mercado**. En **Viabilidad de carreras**, elige el programa del modelo y utiliza **Vincular esta selección a…**. La selección institucional puede contener varias carreras homologadas; se vincula explícitamente para evitar equivalencias inventadas por nombre. Cada programa conserva su evidencia vinculada durante la sesión.
+
+Se comparten exclusivamente agregados: graduados, empleo visible, bandas salariales, cobertura del cruce CIIU y ventas mensuales de los sectores. La aplicación no traslada identificaciones individuales ni RUC a la vista de viabilidad. Las ventas se toman del mismo cruce y archivo `data/consulta_sri_1.xlsx`, sin duplicarlas por empleador.
+
+La evidencia vinculada complementa el diagnóstico. **No reemplaza automáticamente los valores originales del índice**: empleo visible no equivale a alineación ocupacional y aún no se ha aprobado una regla de puntuación para crecimiento sectorial. Se conservan los pesos y fórmulas del modelo, incluida referencia contra sí misma = 100 y las reglas absolutas de precio/competencia.
+
+Los estudios de educación continua mantienen fuentes propias por país. El IMAE de Costa Rica no se sustituye por el SRI ecuatoriano. El detalle metodológico está en [viabilidad/EDCOS_METODOLOGIA.md](viabilidad/EDCOS_METODOLOGIA.md).
+
+Los PDF originales de los proponentes están disponibles sólo en el equipo de trabajo y se excluyen de Git. En otra instalación pueden colocarse en `viabilidad/edcos_fuentes/` con los nombres descritos en las fichas. La consulta del análisis no depende de esos PDF. Las fuentes y reglas analíticas sí forman parte del repositorio.
+
+## Verificar la integración
+
+```powershell
+python -m unittest discover -s tests -v
+python -m unittest discover -s viabilidad/tests -v
+```
+
+`app.py` es la entrada única; `views/` contiene las tres pantallas; `integracion_viabilidad.py` gestiona la navegación del módulo y el intercambio de agregados. El tablero de viabilidad también se conserva ejecutable por separado en `viabilidad/app.py`.
+
+---
+
 # Observatorio de empleabilidad
 
 Dashboard ejecutivo en Streamlit con paleta de azules. Filtros de nivel académico y carreras homologadas, cuatro tarjetas de empleo visible y detalle por corte de empleo, salarios e instituciones.

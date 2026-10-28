@@ -71,6 +71,8 @@ def render(config, cohort, demo, palette):
         if monthly.empty:
             st.info('No hay ventas SRI para los CIIU seleccionados.')
             return
+        from integracion_viabilidad import compartir_industrias
+        compartir_industrias(catalog,monthly,codes,matched,total)
         blue, light, _ = PALETTES[palette]
         max_month = int(monthly.groupby('Año').Mes.max().min())
         month = st.slider('Acumulado comparable hasta el mes', 1, max_month, max_month) if max_month > 1 else 1

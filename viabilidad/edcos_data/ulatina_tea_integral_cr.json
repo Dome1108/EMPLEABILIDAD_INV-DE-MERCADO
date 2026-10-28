@@ -1,0 +1,1373 @@
+{
+  "id": "tea_integral_cr",
+  "nombre": "Certificación Ejecutiva en Abordaje Integral del TEA",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-10-26",
+  "version_investigacion": "2026-10-26-mercado-cr-v2-actualizado",
+  "brief": {
+    "archivo": "Certificación Ejecutiva en Abordaje Integral del TEA.pdf",
+    "copia_local": "edcos_fuentes/brief_tea_integral_cr.pdf",
+    "fecha_propuesta": null,
+    "tipo": "Certificación ejecutiva · Educación continua",
+    "pais": "Costa Rica",
+    "facultad": "Facultad de Ciencias Sociales",
+    "unidad": "No informada",
+    "duracion": "1.5 cuatrimestres",
+    "horas_totales": null,
+    "modalidad": "100% en línea",
+    "experto": "No definido en el brief",
+    "objetivo": "Diseñar propuestas educativas inclusivas y apoyos personalizados para personas con TEA desde la neurodiversidad, el modelo social y el enfoque de derechos.",
+    "diferenciadores": [
+      "Abordaje integral desde la neurodiversidad, el modelo social y el enfoque de derechos.",
+      "Inclusión educativa con Diseño Universal para el Aprendizaje, ajustes razonables, tecnologías de apoyo y prácticas sustentadas en evidencia.",
+      "Articulación entre persona, familia, comunidad y centros educativos, con comunicación accesible, regulación emocional y apoyo conductual positivo."
+    ],
+    "ejes": [
+      "Abordaje integral desde la neurodiversidad, el modelo social y el enfoque de derechos.",
+      "Inclusión educativa con Diseño Universal para el Aprendizaje, ajustes razonables, tecnologías de apoyo y prácticas sustentadas en evidencia.",
+      "Articulación entre persona, familia, comunidad y centros educativos, con comunicación accesible, regulación emocional y apoyo conductual positivo."
+    ],
+    "habilidades": [
+      "Análisis crítico",
+      "Diseño inclusivo",
+      "Comunicación accesible",
+      "Trabajo interdisciplinario",
+      "Mejora continua"
+    ],
+    "nombres_alternativos": [
+      "Certificación Ejecutiva en Inclusión y TEA",
+      "Certificación Ejecutiva en Neurodiversidad y TEA"
+    ],
+    "palabras_clave": [
+      "TEA",
+      "Neurodiversidad",
+      "Inclusión",
+      "Educación",
+      "Derechos humanos",
+      "Comunicación accesible",
+      "Inclusión laboral",
+      "Apoyo conductual",
+      "Interacción social",
+      "Calidad de vida"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Enseñanza",
+    "paginas": {
+      "identificacion": 2,
+      "competencias": "2–3",
+      "diferenciadores": 3,
+      "competencia_declarada": 4
+    },
+    "pilares": [
+      "Neurodiversidad y derechos",
+      "Diseño educativo inclusivo",
+      "Redes de apoyo"
+    ]
+  },
+  "audiencia_propuesta": {
+    "origen": "Segmentos sugeridos a partir del brief, pendientes de contraste con el mercado de Costa Rica.",
+    "segmentos": [
+      "Profesionales de educación e inclusión",
+      "Equipos de apoyo educativo",
+      "Profesionales que trabajan con familias y comunidades"
+    ],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Certificación Ejecutiva en Abordaje Integral del TEA",
+      "archivo": "Certificación Ejecutiva en Abordaje Integral del TEA.pdf",
+      "paginas": "2–4",
+      "fecha": "2026-10-26"
+    },
+    {
+      "id": "uned",
+      "titulo": "UNED · Educación Inclusiva para el estudiantado en el Espectro del Autismo",
+      "url": "https://uabierta.uned.ac.cr/Home/ActividadesEducativasDetalle?IdActividadEducativa=116",
+      "fecha": "2026-10-26",
+      "observacion": "UAbierta publica curso activo de 40 horas para docentes y acceso hasta diciembre de 2026. No publica precio en la página consultada: CRC 38.300 del brief permanece sin verificar y fuera del boxplot."
+    },
+    {
+      "id": "mundo_tea",
+      "titulo": "Mundo de Colores CR · Detección Temprana e Intervención en TEA",
+      "url": "https://mundodecolorescr.org/Capacitaciones/Evento/DeteccionTEA-4066",
+      "fecha": "2026-10-26",
+      "observacion": "La versión indexada de la página oficial publica 30 horas y CRC 60.000 para esa cohorte. El catálogo también muestra otra intensidad; se conserva la referencia específica del evento. La vista directa depende de JavaScript."
+    },
+    {
+      "id": "mundo_enojo",
+      "titulo": "Mundo de Colores CR · Manejo del Enojo, Ira y Frustración en niños TEA - TDAH y TOD",
+      "url": "https://mundodecolorescr.org/Capacitaciones/Capacitacion/EnojoIra",
+      "fecha": "2026-10-26",
+      "observacion": "La página oficial indexada publica CRC 16.000 individual; no se mezclan descuentos grupales ni precio internacional. Taller específico, distinto de una certificación integral."
+    },
+    {
+      "id": "mundo_crisis",
+      "titulo": "Mundo de Colores CR · Prevención de crisis conductuales en TEA - TAH - TOD",
+      "url": "https://mundodecolorescr.org/Capacitaciones/Evento/PrevencionConductual-4061",
+      "fecha": "2026-10-26",
+      "observacion": "La página oficial indexada registra CRC 15.000 por persona. Es una referencia temática y promocional; la vista directa depende de JavaScript."
+    },
+    {
+      "id": "ucat",
+      "titulo": "Universidad Católica de Costa Rica · Apoyos para el Aprendizaje y la Participación",
+      "url": "https://www.ucatolica.ac.cr/EDUCO/Cursos/ApoyosparaelAprendizajeylaParticipacion",
+      "fecha": "2026-10-26",
+      "observacion": "Curso virtual de cuatro meses para apoyo educativo. No específico exclusivamente de TEA; sin precio ni horas totales publicados."
+    },
+    {
+      "id": "uisil",
+      "titulo": "UISIL · Bachillerato en Ciencias de la Educación Especial",
+      "url": "https://uisil.ac.cr/carreras/bachillerato_en_ciencias_de_la_educacion_especial.html",
+      "fecha": "2026-10-26",
+      "observacion": "El seminario TEA citado en el brief aparece dentro de la malla de bachillerato; no se confirma una convocatoria independiente de educación continua."
+    },
+    {
+      "id": "usj",
+      "titulo": "Universidad de San José · Máster Internacional en Inclusión, Intervención y Abordaje Integral del Espectro Autista",
+      "url": "https://sanramon.usj.ac.cr/courses/master-internacional-en-inclusion-intervencion-y-abordaje-integral-del-espectro-autista/",
+      "fecha": "2026-10-26",
+      "observacion": "Programa de un año según la descripción. El componente web también muestra valores genéricos contradictorios; no se interpreta el rótulo automático Gratis como precio verificado."
+    },
+    {
+      "id": "coursera",
+      "titulo": "Coursera · Universidad de Colorado · Managing ADHD, Autism, Learning Disabilities, and Concussion in School",
+      "url": "https://www.coursera.org/learn/managing-adhd-autism-learning-disabilities-and-concussion-in-school",
+      "fecha": "2026-10-26",
+      "observacion": "Curso internacional de nueve horas; 55.812 inscripciones acumuladas. Incluye otros temas, no equivale a formación integral en TEA. Precio de certificado o plan sin verificar."
+    },
+    {
+      "id": "coursera_geneva",
+      "titulo": "Coursera · Universidad de Ginebra · Troubles du spectre de l’autisme : interventions",
+      "url": "https://www.coursera.org/learn/troubles-spectre-autisme-interventions",
+      "fecha": "2026-10-26",
+      "observacion": "Curso en francés de intervención y acompañamiento; 13.989 inscripciones acumuladas. Alcance internacional, tarifa total no verificada."
+    },
+    {
+      "id": "udemy",
+      "titulo": "Udemy · Autismo: Diagnóstico, Intervención y Apoyo Integral",
+      "url": "https://www.udemy.com/course/autismo-diagnostico-intervencion-y-apoyo-integral/",
+      "fecha": "2026-10-26",
+      "observacion": "Curso grabado en español: 75 participantes y 4 h 53 min de vídeo. La descripción incluye apoyo familiar. No se obtuvo un precio público estable."
+    },
+    {
+      "id": "li_kallpa",
+      "titulo": "Kallpa · Educación especial",
+      "url": "https://cr.linkedin.com/jobs/view/educaci%C3%B3n-especial-at-kallpa-l-centro-especializado-en-el-espectro-autista-3785814331",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_kallpa_pasante",
+      "titulo": "Kallpa · Pasante Educación - Población de niños con Autismo",
+      "url": "https://cr.linkedin.com/jobs/view/pasante-educaci%C3%B3n-poblaci%C3%B3n-de-ni%C3%B1os-con-autismo-medio-tiempo-at-kallpa-l-centro-especializado-en-el-espectro-autista-4375842286",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_schools",
+      "titulo": "Schools of Excellence · Psicopedagoga Preescolar - Primaria",
+      "url": "https://cr.linkedin.com/jobs/view/psicopedagoga-preescolar-primaria-at-schools-of-excellence-4416968129",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_lakeside",
+      "titulo": "Lakeside International School · Profesional en Inclusión Educativa / Psicopedagogía",
+      "url": "https://cr.linkedin.com/jobs/view/profesional-en-inclusi%C3%B3n-educativa-psicopedagogia-at-lakeside-international-school-4406633054",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_panamerican",
+      "titulo": "Pan-American School · publicación de reclutamiento · Secondary Learning Support Specialist",
+      "url": "https://cr.linkedin.com/jobs/view/pedagogo-a-secondary-learning-support-specialist-at-lic-marcela-montero-alvarez-4421344147",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "mep",
+      "titulo": "MEP · Estrategia regional de formación sobre espectro del autismo",
+      "url": "https://drecentraldelpacifico.mep.go.cr/estrategia-espectro-autismo/",
+      "fecha": "2026-10-26",
+      "observacion": "Señal institucional de necesidad formativa; no tamaño del mercado pagador."
+    },
+    {
+      "id": "google_demanda",
+      "titulo": "Google Trends · consulta territorial Costa Rica",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=CR&q=autismo,TEA,educaci%C3%B3n%20inclusiva",
+      "fecha": "2026-10-26",
+      "observacion": "Consulta intentada: no se obtuvo una serie descargable/verificable con la herramienta disponible. No se asigna volumen a resultados indexados."
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-10-26",
+      "observacion": "Serie vigente del grupo 939. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-10-26",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial histórica."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "UNED",
+      "programa": "Educación Inclusiva para el estudiantado en el Espectro del Autismo",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 40,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "uned",
+      "nota": "UAbierta publica curso activo de 40 horas para docentes y acceso hasta diciembre de 2026. No publica precio en la página consultada: CRC 38.300 del brief permanece sin verificar y fuera del boxplot.",
+      "etiqueta_precio": "UNED"
+    },
+    {
+      "institucion": "Mundo de Colores CR",
+      "programa": "Detección Temprana e Intervención en TEA",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 30,
+      "precio_usd": null,
+      "precio_crc": 60000,
+      "precio_verificado": true,
+      "estado": "Referencia histórica · inicio 20/02/2025 · precio indexado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "mundo_tea",
+      "nota": "La versión indexada de la página oficial publica 30 horas y CRC 60.000 para esa cohorte. El catálogo también muestra otra intensidad; se conserva la referencia específica del evento. La vista directa depende de JavaScript.",
+      "etiqueta_precio": "Mundo de Colores · TEA"
+    },
+    {
+      "institucion": "Mundo de Colores CR",
+      "programa": "Manejo del Enojo, Ira y Frustración en niños TEA - TDAH y TOD",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": 16000,
+      "precio_verificado": true,
+      "estado": "Precio promocional indexado · nueva convocatoria por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "mundo_enojo",
+      "nota": "La página oficial indexada publica CRC 16.000 individual; no se mezclan descuentos grupales ni precio internacional. Taller específico, distinto de una certificación integral.",
+      "etiqueta_precio": "Mundo de Colores · emociones"
+    },
+    {
+      "institucion": "Mundo de Colores CR",
+      "programa": "Prevención de crisis conductuales en TEA - TAH - TOD",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": 15000,
+      "precio_verificado": true,
+      "estado": "Referencia promocional indexada · fecha de nueva cohorte no confirmada",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "mundo_crisis",
+      "nota": "La página oficial indexada registra CRC 15.000 por persona. Es una referencia temática y promocional; la vista directa depende de JavaScript.",
+      "etiqueta_precio": "Mundo de Colores · crisis"
+    },
+    {
+      "institucion": "Universidad Católica de Costa Rica",
+      "programa": "Apoyos para el Aprendizaje y la Participación",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "ucat",
+      "nota": "Curso virtual de cuatro meses para apoyo educativo. No específico exclusivamente de TEA; sin precio ni horas totales publicados.",
+      "etiqueta_precio": "Universidad Católica de Costa Rica"
+    },
+    {
+      "institucion": "UISIL",
+      "programa": "Bachillerato en Ciencias de la Educación Especial",
+      "tipo": "Otro nivel",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "uisil",
+      "nota": "El seminario TEA citado en el brief aparece dentro de la malla de bachillerato; no se confirma una convocatoria independiente de educación continua.",
+      "etiqueta_precio": "UISIL"
+    },
+    {
+      "institucion": "Universidad de San José",
+      "programa": "Máster Internacional en Inclusión, Intervención y Abordaje Integral del Espectro Autista",
+      "tipo": "Otro nivel",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "usj",
+      "nota": "Programa de un año según la descripción. El componente web también muestra valores genéricos contradictorios; no se interpreta el rótulo automático Gratis como precio verificado.",
+      "etiqueta_precio": "Universidad de San José"
+    },
+    {
+      "institucion": "Coursera · Universidad de Colorado",
+      "programa": "Managing ADHD, Autism, Learning Disabilities, and Concussion in School",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 9,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera",
+      "nota": "Curso internacional de nueve horas; 55.812 inscripciones acumuladas. Incluye otros temas, no equivale a formación integral en TEA. Precio de certificado o plan sin verificar.",
+      "etiqueta_precio": "Coursera · Universidad de Colorado"
+    },
+    {
+      "institucion": "Coursera · Universidad de Ginebra",
+      "programa": "Troubles du spectre de l’autisme : interventions",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_geneva",
+      "nota": "Curso en francés de intervención y acompañamiento; 13.989 inscripciones acumuladas. Alcance internacional, tarifa total no verificada.",
+      "etiqueta_precio": "Coursera · Universidad de Ginebra"
+    },
+    {
+      "institucion": "Udemy",
+      "programa": "Autismo: Diagnóstico, Intervención y Apoyo Integral",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 4.883333333333333,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "udemy",
+      "nota": "Curso grabado en español: 75 participantes y 4 h 53 min de vídeo. La descripción incluye apoyo familiar. No se obtuvo un precio público estable.",
+      "etiqueta_precio": "Udemy"
+    },
+    {
+      "institucion": "Universidad De La Salle Costa Rica",
+      "programa": "Capacitación especializada en intervención del autismo",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Sin precio informado.",
+      "precio_verificado": false
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 65,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "El MEP mantiene una estrategia de formación sobre autismo y la UNED ofrece capacitación específica para docentes. Las plataformas registran participación internacional. Se asigna 65 por pertinencia y señales indirectas, sin convertir participantes globales ni cupos de la UNED en demanda pagada local. Google Trends no entregó una serie verificable para CR.",
+      "fuentes": [
+        "mep",
+        "uned",
+        "coursera",
+        "coursera_geneva",
+        "udemy",
+        "google_demanda"
+      ],
+      "nivel_evidencia": "Necesidad institucional local + participación internacional"
+    },
+    "competencia": {
+      "puntaje": 60,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "La UNED, Mundo de Colores y Universidad Católica ofrecen alternativas de apoyo educativo; Coursera y Udemy amplían sustitutos. Los talleres de un mismo proveedor no se cuentan como instituciones diferentes. UISIL se verificó como malla de bachillerato, no como convocatoria EdCo independiente. Se asigna 60: el enfoque de derechos, DUA y articulación de apoyos ofrece una diferenciación por contrastar.",
+      "fuentes": [
+        "uned",
+        "mundo_tea",
+        "mundo_enojo",
+        "mundo_crisis",
+        "ucat",
+        "uisil",
+        "coursera",
+        "udemy",
+        "brief"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "empleabilidad": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Cinco publicaciones públicas de Costa Rica muestran aplicación de apoyos inclusivos, coordinación familiar y trabajo interdisciplinario. Algunas son históricas; varias exigen título profesional y experiencia que una certificación no reemplaza. La afinidad del brief con estas tareas sustenta 75 como pertinencia formativa, no como tasa de colocación.",
+      "fuentes": [
+        "li_kallpa",
+        "li_kallpa_pasante",
+        "li_schools",
+        "li_lakeside",
+        "li_panamerican",
+        "brief"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "precio": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "Se identificaron CRC 15.000, 16.000 y 60.000 en páginas oficiales indexadas de Mundo de Colores, con condiciones promocionales o históricas y distinta intensidad. Son programas del mismo oferente: no constituyen un precio representativo de universidades. UNED y UCAT permanecen en la tabla sin precio verificado. Se asigna 55 por evidencia estrecha y posicionamiento por resolver; no se propone un precio propio.",
+      "fuentes": [
+        "mundo_tea",
+        "mundo_enojo",
+        "mundo_crisis",
+        "uned",
+        "ucat"
+      ],
+      "nivel_evidencia": "Referencias indexadas · un proveedor · confianza limitada"
+    },
+    "sector": {
+      "puntaje": 70,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "La serie vigente del BCCR, base 2022 = 100, se consultó hasta 2026-08. Se reemplazó toda la serie histórica para conservar una base homogénea. El agregado de educación, salud y asistencia social mantiene actividad; el informe de agosto de 2026 describe un crecimiento moderado impulsado por salud privada. Es un contexto sectorial amplio, no ventas específicas ni demanda de matrícula. Se conserva la valoración analítica de 70; actualizar observaciones no implica una conversión automática del índice a puntaje.",
+      "fuentes": [
+        "bccr_imae",
+        "mep",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    }
+  },
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · Apoyo escolar (Colorado)",
+          "valor": 55812,
+          "fuente": "coursera"
+        },
+        {
+          "etiqueta": "Coursera · Intervenciones (Ginebra)",
+          "valor": 13989,
+          "fuente": "coursera_geneva"
+        },
+        {
+          "etiqueta": "Udemy · Apoyo integral en TEA",
+          "valor": 75,
+          "fuente": "udemy"
+        }
+      ],
+      "fuentes": [
+        "mep",
+        "uned",
+        "coursera",
+        "coursera_geneva",
+        "udemy",
+        "google_demanda"
+      ],
+      "nota": "Consulta Google Trends para Costa Rica sin serie verificable. Las participaciones publicadas son internacionales y acumuladas, no búsquedas ni matrículas locales.",
+      "lectura": "Existe participación en formación relacionada. Es una señal internacional; el interés pagador en Costa Rica debe distinguirse de estas inscripciones.",
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_kallpa",
+          "identificador_linkedin": "3785814331",
+          "empresa": "Kallpa",
+          "cargo": "Educación especial",
+          "ciudad": "Escazú, San José",
+          "pais": "Costa Rica",
+          "area": "Educación especial",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "tea",
+            "ingles",
+            "documentar"
+          ],
+          "resumen": "Solicita licenciatura y experiencia con autismo; buena redacción e inglés deseable. Publicación histórica.",
+          "fuente": "li_kallpa",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_kallpa_pasante",
+          "identificador_linkedin": "4375842286",
+          "empresa": "Kallpa",
+          "cargo": "Pasante Educación - Población de niños con Autismo",
+          "ciudad": "Escazú, San José",
+          "pais": "Costa Rica",
+          "area": "Apoyo educativo supervisado",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "inclusion",
+            "familias",
+            "equipo",
+            "seguimiento",
+            "tea",
+            "materiales",
+            "regulacion"
+          ],
+          "resumen": "Apoyo individualizado, adaptación de materiales y registro de avances, con regulación bajo supervisión y coordinación familiar.",
+          "fuente": "li_kallpa_pasante",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_schools",
+          "identificador_linkedin": "4416968129",
+          "empresa": "Schools of Excellence",
+          "cargo": "Psicopedagoga Preescolar - Primaria",
+          "ciudad": "Cartago",
+          "pais": "Costa Rica",
+          "area": "Inclusión escolar",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "inclusion",
+            "familias",
+            "equipo",
+            "seguimiento",
+            "materiales",
+            "dua",
+            "ingles",
+            "tecnologia"
+          ],
+          "resumen": "Adecuaciones curriculares, DUA, seguimiento y apoyo docente; requiere formación universitaria y experiencia.",
+          "fuente": "li_schools",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_lakeside",
+          "identificador_linkedin": "4406633054",
+          "empresa": "Lakeside International School",
+          "cargo": "Profesional en Inclusión Educativa / Psicopedagogía",
+          "ciudad": "Sardinal, Guanacaste",
+          "pais": "Costa Rica",
+          "area": "Inclusión escolar",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "inclusion",
+            "familias",
+            "equipo",
+            "materiales",
+            "ingles"
+          ],
+          "resumen": "Planes individuales, apoyo a docentes y comunicación con familias; inglés intermedio o avanzado valorado. La consulta actual confirma publicación cerrada.",
+          "fuente": "li_lakeside",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_panamerican",
+          "identificador_linkedin": "4421344147",
+          "empresa": "Pan-American School · publicación de reclutamiento",
+          "cargo": "Secondary Learning Support Specialist",
+          "ciudad": "San Antonio de Belén, Heredia",
+          "pais": "Costa Rica",
+          "area": "Inclusión escolar",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "inclusion",
+            "familias",
+            "equipo",
+            "seguimiento",
+            "tea",
+            "materiales",
+            "ingles",
+            "documentar"
+          ],
+          "resumen": "Gestión de apoyos, casos TEA, documentación y trabajo familiar; exige título universitario, experiencia e inglés C2.",
+          "fuente": "li_panamerican",
+          "fecha_consulta": "2026-10-26"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "inclusion",
+          "habilidad": "Diseño de apoyos inclusivos",
+          "cobertura": "Explícita",
+          "criterio": "Planear apoyos o ajustes educativos individuales."
+        },
+        {
+          "id": "familias",
+          "habilidad": "Comunicación con familias",
+          "cobertura": "Explícita",
+          "criterio": "Comunicar y coordinar apoyos con familias."
+        },
+        {
+          "id": "equipo",
+          "habilidad": "Trabajo interdisciplinario",
+          "cobertura": "Explícita",
+          "criterio": "Coordinar con docentes u otros profesionales."
+        },
+        {
+          "id": "seguimiento",
+          "habilidad": "Seguimiento y evaluación",
+          "cobertura": "Explícita",
+          "criterio": "Registrar avances y revisar intervenciones."
+        },
+        {
+          "id": "tea",
+          "habilidad": "Experiencia o atención en TEA",
+          "cobertura": "Explícita",
+          "criterio": "Mención expresa de autismo en funciones o requisitos."
+        },
+        {
+          "id": "materiales",
+          "habilidad": "Adaptación de materiales",
+          "cobertura": "Explícita",
+          "criterio": "Ajustar materiales, actividades o currículo."
+        },
+        {
+          "id": "dua",
+          "habilidad": "Diseño Universal para el Aprendizaje",
+          "cobertura": "Explícita",
+          "criterio": "Mención expresa de DUA."
+        },
+        {
+          "id": "regulacion",
+          "habilidad": "Regulación emocional y sensorial",
+          "cobertura": "Explícita",
+          "criterio": "Implementar apoyos para regulación."
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés",
+          "cobertura": "Por contrastar",
+          "criterio": "Idioma solicitado, no contenido declarado del brief."
+        },
+        {
+          "id": "tecnologia",
+          "habilidad": "Tecnología educativa",
+          "cobertura": "Explícita",
+          "criterio": "Uso de herramientas tecnológicas en educación."
+        },
+        {
+          "id": "documentar",
+          "habilidad": "Documentación y redacción",
+          "cobertura": "Por contrastar",
+          "criterio": "Documentar adecuaciones o redactar informes."
+        }
+      ],
+      "fuentes": [
+        "li_kallpa",
+        "li_kallpa_pasante",
+        "li_schools",
+        "li_lakeside",
+        "li_panamerican",
+        "brief"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Publicaciones identificadas mediante búsquedas públicas en LinkedIn para Costa Rica. Se distinguen referencias cerradas y de vigencia no confirmada; no es un censo de vacantes actuales."
+      },
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada",
+      "habilidades": [
+        {
+          "id": "inclusion",
+          "habilidad": "Diseño de apoyos inclusivos",
+          "cobertura": "Explícita",
+          "criterio": "Planear apoyos o ajustes educativos individuales.",
+          "menciones": 4,
+          "muestra": 5,
+          "porcentaje": 80.0,
+          "fuentes": [
+            "li_kallpa_pasante",
+            "li_schools",
+            "li_lakeside",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "familias",
+          "habilidad": "Comunicación con familias",
+          "cobertura": "Explícita",
+          "criterio": "Comunicar y coordinar apoyos con familias.",
+          "menciones": 4,
+          "muestra": 5,
+          "porcentaje": 80.0,
+          "fuentes": [
+            "li_kallpa_pasante",
+            "li_schools",
+            "li_lakeside",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "equipo",
+          "habilidad": "Trabajo interdisciplinario",
+          "cobertura": "Explícita",
+          "criterio": "Coordinar con docentes u otros profesionales.",
+          "menciones": 4,
+          "muestra": 5,
+          "porcentaje": 80.0,
+          "fuentes": [
+            "li_kallpa_pasante",
+            "li_schools",
+            "li_lakeside",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "materiales",
+          "habilidad": "Adaptación de materiales",
+          "cobertura": "Explícita",
+          "criterio": "Ajustar materiales, actividades o currículo.",
+          "menciones": 4,
+          "muestra": 5,
+          "porcentaje": 80.0,
+          "fuentes": [
+            "li_kallpa_pasante",
+            "li_schools",
+            "li_lakeside",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés",
+          "cobertura": "Por contrastar",
+          "criterio": "Idioma solicitado, no contenido declarado del brief.",
+          "menciones": 4,
+          "muestra": 5,
+          "porcentaje": 80.0,
+          "fuentes": [
+            "li_kallpa",
+            "li_schools",
+            "li_lakeside",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "seguimiento",
+          "habilidad": "Seguimiento y evaluación",
+          "cobertura": "Explícita",
+          "criterio": "Registrar avances y revisar intervenciones.",
+          "menciones": 3,
+          "muestra": 5,
+          "porcentaje": 60.0,
+          "fuentes": [
+            "li_kallpa_pasante",
+            "li_schools",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "tea",
+          "habilidad": "Experiencia o atención en TEA",
+          "cobertura": "Explícita",
+          "criterio": "Mención expresa de autismo en funciones o requisitos.",
+          "menciones": 3,
+          "muestra": 5,
+          "porcentaje": 60.0,
+          "fuentes": [
+            "li_kallpa",
+            "li_kallpa_pasante",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "documentar",
+          "habilidad": "Documentación y redacción",
+          "cobertura": "Por contrastar",
+          "criterio": "Documentar adecuaciones o redactar informes.",
+          "menciones": 2,
+          "muestra": 5,
+          "porcentaje": 40.0,
+          "fuentes": [
+            "li_kallpa",
+            "li_panamerican"
+          ]
+        },
+        {
+          "id": "dua",
+          "habilidad": "Diseño Universal para el Aprendizaje",
+          "cobertura": "Explícita",
+          "criterio": "Mención expresa de DUA.",
+          "menciones": 1,
+          "muestra": 5,
+          "porcentaje": 20.0,
+          "fuentes": [
+            "li_schools"
+          ]
+        },
+        {
+          "id": "regulacion",
+          "habilidad": "Regulación emocional y sensorial",
+          "cobertura": "Explícita",
+          "criterio": "Implementar apoyos para regulación.",
+          "menciones": 1,
+          "muestra": 5,
+          "porcentaje": 20.0,
+          "fuentes": [
+            "li_kallpa_pasante"
+          ]
+        },
+        {
+          "id": "tecnologia",
+          "habilidad": "Tecnología educativa",
+          "cobertura": "Explícita",
+          "criterio": "Uso de herramientas tecnológicas en educación.",
+          "menciones": 1,
+          "muestra": 5,
+          "porcentaje": 20.0,
+          "fuentes": [
+            "li_schools"
+          ]
+        }
+      ]
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "uned",
+        "mundo_tea",
+        "mundo_enojo",
+        "mundo_crisis",
+        "ucat",
+        "uisil",
+        "coursera",
+        "udemy",
+        "brief"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "CRC",
+      "fuentes": [
+        "mundo_tea",
+        "mundo_enojo",
+        "mundo_crisis",
+        "uned",
+        "ucat"
+      ],
+      "nota": "Precios en moneda original, sin conversión. Referencias de un mismo proveedor, históricas o promocionales e indexadas. No representan la distribución de aranceles universitarios; los precios sin confirmar no entran al boxplot.",
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Educación y actividades de la salud humana y de asistencia social",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 89.11,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 95.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 96.87,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 96.17,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 99.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 99.73,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 98.29,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 99.59,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 103.45,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 111.99,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 119.91,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 114.8,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 90.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 98.09,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 97.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 97.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 101.42,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 101.69,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 103.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 103.55,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 107.16,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 113.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 123.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 119.69,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 94.61,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 101.7,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 102.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 100.34,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 103.32,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 105.43,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 104.48,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 106.64,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 111.78,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 117.86,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 125.95,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 123.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 98.21,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 104.67,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 105.25,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 104.29,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 107.6,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 111.19,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 107.97,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 107.57,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94986,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "mep",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-10-26",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Vincular la comunicación con problemas de inclusión educativa y apoyos que enfrentan docentes y equipos profesionales."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Orientar el proyecto aplicado a un plan de apoyo inclusivo con seguimiento y comunicación accesible."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Diferenciar la integración de derechos, DUA y trabajo con familias frente a talleres de técnicas puntuales."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Posicionar la certificación por profundidad y acompañamiento. La poca oferta acompañada de baja demanda no garantiza una oportunidad."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "Usar casos de centros educativos y redes de apoyo de Costa Rica, considerando el alcance amplio del indicador sectorial."
+    }
+  ],
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "derechos",
+        "etiqueta": "Neurodiversidad<br>y derechos",
+        "criterio": "Presencia explícita de neurodiversidad y derechos en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "inclusion",
+        "etiqueta": "Inclusión<br>educativa",
+        "criterio": "Presencia explícita de inclusión educativa en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "dua",
+        "etiqueta": "DUA y ajustes<br>razonables",
+        "criterio": "Presencia explícita de dua y ajustes razonables en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "comunicacion",
+        "etiqueta": "Comunicación<br>y apoyos",
+        "criterio": "Presencia explícita de comunicación y apoyos en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "regulacion",
+        "etiqueta": "Regulación<br>emocional",
+        "criterio": "Presencia explícita de regulación emocional en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "redes",
+        "etiqueta": "Familia y<br>trabajo en red",
+        "criterio": "Presencia explícita de familia y trabajo en red en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "derechos": true,
+        "inclusion": true,
+        "dua": true,
+        "comunicacion": true,
+        "regulacion": true,
+        "redes": true
+      }
+    },
+    "ofertas": {
+      "uned": {
+        "revisado": true,
+        "etiqueta": "UNED",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "UAbierta publica curso activo de 40 horas para docentes y acceso hasta diciembre de 2026. No publica precio en la página consultada: CRC 38.300 del brief permanece sin verificar y fuera del boxplot.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": false,
+          "redes": true
+        }
+      },
+      "mundo_tea": {
+        "revisado": true,
+        "etiqueta": "Mundo de Colores · TEA",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "La versión indexada de la página oficial publica 30 horas y CRC 60.000 para esa cohorte. El catálogo también muestra otra intensidad; se conserva la referencia específica del evento. La vista directa depende de JavaScript.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": true,
+          "redes": true
+        }
+      },
+      "mundo_enojo": {
+        "revisado": true,
+        "etiqueta": "Mundo de Colores · emociones",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "La página oficial indexada publica CRC 16.000 individual; no se mezclan descuentos grupales ni precio internacional. Taller específico, distinto de una certificación integral.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": false,
+          "dua": false,
+          "comunicacion": false,
+          "regulacion": true,
+          "redes": true
+        }
+      },
+      "mundo_crisis": {
+        "revisado": true,
+        "etiqueta": "Mundo de Colores · crisis",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "La página oficial indexada registra CRC 15.000 por persona. Es una referencia temática y promocional; la vista directa depende de JavaScript.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": false,
+          "dua": false,
+          "comunicacion": false,
+          "regulacion": true,
+          "redes": true
+        }
+      },
+      "ucat": {
+        "revisado": true,
+        "etiqueta": "Universidad Católica de Costa Rica",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Curso virtual de cuatro meses para apoyo educativo. No específico exclusivamente de TEA; sin precio ni horas totales publicados.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": false,
+          "redes": false
+        }
+      },
+      "uisil": {
+        "revisado": true,
+        "etiqueta": "UISIL",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "El seminario TEA citado en el brief aparece dentro de la malla de bachillerato; no se confirma una convocatoria independiente de educación continua.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": false,
+          "redes": false
+        }
+      },
+      "usj": {
+        "revisado": true,
+        "etiqueta": "Universidad de San José",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Programa de un año según la descripción. El componente web también muestra valores genéricos contradictorios; no se interpreta el rótulo automático Gratis como precio verificado.",
+        "contenidos": {
+          "derechos": true,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": false,
+          "redes": true
+        }
+      },
+      "coursera": {
+        "revisado": true,
+        "etiqueta": "Coursera · Universidad de Colorado",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Curso internacional de nueve horas; 55.812 inscripciones acumuladas. Incluye otros temas, no equivale a formación integral en TEA. Precio de certificado o plan sin verificar.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": false,
+          "redes": false
+        }
+      },
+      "coursera_geneva": {
+        "revisado": true,
+        "etiqueta": "Coursera · Universidad de Ginebra",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Curso en francés de intervención y acompañamiento; 13.989 inscripciones acumuladas. Alcance internacional, tarifa total no verificada.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": false,
+          "redes": true
+        }
+      },
+      "udemy": {
+        "revisado": true,
+        "etiqueta": "Udemy",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Curso grabado en español: 75 participantes y 4 h 53 min de vídeo. La descripción incluye apoyo familiar. No se obtuvo un precio público estable.",
+        "contenidos": {
+          "derechos": false,
+          "inclusion": true,
+          "dua": false,
+          "comunicacion": true,
+          "regulacion": false,
+          "redes": true
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por enfoque",
+        "texto": "Hacer visible la integración de derechos, DUA, ajustes razonables y redes de apoyo mediante un proyecto educativo aplicado."
+      },
+      {
+        "titulo": "Comparabilidad",
+        "texto": "Distinguir talleres temáticos, formación educativa y programas de otros niveles; su duración y público son diferentes."
+      }
+    ]
+  }
+}
