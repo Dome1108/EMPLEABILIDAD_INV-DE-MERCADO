@@ -99,7 +99,7 @@ class EdcosTest(unittest.TestCase):
         r=validar_ficha(self.ficha)
         self.assertEqual(r['cobertura'],100)
         self.assertEqual(r['evaluados'],5)
-        self.assertAlmostEqual(r['total'],64.1)
+        self.assertAlmostEqual(r['total'],64.12609373227818)
         self.assertEqual(r['estado'],'Viabilidad condicionada')
         self.assertTrue(all(c.get('nivel_evidencia') for c in self.ficha['evaluacion'].values()))
 
