@@ -1,0 +1,2670 @@
+{
+  "id": "neuromarketing_digital",
+  "nombre": "Diplomado en Neuromarketing Digital y Neurociencia del Consumidor",
+  "fecha_revision": "2026-10-26",
+  "brief": {
+    "archivo": "Diplomado en Neuromarketing Digital y Neurociencia del Consumidor.pdf",
+    "copia_local": "edcos_fuentes/brief_neuromarketing.pdf",
+    "fecha_propuesta": "2026-09-01",
+    "tipo": "Diplomado · Educación continua",
+    "pais": "Ecuador",
+    "facultad": "Escuela de Negocios",
+    "unidad": "Dirección de Educación en Línea",
+    "duracion": "1 semestre, según el brief",
+    "horas_totales": null,
+    "modalidad": "Híbrida: 90% en línea y 10% presencial para exámenes, según el formulario; también se propone una jornada de laboratorio",
+    "experto": "No definido en el brief",
+    "objetivo": "Aplicar neurociencia, IA y análisis biométrico para interpretar comportamiento del consumidor y sustentar mejoras en experiencias digitales y resultados de negocio.",
+    "diferenciadores": [
+      "Práctica de eye tracking, respuesta electrodérmica, codificación facial y pruebas implícitas, con una jornada presencial de laboratorio.",
+      "Auditoría Neuro-UX de sitios, comercio electrónico y puntos de contacto digitales.",
+      "IA y visión computacional con evaluación crítica de la precisión de herramientas comerciales."
+    ],
+    "ejes": [
+      "Neuromarketing digital y Neuro-UX",
+      "IA aplicada al consumidor",
+      "Neuro-Data Analytics y medición biométrica"
+    ],
+    "habilidades": [
+      "Pensamiento analítico",
+      "Análisis biométrico",
+      "Interpretación de datos",
+      "Evaluación crítica",
+      "Decisión estratégica"
+    ],
+    "nombres_alternativos": [
+      "Diplomado en Neuromarketing Digital",
+      "Diplomado en Neurociencia del Consumidor"
+    ],
+    "palabras_clave": [
+      "Neuromarketing",
+      "Neurociencia",
+      "Consumidor",
+      "Neuro-UX",
+      "Biométricos",
+      "Eye tracking",
+      "Inteligencia artificial",
+      "Analítica de datos",
+      "Comportamiento digital",
+      "Experiencia de usuario"
+    ],
+    "ciiu": "M7320.01",
+    "paginas": {
+      "identificacion": 2,
+      "modalidad": 2,
+      "competencias": 3,
+      "diferenciadores": 3,
+      "alternativas": 4,
+      "competencia_declarada": 5
+    }
+  },
+  "audiencia_propuesta": {
+    "origen": "Inferencia analítica a partir de las competencias del brief; no es una medición de mercado ni un perfil explícito del proponente.",
+    "segmentos": [
+      "Marketing y comunicación digital",
+      "Investigación de mercados y consumidor",
+      "UX, comercio electrónico y experiencia de cliente",
+      "Consultores y responsables de marca"
+    ],
+    "tamano": null,
+    "pagador": "No definido: participante individual o empresa"
+  },
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 60,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "Coursera publica 214.192 inscripciones acumuladas en su introducción a neurociencia del consumidor y neuromarketing, consultada el 26/10/2026. Es participación observada internacional, no demanda ecuatoriana ni compras de este diplomado. El tema tiene interés formativo acreditado; no se obtuvo intención de compra local ni una serie comparable de búsquedas. Juicio provisional intermedio de 60, no una conversión matemática de inscripciones a demanda.",
+      "fuentes": [
+        "google_demanda",
+        "coursera",
+        "udemy",
+        "formaccion",
+        "brief"
+      ],
+      "nivel_evidencia": "Indirecta · alcance internacional"
+    },
+    "competencia": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "Se verificaron instituciones, plataformas y oferta propia. Hemisferios, UEES y Universidad Europea publican inscripción permanente, modular o matrícula online; Coursera, Udemy y Formacción son sustitutos introductorios disponibles. Las fechas históricas, la oferta propia y referencias contradictorias se distinguen. Se conserva 55 como juicio preliminar por presión de alternativas y diferenciación de laboratorio aún declarada; no se cuenta toda página publicada como competidor activo ni se duplica el aliado Euroinnova.",
+      "fuentes": [
+        "hemisferios",
+        "ucsg",
+        "uees",
+        "hemisferios_ia",
+        "uisek",
+        "coursera",
+        "udemy",
+        "formaccion",
+        "europea",
+        "trasciende",
+        "brief",
+        "puce_neuroia",
+        "sudamericano_pdf"
+      ],
+      "nivel_evidencia": "Mixta · oferta publicada y diferenciación"
+    },
+    "empleabilidad": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "La revisión ampliada integra 22 publicaciones públicas de Ecuador en investigación de mercados, UX y marketing digital con IA. Los conteos por habilidad se obtienen del universo identificado y pueden revisarse por área y disponibilidad. Las técnicas biométricas no aparecen explícitas en los registros revisados; IA sí se observa en tareas de diseño e investigación y marketing. Se conserva el juicio preliminar de 75: las frecuencias describen los registros identificados y no son un porcentaje de alineación curricular ni una tasa de empleo.",
+      "fuentes": [
+        "brief",
+        "linkedin_worldpanel",
+        "linkedin_omnicom",
+        "linkedin_ipsos",
+        "linkedin_cedatos",
+        "linkedin_bimbo",
+        "linkedin_bancogye",
+        "linkedin_easysoft",
+        "linkedin_epam",
+        "linkedin_devsu",
+        "linkedin_dichter",
+        "linkedin_markplan",
+        "linkedin_neurologic",
+        "linkedin_workana",
+        "linkedin_focus",
+        "linkedin_worldpanel_data",
+        "linkedin_know",
+        "linkedin_peoplebiz",
+        "linkedin_marcimex",
+        "linkedin_nestle",
+        "linkedin_maresa",
+        "linkedin_bolivariano",
+        "linkedin_elece"
+      ],
+      "nivel_evidencia": "Documental local · muestra exploratoria de LinkedIn"
+    },
+    "precio": {
+      "puntaje": 65,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "UCSG publica USD 650 por 120 horas académicas y UEES USD 1.200 por 80 horas, con admisión modular y promociones por confirmar. Hemisferios presenta USD 377 promocionales en una cohorte de mayo-junio 2026; Formacción ofrece seis horas grabadas por USD 20 + IVA. Se distinguen segmentos y temporalidad. Se mantiene 65 como valoración preliminar del posicionamiento posible, sin promediar sustitutos heterogéneos ni requerir precio propio. No equivale a disposición a pagar ni rentabilidad.",
+      "fuentes": [
+        "ucsg",
+        "uees",
+        "hemisferios_ia",
+        "formaccion",
+        "brief",
+        "puce_neuroia"
+      ],
+      "nivel_evidencia": "Documental · referencias heterogéneas"
+    },
+    "sector": {
+      "puntaje": 80.32617165347729,
+      "estado": "Calculado con ventas SRI",
+      "subcategorias": [
+        "Tamaño económico (40%)",
+        "Evolución de ventas (60%)"
+      ],
+      "justificacion": "Regla absoluta sin programa de referencia. Enero-agosto de 2026: USD 19,006,127.53; mismo periodo de 2025: USD 16,382,537.93. Crecimiento: 16.01%; puntaje de evolución: 90.04/100 (escala lineal: -20%=0, 0%=50, +20%=100, con topes). Tamaño: percentil de rango medio 65.76 entre 92 actividades CIIU de seis dígitos de la sección M, con ventas positivas en el periodo actual y datos completos en ambos periodos. Sector = 40% tamaño + 60% evolución = 80.33/100. Fuente: Excel SRI, casilleros 411 + 413 de personas naturales y sociedades. No se sustituyen datos faltantes por cero.",
+      "fuentes": [
+        "sri_excel"
+      ],
+      "nivel_evidencia": "Ventas SRI del CIIU exacto; regla absoluta reproducible",
+      "calculo_absoluto": {
+        "puntaje": 80.32617165347729,
+        "tamano": 65.76086956521739,
+        "evolucion": 90.03637304565055,
+        "crecimiento": 0.1601454921826022,
+        "ventas_actual": 19006127.529999997,
+        "ventas_anterior": 16382537.93,
+        "anio": 2026,
+        "mes_corte": 8,
+        "ciiu": "M732001",
+        "seccion": "M",
+        "universo": 92,
+        "codigos_comparables": [
+          "M691001",
+          "M691002",
+          "M691003",
+          "M691009",
+          "M692001",
+          "M692002",
+          "M692003",
+          "M692004",
+          "M692009",
+          "M701000",
+          "M702001",
+          "M702002",
+          "M702003",
+          "M702004",
+          "M711011",
+          "M711012",
+          "M711021",
+          "M711022",
+          "M711023",
+          "M711024",
+          "M711025",
+          "M711026",
+          "M711027",
+          "M711029",
+          "M711031",
+          "M711032",
+          "M711033",
+          "M711034",
+          "M711090",
+          "M712011",
+          "M712012",
+          "M712013",
+          "M712014",
+          "M712015",
+          "M712016",
+          "M712091",
+          "M712092",
+          "M712093",
+          "M712099",
+          "M721011",
+          "M721012",
+          "M721013",
+          "M721015",
+          "M721016",
+          "M721021",
+          "M721022",
+          "M721023",
+          "M721024",
+          "M721025",
+          "M721026",
+          "M721027",
+          "M721029",
+          "M722001",
+          "M722002",
+          "M722003",
+          "M722004",
+          "M722005",
+          "M722009",
+          "M731001",
+          "M731002",
+          "M731003",
+          "M731004",
+          "M731005",
+          "M731009",
+          "M732001",
+          "M732002",
+          "M741001",
+          "M741002",
+          "M741003",
+          "M741004",
+          "M741009",
+          "M742001",
+          "M742002",
+          "M742003",
+          "M742004",
+          "M742009",
+          "M749010",
+          "M749011",
+          "M749012",
+          "M749014",
+          "M749016",
+          "M749019",
+          "M749021",
+          "M749022",
+          "M749023",
+          "M749024",
+          "M749029",
+          "M749090",
+          "M750001",
+          "M750002",
+          "M750003",
+          "M750004"
+        ],
+        "peso_tamano": 40,
+        "peso_evolucion": 60,
+        "metodo_percentil": "100 * (actividades con ventas menores + 0,5 * actividades empatadas) / actividades elegibles"
+      }
+    }
+  },
+  "ofertas": [
+    {
+      "institucion": "UCSG",
+      "programa": "Psicología del consumidor y Etnografía Digital",
+      "tipo": "Institucional",
+      "modalidad": "Online",
+      "horas": 120,
+      "tipo_horas": "Académicas",
+      "precio_usd": 650,
+      "precio_referencial_usd": null,
+      "estado": "Página publicada; fecha de próxima cohorte no encontrada",
+      "competidor_directo": true,
+      "fuente": "ucsg",
+      "nota": "Oferta cercana en investigación y comportamiento digital; no se asume equivalencia de práctica biométrica.",
+      "incluir_rango_precio": true,
+      "disponibilidad": "Por confirmar",
+      "fecha_verificacion": "2026-10-26"
+    },
+    {
+      "institucion": "Universidad Hemisferios",
+      "programa": "Neuromarketing Aplicado",
+      "tipo": "Institucional",
+      "modalidad": "Online 24/7",
+      "horas": 130,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Inscripciones permanentes publicadas",
+      "competidor_directo": true,
+      "fuente": "hemisferios",
+      "nota": "Inscripción permanente declarada; el enlace de inscripción remite al aliado Euroinnova. Se cuenta una oferta, sin duplicar al aliado.",
+      "incluir_rango_precio": false,
+      "disponibilidad": "Inscripción declarada",
+      "fecha_verificacion": "2026-10-26"
+    },
+    {
+      "institucion": "UEES",
+      "programa": "Estrategias de Marketing Basadas en Neurociencia",
+      "tipo": "Institucional",
+      "modalidad": "Online",
+      "horas": 80,
+      "tipo_horas": "Dedicación total",
+      "precio_usd": 1200,
+      "precio_referencial_usd": null,
+      "estado": "Admisión modular declarada; cabecera conserva julio 2026",
+      "competidor_directo": false,
+      "fuente": "uees",
+      "nota": "La página admite inicio casi semanal con confirmación de asesor; tarifa de cabecera USD 1.200 y promociones por consultar, no cotización.",
+      "incluir_rango_precio": true,
+      "disponibilidad": "Inscripción declarada",
+      "fecha_verificacion": "2026-10-26"
+    },
+    {
+      "institucion": "Universidad Hemisferios",
+      "programa": "Neuromarketing e IA: experiencia del cliente",
+      "tipo": "Institucional",
+      "modalidad": "Digital",
+      "horas": 66,
+      "tipo_horas": "No especificado",
+      "precio_usd": 377,
+      "precio_referencial_usd": 1050,
+      "estado": "Convocatoria publicada: mayo-junio 2026, anterior a la revisión",
+      "competidor_directo": false,
+      "fuente": "hemisferios_ia",
+      "nota": "El sitio muestra precio promocional y referencial; no se confirma vigencia de la promoción para una nueva convocatoria.",
+      "incluir_rango_precio": true,
+      "disponibilidad": "Convocatoria histórica",
+      "fecha_verificacion": "2026-10-26",
+      "incluir_precio_historico": true
+    },
+    {
+      "institucion": "UISEK",
+      "programa": "Neuromarketing y Neuroventas Aplicadas",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 60,
+      "tipo_horas": "40 sincrónicas +20 asincrónicas",
+      "precio_usd": 300,
+      "precio_referencial_usd": null,
+      "estado": "Referencia histórica; enlace no disponible en revisión 26/10/2026",
+      "competidor_directo": false,
+      "fuente": "uisek",
+      "nota": "Precio general publicado; existe una tarifa de comunidad, no utilizada como referencia general.",
+      "incluir_rango_precio": true,
+      "disponibilidad": "Enlace no disponible"
+    },
+    {
+      "institucion": "Coursera / Copenhagen Business School",
+      "programa": "Introduction to Consumer Neuroscience & Neuromarketing",
+      "tipo": "Plataforma",
+      "modalidad": "Autogestionado",
+      "horas": null,
+      "tipo_horas": "La página estima3 semanas a10h; no equiparar a horas docentes",
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Página de curso disponible",
+      "competidor_directo": false,
+      "fuente": "coursera",
+      "nota": "Alternativa introductoria, en inglés con opciones de idiomas. No equivale a práctica presencial ni demuestra demanda ecuatoriana.",
+      "incluir_rango_precio": false,
+      "disponibilidad": "Inscripción declarada",
+      "fecha_verificacion": "2026-10-26"
+    },
+    {
+      "institucion": "Udemy",
+      "programa": "Neuromarketing · Héctor Peña",
+      "tipo": "Plataforma",
+      "modalidad": "Autogestionado",
+      "horas": 3.25,
+      "tipo_horas": "Vídeo",
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Página disponible; actualización indicada agosto2026",
+      "competidor_directo": false,
+      "fuente": "udemy",
+      "nota": "Sustituto introductorio en español. No se obtuvo un precio estable y no se lo compara directamente con el diplomado.",
+      "incluir_rango_precio": false,
+      "disponibilidad": "Inscripción declarada",
+      "fecha_verificacion": "2026-10-26"
+    },
+    {
+      "institucion": "UDLA Online",
+      "programa": "Psicología y Comportamiento del Consumidor",
+      "tipo": "Oferta propia",
+      "modalidad": "Online",
+      "horas": null,
+      "tipo_horas": "Página indica4 meses",
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Oferta propia publicada",
+      "competidor_directo": false,
+      "fuente": "udla",
+      "nota": "Posible solapamiento en neurociencia y métodos de investigación. No se cuenta como competidor externo.",
+      "incluir_rango_precio": false,
+      "disponibilidad": "Oferta propia"
+    },
+    {
+      "institucion": "UIDE",
+      "programa": "Maestría en Neuromarketing",
+      "tipo": "Otro nivel",
+      "modalidad": "No contrastada",
+      "horas": null,
+      "tipo_horas": null,
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Mencionada por el proponente; no utilizada como par",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Excluida del grupo directo por tratarse de una maestría.",
+      "incluir_rango_precio": false,
+      "disponibilidad": "Otro nivel"
+    },
+    {
+      "institucion": "Formacción",
+      "programa": "El neuromarketing y la toma de decisiones",
+      "tipo": "Plataforma",
+      "modalidad": "Online",
+      "horas": 6,
+      "tipo_horas": "Vídeo",
+      "precio_usd": 20,
+      "precio_referencial_usd": null,
+      "estado": "Referencia previa; enlace ahora redirige al portal",
+      "competidor_directo": false,
+      "fuente": "formaccion",
+      "nota": "Descripción y precio conservados de consulta previa. El enlace redirige al portal; no se confirma inscripción del curso original.",
+      "disponibilidad": "Por confirmar",
+      "incluir_rango_precio": false,
+      "fecha_verificacion": "2026-10-26",
+      "segmento_precio": "Curso corto"
+    },
+    {
+      "institucion": "Universidad Europea",
+      "programa": "Curso en Neuromarketing",
+      "tipo": "Institucional",
+      "modalidad": "Online",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Matrícula online publicada; acceso de tres meses",
+      "competidor_directo": false,
+      "fuente": "europea",
+      "nota": "Oferta internacional dirigida a Ecuador; no se asume equivalencia de horas o laboratorio.",
+      "disponibilidad": "Inscripción declarada",
+      "incluir_rango_precio": false,
+      "fecha_verificacion": "2026-10-26"
+    },
+    {
+      "institucion": "Trasciende Academy",
+      "programa": "Marketing Neurocientífico y Psicología Aplicada",
+      "tipo": "Institucional",
+      "modalidad": "Online",
+      "horas": 300,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Convocatorias septiembre 2026 y marzo 2027; calendario contradictorio",
+      "competidor_directo": false,
+      "fuente": "trasciende",
+      "nota": "Se conserva como referencia, excluida del conteo por incoherencias de calendario.",
+      "disponibilidad": "Por confirmar",
+      "incluir_rango_precio": false,
+      "fecha_verificacion": "2026-10-26"
+    },
+    {
+      "institucion": "PUCE",
+      "programa": "NeuroIA para generación Z",
+      "tipo": "Institucional",
+      "modalidad": "Presencial",
+      "horas": 16,
+      "tipo_horas": "Publicadas",
+      "precio_usd": 30,
+      "precio_referencial_usd": null,
+      "estado": "Abril 2026 · sin existencias · público específico",
+      "competidor_directo": false,
+      "fuente": "puce_neuroia",
+      "nota": "Curso corto para estudiantes del Centro una Familia de Familias; no se usa como precio comparable de un diplomado.",
+      "disponibilidad": "Convocatoria histórica",
+      "incluir_rango_precio": true,
+      "fecha_verificacion": "2026-10-26",
+      "segmento_precio": "Curso corto"
+    },
+    {
+      "institucion": "Sudamericano · referencia histórica",
+      "programa": "Neuromarketing con herramientas de IA y transformación digital",
+      "tipo": "Institucional",
+      "modalidad": "No contrastada",
+      "horas": null,
+      "tipo_horas": null,
+      "precio_usd": null,
+      "precio_referencial_usd": null,
+      "estado": "Brochure 2025 indexado; enlace respondió 404",
+      "competidor_directo": false,
+      "fuente": "sudamericano_pdf",
+      "nota": "Hallazgo de búsqueda, no inscripción actual verificada ni precio disponible.",
+      "disponibilidad": "Enlace no disponible",
+      "incluir_rango_precio": false,
+      "fecha_verificacion": "2026-10-26"
+    }
+  ],
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Comunicar aplicaciones concretas en experiencia digital e investigación del consumidor; contrastar la respuesta local antes de comprometer una apertura."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Vincular el aprendizaje con una auditoría aplicable a un negocio y un resultado demostrable para el participante."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Diferenciar la práctica biométrica y el acompañamiento frente a cursos autogestionados, y delimitar el alcance frente a la oferta propia de UDLA."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Posicionar el programa por intensidad, práctica y acompañamiento. La poca oferta acompañada de baja demanda no garantiza una oportunidad."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "Orientar los casos a decisiones del consumidor y experiencia de compra digital, sin prometer resultados comerciales atribuibles únicamente al neuromarketing."
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente",
+      "tipo": "Documento aportado",
+      "url": null,
+      "paginas": "2–5",
+      "fecha": "2026-09-01",
+      "nota": "Fuente de la propuesta; no acredita demanda ni capacidad operativa."
+    },
+    {
+      "id": "ucsg",
+      "titulo": "UCSG · Psicología del consumidor y Etnografía Digital",
+      "tipo": "Página institucional",
+      "url": "https://www.ucsg.edu.ec/educontinua/programas-o-diplomados/diplomado-en-psicologia-del-consumidor-y-etnografia-digital/",
+      "fecha": "2026-10-26",
+      "nota": "Contenido, público, modalidad, horas académicas y precio publicado."
+    },
+    {
+      "id": "hemisferios",
+      "titulo": "Hemisferios · Neuromarketing Aplicado",
+      "tipo": "Página institucional",
+      "url": "https://educacioncontinua.uhemisferios.edu.ec/programa/diplomado-en-neuromarketing-aplicado/",
+      "fecha": "2026-10-26",
+      "nota": "Modalidad, duración e inscripción permanente; precio no encontrado."
+    },
+    {
+      "id": "uees",
+      "titulo": "UEES · Estrategias de Marketing Basadas en Neurociencia",
+      "tipo": "Página institucional",
+      "url": "https://premium.uees.edu.ec/landing/diplomado-en-estrategias-de-marketing-basadas-en-neurociencia/",
+      "fecha": "2026-10-26",
+      "nota": "Precio y duración publicados, con fecha de cohorte anterior a esta revisión."
+    },
+    {
+      "id": "hemisferios_ia",
+      "titulo": "Hemisferios · Neuromarketing e Inteligencia Artificial",
+      "tipo": "Página institucional",
+      "url": "https://educacioncontinua.uhemisferios.edu.ec/programa/programa-de-neuromarketing-inteligencia-artificial-potenciando-la-experiencia-del-cliente/",
+      "fecha": "2026-10-26",
+      "nota": "Precio promocional y de lista; calendario publicado anterior a la revisión."
+    },
+    {
+      "id": "uisek",
+      "titulo": "UISEK · Neuromarketing y Neuroventas Aplicadas",
+      "tipo": "Página institucional",
+      "url": "https://uisek.edu.ec/educon/neuromarketing-neuroventas/",
+      "fecha": "2026-10-26",
+      "nota": "Enlace respondió 404 el 26/10/2026. Datos conservados como referencia histórica de la revisión anterior, excluidos del rango de precio actual."
+    },
+    {
+      "id": "coursera",
+      "titulo": "Coursera · Consumer Neuroscience & Neuromarketing",
+      "tipo": "Plataforma",
+      "url": "https://www.coursera.org/learn/neuromarketing",
+      "fecha": "2026-10-26",
+      "nota": "Alternativa autogestionada; no se usa matrícula global como demanda local."
+    },
+    {
+      "id": "udemy",
+      "titulo": "Udemy · Neuromarketing",
+      "tipo": "Plataforma",
+      "url": "https://www.udemy.com/course/curso-neuromarketing/",
+      "fecha": "2026-10-26",
+      "nota": "Alternativa introductoria; precio no utilizado."
+    },
+    {
+      "id": "udla",
+      "titulo": "UDLA · Psicología y Comportamiento del Consumidor",
+      "tipo": "Oferta propia",
+      "url": "https://online.udla.edu.ec/diplomados/mercadotecnia-y-publicidad/psicologia-comportamiento-consumidor/",
+      "fecha": "2026-10-23",
+      "nota": "Posible solapamiento interno; excluido de competencia externa."
+    },
+    {
+      "id": "onet",
+      "titulo": "O*NET · Market Research Analysts and Marketing Specialists",
+      "tipo": "Referencia ocupacional internacional",
+      "url": "https://www.onetonline.org/link/details/13-1161.00",
+      "fecha": "2026-10-26",
+      "nota": "Funciones profesionales; Estados Unidos. No se usan vacantes ni salarios."
+    },
+    {
+      "id": "cece_uees",
+      "titulo": "CECE–UEES · Comercio electrónico en Ecuador, medición 2024",
+      "tipo": "Estudio sectorial local",
+      "url": "https://uees.edu.ec/cece-y-uees-presentan-los-resultados-de-la-septima-medicion-del-estudio-de-comercio-electronico-en-ecuador/",
+      "fecha": "2026-10-26",
+      "nota": "Publicado el 31/01/2025. Resultados de 2024; proyecciones de 2025 excluidas de la puntuación."
+    },
+    {
+      "id": "sri",
+      "titulo": "SRI · Estadísticas de ventas y compras",
+      "tipo": "Estadísticas oficiales",
+      "url": "https://www.sri.gob.ec/estadisticas-sri",
+      "fecha": "2026-10-26",
+      "nota": "Catálogo consultado; descarga de ventas no obtenida. No acredita una serie del CIIU en esta ficha."
+    },
+    {
+      "id": "sri_excel",
+      "titulo": "SRI · Excel de ventas aportado por el usuario",
+      "tipo": "Base de datos aportada",
+      "url": null,
+      "fecha": "2026-10-26",
+      "archivo": "consulta_sri_1.xlsx",
+      "nota": "Hoja Ventas SRI; 44 registros mensuales de M732001, 2023–agosto 2026. SHA-256 21fcff47807504dc4d25703195e0648a9e85e255023a844ae45ca676abd9b493"
+    },
+    {
+      "id": "linkedin_worldpanel",
+      "titulo": "LinkedIn · Worldpanel · Analista Junior Marketing Insights",
+      "tipo": "Publicación laboral del empleador",
+      "url": "https://ec.linkedin.com/jobs/view/analista-junior-marketing-insights-at-worldpanel-4362179833",
+      "fecha": "2026-10-26",
+      "nota": "Publicación histórica; la página indica que ya no acepta solicitudes. Se utiliza para habilidades, no para vacantes activas."
+    },
+    {
+      "id": "linkedin_omnicom",
+      "titulo": "LinkedIn · Omnicom Media Ecuador · Analista de Insights y Analytics",
+      "tipo": "Publicación laboral del empleador",
+      "url": "https://ec.linkedin.com/jobs/view/analista-de-insights-y-analytics-at-omnicom-media-ecuador-4193367114",
+      "fecha": "2026-10-26",
+      "nota": "Publicación histórica; la página indica que ya no acepta solicitudes. Se utiliza para habilidades, no para vacantes activas."
+    },
+    {
+      "id": "linkedin_ipsos",
+      "titulo": "LinkedIn · Ipsos · Analista de Proyectos en Investigación de Mercados",
+      "tipo": "Publicación laboral del empleador",
+      "url": "https://ec.linkedin.com/jobs/view/analista-de-proyectos-en-investigaci%C3%B3n-de-mercados-at-ipsos-4140123547",
+      "fecha": "2026-10-26",
+      "nota": "Publicación histórica; la página indica que ya no acepta solicitudes. Se utiliza para habilidades, no para vacantes activas."
+    },
+    {
+      "id": "linkedin_cedatos",
+      "titulo": "LinkedIn · CEDATOS · Analista de Investigación de Mercados y Opinión Pública",
+      "tipo": "Publicación laboral del empleador",
+      "url": "https://ec.linkedin.com/jobs/view/analista-de-investigaci%C3%B3n-de-mercados-y-opini%C3%B3n-p%C3%BAblica-at-cedatos-centro-de-estudios-y-datos-4354604748",
+      "fecha": "2026-10-26",
+      "nota": "Publicación histórica; la página indica que ya no acepta solicitudes. Se utiliza para habilidades, no para vacantes activas."
+    },
+    {
+      "id": "linkedin_bimbo",
+      "titulo": "LinkedIn · Grupo Bimbo · Supervisor de Insights y Analytics (Marketing)",
+      "tipo": "Publicación laboral del empleador",
+      "url": "https://ec.linkedin.com/jobs/view/supervisor-de-insights-y-analytics-marketing-at-grupo-bimbo-4179690030",
+      "fecha": "2026-10-26",
+      "nota": "Publicación histórica; la página indica que ya no acepta solicitudes. Se utiliza para habilidades, no para vacantes activas."
+    },
+    {
+      "id": "formaccion",
+      "titulo": "Formacción · Neuromarketing y toma de decisiones",
+      "tipo": "Fuente pública consultada",
+      "url": "https://formaccion.ec/cursos/el-neuromarketing-y-la-toma-de-decisiones/",
+      "fecha": "2026-10-26",
+      "nota": "Referencia previa conservada; el enlace ahora redirige al portal. No se atribuyen datos del portal completo al curso."
+    },
+    {
+      "id": "europea",
+      "titulo": "Universidad Europea · Curso en Neuromarketing",
+      "tipo": "Fuente pública consultada",
+      "url": "https://ecuador.universidadeuropea.com/curso-neuromarketing-virtual/",
+      "fecha": "2026-10-26",
+      "nota": "Oferta internacional dirigida a Ecuador, tres meses; precio no publicado en la página consultada."
+    },
+    {
+      "id": "trasciende",
+      "titulo": "Trasciende Academy · Marketing Neurocientífico",
+      "tipo": "Fuente pública consultada",
+      "url": "https://academia.agenciatrasciende.com/diplomadoneuromarketing/",
+      "fecha": "2026-10-26",
+      "nota": "Anuncia septiembre 2026 y próxima cohorte marzo 2027; fechas internas contradictorias (2016), precio no publicado."
+    },
+    {
+      "id": "google_demanda",
+      "titulo": "Consulta de Google y Google Trends · Neuromarketing Ecuador",
+      "tipo": "Fuente pública consultada",
+      "url": "https://trends.google.com/trends/explore?geo=EC&q=neuromarketing",
+      "fecha": "2026-10-26",
+      "nota": "Trends respondió HTTP 429; la búsqueda Google devolvió una página que requiere JavaScript, sin resultados cuantificables. No se atribuye volumen de búsqueda."
+    },
+    {
+      "id": "puce_neuroia",
+      "titulo": "PUCE · NeuroIA para generación Z",
+      "tipo": "Página institucional",
+      "url": "https://educacioncontinua.puce.edu.ec/programa/neuroia-para-generacion-z/",
+      "fecha": "2026-10-26",
+      "nota": "Curso presencial de 16 horas, USD 30, abril 2026; sin existencias y dirigido a un centro específico. No comparable con diplomado abierto."
+    },
+    {
+      "id": "sudamericano_pdf",
+      "titulo": "Sudamericano · referencia indexada de diplomado 2025",
+      "tipo": "Referencia histórica no accesible",
+      "url": "https://ccsud.edu.ec/wp-content/uploads/2025/05/DIPLOMADO-NEUROMARKETING-2025.pdf",
+      "fecha": "2026-10-26",
+      "nota": "Referencia localizada en búsqueda externa; el PDF respondió 404. No se considera oferta vigente ni precio verificado."
+    },
+    {
+      "id": "linkedin_bancogye",
+      "titulo": "LinkedIn · Banco Guayaquil · Researcher",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/researcher-at-banco-guayaquil-4449200740",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_easysoft",
+      "titulo": "LinkedIn · Easysoft S.A. · Especialista UX",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/especialista-ux-at-easysoft-s-a-4455385112",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_epam",
+      "titulo": "LinkedIn · EPAM Systems · Diseñador de Servicios / UX Researcher",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/dise%C3%B1ador-de-servicios-ux-researcher-at-epam-systems-4459471404",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_devsu",
+      "titulo": "LinkedIn · Devsu · UX Designer - Sector Financiero / Bancario",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/ux-designer-sector-financiero-bancario-at-devsu-4479422618",
+      "fecha": "2026-10-26",
+      "nota": "Botón de solicitud visible en la consulta. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_dichter",
+      "titulo": "LinkedIn · Dichter & Neira Research · Ejecutivo de investigación de mercados",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/ejecutivo-de-investigaci%C3%B3n-de-mercados-at-dichter-neira-4122422750",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_markplan",
+      "titulo": "LinkedIn · Markplan · Research Analyst",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/research-analyst-at-markplan-4403108566",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_neurologic",
+      "titulo": "LinkedIn · NeuroLogic International · Coordinador de Marketing Digital, Growth y Comunicación Corporativa",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/coordinador-de-marketing-digital-growth-y-comunicaci%C3%B3n-corporativa-at-neurologic-international-4444355736",
+      "fecha": "2026-10-26",
+      "nota": "Disponibilidad no confirmada. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_workana",
+      "titulo": "LinkedIn · Workana · Coordinador/a de Marketing Digital (Paid Media + IA)",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/coordinador-a-de-marketing-digital-paid-media-%2B-ia-at-workana-4294130829",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_focus",
+      "titulo": "LinkedIn · FOCUS Research&Strategy · Ejecutivo de cuentas",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/ejecutivo-de-cuentas-at-focus-research-strategy-4365588217",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_worldpanel_data",
+      "titulo": "LinkedIn · Worldpanel · Data Delivery Partner",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/data-delivery-partner-at-worldpanel-3899965024",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_know",
+      "titulo": "LinkedIn · Know Research Ec · Ejecutivo Junior de Investigación de Mercados",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/ejecutivo-junior-de-investigaci%C3%B3n-de-mercados-at-know-research-ec-4033838410",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_peoplebiz",
+      "titulo": "LinkedIn · People Biz · Analista de estadísticas",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/analista-de-estad%C3%ADsticas-at-people-biz-4420442925",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_marcimex",
+      "titulo": "LinkedIn · Marcimex · Analista de datos comerciales (Promociones)",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/analista-de-datos-comerciales-promociones-cuenca-at-marcimex-4428153831",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_nestle",
+      "titulo": "LinkedIn · Nestlé · Pasante de Marketplace Insights",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/pasante-de-marketplace-insights-at-nestl%C3%A9-4434060286",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_maresa",
+      "titulo": "LinkedIn · Corporación Maresa · Analista de investigación de mercado",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/analista-de-investigaci%C3%B3n-de-mercado-at-corporaci%C3%B3n-maresa-4377414303",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_bolivariano",
+      "titulo": "LinkedIn · Banco Bolivariano · Diseñador UX",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/dise%C3%B1ador-ux-at-banco-bolivariano-4436342815",
+      "fecha": "2026-10-26",
+      "nota": "Histórica · ya no acepta solicitudes. Utilizada para habilidades, no como cantidad de vacantes."
+    },
+    {
+      "id": "linkedin_elece",
+      "titulo": "LinkedIn · ELECÉ · Coordinador Investigación de Mercados Cualitativa",
+      "tipo": "Publicación laboral pública",
+      "url": "https://ec.linkedin.com/jobs/view/coordinador-investigacion-de-mercados-cualitativa-at-elec%C3%A9-4426524373",
+      "fecha": "2026-10-26",
+      "nota": "Disponibilidad no confirmada. Utilizada para habilidades, no como cantidad de vacantes."
+    }
+  ],
+  "version_investigacion": "20261028-sector-absoluto",
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Evolución del interés de búsqueda",
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · curso introductorio",
+          "valor": 214192,
+          "fuente": "coursera"
+        },
+        {
+          "etiqueta": "Udemy · Neuromarketing",
+          "valor": 4441,
+          "fuente": "udemy"
+        },
+        {
+          "etiqueta": "Formacción · curso introductorio",
+          "valor": 1235,
+          "fuente": "formaccion"
+        }
+      ],
+      "fuentes": [
+        "google_demanda",
+        "coursera",
+        "udemy",
+        "formaccion"
+      ],
+      "nota": "Investigación realizada en Google y fuentes públicas. Google Trends respondió HTTP 429; Google Search devolvió una página de acceso con JavaScript. No se obtuvo una serie cuantitativa ni se usan resultados indexados como volumen de búsqueda. Las matrículas acumuladas de plataformas se presentan como señales indirectas, sin ubicación verificada ni intención de compra del diplomado.",
+      "serie": [],
+      "intentos": [
+        {
+          "servicio": "Google Trends",
+          "estado": "HTTP 429 · límite de acceso",
+          "fecha": "2026-10-26"
+        },
+        {
+          "servicio": "Google Search",
+          "estado": "HTML de acceso con JavaScript · sin resultados cuantificables",
+          "fecha": "2026-10-26"
+        }
+      ]
+    },
+    "empleabilidad": {
+      "titulo": "Habilidades observadas · universo público identificado en Ecuador",
+      "relaciones": [
+        {
+          "competencia": "Investigación del consumidor",
+          "aplicacion": "Analizar preferencias<br>y hábitos de compra"
+        },
+        {
+          "competencia": "Auditoría Neuro-UX",
+          "aplicacion": "Evaluar experiencias<br>y estrategias comerciales"
+        },
+        {
+          "competencia": "Interpretación de datos",
+          "aplicacion": "Traducir hallazgos<br>a recomendaciones"
+        }
+      ],
+      "fuentes": [
+        "brief",
+        "linkedin_worldpanel",
+        "linkedin_omnicom",
+        "linkedin_ipsos",
+        "linkedin_cedatos",
+        "linkedin_bimbo",
+        "linkedin_bancogye",
+        "linkedin_easysoft",
+        "linkedin_epam",
+        "linkedin_devsu",
+        "linkedin_dichter",
+        "linkedin_markplan",
+        "linkedin_neurologic",
+        "linkedin_workana",
+        "linkedin_focus",
+        "linkedin_worldpanel_data",
+        "linkedin_know",
+        "linkedin_peoplebiz",
+        "linkedin_marcimex",
+        "linkedin_nestle",
+        "linkedin_maresa",
+        "linkedin_bolivariano",
+        "linkedin_elece"
+      ],
+      "nota": "Universo identificado de 22 publicaciones públicas verificadas, en investigación de mercados, UX y marketing digital con IA. Incluye registros cerrados y de vigencia no confirmada; se distinguen en el detalle. No constituye el universo completo de LinkedIn ni una estimación representativa del país. Cada habilidad se cuenta una vez por publicación; el denominador se actualiza con los filtros. Los porcentajes no suman 100 porque una publicación puede mencionar varias habilidades. Cobertura del brief: interpretación cualitativa.",
+      "habilidades": [
+        {
+          "id": "datos",
+          "habilidad": "Análisis e interpretación de datos",
+          "cobertura": "Explícita",
+          "criterio": "Análisis, interpretación de información o métricas en responsabilidades o requisitos.",
+          "menciones": 20,
+          "muestra": 22,
+          "porcentaje": 90.9090909090909,
+          "fuentes": [
+            "linkedin_worldpanel",
+            "linkedin_omnicom",
+            "linkedin_ipsos",
+            "linkedin_cedatos",
+            "linkedin_bimbo",
+            "linkedin_bancogye",
+            "linkedin_devsu",
+            "linkedin_dichter",
+            "linkedin_markplan",
+            "linkedin_neurologic",
+            "linkedin_workana",
+            "linkedin_focus",
+            "linkedin_worldpanel_data",
+            "linkedin_know",
+            "linkedin_peoplebiz",
+            "linkedin_marcimex",
+            "linkedin_nestle",
+            "linkedin_maresa",
+            "linkedin_bolivariano",
+            "linkedin_elece"
+          ]
+        },
+        {
+          "id": "consumidor",
+          "habilidad": "Investigación de mercados y usuarios",
+          "cobertura": "Explícita",
+          "criterio": "Estudios de mercado, consumidores, usuarios o bases de paneles de mercado.",
+          "menciones": 20,
+          "muestra": 22,
+          "porcentaje": 90.9090909090909,
+          "fuentes": [
+            "linkedin_worldpanel",
+            "linkedin_omnicom",
+            "linkedin_ipsos",
+            "linkedin_cedatos",
+            "linkedin_bimbo",
+            "linkedin_bancogye",
+            "linkedin_easysoft",
+            "linkedin_epam",
+            "linkedin_devsu",
+            "linkedin_dichter",
+            "linkedin_markplan",
+            "linkedin_focus",
+            "linkedin_worldpanel_data",
+            "linkedin_know",
+            "linkedin_peoplebiz",
+            "linkedin_marcimex",
+            "linkedin_nestle",
+            "linkedin_maresa",
+            "linkedin_bolivariano",
+            "linkedin_elece"
+          ]
+        },
+        {
+          "id": "comunicacion",
+          "habilidad": "Comunicación de hallazgos",
+          "cobertura": "Por contrastar",
+          "criterio": "Informes, reportes, presentaciones o comunicación explícita como competencia.",
+          "menciones": 18,
+          "muestra": 22,
+          "porcentaje": 81.81818181818181,
+          "fuentes": [
+            "linkedin_worldpanel",
+            "linkedin_omnicom",
+            "linkedin_ipsos",
+            "linkedin_cedatos",
+            "linkedin_bimbo",
+            "linkedin_bancogye",
+            "linkedin_epam",
+            "linkedin_devsu",
+            "linkedin_dichter",
+            "linkedin_markplan",
+            "linkedin_neurologic",
+            "linkedin_workana",
+            "linkedin_focus",
+            "linkedin_worldpanel_data",
+            "linkedin_know",
+            "linkedin_peoplebiz",
+            "linkedin_nestle",
+            "linkedin_elece"
+          ]
+        },
+        {
+          "id": "colaboracion",
+          "habilidad": "Colaboración con equipos",
+          "cobertura": "Por contrastar",
+          "criterio": "Trabajo colaborativo, coordinación interna o participación explícita con equipos.",
+          "menciones": 15,
+          "muestra": 22,
+          "porcentaje": 68.18181818181819,
+          "fuentes": [
+            "linkedin_worldpanel",
+            "linkedin_omnicom",
+            "linkedin_cedatos",
+            "linkedin_bimbo",
+            "linkedin_bancogye",
+            "linkedin_epam",
+            "linkedin_devsu",
+            "linkedin_markplan",
+            "linkedin_neurologic",
+            "linkedin_workana",
+            "linkedin_focus",
+            "linkedin_worldpanel_data",
+            "linkedin_marcimex",
+            "linkedin_nestle",
+            "linkedin_elece"
+          ]
+        },
+        {
+          "id": "visualizacion",
+          "habilidad": "Visualización y dashboards",
+          "cobertura": "Por contrastar",
+          "criterio": "Dashboards, herramientas BI o visualización explícita; PowerPoint solo no basta.",
+          "menciones": 10,
+          "muestra": 22,
+          "porcentaje": 45.45454545454545,
+          "fuentes": [
+            "linkedin_omnicom",
+            "linkedin_cedatos",
+            "linkedin_bimbo",
+            "linkedin_bancogye",
+            "linkedin_epam",
+            "linkedin_dichter",
+            "linkedin_neurologic",
+            "linkedin_worldpanel_data",
+            "linkedin_marcimex",
+            "linkedin_nestle"
+          ]
+        },
+        {
+          "id": "cualitativa",
+          "habilidad": "Investigación cualitativa",
+          "cobertura": "Por contrastar",
+          "criterio": "Métodos cualitativos, entrevistas, focus groups u observación de usuarios.",
+          "menciones": 10,
+          "muestra": 22,
+          "porcentaje": 45.45454545454545,
+          "fuentes": [
+            "linkedin_ipsos",
+            "linkedin_cedatos",
+            "linkedin_bimbo",
+            "linkedin_bancogye",
+            "linkedin_easysoft",
+            "linkedin_epam",
+            "linkedin_devsu",
+            "linkedin_know",
+            "linkedin_bolivariano",
+            "linkedin_elece"
+          ]
+        },
+        {
+          "id": "cuantitativa",
+          "habilidad": "Investigación cuantitativa",
+          "cobertura": "Por contrastar",
+          "criterio": "Métodos o análisis cuantitativos explícitos, no inferidos solo de Excel.",
+          "menciones": 6,
+          "muestra": 22,
+          "porcentaje": 27.272727272727273,
+          "fuentes": [
+            "linkedin_cedatos",
+            "linkedin_bancogye",
+            "linkedin_devsu",
+            "linkedin_know",
+            "linkedin_peoplebiz",
+            "linkedin_bolivariano"
+          ]
+        },
+        {
+          "id": "analitica_digital",
+          "habilidad": "Analítica digital y conversión",
+          "cobertura": "Por contrastar",
+          "criterio": "Analítica web, métricas digitales o embudos de conversión explícitos.",
+          "menciones": 6,
+          "muestra": 22,
+          "porcentaje": 27.272727272727273,
+          "fuentes": [
+            "linkedin_omnicom",
+            "linkedin_bimbo",
+            "linkedin_devsu",
+            "linkedin_neurologic",
+            "linkedin_workana",
+            "linkedin_bolivariano"
+          ]
+        },
+        {
+          "id": "estadistica",
+          "habilidad": "Análisis estadístico",
+          "cobertura": "Por contrastar",
+          "criterio": "Estadística, modelos estadísticos o herramientas estadísticas en tareas o requisitos.",
+          "menciones": 5,
+          "muestra": 22,
+          "porcentaje": 22.727272727272727,
+          "fuentes": [
+            "linkedin_focus",
+            "linkedin_worldpanel_data",
+            "linkedin_know",
+            "linkedin_peoplebiz",
+            "linkedin_marcimex"
+          ]
+        },
+        {
+          "id": "ux",
+          "habilidad": "Experiencia de usuario · UX/CX",
+          "cobertura": "Explícita",
+          "criterio": "Investigación o diseño de experiencia del usuario o cliente explícitos.",
+          "menciones": 5,
+          "muestra": 22,
+          "porcentaje": 22.727272727272727,
+          "fuentes": [
+            "linkedin_bancogye",
+            "linkedin_easysoft",
+            "linkedin_epam",
+            "linkedin_devsu",
+            "linkedin_bolivariano"
+          ]
+        },
+        {
+          "id": "usabilidad",
+          "habilidad": "Pruebas de usabilidad",
+          "cobertura": "Por contrastar",
+          "criterio": "Pruebas de uso o usabilidad explícitas; no se infieren de un título UX.",
+          "menciones": 5,
+          "muestra": 22,
+          "porcentaje": 22.727272727272727,
+          "fuentes": [
+            "linkedin_bancogye",
+            "linkedin_easysoft",
+            "linkedin_epam",
+            "linkedin_devsu",
+            "linkedin_bolivariano"
+          ]
+        },
+        {
+          "id": "prototipos",
+          "habilidad": "Prototipado y diseño de experiencias",
+          "cobertura": "Por contrastar",
+          "criterio": "Prototipos, wireframes, journeys, diseño de servicios o design thinking explícitos.",
+          "menciones": 5,
+          "muestra": 22,
+          "porcentaje": 22.727272727272727,
+          "fuentes": [
+            "linkedin_bancogye",
+            "linkedin_easysoft",
+            "linkedin_epam",
+            "linkedin_devsu",
+            "linkedin_bolivariano"
+          ]
+        },
+        {
+          "id": "critico",
+          "habilidad": "Pensamiento crítico",
+          "cobertura": "Explícita",
+          "criterio": "Mención explícita de pensamiento o análisis crítico; no basta pensamiento analítico.",
+          "menciones": 3,
+          "muestra": 22,
+          "porcentaje": 13.636363636363637,
+          "fuentes": [
+            "linkedin_cedatos",
+            "linkedin_devsu",
+            "linkedin_know"
+          ]
+        },
+        {
+          "id": "ia",
+          "habilidad": "IA aplicada",
+          "cobertura": "Explícita",
+          "criterio": "IA en tareas o requisitos. No se cuentan beneficios de capacitación ni la descripción general de la empresa.",
+          "menciones": 3,
+          "muestra": 22,
+          "porcentaje": 13.636363636363637,
+          "fuentes": [
+            "linkedin_easysoft",
+            "linkedin_neurologic",
+            "linkedin_workana"
+          ]
+        },
+        {
+          "id": "automatizacion",
+          "habilidad": "Automatización de procesos",
+          "cobertura": "Por contrastar",
+          "criterio": "Automatización explícita de marketing o procesos de datos. IA sola no implica automatización.",
+          "menciones": 3,
+          "muestra": 22,
+          "porcentaje": 13.636363636363637,
+          "fuentes": [
+            "linkedin_neurologic",
+            "linkedin_workana",
+            "linkedin_worldpanel_data"
+          ]
+        },
+        {
+          "id": "biometria",
+          "habilidad": "Medición biométrica",
+          "cobertura": "Explícita",
+          "criterio": "Uso o conocimiento explícito de eye tracking, GSR, EEG o mediciones biométricas. Laboratorio genérico no basta.",
+          "menciones": 0,
+          "muestra": 22,
+          "porcentaje": 0.0,
+          "fuentes": []
+        }
+      ],
+      "publicaciones": [
+        {
+          "id": "linkedin_worldpanel",
+          "empresa": "Worldpanel",
+          "cargo": "Analista Junior Marketing Insights",
+          "ciudad": "Guayaquil",
+          "pais": "Ecuador",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "colaboracion"
+          ],
+          "resumen": "Analítica de compra, reportes para clientes, colaboración interna y manejo de Excel y PowerPoint.",
+          "fuente": "linkedin_worldpanel",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "fecha_consulta": "2026-10-26",
+          "identificador_linkedin": "4362179833"
+        },
+        {
+          "id": "linkedin_omnicom",
+          "empresa": "Omnicom Media Ecuador",
+          "cargo": "Analista de Insights y Analytics",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "visualizacion",
+            "colaboracion",
+            "analitica_digital"
+          ],
+          "resumen": "Interpretación de datos del consumidor, presentación de hallazgos, colaboración y herramientas PBI, Tableau, Google Analytics y SPSS.",
+          "fuente": "linkedin_omnicom",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "fecha_consulta": "2026-10-26",
+          "identificador_linkedin": "4193367114"
+        },
+        {
+          "id": "linkedin_ipsos",
+          "empresa": "Ipsos",
+          "cargo": "Analista de Proyectos en Investigación de Mercados",
+          "ciudad": "Guayaquil",
+          "pais": "Ecuador",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "cualitativa"
+          ],
+          "resumen": "Estudios cualitativos, interpretación de información, informes y comunicación oral y escrita; uso de PowerPoint.",
+          "fuente": "linkedin_ipsos",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "fecha_consulta": "2026-10-26",
+          "identificador_linkedin": "4140123547"
+        },
+        {
+          "id": "linkedin_cedatos",
+          "empresa": "CEDATOS",
+          "cargo": "Analista de Investigación de Mercados y Opinión Pública",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "visualizacion",
+            "colaboracion",
+            "critico",
+            "cualitativa",
+            "cuantitativa"
+          ],
+          "resumen": "Análisis cuantitativo y cualitativo, informes, dashboards, proyectos en equipo y pensamiento crítico.",
+          "fuente": "linkedin_cedatos",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "fecha_consulta": "2026-10-26",
+          "identificador_linkedin": "4354604748"
+        },
+        {
+          "id": "linkedin_bimbo",
+          "empresa": "Grupo Bimbo",
+          "cargo": "Supervisor de Insights y Analytics (Marketing)",
+          "ciudad": "Guayaquil",
+          "pais": "Ecuador",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "visualizacion",
+            "colaboracion",
+            "cualitativa",
+            "analitica_digital"
+          ],
+          "resumen": "Interpretación de hábitos de consumo, presentación de análisis, colaboración y visualización con Tableau, Google Analytics y SPSS.",
+          "fuente": "linkedin_bimbo",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "fecha_consulta": "2026-10-26",
+          "identificador_linkedin": "4179690030"
+        },
+        {
+          "id": "linkedin_bancogye",
+          "identificador_linkedin": "4449200740",
+          "empresa": "Banco Guayaquil",
+          "cargo": "Researcher",
+          "ciudad": "Guayas",
+          "pais": "Ecuador",
+          "area": "UX y experiencia",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "visualizacion",
+            "colaboracion",
+            "cualitativa",
+            "cuantitativa",
+            "ux",
+            "usabilidad",
+            "prototipos"
+          ],
+          "resumen": "Investigación cualitativa y cuantitativa, informes, trabajo multidisciplinario, pruebas de uso y herramientas para explorar experiencias de usuarios.",
+          "fuente": "linkedin_bancogye",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_easysoft",
+          "identificador_linkedin": "4455385112",
+          "empresa": "Easysoft S.A.",
+          "cargo": "Especialista UX",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "UX y experiencia",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "consumidor",
+            "cualitativa",
+            "ux",
+            "usabilidad",
+            "prototipos",
+            "ia"
+          ],
+          "resumen": "Entrevistas y pruebas de uso, diseño de prototipos e incorporación de IA en diseño e investigación.",
+          "fuente": "linkedin_easysoft",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_epam",
+          "identificador_linkedin": "4459471404",
+          "empresa": "EPAM Systems",
+          "cargo": "Diseñador de Servicios / UX Researcher",
+          "ciudad": "Ecuador",
+          "pais": "Ecuador",
+          "area": "UX y experiencia",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "consumidor",
+            "comunicacion",
+            "visualizacion",
+            "colaboracion",
+            "cualitativa",
+            "ux",
+            "usabilidad",
+            "prototipos"
+          ],
+          "resumen": "Investigación de usuarios, pruebas de uso, prototipos, presentación de resultados y coordinación; dashboards como experiencia deseable.",
+          "fuente": "linkedin_epam",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_devsu",
+          "identificador_linkedin": "4479422618",
+          "empresa": "Devsu",
+          "cargo": "UX Designer - Sector Financiero / Bancario",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "UX y experiencia",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible en la consulta",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "colaboracion",
+            "critico",
+            "cualitativa",
+            "cuantitativa",
+            "ux",
+            "usabilidad",
+            "prototipos",
+            "analitica_digital"
+          ],
+          "resumen": "Investigación cualitativa y cuantitativa, pruebas de uso, métricas de experiencia, prototipado y pensamiento crítico. La IA se menciona como beneficio de capacitación, no como requisito: no se codifica.",
+          "fuente": "linkedin_devsu",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_dichter",
+          "identificador_linkedin": "4122422750",
+          "empresa": "Dichter & Neira Research",
+          "cargo": "Ejecutivo de investigación de mercados",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "visualizacion"
+          ],
+          "resumen": "Análisis histórico para decisiones, presentaciones a clientes y manejo de Excel y Power BI.",
+          "fuente": "linkedin_dichter",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_markplan",
+          "identificador_linkedin": "4403108566",
+          "empresa": "Markplan",
+          "cargo": "Research Analyst",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "colaboracion"
+          ],
+          "resumen": "Análisis de patrones digitales, reportes con hallazgos, apoyo a estudios y manejo de Excel.",
+          "fuente": "linkedin_markplan",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_neurologic",
+          "identificador_linkedin": "4444355736",
+          "empresa": "NeuroLogic International",
+          "cargo": "Coordinador de Marketing Digital, Growth y Comunicación Corporativa",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Marketing digital e IA",
+          "estado_clasificacion": "No confirmada",
+          "estado": "Disponibilidad no confirmada",
+          "habilidades": [
+            "datos",
+            "comunicacion",
+            "colaboracion",
+            "ia",
+            "analitica_digital",
+            "automatizacion",
+            "visualizacion"
+          ],
+          "resumen": "Campañas digitales, embudos y KPIs, IA y automatización, coordinación de equipos; Looker Studio y analítica como conocimientos valorados.",
+          "fuente": "linkedin_neurologic",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_workana",
+          "identificador_linkedin": "4294130829",
+          "empresa": "Workana",
+          "cargo": "Coordinador/a de Marketing Digital (Paid Media + IA)",
+          "ciudad": "Ecuador",
+          "pais": "Ecuador",
+          "area": "Marketing digital e IA",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "comunicacion",
+            "colaboracion",
+            "ia",
+            "analitica_digital",
+            "automatizacion"
+          ],
+          "resumen": "Gestión de pauta, IA para segmentación, análisis de desempeño, reportes y coordinación de equipos y automatizaciones de marketing.",
+          "fuente": "linkedin_workana",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_focus",
+          "identificador_linkedin": "4365588217",
+          "empresa": "FOCUS Research&Strategy",
+          "cargo": "Ejecutivo de cuentas",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "colaboracion",
+            "estadistica"
+          ],
+          "resumen": "Análisis para comprender consumidores, informes ejecutivos, SPSS o R y apoyo metodológico al equipo.",
+          "fuente": "linkedin_focus",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_worldpanel_data",
+          "identificador_linkedin": "3899965024",
+          "empresa": "Worldpanel",
+          "cargo": "Data Delivery Partner",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "colaboracion",
+            "estadistica",
+            "visualizacion",
+            "automatizacion"
+          ],
+          "resumen": "Calidad de bases de datos por mercado y categoría, análisis estadístico, Python y SQL, R y Power BI; mejora de procesos y trabajo en equipo.",
+          "fuente": "linkedin_worldpanel_data",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_know",
+          "identificador_linkedin": "4033838410",
+          "empresa": "Know Research Ec",
+          "cargo": "Ejecutivo Junior de Investigación de Mercados",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "critico",
+            "cualitativa",
+            "cuantitativa",
+            "estadistica"
+          ],
+          "resumen": "Estudios cualitativos y cuantitativos, cuestionarios, estadística, reportes y análisis crítico; herramientas SPSS, R o Python valoradas.",
+          "fuente": "linkedin_know",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_peoplebiz",
+          "identificador_linkedin": "4420442925",
+          "empresa": "People Biz",
+          "cargo": "Analista de estadísticas",
+          "ciudad": "Guayaquil",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "cuantitativa",
+            "estadistica"
+          ],
+          "resumen": "Investigación cuantitativa y paneles, Excel y análisis estadístico; reportes e infografías para comunicar resultados.",
+          "fuente": "linkedin_peoplebiz",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_marcimex",
+          "identificador_linkedin": "4428153831",
+          "empresa": "Marcimex",
+          "cargo": "Analista de datos comerciales (Promociones)",
+          "ciudad": "Cuenca",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "colaboracion",
+            "estadistica",
+            "visualizacion"
+          ],
+          "resumen": "Evaluación de promociones, investigación del mercado, modelos estadísticos, Power BI y trabajo en equipo.",
+          "fuente": "linkedin_marcimex",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_nestle",
+          "identificador_linkedin": "4434060286",
+          "empresa": "Nestlé",
+          "cargo": "Pasante de Marketplace Insights",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "visualizacion",
+            "colaboracion"
+          ],
+          "resumen": "Apoyo a estudios del consumidor y reclutamiento para laboratorio; reportería, dashboards, bases de datos y colaboración. Laboratorio del consumidor no se equipara a medición biométrica.",
+          "fuente": "linkedin_nestle",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_maresa",
+          "identificador_linkedin": "4377414303",
+          "empresa": "Corporación Maresa",
+          "cargo": "Analista de investigación de mercado",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor"
+          ],
+          "resumen": "Estudios del consumidor, interpretación de paneles Kantar y Nielsen, comparación competitiva y estudios de elasticidad de precios.",
+          "fuente": "linkedin_maresa",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_bolivariano",
+          "identificador_linkedin": "4436342815",
+          "empresa": "Banco Bolivariano",
+          "cargo": "Diseñador UX",
+          "ciudad": "Guayaquil",
+          "pais": "Ecuador",
+          "area": "UX y experiencia",
+          "estado_clasificacion": "Cerrada",
+          "estado": "Histórica · ya no acepta solicitudes",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "cualitativa",
+            "cuantitativa",
+            "ux",
+            "usabilidad",
+            "prototipos",
+            "analitica_digital"
+          ],
+          "resumen": "Investigación de usuarios, pruebas de uso, prototipos y analítica básica de interacción, mapas de calor y embudos.",
+          "fuente": "linkedin_bolivariano",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "linkedin_elece",
+          "identificador_linkedin": "4426524373",
+          "empresa": "ELECÉ",
+          "cargo": "Coordinador Investigación de Mercados Cualitativa",
+          "ciudad": "Guayaquil",
+          "pais": "Ecuador",
+          "area": "Investigación e insights",
+          "estado_clasificacion": "No confirmada",
+          "estado": "Disponibilidad no confirmada",
+          "habilidades": [
+            "datos",
+            "consumidor",
+            "comunicacion",
+            "colaboracion",
+            "cualitativa"
+          ],
+          "resumen": "Coordinación de estudios cualitativos, entrevistas y grupos focales, análisis, informes y comunicación con equipos. Contenido leído; una segunda consulta respondió 429, por lo que no se confirma vigencia.",
+          "fuente": "linkedin_elece",
+          "fecha_consulta": "2026-10-26"
+        }
+      ],
+      "origen": "linkedin",
+      "catalogo_habilidades": [
+        {
+          "id": "datos",
+          "habilidad": "Análisis e interpretación de datos",
+          "cobertura": "Explícita",
+          "criterio": "Análisis, interpretación de información o métricas en responsabilidades o requisitos."
+        },
+        {
+          "id": "consumidor",
+          "habilidad": "Investigación de mercados y usuarios",
+          "cobertura": "Explícita",
+          "criterio": "Estudios de mercado, consumidores, usuarios o bases de paneles de mercado."
+        },
+        {
+          "id": "comunicacion",
+          "habilidad": "Comunicación de hallazgos",
+          "cobertura": "Por contrastar",
+          "criterio": "Informes, reportes, presentaciones o comunicación explícita como competencia."
+        },
+        {
+          "id": "visualizacion",
+          "habilidad": "Visualización y dashboards",
+          "cobertura": "Por contrastar",
+          "criterio": "Dashboards, herramientas BI o visualización explícita; PowerPoint solo no basta."
+        },
+        {
+          "id": "colaboracion",
+          "habilidad": "Colaboración con equipos",
+          "cobertura": "Por contrastar",
+          "criterio": "Trabajo colaborativo, coordinación interna o participación explícita con equipos."
+        },
+        {
+          "id": "critico",
+          "habilidad": "Pensamiento crítico",
+          "cobertura": "Explícita",
+          "criterio": "Mención explícita de pensamiento o análisis crítico; no basta pensamiento analítico."
+        },
+        {
+          "id": "ia",
+          "habilidad": "IA aplicada",
+          "cobertura": "Explícita",
+          "criterio": "IA en tareas o requisitos. No se cuentan beneficios de capacitación ni la descripción general de la empresa."
+        },
+        {
+          "id": "biometria",
+          "habilidad": "Medición biométrica",
+          "cobertura": "Explícita",
+          "criterio": "Uso o conocimiento explícito de eye tracking, GSR, EEG o mediciones biométricas. Laboratorio genérico no basta."
+        },
+        {
+          "id": "cualitativa",
+          "habilidad": "Investigación cualitativa",
+          "cobertura": "Por contrastar",
+          "criterio": "Métodos cualitativos, entrevistas, focus groups u observación de usuarios."
+        },
+        {
+          "id": "cuantitativa",
+          "habilidad": "Investigación cuantitativa",
+          "cobertura": "Por contrastar",
+          "criterio": "Métodos o análisis cuantitativos explícitos, no inferidos solo de Excel."
+        },
+        {
+          "id": "estadistica",
+          "habilidad": "Análisis estadístico",
+          "cobertura": "Por contrastar",
+          "criterio": "Estadística, modelos estadísticos o herramientas estadísticas en tareas o requisitos."
+        },
+        {
+          "id": "ux",
+          "habilidad": "Experiencia de usuario · UX/CX",
+          "cobertura": "Explícita",
+          "criterio": "Investigación o diseño de experiencia del usuario o cliente explícitos."
+        },
+        {
+          "id": "usabilidad",
+          "habilidad": "Pruebas de usabilidad",
+          "cobertura": "Por contrastar",
+          "criterio": "Pruebas de uso o usabilidad explícitas; no se infieren de un título UX."
+        },
+        {
+          "id": "prototipos",
+          "habilidad": "Prototipado y diseño de experiencias",
+          "cobertura": "Por contrastar",
+          "criterio": "Prototipos, wireframes, journeys, diseño de servicios o design thinking explícitos."
+        },
+        {
+          "id": "analitica_digital",
+          "habilidad": "Analítica digital y conversión",
+          "cobertura": "Por contrastar",
+          "criterio": "Analítica web, métricas digitales o embudos de conversión explícitos."
+        },
+        {
+          "id": "automatizacion",
+          "habilidad": "Automatización de procesos",
+          "cobertura": "Por contrastar",
+          "criterio": "Automatización explícita de marketing o procesos de datos. IA sola no implica automatización."
+        }
+      ],
+      "busqueda": {
+        "fecha": "2026-10-26",
+        "criterio_inclusion": "Publicación pública con descripción consultable y ubicación Ecuador, relacionada con investigación de mercados/consumidores, UX o marketing digital con IA.",
+        "consultas": [
+          "site:ec.linkedin.com/jobs/view investigación de mercados datos",
+          "site:ec.linkedin.com/jobs/view UX investigación usuario",
+          "site:ec.linkedin.com/jobs/view consumer insights Ecuador",
+          "site:ec.linkedin.com/jobs/view marketing inteligencia artificial"
+        ],
+        "deduplicacion": "ID de LinkedIn y empresa+cargo+ciudad normalizados.",
+        "exclusiones": [
+          {
+            "programa": "Especialista en encuestas · Red de Datos",
+            "motivo": "Descripción mezcla investigación de mercados y levantamientos topográficos; pertinencia ambigua.",
+            "url": "https://ec.linkedin.com/jobs/view/especialista-en-encuestas-at-red-de-datos-4440479197"
+          },
+          {
+            "programa": "Banco Bolivariano · otras publicaciones de Diseñador UX",
+            "motivo": "Potenciales republicaciones de un mismo perfil; se conserva un registro verificado por empresa, cargo y ciudad."
+          }
+        ],
+        "alcance": "Ampliación exploratoria; los resultados de búsqueda no son un censo completo ni se interpretan los contadores globales de LinkedIn como número de registros revisados."
+      }
+    },
+    "competencia": {
+      "titulo": "Posicionamiento y contenidos de la oferta",
+      "fuentes": [
+        "hemisferios",
+        "ucsg",
+        "uees",
+        "hemisferios_ia",
+        "uisek",
+        "coursera",
+        "udemy",
+        "formaccion",
+        "europea",
+        "trasciende",
+        "puce_neuroia",
+        "sudamericano_pdf"
+      ],
+      "nota": "Comparación de contenidos declarados por programa. No identificado significa que el tema no aparece explícito en la descripción consultada; no demuestra que el oferente no lo enseñe. Las referencias históricas se distinguen y la oferta actual UDLA se trata como portafolio interno.",
+      "matriz": [],
+      "umbral_busquedas": 75,
+      "umbral_competidores": 3
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles del mercado",
+      "fuentes": [
+        "ucsg",
+        "uees",
+        "hemisferios_ia",
+        "formaccion",
+        "puce_neuroia"
+      ],
+      "nota": "Se grafican todas las ofertas institucionales con precio registrado: UCSG, UEES, Hemisferios, UISEK y PUCE. Se incluyen referencias históricas y cursos de diferente intensidad; revisar horas, público y fecha en la tabla. UISEK conserva una referencia histórica cuyo enlace no está disponible. La promoción de Hemisferios no se interpreta como tarifa vigente. Los programas sin precio aparecen en la tabla, sin asignarles cero. La distribución describe esta muestra heterogénea, no un arancel recomendado."
+    },
+    "sector": {
+      "titulo": "Evolución de ventas de personas naturales y sociedades",
+      "observaciones": [
+        {
+          "periodo": "2023",
+          "valor": 75.0,
+          "origen": "Derivado: 81,1 millones de 2024 menos el incremento publicado de 6,1 millones."
+        },
+        {
+          "periodo": "2024",
+          "valor": 81.1,
+          "origen": "Resultado publicado CECE–UEES."
+        }
+      ],
+      "fuentes": [
+        "sri_excel"
+      ],
+      "nota": "Excel SRI aportado: consulta_sri_1.xlsx, hoja Ventas SRI, CIIU exacto M732001 (M7320.01). Se suman casilleros 411 + 413 por tipo de contribuyente. Vista principal: enero–agosto de 2023 a 2026; años completos disponibles por separado. Celdas vacías no se sustituyen por cero.",
+      "ventas": [
+        {
+          "anio": 2023,
+          "meses": 8,
+          "ciiu": "M7320.01",
+          "naturales": 922772.55,
+          "sociedades": 16215302.12,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2024,
+          "meses": 8,
+          "ciiu": "M7320.01",
+          "naturales": 1318549.35,
+          "sociedades": 14659823.98,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2025,
+          "meses": 8,
+          "ciiu": "M7320.01",
+          "naturales": 1629570.12,
+          "sociedades": 14752967.81,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2026,
+          "meses": 8,
+          "ciiu": "M7320.01",
+          "naturales": 2962292.75,
+          "sociedades": 16043834.78,
+          "fuente": "sri_excel"
+        }
+      ],
+      "mensual": [
+        {
+          "anio": 2023,
+          "mes": 1,
+          "ciiu": "M7320.01",
+          "naturales_411": 45283.23,
+          "sociedades_411": 1071485.41,
+          "naturales_413": 4081.57,
+          "sociedades_413": 15461.06
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "ciiu": "M7320.01",
+          "naturales_411": 34920.34,
+          "sociedades_411": 1407203.07,
+          "naturales_413": 5544.14,
+          "sociedades_413": 4419.45
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "ciiu": "M7320.01",
+          "naturales_411": 40826.13,
+          "sociedades_411": 1851633.36,
+          "naturales_413": 4169.23,
+          "sociedades_413": 9455.62
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "ciiu": "M7320.01",
+          "naturales_411": 36764.01,
+          "sociedades_411": 2051617.76,
+          "naturales_413": 6707.43,
+          "sociedades_413": 11286.51
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "ciiu": "M7320.01",
+          "naturales_411": 55870.19,
+          "sociedades_411": 1953340.23,
+          "naturales_413": 5243.15,
+          "sociedades_413": 4184.41
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "ciiu": "M7320.01",
+          "naturales_411": 318020.32,
+          "sociedades_411": 3074179.05,
+          "naturales_413": 208048.87,
+          "sociedades_413": 76586.72
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "ciiu": "M7320.01",
+          "naturales_411": 69882.01,
+          "sociedades_411": 2428442.58,
+          "naturales_413": 8600.14,
+          "sociedades_413": 4420.01
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "ciiu": "M7320.01",
+          "naturales_411": 63868.44,
+          "sociedades_411": 2248443.25,
+          "naturales_413": 14943.35,
+          "sociedades_413": 3143.63
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "ciiu": "M7320.01",
+          "naturales_411": 214616.27,
+          "sociedades_411": 1842298.99,
+          "naturales_413": 10806.37,
+          "sociedades_413": 6562.37
+        },
+        {
+          "anio": 2023,
+          "mes": 10,
+          "ciiu": "M7320.01",
+          "naturales_411": 144209.43,
+          "sociedades_411": 2488708.03,
+          "naturales_413": 15472.28,
+          "sociedades_413": 12263.55
+        },
+        {
+          "anio": 2023,
+          "mes": 11,
+          "ciiu": "M7320.01",
+          "naturales_411": 46683.58,
+          "sociedades_411": 2093762.46,
+          "naturales_413": 18115.43,
+          "sociedades_413": 25826.75
+        },
+        {
+          "anio": 2023,
+          "mes": 12,
+          "ciiu": "M7320.01",
+          "naturales_411": 846023.6,
+          "sociedades_411": 3818685.69,
+          "naturales_413": 328896.6,
+          "sociedades_413": 23433.89
+        },
+        {
+          "anio": 2024,
+          "mes": 1,
+          "ciiu": "M7320.01",
+          "naturales_411": 98951.26,
+          "sociedades_411": 1098106.47,
+          "naturales_413": 86128.82,
+          "sociedades_413": 25257.75
+        },
+        {
+          "anio": 2024,
+          "mes": 2,
+          "ciiu": "M7320.01",
+          "naturales_411": 51723.85,
+          "sociedades_411": 1296878.96,
+          "naturales_413": 25755.73,
+          "sociedades_413": 3255.82
+        },
+        {
+          "anio": 2024,
+          "mes": 3,
+          "ciiu": "M7320.01",
+          "naturales_411": 110319.79,
+          "sociedades_411": 2429493.35,
+          "naturales_413": 15598.98,
+          "sociedades_413": 11836.31
+        },
+        {
+          "anio": 2024,
+          "mes": 4,
+          "ciiu": "M7320.01",
+          "naturales_411": 82928.75,
+          "sociedades_411": 1966600.09,
+          "naturales_413": 31209.8,
+          "sociedades_413": 799.41
+        },
+        {
+          "anio": 2024,
+          "mes": 5,
+          "ciiu": "M7320.01",
+          "naturales_411": 128337.53,
+          "sociedades_411": 1834991.56,
+          "naturales_413": 9187.3,
+          "sociedades_413": 4517.19
+        },
+        {
+          "anio": 2024,
+          "mes": 6,
+          "ciiu": "M7320.01",
+          "naturales_411": 373485.87,
+          "sociedades_411": 1821896.15,
+          "naturales_413": 131938.21,
+          "sociedades_413": 19117.49
+        },
+        {
+          "anio": 2024,
+          "mes": 7,
+          "ciiu": "M7320.01",
+          "naturales_411": 90067.06,
+          "sociedades_411": 1965911.49,
+          "naturales_413": 13088.01,
+          "sociedades_413": 47579.02
+        },
+        {
+          "anio": 2024,
+          "mes": 8,
+          "ciiu": "M7320.01",
+          "naturales_411": 54893.87,
+          "sociedades_411": 2127285.32,
+          "naturales_413": 14934.52,
+          "sociedades_413": 6297.6
+        },
+        {
+          "anio": 2024,
+          "mes": 9,
+          "ciiu": "M7320.01",
+          "naturales_411": 70280.87,
+          "sociedades_411": 1785168.78,
+          "naturales_413": 8868.21,
+          "sociedades_413": 73653.29
+        },
+        {
+          "anio": 2024,
+          "mes": 10,
+          "ciiu": "M7320.01",
+          "naturales_411": 88001.43,
+          "sociedades_411": 2078548.96,
+          "naturales_413": 19028.36,
+          "sociedades_413": 78264.44
+        },
+        {
+          "anio": 2024,
+          "mes": 11,
+          "ciiu": "M7320.01",
+          "naturales_411": 134594.66,
+          "sociedades_411": 1932572.37,
+          "naturales_413": 26245.58,
+          "sociedades_413": 100664.41
+        },
+        {
+          "anio": 2024,
+          "mes": 12,
+          "ciiu": "M7320.01",
+          "naturales_411": 671257.98,
+          "sociedades_411": 2954100.3,
+          "naturales_413": 93469.57,
+          "sociedades_413": 64194.01
+        },
+        {
+          "anio": 2025,
+          "mes": 1,
+          "ciiu": "M7320.01",
+          "naturales_411": 107881.73,
+          "sociedades_411": 1290297.8,
+          "naturales_413": 32101.49,
+          "sociedades_413": 75860.06
+        },
+        {
+          "anio": 2025,
+          "mes": 2,
+          "ciiu": "M7320.01",
+          "naturales_411": 151802.4,
+          "sociedades_411": 1835453.6,
+          "naturales_413": 25320.31,
+          "sociedades_413": 12359.09
+        },
+        {
+          "anio": 2025,
+          "mes": 3,
+          "ciiu": "M7320.01",
+          "naturales_411": 95931.9,
+          "sociedades_411": 1500671.35,
+          "naturales_413": 22446.73,
+          "sociedades_413": 7046.59
+        },
+        {
+          "anio": 2025,
+          "mes": 4,
+          "ciiu": "M7320.01",
+          "naturales_411": 133926.85,
+          "sociedades_411": 2466475.55,
+          "naturales_413": 27962.54,
+          "sociedades_413": 4465.78
+        },
+        {
+          "anio": 2025,
+          "mes": 5,
+          "ciiu": "M7320.01",
+          "naturales_411": 144246.09,
+          "sociedades_411": 1768450.07,
+          "naturales_413": 24588.78,
+          "sociedades_413": 4291.5
+        },
+        {
+          "anio": 2025,
+          "mes": 6,
+          "ciiu": "M7320.01",
+          "naturales_411": 334912.27,
+          "sociedades_411": 2086315.74,
+          "naturales_413": 83669.78,
+          "sociedades_413": 4900.46
+        },
+        {
+          "anio": 2025,
+          "mes": 7,
+          "ciiu": "M7320.01",
+          "naturales_411": 251550.93,
+          "sociedades_411": 1869386.25,
+          "naturales_413": 23587.18,
+          "sociedades_413": 7208.25
+        },
+        {
+          "anio": 2025,
+          "mes": 8,
+          "ciiu": "M7320.01",
+          "naturales_411": 144919.83,
+          "sociedades_411": 1818574.04,
+          "naturales_413": 24721.31,
+          "sociedades_413": 1211.68
+        },
+        {
+          "anio": 2025,
+          "mes": 9,
+          "ciiu": "M7320.01",
+          "naturales_411": 291133.72,
+          "sociedades_411": 1796423.03,
+          "naturales_413": 41429.85,
+          "sociedades_413": 1163.8
+        },
+        {
+          "anio": 2025,
+          "mes": 10,
+          "ciiu": "M7320.01",
+          "naturales_411": 164148.56,
+          "sociedades_411": 1723541.01,
+          "naturales_413": 37216.56,
+          "sociedades_413": 66188.86
+        },
+        {
+          "anio": 2025,
+          "mes": 11,
+          "ciiu": "M7320.01",
+          "naturales_411": 217779.3,
+          "sociedades_411": 1814356.75,
+          "naturales_413": 23971.91,
+          "sociedades_413": 908.6
+        },
+        {
+          "anio": 2025,
+          "mes": 12,
+          "ciiu": "M7320.01",
+          "naturales_411": 493830.97,
+          "sociedades_411": 3698094.26,
+          "naturales_413": 55363.96,
+          "sociedades_413": 16250.82
+        },
+        {
+          "anio": 2026,
+          "mes": 1,
+          "ciiu": "M7320.01",
+          "naturales_411": 194215.11,
+          "sociedades_411": 1372864.23,
+          "naturales_413": 40946.08,
+          "sociedades_413": 7681.74
+        },
+        {
+          "anio": 2026,
+          "mes": 2,
+          "ciiu": "M7320.01",
+          "naturales_411": 90856.47,
+          "sociedades_411": 1401713.48,
+          "naturales_413": 31786.9,
+          "sociedades_413": 7137.53
+        },
+        {
+          "anio": 2026,
+          "mes": 3,
+          "ciiu": "M7320.01",
+          "naturales_411": 127210.01,
+          "sociedades_411": 2115997.68,
+          "naturales_413": 15916.0,
+          "sociedades_413": 4378.18
+        },
+        {
+          "anio": 2026,
+          "mes": 4,
+          "ciiu": "M7320.01",
+          "naturales_411": 142495.35,
+          "sociedades_411": 2189581.19,
+          "naturales_413": 17828.44,
+          "sociedades_413": 19049.41
+        },
+        {
+          "anio": 2026,
+          "mes": 5,
+          "ciiu": "M7320.01",
+          "naturales_411": 108467.63,
+          "sociedades_411": 2465068.49,
+          "naturales_413": 30099.76,
+          "sociedades_413": 13706.09
+        },
+        {
+          "anio": 2026,
+          "mes": 6,
+          "ciiu": "M7320.01",
+          "naturales_411": 192573.46,
+          "sociedades_411": 2224566.54,
+          "naturales_413": 1610866.56,
+          "sociedades_413": 36871.89
+        },
+        {
+          "anio": 2026,
+          "mes": 7,
+          "ciiu": "M7320.01",
+          "naturales_411": 163443.5,
+          "sociedades_411": 2532411.24,
+          "naturales_413": 14065.44,
+          "sociedades_413": 7972.48
+        },
+        {
+          "anio": 2026,
+          "mes": 8,
+          "ciiu": "M7320.01",
+          "naturales_411": 150597.17,
+          "sociedades_411": 1644622.61,
+          "naturales_413": 30924.87,
+          "sociedades_413": 212.0
+        }
+      ],
+      "ventas_anuales": [
+        {
+          "anio": 2023,
+          "meses": 12,
+          "ciiu": "M7320.01",
+          "naturales": 2547596.11,
+          "sociedades": 26526843.85,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2024,
+          "meses": 12,
+          "ciiu": "M7320.01",
+          "naturales": 2430296.01,
+          "sociedades": 23726990.54,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2025,
+          "meses": 12,
+          "ciiu": "M7320.01",
+          "naturales": 2954444.95,
+          "sociedades": 23869894.94,
+          "fuente": "sri_excel"
+        }
+      ],
+      "mes_corte": 8,
+      "archivo_mensual": "edcos_fuentes/ventas_neuromarketing_mensuales.csv",
+      "archivo_original": "../data/consulta_sri_1.xlsx",
+      "sha256": "21fcff47807504dc4d25703195e0648a9e85e255023a844ae45ca676abd9b493"
+    }
+  },
+  "comparativa_contenidos": {
+    "fecha": "2026-10-26",
+    "temas": [
+      {
+        "id": "neuromarketing",
+        "etiqueta": "Neuromarketing",
+        "criterio": "Neuromarketing o neurociencia aplicada al marketing explícitos en nombre, objetivos o temario."
+      },
+      {
+        "id": "consumidor",
+        "etiqueta": "Consumidor",
+        "criterio": "Comportamiento, decisiones o investigación del consumidor explícitos."
+      },
+      {
+        "id": "neuro_ux",
+        "etiqueta": "Neuro-UX",
+        "criterio": "Aplicación explícita de neurociencia a auditoría de interfaces o Neuro-UX; experiencia del cliente genérica no basta."
+      },
+      {
+        "id": "ia",
+        "etiqueta": "IA aplicada",
+        "criterio": "IA como contenido u objetivo del curso; se excluyen docentes, publicidad genérica y evaluaciones automáticas de la plataforma."
+      },
+      {
+        "id": "biometria",
+        "etiqueta": "Herramientas<br>biométricas",
+        "criterio": "Métodos concretos: eye tracking, EEG, GSR, facial coding o fMRI; no implica práctica presencial."
+      },
+      {
+        "id": "laboratorio",
+        "etiqueta": "Práctica en<br>laboratorio",
+        "criterio": "Actividad de laboratorio explícita para participantes; presencialidad o explicación de instrumentos no bastan."
+      }
+    ],
+    "propuesta": {
+      "revisado": true,
+      "etiqueta": "UDLA · Programa propuesto",
+      "contenidos": {
+        "neuromarketing": true,
+        "consumidor": true,
+        "neuro_ux": true,
+        "ia": true,
+        "biometria": true,
+        "laboratorio": true
+      },
+      "detalle": "Brief: neuromarketing digital, consumidor, Neuro-UX, IA, métodos biométricos y jornada de laboratorio."
+    },
+    "ofertas": {
+      "ucsg": {
+        "revisado": true,
+        "etiqueta": "UCSG",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "El temario declara neuromarketing, sesgos, consumidor digital y analítica. No identifica Neuro-UX, IA ni métodos biométricos concretos.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "ucsg"
+      },
+      "hemisferios": {
+        "revisado": true,
+        "etiqueta": "Hemisferios · Neuromarketing",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "Objetivos y unidades sobre neuromarketing y comportamiento del consumidor. No se identifican los otros ejes específicos.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "hemisferios"
+      },
+      "uees": {
+        "revisado": true,
+        "etiqueta": "UEES",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "Declara neurociencia del consumo y herramientas de neuromarketing. La IA mencionada en biografía docente no se cuenta como contenido del curso; experiencia del cliente no se equipara a Neuro-UX.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "uees"
+      },
+      "hemisferios_ia": {
+        "revisado": true,
+        "etiqueta": "Hemisferios · Neuromarketing e IA",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": true,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "IA está declarada en el nombre; módulos sobre consumidor, investigación y experiencia del cliente. No se identifica Neuro-UX o laboratorio biométrico.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "hemisferios_ia"
+      },
+      "uisek": {
+        "revisado": false,
+        "etiqueta": "UISEK",
+        "contenidos": {
+          "neuromarketing": null,
+          "consumidor": null,
+          "neuro_ux": null,
+          "ia": null,
+          "biometria": null,
+          "laboratorio": null
+        },
+        "detalle": "Contenido no verificable en esta revisión; el enlace no estaba disponible. No se interpreta como ausencia de temas.",
+        "fecha": "2026-10-26",
+        "base": "Enlace no disponible",
+        "fuente": "uisek"
+      },
+      "coursera": {
+        "revisado": true,
+        "etiqueta": "Coursera · Copenhagen",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": true,
+          "laboratorio": false
+        },
+        "detalle": "Programa introductorio de neurociencia del consumidor con contenidos sobre EEG y fMRI. Explicar estas técnicas no demuestra práctica del participante en laboratorio. AI Graded no se cuenta como enseñanza de IA.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "coursera"
+      },
+      "udemy": {
+        "revisado": true,
+        "etiqueta": "Udemy",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": true,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "Aprendizajes sobre decisiones del consumidor y uso de ChatGPT para ideas de proyectos. No identifica técnicas biométricas concretas ni práctica de laboratorio.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "udemy"
+      },
+      "udla": {
+        "revisado": true,
+        "etiqueta": "UDLA · Oferta actual",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": true,
+          "laboratorio": false
+        },
+        "detalle": "La oferta propia declara métodos de neuromarketing y uso de eye tracking, facial coding y fMRI. No identifica práctica en laboratorio ni Neuro-UX; hay solapamiento en métodos y consumidor.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "udla"
+      },
+      "formaccion": {
+        "revisado": true,
+        "etiqueta": "Formacción · referencia previa",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "Descripción histórica consultada: neuromarketing y consumidor. El enlace ahora redirige al portal; la disponibilidad del curso original debe reconfirmarse.",
+        "fecha": "2026-10-26",
+        "base": "Descripción histórica",
+        "fuente": "formaccion"
+      },
+      "europea": {
+        "revisado": true,
+        "etiqueta": "Universidad Europea",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "Plan con neuromarketing, cerebro, cognición e investigación cualitativa. La referencia genérica a neuroimagen no se traduce a una técnica biométrica concreta ni práctica de laboratorio.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "europea"
+      },
+      "trasciende": {
+        "revisado": true,
+        "etiqueta": "Trasciende Academy",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": false,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "Módulos sobre neurociencia, persuasión y comportamiento humano. No se identifican los otros ejes; se mantiene la advertencia sobre calendario contradictorio.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "trasciende"
+      },
+      "puce_neuroia": {
+        "revisado": true,
+        "etiqueta": "PUCE · NeuroIA",
+        "contenidos": {
+          "neuromarketing": true,
+          "consumidor": true,
+          "neuro_ux": false,
+          "ia": true,
+          "biometria": false,
+          "laboratorio": false
+        },
+        "detalle": "Declara neuromarketing, IA generativa y comprensión de audiencias. Curso presencial para público específico, sin laboratorio biométrico explícito.",
+        "fecha": "2026-10-26",
+        "base": "Página del oferente",
+        "fuente": "puce_neuroia"
+      },
+      "sudamericano_pdf": {
+        "revisado": false,
+        "etiqueta": "Sudamericano · referencia histórica",
+        "contenidos": {
+          "neuromarketing": null,
+          "consumidor": null,
+          "neuro_ux": null,
+          "ia": null,
+          "biometria": null,
+          "laboratorio": null
+        },
+        "detalle": "Contenido no verificable en esta revisión; el enlace no estaba disponible. No se interpreta como ausencia de temas.",
+        "fecha": "2026-10-26",
+        "base": "Enlace no disponible",
+        "fuente": "sudamericano_pdf"
+      }
+    }
+  },
+  "institucion_id": "udla_ec",
+  "fecha_recalculo": "2026-10-28"
+}

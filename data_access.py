@@ -6,7 +6,7 @@ import pyodbc
 
 from analytics import SNAPSHOTS, institution_key
 
-EMPLOYER_SCHEMA_VERSION = 2
+EMPLOYER_SCHEMA_VERSION = 3
 
 ACADEMIC_LEVELS = ("Tecnológico", "Tercer nivel", "Cuarto nivel, especialidades y doctorados")
 
@@ -90,6 +90,23 @@ def careers(config):
 
 
 def load(config, selected, progress=None, levels=None):
+    """Reinicia la lectura completa una vez si se pierde la conexión.
+
+    Cada intento usa su propia conexión y tablas temporales. Nunca devuelve
+    cortes incompletos ni reutiliza una conexión rota.
+    """
+    for attempt in range(2):
+        try:
+            return _load_once(config,selected,progress=progress,levels=levels)
+        except pyodbc.Error as exc:
+            state=str(exc.args[0]) if exc.args else ''
+            if state not in ('08S01','08001','08003','08007') or attempt:
+                raise
+            if progress:
+                progress('Se interrumpió la conexión con SQL Server. Reintentando la consulta con una conexión nueva…')
+
+
+def _load_once(config, selected, progress=None, levels=None):
     if not selected:
         raise ValueError("Selecciona al menos una carrera.")
     progress = progress or (lambda message: None)
@@ -150,13 +167,23 @@ def load(config, selected, progress=None, levels=None):
         return graduates, employment, sri
 
 
+def insertar_personas(cursor,table,people):
+    """Inserta hasta 500 IDs por viaje, sin fast_executemany sobre tablas temporales."""
+    if table not in ('#industry_people','#geo_people'):
+        raise ValueError('Tabla temporal no permitida.')
+    ids=sorted(set(str(p) for p in people))
+    for offset in range(0,len(ids),500):
+        batch=ids[offset:offset+500]
+        cursor.execute(f"INSERT INTO {table} (person) VALUES "+','.join('(?)' for _ in batch),*batch)
+
+
 def load_employers(config, people):
     """Relaciones persona-empleador del último corte SIM."""
+    if not people:return pd.DataFrame(columns=['person','RUCEMP','NOMEMP'])
     with closing(connect(config)) as connection:
         cursor = connection.cursor()
         cursor.execute("CREATE TABLE #industry_people (person varchar(10) COLLATE DATABASE_DEFAULT PRIMARY KEY)")
-        if people:
-            cursor.executemany("INSERT INTO #industry_people VALUES (?)", [(p,) for p in people])
+        insertar_personas(cursor,'#industry_people',people)
         cursor.execute("""SELECT DISTINCT RIGHT('0000000000' + LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI))), 10) AS person,
             LTRIM(RTRIM(CONVERT(varchar(100), e.RUCEMP))) AS RUCEMP,
             LTRIM(RTRIM(CONVERT(nvarchar(500), e.NOMEMP))) AS NOMEMP
@@ -173,8 +200,7 @@ def load_atlas(config, people):
     with closing(connect(config)) as connection:
         cursor = connection.cursor()
         cursor.execute("CREATE TABLE #geo_people (person varchar(10) COLLATE DATABASE_DEFAULT PRIMARY KEY)")
-        if people:
-            cursor.executemany("INSERT INTO #geo_people (person) VALUES (?)", [(p,) for p in people])
+        insertar_personas(cursor,'#geo_people',people)
         cursor.execute("""SELECT DISTINCT CONVERT(varchar(100), a.cedula) AS cedula,
             a.provincia, a.canton, a.parroquia
             FROM [BDD_IDM].[modelo].[03_ATLAS_Universo] a

@@ -1,4 +1,7 @@
 __pycache__/
+.pytest_cache/
+*.pyc
+*.tmp
 .streamlit/secrets.toml
 .venv/
 *.log
@@ -6,3 +9,9 @@ __pycache__/
 .browser-preview-layout/
 /dashboard-*.png
 /educacion_*_16x9.png
+
+# Credenciales y archivos temporales locales
+**/.streamlit/secrets.toml
+**/.vendor/
+**/.preview-chrome/
+viabilidad/edcos_fuentes/google_*.html
