@@ -233,7 +233,6 @@ def render_dashboard(reference,tab_key):
         st.caption('Las búsquedas aportan puntos solo en demanda. Su uso en el cuadrante es informativo. Profesionales sí entra al cálculo; vacantes y palabras clave no. Los pesos siguen siendo de criterio y requieren validación con casos de desempeño diverso.')
         st.download_button('Descargar datos del tablero · JSON',json.dumps(data,ensure_ascii=False,indent=2),'datos_programas.json','application/json',key=f'json_{tab_key}')
 
-    st.markdown(f'<div class="footer-note">MODELO COMPARATIVO EXPLORATORIO &nbsp; · &nbsp; Referencia: {escape(reference_name)} &nbsp; · &nbsp; Puntaje máximo: 100<br>El índice resume señales relativas de mercado; no representa probabilidad de éxito ni sustituye una evaluación financiera. Modalidad y capacidad de implementación pendientes para la siguiente fase.</div>',unsafe_allow_html=True)
 
 apartado=globals().get('APARTADO_INTEGRADO') or st.radio('Apartado',['Carreras','Educación continua'],horizontal=True,key='apartado',label_visibility='collapsed')
 if apartado=='Educación continua':

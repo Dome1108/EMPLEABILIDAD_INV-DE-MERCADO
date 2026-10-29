@@ -29,7 +29,7 @@ def render_perfil(context,key):
         delta=None if previous is None or pd.isna(rate) or pd.isna(previous) else f'{rate-previous:+.1f} pp'
         with col:
             st.metric(str(row['year']),f'{rate:.1f}%' if pd.notna(rate) else 'Sin dato',delta=delta)
-            st.caption('Tasa de empleo visible · '+str(row.get('cutoff','')))
+            st.caption('Tasa de empleo visible')
         previous=rate
     latest=frame.iloc[-1]
     left,right=st.columns([1,1.15])
@@ -63,7 +63,6 @@ def render_perfil(context,key):
                 st.metric('Empleo visible',f"{t['rate']:.1f}%" if n else 'Sin dato')
                 if n:
                     st.caption(' · '.join(f'{label}: {100*t[field]/n:.1f}%' for label,field in [('Dependientes','dependent'),('Independientes','independent'),('Sin información','unknown')]))
-                st.caption('Por domicilio · corte '+territory['corte'])
         else:st.caption('Consulta la distribución territorial en Empleabilidad y mercado para incorporar una zona.')
     sector=context.get('sector',{})
     macro=pd.DataFrame(sector.get('macroindustrias',[]))
@@ -83,4 +82,3 @@ def render_perfil(context,key):
         st.dataframe(companies,hide_index=True,width='stretch',column_config={
             'Participación (%)':st.column_config.NumberColumn(format='%.1f%%')})
         st.caption('Graduados únicos por empresa / graduados con empleador identificado. Una persona puede tener varios empleadores. Corte: '+sector['corte_laboral'])
-    st.caption('Fuente: registros laborales SIM y SRI del observatorio; salarios de dependientes. No se atribuyen estos datos al INEC.')

@@ -114,26 +114,47 @@ def render_evidencia_compartida(carrera,tab_key):
         from perfil_laboral_viabilidad import render_perfil
         render_perfil(linked,tab_key)
         latest=frame.sort_values('year').iloc[-1]
-        st.caption('Corte laboral: '+str(latest['cutoff'])+'. Empleo visible no implica afinidad ocupacional con la carrera.')
         sector=linked.get('sector')
         if sector and sector['ventas']:
             values=pd.DataFrame(sector['ventas'])
             values['Fecha']=pd.to_datetime(dict(year=values['Año'],month=values['Mes'],day=1))
             values=values.sort_values('Fecha')
+            mode=st.radio('Vista de ventas',['Evolución mensual','Acumulado anual comparable'],horizontal=True,key='vista_ventas_'+tab_key)
+            chart_values=values
+            axis='Fecha'
+            if mode=='Acumulado anual comparable':
+                cutoff=int(values.groupby('Año')['Mes'].max().min())
+                month=st.slider('Acumular hasta el mes',1,cutoff,cutoff,key='mes_ventas_'+tab_key) if cutoff>1 else 1
+                chart_values=acumulado_comparable(values,month)
+                axis='Año'
+                st.caption(f'Acumulado enero–mes {month:02d}, con los mismos meses en cada año.')
             fig=go.Figure()
             from palettes import PALETTES, theme_figure
             palette=st.session_state.get('color_palette','Azul')
             primary,light,_=PALETTES[palette]
             for col,color in [('Personas naturales',primary),('Sociedades',light)]:
-                fig.add_trace(go.Scatter(x=values['Fecha'],y=values[col],name=col,mode='lines+markers',line=dict(color=color,width=2.5),connectgaps=False))
+                fig.add_trace(go.Scatter(x=chart_values[axis],y=chart_values[col],name=col,mode='lines+markers',line=dict(color=color,width=2.5),connectgaps=False))
             fig.update_layout(height=350,paper_bgcolor='white',plot_bgcolor='white',margin=dict(l=85,r=25,t=15,b=65),font=dict(color='#60758b'),legend=dict(orientation='h',y=-.25))
-            fig.update_xaxes(title='Mes',gridcolor='#edf2f7')
+            fig.update_xaxes(title='Mes' if axis=='Fecha' else 'Año',gridcolor='#edf2f7')
+            if axis=='Año':fig.update_xaxes(type='category')
             fig.update_yaxes(title=dict(text='Ventas sectoriales · USD',standoff=20),automargin=True,gridcolor='#edf2f7')
             st.plotly_chart(theme_figure(fig,palette),width='stretch',theme=None,key='sector_compartido_'+tab_key)
-            st.caption('Ventas del conjunto de los CIIU seleccionados, no únicamente de los empleadores de los graduados. Último mes: '+values['Fecha'].max().strftime('%Y-%m')+'.')
             with st.expander('Sectores y cobertura del cruce'):
                 st.dataframe(pd.DataFrame(sector['ciiu']),hide_index=True,width='stretch')
                 st.caption(f"{sector['graduados_con_ciiu']:,} graduados con CIIU de {sector['graduados_con_empleador']:,} con empleador identificado.")
         else:
             st.info('Abre Industrias y ventas SRI para incorporar también el cruce sectorial de esta selección.')
         st.caption('Esta evidencia complementa el diagnóstico. El índice conserva los datos y reglas guardados; no convierte automáticamente inserción laboral en alineación ni crecimiento de ventas en puntaje.')
+
+
+def acumulado_comparable(values,month):
+    """Un mes o importe ausente deja el acumulado sin dato, nunca en cero."""
+    rows=[]
+    for year,data in values.groupby('Año'):
+        selected=data[data.Mes.le(month)]
+        complete=len(selected)==month and set(selected.Mes)==set(range(1,month+1))
+        row={'Año':str(year)}
+        for field in ('Personas naturales','Sociedades'):
+            row[field]=selected[field].sum() if complete and selected[field].notna().all() else None
+        rows.append(row)
+    return pd.DataFrame(rows)
