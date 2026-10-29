@@ -90,6 +90,23 @@ def careers(config):
 
 
 def load(config, selected, progress=None, levels=None):
+    """Reinicia la lectura completa una vez si se pierde la conexión.
+
+    Cada intento usa su propia conexión y tablas temporales. Nunca devuelve
+    cortes incompletos ni reutiliza una conexión rota.
+    """
+    for attempt in range(2):
+        try:
+            return _load_once(config,selected,progress=progress,levels=levels)
+        except pyodbc.Error as exc:
+            state=str(exc.args[0]) if exc.args else ''
+            if state not in ('08S01','08001','08003','08007') or attempt:
+                raise
+            if progress:
+                progress('Se interrumpió la conexión con SQL Server. Reintentando la consulta con una conexión nueva…')
+
+
+def _load_once(config, selected, progress=None, levels=None):
     if not selected:
         raise ValueError("Selecciona al menos una carrera.")
     progress = progress or (lambda message: None)

@@ -1,5 +1,4 @@
 """Navegación y evidencia agregada compartida entre los módulos del observatorio."""
-from copy import deepcopy
 from datetime import datetime
 from pathlib import Path
 import runpy
@@ -90,30 +89,27 @@ def compartir_perfil_sector(macro,jobs,year,month):
 def render_evidencia_compartida(carrera,tab_key):
     with st.container(border=True):
         st.markdown('### Empleabilidad y sectores vinculados')
-        from consulta_perfil_carrera import render_consulta
-        render_consulta(carrera,tab_key)
         current=st.session_state.get('mercado_compartido')
-        linked=st.session_state.get('evidencia_por_carrera',{}).get(carrera)
+        # El perfil sigue la selección vigente de Empleabilidad, sin copiarla
+        # bajo nombres de otras carreras del modelo comparativo.
+        linked=current
         if current:
             selection=' · '.join(current['carreras'])
             st.caption('Selección consultada en Empleabilidad: '+selection+' · '+current['nivel'])
-            if st.button('Vincular esta selección a '+carrera,key='vincular_mercado_'+tab_key):
-                links=deepcopy(st.session_state.get('evidencia_por_carrera',{}))
-                links[carrera]=deepcopy(current)
-                st.session_state['evidencia_por_carrera']=links
-                linked=links[carrera]
+        else:
+            from consulta_perfil_carrera import render_consulta
+            render_consulta(carrera,tab_key)
+            linked=st.session_state.get('evidencia_por_carrera',{}).get(carrera)
         if not linked:
-            st.caption('Abre «Consultar datos de esta carrera» para cargar el perfil laboral aquí.')
+            st.caption('Selecciona una carrera en Empleabilidad y mercado para mostrar su perfil automáticamente, o consulta los datos aquí.')
             return
         if linked['demostracion']:
             st.warning('Evidencia de demostración: datos sintéticos, fuera del cálculo de viabilidad.')
         st.caption('Carreras institucionales: '+' · '.join(linked['carreras'])+' · consulta '+linked['fecha_consulta'])
         for note in linked.get('notas_consulta',[]):
             st.warning(note)
-        frame=pd.DataFrame(linked['empleo'])
         from perfil_laboral_viabilidad import render_perfil
         render_perfil(linked,tab_key)
-        latest=frame.sort_values('year').iloc[-1]
         sector=linked.get('sector')
         if sector and sector['ventas']:
             values=pd.DataFrame(sector['ventas'])

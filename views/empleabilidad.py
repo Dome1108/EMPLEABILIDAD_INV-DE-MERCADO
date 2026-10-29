@@ -130,12 +130,9 @@ def cached_atlas(config, people):
 st.markdown('<div class="masthead"><div><div class="eyebrow">Inteligencia de mercado · 2023 — 2026</div><h1>Empleabilidad de graduados</h1><p class="subtitle">Formación académica y presencia laboral, en una sola mirada.</p></div></div>', unsafe_allow_html=True)
 filters = st.container(border=True)
 with filters:
-    filter_heading, demo_control = st.columns([3, 1])
-    with filter_heading:
-        st.markdown("**Área de análisis**")
-        st.caption("Selecciona el nivel académico y una o varias carreras homologadas. Los filtros se aplican a todos los gráficos.")
-    with demo_control:
-        demo = st.toggle("Vista de demostración", value=os.getenv("DASHBOARD_DEMO", "0") == "1", help="Usa exclusivamente datos sintéticos para explorar el dashboard.")
+    st.markdown("**Área de análisis**")
+    st.caption("Selecciona el nivel académico y una o varias carreras homologadas. Los filtros se aplican a todos los gráficos.")
+demo = os.getenv("DASHBOARD_DEMO", "0") == "1"
 
 config = {}
 try:
@@ -152,7 +149,7 @@ else:
             catalog = cached_careers(config)
     except Exception as exc:
         st.title("Observatorio de empleabilidad")
-        st.error("No fue posible conectar con SQL Server. Puedes activar la vista de demostración en el área de análisis.")
+        st.error("No fue posible conectar con SQL Server. Comprueba la conexión a la red institucional.")
         st.info("Servidor predeterminado: SNBI03 · Autenticación de Windows. Comprueba acceso a la red institucional y permisos de lectura en BDD_IDM y Northwind.")
         with st.expander("Configuración de la conexión"):
             st.code('[sql]\nserver = "SNBI03"\ndatabase = "BDD_IDM"\ntrusted_connection = true\nencrypt = true\ntrust_server_certificate = true',language="toml")
@@ -174,7 +171,9 @@ with filters:
     with career_control:
         selected = st.multiselect("Carreras homologadas", options, key="selected_careers", placeholder="Busca una carrera…")
     with cutoff_control:
-        year = st.selectbox("Corte de análisis", [s.year for s in SNAPSHOTS], index=3, format_func=lambda y: next(s.label for s in SNAPSHOTS if s.year==y))
+        if 'employment_cutoff' not in st.session_state:
+            st.session_state['employment_cutoff']=SNAPSHOTS[-1].year
+        year = st.selectbox("Corte de análisis", [s.year for s in SNAPSHOTS], format_func=lambda y: next(s.label for s in SNAPSHOTS if s.year==y),key='employment_cutoff')
     with refresh_control:
         if st.button("Actualizar datos", width="stretch"):
             cached_careers.clear()
@@ -195,7 +194,11 @@ with st.spinner("Calculando cohortes y cruces de empleo…"):
     try:
         summary, institutions, cohorts, quality = demo_result(tuple(sorted(selected)), EXPECTED_RESULT_SCHEMA, level) if demo else cached_result(config, tuple(sorted(selected)), EXPECTED_RESULT_SCHEMA, levels)
     except Exception as exc:
-        st.error("No fue posible completar la consulta. Revisa los permisos de lectura, las tablas y los tipos de datos.")
+        state=str(exc.args[0]) if exc.args else ''
+        if state in ('08S01','08001','08003','08007'):
+            st.error('Se interrumpió la conexión con SQL Server y no se pudo completar el reintento. Comprueba la red institucional o VPN y vuelve a pulsar Actualizar datos.')
+        else:
+            st.error("No fue posible completar la consulta. Revisa los permisos de lectura, las tablas y los tipos de datos.")
         with st.expander("Detalle técnico"):
             st.code(str(exc))
         st.stop()
@@ -212,7 +215,7 @@ with employment_tab:
         with column:
             st.markdown(f'<div class="time-card {"latest" if i==3 else ""}"><div class="year">{row["year"]} <span class="delta">{change}</span></div><div class="value">{decimal(row["rate"])}{" %" if pd.notna(row["rate"]) else ""}</div></div>', unsafe_allow_html=True)
 
-    st.caption("Variación frente al corte anterior en puntos porcentuales. Los cortes corresponden a meses distintos; no son promedios anuales.")
+    st.caption("Variación frente al corte anterior en puntos porcentuales.")
     st.markdown('<div class="section-heading">Una mirada al corte</div>', unsafe_allow_html=True)
     row = summary.set_index("year").loc[year]
     st.caption(f"Registro académico acumulado hasta el {pd.Timestamp(row['cutoff']).strftime('%d/%m/%Y')}. El corte cambia la vista de detalle; las cuatro tarjetas permanecen visibles.")
@@ -265,7 +268,7 @@ with employment_tab:
 
     with st.container(border=True):
         latest = SNAPSHOTS[-1]
-        st.markdown(f"**Empleo por domicilio · {latest.label}**")
+        st.markdown("**Empleo Georeferenciado**")
         st.caption("Indicador territorial adicional. La selección geográfica solo afecta este panel; las cifras nacionales se conservan.")
         try:
             cohort = cohorts[latest.year]
@@ -367,16 +370,13 @@ with methodology_tab:
     st.markdown("**Reglas del análisis**")
     st.markdown("""
     - **Población:** personas únicas de las carreras seleccionadas con `FECHA_REGISTRO` hasta el último día del mes de corte. Se usa la fecha de registro como aproximación a la titulación.
-    - **Cruce:** cédula y `NUMAFI` normalizados a diez dígitos, conservando ceros iniciales. En SRI se busca exclusivamente **cédula + `001`**.
     - **Dependientes:** presencia en los registros laborales del corte. La presencia tiene prioridad incluso si la persona tiene RUC activo.
     - **Independientes:** RUC con actividad vigente inferida al corte y ausencia en los registros de empleo dependiente. Un RUC inactivo no cuenta como empleo independiente.
     - **Profesionales ejerciendo:** unión sin duplicados de dependientes e independientes. Este indicador mide presencia laboral; no determina afinidad del empleo con la carrera.
     - **Sin información laboral:** no se identifica empleo en las fuentes disponibles, incluidos casos SRI indeterminados sin registro laboral. No equivale a desempleo.
     - **Recién titulados:** personas con al menos un registro académico de las carreras seleccionadas en el año analizado, aunque tengan registros previos. Para 2026 se usa desde enero hasta la última fecha disponible sin superar hoy; para 2023–2025, hasta el corte correspondiente.
-    - **Salario:** en 2024 y 2025 se usa `SALARIO_TOTAL`, con respaldo de `SALARIO_FIJO` si está vacío o en cero; en 2023 y 2026, `SALARIO`. Se toma el mayor valor por persona y empleador para deduplicar y se suman empleadores. Se excluyen ingresos no positivos. No se usan salarios promedio de 12 meses ni se atribuyen ingresos al SRI.
     - **Banda salarial:** percentiles 25 y 75 con interpolación lineal sobre el ingreso mensual por persona dependiente.
     """)
-    st.markdown("**Educación 2026:** la tarjeta, los dos gráficos de instituciones y los recién titulados del CSV usan toda la información académica de 2026 disponible hasta hoy (hora de Ecuador). El histórico de instituciones también se acumula hasta esa fecha. Los denominadores y resultados de empleo conservan el corte laboral de enero de 2026; el CSV identifica ambas fechas por separado.")
     st.caption("Privadas Sierra utiliza exclusivamente las 18 IES indicadas. Se normalizan tildes, mayúsculas, espacios y puntuación; también se reconocen siglas, Universidad Tecnológica Equinoccial como UTE y Universidad Internacional SEK como UISEK. Los registros con nombres equivalentes se deduplican por persona dentro de cada IES.")
     st.warning("SRI histórico inferido: el catastro aporta el último estado y fechas de inicio, suspensión y reinicio, sin el historial completo de eventos. Los intervalos no reconstruibles quedan indeterminados. Los estados inferidos deben validarse con catastros históricos para obtener una serie definitiva.")
     st.caption("Se conserva el registro SRI con FECHA_CARGA más reciente por RUC y, ante igual carga, la última FECHA_ACTUALIZACION. No se utiliza el estado del establecimiento para clasificar a la persona.")

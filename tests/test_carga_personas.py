@@ -4,6 +4,19 @@ from data_access import insertar_personas,load_employers
 
 
 class CargaPersonasTest(unittest.TestCase):
+    def test_reintento_solo_para_conexion_rota(self):
+        import pyodbc
+        from data_access import load
+        progress=Mock()
+        with patch('data_access._load_once',side_effect=[pyodbc.Error('08S01','10054'),('completo',)]) as query:
+            self.assertEqual(load({},['Derecho'],progress),('completo',))
+            self.assertEqual(query.call_count,2)
+            progress.assert_called_once()
+        for state,attempts in [('08S01',2),('42000',1)]:
+            with patch('data_access._load_once',side_effect=pyodbc.Error(state,'error')) as query:
+                with self.assertRaises(pyodbc.Error):load({},['Derecho'])
+                self.assertEqual(query.call_count,attempts)
+
     def test_lotes_conservan_ids_deduplicados_y_parametrizados(self):
         cursor=Mock()
         ids=[str(i).zfill(10) for i in range(1201)]

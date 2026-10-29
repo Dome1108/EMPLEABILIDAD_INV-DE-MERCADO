@@ -12,6 +12,25 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 class IntegracionViabilidadTest(unittest.TestCase):
+    def test_filtros_persisten_al_salir_y_regresar(self):
+        with patch.dict(os.environ,{'DASHBOARD_DEMO':'1'}):
+            app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+            options=app.multiselect(key='selected_careers').options
+            selected=[options[-1]]
+            app.multiselect(key='selected_careers').set_value(selected).run()
+            app.selectbox(key='color_palette').set_value('Vino').run()
+            app.selectbox(key='employment_cutoff').set_value(2025).run()
+            level=app.selectbox(key='academic_level').value
+            for page in ('views/carreras.py','views/educacion_continua.py'):
+                app.switch_page(page).run()
+                self.assertFalse(app.exception)
+            app.switch_page('views/empleabilidad.py').run()
+            self.assertFalse(app.exception)
+            self.assertEqual(app.multiselect(key='selected_careers').value,selected)
+            self.assertEqual(app.selectbox(key='color_palette').value,'Vino')
+            self.assertEqual(app.selectbox(key='academic_level').value,level)
+            self.assertEqual(app.selectbox(key='employment_cutoff').value,2025)
+
     def test_consulta_directa_carga_perfil_sin_visitar_otra_pagina(self):
         import pandas as pd
         from consulta_perfil_carrera import consultar
@@ -69,9 +88,9 @@ class IntegracionViabilidadTest(unittest.TestCase):
             self.assertFalse(app.exception)
             self.assertEqual(len(app.tabs),12)
             carrera=app.selectbox(key='carrera_negocios').value
-            app.button(key='vincular_mercado_negocios').click().run()
             self.assertFalse(app.exception)
-            self.assertIn(carrera,app.session_state['evidencia_por_carrera'])
+            self.assertFalse(any(str(b.key).startswith('vincular_mercado_') for b in app.button))
+            self.assertEqual(app.session_state['mercado_compartido']['carreras'],context['carreras'])
             self.assertTrue(any('Principales empresas' in m.value for m in app.markdown))
             self.assertTrue(any('datos sintéticos' in message.value for message in app.warning))
             app.switch_page('views/educacion_continua.py').run()
@@ -82,7 +101,7 @@ class IntegracionViabilidadTest(unittest.TestCase):
             self.assertTrue(app.checkbox(key='edco_eval_sector').value)
             app.switch_page('views/empleabilidad.py').run()
             self.assertFalse(app.exception)
-            self.assertIn(carrera,app.session_state['evidencia_por_carrera'])
+            self.assertEqual(app.session_state['mercado_compartido']['carreras'],context['carreras'])
 
     def test_viabilidad_no_depende_de_conexion_sql(self):
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'0'}),patch('data_access.career_catalog',side_effect=RuntimeError('Sin conexión de prueba')):

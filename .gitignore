@@ -1,4 +1,7 @@
 __pycache__/
+.pytest_cache/
+*.pyc
+*.tmp
 .streamlit/secrets.toml
 .venv/
 *.log
@@ -7,8 +10,7 @@ __pycache__/
 /dashboard-*.png
 /educacion_*_16x9.png
 
-# Documentos originales conservados sólo en el equipo de trabajo
-viabilidad/edcos_fuentes/brief_*.pdf
+# Credenciales y archivos temporales locales
 **/.streamlit/secrets.toml
 **/.vendor/
 **/.preview-chrome/

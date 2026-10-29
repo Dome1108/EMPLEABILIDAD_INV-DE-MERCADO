@@ -19,7 +19,7 @@ También puede ejecutarse `iniciar_dashboard.bat`. La conexión institucional co
 
 ## Compartir evidencia con viabilidad
 
-Consulta las carreras y el nivel en **Empleabilidad y mercado**. En **Viabilidad de carreras**, elige el programa del modelo y utiliza **Vincular esta selección a…**. La selección institucional puede contener varias carreras homologadas; se vincula explícitamente para evitar equivalencias inventadas por nombre. Cada programa conserva su evidencia vinculada durante la sesión.
+Consulta las carreras y el nivel en **Empleabilidad y mercado**. El perfil en **Viabilidad de carreras** utiliza automáticamente esa selección. Los filtros de carrera, nivel, paleta y corte se conservan al navegar entre las tres pantallas.
 
 Se comparten exclusivamente agregados: graduados, empleo visible, bandas salariales, cobertura del cruce CIIU y ventas mensuales de los sectores. La aplicación no traslada identificaciones individuales ni RUC a la vista de viabilidad. Las ventas se toman del mismo cruce y archivo `data/consulta_sri_1.xlsx`, sin duplicarlas por empleador.
 
@@ -27,7 +27,7 @@ La evidencia vinculada complementa el diagnóstico. **No reemplaza automáticame
 
 Los estudios de educación continua mantienen fuentes propias por país. El IMAE de Costa Rica no se sustituye por el SRI ecuatoriano. El detalle metodológico está en [viabilidad/EDCOS_METODOLOGIA.md](viabilidad/EDCOS_METODOLOGIA.md).
 
-Los PDF originales de los proponentes están disponibles sólo en el equipo de trabajo y se excluyen de Git. En otra instalación pueden colocarse en `viabilidad/edcos_fuentes/` con los nombres descritos en las fichas. La consulta del análisis no depende de esos PDF. Las fuentes y reglas analíticas sí forman parte del repositorio.
+Los tres PDF originales de los proponentes están incluidos en `viabilidad/edcos_fuentes/`. Las bases locales, fichas, fuentes y reglas analíticas forman parte del repositorio. Los Excel y scripts originales se conservan en `archivo_historico/`. Consulta [INSTALACION.md](INSTALACION.md) para replicar el proyecto en otro equipo.
 
 ## Verificar la integración
 
