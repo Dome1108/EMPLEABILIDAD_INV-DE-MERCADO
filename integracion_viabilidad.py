@@ -38,8 +38,9 @@ def compartir_empleo(summary,selected,level,demo):
     old=st.session_state.get('mercado_compartido',{})
     new=resumen_compartido(summary,selected,level,demo)
     same=all(old.get(k)==new[k] for k in ('carreras','nivel','demostracion'))
-    if same and old.get('sector'):
-        new['sector']=old['sector']
+    if same:
+        for key in ('sector','territorio'):
+            if old.get(key):new[key]=old[key]
     st.session_state['mercado_compartido']=new
 
 
@@ -54,9 +55,43 @@ def compartir_industrias(catalog,monthly,codes,matched,total):
     st.session_state['mercado_compartido']=context
 
 
+def compartir_territorio(nombre,resumen,corte):
+    context=st.session_state.get('mercado_compartido')
+    if context is not None:
+        context['territorio']=dict(nombre=nombre,resumen=resumen,corte=corte)
+        st.session_state['mercado_compartido']=context
+
+
+def principales_empresas(jobs):
+    """Agrega por empleador, sin compartir identificadores personales ni RUC."""
+    if jobs.empty or not {'person','RUCEMP','NOMEMP'}<=set(jobs.columns):return []
+    from industry import ruc
+    data=jobs.copy()
+    data['RUCEMP']=data.RUCEMP.map(ruc)
+    data=data.dropna(subset=['person','RUCEMP'])
+    denominator=data.person.nunique()
+    if not denominator:return []
+    data['NOMEMP']=data.NOMEMP.fillna('').astype(str).str.strip()
+    result=data.groupby('RUCEMP').agg(Empresa=('NOMEMP',lambda s:next((x for x in s if x),'Empresa sin nombre')),
+        Graduados=('person','nunique')).reset_index(drop=True)
+    result['Participación (%)']=100*result.Graduados/denominator
+    return result.sort_values(['Graduados','Empresa'],ascending=[False,True]).head(5).to_dict('records')
+
+
+def compartir_perfil_sector(macro,jobs,year,month):
+    context=st.session_state.get('mercado_compartido')
+    if context and context.get('sector'):
+        context['sector']['macroindustrias']=macro.astype(object).where(pd.notna(macro),None).to_dict('records')
+        context['sector']['periodo_macro']=f'enero–mes {month:02d} de {year}'
+        context['sector']['empresas']=principales_empresas(jobs)
+        st.session_state['mercado_compartido']=context
+
+
 def render_evidencia_compartida(carrera,tab_key):
     with st.container(border=True):
         st.markdown('### Empleabilidad y sectores vinculados')
+        from consulta_perfil_carrera import render_consulta
+        render_consulta(carrera,tab_key)
         current=st.session_state.get('mercado_compartido')
         linked=st.session_state.get('evidencia_por_carrera',{}).get(carrera)
         if current:
@@ -68,17 +103,17 @@ def render_evidencia_compartida(carrera,tab_key):
                 st.session_state['evidencia_por_carrera']=links
                 linked=links[carrera]
         if not linked:
-            st.info('Consulta las carreras homologadas en Empleabilidad y mercado y vincula esa selección aquí para ver su empleo y ventas SRI.')
+            st.caption('Abre «Consultar datos de esta carrera» para cargar el perfil laboral aquí.')
             return
         if linked['demostracion']:
             st.warning('Evidencia de demostración: datos sintéticos, fuera del cálculo de viabilidad.')
         st.caption('Carreras institucionales: '+' · '.join(linked['carreras'])+' · consulta '+linked['fecha_consulta'])
+        for note in linked.get('notas_consulta',[]):
+            st.warning(note)
         frame=pd.DataFrame(linked['empleo'])
+        from perfil_laboral_viabilidad import render_perfil
+        render_perfil(linked,tab_key)
         latest=frame.sort_values('year').iloc[-1]
-        a,b,c=st.columns(3)
-        a.metric('Graduados al corte laboral',f"{latest['graduates']:,.0f}")
-        b.metric('Graduados con empleo visible',f"{latest['employed']:,.0f}")
-        c.metric('Empleo visible',f"{latest['rate']:.1f}%" if pd.notna(latest['rate']) else 'Sin dato')
         st.caption('Corte laboral: '+str(latest['cutoff'])+'. Empleo visible no implica afinidad ocupacional con la carrera.')
         sector=linked.get('sector')
         if sector and sector['ventas']:
@@ -86,12 +121,15 @@ def render_evidencia_compartida(carrera,tab_key):
             values['Fecha']=pd.to_datetime(dict(year=values['Año'],month=values['Mes'],day=1))
             values=values.sort_values('Fecha')
             fig=go.Figure()
-            for col,color in [('Personas naturales','#3975b9'),('Sociedades','#91bbdf')]:
+            from palettes import PALETTES, theme_figure
+            palette=st.session_state.get('color_palette','Azul')
+            primary,light,_=PALETTES[palette]
+            for col,color in [('Personas naturales',primary),('Sociedades',light)]:
                 fig.add_trace(go.Scatter(x=values['Fecha'],y=values[col],name=col,mode='lines+markers',line=dict(color=color,width=2.5),connectgaps=False))
             fig.update_layout(height=350,paper_bgcolor='white',plot_bgcolor='white',margin=dict(l=85,r=25,t=15,b=65),font=dict(color='#60758b'),legend=dict(orientation='h',y=-.25))
             fig.update_xaxes(title='Mes',gridcolor='#edf2f7')
             fig.update_yaxes(title=dict(text='Ventas sectoriales · USD',standoff=20),automargin=True,gridcolor='#edf2f7')
-            st.plotly_chart(fig,width='stretch',theme=None,key='sector_compartido_'+tab_key)
+            st.plotly_chart(theme_figure(fig,palette),width='stretch',theme=None,key='sector_compartido_'+tab_key)
             st.caption('Ventas del conjunto de los CIIU seleccionados, no únicamente de los empleadores de los graduados. Último mes: '+values['Fecha'].max().strftime('%Y-%m')+'.')
             with st.expander('Sectores y cobertura del cruce'):
                 st.dataframe(pd.DataFrame(sector['ciiu']),hide_index=True,width='stretch')

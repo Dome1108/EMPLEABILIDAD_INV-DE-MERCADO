@@ -291,6 +291,8 @@ with employment_tab:
                 with parish_col:
                     parish = st.selectbox("Parroquia (domicilio)", ['', *parishes], format_func=lambda x: x or 'Todas las parroquias', disabled=not canton)
                 territory = territorial_summary(located, province, canton, parish if canton else '')
+                from integracion_viabilidad import compartir_territorio
+                compartir_territorio(' · '.join(x for x in [province,canton,parish if canton else ''] if x),territory,'2026-01-31')
                 a, b, c, d = st.columns(4)
                 a.metric("Tasa de empleo visible · zona", decimal(territory['rate']) + (' %' if territory['graduates'] else ''))
                 b.metric("Graduados · zona", integer(territory['graduates']))

@@ -12,6 +12,39 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 class IntegracionViabilidadTest(unittest.TestCase):
+    def test_consulta_directa_carga_perfil_sin_visitar_otra_pagina(self):
+        import pandas as pd
+        from consulta_perfil_carrera import consultar
+        from data_access import demo_atlas
+        from industry import SALES
+        grads,jobs,sri=demo_data()
+        names=sorted(grads.CARRERA_HOMOLOGADA.unique())
+        catalog=pd.DataFrame({'carrera':names,'nivel':['Prueba']*len(names),'nivel_origen':['Prueba']*len(names)})
+        # Use the normalized cohort IDs produced by the real analytics pipeline.
+        from analytics import calculate
+        cohort=calculate(grads,jobs,sri)[2][2026]
+        employers=pd.DataFrame({'person':cohort.person,'RUCEMP':'0000000000001','NOMEMP':'Empresa prueba'})
+        mapping=pd.DataFrame({'RUCEMP':['0000000000001'],'CIIU':['M732001']})
+        sales=pd.DataFrame([{'CIIU':'M732001','Año':2026,'Mes':1,**{s:10.0 for s in SALES}}])
+        with patch('data_access.load',return_value=(grads,jobs,sri)),patch('data_access.load_employers',return_value=employers),patch('data_access.load_atlas',return_value=demo_atlas(tuple(cohort.person))),patch('industry.read_sources',return_value=(mapping,sales,0)):
+            result=consultar({},names,'Prueba',catalog)
+        self.assertEqual(len(result['empleo']),4)
+        self.assertTrue(result['sector']['empresas'])
+        self.assertTrue(result['sector']['macroindustrias'])
+        self.assertFalse(result['notas_consulta'])
+
+    def test_empresas_deduplica_personas_y_no_expone_identificadores(self):
+        import pandas as pd
+        from integracion_viabilidad import principales_empresas
+        jobs=pd.DataFrame({'person':['a','a','b','b','c'],
+            'RUCEMP':['1','1','1','2','2'],'NOMEMP':['Uno','Uno','Uno','Dos','Dos']})
+        result=principales_empresas(jobs)
+        self.assertEqual(len(result),2)
+        for row in result:
+            self.assertEqual(row['Graduados'],2)
+            self.assertAlmostEqual(row['Participación (%)'],200/3)
+            self.assertEqual(set(row),{'Empresa','Graduados','Participación (%)'})
+
     def test_frontera_solo_comparte_agregados(self):
         grads,jobs,sri=demo_data()
         summary,*_=calculate(grads,jobs,sri)
@@ -30,6 +63,8 @@ class IntegracionViabilidadTest(unittest.TestCase):
             context=app.session_state['mercado_compartido']
             self.assertTrue(context['demostracion'])
             self.assertTrue(context['sector']['ventas'])
+            self.assertTrue(context['sector']['macroindustrias'])
+            self.assertTrue(context['sector']['empresas'])
             app.switch_page('views/carreras.py').run()
             self.assertFalse(app.exception)
             self.assertEqual(len(app.tabs),12)
@@ -37,6 +72,7 @@ class IntegracionViabilidadTest(unittest.TestCase):
             app.button(key='vincular_mercado_negocios').click().run()
             self.assertFalse(app.exception)
             self.assertIn(carrera,app.session_state['evidencia_por_carrera'])
+            self.assertTrue(any('Principales empresas' in m.value for m in app.markdown))
             self.assertTrue(any('datos sintéticos' in message.value for message in app.warning))
             app.switch_page('views/educacion_continua.py').run()
             self.assertFalse(app.exception)
