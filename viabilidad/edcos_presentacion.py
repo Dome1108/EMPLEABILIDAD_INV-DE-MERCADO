@@ -17,7 +17,8 @@ def participacion_html(ficha):
     return '<div class="edco-demand-cards">'+''.join(cards)+'</div><div class="edco-demand-reading"><strong>Qué nos dice</strong><p>'+escape(reading)+'</p><span>No se suman como personas únicas ni permiten estimar cuántos participantes tendría el programa en '+country+'.</span></div>'
 
 
-def propuesta_html(ficha):
+def pilares_propuesta(ficha):
+    """(título, etiqueta, resumen, ícono SVG, color) de cada diferenciador del brief."""
     pillars=[
         ('Biometría aplicada','Experimentación','Eye tracking, respuesta electrodérmica y pruebas del consumidor en laboratorio.',
          '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>','#2879b4'),
@@ -29,11 +30,18 @@ def propuesta_html(ficha):
     # Estos titulares sintetizan los tres diferenciadores de la ficha inicial.
     # Otras propuestas conservan su texto propio en tarjetas genéricas.
     initial=ficha.get('id')=='neuromarketing_digital'
-    cards=[]
+    result=[]
     for i,text in enumerate(ficha['brief']['diferenciadores']):
         title,tag,summary,icon,accent=pillars[i] if initial and i<len(pillars) else (f'Diferenciador {i+1}','Propuesta académica',text,'<path d="m5 12 4 4L19 6"/>','#2879b4')
         if not initial and i<len(ficha['brief'].get('pilares',[])):
             title=ficha['brief']['pilares'][i]
+        result.append((title,tag,summary,icon,accent))
+    return result
+
+
+def propuesta_html(ficha):
+    cards=[]
+    for title,tag,summary,icon,accent in pilares_propuesta(ficha):
         cards.append(f'<article class="edco-pillar" style="--accent:{accent}"><div class="edco-pillar-top"><div class="edco-icon"><svg viewBox="0 0 24 24" aria-hidden="true">{icon}</svg></div><span class="edco-tag">{escape(tag)}</span></div><h3>{escape(title)}</h3><p>{escape(summary)}</p></article>')
     segments=''.join(f'<div class="edco-segment"><span>{i:02}</span><strong>{escape(s)}</strong></div>' for i,s in enumerate(ficha['audiencia_propuesta']['segmentos'],1))
     return '<div class="edco-section"><div><div class="edco-kicker">La propuesta académica</div><h2>Qué hace diferente al programa</h2></div><p>Tres ejes que definen su enfoque y aplicación profesional.</p></div><div class="edco-pillars">'+''.join(cards)+'</div><div class="edco-audience"><div><h3>A quién se dirige</h3><small>Segmentos sugeridos a partir del brief.</small></div><div class="edco-segments">'+segments+'</div></div>'

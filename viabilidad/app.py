@@ -1,10 +1,17 @@
+from datetime import datetime
 from html import escape
 import json
+from zoneinfo import ZoneInfo
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
-from modelo import BLOQUES, VARIABLES, Config, cargar_datos, evaluar, recomendaciones
-from graficos_simulados import crear_grafico_precio, cruce_lineal
+from modelo import BLOQUES, VARIABLES, carrera_modelo, Config, cargar_datos, evaluar, precio, recomendaciones
+import importlib
+import modelo_referencia_precios
+# Un servidor en marcha puede conservar una versión anterior del módulo de precios.
+if not hasattr(modelo_referencia_precios,'tablas_calculo'):
+    importlib.reload(modelo_referencia_precios)
+from modelo_referencia_precios import _norm, calcular_modelo, crear_figura, posicion_en_rango, rango_van_westendorp, tablas_calculo
 
 if not globals().get('APARTADO_INTEGRADO'):
     st.set_page_config(page_title='Observatorio · Viabilidad académica',page_icon='◈',layout='wide',initial_sidebar_state='collapsed')
@@ -35,14 +42,126 @@ button[data-baseweb="tab"]{font-size:13px!important}div[data-testid="stTabs"]{ma
 @media print{[data-testid="stSidebar"],header,footer,[data-testid="stToolbar"]{display:none}.block-container{padding:0}.stApp{background:white}.hero,.kpi,.rec{break-inside:avoid}}
 </style>''',unsafe_allow_html=True)
 
-def render_dashboard(reference,tab_key):
+# Nombres de la pestaña que difieren de CARRERA_UDLA en Precios_Homologados.
+CARRERA_PRECIOS={'SOFTWARE':'INGENIERIA EN SOFTWARE','RRII':'RELACIONES INTERNACIONALES','MUSICA':'ARTES MUSICALES'}
+# Nivel de Precios_Homologados según el selector Pregrado/Posgrado de la pestaña.
+NIVEL_PRECIOS={'Pregrado':'3ER NIVEL','Posgrado':'4TO NIVEL'}
+# Posgrado: no existe la carrera en 4TO NIVEL; se ofrecen los programas UDLA cuyo nombre
+# contiene estas palabras (sin tildes, en mayúsculas). EXCLUIR evita falsos positivos.
+POSGRADO_CLAVES={'NEGOCIOS INTERNACIONALES':['NEGOCIOS'],'SOFTWARE':['SOFTWARE'],'ENFERMERIA':['ENFERMER'],
+    'MEDICINA':['MEDICINA'],'ODONTOLOGIA':['ODONTO','ENDODON','ORTODON'],'MULTIMEDIA Y PRODUCCION AUDIOVISUAL':['AUDIOVISUAL','MULTIMEDIA'],
+    'DERECHO':['DERECHO'],'ARQUITECTURA':['ARQUITECT'],'RRII':['RELACIONES INTERNACIONALES'],'GASTRONOMIA':['GASTRONOM'],
+    'MUSICA':['MUSIC'],'PSICOLOGIA':['PSICOLOG']}
+POSGRADO_EXCLUIR=['VETERINARIA']
+
+
+def programas_posgrado(prices,carrera):
+    """Programas UDLA de 4TO NIVEL vinculados a la carrera.
+
+    Primero los que tienen más competidores en su período más reciente, que es el que
+    el gráfico muestra por defecto.
+    """
+    claves=POSGRADO_CLAVES.get(_norm(carrera),[_norm(carrera)])
+    data=prices[prices['NIVEL ACADEMICO'].map(_norm).eq(NIVEL_PRECIOS['Posgrado'])].copy()
+    data['_programa']=data['CARRERA UDLA'].map(_norm)
+    data=data[data['_programa'].map(lambda p:any(k in p for k in claves) and not any(e in p for e in POSGRADO_EXCLUIR))]
+    if data.empty:
+        return []
+    data['_periodo']=data['Semestre Pos'].astype(str).str.strip()
+    ultimo=data.groupby('_programa')['_periodo'].transform('max')
+    precio=pd.to_numeric(data['TOTAL'],errors='coerce')
+    recientes=data[data['_periodo'].eq(ultimo)&precio.gt(0)&data['SIGLA'].map(_norm).ne('UDLA')]
+    competidores=recientes.groupby('_programa')['SIGLA'].nunique()
+    nombres=data.groupby('_programa')['CARRERA UDLA'].first()
+    orden=sorted(nombres.index,key=lambda p:(-int(competidores.get(p,0)),p))
+    return [nombres[p] for p in orden]
+
+
+# CARRERA_EMPLEABILIDAD y carrera_modelo viven en modelo.py: los usan esta pestaña y la presentación .pptx.
+
+
+def carrera_empleabilidad():
+    """(carrera del modelo, carreras elegidas): la primera elegida en Empleabilidad que esté entre las 12."""
+    chosen=[c for c in st.session_state.get('selected_careers',[]) if c] or ['ECONOMIA']
+    found=next((m for m in map(carrera_modelo,chosen) if m),None)
+    return found,chosen
+
+
+def sql_config():
+    try:
+        return dict(st.secrets.get('sql',{}))
+    except Exception:
+        return {}
+
+
+@st.cache_data(ttl=3600,show_spinner='Leyendo precios de Precios_Homologados…',max_entries=1)
+def precios_referencia(config):
+    import sys
+    from pathlib import Path
+    root=str(Path(__file__).resolve().parent.parent)
+    if root not in sys.path:
+        sys.path.insert(0,root)
+    import importlib
+    import data_access
+    # Un servidor en marcha puede tener cargada una versión previa sin esta consulta.
+    if not hasattr(data_access,'load_reference_prices'):
+        data_access=importlib.reload(data_access)
+    return data_access.load_reference_prices(config)
+
+
+# Posiciones de precio de la tabla de reglas; el puntaje sale de modelo.precio.
+POSICIONES_PRECIO=[('25% más barato',-.25),('20% más barato',-.20),('−15% a +10%',0.0),('15% más caro',.15),('20% más caro',.20),('25% más caro',.25)]
+
+
+def reglas_modelo(level,reference,search_limit,competitor_limit,competition_weight):
+    """Textos y tablas de «Reglas del modelo»: los usa la pestaña y el reporte PDF."""
+    reference_name=reference['carrera']
+    return dict(
+        intro=[('md',f'**Nivel de evaluación: {level}.** Competencia permite hasta 5 competidores en pregrado y hasta 3 en posgrado. La regla es inclusiva y se aplica también al corte del cuadrante.'),
+               ('md',f'**Carrera de referencia:** {reference_name}. Contra sí misma obtiene siempre 100 por definición: completa el aporte de todas las variables. Para las demás carreras, competencia usa el límite por nivel y precio el rango acordado frente al mercado. Cada variable aporta como máximo su peso; bloques y total quedan entre 0 y 100.')],
+        col1=[('title','Regla de tres'),
+              ('latex',(r'\text{Aporte}=\min\left(\text{peso},\frac{\text{valor del programa}}{\text{valor de referencia}}\times\text{peso}\right)','Aporte = mín( peso ,  valor del programa / valor de referencia × peso )')),
+              ('md',f'Ejemplo con los pesos originales: búsquedas pesa 13,65 puntos. Una carrera con 80% de las búsquedas de {reference_name} aporta 10,92 puntos; con 120% aporta el máximo de 13,65. Competencia se evalúa contra el límite aceptable, sin compararla con la carrera base. Los aportes mostrados usan los pesos activos.'),
+              ('md','Para matrícula y titulados se comparan **factores de crecimiento (1 + tasa)**. Así podemos evaluar caídas sin dividir tasas negativas. Las vacantes son exclusivamente informativas; la cantidad de profesionales sí entra al cálculo como indicador de tamaño del campo, donde más es mejor.'),
+              ('md','**Subpesos de demanda:** nombre 65% (búsquedas 70%, rúbrica 30%); educativa 35% (matriculados 60%, titulados 40%). **Empleabilidad:** profesionales 30%, alineación 45% y salario 25%. El bloque conserva 22% global: aportes máximos de 6,60, 9,90 y 5,50 puntos respectivamente.'),
+              ('md',f'**Alineación con el mercado laboral:** mayor es mejor. Puntaje = mínimo entre 100 y (alineación del programa / alineación de {reference_name} ×100). La alineación base es {reference["alineacion"]:.0%}. Su aporte total máximo con los pesos originales es 9,90 puntos.'),
+              ('md',f'**Profesionales:** aporte = mínimo entre 6,60 y (profesionales del programa / {reference["profesionales"]:,.0f} profesionales de {reference_name} ×6,60). Mide tamaño del campo, sin interpretarse como una tasa de empleabilidad. Más profesionales permite completar el aporte, sin exceder su peso.')],
+        col2=[('title','Precio frente a la media'),
+              ('table',pd.DataFrame({'Posición de precio':[label for label,_ in POSICIONES_PRECIO],'Puntaje':[round(precio(gap),2) for _,gap in POSICIONES_PRECIO]})),
+              ('caption','Por debajo del rango se restan 5 puntos por punto porcentual; por encima, 3,33. Mínimo 0. Este bloque mide posicionamiento de precio, sin estimar capacidad de pago ni rentabilidad.')],
+        resto=[('title',f'Competencia · {competition_weight}% del modelo'),
+               ('md',f'**Hasta {competitor_limit} competidores, inclusive:** 100 puntos. **Por encima:** {competitor_limit} / competidores ×100. El aporte máximo al total es el peso activo del bloque (28 puntos con los pesos originales). Con cero competidores se asigna 100, sin dividir por cero. La misma regla se aplica a la carrera base.'),
+               ('title','Oportunidad de mercado · diagnóstico visual, sin peso adicional'),
+               ('table',pd.DataFrame({'Cuadrante':['Mercado atractivo','Mercado competido','Baja tracción','Mercado débil'],'Búsquedas':[f'≥{search_limit}%',f'≥{search_limit}%',f'<{search_limit}%',f'<{search_limit}%'],'Competidores':[f'≤{competitor_limit}',f'>{competitor_limit}',f'≤{competitor_limit}',f'>{competitor_limit}']})),
+               ('caption','El cuadrante no añade un puntaje propio. El umbral de búsquedas modifica la clasificación visual y el límite de competidores modifica el bloque competitivo de las carreras evaluadas. La referencia contra sí misma conserva 100 por definición; su posición en el cuadrante refleja sus datos reales.'),
+               ('md','**Lectura provisional del total:** 100 puntaje máximo; 90–<100 puntaje alto; 75–<90 resultado intermedio; 60–<75 requiere ajustes; <60 puntaje bajo. Son rangos iniciales, no una autorización de apertura. Revisar las dimensiones débiles incluso si el promedio es favorable.'),
+               ('md','**Alcance de los datos:** se usa la tabla principal del archivo entregado, con búsquedas locales y sin palabras clave. Para precio se conserva la brecha por carrera de esa tabla. El sector económico suma ventas de personas naturales y sociedades de 36 meses: mide tamaño, no crecimiento.'),
+               ('caption','Las búsquedas aportan puntos solo en demanda. Su uso en el cuadrante es informativo. Profesionales sí entra al cálculo; vacantes y palabras clave no. Los pesos siguen siendo de criterio y requieren validación con casos de desempeño diverso.')])
+
+
+def mostrar_reglas(items):
+    for kind,value in items:
+        if kind=='title':st.markdown(f'**{value}**')
+        elif kind=='md':st.markdown(value)
+        elif kind=='caption':st.caption(value)
+        elif kind=='latex':st.latex(value[0])
+        elif kind=='table':st.dataframe(value,hide_index=True,width='stretch')
+
+
+def render_dashboard(reference,tab_key,fixed_career=None):
+    """fixed_career: carrera elegida en Oferta de valor-empleabilidad; sin ella, filtro propio."""
     data=cargar_datos()
     reference_name=reference['carrera']
     header=st.empty()
+    pdf_slot=st.empty()
     with st.container(border=True):
         selector,level_selector,reference_info=st.columns([1.5,.7,1],gap='large',vertical_alignment='center')
         with selector:
-            selected=st.selectbox('Filtrar por carrera',[d['carrera'] for d in data],index=6,key=f'carrera_{tab_key}',help='Selecciona un programa para actualizar todos los resultados y gráficos.')
+            if fixed_career:
+                selected=fixed_career
+                st.markdown(f'<div class="reference">CARRERA EVALUADA<br><b>{escape(selected)}</b> · se elige en Oferta de valor-empleabilidad</div>',unsafe_allow_html=True)
+            else:
+                selected=st.selectbox('Filtrar por carrera',[d['carrera'] for d in data],index=6,key=f'carrera_{tab_key}',help='Selecciona un programa para actualizar todos los resultados y gráficos.')
         with level_selector:
             level=st.selectbox('Nivel de evaluación',['Pregrado','Posgrado'],key=f'nivel_{tab_key}',help='Define el límite de competencia:5 en pregrado y3 en posgrado. No cambia los datos originales del programa.')
         with reference_info:
@@ -83,7 +202,8 @@ def render_dashboard(reference,tab_key):
         st.markdown(f'<div class="kpi"><div class="kpi-label">POSICIÓN EN EL MERCADO</div><span class="quad-pill {quadclass}">{current["cuadrante"]}</span><p>{current["competidores"]:g} competidores</p></div>',unsafe_allow_html=True)
     with c:
         gap=raw['brecha_precio']
-        costtext='Dentro del rango aceptable' if -.15<=gap<=.10 else 'Fuera del rango aceptable'
+        in_range=-.15<=gap<=.10
+        costtext='Dentro del rango aceptable' if in_range else 'Fuera del rango aceptable'
         st.markdown(f'<div class="kpi"><div class="kpi-label">PRECIO FRENTE A LA MEDIA</div><div class="kpi-number">{gap:+.1%}</div><p>{costtext}</p></div>',unsafe_allow_html=True)
 
     diagnosis=st.container()
@@ -128,21 +248,24 @@ def render_dashboard(reference,tab_key):
                 st.markdown('<div class="section-title"><h3>Perfil del programa</h3><small>5 dimensiones</small></div>',unsafe_allow_html=True)
                 plot,rank=st.columns([1.8,1],gap='small')
                 with plot:
-                    st.plotly_chart(radar(current['bloques']),width='stretch',config={'displayModeBar':False},key=f'radar_{tab_key}')
+                    radar_fig=radar(current['bloques'])
+                    st.plotly_chart(radar_fig,width='stretch',config={'displayModeBar':False},key=f'radar_{tab_key}')
                     st.markdown('<div class="legend"><span><i class="dot" style="background:#008ec1"></i>Programa seleccionado</span></div>',unsafe_allow_html=True)
                 ranked=sorted(enumerate(current['bloques']),key=lambda x:x[1],reverse=True)
+                strengths=[(BLOQUES[idx],value) for idx,value in ranked if value>=75][:2]
+                gaps=[(BLOQUES[idx],value) for idx,value in sorted(ranked[-2:],key=lambda x:x[1])]
                 with rank:
                     st.markdown('<div class="rank-label">FORTALEZAS · TOP 2</div>',unsafe_allow_html=True)
-                    strengths=[(idx,value) for idx,value in ranked if value>=75][:2]
-                    for idx,value in strengths:st.markdown(f'<div class="rank-row"><span>{BLOQUES[idx]}</span><b>{value:.1f}%</b></div>',unsafe_allow_html=True)
+                    for name,value in strengths:st.markdown(f'<div class="rank-row"><span>{name}</span><b>{value:.1f}%</b></div>',unsafe_allow_html=True)
                     if not strengths:
                         st.markdown('<div class="caption">Ningún bloque alcanza el 75%.</div>',unsafe_allow_html=True)
                     st.markdown('<div class="rank-label low">MAYORES BRECHAS · BOTTOM 2</div>',unsafe_allow_html=True)
-                    for idx,value in sorted(ranked[-2:],key=lambda x:x[1]):st.markdown(f'<div class="rank-row weak"><span>{BLOQUES[idx]}</span><b>{value:.1f}%</b></div>',unsafe_allow_html=True)
+                    for name,value in gaps:st.markdown(f'<div class="rank-row weak"><span>{name}</span><b>{value:.1f}%</b></div>',unsafe_allow_html=True)
         with right:
             with st.container(border=True):
                 st.markdown('<div class="section-title"><h3>Recomendaciones</h3><small>Según los resultados</small></div>',unsafe_allow_html=True)
-                for i,(title,text) in enumerate(recomendaciones(raw,current,config),1):
+                recs=recomendaciones(raw,current,config)
+                for i,(title,text) in enumerate(recs,1):
                     st.markdown(f'<div class="rec"><div class="rec-index">{i:02}</div><div><div class="rec-title">{title}</div><p>{escape(text)}</p></div></div>',unsafe_allow_html=True)
         st.write('')
         left,right=st.columns([1.48,1],gap='medium')
@@ -150,8 +273,10 @@ def render_dashboard(reference,tab_key):
             with st.container(border=True):
                 st.markdown('<div class="section-title"><h3>Demanda vs. competencia</h3><small>La zona verde es el objetivo</small></div>',unsafe_allow_html=True)
                 allpoints=st.toggle('Mostrar todas las carreras',value=True,key=f'todas_{tab_key}')
-                st.plotly_chart(market_chart(allpoints),width='stretch',config={'displayModeBar':False},key=f'quadrants_{tab_key}')
-                st.caption(f"Zona verde: búsquedas ≥{config.umbral_busquedas:.0f}% de {reference_name} y hasta {config.umbral_competidores:g} competidores. Puntos coincidentes se agrupan en el detalle al pasar el cursor.")
+                market_fig=market_chart(allpoints)
+                st.plotly_chart(market_fig,width='stretch',config={'displayModeBar':False},key=f'quadrants_{tab_key}')
+                market_note=f"Zona verde: búsquedas ≥{config.umbral_busquedas:.0f}% de {reference_name} y hasta {config.umbral_competidores:g} competidores."
+                st.caption(market_note+" Puntos coincidentes se agrupan en el detalle al pasar el cursor.")
         with right:
             with st.container(border=True):
                 st.markdown('<div class="section-title"><h3>Cómo se forma el resultado</h3></div><div class="caption">Puntaje de cada bloque × su peso en el modelo.</div>',unsafe_allow_html=True)
@@ -159,25 +284,93 @@ def render_dashboard(reference,tab_key):
                 st.dataframe(contribution,hide_index=True,width='stretch',column_config={'Aporte':st.column_config.NumberColumn(format='%.2f')})
                 st.metric('Índice ponderado',f"{current['total']:.2f} / 100")
         st.write('')
-        price_fig=crear_grafico_precio(selected,level,precio_udla=raw.get('precio_udla'))
-        # El resumen se deriva de las curvas visibles, sin depender de layout.meta.
-        curves={trace.name:trace for trace in price_fig.data}
-        price_points=curves['Barato'].x
-        low,_=cruce_lineal(price_points,curves['Demasiado barato'].y,[100-y for y in curves['Barato'].y])
-        high,_=cruce_lineal(price_points,curves['Demasiado caro'].y,[100-y for y in curves['Caro'].y])
-        if not any(shape.type=='rect' and shape.x0==low and shape.x1==high for shape in (price_fig.layout.shapes or [])):
-            price_fig.add_vrect(x0=low,x1=high,fillcolor='rgba(0,114,188,.075)',line_width=0,layer='below')
-            for limit in [low,high]:
-                price_fig.add_shape(type='line',x0=limit,x1=limit,y0=0,y1=100,line=dict(color='#8396a8',width=1.3,dash='dash'),layer='below')
-        own_price=raw.get('precio_udla')
-        price_position='Por debajo del rango' if own_price is not None and own_price<low else 'Por encima del rango' if own_price is not None and own_price>high else 'Dentro del rango' if own_price is not None else 'Sin precio disponible'
-        own_label=f'${own_price:,.0f}' if own_price is not None else '—'
+        # Referencia competitiva con precios reales de Precios_Homologados (modelo_referencia_precios).
+        price_fig=None
+        low=high=own_price=None
+        price_position='Sin datos de precios'
+        price_detail=None
+        price_level=NIVEL_PRECIOS[level]
+        price_career=CARRERA_PRECIOS.get(_norm(selected),selected)
+        program_label=selected
         with st.container(border=True):
-            st.markdown(f'<div class="price-report-header"><div><div class="eyebrow">VAN WESTENDORP · ESCENARIO SIMULADO</div><h3>Sensibilidad de precio</h3></div><div class="price-report-program"><small>PROGRAMA EVALUADO</small><b>{escape(selected)}</b></div></div><div class="price-summary"><div><small>Rango orientativo · simulado</small><strong>${low:,.0f} — ${high:,.0f}</strong></div><div class="udla"><small>UDLA · precio base de pregrado</small><strong>{own_label}</strong></div><div class="position"><small>Posición frente a la simulación</small><strong>{price_position}</strong></div></div>',unsafe_allow_html=True)
-            st.plotly_chart(price_fig,width='stretch',theme=None,config={'displayModeBar':False},key=f'precios_simulados_{tab_key}')
-            st.markdown('<div class="price-report-note">Curvas y rango ilustrativos, fuera del índice de viabilidad. Línea roja: precio UDLA de pregrado del archivo entregado. La simulación no estima matrícula ni garantiza llenar una cohorte.</div>',unsafe_allow_html=True)
+            header_slot=st.empty()
+            try:
+                prices=precios_referencia(sql_config())
+            except Exception as exc:
+                prices=None
+                st.warning('No fue posible leer los precios de SQL Server (Precios_Homologados).')
+                with st.expander('Detalle técnico'):
+                    st.code(str(exc))
+            periods=[]
+            if prices is not None and level=='Posgrado':
+                programs=programas_posgrado(prices,selected)
+                if programs:
+                    price_career=st.selectbox('Programa de posgrado',programs,index=0,key=f'programa_posgrado_{tab_key}',
+                        help='Programas UDLA de 4TO NIVEL vinculados a la carrera (CARRERA_UDLA). Primero los que tienen más competidores.')
+                    program_label=f'{selected} · {price_career.title()}'
+                else:
+                    price_career=None
+                    st.info(f'{selected} no tiene programas de posgrado (4TO NIVEL) en Precios_Homologados.')
+            if prices is not None and price_career:
+                subset=prices[prices['NIVEL ACADEMICO'].map(_norm).eq(price_level)&prices['CARRERA UDLA'].map(_norm).eq(_norm(price_career))]
+                periods=sorted(subset['Semestre Pos'].dropna().astype(str).str.strip().unique(),reverse=True)
+                if not periods:
+                    st.info(f'«{price_career}» no tiene precios de {price_level} en Precios_Homologados.')
+            if periods:
+                # Clave por programa: al cambiar de carrera o programa vuelve al período más reciente.
+                period=st.selectbox('Período de precios',periods,index=0,key=f'periodo_precios_{tab_key}_{level}_{_norm(price_career)}',help='SEMESTRE_POS de Precios_Homologados. Por defecto, el más reciente.')
+                model=calcular_modelo(prices,price_level,price_career,period)
+                ref=model['referencias']
+                own_price=model['precio_udla']
+                # Igual que el modelo: sin curvas (muestra < 5 o sin variación) no hay rango.
+                # Rango de Van Westendorp: del cruce PMC al cruce PME, los mismos que marca el gráfico.
+                if model['curvas'] is not None:
+                    vw_range=rango_van_westendorp(model)
+                    if vw_range is not None:
+                        low,high=vw_range
+                        place=posicion_en_rango(own_price,vw_range)
+                        price_position={'dentro':'Dentro del rango','debajo':'Por debajo del rango','encima':'Por encima del rango'}.get(place,'Sin precio UDLA en el período')
+                    else:
+                        price_position='Las curvas no definen un rango'
+                else:
+                    price_position='Muestra insuficiente' if model['n'] else 'Sin competidores con precio'
+                if model['curvas'] is not None:
+                    price_fig=crear_figura(model)
+                    st.plotly_chart(price_fig,width='stretch',theme=None,config={'displayModeBar':False},key=f'precios_referencia_{tab_key}')
+                elif model['n']:
+                    st.info('Muestra pequeña o sin variación suficiente (menos de 5 competidores o menos de 3 precios distintos). Se muestran precios observados, sin curvas.')
+                if model['n']:
+                    price_detail=model['competidores'].rename(columns={'_institucion':'Universidad',model['columna']:'Precio (mediana del período)'}).sort_values('Precio (mediana del período)')
+                    with st.expander(f"Ver precios de los {model['n']} competidores"):
+                        st.dataframe(price_detail,hide_index=True,width='stretch',column_config={'Precio (mediana del período)':st.column_config.NumberColumn(format='$%.2f')})
+                if model['curvas'] is not None:
+                    percentiles,distances,thresholds,crossings=tablas_calculo(model)
+                    money=st.column_config.NumberColumn(format='$%.2f')
+                    with st.expander('Ver cálculo paso a paso'):
+                        st.markdown(f"**1. Percentiles** de los {model['n']} precios de la competencia (posición = (n − 1) × q; si cae entre dos precios, se interpola).")
+                        st.dataframe(percentiles,hide_index=True,width='stretch',column_config={'Valor':money})
+                        st.markdown('**2. Distancias** desde la mediana.')
+                        st.dataframe(distances,hide_index=True,width='stretch',column_config={'Valor':money})
+                        st.markdown('**3. Umbrales por universidad**: precio − distancia (barato, mínimo $0) o precio + distancia (caro). Cada círculo del gráfico es uno de estos valores.')
+                        st.dataframe(thresholds,hide_index=True,width='stretch',column_config={c:money for c in thresholds.columns if c!='Universidad'})
+                        st.markdown(f"**4. Curvas**: en cada precio, % de universidades con umbral ≥ precio (Demasiado barato, Barato) o ≤ precio (Caro, Demasiado caro). Cada universidad vale 1/{model['n']} = {100/model['n']:.1f} %.")
+                        st.markdown('**5. Cruces** donde se cortan las líneas. El rango aceptable va del PMC al PME.')
+                        st.dataframe(crossings,hide_index=True,width='stretch',column_config={'Precio':money,'Porcentaje':st.column_config.NumberColumn(format='%.1f %%')})
+                if 0<model['n']<10:
+                    st.caption(f"Resultado exploratorio: solo {model['n']} instituciones competidoras.")
+                price_note=(f"Programa: {price_career} · variable comparada: {model['columna']} · {price_level} · período {period} · {model['n']} competidores (una mediana por universidad). "
+                            'Rango aceptable: del cruce Demasiado barato × Caro (PMC) al cruce Barato × Demasiado caro (PME). '
+                            'Curvas Van Westendorp construidas con precios observados de la competencia, no con encuestas: '
+                            'no miden disposición a pagar y sus cruces no determinan un precio óptimo. Fuera del índice de viabilidad.')
+            else:
+                price_note='Sin datos de precios para esta carrera.'
+            own_label=f'${own_price:,.0f}' if own_price is not None else '—'
+            range_label=f'${low:,.0f} — ${high:,.0f}' if low is not None else '—'
+            header_slot.markdown(f'<div class="price-report-header"><div><div class="eyebrow">VAN WESTENDORP · PRECIOS OBSERVADOS · {price_level}</div><h3>Sensibilidad de precio</h3></div><div class="price-report-program"><small>PROGRAMA EVALUADO</small><b>{escape(program_label)}</b></div></div><div class="price-summary"><div><small>Rango aceptable · PMC–PME</small><strong>{range_label}</strong></div><div class="udla"><small>UDLA · mediana del período</small><strong>{own_label}</strong></div><div class="position"><small>Posición frente al rango</small><strong>{price_position}</strong></div></div>',unsafe_allow_html=True)
+            st.markdown(f'<div class="price-report-note">{escape(price_note)}</div>',unsafe_allow_html=True)
         with st.expander('Ver indicadores y valores originales'):
-            st.caption('Alineación con el mercado laboral: el dato denominado «Brecha Mercado Laboral vs Programa Educativo» en la fuente mide coincidencia de competencias. Mayor porcentaje significa mayor alineación y mejor puntaje; no se invierte.')
+            alignment_note='Alineación con el mercado laboral: el dato denominado «Brecha Mercado Laboral vs Programa Educativo» en la fuente mide coincidencia de competencias. Mayor porcentaje significa mayor alineación y mejor puntaje; no se invierte.'
+            st.caption(alignment_note)
             rawvals=[raw['matriculados'],raw['titulados'],raw['busquedas'],raw['nombre'],raw['alineacion'],raw['salario'],raw['competidores'],raw['brecha_precio'],raw['ventas_naturales']+raw['ventas_sociedades'],raw['profesionales']]
             refvals=[reference['matriculados'],reference['titulados'],reference['busquedas'],reference['nombre'],reference['alineacion'],reference['salario'],reference['competidores'],reference['brecha_precio'],reference['ventas_naturales']+reference['ventas_sociedades'],reference['profesionales']]
             def formatraw(i,x):
@@ -185,10 +378,13 @@ def render_dashboard(reference,tab_key):
                 if i in [0,1,4,7]:return f'{x:.2%}'
                 return f'{x:,.2f}'
             variable_weights=[weights[0]*.35*.6,weights[0]*.35*.4,weights[0]*.65*.7,weights[0]*.65*.3,weights[1]*.45,weights[1]*.25,weights[2],weights[3],weights[4],weights[1]*.3]
-            st.dataframe(pd.DataFrame({'Indicador':VARIABLES,'Programa':[formatraw(i,v) for i,v in enumerate(rawvals)],'Referencia para el cálculo':['Referencia contra sí misma: 100' if current['es_referencia'] else f'Límite: {competitor_limit} competidores' if i==6 else 'Media del mercado: rango −15% a +10%' if i==7 else formatraw(i,v) for i,v in enumerate(refvals)],'Índice aplicado (máx. 100)':[round(v,2) for v in current['indices']],'Peso máximo (puntos)':[round(v,2) for v in variable_weights],'Aporte al total':[round(v*p/100,2) for v,p in zip(current['indices'],variable_weights)]}),hide_index=True,width='stretch')
-            st.caption(f'En los demás indicadores la referencia es {reference_name}. Solo competencia y precio utilizan reglas propias, sin comparación con la carrera base.')
-            st.caption('Dato informativo, sin peso en el índice: vacantes. Un cero o un dato faltante aquí no reduce el puntaje. Profesionales sí participa en empleabilidad.')
-            st.dataframe(pd.DataFrame({'Dato informativo':['Vacantes'],'Programa':[raw.get('vacantes')],reference_name:[reference.get('vacantes')]}),hide_index=True,width='stretch')
+            indicators=pd.DataFrame({'Indicador':VARIABLES,'Programa':[formatraw(i,v) for i,v in enumerate(rawvals)],'Referencia para el cálculo':['Referencia contra sí misma: 100' if current['es_referencia'] else f'Límite: {competitor_limit} competidores' if i==6 else 'Media del mercado: rango −15% a +10%' if i==7 else formatraw(i,v) for i,v in enumerate(refvals)],'Índice aplicado (máx. 100)':[round(v,2) for v in current['indices']],'Peso máximo (puntos)':[round(v,2) for v in variable_weights],'Aporte al total':[round(v*p/100,2) for v,p in zip(current['indices'],variable_weights)]})
+            st.dataframe(indicators,hide_index=True,width='stretch')
+            indicator_notes=[f'En los demás indicadores la referencia es {reference_name}. Solo competencia y precio utilizan reglas propias, sin comparación con la carrera base.',
+                             'Dato informativo, sin peso en el índice: vacantes. Un cero o un dato faltante aquí no reduce el puntaje. Profesionales sí participa en empleabilidad.']
+            for note in indicator_notes:st.caption(note)
+            informative=pd.DataFrame({'Dato informativo':['Vacantes'],'Programa':[raw.get('vacantes')],reference_name:[reference.get('vacantes')]})
+            st.dataframe(informative,hide_index=True,width='stretch')
 
     if globals().get('APARTADO_INTEGRADO')=='Carreras':
         from integracion_viabilidad import render_evidencia_compartida
@@ -196,42 +392,49 @@ def render_dashboard(reference,tab_key):
 
     with st.expander('Comparar las 12 carreras',expanded=False):
         st.write('')
-        st.subheader('Un mismo punto de partida para todos')
-        st.caption(f'{reference_name} es la referencia fija de esta pestaña. Las clasificaciones describen brechas comparativas; no son una autorización de apertura.')
+        ranking_title='Un mismo punto de partida para todos'
+        ranking_note=f'{reference_name} es la referencia fija de esta pestaña. Las clasificaciones describen brechas comparativas; no son una autorización de apertura.'
+        st.subheader(ranking_title)
+        st.caption(ranking_note)
         ranking=pd.DataFrame([{'Carrera':r['carrera'],'Índice':round(r['total'],2),'Lectura':r['clasificacion'],'Cuadrante':r['cuadrante'],**{label:round(val,2) for label,val in zip(BLOQUES,r['bloques'])}} for r in results]).sort_values('Índice',ascending=False)
-        fig=go.Figure(go.Bar(x=ranking['Índice'].tolist()[::-1],y=ranking['Carrera'].tolist()[::-1],orientation='h',marker_color=['#0072bc' if name==selected else '#153954' if name==reference['carrera'] else '#c8dce9' for name in ranking['Carrera'].tolist()[::-1]],text=[f'{x:.1f}' for x in ranking['Índice'].tolist()[::-1]],textposition='outside',hovertemplate='%{y}<br>Índice: %{x:.2f} /100<extra></extra>'))
-        fig.update_layout(height=490,margin=dict(l=10,r=40,t=10,b=20),paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='rgba(0,0,0,0)',font=dict(color='#60758b'),xaxis=dict(range=[0,108],gridcolor='#e4ebf1',title='Índice comparativo'),yaxis=dict(automargin=True))
-        st.plotly_chart(fig,width='stretch',config={'displayModeBar':False},key=f'ranking_{tab_key}')
+        ranking_fig=go.Figure(go.Bar(x=ranking['Índice'].tolist()[::-1],y=ranking['Carrera'].tolist()[::-1],orientation='h',marker_color=['#0072bc' if name==selected else '#153954' if name==reference['carrera'] else '#c8dce9' for name in ranking['Carrera'].tolist()[::-1]],text=[f'{x:.1f}' for x in ranking['Índice'].tolist()[::-1]],textposition='outside',hovertemplate='%{y}<br>Índice: %{x:.2f} /100<extra></extra>'))
+        ranking_fig.update_layout(height=490,margin=dict(l=10,r=40,t=10,b=20),paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='rgba(0,0,0,0)',font=dict(color='#60758b'),xaxis=dict(range=[0,108],gridcolor='#e4ebf1',title='Índice comparativo'),yaxis=dict(automargin=True))
+        st.plotly_chart(ranking_fig,width='stretch',config={'displayModeBar':False},key=f'ranking_{tab_key}')
         st.dataframe(ranking,hide_index=True,width='stretch',column_config={'Índice':st.column_config.ProgressColumn(min_value=0,max_value=100,format='%.2f')})
         st.download_button('Descargar comparativo · CSV',ranking.assign(Nivel=level).to_csv(index=False).encode('utf-8-sig'),f'comparativo_{tab_key}_{level.lower()}.csv','text/csv',key=f'csv_{tab_key}')
 
+    rules=reglas_modelo(level,reference,search_limit,competitor_limit,weights[2])
     with st.expander('Reglas del modelo',expanded=False):
         st.write('')
         st.subheader('Reglas acordadas, a la vista')
-        st.markdown(f'**Nivel de evaluación: {level}.** Competencia permite hasta5 competidores en pregrado y hasta3 en posgrado. La regla es inclusiva y se aplica también al corte del cuadrante.')
-        st.markdown(f'**Carrera de referencia:** {reference_name}. Contra sí misma obtiene siempre100 por definición: completa el aporte de todas las variables. Para las demás carreras, competencia usa el límite por nivel y precio el rango acordado frente al mercado. Cada variable aporta como máximo su peso; bloques y total quedan entre0 y100.')
+        mostrar_reglas(rules['intro'])
         col1,col2=st.columns(2)
-        with col1:
-            st.markdown('**Regla de tres**')
-            st.latex(r'\text{Aporte}=\min\left(\text{peso},\frac{\text{valor del programa}}{\text{valor de referencia}}\times\text{peso}\right)')
-            st.markdown(f'Ejemplo con los pesos originales: búsquedas pesa13,65 puntos. Una carrera con80% de las búsquedas de {reference_name} aporta10,92 puntos; con120% aporta el máximo de13,65. Competencia se evalúa contra el límite aceptable, sin compararla con la carrera base. Los aportes mostrados usan los pesos activos.')
-            st.markdown('Para matrícula y titulados se comparan **factores de crecimiento (1 + tasa)**. Así podemos evaluar caídas sin dividir tasas negativas. Las vacantes son exclusivamente informativas; la cantidad de profesionales sí entra al cálculo como indicador de tamaño del campo, donde más es mejor.')
-            st.markdown('**Subpesos de demanda:** nombre65% (búsquedas70%, rúbrica30%); educativa35% (matriculados60%, titulados40%). **Empleabilidad:** profesionales30%, alineación45% y salario25%. El bloque conserva22% global: aportes máximos de6,60,9,90 y5,50 puntos respectivamente.')
-            st.markdown(f'**Alineación con el mercado laboral:** mayor es mejor. Puntaje = mínimo entre100 y (alineación del programa / alineación de {reference_name} ×100). La alineación base es {reference["alineacion"]:.0%}. Su aporte total máximo con los pesos originales es9,90 puntos.')
-            st.markdown(f'**Profesionales:** aporte = mínimo entre6,60 y (profesionales del programa / {reference["profesionales"]:,.0f} profesionales de {reference_name} ×6,60). Mide tamaño del campo, sin interpretarse como una tasa de empleabilidad. Más profesionales permite completar el aporte, sin exceder su peso.')
-        with col2:
-            st.markdown('**Precio frente a la media**')
-            st.dataframe(pd.DataFrame({'Posición de precio':['25% más barato','20% más barato','−15% a +10%','15% más caro','20% más caro','25% más caro'],'Puntaje':[50,75,100,83.33,66.67,50]}),hide_index=True,width='stretch')
-            st.caption('Por debajo del rango se restan 5 puntos por punto porcentual; por encima, 3,33. Mínimo 0. Este bloque mide posicionamiento de precio, sin estimar capacidad de pago ni rentabilidad.')
-        st.markdown('**Competencia · 28% del modelo**')
-        st.markdown(f'**Hasta {competitor_limit} competidores, inclusive:**100 puntos. **Por encima:** {competitor_limit} / competidores ×100. El aporte máximo al total es el peso activo del bloque (28 puntos con los pesos originales). Con cero competidores se asigna100, sin dividir por cero. La misma regla se aplica a la carrera base.')
-        st.markdown('**Oportunidad de mercado · diagnóstico visual, sin peso adicional**')
-        st.dataframe(pd.DataFrame({'Cuadrante':['Mercado atractivo','Mercado competido','Baja tracción','Mercado débil'],'Búsquedas':[f'≥{search_limit}%',f'≥{search_limit}%',f'<{search_limit}%',f'<{search_limit}%'],'Competidores':[f'≤{competitor_limit}',f'>{competitor_limit}',f'≤{competitor_limit}',f'>{competitor_limit}']}),hide_index=True,width='stretch')
-        st.caption('El cuadrante no añade un puntaje propio. El umbral de búsquedas modifica la clasificación visual y el límite de competidores modifica el bloque competitivo de las carreras evaluadas. La referencia contra sí misma conserva100 por definición; su posición en el cuadrante refleja sus datos reales.')
-        st.markdown('**Lectura provisional del total:**100 puntaje máximo;90–<100 puntaje alto;75–<90 resultado intermedio;60–<75 requiere ajustes;<60 puntaje bajo. Son rangos iniciales, no una autorización de apertura. Revisar las dimensiones débiles incluso si el promedio es favorable.')
-        st.markdown('**Alcance de los datos:** se usa la tabla principal del archivo entregado, con búsquedas locales y sin palabras clave. Para precio se conserva la brecha por carrera de esa tabla. El sector económico suma ventas de personas naturales y sociedades de 36 meses: mide tamaño, no crecimiento.')
-        st.caption('Las búsquedas aportan puntos solo en demanda. Su uso en el cuadrante es informativo. Profesionales sí entra al cálculo; vacantes y palabras clave no. Los pesos siguen siendo de criterio y requieren validación con casos de desempeño diverso.')
+        with col1:mostrar_reglas(rules['col1'])
+        with col2:mostrar_reglas(rules['col2'])
+        mostrar_reglas(rules['resto'])
         st.download_button('Descargar datos del tablero · JSON',json.dumps(data,ensure_ascii=False,indent=2),'datos_programas.json','application/json',key=f'json_{tab_key}')
+
+    # Reporte PDF: mismos resultados, figuras y textos de la pestaña; se genera solo al pulsar.
+    generated=datetime.now(ZoneInfo('America/Guayaquil'))
+    report=dict(programa=selected,referencia=reference_name,nivel=level,generado=generated.strftime('%Y-%m-%d %H:%M'),
+        resumen=dict(total=current['total'],clasificacion=current['clasificacion'],total_referencia=baseline['total'],
+            cuadrante=current['cuadrante'],tono_cuadrante=quadclass,competidores_texto=f"{current['competidores']:g}",
+            brecha_texto=f'{gap:+.1%}',precio_en_rango=in_range,lectura_precio=costtext),
+        configuracion=dict(bloques=BLOQUES,pesos=weights,umbral_busquedas=search_limit,limite_competencia=competitor_limit,
+            nota='Los pesos deben sumar 100%. Los cambios solo afectan esta sesión.',
+            subpesos=indicators[['Indicador','Peso máximo (puntos)']],subpesos_texto=rules['col1'][4][1]),
+        perfil=dict(figura=radar_fig,fortalezas=strengths,brechas=gaps,sin_fortalezas='Ningún bloque alcanza el 75%.'),
+        recomendaciones=recs,
+        mercado=dict(figura=market_fig,nota=market_note,alcance='Mostrar todas las carreras: '+('sí' if allpoints else 'no')+'.'),
+        formacion=dict(tabla=contribution,indice=f"{current['total']:.2f} / 100",nota='Puntaje de cada bloque × su peso en el modelo.'),
+        precio=dict(rango=range_label,precio_udla=own_label,posicion=price_position,figura=price_fig,nota=price_note),
+        indicadores=dict(explicacion=alignment_note,tabla=indicators,notas=indicator_notes,informativo=informative),
+        comparativo=dict(titulo=ranking_title,nota=ranking_note,figura=ranking_fig,tabla=ranking),
+        reglas=rules)
+    from reporte_pdf import build_viability_pdf, filename
+    pdf_slot.download_button('Descargar reporte PDF',data=lambda:build_viability_pdf(report),
+        file_name=filename(selected,generated.date().isoformat()),mime='application/pdf',on_click='ignore',
+        icon=':material/picture_as_pdf:',key=f'pdf_{tab_key}',help='Reporte con todos los resultados de esta selección, incluidas las secciones plegadas.')
 
 
 apartado=globals().get('APARTADO_INTEGRADO') or st.radio('Apartado',['Carreras','Educación continua'],horizontal=True,key='apartado',label_visibility='collapsed')
@@ -253,12 +456,21 @@ if apartado=='Educación continua':
     importlib.reload(competencia_edcos)
     import competencia_edcos_vista
     importlib.reload(competencia_edcos_vista)
+    import figuras_pdf
+    import edcos_pptx
+    importlib.reload(figuras_pdf)
+    importlib.reload(edcos_pptx)
     import edcos_vista
     importlib.reload(edcos_vista).render_edcos()
 else:
     programas=cargar_datos()
+    fixed=None
+    if globals().get('APARTADO_INTEGRADO')=='Carreras':
+        # En el observatorio la carrera se elige en Oferta de valor-empleabilidad. Si no está entre
+        # las 12 del modelo (p. ej. Economía), se muestra igual el análisis con su selector propio.
+        fixed,_=carrera_empleabilidad()
     reference_tabs=st.tabs([f'Referencia: {p["carrera"]}' for p in programas])
     for index,(tab,reference) in enumerate(zip(reference_tabs,programas)):
         tab_key='negocios' if index==0 else 'software' if reference['carrera']=='Software' else f'referencia_{index}'
         with tab:
-            render_dashboard(reference,tab_key)
+            render_dashboard(reference,tab_key,fixed)

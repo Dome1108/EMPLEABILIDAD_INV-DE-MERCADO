@@ -26,7 +26,7 @@ python -m pip install -r requirements.txt
 - `modelo.py`: cálculo ponderado; la referencia contra sí misma siempre obtiene100.
 - `datos.json`: datos de las doce carreras y precios de pregrado UDLA del archivo original.
 - `app.py`: interfaz con fondo blanco y formato ejecutivo.
-- `graficos_simulados.py`: sensibilidad de precio ilustrativa, fuera del cálculo.
+- `modelo_referencia_precios.py`: sensibilidad de precio con precios reales de `Precios_Homologados` (rango P50–P75 de competidores), fuera del cálculo. `graficos_simulados.py` ya no se usa en la pestaña.
 - `comparativos_todas_referencias.csv`:288 comparaciones, incluidos ambos niveles.
 - `resultados_actualizados.csv`: pregrado con Negocios como referencia.
 - `resultados_referencia_software.csv`: pregrado con Software como referencia.

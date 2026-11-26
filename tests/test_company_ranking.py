@@ -1,5 +1,8 @@
 import unittest
 import os
+os.environ["TENDENCIAS_DESACTIVADO"] = "1"  # sin conexión a la base real de Tendencias
+import tempfile
+os.environ.setdefault("PRESENTACIONES_COLA", os.path.join(tempfile.mkdtemp(), "cola.sqlite3"))  # cola .pptx temporal
 import json
 import re
 from pathlib import Path
@@ -16,7 +19,9 @@ class CompanyRankingRules(unittest.TestCase):
         empty=pd.DataFrame(columns=['year','company_id','company','CIIU','activity','employees','macroindustry'])
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'1'}), \
              patch.object(company_ranking_view,'prepare_ranking',return_value=(empty,{})):
-            app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=60).run()
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=60)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             self.assertFalse(app.exception)
             self.assertFalse(any('No se pudo leer el ranking de empresas' in w.value for w in app.warning))
             matches=next(m.value for m in app.metric if m.label=='Empresas identificadas en ranking')
@@ -83,7 +88,9 @@ class CompanyRankingRules(unittest.TestCase):
     def test_only_company_chart_is_shown_without_source_acronym(self):
         from streamlit.testing.v1 import AppTest
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'1'}):
-            app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=60).run()
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=60)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             self.assertFalse(app.exception)
             self.assertFalse(any('No se pudo leer el ranking' in x.value for x in app.warning))
             self.assertTrue(any(m.label=='Empleados reportados' for m in app.metric))

@@ -63,7 +63,7 @@ def render_perfil(context,key):
                 st.metric('Empleo visible',f"{t['rate']:.1f}%" if n else 'Sin dato')
                 if n:
                     st.caption(' · '.join(f'{label}: {100*t[field]/n:.1f}%' for label,field in [('Dependientes','dependent'),('Independientes','independent'),('Sin información','unknown')]))
-        else:st.caption('Consulta la distribución territorial en Empleabilidad y mercado para incorporar una zona.')
+        else:st.caption('Consulta la distribución territorial en Oferta de valor-empleabilidad para incorporar una zona.')
     sector=context.get('sector',{})
     macro=pd.DataFrame(sector.get('macroindustrias',[]))
     if not macro.empty:

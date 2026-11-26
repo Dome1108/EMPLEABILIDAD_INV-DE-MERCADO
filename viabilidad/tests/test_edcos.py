@@ -6,6 +6,8 @@ import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from modelo_edcos import DIMENSIONES_EDCO,cargar_edcos,validar_ficha
 
+ORIGINALES_CR={'people_analytics_cr','tea_integral_cr'}
+
 class EdcosTest(unittest.TestCase):
     def setUp(self):
         self.ficha=cargar_edcos()[0]
@@ -22,7 +24,8 @@ class EdcosTest(unittest.TestCase):
         with self.assertRaises(ValueError):validar_ficha(cr)
 
     def test_estudios_cr_completos_independientes_sin_datos_ecuador(self):
-        records=[f for f in cargar_edcos() if f['institucion_id']=='ulatina_cr']
+        # Estudios originales de Costa Rica; los briefs registrados después se prueban en test_briefs_registrados.
+        records=[f for f in cargar_edcos() if f['id'] in ORIGINALES_CR]
         self.assertEqual(len(records),2)
         for ficha in records:
             self.assertEqual(validar_ficha(ficha)['evaluados'],5)
@@ -90,7 +93,7 @@ class EdcosTest(unittest.TestCase):
         wrong['informacionDelCuadro']['subTituloEspanol']='Serie original (2017=100)'
         with self.assertRaises(ValueError):extraer_serie(wrong,94986)
         for ficha in cargar_edcos():
-            if ficha['institucion_id']=='ulatina_cr':
+            if ficha['id'] in ORIGINALES_CR:
                 for evidence in ficha['evidencia_visual'].values():
                     self.assertEqual(evidence['fecha_consulta'],'2026-10-26')
                     self.assertTrue(evidence['actualidad'])
@@ -175,9 +178,10 @@ class EdcosTest(unittest.TestCase):
         self.assertEqual(len(app.exception),0)
         app.selectbox(key='edco_institucion').set_value('ulatina_cr').run(timeout=30)
         self.assertEqual(len(app.exception),0)
-        cr=[f for f in cargar_edcos() if f['institucion_id']=='ulatina_cr']
+        all_cr=[f for f in cargar_edcos() if f['institucion_id']=='ulatina_cr']
+        cr=[f for f in all_cr if f['id'] in ORIGINALES_CR]
         self.assertEqual(len(cr),2)
-        self.assertEqual(set(app.selectbox(key='edco_programa').options),{f['nombre'] for f in cr})
+        self.assertEqual(set(app.selectbox(key='edco_programa').options),{f['nombre'] for f in all_cr})
         for ficha in cr:
             app.selectbox(key='edco_programa').set_value(ficha['nombre']).run(timeout=30)
             self.assertEqual(len(app.exception),0)

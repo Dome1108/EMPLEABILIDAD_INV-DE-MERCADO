@@ -1,0 +1,1838 @@
+{
+  "id": "diseno_estrategico",
+  "nombre": "Diplomado en Diseño Estratégico: del Método al Sistema",
+  "institucion_id": "udla_ec",
+  "fecha_revision": "2026-11-16",
+  "version_investigacion": "2026-11-06-mercado-v1",
+  "brief": {
+    "archivo": "Brief EDCO DISEÑO ESTRATÉGICO DEL MÉTODO AL SISTEMA.pdf",
+    "copia_local": "edcos_fuentes/brief_diseno_estrategico.pdf",
+    "fecha_propuesta": "2026-11-13",
+    "tipo": "Diplomado · Educación continua (EDCO)",
+    "pais": "Ecuador",
+    "area_estudio": "Artes y humanidades › Artes › Artes",
+    "facultad": "Facultad de Comunicación y Artes Audiovisuales",
+    "unidad": "Otro · Producto",
+    "duracion": "1 semestre",
+    "horas_totales": null,
+    "modalidad": "Presencial (100% presencial)",
+    "experto": "Propuesto en el brief (dato personal omitido en la vista)",
+    "objetivo": "Desarrollar competencias en investigación, pensamiento sistémico y gestión estratégica del diseño, mediante la aplicación de metodologías de análisis, evaluación de sistemas materiales y criterios de sostenibilidad, que permitan formular soluciones innovadoras y gestionar proyectos interdisciplinarios orientados a la generación de valor en organizaciones y comunidades.",
+    "diferenciadores": [
+      "Conexión con industrias textiles.",
+      "Estampería Quiteña.",
+      "Creación de colección."
+    ],
+    "ejes": [
+      "Metodologías de investigación y pensamiento sistémico",
+      "Innovación, sistemas materiales y economía circular",
+      "Gestión estratégica y desarrollo de proyectos de diseño"
+    ],
+    "habilidades": [
+      "Pensamiento sistémico y crítico",
+      "Investigación y análisis contextual",
+      "Innovación en sistemas materiales",
+      "Planificación y gestión estratégica del diseño",
+      "Liderazgo y colaboración interdisciplinaria"
+    ],
+    "nombres_alternativos": [
+      "Diplomado en Diseño Estratégico e Innovación de Sistemas Materiales",
+      "Diplomado en Metodologías y Gestión Estratégica del Diseño"
+    ],
+    "palabras_clave": [
+      "Diseño estratégico",
+      "Metodologías del diseño",
+      "Pensamiento sistémico",
+      "Investigación aplicada",
+      "Innovación",
+      "Sistemas materiales",
+      "Economía circular",
+      "Sostenibilidad",
+      "Gestión de proyectos",
+      "Diseño interdisciplinario"
+    ],
+    "ciiu": "M7410.09",
+    "sector_declarado": "Ver código CIIU",
+    "interes_investigacion": "Demanda de formación especializada en diseño estratégico, sectores productivos y organizacionales con mayor interés, competencias profesionales requeridas por el mercado y disposición de pago del público objetivo; tendencias y oportunidades del diseño estratégico, la innovación en sistemas materiales y la sostenibilidad en Ecuador.",
+    "competencia_declarada": "5 alternativa(s) mencionada(s) por el proponente; ver Oferta y plataformas.",
+    "nota_registro": "El brief declara M7410.00, que es la clase de cuatro dígitos (actividades especializadas de diseño) y no existe como código de seis dígitos en el SRI; se usa la subclase M7410.09 «otras actividades especializadas de diseño», la más cercana al diseño estratégico y de sistemas."
+  },
+  "audiencia_propuesta": {
+    "origen": "El brief no describe segmentos de audiencia; se definirán en la investigación de mercado.",
+    "segmentos": [],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Diplomado en Diseño Estratégico: del Método al Sistema",
+      "archivo": "Brief EDCO DISEÑO ESTRATÉGICO DEL MÉTODO AL SISTEMA.pdf",
+      "paginas": "1–4",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "hemisferios_design_thinking",
+      "titulo": "Universidad Hemisferios · Diplomado en Design Thinking",
+      "url": "https://educacioncontinua.uhemisferios.edu.ec/programa/diplomado-en-design-thinking/",
+      "observacion": "Online, «Clases Virtuales 24/7»; 130 horas en 11 unidades; inscripciones «Permanentes» y «Tenemos cupos disponibles»; aliado INESEM; precio no publicado (el botón de inscripción lleva a euroinnova.com).",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "inesem_design_thinking_uhe",
+      "titulo": "INESEM · Diplomado en Design Thinking (título expedido por la Universidad Hemisferios)",
+      "url": "https://www.inesem.es/Diplomado-Design-Thinking-Uhe",
+      "observacion": "Página del aliado, no de Hemisferios: 100% online, 3 meses; precio 362 € con descuento del 15% a 307,7 € hasta el 22/11/2026.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "udla_design_thinking_2023",
+      "titulo": "UDLA · Educación Continua · Design Thinking (folleto 2023)",
+      "url": "https://sitios.udla.edu.ec/wp-content/uploads/2023/07/Design-Thinking.pdf",
+      "observacion": "Folleto oficial: 24 horas, presencial, sábados de 8:00 a 13:00; inversión USD 390 («aplican descuentos especiales»); 5 módulos de empatía, ideación, prototipado, implementación empresarial y presentación de proyectos.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "udla_design_thinking_credly",
+      "titulo": "UDLA · Certificación en Design Thinking (insignia Credly)",
+      "url": "https://credly.com/org/universidad-de-las-americas-udla/badge/certificacion-en-design-thinking.1",
+      "observacion": "Insignia emitida por UDLA: 20 horas, nivel intermedio, pagada; habilidades de empatía, ideación, prototipado, SCAMPER y transformación organizacional.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "puce_maestria_diseno_estrategico",
+      "titulo": "PUCE · Maestría en Diseño, mención en Diseño Estratégico e Innovación (folleto)",
+      "url": "https://www.puce.edu.ec/wp-content/uploads/2021/03/MaestriaDiseno2.pdf",
+      "observacion": "Folleto oficial (marzo 2021): dos semestres, miércoles a viernes 18:00–22:00 y sábado 8:00–12:00; inversión USD 6.399,99 con matrícula y aranceles de titulación; materias de diseño estratégico, investigación en diseño estratégico, tendencias, planeación estratégica de proyectos y diseño de servicios.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "usfq_innovacion_regenerativa_2022",
+      "titulo": "USFQ · Educación Continua · Innovación para el Desarrollo Sostenible / Innovación Regenerativa (ficha 2022)",
+      "url": "https://www.usfq.edu.ec/sites/default/files/inline-files/Innovacio%CC%81n%20Regenerativa%20El%20Viaje%20Hacia%20la%20Sustentabilidad_0.pdf",
+      "observacion": "Ficha oficial: 1 de octubre–26 de noviembre de 2022; 32 horas académicas (24 por Zoom + 8 autónomas); virtual; tarifa público general USD 420 (pronto pago USD 360; grupal y comunidad USFQ USD 380). Usa la metodología del pensamiento sistémico para innovación regenerativa.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "usfq_arquitectura_sostenible_2026",
+      "titulo": "USFQ · Diplomado en Arquitectura y Construcción Sostenible 2026",
+      "url": "https://www.usfq.edu.ec/sites/default/files/inline-files/diplomado_en_arquitectura_sostenible_2026_0.pdf",
+      "observacion": "Semipresencial; 150 horas académicas (120 en vivo + 30 autónomas; 9 h presenciales obligatorias); 28 de abril–11 de agosto de 2026; valor USD 1.370 (pronto pago USD 1.270; alumni y grupal USD 1.260).",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "puc_proyectos_diseno_innovacion",
+      "titulo": "Pontificia Universidad Católica de Chile · Diplomado en Proyectos de diseño e innovación",
+      "url": "https://educacioncontinua.uc.cl/programas/diplomado-en-proyectos-de-diseno-e-innovacion/",
+      "observacion": "Online con clases en vivo, martes y jueves 18:30–21:45; 240 h (120 directas + 120 indirectas) en 5 cursos; «Valor: $2.200.000» CLP con matrícula incluida y la cifra «2.750 USD»; fecha de inicio «por definir»; 30 vacantes.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "udd_diseno_sostenible_upcycling",
+      "titulo": "Universidad del Desarrollo · Preguntas frecuentes sobre Diplomado Diseño sostenible y Upcycling",
+      "url": "https://diseno.udd.cl/files/2026/01/preguntas-frecuentes-sobre-diplomado-diseno-sostenible-y-upcycling-2.pdf",
+      "observacion": "Documento oficial de la Facultad de Diseño UDD (2026): modalidad online; dos sesiones semanales de 2,5 h; estrategias de reuso, reciclaje y upcycling, mapa de transformación de residuos, análisis de trade-off e impacto. No indica horas totales ni precio; el programa no figura en el listado actual de diplomados de Diseño UDD.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "usm_design_thinking_2026",
+      "titulo": "Universidad Técnica Federico Santa María · Diplomado en Design Thinking para la Innovación (USM 2026)",
+      "url": "https://www.did.usm.cl/wp-content/uploads/2026/01/DIPLOMADO-DESING-THINKING-1.pdf",
+      "observacion": "Online; 216 h totales (34 sincrónicas, 68 asincrónicas, 114 autónomas); 30 de marzo–3 de agosto de 2026; arancel CLP 1.800.000; organizado por el Departamento de Ingeniería en Diseño de Productos.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "coursera_design_thinking_uva",
+      "titulo": "Coursera · University of Virginia · Design Thinking for Innovation",
+      "url": "https://www.coursera.org/learn/uva-darden-design-thinking-innovation",
+      "observacion": "«483,751 already enrolled»; unas 6 h; herramientas de visualización, storytelling, mapas mentales y learning launch. Inscripción gratuita; certificado de pago.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "coursera_circular_economy",
+      "titulo": "Coursera · Lund University · Circular Economy – Sustainable Materials Management",
+      "url": "https://www.coursera.org/learn/circular-economy",
+      "observacion": "«84,461 already enrolled»; unas 20 h (2 semanas de 10 h); coofrecido con EIT RawMaterials.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "coursera_systems_mindset",
+      "titulo": "Coursera · University of Colorado Boulder · Developing a Systems Mindset",
+      "url": "https://www.coursera.org/learn/systems-mindset",
+      "observacion": "«15,230 already enrolled»; 8 h.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "domestika_diseno_sostenible",
+      "titulo": "Domestika · Diseño sostenible: objetos y espacios respetuosos con el medio ambiente (Lucas Muñoz)",
+      "url": "https://www.domestika.org/es/courses/2655",
+      "observacion": "2.505 estudiantes; 9 lecciones (1 h 42 min); precio no visible.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "domestika_upcycling_textil",
+      "titulo": "Domestika · Diseño textil: upcycling de ropa con técnicas experimentales (Giselle Manzano Ramírez)",
+      "url": "https://www.domestika.org/es/courses/3583",
+      "observacion": "2.566 estudiantes; 14 lecciones (1 h 43 min); precio no visible.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "domestika_estampados_textiles",
+      "titulo": "Domestika · Diseño de estampados textiles (Inés Aguilar)",
+      "url": "https://www.domestika.org/es/courses/162",
+      "observacion": "25.894 estudiantes; 14 lecciones (2 h 18 min).",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "domestika_design_thinking",
+      "titulo": "Domestika · Design thinking: innova y lidera proyectos de éxito (Lisa Weinsberger)",
+      "url": "https://www.domestika.org/es/courses/4133",
+      "observacion": "4.803 estudiantes; 17 lecciones (2 h 36 min).",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "domestika_estrategias_diseno",
+      "titulo": "Domestika · Estrategias de diseño para profesionales de la creatividad (Douglas Davis)",
+      "url": "https://www.domestika.org/es/courses/4617",
+      "observacion": "1.430 estudiantes; 17 lecciones (3 h 38 min).",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_busqueda_textil",
+      "titulo": "LinkedIn Jobs Ecuador · búsqueda pública «diseñador textil»",
+      "url": "https://ec.linkedin.com/jobs/search?keywords=dise%C3%B1ador%20textil&location=Ecuador",
+      "observacion": "19 resultados declarados el 2026-11-16; también se consultaron «diseñador de modas» (11), «diseñador de producto» (71) y «desarrollo de producto» (504). Solo se usó para identificar publicaciones.",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_busqueda_innovacion",
+      "titulo": "LinkedIn Jobs Ecuador · búsqueda pública «diseño e innovación»",
+      "url": "https://ec.linkedin.com/jobs/search?keywords=dise%C3%B1o%20e%20innovaci%C3%B3n&location=Ecuador",
+      "observacion": "503 resultados declarados el 2026-11-16; también se consultaron «jefe de diseño» (45), «service designer» (69), «diseñador industrial» (28) y «sostenibilidad diseño» (68).",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_busqueda_design_thinking",
+      "titulo": "LinkedIn Jobs Ecuador · búsqueda pública «design thinking»",
+      "url": "https://ec.linkedin.com/jobs/search?keywords=design%20thinking&location=Ecuador",
+      "observacion": "243 resultados declarados el 2026-11-16. La búsqueda «economia circular» (451) devolvió casi solo puestos ajenos al diseño (ventas, contabilidad, agro).",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_molriv",
+      "titulo": "LinkedIn Jobs · MOLRIV · Diseñador de moda",
+      "url": "https://ec.linkedin.com/jobs/view/dise%C3%B1ador-de-moda-at-molriv-producci%C3%B3n-ropa-4335264493",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_mym_confecciones",
+      "titulo": "LinkedIn Jobs · MYM Confecciones industriales · Diseñador patronaje",
+      "url": "https://ec.linkedin.com/jobs/view/disenador-patronaje-4486866374",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_appeal",
+      "titulo": "LinkedIn Jobs · Appeal S.A.S · Diseñadora Patronista",
+      "url": "https://ec.linkedin.com/jobs/view/dise%C3%B1adora-patronista-4488032799",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_equisplast",
+      "titulo": "LinkedIn Jobs · Equisplast · Responsable de Diseño y Desarrollo",
+      "url": "https://ec.linkedin.com/jobs/view/responsable-de-dise%C3%B1o-y-desarrollo-at-equisplast-4479620361",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_plasticaucho",
+      "titulo": "LinkedIn Jobs · Plasticaucho Industrial S.A. · Coordinador Desarrollo Calzado",
+      "url": "https://ec.linkedin.com/jobs/view/coordinador-desarollo-calzado-at-plasticaucho-industrial-s-a-4448488077",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_devsu",
+      "titulo": "LinkedIn Jobs · Devsu · UX Designer - Sector Financiero / Bancario",
+      "url": "https://ec.linkedin.com/jobs/view/ux-designer-sector-financiero-bancario-at-devsu-4479422618",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_wrs_health",
+      "titulo": "LinkedIn Jobs · WRS Health · UX Researcher",
+      "url": "https://ec.linkedin.com/jobs/view/ux-researcher-at-wrs-health-4484678510",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "li_monkey_plus",
+      "titulo": "LinkedIn Jobs · Monkey Plus · Diseñador Senior",
+      "url": "https://ec.linkedin.com/jobs/view/dise%C3%B1ador-senior-at-monkey-plus-4489463678",
+      "fecha": "2026-11-16"
+    },
+    {
+      "id": "sri_excel",
+      "titulo": "SRI · Excel de ventas aportado por el usuario",
+      "tipo": "Base de datos aportada",
+      "url": null,
+      "fecha": "2026-11-06",
+      "archivo": "consulta_sri_1.xlsx",
+      "nota": "Hoja Ventas SRI; 44 registros mensuales de M741009. SHA-256 21fcff47807504dc4d25703195e0648a9e85e255023a844ae45ca676abd9b493"
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Universidad Hemisferios",
+      "programa": "Diplomado en Design Thinking",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 130,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta permanente; «Tenemos cupos disponibles»; precio no publicado en la página de Hemisferios",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "hemisferios_design_thinking",
+      "nota": "Alternativa mencionada en el brief, verificada. Programa con INESEM, asincrónico («Clases Virtuales 24/7»), 130 h en 11 unidades: creatividad, pensamiento creativo, proceso de design thinking, fase de empatía, delimitación del proyecto, prototipo, testeo y metodología. La página del aliado INESEM (inesem_design_thinking_uhe) indica 362 € (307,7 € con descuento hasta el 22/11/2026); no se registra en USD por estar en euros y fuera de la página oficial. No cubre pensamiento sistémico, materiales ni textil.",
+      "etiqueta_precio": "Hemisferios · Design Thinking (online)"
+    },
+    {
+      "institucion": "UDLA",
+      "programa": "Design Thinking (Educación Continua)",
+      "tipo": "Oferta propia",
+      "modalidad": "Presencial",
+      "horas": 24,
+      "tipo_horas": "académicas",
+      "precio_usd": 390,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Folleto 2023; insignia «Certificación en Design Thinking» vigente en Credly (20 h); edición 2026 no confirmada",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "udla_design_thinking_2023",
+      "nota": "Folleto oficial UDLA: 24 h presenciales, sábados 8:00–13:00, inversión USD 390 («aplican descuentos especiales»). Módulos: introducción y empatía con entrevistas de campo, ideación, prototipado y validación, implementación empresarial e integración en la cultura corporativa, presentación de proyectos. La insignia de Credly (udla_design_thinking_credly) registra 20 h. Orientado a negocio; no aborda materiales, textil ni colección. Precio histórico.",
+      "etiqueta_precio": "UDLA · Design Thinking (2023)"
+    },
+    {
+      "institucion": "Pontificia Universidad Católica del Ecuador",
+      "programa": "Maestría en Diseño, mención en Diseño Estratégico e Innovación",
+      "tipo": "Otro nivel",
+      "modalidad": "Presencial",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": 6399.99,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Folleto oficial de 2021; cohorte vigente no confirmada",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "puce_maestria_diseno_estrategico",
+      "nota": "Posgrado de cuarto nivel en Quito (dos semestres, miércoles a viernes 18:00–22:00 y sábado 8:00–12:00); USD 6.399,99 con matrícula y titulación según folleto de 2021. Materias: diseño estratégico, investigación en diseño estratégico, gestión de la empresa, tendencias, entorno y consumo, taller de innovación y prospección, planeación estratégica de proyectos, diseño de servicios. Es la oferta local más cercana en el concepto de diseño estratégico, pero exige título de grado y no menciona textil ni economía circular.",
+      "etiqueta_precio": "PUCE · Maestría Diseño Estratégico (2021)"
+    },
+    {
+      "institucion": "USFQ",
+      "programa": "Innovación para el Desarrollo Sostenible (Innovación Regenerativa)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 32,
+      "tipo_horas": "académicas",
+      "precio_usd": 420,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Convocatoria histórica (octubre–noviembre de 2022); no se encontró edición posterior",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "usfq_innovacion_regenerativa_2022",
+      "nota": "Ficha oficial: 32 h académicas (24 por Zoom + 8 autónomas), sábados. Tarifa público general USD 420; pronto pago USD 360; grupal y comunidad USFQ USD 380. Contenidos: límites planetarios, metodología «Big Problem», del problema al insight con pensamiento sistémico, diseño regenerativo y prototipado; proyecto de plan regenerativo para un producto o servicio. Dirigido a profesionales de diversas industrias, no a diseñadores. Precio histórico.",
+      "etiqueta_precio": "USFQ · Innovación regenerativa (2022)"
+    },
+    {
+      "institucion": "USFQ",
+      "programa": "Diplomado en Arquitectura y Construcción Sostenible",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": 150,
+      "tipo_horas": "académicas",
+      "precio_usd": 1370,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Cohorte 28 de abril–11 de agosto de 2026 (finalizada)",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "usfq_arquitectura_sostenible_2026",
+      "nota": "Referencia de precio de un diplomado de sostenibilidad en Quito: 150 h académicas (120 en vivo por Zoom, 30 autónomas, 9 h presenciales obligatorias), 16 semanas. Valor USD 1.370; pronto pago USD 1.270; alumni y grupal USD 1.260. Incluye selección de materiales y técnicas de construcción sostenible y la ciudad como sistema socioambiental, aplicado a arquitectura; habilita para la certificación EDGE Expert. No es diseño estratégico ni textil.",
+      "etiqueta_precio": "USFQ · Diplomado arquitectura sostenible"
+    },
+    {
+      "institucion": "Pontificia Universidad Católica de Chile",
+      "programa": "Diplomado en Proyectos de diseño e innovación",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 240,
+      "tipo_horas": "académicas",
+      "precio_usd": 2750,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; fecha de inicio «por definir»; arancel en CLP con cifra en USD",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "puc_proyectos_diseno_innovacion",
+      "nota": "Alternativa mencionada en el brief, verificada. Referencia regional: online en vivo, 240 h (120 directas + 120 indirectas) en 5 cursos: oportunidades de innovación (investigación cualitativa, análisis de contexto, arquetipos), desarrollo de soluciones y prototipado, comunicación visual con manufactura y fabricación digital, tendencias (diseño sostenible y economía circular) y gestión de la innovación (propiedad intelectual, modelo y plan de negocios). Declara el uso de «pensamiento sistémico». Arancel oficial CLP 2.200.000 con matrícula; la página muestra «2.750 USD» como cifra adicional, por lo que se registra ese valor sin marcarlo como verificado en moneda de mercado ecuatoriano. Exige título y no trabaja textil ni colección.",
+      "etiqueta_precio": "PUC Chile · Proyectos de diseño e innovación"
+    },
+    {
+      "institucion": "Universidad del Desarrollo",
+      "programa": "Diplomado Diseño sostenible y Upcycling",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Preguntas frecuentes publicadas en 2026; el programa no figura en el listado actual de diplomados de Diseño UDD",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "udd_diseno_sostenible_upcycling",
+      "nota": "Alternativa mencionada en el brief (como «Diseño de Estrategias Sostenibles y Upcycling»); el nombre verificado es «Diseño sostenible y Upcycling». Online, dos sesiones semanales de 2,5 h. Estrategias de reuso, reciclaje y upcycling (molienda, pirólisis, prensado, extracción), mapa de transformación de residuos, análisis de trade-off e impacto para la estrategia de implementación, y «mirada crítica y sistémica»; casos reales como Karün. Por ser online no incluye trabajo práctico con materiales. No se encontraron horas totales ni precio.",
+      "etiqueta_precio": "UDD · Diseño sostenible y upcycling"
+    },
+    {
+      "institucion": "Universidad Técnica Federico Santa María",
+      "programa": "Diplomado en Design Thinking para la Innovación",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 216,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Cohorte 30 de marzo–3 de agosto de 2026 (finalizada); precio en CLP",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "usm_design_thinking_2026",
+      "nota": "Referencia regional (Chile): online, 216 h (34 sincrónicas, 68 asincrónicas, 114 autónomas), lunes 19:00–20:30. Arancel CLP 1.800.000 (no se convierte). Proceso completo de design thinking (empatizar, definir, idear, prototipar, testear) con proyecto final de innovación; organizado por Ingeniería en Diseño de Productos. No cubre materiales, textil ni colección.",
+      "etiqueta_precio": "USM · Design Thinking (CLP)"
+    },
+    {
+      "institucion": "Coursera (University of Virginia)",
+      "programa": "Design Thinking for Innovation",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 6,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso disponible; 483.751 inscritos",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_design_thinking_uva",
+      "nota": "Curso de unas 6 h: qué es el design thinking, mentalidad para innovar, generación de ideas y experimentación, con herramientas de visualización, storytelling, mapas mentales y learning launch. Inscripción gratuita; certificado de pago según suscripción de Coursera.",
+      "etiqueta_precio": "Coursera · Design Thinking (UVA)"
+    },
+    {
+      "institucion": "Coursera (Lund University)",
+      "programa": "Circular Economy – Sustainable Materials Management",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 20,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso disponible; 84.461 inscritos",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_circular_economy",
+      "nota": "Unas 20 h (2 semanas de 10 h), coofrecido con EIT RawMaterials; gestión sostenible de materiales y economía circular. Precio según suscripción de Coursera.",
+      "etiqueta_precio": "Coursera · Economía circular (Lund)"
+    },
+    {
+      "institucion": "Domestika",
+      "programa": "Diseño sostenible: objetos y espacios respetuosos con el medio ambiente",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 1.7,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso disponible; 2.505 estudiantes; precio no visible",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "domestika_diseno_sostenible",
+      "nota": "9 lecciones (1 h 42 min) del diseñador Lucas Muñoz: crear objetos y espacios a partir de material sobrante. Formación breve y asincrónica.",
+      "etiqueta_precio": "Domestika · Diseño sostenible"
+    },
+    {
+      "institucion": "Domestika",
+      "programa": "Diseño textil: upcycling de ropa con técnicas experimentales",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 1.7,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso disponible; 2.566 estudiantes; precio no visible",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "domestika_upcycling_textil",
+      "nota": "14 lecciones (1 h 43 min) de Giselle Manzano Ramírez sobre upcycling de prendas con técnicas textiles experimentales. Es la única oferta revisada que une textil y reaprovechamiento de materiales, en formato breve y sin acompañamiento docente.",
+      "etiqueta_precio": "Domestika · Upcycling textil"
+    },
+    {
+      "institucion": "Universidad del Azuay",
+      "programa": "Maestría en Diseño, Desarrollo y Gestión de Productos",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Precio no informado.",
+      "precio_verificado": false
+    },
+    {
+      "institucion": "Universidad Adolfo Ibáñez",
+      "programa": "Diplomado en Innovación Estratégica y Design Thinking",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Referencia regional (Chile); precio no informado.",
+      "precio_verificado": false
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "La participación internacional es muy alta en design thinking (483.751 inscritos en el curso de la UVA en Coursera y 4.803 en Domestika) y en economía circular de materiales (84.461), y es alta en estampado textil (25.894 en Domestika), lo que respalda el interés por los ejes metodológico, material y textil. Pero los cursos más parecidos a la propuesta (estrategias de diseño, diseño sostenible y upcycling textil) registran entre 1.430 y 2.566 estudiantes. En Ecuador solo hay señales indirectas: Hemisferios mantiene su diplomado de design thinking con inscripción permanente y la UDLA ya dictó un curso de design thinking. Se asigna 55 (intermedio): interés claro en los componentes por separado y evidencia débil para la combinación, sin datos locales.",
+      "fuentes": [
+        "coursera_design_thinking_uva",
+        "coursera_circular_economy",
+        "domestika_estampados_textiles",
+        "coursera_systems_mindset",
+        "domestika_design_thinking",
+        "domestika_upcycling_textil",
+        "domestika_diseno_sostenible",
+        "domestika_estrategias_diseno",
+        "hemisferios_design_thinking",
+        "udla_design_thinking_2023"
+      ],
+      "nivel_evidencia": "Inscripciones acumuladas internacionales en plataformas y continuidad de oferta local; sin datos de demanda ecuatoriana"
+    },
+    "empleabilidad": {
+      "puntaje": 50,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Las 8 publicaciones de LinkedIn Ecuador (todas con solicitud visible) muestran dos mercados: la confección (MOLRIV, MYM, Appeal) pide desarrollo de colección, conocimiento de telas y patronaje con Optitex, Gerber o Audaces (3 de 8), y desarrollo de producto e innovación en industria (Equisplast, Plasticaucho) pide gestión de proyectos y liderazgo de equipos. El pensamiento sistémico y el design thinking solo aparecen en UX digital (Devsu, WRS Health). Ninguna publicación usa el título de diseñador estratégico ni pide economía circular. Se asigna 50: las competencias de gestión, colaboración y desarrollo de colección tienen salida, pero el perfil estratégico-sostenible no aparece como demanda explícita y el puesto textil típico es técnico.",
+      "fuentes": [
+        "li_molriv",
+        "li_mym_confecciones",
+        "li_appeal",
+        "li_equisplast",
+        "li_plasticaucho",
+        "li_devsu",
+        "li_wrs_health",
+        "li_monkey_plus",
+        "li_busqueda_textil",
+        "li_busqueda_innovacion",
+        "li_busqueda_design_thinking"
+      ],
+      "nivel_evidencia": "Muestra exploratoria de 8 publicaciones públicas de LinkedIn Ecuador (8 empleadores)"
+    },
+    "competencia": {
+      "puntaje": 65,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "En Ecuador la oferta verificada cubre piezas sueltas: design thinking genérico (Hemisferios 130 h online con INESEM; el propio curso de UDLA de 24 h), sostenibilidad e innovación regenerativa (USFQ, 32 h en 2022) o construcción sostenible (USFQ, 150 h en 2026), y el diseño estratégico solo a nivel de maestría (PUCE, USD 6.399,99, folleto 2021). Ninguna combina sistemas materiales, industria textil, estampería y creación de colección en formato presencial en Quito. Las referencias regionales más completas (PUC Chile 240 h, que incluye economía circular, y UDD con upcycling) son online, cuestan en CLP y no tienen vínculo textil local; las plataformas cubren temas sueltos en menos de 2 h. No se verificaron la Maestría de la Universidad del Azuay ni el diplomado de la UAI mencionados en el brief. Se asigna 65: hueco local claro en la combinación, frente a una metodología base muy ofertada y de bajo costo.",
+      "fuentes": [
+        "hemisferios_design_thinking",
+        "udla_design_thinking_2023",
+        "puce_maestria_diseno_estrategico",
+        "usfq_innovacion_regenerativa_2022",
+        "usfq_arquitectura_sostenible_2026",
+        "puc_proyectos_diseno_innovacion",
+        "udd_diseno_sostenible_upcycling",
+        "usm_design_thinking_2026",
+        "coursera_design_thinking_uva",
+        "coursera_circular_economy",
+        "domestika_diseno_sostenible",
+        "domestika_upcycling_textil"
+      ],
+      "nivel_evidencia": "Páginas y folletos oficiales de 7 instituciones y 4 cursos de plataforma; vigencia variable"
+    },
+    "precio": {
+      "puntaje": 52,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "Hay cuatro precios en USD verificados en documentos oficiales de Quito, pero de distinto tipo y año: USD 390 por 24 h presenciales (UDLA, 2023), USD 420 por 32 h virtuales (USFQ, 2022), USD 1.370 por 150 h semipresenciales (USFQ, diplomado 2026, el único vigente este año) y USD 6.399,99 por una maestría de diseño estratégico (PUCE, 2021, otro nivel). Hemisferios no publica precio en su página y las referencias regionales están en CLP (PUC Chile CLP 2.200.000, con la cifra «2.750 USD»; USM CLP 1.800.000). El brief no fija horas ni precio. Se asigna 52: hay un rango local orientativo (entre unos USD 9 y 16 por hora en educación continua), pero solo un referente vigente y ninguno del mismo tema.",
+      "fuentes": [
+        "udla_design_thinking_2023",
+        "usfq_innovacion_regenerativa_2022",
+        "usfq_arquitectura_sostenible_2026",
+        "puce_maestria_diseno_estrategico",
+        "hemisferios_design_thinking",
+        "puc_proyectos_diseno_innovacion",
+        "usm_design_thinking_2026"
+      ],
+      "nivel_evidencia": "Un precio vigente y dos históricos verificados en USD en Quito, más una maestría; resto no publicado o en CLP"
+    },
+    "sector": {
+      "puntaje": 50.50628693730787,
+      "estado": "Calculado con ventas SRI",
+      "fuentes": [
+        "sri_excel"
+      ],
+      "nivel_evidencia": "Ventas SRI del CIIU exacto; regla absoluta reproducible",
+      "subcategorias": [
+        "Tamaño económico (40%)",
+        "Evolución de ventas (60%)"
+      ],
+      "justificacion": "Regla absoluta sin programa de referencia (sector_edcos.calcular_sector_sri). Enero–agosto de 2026: USD 8,788,519.38; mismo periodo de 2025: USD 8,696,152.13. Crecimiento: 1.06 %; puntaje de evolución 52.66/100 (escala lineal: −20 % = 0, 0 % = 50, +20 % = 100, con topes). Tamaño: percentil de rango medio 47.28 entre 92 actividades CIIU de seis dígitos de la sección M. Sector = 40 % tamaño + 60 % evolución = 50.51/100. Fuente: Excel SRI, casilleros 411 + 413. No se sustituyen datos faltantes por cero."
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Validar el interés con encuestas a egresados de diseño textil, de modas, gráfico y de producto de la UDLA y con empresas de confección de Pichincha y Tungurahua, preguntando por la colección final y la Estampería Quiteña. Las cifras de plataformas solo muestran interés internacional."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Vincular el pensamiento sistémico y la economía circular a tareas que el mercado ya pide: desarrollo de colección, selección y optimización de telas, gestión de proyectos y coordinación con producción y comercial. Considerar una introducción a fichas técnicas y software de patronaje, y entregar la colección como pieza de portafolio."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Comunicar el programa como diseño estratégico aplicado a sistemas materiales y textiles, no como design thinking, para no competir con Hemisferios ni con el curso propio de UDLA. Formalizar alianzas con industrias textiles y con la Estampería Quiteña, y verificar directamente la oferta de la Universidad del Azuay y de la UAI, que no pudo confirmarse en línea."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Definir las horas totales del semestre y contrastar con los referentes de Quito (USFQ USD 1.370 por 150 h en 2026; UDLA USD 390 por 24 h en 2023). Consultar precios vigentes de Hemisferios y de la maestría de la PUCE antes de fijar el arancel, y considerar pago por módulo o en cuotas."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "El sector se calcula aparte con ventas SRI del CIIU de diseño especializado; leerlo junto con la industria textil y de confección, donde se concentran las publicaciones observadas (Ambato, Pichincha, Guayaquil) y donde está el diferencial del programa."
+    }
+  ],
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · Design Thinking for Innovation (UVA)",
+          "valor": 483751,
+          "fuente": "coursera_design_thinking_uva"
+        },
+        {
+          "etiqueta": "Coursera · Economía circular y materiales (Lund)",
+          "valor": 84461,
+          "fuente": "coursera_circular_economy"
+        },
+        {
+          "etiqueta": "Domestika · Diseño de estampados textiles",
+          "valor": 25894,
+          "fuente": "domestika_estampados_textiles"
+        },
+        {
+          "etiqueta": "Coursera · Developing a Systems Mindset",
+          "valor": 15230,
+          "fuente": "coursera_systems_mindset"
+        },
+        {
+          "etiqueta": "Domestika · Design thinking: innova y lidera",
+          "valor": 4803,
+          "fuente": "domestika_design_thinking"
+        },
+        {
+          "etiqueta": "Domestika · Upcycling textil",
+          "valor": 2566,
+          "fuente": "domestika_upcycling_textil"
+        },
+        {
+          "etiqueta": "Domestika · Diseño sostenible (objetos y espacios)",
+          "valor": 2505,
+          "fuente": "domestika_diseno_sostenible"
+        },
+        {
+          "etiqueta": "Domestika · Estrategias de diseño para creativos",
+          "valor": 1430,
+          "fuente": "domestika_estrategias_diseno"
+        }
+      ],
+      "fuentes": [
+        "coursera_design_thinking_uva",
+        "coursera_circular_economy",
+        "domestika_estampados_textiles",
+        "coursera_systems_mindset",
+        "domestika_design_thinking",
+        "domestika_upcycling_textil",
+        "domestika_diseno_sostenible",
+        "domestika_estrategias_diseno",
+        "hemisferios_design_thinking",
+        "udla_design_thinking_2023"
+      ],
+      "nota": "Cifras acumuladas publicadas en las páginas de cada curso (Coursera «already enrolled», Domestika «estudiantes») el 2026-11-16; son participación internacional, no demanda ecuatoriana ni intención de pago. Como señal local indirecta, Hemisferios mantiene su diplomado de design thinking con inscripción permanente y la UDLA ya dictó un curso presencial de design thinking. No se encontraron cifras públicas de inscripción de programas de diseño estratégico en Ecuador.",
+      "lectura": "Hay interés internacional muy amplio en design thinking (483.751 inscritos en el curso de la UVA) y en economía circular de materiales (84.461), y alto en estampado textil (25.894), pero los cursos de estrategia de diseño, upcycling y diseño sostenible aplicado quedan en 1.400–2.600 estudiantes. El componente metodológico atrae mucho; la combinación estratégica y material es un nicho.",
+      "fecha_consulta": "2026-11-16",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_molriv",
+          "identificador_linkedin": "4335264493",
+          "empresa": "MOLRIV",
+          "cargo": "Diseñador de moda",
+          "ciudad": "Ambato",
+          "pais": "Ecuador",
+          "area": "Diseño y desarrollo de colecciones de confección",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 1 semana; «Sé de los primeros 25 solicitantes»",
+          "habilidades": [
+            "hab2",
+            "hab3",
+            "hab5",
+            "hab6",
+            "hab8"
+          ],
+          "resumen": "Desarrollar colecciones acordes a tendencias, mercado y requerimientos de clientes de cadenas retail, con patronaje, escalado, fichas técnicas y coordinación con Comercial y Producción. Pide título en Diseño de Modas, 2+ años en confección industrial, denim y lavados, y Optitex.",
+          "fuente": "li_molriv"
+        },
+        {
+          "id": "li_mym_confecciones",
+          "identificador_linkedin": "4486866374",
+          "empresa": "MYM Confecciones industriales",
+          "cargo": "Diseñador patronaje",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Patronaje y desarrollo de producto textil",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 1 semana; «Sé de los primeros 25 solicitantes»",
+          "habilidades": [
+            "hab3",
+            "hab5",
+            "hab6",
+            "hab8"
+          ],
+          "resumen": "Tiempo completo y presencial en Quito: desarrollar y escalar patrones, preparar trazos para optimizar el uso de tela y revisar muestras. Pide Audaces/Gerber, conocimiento de textiles y comportamiento de telas, y colaboración con diseño, corte y costura.",
+          "fuente": "li_mym_confecciones"
+        },
+        {
+          "id": "li_appeal",
+          "identificador_linkedin": "4488032799",
+          "empresa": "Appeal S.A.S",
+          "cargo": "Diseñadora Patronista",
+          "ciudad": "Amaguaña, Pichincha",
+          "pais": "Ecuador",
+          "area": "Diseño y patronaje de confección",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 1 semana; «Sé de los primeros 25 solicitantes»",
+          "habilidades": [
+            "hab6",
+            "hab8",
+            "hab9"
+          ],
+          "resumen": "Diseñadora y patronista para confección. Pide Gerber, patronaje, Illustrator y al menos 1 año de experiencia.",
+          "fuente": "li_appeal"
+        },
+        {
+          "id": "li_equisplast",
+          "identificador_linkedin": "4479620361",
+          "empresa": "Equisplast",
+          "cargo": "Responsable de Diseño y Desarrollo",
+          "ciudad": "Cuenca",
+          "pais": "Ecuador",
+          "area": "Diseño y desarrollo de producto industrial",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 1 mes; 78 solicitudes",
+          "habilidades": [
+            "hab4",
+            "hab5",
+            "hab6"
+          ],
+          "resumen": "Liderar el diseño y desarrollo de productos desde la idea hasta el lanzamiento, coordinando equipos y cumpliendo plazos y normativas, con foco en calidad, innovación y mejora continua. Descripción breve.",
+          "fuente": "li_equisplast"
+        },
+        {
+          "id": "li_plasticaucho",
+          "identificador_linkedin": "4448488077",
+          "empresa": "Plasticaucho Industrial S.A.",
+          "cargo": "Coordinador Desarrollo Calzado",
+          "ciudad": "Ambato",
+          "pais": "Ecuador",
+          "area": "Desarrollo de producto e innovación (calzado)",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 3 meses; 98 solicitudes",
+          "habilidades": [
+            "hab4",
+            "hab6",
+            "hab11"
+          ],
+          "resumen": "Desarrollo de producto e innovación en calzado. Pide título en Ingeniería Industrial o afín, 2+ años liderando procesos o proyectos, gestión de proyectos, normas ISO e inglés intermedio.",
+          "fuente": "li_plasticaucho"
+        },
+        {
+          "id": "li_devsu",
+          "identificador_linkedin": "4479422618",
+          "empresa": "Devsu",
+          "cargo": "UX Designer - Sector Financiero / Bancario",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Diseño de productos y servicios digitales",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 3 semanas; «Sé de los primeros 25 solicitantes»",
+          "habilidades": [
+            "hab1",
+            "hab2",
+            "hab5",
+            "hab7",
+            "hab9"
+          ],
+          "resumen": "Diseñar productos y servicios digitales desde la investigación hasta la validación aplicando «Doble Diamante, Design Thinking y User-Centered Design», con investigación cualitativa y cuantitativa, Figma y equipos multidisciplinarios. Pide «Pensamiento crítico, sistémico y lateral».",
+          "fuente": "li_devsu"
+        },
+        {
+          "id": "li_wrs_health",
+          "identificador_linkedin": "4484678510",
+          "empresa": "WRS Health",
+          "cargo": "UX Researcher",
+          "ciudad": "Ecuador (sin ciudad indicada)",
+          "pais": "Ecuador",
+          "area": "Investigación de usuarios y estrategia de producto",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 1 semana; «Sé de los primeros 25 solicitantes»",
+          "habilidades": [
+            "hab2",
+            "hab4",
+            "hab5",
+            "hab7"
+          ],
+          "resumen": "Liderar el descubrimiento de producto con entrevistas e investigación de usuarios aplicando design thinking, además de investigación de mercado y competencia; traducir hallazgos en estrategia de producto y gestionar alcance, plazos y equipos multifuncionales. Anuncio redactado en inglés.",
+          "fuente": "li_wrs_health"
+        },
+        {
+          "id": "li_monkey_plus",
+          "identificador_linkedin": "4489463678",
+          "empresa": "Monkey Plus",
+          "cargo": "Diseñador Senior",
+          "ciudad": "Quito",
+          "pais": "Ecuador",
+          "area": "Diseño y creatividad de marca",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 6 días; 187 solicitudes",
+          "habilidades": [
+            "hab4",
+            "hab5",
+            "hab9",
+            "hab10"
+          ],
+          "resumen": "Traducir la estrategia en campañas creativas, mantener guías de estilo y sistemas de diseño, liderar revisiones de diseño e integrar herramientas de IA. Pide 5 años, portafolio, Figma, Adobe CC y manejar varios proyectos a la vez.",
+          "fuente": "li_monkey_plus"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "hab1",
+          "habilidad": "Pensamiento sistémico y crítico",
+          "cobertura": "Explícita",
+          "criterio": "Mención de pensamiento sistémico, crítico o visión de sistema en las funciones o competencias."
+        },
+        {
+          "id": "hab2",
+          "habilidad": "Investigación y análisis contextual",
+          "cobertura": "Explícita",
+          "criterio": "Investigación de usuarios, mercado, competencia o tendencias para orientar el diseño."
+        },
+        {
+          "id": "hab3",
+          "habilidad": "Innovación en sistemas materiales",
+          "cobertura": "Explícita",
+          "criterio": "Conocimiento de materiales, tejidos, acabados o procesos y su optimización o comportamiento."
+        },
+        {
+          "id": "hab4",
+          "habilidad": "Planificación y gestión estratégica del diseño",
+          "cobertura": "Explícita",
+          "criterio": "Gestionar proyectos de diseño o desarrollo: alcance, plazos, normas, varios proyectos a la vez o traducir estrategia en diseño."
+        },
+        {
+          "id": "hab5",
+          "habilidad": "Liderazgo y colaboración interdisciplinaria",
+          "cobertura": "Explícita",
+          "criterio": "Liderar o coordinar equipos, o trabajar con áreas distintas (comercial, producción, desarrollo, negocio)."
+        },
+        {
+          "id": "hab6",
+          "habilidad": "Desarrollo de producto y colección",
+          "cobertura": "Explícita",
+          "criterio": "Desarrollar productos o colecciones desde la idea hasta el lanzamiento, muestras o prendas."
+        },
+        {
+          "id": "hab7",
+          "habilidad": "Metodologías de diseño (design thinking)",
+          "cobertura": "Explícita",
+          "criterio": "Mención de design thinking, doble diamante, diseño centrado en el usuario u otras metodologías de diseño."
+        },
+        {
+          "id": "hab8",
+          "habilidad": "Patronaje y software CAD textil",
+          "cobertura": "Por contrastar",
+          "criterio": "Patronaje, escalado, fichas técnicas o software Optitex, Gerber o Audaces."
+        },
+        {
+          "id": "hab9",
+          "habilidad": "Herramientas digitales de diseño",
+          "cobertura": "Por contrastar",
+          "criterio": "Figma, Miro, Adobe Creative Cloud o Illustrator."
+        },
+        {
+          "id": "hab10",
+          "habilidad": "Portafolio profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "La publicación exige o valora un portafolio."
+        },
+        {
+          "id": "hab11",
+          "habilidad": "Inglés profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "Inglés requerido o valorado de forma explícita."
+        }
+      ],
+      "fuentes": [
+        "li_molriv",
+        "li_mym_confecciones",
+        "li_appeal",
+        "li_equisplast",
+        "li_plasticaucho",
+        "li_devsu",
+        "li_wrs_health",
+        "li_monkey_plus",
+        "li_busqueda_textil",
+        "li_busqueda_innovacion",
+        "li_busqueda_design_thinking"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Búsquedas públicas en ec.linkedin.com/jobs (sin sesión) el 2026-11-16 con «diseñador textil», «diseñador de modas», «diseñador de producto», «desarrollo de producto», «diseño e innovación», «jefe de diseño», «service designer», «design thinking», «diseñador industrial», «sostenibilidad diseño» y «economia circular»; se abrieron 13 publicaciones y se registran 8 de 8 empleadores distintos vinculados a desarrollo textil, desarrollo de producto e investigación/diseño estratégico. Ninguna publicación usa el título «diseñador estratégico» ni menciona economía circular o upcycling; el design thinking y el pensamiento sistémico solo aparecen en puestos de UX digital. El empleo textil se concentra en Ambato, Guayaquil y Pichincha. Es una muestra exploratoria de habilidades, no un conteo de vacantes."
+      },
+      "habilidades": [
+        {
+          "id": "hab5",
+          "habilidad": "Liderazgo y colaboración interdisciplinaria",
+          "cobertura": "Explícita",
+          "criterio": "Liderar o coordinar equipos, o trabajar con áreas distintas (comercial, producción, desarrollo, negocio).",
+          "menciones": 6,
+          "muestra": 8,
+          "porcentaje": 75.0,
+          "fuentes": [
+            "li_molriv",
+            "li_mym_confecciones",
+            "li_equisplast",
+            "li_devsu",
+            "li_wrs_health",
+            "li_monkey_plus"
+          ]
+        },
+        {
+          "id": "hab6",
+          "habilidad": "Desarrollo de producto y colección",
+          "cobertura": "Explícita",
+          "criterio": "Desarrollar productos o colecciones desde la idea hasta el lanzamiento, muestras o prendas.",
+          "menciones": 5,
+          "muestra": 8,
+          "porcentaje": 62.5,
+          "fuentes": [
+            "li_molriv",
+            "li_mym_confecciones",
+            "li_appeal",
+            "li_equisplast",
+            "li_plasticaucho"
+          ]
+        },
+        {
+          "id": "hab4",
+          "habilidad": "Planificación y gestión estratégica del diseño",
+          "cobertura": "Explícita",
+          "criterio": "Gestionar proyectos de diseño o desarrollo: alcance, plazos, normas, varios proyectos a la vez o traducir estrategia en diseño.",
+          "menciones": 4,
+          "muestra": 8,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_equisplast",
+            "li_plasticaucho",
+            "li_wrs_health",
+            "li_monkey_plus"
+          ]
+        },
+        {
+          "id": "hab2",
+          "habilidad": "Investigación y análisis contextual",
+          "cobertura": "Explícita",
+          "criterio": "Investigación de usuarios, mercado, competencia o tendencias para orientar el diseño.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_molriv",
+            "li_devsu",
+            "li_wrs_health"
+          ]
+        },
+        {
+          "id": "hab8",
+          "habilidad": "Patronaje y software CAD textil",
+          "cobertura": "Por contrastar",
+          "criterio": "Patronaje, escalado, fichas técnicas o software Optitex, Gerber o Audaces.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_molriv",
+            "li_mym_confecciones",
+            "li_appeal"
+          ]
+        },
+        {
+          "id": "hab9",
+          "habilidad": "Herramientas digitales de diseño",
+          "cobertura": "Por contrastar",
+          "criterio": "Figma, Miro, Adobe Creative Cloud o Illustrator.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_appeal",
+            "li_devsu",
+            "li_monkey_plus"
+          ]
+        },
+        {
+          "id": "hab3",
+          "habilidad": "Innovación en sistemas materiales",
+          "cobertura": "Explícita",
+          "criterio": "Conocimiento de materiales, tejidos, acabados o procesos y su optimización o comportamiento.",
+          "menciones": 2,
+          "muestra": 8,
+          "porcentaje": 25.0,
+          "fuentes": [
+            "li_molriv",
+            "li_mym_confecciones"
+          ]
+        },
+        {
+          "id": "hab7",
+          "habilidad": "Metodologías de diseño (design thinking)",
+          "cobertura": "Explícita",
+          "criterio": "Mención de design thinking, doble diamante, diseño centrado en el usuario u otras metodologías de diseño.",
+          "menciones": 2,
+          "muestra": 8,
+          "porcentaje": 25.0,
+          "fuentes": [
+            "li_devsu",
+            "li_wrs_health"
+          ]
+        },
+        {
+          "id": "hab1",
+          "habilidad": "Pensamiento sistémico y crítico",
+          "cobertura": "Explícita",
+          "criterio": "Mención de pensamiento sistémico, crítico o visión de sistema en las funciones o competencias.",
+          "menciones": 1,
+          "muestra": 8,
+          "porcentaje": 12.5,
+          "fuentes": [
+            "li_devsu"
+          ]
+        },
+        {
+          "id": "hab10",
+          "habilidad": "Portafolio profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "La publicación exige o valora un portafolio.",
+          "menciones": 1,
+          "muestra": 8,
+          "porcentaje": 12.5,
+          "fuentes": [
+            "li_monkey_plus"
+          ]
+        },
+        {
+          "id": "hab11",
+          "habilidad": "Inglés profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "Inglés requerido o valorado de forma explícita.",
+          "menciones": 1,
+          "muestra": 8,
+          "porcentaje": 12.5,
+          "fuentes": [
+            "li_plasticaucho"
+          ]
+        }
+      ],
+      "fecha_consulta": "2026-11-16",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada"
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "hemisferios_design_thinking",
+        "udla_design_thinking_2023",
+        "puce_maestria_diseno_estrategico",
+        "usfq_innovacion_regenerativa_2022",
+        "usfq_arquitectura_sostenible_2026",
+        "puc_proyectos_diseno_innovacion",
+        "udd_diseno_sostenible_upcycling",
+        "usm_design_thinking_2026",
+        "coursera_design_thinking_uva",
+        "coursera_circular_economy",
+        "domestika_diseno_sostenible",
+        "domestika_upcycling_textil"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-11-16",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "USD",
+      "fuentes": [
+        "udla_design_thinking_2023",
+        "usfq_innovacion_regenerativa_2022",
+        "usfq_arquitectura_sostenible_2026",
+        "puce_maestria_diseno_estrategico",
+        "hemisferios_design_thinking",
+        "puc_proyectos_diseno_innovacion",
+        "usm_design_thinking_2026"
+      ],
+      "nota": "Precios en moneda original y sin conversión. Se marcan como verificados los precios totales de documentos oficiales: UDLA USD 390 (folleto 2023, histórico, con descuentos especiales), USFQ USD 420 (2022, histórico; pronto pago USD 360) y USD 1.370 (diplomado 2026; pronto pago USD 1.270), y PUCE USD 6.399,99 (maestría, folleto 2021, otro nivel). PUC Chile publica CLP 2.200.000 y la cifra «2.750 USD», que se registra sin marcar como verificada; USM (CLP 1.800.000) se describe en la nota. Hemisferios no publica precio en su página (su aliado INESEM muestra 362 €). UDD y las plataformas no muestran un precio legible del programa.",
+      "fecha_consulta": "2026-11-16",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Evolución de ventas de personas naturales y sociedades",
+      "fuentes": [
+        "sri_excel"
+      ],
+      "nota": "Excel SRI aportado: consulta_sri_1.xlsx, hoja Ventas SRI, CIIU exacto M741009 (M7410.09). Se suman casilleros 411 + 413 por tipo de contribuyente. Vista principal: enero–agosto de cada año; años completos por separado.",
+      "ventas": [
+        {
+          "anio": 2023,
+          "meses": 8,
+          "ciiu": "M7410.09",
+          "naturales": 3376587.49,
+          "sociedades": 9930611.69,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2024,
+          "meses": 8,
+          "ciiu": "M7410.09",
+          "naturales": 3693251.28,
+          "sociedades": 3691098.57,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2025,
+          "meses": 8,
+          "ciiu": "M7410.09",
+          "naturales": 4092978.99,
+          "sociedades": 4603173.14,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2026,
+          "meses": 8,
+          "ciiu": "M7410.09",
+          "naturales": 4671318.45,
+          "sociedades": 4117200.93,
+          "fuente": "sri_excel"
+        }
+      ],
+      "ventas_anuales": [
+        {
+          "anio": 2023,
+          "meses": 12,
+          "ciiu": "M7410.09",
+          "naturales": 6426868.42,
+          "sociedades": 13273088.95,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2024,
+          "meses": 12,
+          "ciiu": "M7410.09",
+          "naturales": 6852082.78,
+          "sociedades": 6167263.09,
+          "fuente": "sri_excel"
+        },
+        {
+          "anio": 2025,
+          "meses": 12,
+          "ciiu": "M7410.09",
+          "naturales": 7465496.35,
+          "sociedades": 9928559.65,
+          "fuente": "sri_excel"
+        }
+      ],
+      "mensual": [
+        {
+          "anio": 2023,
+          "mes": 1,
+          "ciiu": "M7410.09",
+          "naturales_411": 102719.25,
+          "sociedades_411": 491307.61,
+          "naturales_413": 45962.51,
+          "sociedades_413": 35.0
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "ciiu": "M7410.09",
+          "naturales_411": 159328.97,
+          "sociedades_411": 1595986.79,
+          "naturales_413": 67836.02,
+          "sociedades_413": 230.0
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "ciiu": "M7410.09",
+          "naturales_411": 214236.71,
+          "sociedades_411": 1344531.63,
+          "naturales_413": 82757.85,
+          "sociedades_413": 30.0
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "ciiu": "M7410.09",
+          "naturales_411": 108467.94,
+          "sociedades_411": 861390.75,
+          "naturales_413": 42315.17,
+          "sociedades_413": 30.0
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "ciiu": "M7410.09",
+          "naturales_411": 158395.97,
+          "sociedades_411": 1696593.5,
+          "naturales_413": 32775.2,
+          "sociedades_413": 30.0
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "ciiu": "M7410.09",
+          "naturales_411": 1003515.95,
+          "sociedades_411": 1211212.29,
+          "naturales_413": 920925.94,
+          "sociedades_413": 430.0
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "ciiu": "M7410.09",
+          "naturales_411": 201687.97,
+          "sociedades_411": 1649667.42,
+          "naturales_413": 84615.03,
+          "sociedades_413": 30.0
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "ciiu": "M7410.09",
+          "naturales_411": 108409.05,
+          "sociedades_411": 1079106.7,
+          "naturales_413": 42637.96,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "ciiu": "M7410.09",
+          "naturales_411": 92752.08,
+          "sociedades_411": 655173.76,
+          "naturales_413": 60497.56,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2023,
+          "mes": 10,
+          "ciiu": "M7410.09",
+          "naturales_411": 143816.8,
+          "sociedades_411": 994975.38,
+          "naturales_413": 48419.24,
+          "sociedades_413": 8376.15
+        },
+        {
+          "anio": 2023,
+          "mes": 11,
+          "ciiu": "M7410.09",
+          "naturales_411": 184312.23,
+          "sociedades_411": 610158.27,
+          "naturales_413": 72866.43,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2023,
+          "mes": 12,
+          "ciiu": "M7410.09",
+          "naturales_411": 1164710.03,
+          "sociedades_411": 1054916.45,
+          "naturales_413": 1282906.56,
+          "sociedades_413": 18877.25
+        },
+        {
+          "anio": 2024,
+          "mes": 1,
+          "ciiu": "M7410.09",
+          "naturales_411": 146140.31,
+          "sociedades_411": 366519.27,
+          "naturales_413": 77008.11,
+          "sociedades_413": 50.0
+        },
+        {
+          "anio": 2024,
+          "mes": 2,
+          "ciiu": "M7410.09",
+          "naturales_411": 179329.61,
+          "sociedades_411": 742119.91,
+          "naturales_413": 65497.16,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2024,
+          "mes": 3,
+          "ciiu": "M7410.09",
+          "naturales_411": 262696.89,
+          "sociedades_411": 982190.63,
+          "naturales_413": 85231.15,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2024,
+          "mes": 4,
+          "ciiu": "M7410.09",
+          "naturales_411": 230864.27,
+          "sociedades_411": 451810.72,
+          "naturales_413": 65170.18,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2024,
+          "mes": 5,
+          "ciiu": "M7410.09",
+          "naturales_411": 258164.55,
+          "sociedades_411": 245219.1,
+          "naturales_413": 67985.96,
+          "sociedades_413": 50.0
+        },
+        {
+          "anio": 2024,
+          "mes": 6,
+          "ciiu": "M7410.09",
+          "naturales_411": 842029.53,
+          "sociedades_411": 372028.96,
+          "naturales_413": 704982.18,
+          "sociedades_413": 50.0
+        },
+        {
+          "anio": 2024,
+          "mes": 7,
+          "ciiu": "M7410.09",
+          "naturales_411": 240895.12,
+          "sociedades_411": 329039.75,
+          "naturales_413": 89818.27,
+          "sociedades_413": 50.01
+        },
+        {
+          "anio": 2024,
+          "mes": 8,
+          "ciiu": "M7410.09",
+          "naturales_411": 301909.93,
+          "sociedades_411": 201920.22,
+          "naturales_413": 75528.06,
+          "sociedades_413": 50.0
+        },
+        {
+          "anio": 2024,
+          "mes": 9,
+          "ciiu": "M7410.09",
+          "naturales_411": 310879.37,
+          "sociedades_411": 433613.74,
+          "naturales_413": 83405.03,
+          "sociedades_413": 50.02
+        },
+        {
+          "anio": 2024,
+          "mes": 10,
+          "ciiu": "M7410.09",
+          "naturales_411": 250085.9,
+          "sociedades_411": 584465.82,
+          "naturales_413": 92641.74,
+          "sociedades_413": 50.02
+        },
+        {
+          "anio": 2024,
+          "mes": 11,
+          "ciiu": "M7410.09",
+          "naturales_411": 302121.33,
+          "sociedades_411": 355448.03,
+          "naturales_413": 83118.02,
+          "sociedades_413": 50.01
+        },
+        {
+          "anio": 2024,
+          "mes": 12,
+          "ciiu": "M7410.09",
+          "naturales_411": 1075090.55,
+          "sociedades_411": 1091996.87,
+          "naturales_413": 961489.56,
+          "sociedades_413": 10490.01
+        },
+        {
+          "anio": 2025,
+          "mes": 1,
+          "ciiu": "M7410.09",
+          "naturales_411": 266437.08,
+          "sociedades_411": 609542.69,
+          "naturales_413": 85608.62,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2025,
+          "mes": 2,
+          "ciiu": "M7410.09",
+          "naturales_411": 241003.36,
+          "sociedades_411": 629280.13,
+          "naturales_413": 74882.68,
+          "sociedades_413": 30.01
+        },
+        {
+          "anio": 2025,
+          "mes": 3,
+          "ciiu": "M7410.09",
+          "naturales_411": 256727.52,
+          "sociedades_411": 724341.52,
+          "naturales_413": 77242.15,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2025,
+          "mes": 4,
+          "ciiu": "M7410.09",
+          "naturales_411": 343717.16,
+          "sociedades_411": 267979.95,
+          "naturales_413": 79138.6,
+          "sociedades_413": 50.01
+        },
+        {
+          "anio": 2025,
+          "mes": 5,
+          "ciiu": "M7410.09",
+          "naturales_411": 362304.34,
+          "sociedades_411": 409190.87,
+          "naturales_413": 71408.84,
+          "sociedades_413": 1650.01
+        },
+        {
+          "anio": 2025,
+          "mes": 6,
+          "ciiu": "M7410.09",
+          "naturales_411": 456255.17,
+          "sociedades_411": 908370.77,
+          "naturales_413": 814215.23,
+          "sociedades_413": 235.0
+        },
+        {
+          "anio": 2025,
+          "mes": 7,
+          "ciiu": "M7410.09",
+          "naturales_411": 374030.02,
+          "sociedades_411": 434981.89,
+          "naturales_413": 114105.55,
+          "sociedades_413": 273.0
+        },
+        {
+          "anio": 2025,
+          "mes": 8,
+          "ciiu": "M7410.09",
+          "naturales_411": 360596.82,
+          "sociedades_411": 616987.29,
+          "naturales_413": 115305.85,
+          "sociedades_413": 260.0
+        },
+        {
+          "anio": 2025,
+          "mes": 9,
+          "ciiu": "M7410.09",
+          "naturales_411": 383084.0,
+          "sociedades_411": 2532299.2,
+          "naturales_413": 107402.71,
+          "sociedades_413": 235.0
+        },
+        {
+          "anio": 2025,
+          "mes": 10,
+          "ciiu": "M7410.09",
+          "naturales_411": 388546.17,
+          "sociedades_411": 813327.36,
+          "naturales_413": 90158.95,
+          "sociedades_413": 235.0
+        },
+        {
+          "anio": 2025,
+          "mes": 11,
+          "ciiu": "M7410.09",
+          "naturales_411": 381779.56,
+          "sociedades_411": 730063.6,
+          "naturales_413": 219625.55,
+          "sociedades_413": 235.0
+        },
+        {
+          "anio": 2025,
+          "mes": 12,
+          "ciiu": "M7410.09",
+          "naturales_411": 789200.3,
+          "sociedades_411": 1165971.27,
+          "naturales_413": 1012720.12,
+          "sociedades_413": 83020.08
+        },
+        {
+          "anio": 2026,
+          "mes": 1,
+          "ciiu": "M7410.09",
+          "naturales_411": 374643.49,
+          "sociedades_411": 469741.63,
+          "naturales_413": 99631.17,
+          "sociedades_413": 210.0
+        },
+        {
+          "anio": 2026,
+          "mes": 2,
+          "ciiu": "M7410.09",
+          "naturales_411": 362155.12,
+          "sociedades_411": 379720.7,
+          "naturales_413": 85716.3,
+          "sociedades_413": 2699.09
+        },
+        {
+          "anio": 2026,
+          "mes": 3,
+          "ciiu": "M7410.09",
+          "naturales_411": 438666.98,
+          "sociedades_411": 410812.47,
+          "naturales_413": 97100.49,
+          "sociedades_413": 5312.0
+        },
+        {
+          "anio": 2026,
+          "mes": 4,
+          "ciiu": "M7410.09",
+          "naturales_411": 442004.69,
+          "sociedades_411": 418471.82,
+          "naturales_413": 105535.94,
+          "sociedades_413": 707.43
+        },
+        {
+          "anio": 2026,
+          "mes": 5,
+          "ciiu": "M7410.09",
+          "naturales_411": 356514.83,
+          "sociedades_411": 338660.37,
+          "naturales_413": 130103.04,
+          "sociedades_413": 210.0
+        },
+        {
+          "anio": 2026,
+          "mes": 6,
+          "ciiu": "M7410.09",
+          "naturales_411": 489388.82,
+          "sociedades_411": 1259281.72,
+          "naturales_413": 701039.93,
+          "sociedades_413": 0.0
+        },
+        {
+          "anio": 2026,
+          "mes": 7,
+          "ciiu": "M7410.09",
+          "naturales_411": 424581.0,
+          "sociedades_411": 562288.85,
+          "naturales_413": 130652.69,
+          "sociedades_413": 210.0
+        },
+        {
+          "anio": 2026,
+          "mes": 8,
+          "ciiu": "M7410.09",
+          "naturales_411": 341966.51,
+          "sociedades_411": 268663.85,
+          "naturales_413": 91617.45,
+          "sociedades_413": 211.0
+        }
+      ],
+      "mes_corte": 8,
+      "archivo_mensual": "edcos_fuentes/ventas_diseno_estrategico_mensuales.csv",
+      "archivo_original": "../data/consulta_sri_1.xlsx",
+      "sha256": "21fcff47807504dc4d25703195e0648a9e85e255023a844ae45ca676abd9b493",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Ventas declaradas hasta agosto de 2026 · CIIU M7410.09"
+    }
+  },
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "tema1",
+        "etiqueta": "Investigación y<br>métodos de diseño",
+        "criterio": "Presencia explícita de investigación y métodos de diseño en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema2",
+        "etiqueta": "Pensamiento<br>sistémico",
+        "criterio": "Presencia explícita de pensamiento sistémico en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema3",
+        "etiqueta": "Materiales y<br>economía circular",
+        "criterio": "Presencia explícita de materiales y economía circular en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema4",
+        "etiqueta": "Gestión estratégica<br>del diseño",
+        "criterio": "Presencia explícita de gestión estratégica del diseño en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema5",
+        "etiqueta": "Industria textil<br>y estampería",
+        "criterio": "Presencia explícita de industria textil y estampería en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema6",
+        "etiqueta": "Creación de<br>colección",
+        "criterio": "Presencia explícita de creación de colección en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "UDLA · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "tema1": true,
+        "tema2": true,
+        "tema3": true,
+        "tema4": true,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    "ofertas": {
+      "hemisferios_design_thinking": {
+        "revisado": true,
+        "etiqueta": "Hemisferios · Design Thinking (online)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Alternativa mencionada en el brief, verificada. Programa con INESEM, asincrónico («Clases Virtuales 24/7»), 130 h en 11 unidades: creatividad, pensamiento creativo, proceso de design thinking, fase de empatía, delimitación del proyecto, prototipo, testeo y metodología. La página del aliado INESEM (inesem_design_thinking_uhe) indica 362 € (307,7 € con descuento hasta el 22/11/2026); no se registra en USD por estar en euros y fuera de la página oficial. No cubre pensamiento sistémico, materiales ni textil.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "udla_design_thinking_2023": {
+        "revisado": true,
+        "etiqueta": "UDLA · Design Thinking (2023)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Folleto oficial UDLA: 24 h presenciales, sábados 8:00–13:00, inversión USD 390 («aplican descuentos especiales»). Módulos: introducción y empatía con entrevistas de campo, ideación, prototipado y validación, implementación empresarial e integración en la cultura corporativa, presentación de proyectos. La insignia de Credly (udla_design_thinking_credly) registra 20 h. Orientado a negocio; no aborda materiales, textil ni colección. Precio histórico.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": true,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "usfq_innovacion_regenerativa_2022": {
+        "revisado": true,
+        "etiqueta": "USFQ · Innovación regenerativa (2022)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Ficha oficial: 32 h académicas (24 por Zoom + 8 autónomas), sábados. Tarifa público general USD 420; pronto pago USD 360; grupal y comunidad USFQ USD 380. Contenidos: límites planetarios, metodología «Big Problem», del problema al insight con pensamiento sistémico, diseño regenerativo y prototipado; proyecto de plan regenerativo para un producto o servicio. Dirigido a profesionales de diversas industrias, no a diseñadores. Precio histórico.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": true,
+          "tema3": true,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "usfq_arquitectura_sostenible_2026": {
+        "revisado": true,
+        "etiqueta": "USFQ · Diplomado arquitectura sostenible",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Referencia de precio de un diplomado de sostenibilidad en Quito: 150 h académicas (120 en vivo por Zoom, 30 autónomas, 9 h presenciales obligatorias), 16 semanas. Valor USD 1.370; pronto pago USD 1.270; alumni y grupal USD 1.260. Incluye selección de materiales y técnicas de construcción sostenible y la ciudad como sistema socioambiental, aplicado a arquitectura; habilita para la certificación EDGE Expert. No es diseño estratégico ni textil.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": null,
+          "tema3": true,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "puc_proyectos_diseno_innovacion": {
+        "revisado": true,
+        "etiqueta": "PUC Chile · Proyectos de diseño e innovación",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Alternativa mencionada en el brief, verificada. Referencia regional: online en vivo, 240 h (120 directas + 120 indirectas) en 5 cursos: oportunidades de innovación (investigación cualitativa, análisis de contexto, arquetipos), desarrollo de soluciones y prototipado, comunicación visual con manufactura y fabricación digital, tendencias (diseño sostenible y economía circular) y gestión de la innovación (propiedad intelectual, modelo y plan de negocios). Declara el uso de «pensamiento sistémico». Arancel oficial CLP 2.200.000 con matrícula; la página muestra «2.750 USD» como cifra adicional, por lo que se registra ese valor sin marcarlo como verificado en moneda de mercado ecuatoriano. Exige título y no trabaja textil ni colección.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": true,
+          "tema3": true,
+          "tema4": true,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "udd_diseno_sostenible_upcycling": {
+        "revisado": true,
+        "etiqueta": "UDD · Diseño sostenible y upcycling",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Alternativa mencionada en el brief (como «Diseño de Estrategias Sostenibles y Upcycling»); el nombre verificado es «Diseño sostenible y Upcycling». Online, dos sesiones semanales de 2,5 h. Estrategias de reuso, reciclaje y upcycling (molienda, pirólisis, prensado, extracción), mapa de transformación de residuos, análisis de trade-off e impacto para la estrategia de implementación, y «mirada crítica y sistémica»; casos reales como Karün. Por ser online no incluye trabajo práctico con materiales. No se encontraron horas totales ni precio.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": true,
+          "tema3": true,
+          "tema4": true,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "usm_design_thinking_2026": {
+        "revisado": true,
+        "etiqueta": "USM · Design Thinking (CLP)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Referencia regional (Chile): online, 216 h (34 sincrónicas, 68 asincrónicas, 114 autónomas), lunes 19:00–20:30. Arancel CLP 1.800.000 (no se convierte). Proceso completo de design thinking (empatizar, definir, idear, prototipar, testear) con proyecto final de innovación; organizado por Ingeniería en Diseño de Productos. No cubre materiales, textil ni colección.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": null,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "coursera_design_thinking_uva": {
+        "revisado": true,
+        "etiqueta": "Coursera · Design Thinking (UVA)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Curso de unas 6 h: qué es el design thinking, mentalidad para innovar, generación de ideas y experimentación, con herramientas de visualización, storytelling, mapas mentales y learning launch. Inscripción gratuita; certificado de pago según suscripción de Coursera.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": null,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "coursera_circular_economy": {
+        "revisado": true,
+        "etiqueta": "Coursera · Economía circular (Lund)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Unas 20 h (2 semanas de 10 h), coofrecido con EIT RawMaterials; gestión sostenible de materiales y economía circular. Precio según suscripción de Coursera.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": null,
+          "tema3": true,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "domestika_diseno_sostenible": {
+        "revisado": true,
+        "etiqueta": "Domestika · Diseño sostenible",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "9 lecciones (1 h 42 min) del diseñador Lucas Muñoz: crear objetos y espacios a partir de material sobrante. Formación breve y asincrónica.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": false,
+          "tema3": true,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "domestika_upcycling_textil": {
+        "revisado": true,
+        "etiqueta": "Domestika · Upcycling textil",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "14 lecciones (1 h 43 min) de Giselle Manzano Ramírez sobre upcycling de prendas con técnicas textiles experimentales. Es la única oferta revisada que une textil y reaprovechamiento de materiales, en formato breve y sin acompañamiento docente.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": false,
+          "tema3": true,
+          "tema4": false,
+          "tema5": true,
+          "tema6": null
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por lo material y textil",
+        "texto": "Ninguna oferta ecuatoriana verificada une diseño estratégico, sistemas materiales y economía circular con la industria textil, la Estampería Quiteña y la creación de una colección. Ese es el diferencial defendible."
+      },
+      {
+        "titulo": "Metodología base muy ofertada",
+        "texto": "El design thinking ya lo ofrecen Hemisferios (online, inscripción permanente), la propia UDLA y plataformas con cientos de miles de inscritos. Presentarse como «otro curso de metodologías» competiría sin diferenciación."
+      },
+      {
+        "titulo": "Presencialidad en Quito como ventaja",
+        "texto": "Las referencias regionales más cercanas (PUC Chile, UDD) son online y declaran que no hay trabajo práctico con materiales. Talleres presenciales con proveedores textiles son una diferencia concreta."
+      },
+      {
+        "titulo": "Mercado laboral técnico",
+        "texto": "Las publicaciones textiles piden colección, telas y patronaje con software (Optitex, Gerber, Audaces); el pensamiento sistémico aparece solo en UX digital y la economía circular en ninguna."
+      },
+      {
+        "titulo": "Precio sin referente del mismo tema",
+        "texto": "El único diplomado de 2026 con precio verificado en Quito es de construcción sostenible (USFQ, USD 1.370 por 150 h); conviene fijar horas antes de comparar."
+      }
+    ]
+  }
+}

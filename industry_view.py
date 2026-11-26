@@ -62,7 +62,14 @@ def render(config, cohort, demo, palette):
         c.metric('CIIU identificados', len(catalog))
         with st.expander('Industrias donde trabajan los graduados', expanded=True):
             st.dataframe(catalog, hide_index=True, width='stretch')
-        codes = st.multiselect('CIIU para analizar ventas', catalog.CIIU.tolist(), default=catalog.CIIU.tolist(),
+        options = catalog.CIIU.tolist()
+        if 'industry_ciiu' in st.session_state:
+            # Los CIIU dependen de las carreras: se descartan los que ya no aplican.
+            kept = [c for c in st.session_state['industry_ciiu'] if c in options]
+            st.session_state['industry_ciiu'] = kept or options
+        else:
+            st.session_state['industry_ciiu'] = options
+        codes = st.multiselect('CIIU para analizar ventas', options, key='industry_ciiu',
                                format_func=lambda x: f"{x} · {catalog.set_index('CIIU').loc[x, 'Industria']}")
         if not codes:
             st.info('Selecciona al menos un CIIU.')
@@ -78,7 +85,12 @@ def render(config, cohort, demo, palette):
         compartir_industrias(catalog,monthly,codes,matched,total)
         blue, light, _ = PALETTES[palette]
         max_month = int(monthly.groupby('Año').Mes.max().min())
-        month = st.slider('Acumulado comparable hasta el mes', 1, max_month, max_month) if max_month > 1 else 1
+        if max_month > 1:
+            stored = st.session_state.get('industry_month')
+            st.session_state['industry_month'] = max_month if not isinstance(stored, int) or not 1 <= stored <= max_month else stored
+            month = st.slider('Acumulado comparable hasta el mes', 1, max_month, key='industry_month')
+        else:
+            month = 1
         annual = monthly[monthly.Mes.le(month)].groupby('Año')[['Personas naturales', 'Sociedades']].sum(min_count=1).reset_index()
         latest = int(annual.Año.max())
         growth = growth_summary(sales, codes, latest, month)

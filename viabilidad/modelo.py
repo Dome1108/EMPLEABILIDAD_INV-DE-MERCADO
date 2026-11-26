@@ -7,6 +7,42 @@ BLOQUES = ['Demanda e interés', 'Empleabilidad y valor', 'Competencia', 'Precio
 PESOS_VARIABLES = [6.3, 4.2, 13.65, 5.85, 9.9, 5.5, 28, 12, 8, 6.6]
 VARIABLES = ['Crecimiento de matriculados', 'Crecimiento de titulados', 'Búsquedas del programa', 'Evaluación del nombre', 'Alineación con el mercado laboral (mayor es mejor)', 'Salario del campo', 'Competencia (menos es mejor)', 'Precio frente a la media', 'Ventas de sectores vinculados', 'Cantidad de profesionales del campo']
 
+# Carrera homologada de Oferta de valor-empleabilidad (Graduados_nueva) → carrera del modelo.
+CARRERA_EMPLEABILIDAD={'NEGOCIOS INTERNACIONALES':'Negocios Internacionales','SOFTWARE':'Software',
+    'INGENIERIA EN SOFTWARE':'Software','INGENIERIA DE SOFTWARE':'Software','ENFERMERIA':'Enfermería','MEDICINA':'Medicina','ODONTOLOGIA':'Odontología',
+    'MULTIMEDIA Y PRODUCCION AUDIOVISUAL':'Multimedia y produccion audiovisual','DERECHO':'Derecho',
+    'ARQUITECTURA':'Arquitectura','RELACIONES INTERNACIONALES':'RRII','GASTRONOMIA':'Gastronomía',
+    'ARTES MUSICALES':'Música','PSICOLOGIA':'Psicología'}
+
+# Prefijos de nivel que Graduados_nueva antepone a la carrera («MAESTRIA EN SOFTWARE»).
+_PREFIJOS_NIVEL=('MAESTRIA EN ','DOCTORADO EN ','ESPECIALIDAD EN ','ESPECIALIZACION EN ','DIPLOMADO EN ')
+
+
+def carrera_modelo(nombre):
+    """Carrera del modelo para una carrera de Oferta de valor-empleabilidad, o None.
+
+    Acepta el nombre exacto («SOFTWARE»), con prefijo de nivel («MAESTRIA EN SOFTWARE»),
+    con mención («... RELACIONES INTERNACIONALES MENCION SEGURIDAD») y cualquier carrera
+    cuyo nombre contenga la palabra SOFTWARE. No empareja nombres que solo comparten una
+    palabra (MEDICINA VETERINARIA no es Medicina; ARQUITECTURA DE LA INFORMACION no es Arquitectura).
+    """
+    import unicodedata
+    texto=''.join(c for c in unicodedata.normalize('NFKD',str(nombre)) if not unicodedata.combining(c))
+    texto=' '.join(texto.strip().upper().split())
+    for prefijo in _PREFIJOS_NIVEL:
+        if texto.startswith(prefijo):
+            texto=texto[len(prefijo):]
+            break
+    if texto in CARRERA_EMPLEABILIDAD:
+        return CARRERA_EMPLEABILIDAD[texto]
+    base=texto.split(' MENCION ')[0]
+    if base in CARRERA_EMPLEABILIDAD:
+        return CARRERA_EMPLEABILIDAD[base]
+    if 'SOFTWARE' in texto.split():
+        return 'Software'
+    return None
+
+
 @dataclass
 class Config:
     pesos: list = field(default_factory=lambda: [30,22,28,12,8])

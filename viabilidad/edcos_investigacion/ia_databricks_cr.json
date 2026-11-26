@@ -1,0 +1,772 @@
+{
+  "id": "ia_databricks_cr",
+  "fecha_consulta": "2026-11-24",
+  "fuentes": [
+    {
+      "id": "ulatina_datos_databricks",
+      "titulo": "ULatina · Técnico en Ingeniería de Datos con Databricks",
+      "url": "https://www.ulatina.ac.cr/oferta-academica/tecnicos/ingenieria-de-datos-con-databricks",
+      "observacion": "4 módulos bimestrales, metodología 100 % virtual con laboratorios y casos. Módulos: nube y fundamentos de Databricks (arquitectura, seguridad y gobernanza), Apache Spark e ingesta con Lakeflow Connect, orquestación con Lakeflow Jobs y Declarative Pipelines, gobernanza con Unity Catalog y preparación de examen de certificación. Requisito: noveno año. Sin horas ni precio; no menciona ML, MLflow ni IA generativa."
+    },
+    {
+      "id": "cenfotec_intec",
+      "titulo": "Universidad CENFOTEC · Técnico en Inteligencia Artificial y Machine Learning (INTEC), folleto 2025",
+      "url": "https://ucenfotec.ac.cr/wp-content/uploads/2025/01/INTEC_Tecnico_Inteligencia_Artificial-y_MachineLearnings_datos-2025.pdf",
+      "observacion": "Virtual en vivo, 9 módulos de 5 semanas. 12 asignaturas, 13,5 créditos, 216 horas lectivas y 392 extraclase. Incluye Machine Learning con Python, Deep Learning y Big Data, Modelos de Lenguaje en IA, Fundamentos de IA Generativa y Prompt Engineering, Ética y Sostenibilidad en Tecnología y Proyecto Integrador. Requiere bachillerato de secundaria; sin precio en el folleto."
+    },
+    {
+      "id": "cenfotec_piatec",
+      "titulo": "Universidad CENFOTEC · Plan de estudios y tarifario Técnico en Programación Asistida con IA (PIATEC)",
+      "url": "https://ucenfotec.ac.cr/wp-content/uploads/2025/11/Plan-de-Estudios-y-Tarifario-Tecnico-en-Programacion-Aistida-con-IA.pdf",
+      "observacion": "Tarifario de noviembre de 2025: 10 meses, 10 asignaturas (9 de 16 horas y una de 32), «TOTAL CARRERA $2.641.80», precios vigentes con IVA incluido y sujetos a cambio. Incluye Programación Intencional con IA Generativa, Automatización Inteligente de Procesos con IA Generativa y Proyecto Integrador."
+    },
+    {
+      "id": "tec_eia",
+      "titulo": "TEC · Actualización Empresarial (FUNDATEC) · Especialización en Inteligencia Artificial Empresarial, plan de estudios III C 2026",
+      "url": "https://tec.ac.cr/sites/default/files/media/doc/eia-plan-de-estudios_8.pdf",
+      "observacion": "Online, 4 módulos de 6 semanas «(48 horas)», dos sesiones sincrónicas de 3 horas por semana en Teams. Inversión total ₡848 100 con 2 % de IVA (matrícula ₡40 800, cuatro módulos de ₡198 000, graduación ₡15 300). Dirigida a público no técnico; requiere bachiller universitario e inglés de lectura."
+    },
+    {
+      "id": "fidelitas_gaipc",
+      "titulo": "Universidad Fidélitas · Curso y examen Generative AI Professional (GAIPC, CertiProf), folleto",
+      "url": "https://cdn.ufidelitas.ac.cr/wp-content/uploads/2026/04/28161954/EDC-Flyer-Generative-AI-Professional-GAIPC%E2%84%A2.pdf",
+      "observacion": "En línea, 1 mes, en español; incluye el derecho a examen de 40 preguntas. 12 módulos introductorios (conceptos, ML, deep learning, seguridad de la IA, uso ético). Requisito: noveno año. Sin precio en el folleto."
+    },
+    {
+      "id": "ucr_cicap_iagen",
+      "titulo": "UCR · CICAP · Programa del curso Introducción a la IA Generativa para la Gestión Pública",
+      "url": "https://cicap.ucr.ac.cr/wp-content/uploads/2026/01/FEC-13-Programa-del-curso-Introduccion-IA-Generativa.pdf",
+      "observacion": "8 horas sincrónicas en línea. Prompting con ChatGPT, Gemini y Copilot, ética, riesgos, seguridad y gobernanza para la adopción responsable. Sin precio ni fechas en el programa."
+    },
+    {
+      "id": "databricks_cert_genai",
+      "titulo": "Databricks · Databricks Certified Generative AI Engineer Associate",
+      "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+      "observacion": "Registration fee USD 200 (cada reintento también USD 200). 45 preguntas puntuadas, 90 minutos. Sin prerrequisitos formales; recomienda 6 meses de experiencia práctica. Dominios: diseño de aplicaciones 14 %, preparación de datos 14 %, desarrollo 30 %, ensamblaje y despliegue 22 %, gobernanza 8 %, evaluación y monitoreo 12 %; RAG, MLflow, Model Serving y Unity Catalog."
+    },
+    {
+      "id": "databricks_curso_genai",
+      "titulo": "Databricks Academy · Generative AI Engineering with Databricks",
+      "url": "https://www.databricks.com/training/catalog/generative-ai-engineering-with-databricks-1980",
+      "observacion": "Nivel Associate, 16 horas en 4 módulos: agentes RAG con Agent Bricks, aplicaciones agénticas gobernadas con Unity Catalog y MCP, evaluación con MLflow, despliegue y monitoreo. Clases públicas en inglés a USD 1 500 por asiento; la opción autodirigida no muestra precio."
+    },
+    {
+      "id": "coursera_pragmatic_spec",
+      "titulo": "Coursera · Pragmatic AI Labs · Enterprise AI and Data Engineering with Databricks (especialización)",
+      "url": "https://www.coursera.org/specializations/enterprise-ai-data-engineering-databricks",
+      "observacion": "3 706 already enrolled; nivel principiante; 4 semanas a 5 horas por semana. Cinco cursos (2 + 3 + 3 + 4 + 4 horas): Lakehouse, Delta Lake, ML con MLflow, IA generativa y LLM con RAG híbrido y AI Gateway, gobernanza con Unity Catalog y despliegue."
+    },
+    {
+      "id": "coursera_duke_llms",
+      "titulo": "Coursera · Duke University · Databricks to Local LLMs",
+      "url": "https://www.coursera.org/learn/databricks-to-local-llms",
+      "observacion": "4 678 already enrolled; nivel principiante; 3 semanas a 10 horas por semana. Parte de la especialización LLMOps: arquitectura Databricks, Delta Lake, gobernanza con Unity Catalog, IA generativa responsable, LLMOps local y fine-tuning."
+    },
+    {
+      "id": "coursera_dlai_llms",
+      "titulo": "Coursera · DeepLearning.AI y AWS · Generative AI with Large Language Models",
+      "url": "https://www.coursera.org/learn/generative-ai-with-llms",
+      "observacion": "454 127 already enrolled; nivel intermedio; unas 17 horas. Ciclo de vida de proyectos de IA generativa, fine-tuning y evaluación de LLM, aplicaciones con LLM."
+    },
+    {
+      "id": "coursera_ibm_rag",
+      "titulo": "Coursera · IBM · RAG and Agentic AI (certificado profesional)",
+      "url": "https://www.coursera.org/professional-certificates/ibm-rag-and-agentic-ai",
+      "observacion": "125 346 already enrolled; nivel avanzado; 10 cursos. RAG con bases vectoriales, agentes con LangChain, LangGraph, CrewAI y MCP. No usa Databricks."
+    },
+    {
+      "id": "coursera_vanderbilt_agentes",
+      "titulo": "Coursera · Vanderbilt University · AI Agents and Agentic AI with Python & Generative AI",
+      "url": "https://www.coursera.org/learn/ai-agents-python",
+      "observacion": "105 212 already enrolled; nivel principiante; unas 11 horas. Diseño de agentes, herramientas y function calling en Python."
+    },
+    {
+      "id": "li_databricks",
+      "titulo": "LinkedIn · Databricks · AI Automation Engineer",
+      "url": "https://cr.linkedin.com/jobs/view/ai-automation-engineer-at-databricks-4476079477"
+    },
+    {
+      "id": "li_fullstack",
+      "titulo": "LinkedIn · FullStack · Junior Forward Deployed AI Engineer - AI/ML & Data Track",
+      "url": "https://cr.linkedin.com/jobs/view/junior-forward-deployed-ai-engineer-ai-ml-data-track-remote-latin-america-at-fullstack-4493217973"
+    },
+    {
+      "id": "li_roche",
+      "titulo": "LinkedIn · Roche · Senior Data Scientist - ML Engineering & MLOps",
+      "url": "https://cr.linkedin.com/jobs/view/senior-data-scientist-ml-engineering-mlops-at-roche-4470634333"
+    },
+    {
+      "id": "li_encora",
+      "titulo": "LinkedIn · Encora · Senior Data & AI Engineer",
+      "url": "https://cr.linkedin.com/jobs/view/senior-data-ai-engineer-at-encora-inc-4478548767"
+    },
+    {
+      "id": "li_jci",
+      "titulo": "LinkedIn · Johnson Controls · AI Engineer",
+      "url": "https://cr.linkedin.com/jobs/view/ai-engineer-at-johnson-controls-4475628466"
+    },
+    {
+      "id": "li_cocacola",
+      "titulo": "LinkedIn · The Coca-Cola Company · Lead, Applied AI & Agentic Systems",
+      "url": "https://cr.linkedin.com/jobs/view/lead-applied-ai-agentic-systems-at-the-coca-cola-company-4473821891"
+    },
+    {
+      "id": "li_teradyne",
+      "titulo": "LinkedIn · Teradyne · AI Platform Operations Engineer",
+      "url": "https://cr.linkedin.com/jobs/view/ai-platform-operations-engineer-teradyne-costa-rica-at-teradyne-4452877082"
+    },
+    {
+      "id": "li_lumenalta",
+      "titulo": "LinkedIn · Lumenalta · Data Tech Lead - Databricks",
+      "url": "https://cr.linkedin.com/jobs/view/data-tech-lead-databricks-at-lumenalta-4493657376"
+    }
+  ],
+  "temas": [
+    {
+      "id": "tema1",
+      "etiqueta": "IA generativa<br>y LLM"
+    },
+    {
+      "id": "tema2",
+      "etiqueta": "RAG con datos<br>empresariales"
+    },
+    {
+      "id": "tema3",
+      "etiqueta": "Agentes<br>de IA"
+    },
+    {
+      "id": "tema4",
+      "etiqueta": "MLflow, despliegue<br>y monitoreo"
+    },
+    {
+      "id": "tema5",
+      "etiqueta": "Seguridad y<br>gobernanza de IA"
+    },
+    {
+      "id": "tema6",
+      "etiqueta": "Plataforma<br>Databricks"
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Universidad Latina de Costa Rica (ULatina)",
+      "programa": "Técnico en Ingeniería de Datos con Databricks",
+      "tipo": "Oferta propia",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ulatina_datos_databricks",
+      "nota": "Es la ruta de entrada del público objetivo, no un competidor. Cubre fundamentos de Databricks, Spark, pipelines Lakeflow y gobernanza de datos con Unity Catalog, con preparación de examen. No menciona ML, MLflow ni IA generativa, lo que confirma que la propuesta no repite contenidos. La gobernanza que cubre es de datos, no de modelos de IA.",
+      "etiqueta_precio": "ULatina Ing. Datos Databricks",
+      "contenidos": {
+        "tema1": false,
+        "tema2": false,
+        "tema3": false,
+        "tema4": false,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Inteligencia Artificial y Machine Learning (INTEC)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 216,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Folleto 2025 publicado; tarifario no encontrado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "cenfotec_intec",
+      "nota": "Virtual en vivo, 9 módulos de 5 semanas (unos 11 meses). 216 horas lectivas y 392 extraclase. Parte de cero con Python, ML, deep learning y visión, y cierra con modelos de lenguaje, IA generativa con prompt engineering, ética y proyecto integrador. No menciona Databricks, RAG, agentes ni MLflow. Es el competidor local más cercano en IA aplicada, pero para principiantes.",
+      "etiqueta_precio": "CENFOTEC INTEC IA y ML",
+      "contenidos": {
+        "tema1": true,
+        "tema2": null,
+        "tema3": null,
+        "tema4": null,
+        "tema5": true,
+        "tema6": false
+      }
+    },
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Programación Asistida con IA (PIATEC)",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": 176,
+      "tipo_horas": "académicas",
+      "precio_usd": 2641.8,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Tarifario de noviembre de 2025, IVA incluido; precios pueden cambiar sin previo aviso",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "cenfotec_piatec",
+      "nota": "10 meses: nueve asignaturas de 16 horas y una de 32 (176 horas, suma propia a partir del tarifario). Su eje es la programación con IA generativa, la automatización de procesos y un proyecto integrador. No usa Databricks y el ingreso pide noveno año. Se incluye como referencia de precio de un técnico de IA en Costa Rica. El tarifario no indica la modalidad.",
+      "etiqueta_precio": "CENFOTEC Programación con IA",
+      "contenidos": {
+        "tema1": true,
+        "tema2": null,
+        "tema3": null,
+        "tema4": false,
+        "tema5": null,
+        "tema6": false
+      }
+    },
+    {
+      "institucion": "TEC · FUNDATEC (Actualización Empresarial)",
+      "programa": "Especialización en Inteligencia Artificial Empresarial",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 192,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": 848100,
+      "precio_verificado": true,
+      "estado": "Plan de estudios III C 2026 con inversión total publicada; 2 % de IVA incluido",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "tec_eia",
+      "nota": "4 módulos de 6 semanas y «48 horas» cada uno (192 horas en total, cálculo propio), con clases sincrónicas nocturnas. El total incluye matrícula y derechos de graduación. Tiene enfoque gerencial para público no técnico y no trabaja LLM, RAG ni plataformas, por lo que compite solo por el presupuesto de formación en IA.",
+      "etiqueta_precio": "TEC Esp. IA Empresarial",
+      "contenidos": {
+        "tema1": null,
+        "tema2": false,
+        "tema3": false,
+        "tema4": false,
+        "tema5": null,
+        "tema6": false
+      }
+    },
+    {
+      "institucion": "Universidad Fidélitas",
+      "programa": "Curso y certificación Generative AI Professional (GAIPC, CertiProf)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Folleto de 2026 publicado; precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "fidelitas_gaipc",
+      "nota": "Un mes en línea, con derecho a examen incluido. Es introductorio: conceptos de IA, ML y deep learning, modelos de propósito general, seguridad y uso ético. No es técnico ni usa plataformas de datos.",
+      "etiqueta_precio": "Fidélitas GAIPC",
+      "contenidos": {
+        "tema1": true,
+        "tema2": false,
+        "tema3": false,
+        "tema4": false,
+        "tema5": true,
+        "tema6": false
+      }
+    },
+    {
+      "institucion": "Universidad de Costa Rica (CICAP)",
+      "programa": "Introducción a la Inteligencia Artificial Generativa para la Gestión Pública",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 8,
+      "tipo_horas": "sincrónicas",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Programa del curso publicado (enero de 2026); sin precio ni fechas",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ucr_cicap_iagen",
+      "nota": "Curso de alfabetización de 8 horas sobre prompting con herramientas comerciales, ética, seguridad y gobernanza para la adopción. Muestra que la extensión universitaria pública ofrece IA generativa a nivel de usuario, no de ingeniería.",
+      "etiqueta_precio": "UCR CICAP IA generativa",
+      "contenidos": {
+        "tema1": true,
+        "tema2": false,
+        "tema3": false,
+        "tema4": false,
+        "tema5": true,
+        "tema6": false
+      }
+    },
+    {
+      "institucion": "Databricks Academy",
+      "programa": "Generative AI Engineering with Databricks",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 16,
+      "tipo_horas": "sincrónicas",
+      "precio_usd": 1500,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Precio por asiento en clases públicas en inglés; la versión autodirigida no muestra precio",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "databricks_curso_genai",
+      "nota": "Es el curso oficial que prepara para la certificación con la que se alinea la propuesta: agentes RAG con Agent Bricks, agentes gobernados con Unity Catalog y MCP, evaluación con MLflow, despliegue y monitoreo. Es el principal sustituto para profesionales que ya usan Databricks, sobre todo si su empleador es cliente. La página no indica explícitamente si las clases son virtuales; los horarios por zona horaria sugieren que sí.",
+      "etiqueta_precio": "Databricks Academy GenAI (ILT)",
+      "contenidos": {
+        "tema1": true,
+        "tema2": true,
+        "tema3": true,
+        "tema4": true,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "Databricks",
+      "programa": "Examen Databricks Certified Generative AI Engineer Associate",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": 200,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Tarifa de registro publicada; cada reintento cuesta USD 200",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "databricks_cert_genai",
+      "nota": "Es solo el examen (45 preguntas, 90 minutos), no formación. Sirve para estimar el costo del voucher si el técnico lo incluye. La página de la certificación no menciona agentes de forma explícita.",
+      "etiqueta_precio": "Examen certificación Databricks",
+      "contenidos": {
+        "tema1": true,
+        "tema2": true,
+        "tema3": null,
+        "tema4": true,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "Coursera (Pragmatic AI Labs)",
+      "programa": "Enterprise AI and Data Engineering with Databricks (especialización)",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 16,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Inscripción gratuita; certificado de pago o incluido en Coursera Plus, sin precio individual en la página",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_pragmatic_spec",
+      "nota": "Cinco cursos que suman 16 horas listadas (4 semanas a 5 horas). Mezcla ingeniería de datos en Databricks con MLflow, IA generativa con RAG híbrido y gobernanza con Unity Catalog. «Generative AI Agents» aparece solo como etiqueta y no como resultado de aprendizaje.",
+      "etiqueta_precio": "Coursera Databricks (Pragmatic)",
+      "contenidos": {
+        "tema1": true,
+        "tema2": true,
+        "tema3": false,
+        "tema4": true,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "Coursera (Duke University)",
+      "programa": "Databricks to Local LLMs",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 30,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso publicado; sin precio individual en la página",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_duke_llms",
+      "nota": "3 semanas a 10 horas por semana (30 horas estimadas). Combina Databricks y Unity Catalog con IA generativa responsable, LLMOps local y fine-tuning. No trabaja agentes; RAG y MLflow no se identifican en la descripción.",
+      "etiqueta_precio": "Coursera Duke Databricks LLMs",
+      "contenidos": {
+        "tema1": true,
+        "tema2": null,
+        "tema3": false,
+        "tema4": null,
+        "tema5": true,
+        "tema6": true
+      }
+    }
+  ],
+  "demanda": {
+    "observaciones": [
+      {
+        "etiqueta": "Coursera · Generative AI with LLMs (DeepLearning.AI y AWS)",
+        "valor": 454127,
+        "fuente": "coursera_dlai_llms"
+      },
+      {
+        "etiqueta": "Coursera · RAG and Agentic AI (IBM)",
+        "valor": 125346,
+        "fuente": "coursera_ibm_rag"
+      },
+      {
+        "etiqueta": "Coursera · AI Agents and Agentic AI with Python (Vanderbilt)",
+        "valor": 105212,
+        "fuente": "coursera_vanderbilt_agentes"
+      },
+      {
+        "etiqueta": "Coursera · Databricks to Local LLMs (Duke)",
+        "valor": 4678,
+        "fuente": "coursera_duke_llms"
+      },
+      {
+        "etiqueta": "Coursera · Enterprise AI and Data Engineering with Databricks (Pragmatic AI Labs)",
+        "valor": 3706,
+        "fuente": "coursera_pragmatic_spec"
+      }
+    ],
+    "lectura": "El interés internacional en IA generativa, RAG y agentes es masivo (más de 100 000 inscritos por curso), pero los cursos específicos de Databricks reúnen solo unos 4 000. Esto indica que el tema atrae, mientras que la plataforma define un nicho especializado.",
+    "nota": "Cifras acumuladas internacionales publicadas en las páginas de Coursera el 2026-11-24; no son demanda local ni intención de pago en Costa Rica. Los cursos de Coursera sobre Databricks y GenAI («Generative AI and LLMs on Databricks» y «Databricks GenAI Engineering») no publican cifra de inscritos. Udemy devolvió error 403 en las páginas de preparación para la certificación Databricks Generative AI Engineer, por lo que no se registran sus estudiantes. Tampoco se encontró una cifra pública de personas certificadas en Databricks en Costa Rica, que sería el indicador más directo del público objetivo."
+  },
+  "empleabilidad": {
+    "catalogo": [
+      {
+        "id": "hab_genai",
+        "habilidad": "IA generativa y aplicaciones con LLM",
+        "cobertura": "Explícita",
+        "criterio": "Pide o valora experiencia en LLM, IA generativa o LLMOps."
+      },
+      {
+        "id": "hab_rag",
+        "habilidad": "RAG y búsqueda vectorial",
+        "cobertura": "Explícita",
+        "criterio": "Menciona RAG, embeddings, bases o búsqueda vectorial, o anclar respuestas en documentación interna."
+      },
+      {
+        "id": "hab_agentes",
+        "habilidad": "Agentes de IA y automatización agéntica",
+        "cobertura": "Explícita",
+        "criterio": "Menciona agentes, flujos agénticos o multiagente, function calling, MCP o frameworks como LangGraph."
+      },
+      {
+        "id": "hab_databricks",
+        "habilidad": "Plataforma Databricks (lakehouse, Unity Catalog)",
+        "cobertura": "Explícita",
+        "criterio": "Nombra Databricks como herramienta requerida, deseable o certificación valorada."
+      },
+      {
+        "id": "hab_mlops",
+        "habilidad": "Despliegue, evaluación y monitoreo (MLflow, MLOps/LLMOps, Model Serving)",
+        "cobertura": "Explícita",
+        "criterio": "Menciona MLflow, model serving, evaluación de modelos o agentes, observabilidad o monitoreo en producción."
+      },
+      {
+        "id": "hab_gobernanza",
+        "habilidad": "Seguridad, gobernanza y uso responsable de la IA",
+        "cobertura": "Explícita",
+        "criterio": "Menciona gobernanza de datos o IA, controles de acceso o identidad, cumplimiento o IA responsable."
+      },
+      {
+        "id": "hab_ml",
+        "habilidad": "Machine Learning clásico",
+        "cobertura": "Explícita",
+        "criterio": "Pide construir o mantener modelos de ML (predicción, segmentación, NLP, frameworks como scikit-learn)."
+      },
+      {
+        "id": "hab_python",
+        "habilidad": "Python y SQL",
+        "cobertura": "Por contrastar",
+        "criterio": "Exige Python (y en su caso SQL) como lenguaje de desarrollo."
+      },
+      {
+        "id": "hab_spark",
+        "habilidad": "Spark y pipelines de datos",
+        "cobertura": "Por contrastar",
+        "criterio": "Menciona Spark/PySpark o construcción de pipelines de datos; el brief lo da por sabido."
+      },
+      {
+        "id": "hab_cloud",
+        "habilidad": "Nubes públicas y sus servicios de IA (Azure, AWS, GCP)",
+        "cobertura": "Por contrastar",
+        "criterio": "Pide experiencia en una nube pública o servicios como Azure OpenAI, AI Foundry, Bedrock o Vertex AI."
+      },
+      {
+        "id": "hab_ingles",
+        "habilidad": "Inglés profesional",
+        "cobertura": "Por contrastar",
+        "criterio": "Exige inglés fluido o fuerte, oral y escrito."
+      },
+      {
+        "id": "hab_cert",
+        "habilidad": "Certificaciones de la industria (IA, datos o nube)",
+        "cobertura": "Por contrastar",
+        "criterio": "Pide o valora certificaciones nombradas (Databricks, Azure AI Engineer, AWS ML, Google ML Engineer)."
+      }
+    ],
+    "publicaciones": [
+      {
+        "id": "li_databricks",
+        "identificador_linkedin": "4476079477",
+        "empresa": "Databricks",
+        "cargo": "AI Automation Engineer",
+        "ciudad": "Costa Rica",
+        "pais": "Costa Rica",
+        "area": "Ingeniería de IA y automatización",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 3 horas; 198 solicitudes; botón de solicitar visible",
+        "habilidades": [
+          "hab_databricks",
+          "hab_genai",
+          "hab_rag",
+          "hab_agentes",
+          "hab_mlops",
+          "hab_gobernanza",
+          "hab_python"
+        ],
+        "resumen": "Diseña, despliega y mantiene agentes de IA y automatizaciones de TI con servidores MCP y aprobación humana, anclados en documentación interna y con controles de identidad y permisos. Pide 3 años en Python o Go y valora MLflow, búsqueda vectorial y observabilidad de LLM.",
+        "fuente": "li_databricks"
+      },
+      {
+        "id": "li_fullstack",
+        "identificador_linkedin": "4493217973",
+        "empresa": "FullStack",
+        "cargo": "Junior Forward Deployed AI Engineer - AI/ML & Data Track (remoto)",
+        "ciudad": "San José (remoto, Latinoamérica)",
+        "pais": "Costa Rica",
+        "area": "Ingeniería de IA aplicada con clientes",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 3 días; botón de solicitar visible; la misma vacante aparece replicada en varias provincias",
+        "habilidades": [
+          "hab_databricks",
+          "hab_genai",
+          "hab_rag",
+          "hab_agentes",
+          "hab_mlops",
+          "hab_python",
+          "hab_cloud",
+          "hab_ingles",
+          "hab_cert"
+        ],
+        "resumen": "Rol de entrada: apoya diseño de sistemas agénticos y de recuperación, prototipos, suites de evaluación y observabilidad para clientes empresariales. Pide cerca de 1 año de experiencia (acepta prácticas y proyectos), Python, inglés fuerte, bachillerato y certificaciones de IA, datos o nube; Databricks aparece como plataforma, certificación de ejemplo y plus.",
+        "fuente": "li_fullstack"
+      },
+      {
+        "id": "li_roche",
+        "identificador_linkedin": "4470634333",
+        "empresa": "Roche",
+        "cargo": "Senior Data Scientist - ML Engineering & MLOps",
+        "ciudad": "Sabana Norte, San José",
+        "pais": "Costa Rica",
+        "area": "MLOps",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 2 semanas; 60 solicitudes; botón de solicitar visible",
+        "habilidades": [
+          "hab_databricks",
+          "hab_mlops",
+          "hab_ml",
+          "hab_genai",
+          "hab_spark",
+          "hab_python",
+          "hab_cloud"
+        ],
+        "resumen": "Lleva modelos de ML a producción con pipelines en la nube, registros de modelos, CI/CD, observabilidad y detección de drift, usando Databricks, MLflow y Spark. Exige 7+ años con ML en producción; LLMOps es un plus.",
+        "fuente": "li_roche"
+      },
+      {
+        "id": "li_encora",
+        "identificador_linkedin": "4478548767",
+        "empresa": "Encora Inc.",
+        "cargo": "Senior Data & AI Engineer",
+        "ciudad": "San José (remoto)",
+        "pais": "Costa Rica",
+        "area": "Ingeniería de datos e IA",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 mes; botón de solicitar visible",
+        "habilidades": [
+          "hab_databricks",
+          "hab_genai",
+          "hab_agentes",
+          "hab_spark",
+          "hab_python",
+          "hab_cloud",
+          "hab_gobernanza"
+        ],
+        "resumen": "Construye aplicaciones con LLM y soluciones agénticas en Python y AWS, además de pipelines con Databricks, dbt y Spark con gobernanza y calidad de datos. Exige 7+ años de ingeniería de software.",
+        "fuente": "li_encora"
+      },
+      {
+        "id": "li_jci",
+        "identificador_linkedin": "4475628466",
+        "empresa": "Johnson Controls",
+        "cargo": "AI Engineer",
+        "ciudad": "San José",
+        "pais": "Costa Rica",
+        "area": "Ingeniería de IA generativa",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 día; 150 solicitudes; botón de solicitar visible",
+        "habilidades": [
+          "hab_genai",
+          "hab_rag",
+          "hab_agentes",
+          "hab_mlops",
+          "hab_ml",
+          "hab_python",
+          "hab_cloud",
+          "hab_gobernanza"
+        ],
+        "resumen": "Desarrolla aplicaciones con LLM (búsqueda empresarial, resúmenes, asistentes), sistemas RAG y agentes, con model serving, evaluación y monitoreo. Pide 2–5 años con trabajo práctico en LLM; valora gobernanza. No menciona Databricks: usa Azure OpenAI, SageMaker/Bedrock o Vertex AI.",
+        "fuente": "li_jci"
+      },
+      {
+        "id": "li_cocacola",
+        "identificador_linkedin": "4473821891",
+        "empresa": "The Coca-Cola Company",
+        "cargo": "Lead, Applied AI & Agentic Systems",
+        "ciudad": "San José",
+        "pais": "Costa Rica",
+        "area": "IA aplicada y sistemas agénticos",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 5 días; 133 solicitudes; botón de solicitar visible",
+        "habilidades": [
+          "hab_genai",
+          "hab_rag",
+          "hab_agentes",
+          "hab_mlops",
+          "hab_ml",
+          "hab_gobernanza",
+          "hab_python",
+          "hab_cloud"
+        ],
+        "resumen": "Construye soluciones con LLM y agentes ancladas en datos gobernados, con evaluaciones automáticas, monitoreo de drift y costos, además de modelos de ML. Pide 5+ años; su stack preferido es Azure (Fabric, AI Foundry), no Databricks.",
+        "fuente": "li_cocacola"
+      },
+      {
+        "id": "li_teradyne",
+        "identificador_linkedin": "4452877082",
+        "empresa": "Teradyne",
+        "cargo": "AI Platform Operations Engineer",
+        "ciudad": "Alajuela",
+        "pais": "Costa Rica",
+        "area": "Operación de plataformas de IA",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 semana; 92 solicitudes; botón de solicitar visible",
+        "habilidades": [
+          "hab_genai",
+          "hab_rag",
+          "hab_agentes",
+          "hab_mlops",
+          "hab_gobernanza",
+          "hab_python",
+          "hab_cloud",
+          "hab_cert"
+        ],
+        "resumen": "Opera, asegura y automatiza las plataformas de IA empresarial en Azure (AI Foundry, Azure OpenAI, AI Search), con MLOps/LLMOps, operación de agentes, patrones RAG y controles de seguridad y cumplimiento. Pide 5–8 años y valora certificaciones de Azure.",
+        "fuente": "li_teradyne"
+      },
+      {
+        "id": "li_lumenalta",
+        "identificador_linkedin": "4493657376",
+        "empresa": "Lumenalta",
+        "cargo": "Data Tech Lead - Databricks",
+        "ciudad": "Costa Rica (remoto, Latinoamérica)",
+        "pais": "Costa Rica",
+        "area": "Ingeniería de datos",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 día; botón de solicitar visible; cierre declarado el 6 de diciembre de 2026",
+        "habilidades": [
+          "hab_databricks",
+          "hab_spark",
+          "hab_python",
+          "hab_cloud",
+          "hab_ingles"
+        ],
+        "resumen": "Lidera la arquitectura y construye pipelines productivos con Databricks, PySpark, AWS y SQL. Exige 10+ años en ingeniería de datos e inglés fluido; no pide IA generativa, lo que ilustra el perfil Databricks de datos del que partiría el público objetivo.",
+        "fuente": "li_lumenalta"
+      }
+    ],
+    "alcance": "Muestra exploratoria de 8 publicaciones públicas de LinkedIn Jobs en Costa Rica, de empleadores distintos, revisadas el 2026-11-24 en los resultados públicos para «Databricks LLM» y «Databricks MLflow» (163 y 149 resultados declarados, de los que LinkedIn muestra 60 sin sesión). Todas mostraban el botón de solicitar. Cinco nombran Databricks (Databricks, FullStack, Roche, Encora y Lumenalta); las otras tres piden LLM, RAG y agentes sobre Azure u otras nubes. No es un conteo de vacantes: casi todas exigen de 3 a 10 años de experiencia, y solo FullStack es de entrada. Los resultados también incluían otros roles sin verificar (BairesDev, Accenture, Publicis, Moody's, HCLTech), y varias empresas replican la misma vacante por provincia."
+  },
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 55,
+      "justificacion": "Los temas del programa atraen mucho a nivel internacional: Generative AI with LLMs suma 454 127 inscritos y los cursos de RAG y agentes de IBM y Vanderbilt superan los 100 000 cada uno. En cambio, los cursos específicos de Databricks reúnen solo 4 678 (Duke) y 3 706 (Pragmatic AI Labs), lo que confirma un nicho. El público objetivo (egresados del técnico de datos y profesionales con Databricks) es por definición reducido y no hay cifras locales ni de disposición de pago. Por eso el puntaje es intermedio bajo.",
+      "fuentes": [
+        "coursera_dlai_llms",
+        "coursera_ibm_rag",
+        "coursera_vanderbilt_agentes",
+        "coursera_duke_llms",
+        "coursera_pragmatic_spec"
+      ],
+      "nivel_evidencia": "Indirecta: inscripciones internacionales acumuladas, sin evidencia local"
+    },
+    "empleabilidad": {
+      "puntaje": 64,
+      "justificacion": "Las ocho publicaciones de Costa Rica estaban activas y piden el núcleo del programa: LLM, RAG, agentes, evaluación y monitoreo, y gobernanza. Cinco nombran Databricks, incluida la propia Databricks (AI Automation Engineer, con MLflow y búsqueda vectorial). Sin embargo, casi todas exigen de 3 a 10 años de experiencia. Solo FullStack ofrece un puesto de entrada, y además pide inglés fuerte y certificaciones. Tres de los puestos de IA generativa (Johnson Controls, Coca-Cola y Teradyne) trabajan sobre Azure, no Databricks. Es una mejora plausible para profesionales con experiencia, no una vía directa de inserción para recién egresados.",
+      "fuentes": [
+        "li_databricks",
+        "li_fullstack",
+        "li_roche",
+        "li_encora",
+        "li_jci",
+        "li_cocacola",
+        "li_teradyne",
+        "li_lumenalta"
+      ],
+      "nivel_evidencia": "Muestra exploratoria de 8 publicaciones de LinkedIn"
+    },
+    "competencia": {
+      "puntaje": 68,
+      "justificacion": "Entre las ofertas verificadas en Costa Rica ninguna combina IA generativa, RAG, agentes y MLflow sobre Databricks, lo que respalda la afirmación del brief. El competidor local más cercano es el INTEC de CENFOTEC (216 horas, con modelos de lenguaje e IA generativa), pero parte de cero y no usa Databricks; TEC, Fidélitas y UCR ofrecen IA a nivel gerencial o de usuario. La amenaza real viene de la propia Databricks Academy, con un curso oficial de 16 horas que cubre los seis temas, y de Coursera, con cursos de Databricks de inscripción gratuita. El puntaje es favorable en lo local, pero lo moderan esos sustitutos globales.",
+      "fuentes": [
+        "cenfotec_intec",
+        "cenfotec_piatec",
+        "tec_eia",
+        "fidelitas_gaipc",
+        "ucr_cicap_iagen",
+        "databricks_curso_genai",
+        "coursera_pragmatic_spec",
+        "coursera_duke_llms"
+      ],
+      "nivel_evidencia": "Páginas y folletos oficiales; no se verificaron ULACIT, UNED, INA ni UTN"
+    },
+    "precio": {
+      "puntaje": 50,
+      "justificacion": "Hay cuatro referencias verificadas: CENFOTEC PIATEC (USD 2 641,80 con IVA, 176 horas en 10 meses), TEC Especialización en IA Empresarial (₡848 100 con IVA, 192 horas), el curso oficial de Databricks (USD 1 500 por 16 horas) y el examen de certificación (USD 200). Un técnico de cuatro cuatrimestres tendría que justificar un costo total probablemente mayor que el curso oficial más el examen (USD 1 700), que un profesional con Databricks puede tomar en semanas. El brief no declara precio ni horas, y no se conoce cuántos empleadores pagan la formación, por lo que el puntaje queda en el límite entre débil e intermedio.",
+      "fuentes": [
+        "cenfotec_piatec",
+        "tec_eia",
+        "databricks_curso_genai",
+        "databricks_cert_genai"
+      ],
+      "nivel_evidencia": "Cuatro referencias de precio verificadas; sin precio ni horas propuestas"
+    }
+  },
+  "lectura_ejecutiva": [
+    {
+      "titulo": "Diferenciación por plataforma, sin rival local",
+      "texto": "Ninguna oferta verificada en Costa Rica enseña IA generativa, RAG y agentes sobre Databricks. CENFOTEC enseña IA desde cero sin plataforma empresarial, y TEC, Fidélitas y UCR se quedan en el nivel de usuario o de gestión."
+    },
+    {
+      "titulo": "El sustituto es Databricks mismo",
+      "texto": "Databricks Academy cubre los seis temas en 16 horas por USD 1 500 y la certificación cuesta USD 200. Para un profesional que ya usa Databricks, el técnico debe aportar más que eso: proyectos integradores, acompañamiento, título y voucher incluido."
+    },
+    {
+      "titulo": "Empleo real para perfiles con experiencia",
+      "texto": "Los puestos en Costa Rica piden exactamente LLM, RAG, agentes, MLflow y gobernanza, y cinco de ocho nombran Databricks. Casi todos exigen 3 o más años y buen inglés, lo que favorece al público de profesionales en ejercicio sobre el de recién egresados."
+    },
+    {
+      "titulo": "Nicho estrecho y ruta interna",
+      "texto": "El interés en IA generativa es masivo, pero el específico en Databricks es de miles, no de cientos de miles. La continuidad desde el Técnico en Ingeniería de Datos con Databricks de ULatina es el canal de captación más claro."
+    }
+  ],
+  "recomendaciones": {
+    "demanda": "Medir el interés entre estudiantes y egresados del Técnico en Ingeniería de Datos con Databricks y en empresas usuarias de Databricks en Costa Rica (encuesta o sesión informativa), preguntando por el atractivo frente al curso oficial de Databricks, la disponibilidad de horario y el financiamiento del empleador.",
+    "empleabilidad": "Posicionar el programa como upskilling para profesionales con experiencia en datos, con un portafolio de proyectos de agentes y RAG evaluados con MLflow. Incluir inglés técnico y mencionar la transferencia a Azure AI Foundry y otras nubes, que aparecen en la mitad de las vacantes de IA generativa.",
+    "competencia": "Comunicar que el programa es la continuación natural del técnico de datos de ULatina y que va más allá del curso oficial de 16 horas: proyectos empresariales integradores, gobernanza y ética, y voucher de certificación. Revisar si ULACIT (Ingeniería en IA), UNED, INA y UTN tienen ofertas técnicas, que no se pudieron verificar.",
+    "precio": "Comparar el precio total con el curso oficial más el examen (USD 1 700) y con los técnicos de IA de CENFOTEC (USD 2 641,80 por PIATEC). Considerar incluir el voucher de USD 200, pago por cuatrimestre, convenios corporativos y la posibilidad de cursar módulos sueltos para profesionales que solo necesitan parte del contenido.",
+    "sector": "El sector económico no se investigó aquí; se calcula aparte con el IMAE del BCCR para la actividad que corresponda."
+  },
+  "nota_precio": "Montos en moneda original, sin convertir. CENFOTEC PIATEC publica USD 2 641,80 con IVA incluido (tarifario de noviembre de 2025, sujeto a cambios). TEC publica ₡848 100 en total con 2 % de IVA, incluidos matrícula y derechos de graduación. Databricks publica USD 1 500 por asiento en clases públicas en inglés (la versión autodirigida no muestra precio) y USD 200 por intento de examen, antes de impuestos locales. Coursera permite inscripción gratuita y cobra el certificado o lo incluye en Coursera Plus, sin precio individual en la página. CENFOTEC INTEC, ULatina, Fidélitas y UCR no publican precio y figuran como nulos, no como cero."
+}

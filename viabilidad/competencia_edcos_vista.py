@@ -3,7 +3,7 @@ from copy import deepcopy
 from html import escape
 import pandas as pd
 import streamlit as st
-from competencia_edcos import filas_contenidos,resumen_contenidos,grafico_contenidos,posicionamiento
+from competencia_edcos import filas_contenidos,resumen_contenidos,grafico_contenidos,posicionamiento,lectura_ejecutiva
 from graficos_edcos import grafico_dimension
 from datos_visuales_edcos import leer_evidencia,PLANTILLAS
 from modelo_edcos import INSTITUCIONES_EDCO
@@ -29,13 +29,7 @@ def render_competencia(ficha,source_links):
 
     st.markdown('**Lectura ejecutiva**')
     if summary['total']:
-        topics={t['id']:t['etiqueta'].replace('<br>',' ') for t in data['temas']}
-        common=sorted(summary['conteos'],key=lambda k:-summary['conteos'][k])[:2]
-        messages=[('Territorio compartido',', '.join(topics[k] for k in common)+' son los temas más presentes entre las descripciones externas revisadas.'),
-                  ('Diferenciación por enfoque','La propuesta puede destacar la auditoría Neuro-UX y la jornada de laboratorio. Su menor presencia explícita en estas descripciones es una señal para contrastar, no una garantía de demanda.'),
-                  ('Portafolio UDLA','La oferta actual ya declara herramientas biométricas. Delimitar el alcance de Neuro-UX y su aplicación digital ayuda a distinguir la nueva propuesta.')]
-        if data.get('lectura_ejecutiva'):
-            messages=[messages[0]]+[(item['titulo'],item['texto']) for item in data['lectura_ejecutiva']]
+        messages=lectura_ejecutiva(ficha,summary)
         # El portafolio se analiza sobre todas las referencias; no depende de ocultar su fila.
         cards=''.join(f'<article class="edco-pillar"><div class="edco-kicker">{escape(title)}</div><p>{escape(body)}</p></article>' for title,body in messages)
         st.markdown('<div class="edco-pillars">'+cards+'</div>',unsafe_allow_html=True)
@@ -52,7 +46,9 @@ def render_competencia(ficha,source_links):
         chart,missing=posicionamiento(map_ficha,rows)
         st.plotly_chart(chart,width='stretch',theme=None,config={'displayModeBar':False},key='edco_mapa_oferentes')
         st.caption('Cada punto representa un programa con precio y horas publicados. Derecha: más horas; arriba: mayor precio total. Las horas pueden ser académicas, de dedicación o de vídeo: el mapa no las convierte ni estima calidad o precio óptimo. Las condiciones históricas se muestran al pasar el cursor.')
-        st.caption('El programa propuesto no tiene precio ni horas totales informadas: no se le asigna un punto supuesto.')
+        hours=ficha['brief'].get('horas_totales')
+        st.caption('El programa propuesto no tiene precio ni horas totales informadas: no se le asigna un punto supuesto.' if hours is None
+                   else f'El programa propuesto informa {hours:g} horas, pero no un precio verificado: no se le asigna un punto supuesto.')
         if missing:
             st.dataframe(pd.DataFrame(missing).rename(columns={'institucion':'Oferente','programa':'Programa','motivo':'Dato no publicado para ubicar el punto'}),hide_index=True,width='stretch')
 

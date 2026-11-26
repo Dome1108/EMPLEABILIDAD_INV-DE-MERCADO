@@ -72,14 +72,7 @@ div[data-testid="stVerticalBlockBorderWrapper"]>div {border-color:#e1eaf5!import
 @media(max-width:800px){.block-container{padding:1.2rem}.masthead{display:block}.masthead h1{font-size:1.9rem}.badge{display:inline-block;margin-top:1rem}}
 </style>""", palette), unsafe_allow_html=True)
 
-if palette == "Vino":
-    st.markdown("""<style>
-    .stApp {--primary-color:#A5133D;}
-    [data-baseweb="tag"] {background-color:#A5133D!important;color:white!important;}
-    [data-testid="stTabs"] [role="tab"][aria-selected="true"] {color:#A5133D;}
-    [data-testid="stButton"] button:hover, [data-testid="stDownloadButton"] button:hover {
-        border-color:#A5133D;color:#A5133D;}
-    </style>""", unsafe_allow_html=True)
+# Con la paleta Vino, app.py aplica palettes.VINO_CSS (botones, etiquetas, avisos, pestañas).
 
 
 def integer(value):
@@ -130,8 +123,12 @@ def cached_atlas(config, people):
 st.markdown('<div class="masthead"><div><div class="eyebrow">Inteligencia de mercado · 2023 — 2026</div><h1>Empleabilidad de graduados</h1><p class="subtitle">Formación académica y presencia laboral, en una sola mirada.</p></div></div>', unsafe_allow_html=True)
 filters = st.container(border=True)
 with filters:
-    st.markdown("**Área de análisis**")
-    st.caption("Selecciona el nivel académico y una o varias carreras homologadas. Los filtros se aplican a todos los gráficos.")
+    heading, pptx_slot = st.columns([2.2, 1], vertical_alignment="top")
+    with heading:
+        st.markdown("**Área de análisis**")
+        st.caption("Selecciona el nivel académico y una o varias carreras homologadas. Los filtros se aplican a todos los gráficos.")
+    # Se llena después de leer los filtros: botones Generar/Descargar .pptx (worker de Tendencias).
+    pptx_slot = pptx_slot.container()
 demo = os.getenv("DASHBOARD_DEMO", "0") == "1"
 
 config = {}
@@ -166,7 +163,8 @@ with filters:
     if "selected_careers" in st.session_state:
         st.session_state.selected_careers = [c for c in st.session_state.selected_careers if c in options]
     else:
-        st.session_state.selected_careers = [next((x for x in options if x.upper() in ('ECONOMÍA', 'ECONOMIA')), options[0])] if options else []
+        # Al iniciar o recargar, el filtro empieza vacío: la persona elige la carrera.
+        st.session_state.selected_careers = []
     career_control, cutoff_control, refresh_control = st.columns([3, 1.3, 1], vertical_alignment="bottom")
     with career_control:
         selected = st.multiselect("Carreras homologadas", options, key="selected_careers", placeholder="Busca una carrera…")
@@ -182,6 +180,10 @@ with filters:
             cached_atlas.clear()
             st.rerun()
     st.caption(f"{len(selected)} carrera(s) seleccionada(s) · {len(options):,} disponibles".replace(",", "."))
+with pptx_slot:
+    # «Generar .pptx» deja los filtros vigentes en la cola; el worker del observatorio arma la presentación.
+    import presentacion_vista
+    presentacion_vista.render()
 if demo:
     st.warning("Vista de demostración con datos sintéticos. Estas cifras no corresponden a los registros institucionales.")
 if not selected:
@@ -282,17 +284,25 @@ with employment_tab:
                 st.info("No hay provincias identificadas en Atlas para los graduados de este corte.")
             else:
                 province_col, canton_col, parish_col = st.columns(3)
+                # Con clave para que la presentación .pptx use la misma zona; un valor guardado
+                # que ya no existe para estas carreras vuelve al predeterminado.
+                def keep_option(key, options, default):
+                    if st.session_state.get(key) not in options:
+                        st.session_state[key] = default
+                keep_option('geo_provincia', provinces, 'PICHINCHA' if 'PICHINCHA' in provinces else provinces[0])
                 with province_col:
-                    province = st.selectbox("Provincia (domicilio)", provinces, index=provinces.index('PICHINCHA') if 'PICHINCHA' in provinces else 0)
+                    province = st.selectbox("Provincia (domicilio)", provinces, key='geo_provincia')
                 cantons = sorted(x for x in geo.loc[geo.provincia.eq(province), 'canton'].unique() if x)
+                keep_option('geo_canton', ['', *cantons], '')
                 with canton_col:
-                    canton = st.selectbox("Cantón (domicilio)", ['', *cantons], format_func=lambda x: x or 'Todos los cantones')
+                    canton = st.selectbox("Cantón (domicilio)", ['', *cantons], format_func=lambda x: x or 'Todos los cantones', key='geo_canton')
                 parish_rows = geo[geo.provincia.eq(province)]
                 if canton:
                     parish_rows = parish_rows[parish_rows.canton.eq(canton)]
                 parishes = sorted(x for x in parish_rows.parroquia.unique() if x)
+                keep_option('geo_parroquia', ['', *parishes], '')
                 with parish_col:
-                    parish = st.selectbox("Parroquia (domicilio)", ['', *parishes], format_func=lambda x: x or 'Todas las parroquias', disabled=not canton)
+                    parish = st.selectbox("Parroquia (domicilio)", ['', *parishes], format_func=lambda x: x or 'Todas las parroquias', disabled=not canton, key='geo_parroquia')
                 territory = territorial_summary(located, province, canton, parish if canton else '')
                 from integracion_viabilidad import compartir_territorio
                 compartir_territorio(' · '.join(x for x in [province,canton,parish if canton else ''] if x),territory,'2026-01-31')

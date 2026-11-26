@@ -1,4 +1,7 @@
 import os
+os.environ["TENDENCIAS_DESACTIVADO"] = "1"  # sin conexión a la base real de Tendencias
+import tempfile
+os.environ.setdefault("PRESENTACIONES_COLA", os.path.join(tempfile.mkdtemp(), "cola.sqlite3"))  # cola .pptx temporal
 from pathlib import Path
 import unittest
 from unittest.mock import patch
@@ -14,7 +17,9 @@ ROOT=Path(__file__).resolve().parents[1]
 class IntegracionViabilidadTest(unittest.TestCase):
     def test_filtros_persisten_al_salir_y_regresar(self):
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'1'}):
-            app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+            app = AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             options=app.multiselect(key='selected_careers').options
             selected=[options[-1]]
             app.multiselect(key='selected_careers').set_value(selected).run()
@@ -77,18 +82,32 @@ class IntegracionViabilidadTest(unittest.TestCase):
 
     def test_navegacion_comparte_sector_y_conserva_edco_cr(self):
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'1'}):
-            app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+            app = AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             self.assertFalse(app.exception)
             context=app.session_state['mercado_compartido']
             self.assertTrue(context['demostracion'])
             self.assertTrue(context['sector']['ventas'])
             self.assertTrue(context['sector']['macroindustrias'])
             self.assertTrue(context['sector']['empresas'])
+            # Economía (por defecto) no es una de las 12 carreras: se muestran igual las 12
+            # referencias con su selector propio de carrera, como antes de la integración.
             app.switch_page('views/carreras.py').run()
             self.assertFalse(app.exception)
             self.assertEqual(len(app.tabs),12)
-            carrera=app.selectbox(key='carrera_negocios').value
+            self.assertTrue(any(s.label=='Filtrar por carrera' for s in app.selectbox))
+            self.assertFalse(any('no está entre las 12 carreras' in i.value for i in app.info))
+            # La carrera se elige en Oferta de valor-empleabilidad y se aplica en Viabilidad.
+            app.switch_page('views/empleabilidad.py').run()
+            app.multiselect(key='selected_careers').set_value(['Ingeniería de Software']).run()
+            context=app.session_state['mercado_compartido']
+            app.switch_page('views/carreras.py').run()
             self.assertFalse(app.exception)
+            self.assertEqual(len(app.tabs),12)
+            self.assertFalse(any(s.label=='Filtrar por carrera' for s in app.selectbox))
+            self.assertTrue(any('CARRERA EVALUADA' in m.value and 'Software' in m.value for m in app.markdown))
+            self.assertTrue(any(s.label=='Nivel de evaluación' for s in app.selectbox))
             self.assertFalse(any(str(b.key).startswith('vincular_mercado_') for b in app.button))
             self.assertEqual(app.session_state['mercado_compartido']['carreras'],context['carreras'])
             self.assertTrue(any('Principales empresas' in m.value for m in app.markdown))
@@ -97,7 +116,10 @@ class IntegracionViabilidadTest(unittest.TestCase):
             self.assertFalse(app.exception)
             app.selectbox(key='edco_institucion').set_value('ulatina_cr').run()
             self.assertFalse(app.exception)
-            self.assertEqual(len(app.selectbox(key='edco_programa').options),2)
+            # Doce programas de ULatina: dos investigados y diez briefs en evaluación.
+            self.assertEqual(len(app.selectbox(key='edco_programa').options),14)
+            app.selectbox(key='edco_programa').set_value('Certificación Ejecutiva People Analytics y talent strategy').run()
+            self.assertFalse(app.exception)
             self.assertTrue(app.checkbox(key='edco_eval_sector').value)
             app.switch_page('views/empleabilidad.py').run()
             self.assertFalse(app.exception)
@@ -105,7 +127,9 @@ class IntegracionViabilidadTest(unittest.TestCase):
 
     def test_viabilidad_no_depende_de_conexion_sql(self):
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'0'}),patch('data_access.career_catalog',side_effect=RuntimeError('Sin conexión de prueba')):
-            app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+            app = AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             self.assertFalse(app.exception)
             self.assertTrue(app.error)
             app.switch_page('views/educacion_continua.py').run()
@@ -118,10 +142,14 @@ class IntegracionViabilidadTest(unittest.TestCase):
             if path.name.startswith('brief_') and path.suffix=='.pdf':return False
             return original(path)
         with patch.dict(os.environ,{'DASHBOARD_DEMO':'1'}),patch.object(Path,'is_file',available):
-            app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+            app = AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             app.switch_page('views/educacion_continua.py').run()
             self.assertFalse(app.exception)
             app.selectbox(key='edco_institucion').set_value('ulatina_cr').run()
+            self.assertFalse(app.exception)
+            app.selectbox(key='edco_programa').set_value('Certificación Ejecutiva People Analytics y talent strategy').run()
             self.assertFalse(app.exception)
             self.assertTrue(app.checkbox(key='edco_eval_sector').value)
 

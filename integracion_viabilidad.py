@@ -15,12 +15,13 @@ ROOT=Path(__file__).resolve().parent
 def ejecutar_viabilidad(apartado):
     """Mantiene ejecutable el tablero original y evita depender del directorio actual."""
     folder=ROOT/'viabilidad'
-    previous=sys.path.copy()
-    try:
-        sys.path.insert(0,str(folder))
-        runpy.run_path(str(folder/'app.py'),init_globals={'APARTADO_INTEGRADO':apartado},run_name='__main__')
-    finally:
-        sys.path[:]=previous
+    # La carpeta queda en sys.path de forma permanente (al final, para que los módulos de la raíz
+    # tengan prioridad). Antes se quitaba al terminar, pero sys.path es compartido por todas las
+    # ejecuciones de Streamlit: si una ejecución anterior terminaba mientras otra importaba,
+    # la quitaba a mitad de camino y fallaba con «No module named 'modelo_edcos'».
+    if str(folder) not in sys.path:
+        sys.path.append(str(folder))
+    runpy.run_path(str(folder/'app.py'),init_globals={'APARTADO_INTEGRADO':apartado},run_name='__main__')
 
 
 def resumen_compartido(summary,selected,level,demo):
@@ -101,7 +102,7 @@ def render_evidencia_compartida(carrera,tab_key):
             render_consulta(carrera,tab_key)
             linked=st.session_state.get('evidencia_por_carrera',{}).get(carrera)
         if not linked:
-            st.caption('Selecciona una carrera en Empleabilidad y mercado para mostrar su perfil automáticamente, o consulta los datos aquí.')
+            st.caption('Selecciona una carrera en Oferta de valor-empleabilidad para mostrar su perfil automáticamente, o consulta los datos aquí.')
             return
         if linked['demostracion']:
             st.warning('Evidencia de demostración: datos sintéticos, fuera del cálculo de viabilidad.')

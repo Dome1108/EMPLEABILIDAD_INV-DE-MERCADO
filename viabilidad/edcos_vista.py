@@ -13,13 +13,18 @@ from datos_visuales_edcos import PLANTILLAS,leer_evidencia
 from edcos_presentacion import propuesta_html,participacion_html
 from habilidades_edcos import resumir_habilidades
 from competencia_edcos_vista import render_competencia
+from edcos_pptx import TODOS_TIPOS,construir_pptx,nombre_archivo
 
 
 def render_edcos():
     css=Path(__file__).with_name('edcos_estilo.css').read_text(encoding='utf-8')
     st.markdown('<style>'+css+'</style>',unsafe_allow_html=True)
     fichas=cargar_edcos()
-    st.markdown('<div class="header"><div><div class="eyebrow">EDUCACIÓN CONTINUA · VIABILIDAD DE NUEVAS PROPUESTAS</div><h1>Viabilidad Educación Continua</h1><p>Del brief del proponente a una evaluación con evidencia de mercado.</p></div><div class="stamp">Investigación inicial</div></div>',unsafe_allow_html=True)
+    header_col,download_col=st.columns([5,1],vertical_alignment='center')
+    with header_col:
+        st.markdown('<div class="header"><div><div class="eyebrow">EDUCACIÓN CONTINUA · VIABILIDAD DE NUEVAS PROPUESTAS</div><h1>Viabilidad Educación Continua</h1><p>Del brief del proponente a una evaluación con evidencia de mercado.</p></div><div class="stamp">Investigación inicial</div></div>',unsafe_allow_html=True)
+    # Se completa al final, cuando el diagnóstico ya aplicó los filtros de la sesión.
+    download_slot=download_col.empty()
     institution_col,program_col=st.columns([1,2])
     with institution_col:
         institution=st.selectbox('Institución y país',list(INSTITUCIONES_EDCO),format_func=lambda value:INSTITUCIONES_EDCO[value]['etiqueta'],key='edco_institucion')
@@ -174,7 +179,7 @@ def render_edcos():
                             source_file=Path(__file__).parent/evidence['archivo_mensual']
                             st.dataframe(pd.DataFrame(evidence['ventas']),hide_index=True,width='stretch')
                             st.download_button('Descargar detalle mensual SRI · CIIU del programa',source_file.read_bytes(),source_file.name,'text/csv',key='edco_sri_detalle')
-                            st.caption('Origen: consulta_sri_1.xlsx · Ventas SRI · casilleros 411 + 413 · CIIU exacto M732001.')
+                            st.caption('Origen: consulta_sri_1.xlsx · Ventas SRI · casilleros 411 + 413 · CIIU exacto '+str(brief['ciiu']).replace('.','')+'.')
                         st.caption('Permite incorporar una exportación documentada a la vista. No modifica las calificaciones ni guarda cambios sobre el archivo original.')
                         st.download_button('Descargar estructura CSV',','.join(PLANTILLAS[key])+'\n',f'edco_{key}.csv','text/csv',key='edco_template_'+key)
                         if key=='competencia':
@@ -303,15 +308,33 @@ def render_edcos():
     with documento:
         st.subheader('Ficha del proponente')
         st.caption('Información extraída del PDF entregado. Se omiten identificadores personales y metadatos de seguimiento del formulario en la vista.')
-        info=[('Programa',ficha['nombre']),('Tipo',brief['tipo']),('Facultad',brief['facultad']),('Unidad',brief['unidad']),('País',brief['pais']),('Duración',brief['duracion']),('Horas totales','No informadas' if brief['horas_totales'] is None else brief['horas_totales']),('Modalidad',brief['modalidad']),('Experto',brief['experto']),('Sector declarado',brief.get('sector_declarado','Ver código CIIU')),('Código CIIU declarado',brief['ciiu'] or 'No declarado')]
+        info=[('Programa',ficha['nombre']),('Tipo',brief['tipo']),*([('Área de estudio',brief['area_estudio'])] if brief.get('area_estudio') else []),('Facultad',brief['facultad']),('Unidad',brief['unidad']),('País',brief['pais']),('Duración',brief['duracion']),('Horas totales','No informadas' if brief['horas_totales'] is None else f"{brief['horas_totales']:g}"),('Modalidad',brief['modalidad']),('Experto',brief['experto']),('Sector declarado',brief.get('sector_declarado','Ver código CIIU')),('Código CIIU declarado',brief['ciiu'] or 'No declarado'),*([('Tarifa preliminar',brief['tarifa_preliminar'])] if brief.get('tarifa_preliminar') else [])]
         st.dataframe(pd.DataFrame(info,columns=['Campo','Dato del brief']),hide_index=True,width='stretch')
+        if brief.get('nota_registro'):st.caption(brief['nota_registro'])
         st.markdown('**Objetivo**');st.write(brief['objetivo'])
         st.markdown('**Ejes**');st.write(' · '.join(brief['ejes']))
+        if brief.get('habilidades'):
+            st.markdown('**Habilidades clave**');st.write(' · '.join(brief['habilidades']))
         st.markdown('**Nombres alternativos**');st.write(' · '.join(brief['nombres_alternativos']))
         st.markdown('**Palabras clave de investigación**');st.write(' · '.join(brief['palabras_clave']))
+        # Campos de los briefs registrados con registrar_briefs_edcos.py; las fichas anteriores no los tienen.
+        if brief.get('interes_investigacion'):
+            st.markdown('**Qué desea conocer el proponente**');st.write(brief['interes_investigacion'])
+        if brief.get('competencia_declarada'):
+            st.markdown('**Competencia declarada por el proponente**');st.write(brief['competencia_declarada'])
         pdf=Path(__file__).parent/brief['copia_local']
         if pdf.is_file():
             st.download_button('Consultar brief original · PDF',pdf.read_bytes(),brief['archivo'],'application/pdf',key='edco_brief_pdf')
         st.markdown('**Distinción de evidencia**')
         st.write('El PDF acredita lo que propone el solicitante. Las páginas de instituciones acreditan lo que publican sus oferentes. Los puntajes y segmentos sugeridos son interpretación analítica. Ninguno de esos elementos sustituye una medición de interés local o una confirmación de matrícula.')
+
+    # La presentación solo contiene el Diagnóstico EdCo, con los filtros vigentes.
+    snapshot,snapshot_result=deepcopy(ficha),deepcopy(result)
+    options=dict(tipos=list(st.session_state.get('edco_comp_tipos',TODOS_TIPOS)),
+                 solo_inscripcion=bool(st.session_state.get('edco_comp_inscripcion',False)),
+                 moneda_mapa=st.session_state.get('edco_mapa_moneda'))
+    download_slot.download_button('Descargar .pptx',data=lambda:construir_pptx(snapshot,snapshot_result,options),
+        file_name=nombre_archivo(ficha),mime='application/vnd.openxmlformats-officedocument.presentationml.presentation',
+        icon=':material/download:',on_click='ignore',width='stretch',key='edco_pptx',
+        help='Descarga la pestaña Diagnóstico EdCo como presentación de PowerPoint, con los filtros aplicados.')
 

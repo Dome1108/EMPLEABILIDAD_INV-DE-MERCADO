@@ -76,3 +76,16 @@ def posicionamiento(ficha,rows):
     fig.update_xaxes(title='Duración publicada · horas',rangemode='tozero',gridcolor='#edf2f7')
     fig.update_yaxes(title='Precio total publicado · '+currency,rangemode='tozero',gridcolor='#edf2f7',tickprefix='₡' if currency=='CRC' else '$')
     return fig,missing
+
+
+def lectura_ejecutiva(ficha,summary):
+    """Mensajes (título, texto) de la lectura ejecutiva de competencia."""
+    data=ficha['comparativa_contenidos']
+    topics={t['id']:t['etiqueta'].replace('<br>',' ') for t in data['temas']}
+    common=sorted(summary['conteos'],key=lambda k:-summary['conteos'][k])[:2]
+    messages=[('Territorio compartido',', '.join(topics[k] for k in common)+' son los temas más presentes entre las descripciones externas revisadas.'),
+              ('Diferenciación por enfoque','La propuesta puede destacar la auditoría Neuro-UX y la jornada de laboratorio. Su menor presencia explícita en estas descripciones es una señal para contrastar, no una garantía de demanda.'),
+              ('Portafolio UDLA','La oferta actual ya declara herramientas biométricas. Delimitar el alcance de Neuro-UX y su aplicación digital ayuda a distinguir la nueva propuesta.')]
+    if data.get('lectura_ejecutiva'):
+        messages=[messages[0]]+[(item['titulo'],item['texto']) for item in data['lectura_ejecutiva']]
+    return messages

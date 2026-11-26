@@ -1,4 +1,7 @@
 import os
+os.environ["TENDENCIAS_DESACTIVADO"] = "1"  # sin conexión a la base real de Tendencias
+import tempfile
+os.environ.setdefault("PRESENTACIONES_COLA", os.path.join(tempfile.mkdtemp(), "cola.sqlite3"))  # cola .pptx temporal
 import json
 import unittest
 from pathlib import Path
@@ -19,7 +22,9 @@ class DashboardFlow(unittest.TestCase):
         with patch.dict(os.environ, {"DASHBOARD_DEMO": "1"}), \
              patch.object(education_visuals, 'VISUAL_LAYOUT_VERSION', 1), \
              patch.object(education_visuals, 'education_figure', stale_figure):
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py'), default_timeout=30).run()
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py'), default_timeout=30)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             self.assertFalse(app.exception)
             chart = json.loads(app.tabs[1].get('plotly_chart')[0].proto.spec)
             self.assertEqual(chart['layout']['xaxis']['side'], 'bottom')
@@ -33,7 +38,9 @@ class DashboardFlow(unittest.TestCase):
         with patch.dict(os.environ, {"DASHBOARD_DEMO": "1"}), \
              patch.object(analytics, 'RESULT_SCHEMA_VERSION', 3), \
              patch.object(analytics, 'calculate', stale_calculate):
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py'), default_timeout=30).run()
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py'), default_timeout=30)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             self.assertFalse(app.exception)
             self.assertEqual(len(app.tabs[1].get('plotly_chart')), 1)
             export = next(d.value for d in app.dataframe if 'Fecha de corte académico' in d.value.columns)
@@ -41,7 +48,9 @@ class DashboardFlow(unittest.TestCase):
 
     def test_careers_and_cutoff_recalculate_without_errors(self):
         with patch.dict(os.environ, {"DASHBOARD_DEMO": "1"}):
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30).run()
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             self.assertFalse(app.exception)
             self.assertEqual(len(app.sidebar.multiselect),0)
             self.assertEqual(len(app.sidebar.selectbox),0)
@@ -65,10 +74,19 @@ class DashboardFlow(unittest.TestCase):
             self.assertFalse(app.exception)
             self.assertTrue(any('Selecciona al menos' in x.value for x in app.info))
 
+    def test_career_filter_starts_empty(self):
+        with patch.dict(os.environ, {"DASHBOARD_DEMO": "1"}):
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30).run()
+            self.assertFalse(app.exception)
+            self.assertEqual(app.multiselect(key="selected_careers").value, [])
+            self.assertTrue(any('Selecciona al menos' in x.value for x in app.info))
+
     def test_academic_level_filters_population(self):
         from data_access import ACADEMIC_LEVELS, demo_data
         with patch.dict(os.environ, {"DASHBOARD_DEMO": "1"}):
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30).run()
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / "app.py"), default_timeout=30)
+            app.session_state['selected_careers'] = ['Economía']  # el filtro inicia vacío
+            app.run()
             total = int(app.metric[0].value.replace('.', ''))
             grads, _, _ = demo_data()
             for level in ACADEMIC_LEVELS:
