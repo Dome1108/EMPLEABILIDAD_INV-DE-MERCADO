@@ -6,7 +6,7 @@ import pyodbc
 
 from analytics import SNAPSHOTS, institution_key
 
-EMPLOYER_SCHEMA_VERSION = 2
+EMPLOYER_SCHEMA_VERSION = 3
 
 ACADEMIC_LEVELS = ("Tecnológico", "Tercer nivel", "Cuarto nivel, especialidades y doctorados")
 
@@ -90,6 +90,23 @@ def careers(config):
 
 
 def load(config, selected, progress=None, levels=None):
+    """Reinicia la lectura completa una vez si se pierde la conexión.
+
+    Cada intento usa su propia conexión y tablas temporales. Nunca devuelve
+    cortes incompletos ni reutiliza una conexión rota.
+    """
+    for attempt in range(2):
+        try:
+            return _load_once(config,selected,progress=progress,levels=levels)
+        except pyodbc.Error as exc:
+            state=str(exc.args[0]) if exc.args else ''
+            if state not in ('08S01','08001','08003','08007') or attempt:
+                raise
+            if progress:
+                progress('Se interrumpió la conexión con SQL Server. Reintentando la consulta con una conexión nueva…')
+
+
+def _load_once(config, selected, progress=None, levels=None):
     if not selected:
         raise ValueError("Selecciona al menos una carrera.")
     progress = progress or (lambda message: None)
@@ -150,13 +167,23 @@ def load(config, selected, progress=None, levels=None):
         return graduates, employment, sri
 
 
+def insertar_personas(cursor,table,people):
+    """Inserta hasta 500 IDs por viaje, sin fast_executemany sobre tablas temporales."""
+    if table not in ('#industry_people','#geo_people'):
+        raise ValueError('Tabla temporal no permitida.')
+    ids=sorted(set(str(p) for p in people))
+    for offset in range(0,len(ids),500):
+        batch=ids[offset:offset+500]
+        cursor.execute(f"INSERT INTO {table} (person) VALUES "+','.join('(?)' for _ in batch),*batch)
+
+
 def load_employers(config, people):
     """Relaciones persona-empleador del último corte SIM."""
+    if not people:return pd.DataFrame(columns=['person','RUCEMP','NOMEMP'])
     with closing(connect(config)) as connection:
         cursor = connection.cursor()
         cursor.execute("CREATE TABLE #industry_people (person varchar(10) COLLATE DATABASE_DEFAULT PRIMARY KEY)")
-        if people:
-            cursor.executemany("INSERT INTO #industry_people VALUES (?)", [(p,) for p in people])
+        insertar_personas(cursor,'#industry_people',people)
         cursor.execute("""SELECT DISTINCT RIGHT('0000000000' + LTRIM(RTRIM(CONVERT(varchar(100), e.NUMAFI))), 10) AS person,
             LTRIM(RTRIM(CONVERT(varchar(100), e.RUCEMP))) AS RUCEMP,
             LTRIM(RTRIM(CONVERT(nvarchar(500), e.NOMEMP))) AS NOMEMP
@@ -173,8 +200,7 @@ def load_atlas(config, people):
     with closing(connect(config)) as connection:
         cursor = connection.cursor()
         cursor.execute("CREATE TABLE #geo_people (person varchar(10) COLLATE DATABASE_DEFAULT PRIMARY KEY)")
-        if people:
-            cursor.executemany("INSERT INTO #geo_people (person) VALUES (?)", [(p,) for p in people])
+        insertar_personas(cursor,'#geo_people',people)
         cursor.execute("""SELECT DISTINCT CONVERT(varchar(100), a.cedula) AS cedula,
             a.provincia, a.canton, a.parroquia
             FROM [BDD_IDM].[modelo].[03_ATLAS_Universo] a
@@ -182,6 +208,188 @@ def load_atlas(config, people):
             AND LTRIM(RTRIM(CONVERT(varchar(100), a.cedula))) NOT LIKE '%[^0-9]%'
             AND EXISTS (SELECT 1 FROM #geo_people p WHERE p.person =
                 RIGHT('0000000000' + LTRIM(RTRIM(CONVERT(varchar(100), a.cedula))), 10) COLLATE DATABASE_DEFAULT)""")
+        return frame(cursor)
+
+
+# --- Mercado académico: matriculados, titulados y precios (solo SELECT) ---
+
+MARKET_LEVELS = ("TERCER NIVEL", "CUARTO NIVEL", "TECNOLOGIA")
+MARKET_FINANCING = ("PUBLICO", "PRIVADO")
+MARKET_YEARS = (2020, 2024)
+
+
+def market_level_sql(column):
+    """Homologa en SQL los niveles de Matriculados/Graduados a las categorías de precios.
+
+    Matriculados usa p. ej. 'TERCER NIVEL DE GRADO' o 'TERCER NIVEL TECNOLOGICO SUPERIOR';
+    Graduados usa 'Título(s) de cuarto nivel o posgrado' o códigos como 'TITULS_4T_NVL_PSGRD'.
+    """
+    text = f"UPPER(CONVERT(nvarchar(400), {column})) COLLATE Latin1_General_CI_AI"
+    return f"""CASE
+        WHEN {text} LIKE '%CUARTO%' OR {text} LIKE '%POSGRADO%' OR {text} LIKE '%PSGRD%' THEN 'CUARTO NIVEL'
+        WHEN {text} LIKE '%TECNIC%' OR {text} LIKE '%TECNOLOG%' OR {text} LIKE '%[_]TEC%' THEN 'TECNOLOGIA'
+        WHEN {text} LIKE '%TERCER NIVEL%' OR {text} LIKE '%3ER[_]NVL[_]GRD%' THEN 'TERCER NIVEL'
+    END"""
+
+
+def market_financing_sql(column):
+    text = f"UPPER(CONVERT(nvarchar(200), {column})) COLLATE Latin1_General_CI_AI"
+    return f"""CASE
+        WHEN {text} LIKE '%PARTICULAR%' OR {text} LIKE '%PRIVAD%' THEN 'PRIVADO'
+        WHEN {text} LIKE '%PUBLIC%' THEN 'PUBLICO'
+    END"""
+
+
+def placeholders(values):
+    if not values:
+        raise ValueError("Se requiere al menos un valor de filtro.")
+    return ", ".join("?" for _ in values)
+
+
+def market_catalog(config):
+    """Carreras disponibles por fuente y nivel homologado, con su texto original."""
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute(f"""
+            SELECT 'MATRICULADOS' AS FUENTE, LTRIM(RTRIM(CARRERA_HOMOLOGADA)) AS CARRERA,
+                {market_level_sql('NIVEL_FORMACION')} AS NIVEL
+            FROM [BDD_IDM].[senescyt].[Matriculados_Senescyt]
+            WHERE NULLIF(LTRIM(RTRIM(CARRERA_HOMOLOGADA)), '') IS NOT NULL
+            GROUP BY LTRIM(RTRIM(CARRERA_HOMOLOGADA)), {market_level_sql('NIVEL_FORMACION')}
+            UNION ALL
+            SELECT 'TITULADOS', LTRIM(RTRIM(CARRERA_HOMOLOGADA)), {market_level_sql('NIVEL_ACADEMICO')}
+            FROM [BDD_IDM].[senescyt].[Graduados_nueva]
+            WHERE NULLIF(LTRIM(RTRIM(CARRERA_HOMOLOGADA)), '') IS NOT NULL
+            GROUP BY LTRIM(RTRIM(CARRERA_HOMOLOGADA)), {market_level_sql('NIVEL_ACADEMICO')}
+            UNION ALL
+            SELECT 'PRECIOS', LTRIM(RTRIM(CARRERA_HOMOLOGADA_FINAL)), LTRIM(RTRIM(HOMOLOGADOS_NIVEL_ACADEMICO))
+            FROM [BDD_IDM].[senescyt].[Precios_Homologados]
+            WHERE NULLIF(LTRIM(RTRIM(CARRERA_HOMOLOGADA_FINAL)), '') IS NOT NULL
+            GROUP BY LTRIM(RTRIM(CARRERA_HOMOLOGADA_FINAL)), LTRIM(RTRIM(HOMOLOGADOS_NIVEL_ACADEMICO))""")
+        return frame(cursor)
+
+
+def enrollment_provinces(config):
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute("""SELECT DISTINCT LTRIM(RTRIM(PROVINCIA_IES)) AS PROVINCIA
+            FROM [BDD_IDM].[senescyt].[Matriculados_Senescyt]
+            WHERE NULLIF(LTRIM(RTRIM(PROVINCIA_IES)), '') IS NOT NULL ORDER BY PROVINCIA""")
+        return [row[0] for row in cursor.fetchall()]
+
+
+def load_enrollment(config, careers, level, province=None):
+    """SUM(TOTAL_MATRICULADOS) por año y financiamiento; nunca cuenta filas."""
+    params = [*careers, level, *MARKET_YEARS]
+    province_filter = ""
+    if province:
+        province_filter = " AND LTRIM(RTRIM(m.PROVINCIA_IES)) = ?"
+        params.append(province)
+    financing = market_financing_sql("m.TIPO_FINANCIAMIENTO")
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute(f"""
+            SELECT m.PERIODO AS ANIO, {financing} AS FINANCIAMIENTO,
+                SUM(CAST(m.TOTAL_MATRICULADOS AS bigint)) AS TOTAL_MATRICULADOS
+            FROM [BDD_IDM].[senescyt].[Matriculados_Senescyt] m
+            WHERE LTRIM(RTRIM(m.CARRERA_HOMOLOGADA)) IN ({placeholders(careers)})
+              AND {market_level_sql('m.NIVEL_FORMACION')} = ?
+              AND m.PERIODO BETWEEN ? AND ?{province_filter}
+            GROUP BY m.PERIODO, {financing}""", *params)
+        return frame(cursor)
+
+
+def institution_financing(config):
+    """Relación IES → financiamiento tomada de Matriculados (Graduados no la trae)."""
+    financing = market_financing_sql("TIPO_FINANCIAMIENTO")
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute(f"""SELECT LTRIM(RTRIM(NOMBRE_IES)) AS NOMBRE_IES, {financing} AS FINANCIAMIENTO
+            FROM [BDD_IDM].[senescyt].[Matriculados_Senescyt]
+            WHERE NULLIF(LTRIM(RTRIM(NOMBRE_IES)), '') IS NOT NULL
+            GROUP BY LTRIM(RTRIM(NOMBRE_IES)), {financing}""")
+        return frame(cursor)
+
+
+def load_graduates_by_year(config, careers, level):
+    """Registros de Graduados_nueva por IES y año (año desde FECHA_REGISTRO d/m/aaaa)."""
+    date = "COALESCE(TRY_CONVERT(date, g.FECHA_REGISTRO, 103), TRY_CONVERT(date, g.FECHA_REGISTRO, 23))"
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute(f"""
+            WITH g AS (
+                SELECT LTRIM(RTRIM(g.INSTITUCION_EDUCACION_SUPERIOR)) AS INSTITUCION, YEAR({date}) AS ANIO
+                FROM [BDD_IDM].[senescyt].[Graduados_nueva] g
+                WHERE LTRIM(RTRIM(g.CARRERA_HOMOLOGADA)) IN ({placeholders(careers)})
+                  AND {market_level_sql('g.NIVEL_ACADEMICO')} = ?)
+            SELECT INSTITUCION, ANIO, COUNT_BIG(*) AS TITULADOS
+            FROM g WHERE ANIO BETWEEN ? AND ?
+            GROUP BY INSTITUCION, ANIO""", *careers, level, *MARKET_YEARS)
+        return frame(cursor)
+
+
+def load_prices(config, careers, level):
+    """Filas de precios de la carrera y nivel ya homologados en SQL Server.
+
+    Usa HOMOLOGADOS_FINANCIAMIENTO cuando la columna existe. Si aún no está en la
+    tabla, deriva PUBLICO/PRIVADO de FINANCIAMIENTO (PUBLICA/PARTICULAR).
+    """
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute("""SELECT 1 FROM BDD_IDM.INFORMATION_SCHEMA.COLUMNS
+            WHERE TABLE_SCHEMA = 'senescyt' AND TABLE_NAME = 'Precios_Homologados'
+              AND COLUMN_NAME = 'HOMOLOGADOS_FINANCIAMIENTO'""")
+        has_financing = cursor.fetchone() is not None
+        financing = ("LTRIM(RTRIM(p.HOMOLOGADOS_FINANCIAMIENTO))" if has_financing
+                     else market_financing_sql("p.FINANCIAMIENTO"))
+        cursor.execute(f"""
+            SELECT LTRIM(RTRIM(p.SEMESTRE_POS)) AS SEMESTRE_POS, LTRIM(RTRIM(p.SIGLA)) AS SIGLA,
+                LTRIM(RTRIM(p.CARRERA_HOMOLOGADA_FINAL)) AS CARRERA_HOMOLOGADA_FINAL,
+                LTRIM(RTRIM(p.HOMOLOGADOS_NIVEL_ACADEMICO)) AS HOMOLOGADOS_NIVEL_ACADEMICO,
+                {financing} AS HOMOLOGADOS_FINANCIAMIENTO, p.ARANCEL,
+                LTRIM(RTRIM(p.CARRERA_UDLA)) AS CARRERA_UDLA, LTRIM(RTRIM(p.FACULTAD)) AS FACULTAD
+            FROM [BDD_IDM].[senescyt].[Precios_Homologados] p
+            WHERE LTRIM(RTRIM(p.CARRERA_HOMOLOGADA_FINAL)) IN ({placeholders(careers)})
+              AND LTRIM(RTRIM(p.HOMOLOGADOS_NIVEL_ACADEMICO)) = ?""", *careers, level)
+        prices = frame(cursor)
+        prices.attrs["financing_source"] = "HOMOLOGADOS_FINANCIAMIENTO" if has_financing else "FINANCIAMIENTO"
+        return prices
+
+
+def load_udla_prices(config, level):
+    """Ofertas UDLA (SIGLA = 'UDLA') de un nivel, para el arancel real o estimado por facultad.
+
+    Se filtra en SQL por institución y nivel (unas cientos de filas). La facultad y el
+    periodo se eligen después, porque la facultad puede derivarse de estas mismas filas
+    y la estimación histórica necesita el periodo anterior disponible.
+    """
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute("""
+            SELECT LTRIM(RTRIM(p.SEMESTRE_POS)) AS SEMESTRE_POS,
+                LTRIM(RTRIM(p.CARRERA_UDLA)) AS CARRERA_UDLA,
+                LTRIM(RTRIM(p.CARRERA_HOMOLOGADA_FINAL)) AS CARRERA_HOMOLOGADA_FINAL,
+                LTRIM(RTRIM(p.FACULTAD)) AS FACULTAD,
+                LTRIM(RTRIM(p.HOMOLOGADOS_NIVEL_ACADEMICO)) AS HOMOLOGADOS_NIVEL_ACADEMICO, p.ARANCEL
+            FROM [BDD_IDM].[senescyt].[Precios_Homologados] p
+            WHERE LTRIM(RTRIM(p.SIGLA)) = 'UDLA'
+              AND LTRIM(RTRIM(p.HOMOLOGADOS_NIVEL_ACADEMICO)) = ?""", level)
+        return frame(cursor)
+
+
+def load_reference_prices(config):
+    """Histórico completo para modelo_referencia_precios, con los nombres de columna que espera.
+
+    Solo lectura. ARANCEL y TOTAL llegan como texto; el modelo los convierte a número.
+    """
+    with closing(connect(config)) as connection:
+        cursor = connection.cursor()
+        cursor.execute("""
+            SELECT LTRIM(RTRIM(p.NIVEL_ACADEMICO)) AS [NIVEL ACADEMICO],
+                LTRIM(RTRIM(p.CARRERA_UDLA)) AS [CARRERA UDLA],
+                LTRIM(RTRIM(p.SEMESTRE_POS)) AS [Semestre Pos],
+                LTRIM(RTRIM(p.SIGLA)) AS SIGLA, p.ARANCEL, p.TOTAL
+            FROM [BDD_IDM].[senescyt].[Precios_Homologados] p""")
         return frame(cursor)
 
 

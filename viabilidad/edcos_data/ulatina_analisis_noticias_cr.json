@@ -1,0 +1,1422 @@
+{
+  "id": "analisis_noticias_cr",
+  "nombre": "Técnico en Análisis de Noticias y Política Internacional",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-11-06",
+  "version_investigacion": "2026-11-06-mercado-v1",
+  "brief": {
+    "archivo": "Brief CR Análisis de Noticias y Política Internacional.pdf",
+    "copia_local": "edcos_fuentes/brief_analisis_noticias_cr.pdf",
+    "fecha_propuesta": "2026-10-26",
+    "tipo": "Técnico · Apertura de nuevo programa",
+    "pais": "Costa Rica",
+    "area_estudio": "Comunicación colectiva",
+    "facultad": "Facultad de Arte, Diseño y Comunicación Colectiva",
+    "unidad": "Técnicos",
+    "duracion": "3 cuatrimestres",
+    "horas_totales": 288,
+    "modalidad": "Flex (educación presencial o en línea de acuerdo con las necesidades del estudiante)",
+    "experto": "No definido en el brief",
+    "objetivo": "Al concluir los seis módulos bimestrales, correspondientes a las 288 horas de formación, la persona graduada estará en capacidad de identificar, verificar, contextualizar, analizar y comunicar acontecimientos de la actualidad y la política internacional, mediante la aplicación de conocimientos interdisciplinarios, herramientas digitales y metodologías básicas de análisis informativo y geopolítico.",
+    "diferenciadores": [
+      "Enfoque interdisciplinario y aplicado: integra relaciones internacionales, geopolítica, ciencia política y comunicación para analizar acontecimientos internacionales desde múltiples perspectivas.",
+      "Formación práctica en verificación de noticias y desinformación: talleres de fact-checking, análisis de fuentes, identificación de noticias falsas y uso de herramientas digitales e inteligencia artificial.",
+      "Laboratorio de análisis de coyuntura internacional: seguimiento noticioso, boletines, informes ejecutivos, análisis geopolíticos y construcción de escenarios.",
+      "Desarrollo de competencias digitales y analíticas: fuentes abiertas (OSINT), bases de datos internacionales y plataformas de monitoreo informativo.",
+      "Vinculación con el entorno profesional: conversatorios, talleres con especialistas y visitas a medios, instituciones públicas y organismos internacionales (componentes propuestos).",
+      "Formación orientada a productos profesionales: portafolio con análisis de noticias, informes de coyuntura, boletines y ejercicios de comunicación estratégica."
+    ],
+    "ejes": [
+      "No informado en el brief"
+    ],
+    "habilidades": [
+      "Pensamiento crítico y analítico",
+      "Investigación y verificación de información",
+      "Análisis geopolítico y prospectivo",
+      "Competencias digitales e inteligencia informativa",
+      "Comunicación estratégica y síntesis ejecutiva"
+    ],
+    "nombres_alternativos": [
+      "Técnico en Análisis Geopolítico y Actualidad Internacional",
+      "Técnico en Inteligencia Informativa y Análisis Internacional"
+    ],
+    "palabras_clave": [
+      "Geopolítica",
+      "Política Internacional",
+      "Inteligencia Informativa",
+      "Actualidad Internacional",
+      "Análisis Estratégico",
+      "Verificación de Noticias",
+      "Desinformación",
+      "Inteligencia Artificial",
+      "Fuentes Abiertas (OSINT)",
+      "Prospectiva Internacional"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Información y comunicación · Actividades profesionales, científicas y técnicas · Administración pública y defensa · Otras actividades de servicio",
+    "interes_investigacion": "Demanda potencial e intención de matrícula, perfil del estudiantado, pertinencia laboral, disposición de pago, preferencias académicas, competencia, canales de captación y viabilidad comercial.",
+    "competencia_declarada": "6 alternativa(s) mencionada(s) por el proponente; ver Oferta y plataformas."
+  },
+  "audiencia_propuesta": {
+    "origen": "El brief no describe segmentos de audiencia; se definirán en la investigación de mercado.",
+    "segmentos": [],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Técnico en Análisis de Noticias y Política Internacional",
+      "archivo": "Brief CR Análisis de Noticias y Política Internacional.pdf",
+      "paginas": "1–6",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ulacit_sitio",
+      "titulo": "ULACIT · Sitio oficial (oferta de Relaciones Internacionales)",
+      "url": "https://www.ulacit.ac.cr/",
+      "observacion": "El sitio devolvió HTTP 403 a todas las consultas automatizadas el 2026-11-06; no se pudo verificar plan, horas ni tarifas del Técnico ni del Bachillerato.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "una_ri",
+      "titulo": "Universidad Nacional (UNA) · Escuela de Relaciones Internacionales · Bachillerato y Licenciatura en Relaciones Internacionales",
+      "url": "https://www.ri.una.ac.cr/index.php/carreras/bachillerato",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "una_ieg",
+      "titulo": "Universidad Nacional (UNA) · Escuela de Relaciones Internacionales · Bachillerato en Inteligencia y Estrategia Global",
+      "url": "https://www.ri.una.ac.cr/index.php/carreras/inteligencia-y-estrategia",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ulatina_periodismo",
+      "titulo": "Universidad Latina de Costa Rica · Carrera de Periodismo",
+      "url": "https://www.ulatina.ac.cr/oferta-academica/campus-creativo/periodismo",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ulatina_tecnicos",
+      "titulo": "Universidad Latina de Costa Rica · Técnicos (listado de oferta)",
+      "url": "https://www.ulatina.ac.cr/oferta-academica/tecnicos",
+      "observacion": "El listado no incluye técnicos de periodismo, relaciones internacionales ni verificación de noticias.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "usjt_sitio",
+      "titulo": "Universidad San Judas Tadeo · Sitio oficial",
+      "url": "https://www.usanjudas.ac.cr/",
+      "observacion": "El sitio presentó una verificación anti-bot; no se pudo consultar el plan ni la proforma de Periodismo.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_diplomacia",
+      "titulo": "Coursera · Global Diplomacy – Diplomacy in the Modern World (University of London / SOAS)",
+      "url": "https://www.coursera.org/learn/global-diplomacy",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_noticias",
+      "titulo": "Coursera · Making Sense of the News: News Literacy Lessons for Digital Citizens (HKU / SUNY)",
+      "url": "https://www.coursera.org/learn/news-literacy",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_inteligencia",
+      "titulo": "Coursera · Intelligence Tools for the Digital Age (IE Business School)",
+      "url": "https://www.coursera.org/learn/intelligence-tools-digital-age",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_osint",
+      "titulo": "Coursera · The OSINT Handbook: Mastering Open Source Intelligence (Packt)",
+      "url": "https://www.coursera.org/learn/packt-the-osint-handbook-mastering-open-source-intelligence",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_factcheck",
+      "titulo": "Coursera · Fact-Checking Sources (Sage)",
+      "url": "https://www.coursera.org/learn/fact-checking-sources",
+      "observacion": "La página no publica cifra de inscripciones propia del curso.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_politica_global",
+      "titulo": "Coursera · Global Politics (Università di Napoli Federico II)",
+      "url": "https://www.coursera.org/learn/global-politics",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_periodismo",
+      "titulo": "Coursera · Journalism, the future, and you! (Michigan State University)",
+      "url": "https://www.coursera.org/learn/international-journalism",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_cocacola",
+      "titulo": "LinkedIn · Coca-Cola FEMSA · Especialista Asuntos Corporativos",
+      "url": "https://cr.linkedin.com/jobs/view/4485559453",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_ortnec",
+      "titulo": "LinkedIn · Centro (Ortnec) · Content Moderation Specialist",
+      "url": "https://cr.linkedin.com/jobs/view/4483487366",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_publicis",
+      "titulo": "LinkedIn · Publicis Groupe Costa Rica · Media Research Analyst",
+      "url": "https://cr.linkedin.com/jobs/view/4374632860",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_iisd",
+      "titulo": "LinkedIn · International Institute for Sustainable Development · Policy Advisor, Fossil Fuel Transition",
+      "url": "https://cr.linkedin.com/jobs/view/4482488729",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_bettingjobs",
+      "titulo": "LinkedIn · BettingJobs · Internal Security & Integrity Analyst",
+      "url": "https://cr.linkedin.com/jobs/view/4482200894",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_deloitte",
+      "titulo": "LinkedIn · Deloitte · Analista de Inteligencia Comercial",
+      "url": "https://cr.linkedin.com/jobs/view/4485606614",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_spectraforce",
+      "titulo": "LinkedIn · SPECTRAFORCE · Brand Reputation Specialist",
+      "url": "https://cr.linkedin.com/jobs/view/4485640238",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-11-06",
+      "observacion": "Grupo 939, indicador 94981. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-11-06",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "ULACIT",
+      "programa": "Técnico en Relaciones Internacionales",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Existencia señalada en el brief; no verificada en la página oficial",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "ulacit_sitio",
+      "nota": "El brief lo identifica como el competidor más cercano. El sitio de ULACIT respondió 403 y una búsqueda web no devolvió la ficha del técnico, por lo que no se confirmaron vigencia, horas, contenidos ni tarifa.",
+      "etiqueta_precio": "ULACIT · Técnico RI"
+    },
+    {
+      "institucion": "ULACIT",
+      "programa": "Bachillerato Bilingüe en Relaciones Internacionales",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": 8087396,
+      "precio_verificado": false,
+      "estado": "Monto total citado en el brief (tarifario 2026 con costos fijos); no verificado en la página oficial",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ulacit_sitio",
+      "nota": "El monto ₡8.087.396 proviene del brief; el tarifario oficial no fue accesible (403). Es una carrera de grado, no un técnico: sirve como techo de referencia de precio, no como comparable directo.",
+      "etiqueta_precio": "ULACIT · Bach. RI (brief)"
+    },
+    {
+      "institucion": "Universidad Nacional (UNA)",
+      "programa": "Bachillerato y Licenciatura en Relaciones Internacionales",
+      "tipo": "Otro nivel",
+      "modalidad": "Presencial",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Carrera acreditada por SINAES; Sede Central en Heredia",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "una_ri",
+      "nota": "La página declara análisis de problemas internacionales, política internacional y prospectiva; énfasis de licenciatura en Política Internacional, Política Comercial y Gestión de la Cooperación Internacional. No publica costo (universidad pública) ni horas totales. Modalidad presencial inferida de la sede declarada.",
+      "etiqueta_precio": "UNA · RI"
+    },
+    {
+      "institucion": "Universidad Nacional (UNA)",
+      "programa": "Bachillerato en Inteligencia y Estrategia Global",
+      "tipo": "Otro nivel",
+      "modalidad": "Presencial",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Carrera nueva; primera cohorte declarada en 2025; Campus Benjamín Núñez (Heredia)",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "una_ieg",
+      "nota": "Declara geopolítica, megatendencias globales, modelos prospectivos, riesgo político y uso de herramientas de inteligencia artificial. Es el programa local con mayor solapamiento temático, pero es grado universitario con perfil STEM (matemática y estadística). No publica costo ni horas.",
+      "etiqueta_precio": "UNA · Inteligencia y Estrategia Global"
+    },
+    {
+      "institucion": "Universidad Latina de Costa Rica",
+      "programa": "Bachillerato en Periodismo",
+      "tipo": "Oferta propia",
+      "modalidad": "Presencial",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Carrera de grado de 8 cuatrimestres, acreditada ante SINAES (sedes San Pedro y Heredia)",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ulatina_periodismo",
+      "nota": "Oferta propia. Declara investigación periodística y verificación de información, producción multiplataforma y redes sociales; no menciona geopolítica, desinformación, OSINT ni IA. No publica precio. El listado de técnicos de ULatina no incluye un programa equivalente (fuente ulatina_tecnicos).",
+      "etiqueta_precio": "ULatina · Periodismo"
+    },
+    {
+      "institucion": "Universidad San Judas Tadeo",
+      "programa": "Bachillerato en Periodismo",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": 6847850,
+      "precio_verificado": false,
+      "estado": "Monto según proforma citada en el brief; no verificado en la página oficial",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "usjt_sitio",
+      "nota": "El monto ₡6.847.850 proviene del brief. El sitio oficial presentó verificación anti-bot y no se pudo confirmar plan, vigencia ni tarifa.",
+      "etiqueta_precio": "USJT · Periodismo (brief)"
+    },
+    {
+      "institucion": "Coursera · University of London / SOAS",
+      "programa": "Global Diplomacy – Diplomacy in the Modern World",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 8,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso en línea autodirigido; incluido en Coursera Plus",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_diplomacia",
+      "nota": "8 horas estimadas para completar, en inglés con subtítulos. Sin precio individual publicado; la página muestra Coursera Plus a USD 143/año como promoción, que no es el precio del curso. Cubre estudios internacionales, política contemporánea y poder.",
+      "etiqueta_precio": "Coursera · Diplomacia"
+    },
+    {
+      "institucion": "Coursera · The University of Hong Kong / SUNY",
+      "programa": "Making Sense of the News: News Literacy Lessons for Digital Citizens",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso en línea autodirigido; incluido en Coursera Plus",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_noticias",
+      "nota": "Declara fact-checking, evaluación de fuentes y noticias falsas, propaganda y rumores. Duración inconsistente en la página (2 semanas a 10 h/semana frente a «six-week course»): no se registran horas. Sin precio individual publicado.",
+      "etiqueta_precio": "Coursera · Alfabetización noticiosa"
+    },
+    {
+      "institucion": "Coursera · IE Business School",
+      "programa": "Intelligence Tools for the Digital Age",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 8,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso en línea autodirigido; incluido en Coursera Plus",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_inteligencia",
+      "nota": "8 horas estimadas en 4 módulos. Métodos de análisis de inteligencia (preguntas, sesgos cognitivos, actores macro y micro) y preparación para trabajo asistido por IA. No menciona OSINT ni verificación de noticias. Sin precio individual publicado.",
+      "etiqueta_precio": "Coursera · Inteligencia"
+    },
+    {
+      "institucion": "Coursera · Packt",
+      "programa": "The OSINT Handbook: Mastering Open Source Intelligence",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 10,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso en línea autodirigido; incluido en Coursera Plus",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_osint",
+      "nota": "Aproximadamente 10 horas en siete módulos, en inglés. Centrado en OSINT con orientación a ciberamenazas; no cubre análisis noticioso, geopolítica ni desinformación. Sin precio individual publicado.",
+      "etiqueta_precio": "Coursera · OSINT"
+    },
+    {
+      "institucion": "Coursera · Sage",
+      "programa": "Fact-Checking Sources",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 3,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso breve autodirigido; incluido en Coursera Plus",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_factcheck",
+      "nota": "Tres horas estimadas, en inglés. Declara la importancia del fact-checking y la evaluación de fuentes; no menciona desinformación, OSINT ni IA. Sin precio individual ni cifra de inscripciones publicada.",
+      "etiqueta_precio": "Coursera · Fact-checking"
+    },
+    {
+      "institucion": "Universidad de Costa Rica (UCR)",
+      "programa": "Ciencias de la Comunicación Colectiva, énfasis en Periodismo",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Monto por carrera no verificado.",
+      "precio_verificado": false
+    },
+    {
+      "institucion": "Universidad Internacional de las Américas (UIA)",
+      "programa": "Periodismo y Relaciones Internacionales",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Precio por confirmar.",
+      "precio_verificado": false
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "Seis cursos de Coursera muestran participación internacional acumulada, alta en diplomacia (225.812) y moderada en análisis de inteligencia, periodismo y alfabetización noticiosa (23.000–26.000); OSINT registra una base menor (2.481). No hay serie de búsquedas ni datos de matrícula para Costa Rica, y Udemy no fue consultable. Se asigna 55, intermedio bajo: hay interés temático, pero sin evidencia de compra local de un técnico.",
+      "fuentes": [
+        "coursera_diplomacia",
+        "coursera_inteligencia",
+        "coursera_periodismo",
+        "coursera_noticias",
+        "coursera_politica_global",
+        "coursera_osint"
+      ],
+      "nivel_evidencia": "Indirecta internacional"
+    },
+    "empleabilidad": {
+      "puntaje": 50,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Las siete publicaciones de Costa Rica con solicitud visible piden análisis de entorno político, verificación y moderación de contenidos (incluida desinformación), monitoreo de medios e inteligencia de mercado. Ninguna es un puesto de verificador, analista OSINT o analista de noticias internacionales, y varias exigen grado universitario, 2–5 años de experiencia e inglés. El técnico encaja como complemento o puerta de entrada a roles adyacentes, no como credencial suficiente; por eso queda en 50.",
+      "fuentes": [
+        "li_cocacola",
+        "li_ortnec",
+        "li_publicis",
+        "li_iisd",
+        "li_bettingjobs",
+        "li_deloitte",
+        "li_spectraforce"
+      ],
+      "nivel_evidencia": "Documental local · muestra exploratoria"
+    },
+    "competencia": {
+      "puntaje": 62,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "En Costa Rica no se verificó ningún técnico que combine coyuntura internacional, fact-checking, desinformación, OSINT e IA. El Técnico en Relaciones Internacionales de ULACIT, señalado en el brief, no pudo verificarse (sitio bloqueado). La UNA ofrece bachilleratos en Relaciones Internacionales y en Inteligencia y Estrategia Global (geopolítica, prospectiva e IA), y Coursera cubre por separado diplomacia, verificación y OSINT a bajo costo. Se asigna 62: hay espacio de diferenciación a nivel técnico, con presión de grados públicos y de cursos de plataforma.",
+      "fuentes": [
+        "ulacit_sitio",
+        "una_ri",
+        "una_ieg",
+        "ulatina_periodismo",
+        "ulatina_tecnicos",
+        "coursera_diplomacia",
+        "coursera_noticias",
+        "coursera_inteligencia",
+        "coursera_osint",
+        "coursera_factcheck"
+      ],
+      "nivel_evidencia": "Documental local e internacional · juicio analítico preliminar"
+    },
+    "precio": {
+      "puntaje": 45,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "No se encontró ningún precio total verificado en una página oficial para alternativas comparables: ULACIT y la Universidad San Judas Tadeo bloquearon la consulta, y la UNA y ULatina no publican tarifas. Las únicas referencias son montos de carreras de grado citados en el brief (₡8.087.396 y ₡6.847.850) y la suscripción Coursera Plus (USD 143/año, promocional), que no son comparables directos. Se asigna 45 por falta de anclas de precio de nivel técnico y por la competencia de sustitutos de bajo costo.",
+      "fuentes": [
+        "ulacit_sitio",
+        "usjt_sitio",
+        "una_ri",
+        "ulatina_periodismo",
+        "coursera_diplomacia"
+      ],
+      "nivel_evidencia": "Débil · sin precios verificados"
+    },
+    "sector": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "IMAE sectorial BCCR · juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "El brief declara primero «Información y comunicación»; el programa produce análisis y contenidos informativos. El IMAE de «Edición, producción de contenidos, telecomunicaciones y servicios de información» (base 2022 = 100) promedia 118.5 en enero–agosto de 2026 frente a 114.2 en el mismo periodo de 2025 (+3.8 %): actividad sostenida. Es un agregado amplio, no ventas ni demanda del programa. Se asigna 75 con el mismo criterio de las fichas ya investigadas de Costa Rica (75 para un agregado con crecimiento sostenido vinculado al núcleo del programa; 70 cuando el agregado es más amplio), sin convertir el índice en puntaje por regla de tres."
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Validar intención de matrícula local con encuesta a estudiantes de comunicación, relaciones internacionales y profesionales de asuntos públicos; las inscripciones de Coursera solo indican interés temático global."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Orientar el perfil de salida a moderación y seguridad de contenidos, monitoreo de medios y reputación, inteligencia de entorno y asuntos corporativos; reforzar inglés y análisis de datos básico, que aparecen como requisitos frecuentes."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Confirmar por teléfono o visita el plan, la vigencia y la tarifa del Técnico en Relaciones Internacionales de ULACIT; diferenciar con laboratorio de verificación, OSINT e IA y un portafolio de productos, frente a grados más largos y cursos de plataforma aislados."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Obtener cotizaciones oficiales (ULACIT, USJT, UIA) y compararlas con el precio de los técnicos actuales de ULatina; considerar que existen sustitutos de plataforma de bajo costo para módulos individuales."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "No investigado aquí; se calcula con IMAE del BCCR para los sectores declarados (información y comunicación, actividades profesionales, administración pública y otros servicios)."
+    }
+  ],
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · Global Diplomacy (Univ. of London)",
+          "valor": 225812,
+          "fuente": "coursera_diplomacia"
+        },
+        {
+          "etiqueta": "Coursera · Intelligence Tools (IE)",
+          "valor": 26390,
+          "fuente": "coursera_inteligencia"
+        },
+        {
+          "etiqueta": "Coursera · Journalism, the future, and you! (MSU)",
+          "valor": 26309,
+          "fuente": "coursera_periodismo"
+        },
+        {
+          "etiqueta": "Coursera · Making Sense of the News (HKU)",
+          "valor": 23086,
+          "fuente": "coursera_noticias"
+        },
+        {
+          "etiqueta": "Coursera · Global Politics (Federico II)",
+          "valor": 10821,
+          "fuente": "coursera_politica_global"
+        },
+        {
+          "etiqueta": "Coursera · OSINT Handbook (Packt)",
+          "valor": 2481,
+          "fuente": "coursera_osint"
+        }
+      ],
+      "fuentes": [
+        "coursera_diplomacia",
+        "coursera_inteligencia",
+        "coursera_periodismo",
+        "coursera_noticias",
+        "coursera_politica_global",
+        "coursera_osint"
+      ],
+      "nota": "Cifras «already enrolled» visibles en las páginas de Coursera el 2026-11-06; son acumuladas, internacionales y en su mayoría de cursos en inglés. Udemy publica cursos de OSINT y geopolítica, pero sus páginas respondieron 403 y sus cifras no se registran. Fact-Checking Sources (Sage) y AI, Democracy, and Elections (Lund) no publican inscripciones del curso. No se obtuvo serie de Google Trends para Costa Rica.",
+      "lectura": "Hay participación internacional sostenida en diplomacia y política global y una base menor en alfabetización noticiosa, análisis de inteligencia y OSINT. Es interés acumulado a escala global, no evidencia de demanda pagadora en Costa Rica.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_cocacola",
+          "identificador_linkedin": "4485559453",
+          "empresa": "Coca-Cola FEMSA",
+          "cargo": "Especialista Asuntos Corporativos",
+          "ciudad": "Calle Blancos, San José",
+          "pais": "Costa Rica",
+          "area": "Asuntos públicos y corporativos",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible; publicada hace 1 día al 2026-11-06.",
+          "habilidades": [
+            "geopolitica",
+            "stakeholders",
+            "comunicacion",
+            "pensamiento"
+          ],
+          "resumen": "Apoya el plan de Asuntos Públicos y la relación con stakeholders públicos y privados. Pide formación en relaciones internacionales, ciencias políticas o derecho, 2 años de experiencia y conocimiento de los contextos políticos de Costa Rica y la región.",
+          "fuente": "li_cocacola"
+        },
+        {
+          "id": "li_ortnec",
+          "identificador_linkedin": "4483487366",
+          "empresa": "Centro (Ortnec)",
+          "cargo": "Content Moderation Specialist",
+          "ciudad": "Costa Rica (remoto)",
+          "pais": "Costa Rica",
+          "area": "Confianza y seguridad de contenidos",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible; publicada hace 1 semana.",
+          "habilidades": [
+            "desinformacion",
+            "verificacion",
+            "pensamiento",
+            "ingles"
+          ],
+          "resumen": "Revisa contenido generado por usuarios frente a políticas de la plataforma y escala casos complejos. Pide atención al detalle ante discurso de odio, fraude y misinformation/disinformation, y redacción en inglés.",
+          "fuente": "li_ortnec"
+        },
+        {
+          "id": "li_publicis",
+          "identificador_linkedin": "4374632860",
+          "empresa": "Publicis Groupe Costa Rica",
+          "cargo": "Media Research Analyst",
+          "ciudad": "Heredia",
+          "pais": "Costa Rica",
+          "area": "Investigación de medios",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible; publicada hace 2 semanas.",
+          "habilidades": [
+            "datos",
+            "reputacion",
+            "comunicacion",
+            "pensamiento",
+            "ingles",
+            "ia"
+          ],
+          "resumen": "Genera insights de medios, consumidor y mercado a partir de fuentes primarias y secundarias, con reportes ejecutivos y seguimiento de tendencias y tecnologías emergentes. Pide bachillerato en comunicación o afines, 2–5 años e inglés B1.",
+          "fuente": "li_publicis"
+        },
+        {
+          "id": "li_iisd",
+          "identificador_linkedin": "4482488729",
+          "empresa": "International Institute for Sustainable Development",
+          "cargo": "Policy Advisor, Fossil Fuel Transition",
+          "ciudad": "Costa Rica",
+          "pais": "Costa Rica",
+          "area": "Política internacional y asesoría a gobiernos",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible; publicada hace 2 semanas.",
+          "habilidades": [
+            "geopolitica",
+            "verificacion",
+            "stakeholders",
+            "comunicacion",
+            "ingles"
+          ],
+          "resumen": "Lidera investigación aplicada y asesoría de políticas sobre transición energética con gobiernos del Sur Global y organismos intergubernamentales. Perfil senior de investigación de políticas; referencia de habilidades más que de empleo de entrada.",
+          "fuente": "li_iisd"
+        },
+        {
+          "id": "li_bettingjobs",
+          "identificador_linkedin": "4482200894",
+          "empresa": "BettingJobs",
+          "cargo": "Internal Security & Integrity Analyst",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Inteligencia, riesgo e investigaciones internas",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible; publicada hace 1 semana.",
+          "habilidades": [
+            "riesgo",
+            "datos",
+            "verificacion",
+            "pensamiento"
+          ],
+          "resumen": "Integra una función de riesgo y fraude que combina inteligencia, herramientas e investigaciones internas, con recolección y análisis de datos y documentación de hallazgos. Apareció en la búsqueda «OSINT», pero la descripción no nombra OSINT.",
+          "fuente": "li_bettingjobs"
+        },
+        {
+          "id": "li_deloitte",
+          "identificador_linkedin": "4485606614",
+          "empresa": "Deloitte",
+          "cargo": "Analista de Inteligencia Comercial",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Inteligencia de mercado",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible; publicada hace 6 días.",
+          "habilidades": [
+            "inteligencia",
+            "geopolitica",
+            "datos",
+            "comunicacion",
+            "pensamiento"
+          ],
+          "resumen": "Transforma información de mercado, industria y competencia en insights; anticipa riesgos analizando el entorno económico, tecnológico y regulatorio y elabora reportes ejecutivos. Pide licenciatura y 3 años de experiencia.",
+          "fuente": "li_deloitte"
+        },
+        {
+          "id": "li_spectraforce",
+          "identificador_linkedin": "4485640238",
+          "empresa": "SPECTRAFORCE",
+          "cargo": "Brand Reputation Specialist",
+          "ciudad": "Heredia",
+          "pais": "Costa Rica",
+          "area": "Reputación en línea",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón de solicitud visible; publicada hace 6 días.",
+          "habilidades": [
+            "reputacion",
+            "comunicacion",
+            "inteligencia",
+            "ingles"
+          ],
+          "resumen": "Monitorea redes sociales, reseñas y conversaciones en línea para detectar riesgos reputacionales y reporta hallazgos. Publica salario de USD 1.250–1.300 mensuales.",
+          "fuente": "li_spectraforce"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "pensamiento",
+          "habilidad": "Pensamiento crítico y analítico",
+          "cobertura": "Explícita",
+          "criterio": "Pide análisis crítico, juicio objetivo o interpretación de información compleja."
+        },
+        {
+          "id": "verificacion",
+          "habilidad": "Investigación y verificación de información",
+          "cobertura": "Explícita",
+          "criterio": "Menciona investigar, validar o contrastar información, fuentes o casos."
+        },
+        {
+          "id": "geopolitica",
+          "habilidad": "Análisis geopolítico y prospectivo",
+          "cobertura": "Explícita",
+          "criterio": "Pide conocer contextos políticos nacionales o internacionales, riesgos de entorno o escenarios."
+        },
+        {
+          "id": "inteligencia",
+          "habilidad": "Competencias digitales e inteligencia informativa",
+          "cobertura": "Explícita",
+          "criterio": "Menciona monitoreo de fuentes digitales, inteligencia de mercado o de entorno, o herramientas digitales de búsqueda."
+        },
+        {
+          "id": "comunicacion",
+          "habilidad": "Comunicación estratégica y síntesis ejecutiva",
+          "cobertura": "Explícita",
+          "criterio": "Pide reportes ejecutivos, presentaciones, recomendaciones o redacción clara para tomadores de decisión."
+        },
+        {
+          "id": "desinformacion",
+          "habilidad": "Detección de desinformación y contenido dañino",
+          "cobertura": "Explícita",
+          "criterio": "Menciona misinformation/disinformation, noticias falsas, discurso de odio o fraude en contenidos."
+        },
+        {
+          "id": "ia",
+          "habilidad": "Inteligencia artificial aplicada al análisis",
+          "cobertura": "Explícita",
+          "criterio": "Menciona IA, automatización o tecnologías emergentes en el trabajo analítico."
+        },
+        {
+          "id": "stakeholders",
+          "habilidad": "Asuntos públicos y relación con stakeholders",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide gestionar relaciones con actores públicos, gobiernos, organismos o sociedad civil."
+        },
+        {
+          "id": "datos",
+          "habilidad": "Análisis de datos y herramientas BI",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide análisis de datasets, dashboards, SQL o herramientas estadísticas."
+        },
+        {
+          "id": "reputacion",
+          "habilidad": "Monitoreo de medios y reputación en línea",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide monitorear medios, redes sociales, reseñas o conversaciones en línea."
+        },
+        {
+          "id": "riesgo",
+          "habilidad": "Investigación de riesgo, fraude e integridad",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide investigaciones internas, detección de anomalías o análisis de integridad."
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "Requiere inglés para comunicarse o redactar reportes."
+        }
+      ],
+      "fuentes": [
+        "li_cocacola",
+        "li_ortnec",
+        "li_publicis",
+        "li_iisd",
+        "li_bettingjobs",
+        "li_deloitte",
+        "li_spectraforce"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Búsquedas públicas en cr.linkedin.com/jobs el 2026-11-06 con «OSINT», «Intelligence Analyst», «Content Analyst», «Fact Checker», «Political Risk», «Periodista», «News Analyst» y «Geopolitical». Se seleccionaron siete publicaciones de empleadores distintos con funciones vinculadas a análisis de entorno, verificación, moderación, monitoreo e inteligencia. No apareció ninguna vacante titulada fact-checker, analista OSINT o analista de noticias internacionales en Costa Rica. Es una muestra exploratoria de habilidades, no un conteo de vacantes ni una tasa de empleo; varios perfiles piden grado universitario y experiencia."
+      },
+      "habilidades": [
+        {
+          "id": "pensamiento",
+          "habilidad": "Pensamiento crítico y analítico",
+          "cobertura": "Explícita",
+          "criterio": "Pide análisis crítico, juicio objetivo o interpretación de información compleja.",
+          "menciones": 5,
+          "muestra": 7,
+          "porcentaje": 71.42857142857143,
+          "fuentes": [
+            "li_cocacola",
+            "li_ortnec",
+            "li_publicis",
+            "li_bettingjobs",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "comunicacion",
+          "habilidad": "Comunicación estratégica y síntesis ejecutiva",
+          "cobertura": "Explícita",
+          "criterio": "Pide reportes ejecutivos, presentaciones, recomendaciones o redacción clara para tomadores de decisión.",
+          "menciones": 5,
+          "muestra": 7,
+          "porcentaje": 71.42857142857143,
+          "fuentes": [
+            "li_cocacola",
+            "li_publicis",
+            "li_iisd",
+            "li_deloitte",
+            "li_spectraforce"
+          ]
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "Requiere inglés para comunicarse o redactar reportes.",
+          "menciones": 4,
+          "muestra": 7,
+          "porcentaje": 57.142857142857146,
+          "fuentes": [
+            "li_ortnec",
+            "li_publicis",
+            "li_iisd",
+            "li_spectraforce"
+          ]
+        },
+        {
+          "id": "verificacion",
+          "habilidad": "Investigación y verificación de información",
+          "cobertura": "Explícita",
+          "criterio": "Menciona investigar, validar o contrastar información, fuentes o casos.",
+          "menciones": 3,
+          "muestra": 7,
+          "porcentaje": 42.857142857142854,
+          "fuentes": [
+            "li_ortnec",
+            "li_iisd",
+            "li_bettingjobs"
+          ]
+        },
+        {
+          "id": "geopolitica",
+          "habilidad": "Análisis geopolítico y prospectivo",
+          "cobertura": "Explícita",
+          "criterio": "Pide conocer contextos políticos nacionales o internacionales, riesgos de entorno o escenarios.",
+          "menciones": 3,
+          "muestra": 7,
+          "porcentaje": 42.857142857142854,
+          "fuentes": [
+            "li_cocacola",
+            "li_iisd",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "datos",
+          "habilidad": "Análisis de datos y herramientas BI",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide análisis de datasets, dashboards, SQL o herramientas estadísticas.",
+          "menciones": 3,
+          "muestra": 7,
+          "porcentaje": 42.857142857142854,
+          "fuentes": [
+            "li_publicis",
+            "li_bettingjobs",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "inteligencia",
+          "habilidad": "Competencias digitales e inteligencia informativa",
+          "cobertura": "Explícita",
+          "criterio": "Menciona monitoreo de fuentes digitales, inteligencia de mercado o de entorno, o herramientas digitales de búsqueda.",
+          "menciones": 2,
+          "muestra": 7,
+          "porcentaje": 28.571428571428573,
+          "fuentes": [
+            "li_deloitte",
+            "li_spectraforce"
+          ]
+        },
+        {
+          "id": "stakeholders",
+          "habilidad": "Asuntos públicos y relación con stakeholders",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide gestionar relaciones con actores públicos, gobiernos, organismos o sociedad civil.",
+          "menciones": 2,
+          "muestra": 7,
+          "porcentaje": 28.571428571428573,
+          "fuentes": [
+            "li_cocacola",
+            "li_iisd"
+          ]
+        },
+        {
+          "id": "reputacion",
+          "habilidad": "Monitoreo de medios y reputación en línea",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide monitorear medios, redes sociales, reseñas o conversaciones en línea.",
+          "menciones": 2,
+          "muestra": 7,
+          "porcentaje": 28.571428571428573,
+          "fuentes": [
+            "li_publicis",
+            "li_spectraforce"
+          ]
+        },
+        {
+          "id": "desinformacion",
+          "habilidad": "Detección de desinformación y contenido dañino",
+          "cobertura": "Explícita",
+          "criterio": "Menciona misinformation/disinformation, noticias falsas, discurso de odio o fraude en contenidos.",
+          "menciones": 1,
+          "muestra": 7,
+          "porcentaje": 14.285714285714286,
+          "fuentes": [
+            "li_ortnec"
+          ]
+        },
+        {
+          "id": "ia",
+          "habilidad": "Inteligencia artificial aplicada al análisis",
+          "cobertura": "Explícita",
+          "criterio": "Menciona IA, automatización o tecnologías emergentes en el trabajo analítico.",
+          "menciones": 1,
+          "muestra": 7,
+          "porcentaje": 14.285714285714286,
+          "fuentes": [
+            "li_publicis"
+          ]
+        },
+        {
+          "id": "riesgo",
+          "habilidad": "Investigación de riesgo, fraude e integridad",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide investigaciones internas, detección de anomalías o análisis de integridad.",
+          "menciones": 1,
+          "muestra": 7,
+          "porcentaje": 14.285714285714286,
+          "fuentes": [
+            "li_bettingjobs"
+          ]
+        }
+      ],
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada"
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "ulacit_sitio",
+        "una_ri",
+        "una_ieg",
+        "ulatina_periodismo",
+        "ulatina_tecnicos",
+        "coursera_diplomacia",
+        "coursera_noticias",
+        "coursera_inteligencia",
+        "coursera_osint",
+        "coursera_factcheck"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "USD",
+      "fuentes": [
+        "ulacit_sitio",
+        "usjt_sitio",
+        "una_ri",
+        "ulatina_periodismo",
+        "coursera_diplomacia"
+      ],
+      "nota": "Montos en moneda original sin convertir. Los precios en colones de ULACIT (₡8.087.396) y USJT (₡6.847.850) provienen del brief y corresponden a carreras de grado completas; no se verificaron en las páginas oficiales (bloqueadas). Los cursos de Coursera no publican precio individual; la página muestra Coursera Plus a USD 143/año como promoción, que no se registra como precio de ningún curso. Ningún precio está marcado como verificado.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Edición, producción de contenidos, telecomunicaciones y servicios de información",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 101.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 99.92,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 101.87,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 103.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 105.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 107.02,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 104.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 105.97,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 109.27,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 107.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 106.23,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 108.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 106.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 106.75,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 106.09,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 113.2,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 111.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 112.56,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 111.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 110.48,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 111.83,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 111.91,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 113.83,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 110.52,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 113.6,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 109.16,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 109.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 117.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 116.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 116.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 115.8,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 115.31,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 118.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 117.18,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 118.87,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 115.88,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 119.06,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 112.9,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 113.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 120.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 121.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 120.18,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 120.66,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 119.62,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94981,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-11-06",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "coyuntura",
+        "etiqueta": "Coyuntura<br>internacional",
+        "criterio": "Presencia explícita de coyuntura internacional en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "geopolitica",
+        "etiqueta": "Geopolítica y<br>prospectiva",
+        "criterio": "Presencia explícita de geopolítica y prospectiva en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "verificacion",
+        "etiqueta": "Verificación<br>de noticias",
+        "criterio": "Presencia explícita de verificación de noticias en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "desinformacion",
+        "etiqueta": "Desinformación",
+        "criterio": "Presencia explícita de desinformación en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "osint",
+        "etiqueta": "OSINT y<br>fuentes abiertas",
+        "criterio": "Presencia explícita de osint y fuentes abiertas en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "ia",
+        "etiqueta": "IA aplicada<br>al análisis",
+        "criterio": "Presencia explícita de ia aplicada al análisis en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "coyuntura": true,
+        "geopolitica": true,
+        "verificacion": true,
+        "desinformacion": true,
+        "osint": true,
+        "ia": true
+      }
+    },
+    "ofertas": {
+      "ulatina_periodismo": {
+        "revisado": true,
+        "etiqueta": "ULatina · Periodismo",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Oferta propia. Declara investigación periodística y verificación de información, producción multiplataforma y redes sociales; no menciona geopolítica, desinformación, OSINT ni IA. No publica precio. El listado de técnicos de ULatina no incluye un programa equivalente (fuente ulatina_tecnicos).",
+        "contenidos": {
+          "coyuntura": false,
+          "geopolitica": false,
+          "verificacion": true,
+          "desinformacion": false,
+          "osint": false,
+          "ia": false
+        }
+      },
+      "coursera_diplomacia": {
+        "revisado": true,
+        "etiqueta": "Coursera · Diplomacia",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "8 horas estimadas para completar, en inglés con subtítulos. Sin precio individual publicado; la página muestra Coursera Plus a USD 143/año como promoción, que no es el precio del curso. Cubre estudios internacionales, política contemporánea y poder.",
+        "contenidos": {
+          "coyuntura": true,
+          "geopolitica": true,
+          "verificacion": false,
+          "desinformacion": false,
+          "osint": false,
+          "ia": false
+        }
+      },
+      "coursera_noticias": {
+        "revisado": true,
+        "etiqueta": "Coursera · Alfabetización noticiosa",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Declara fact-checking, evaluación de fuentes y noticias falsas, propaganda y rumores. Duración inconsistente en la página (2 semanas a 10 h/semana frente a «six-week course»): no se registran horas. Sin precio individual publicado.",
+        "contenidos": {
+          "coyuntura": false,
+          "geopolitica": false,
+          "verificacion": true,
+          "desinformacion": true,
+          "osint": false,
+          "ia": false
+        }
+      },
+      "coursera_inteligencia": {
+        "revisado": true,
+        "etiqueta": "Coursera · Inteligencia",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "8 horas estimadas en 4 módulos. Métodos de análisis de inteligencia (preguntas, sesgos cognitivos, actores macro y micro) y preparación para trabajo asistido por IA. No menciona OSINT ni verificación de noticias. Sin precio individual publicado.",
+        "contenidos": {
+          "coyuntura": false,
+          "geopolitica": true,
+          "verificacion": false,
+          "desinformacion": false,
+          "osint": false,
+          "ia": true
+        }
+      },
+      "coursera_osint": {
+        "revisado": true,
+        "etiqueta": "Coursera · OSINT",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Aproximadamente 10 horas en siete módulos, en inglés. Centrado en OSINT con orientación a ciberamenazas; no cubre análisis noticioso, geopolítica ni desinformación. Sin precio individual publicado.",
+        "contenidos": {
+          "coyuntura": false,
+          "geopolitica": false,
+          "verificacion": false,
+          "desinformacion": false,
+          "osint": true,
+          "ia": false
+        }
+      },
+      "coursera_factcheck": {
+        "revisado": true,
+        "etiqueta": "Coursera · Fact-checking",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Tres horas estimadas, en inglés. Declara la importancia del fact-checking y la evaluación de fuentes; no menciona desinformación, OSINT ni IA. Sin precio individual ni cifra de inscripciones publicada.",
+        "contenidos": {
+          "coyuntura": false,
+          "geopolitica": false,
+          "verificacion": true,
+          "desinformacion": false,
+          "osint": false,
+          "ia": false
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por integración práctica",
+        "texto": "Ninguna alternativa verificada reúne en un técnico coyuntura internacional, fact-checking, OSINT e IA; la oferta local está en carreras de grado y las plataformas cubren cada tema por separado."
+      },
+      {
+        "titulo": "Empleabilidad en roles adyacentes",
+        "texto": "Las publicaciones en Costa Rica se concentran en moderación de contenidos, monitoreo reputacional, inteligencia de mercado y asuntos públicos, más que en periodismo de verificación."
+      },
+      {
+        "titulo": "Competidor de grado relevante",
+        "texto": "El Bachillerato en Inteligencia y Estrategia Global de la UNA solapa geopolítica, prospectiva e IA, aunque con un perfil cuantitativo y de mayor duración."
+      },
+      {
+        "titulo": "Precio sin anclas verificadas",
+        "texto": "No hubo tarifas oficiales accesibles para técnicos comparables; el posicionamiento de precio requiere sondeo directo."
+      }
+    ]
+  }
+}

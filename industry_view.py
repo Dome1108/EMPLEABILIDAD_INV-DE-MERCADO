@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 import data_access as data_access_module
-if getattr(data_access_module,'EMPLOYER_SCHEMA_VERSION',None)!=2:
+if getattr(data_access_module,'EMPLOYER_SCHEMA_VERSION',None)!=3:
     data_access_module=importlib.reload(data_access_module)
 from data_access import load_employers
 from industry import read_sources, match_employers, monthly_sales, macroindustry_summary, growth_summary, compact_usd, SECTIONS, SALES
@@ -13,7 +13,7 @@ from palettes import PALETTES, theme_figure
 
 
 @st.cache_data(ttl=900, show_spinner=False, max_entries=8)
-def employers(config, people, employer_schema=2):
+def employers(config, people, employer_schema=3):
     return load_employers(config, people)
 
 
@@ -42,9 +42,12 @@ def render(config, cohort, demo, palette):
                 if st.button('Actualizar industrias y ventas'):
                     sources.clear()
                     employers.clear()
-            with st.spinner('Cruzando empleadores con CIIU y ventas SRI…'):
+            with st.spinner('Leyendo catálogo CIIU y ventas SRI…'):
                 mapping, sales, conflicts = sources(mapping_path, sales_path, Path(mapping_path).stat().st_mtime_ns, Path(sales_path).stat().st_mtime_ns)
-                jobs = employers(config, tuple(sorted(cohort.person.unique())))
+            # Solo los dependientes pueden tener un empleador en este corte SIM.
+            people=tuple(sorted(cohort.loc[cohort.dependent,'person'].unique()))
+            with st.spinner(f'Consultando empleadores SIM de {len(people):,} graduados dependientes…'):
+                jobs = employers(config, people)
         import company_ranking_view as ranking_view_module
         if getattr(ranking_view_module,'COMPANY_VIEW_VERSION',None)!=4:
             ranking_view_module=importlib.reload(ranking_view_module)
@@ -59,7 +62,14 @@ def render(config, cohort, demo, palette):
         c.metric('CIIU identificados', len(catalog))
         with st.expander('Industrias donde trabajan los graduados', expanded=True):
             st.dataframe(catalog, hide_index=True, width='stretch')
-        codes = st.multiselect('CIIU para analizar ventas', catalog.CIIU.tolist(), default=catalog.CIIU.tolist(),
+        options = catalog.CIIU.tolist()
+        if 'industry_ciiu' in st.session_state:
+            # Los CIIU dependen de las carreras: se descartan los que ya no aplican.
+            kept = [c for c in st.session_state['industry_ciiu'] if c in options]
+            st.session_state['industry_ciiu'] = kept or options
+        else:
+            st.session_state['industry_ciiu'] = options
+        codes = st.multiselect('CIIU para analizar ventas', options, key='industry_ciiu',
                                format_func=lambda x: f"{x} · {catalog.set_index('CIIU').loc[x, 'Industria']}")
         if not codes:
             st.info('Selecciona al menos un CIIU.')
@@ -71,14 +81,23 @@ def render(config, cohort, demo, palette):
         if monthly.empty:
             st.info('No hay ventas SRI para los CIIU seleccionados.')
             return
+        from integracion_viabilidad import compartir_industrias
+        compartir_industrias(catalog,monthly,codes,matched,total)
         blue, light, _ = PALETTES[palette]
         max_month = int(monthly.groupby('Año').Mes.max().min())
-        month = st.slider('Acumulado comparable hasta el mes', 1, max_month, max_month) if max_month > 1 else 1
+        if max_month > 1:
+            stored = st.session_state.get('industry_month')
+            st.session_state['industry_month'] = max_month if not isinstance(stored, int) or not 1 <= stored <= max_month else stored
+            month = st.slider('Acumulado comparable hasta el mes', 1, max_month, key='industry_month')
+        else:
+            month = 1
         annual = monthly[monthly.Mes.le(month)].groupby('Año')[['Personas naturales', 'Sociedades']].sum(min_count=1).reset_index()
         latest = int(annual.Año.max())
         growth = growth_summary(sales, codes, latest, month)
         st.markdown('**Distribución por macroindustria**')
         macro = macroindustry_summary(jobs, mapping, sales, codes, latest, month)
+        from integracion_viabilidad import compartir_perfil_sector
+        compartir_perfil_sector(macro,jobs,latest,month)
         from textwrap import wrap
         for measure, key in [('Ventas acumuladas', 'industry_macro_sales'), ('Graduados empleados', 'industry_macro_graduates')]:
             field = 'Ventas totales' if measure == 'Ventas acumuladas' else 'Graduados'

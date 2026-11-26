@@ -1,0 +1,1559 @@
+{
+  "id": "storymakers_cr",
+  "nombre": "StoryMakers",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-11-06",
+  "version_investigacion": "2026-11-06-mercado-v1",
+  "brief": {
+    "archivo": "Brief CR StoryMakers.pdf",
+    "copia_local": "edcos_fuentes/brief_storymakers_cr.pdf",
+    "fecha_propuesta": "2026-10-19",
+    "tipo": "Técnico · Apertura de nuevo programa",
+    "pais": "Costa Rica",
+    "area_estudio": "Comunicación colectiva",
+    "facultad": "Facultad de Arte, Diseño y Comunicación Colectiva",
+    "unidad": "Técnicos",
+    "duracion": "2 cuatrimestres",
+    "horas_totales": null,
+    "modalidad": "Presencial (100% presencial)",
+    "experto": "No definido en el brief",
+    "objetivo": "La persona graduada podrá participar en procesos de investigación de audiencias, conceptualización creativa, escritura narrativa, producción de contenido, integración responsable de inteligencia artificial y evaluación del desempeño digital, con un portafolio de proyectos que evidencie sus competencias.",
+    "diferenciadores": [
+      "Formación aplicada que combina creatividad, estrategia, tecnología y medición de resultados.",
+      "Cada participante aprenderá a transformar ideas en soluciones de comunicación concretas, fundamentadas y adaptadas a las audiencias y al mercado profesional."
+    ],
+    "ejes": [
+      "No informado en el brief"
+    ],
+    "habilidades": [
+      "Storytelling creativo",
+      "Creación de contenidos",
+      "Narrativa digital",
+      "Pensamiento creativo",
+      "Producción audiovisual"
+    ],
+    "nombres_alternativos": [
+      "El arte de contar historias",
+      "StoryLab"
+    ],
+    "palabras_clave": [
+      "Storytelling",
+      "Creatividad",
+      "Narrativa",
+      "Contenidos",
+      "Guionismo",
+      "Audiovisual",
+      "Innovación",
+      "Comunicación",
+      "Digital",
+      "Publicidad"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Información y comunicación · Enseñanza",
+    "interes_investigacion": "Tendencias de la industria creativa: IA generativa, storytelling y narrativas de marca, producción multiplataforma, análisis de audiencias, personalización y automatización, analítica digital, distribución y posicionamiento en buscadores.",
+    "competencia_declarada": "4 alternativa(s) mencionada(s) por el proponente; ver Oferta y plataformas."
+  },
+  "audiencia_propuesta": {
+    "origen": "El brief no describe segmentos de audiencia; se definirán en la investigación de mercado.",
+    "segmentos": [],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · StoryMakers",
+      "archivo": "Brief CR StoryMakers.pdf",
+      "paginas": "1–4",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucr_storytelling",
+      "titulo": "UCR · ECCC · Storytelling & Marketing Digital",
+      "url": "https://eccc.ucr.ac.cr/educacion-continua/storytelling-marketing/",
+      "observacion": "Curso libre virtual por Zoom: 4 clases de 3 horas (12 h), ₡61.200. Fechas publicadas: 6, 13, 20 y 27 de julio de 2026 (convocatoria pasada a la fecha de consulta). El precio de ₡56.000/₡56.100 que cita el brief corresponde a una edición anterior y no se pudo abrir la página histórica.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucr_esp_contenidos",
+      "titulo": "UCR · ECCC · Especialización Profesional en Diseño y Creación de Contenidos",
+      "url": "https://eccc.ucr.ac.cr/educacion-continua/especializaciondisenode-contenidos/",
+      "observacion": "Virtual sincrónica por Zoom; 9 cursos de 7 semanas (~1 año y 6 meses), certificado por 420 horas. Matrícula ₡35.700 + 18 mensualidades de ₡61.200; la página no publica el total ni fechas de inicio y en otra sección indica «Matrícula: No disponible». IA generativa como eje transversal.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "cenfotec_ds_ia",
+      "titulo": "Universidad CENFOTEC · Data Storytelling para Ejecutivos impulsada por IA",
+      "url": "https://ucenfotec.ac.cr/ecommerce/producto/data-storytelling-para-ejecutivos-impulsada-por-ia/",
+      "observacion": "US$220 + 2% IVA, 16 horas, virtual en vivo, inicio viernes 13/11/2026. Temario: narrativas con datos, Power BI, IA para hallazgos, adaptación a audiencias. Existe además un curso «Data Storytelling» (SINF-616, 16 h) marcado «Sin existencias» y sin precio visible.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "una_iat",
+      "titulo": "Universidad Nacional (UNA) · Programa iAT · Producción Audiovisual",
+      "url": "https://www.programaiat.una.ac.cr/index.php?ruta=iat-modelo-cursos&id=15&categoria=produccion",
+      "observacion": "Curso presencial de 54 horas (13 sesiones), ₡155.040 IVI, cupo de 9 personas. En el sitio consultado no aparece el curso «Guion para Producción Audiovisual» ni el precio de ₡122.400 declarados en el brief.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "usanmarcos_story",
+      "titulo": "Universidad San Marcos · Certificación Internacional en Storytelling y Brand Storytelling",
+      "url": "https://www.usanmarcos.ac.cr/certificacion-internacional/storytelling-y-brand-storytelling-virtual",
+      "observacion": "Virtual, 4 meses, inicio 10/11/2026 con inscripciones abiertas. No publica horas ni precio; menciona marketing de contenidos y audiencias.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucreativa_pa",
+      "titulo": "Universidad Creativa · Técnico Superior en Producción Audiovisual",
+      "url": "https://ucreativa.ac.cr/product/carrera-del-futuro/tecnico-superior/produccion-audiovisual-2/",
+      "observacion": "Bimodal, 4 cuatrimestres. Contar historias con medios visuales y sonoros, guionismo, producción de contenidos para distintas plataformas. Sin precio publicado (solo opciones de financiamiento).",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ulatina_pa",
+      "titulo": "ULatina · Técnico en Producción Audiovisual",
+      "url": "https://www.ulatina.ac.cr/oferta-academica/tecnicos/produccion-audiovisual",
+      "observacion": "Oferta propia. 9 módulos bimensuales, Campus Creativo San Pedro y Heredia. Edición, posproducción, realización audiovisual y producción en redes sociales. Sin precio ni plan publicado.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ulatina_mkt",
+      "titulo": "ULatina · Técnico en Marketing y Creatividad Digital",
+      "url": "https://www.ulatina.ac.cr/oferta-academica/tecnicos/marketing-digital",
+      "observacion": "Oferta propia. 8 módulos bimensuales, Campus Creativo. Perfil de productor de contenidos para redes y producción audiovisual. Sin precio publicado.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_ie",
+      "titulo": "Coursera · IE Business School · Storytelling in Branding and Content Marketing",
+      "url": "https://www.coursera.org/learn/brand-and-content-marketing",
+      "observacion": "49.317 already enrolled. «1 week at 10 hours a week» (los módulos suman 13 h). Inscripción gratuita / Coursera Plus.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_adobe",
+      "titulo": "Coursera · Adobe · Multimedia Content Creation",
+      "url": "https://www.coursera.org/learn/multimedia-content-creation",
+      "observacion": "20.487 already enrolled. Storytelling, storyboarding, video, podcasts y estrategia de medios digitales; 2 semanas a 10 h/semana.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_iese",
+      "titulo": "Coursera · IESE Business School · The Art of Storytelling",
+      "url": "https://www.coursera.org/learn/the-art-of-storytelling-iese",
+      "observacion": "67.601 already enrolled; 2 horas, un módulo.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_sae",
+      "titulo": "Coursera · SAE Institute México · Storytelling y medios digitales",
+      "url": "https://www.coursera.org/learn/storytelling-y-medios-digitales",
+      "observacion": "3.187 already enrolled; en español; guion literario y técnico, storyboard y lenguaje audiovisual.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "domestika_marcas",
+      "titulo": "Domestika · Storytelling aplicado a marcas (Claudio Seguel)",
+      "url": "https://www.domestika.org/es/courses/628-storytelling-para-marcas",
+      "observacion": "13.339 estudiantes, 535 opiniones; 2 h 48 min en 15 lecciones. Precio no visible en la página consultada.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "domestika_redes",
+      "titulo": "Domestika · Estrategias de storytelling para redes sociales (Ignacio de los Reyes)",
+      "url": "https://www.domestika.org/es/courses/5094-estrategia-de-storytelling-para-redes-sociales",
+      "observacion": "1.179 estudiantes; 2 h 33 min; incluye audiencia, formatos por plataforma y medición.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "linkedin_busqueda",
+      "titulo": "LinkedIn Jobs Costa Rica · búsquedas «Copywriter», «Content Writing» y «Productor audiovisual»",
+      "url": "https://cr.linkedin.com/jobs/copywriter-empleos",
+      "observacion": "Listados públicos usados para seleccionar publicaciones; también https://cr.linkedin.com/jobs/content-writing-empleos y https://cr.linkedin.com/jobs/productor-audiovisual-empleos. Los totales de los listados incluyen puestos no vinculados y no se usan como conteo.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_kma",
+      "titulo": "LinkedIn Jobs · KMA Design Group Costa Rica · Creative Storyteller | Visual Communication & Digital Presence",
+      "url": "https://cr.linkedin.com/jobs/view/creative-storyteller-visual-communication-digital-presence-at-kma-design-group-costa-rica-4481286806",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_roche",
+      "titulo": "LinkedIn Jobs · Roche · Digital Content Creation Associate (Copywriter)",
+      "url": "https://cr.linkedin.com/jobs/view/digital-content-creation-associate-copywriter-at-roche-4488139585",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_cordillera",
+      "titulo": "LinkedIn Jobs · Proyectos Cordillera · Creativo/a de Marketing y Contenido",
+      "url": "https://cr.linkedin.com/jobs/view/creativo-a-de-marketing-y-contenido-at-proyectos-cordillera-4486893252",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_instacredit",
+      "titulo": "LinkedIn Jobs · Instacredit · Productor(a) Creativo(a) Digital",
+      "url": "https://cr.linkedin.com/jobs/view/productor-a-creativo-a-digital-at-instacredit-4486498385",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_virtustant",
+      "titulo": "LinkedIn Jobs · Virtustant · Digital Content Creator",
+      "url": "https://cr.linkedin.com/jobs/view/digital-content-creator-at-virtustant-4485893714",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_publicis_sapient",
+      "titulo": "LinkedIn Jobs · Publicis Sapient · Senior Copywriter",
+      "url": "https://cr.linkedin.com/jobs/view/senior-copywriter-at-publicis-sapient-4475616308",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_expanish",
+      "titulo": "LinkedIn Jobs · Expanish · Freelance Part-Time Social Media Content Creator",
+      "url": "https://cr.linkedin.com/jobs/view/freelance-part-time-social-media-content-creator-at-expanish-cultural-immersion-programs-4455533363",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_formulated",
+      "titulo": "LinkedIn Jobs · Formulated Automation · AI Performance Video Designer",
+      "url": "https://cr.linkedin.com/jobs/view/ai-performance-video-designer-at-formulated-automation-4486344208",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-11-06",
+      "observacion": "Grupo 939, indicador 94981. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-11-06",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Universidad de Costa Rica (UCR) · ECCC",
+      "programa": "Storytelling & Marketing Digital",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 12,
+      "tipo_horas": "sincrónicas",
+      "precio_usd": null,
+      "precio_crc": 61200,
+      "precio_verificado": true,
+      "estado": "Curso libre publicado; última convocatoria visible julio 2026 (pasada); próxima por confirmar",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": true,
+      "fuente": "ucr_storytelling",
+      "nota": "Precio ₡61.200 visible en la página oficial (4 clases de 3 h por Zoom). El brief menciona también ₡56.000, que corresponde a una edición anterior no verificada en página abierta. Temario: poder de las historias y esencia de marca, estructuras narrativas y cliente como héroe, storytelling en redes por plataforma, medición y optimización. No menciona producción audiovisual ni IA.",
+      "etiqueta_precio": "UCR · Storytelling (12 h)"
+    },
+    {
+      "institucion": "Universidad de Costa Rica (UCR) · ECCC",
+      "programa": "Especialización Profesional en Diseño y Creación de Contenidos",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 420,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": 1137300,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; calendario de fechas vacío, próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "ucr_esp_contenidos",
+      "nota": "La página oficial publica matrícula ₡35.700 y 18 mensualidades de ₡61.200; el total ₡1.137.300 es la suma de esos componentes (coincide con el brief), pero no aparece como total en la página y la matrícula figura también como «No disponible», por eso no se marca verificado. 9 cursos (producción audiovisual multimedia, creatividad, estrategia para medios digitales, diseño, fotografía, audio, video, taller y proyecto final) con IA generativa transversal; no nombra storytelling, guion ni analítica.",
+      "etiqueta_precio": "UCR · Especialización (420 h)"
+    },
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Data Storytelling para Ejecutivos impulsada por IA",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 16,
+      "tipo_horas": "sincrónicas",
+      "precio_usd": 220,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Convocatoria publicada; inicio 13/11/2026; US$220 antes del 2% de IVA",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "cenfotec_ds_ia",
+      "nota": "Precio US$220 + 2% IVA (≈US$224,40 con IVA) en la página oficial; coincide con el brief. Enfoque en narrativa con datos para ejecutivos (Power BI, dashboards, IA para hallazgos), no en storytelling creativo ni producción de contenido; competidor parcial.",
+      "etiqueta_precio": "CENFOTEC · Data Storytelling IA"
+    },
+    {
+      "institucion": "Universidad Nacional (UNA) · Programa iAT",
+      "programa": "Guion para Producción Audiovisual",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Declarado por el proponente; no localizado en el sitio del Programa iAT",
+      "disponibilidad": "Enlace no disponible",
+      "competidor_directo": true,
+      "fuente": "una_iat",
+      "nota": "El brief declara ₡122.400 IVA incluido; ese monto y el curso no aparecieron en las páginas consultadas del Programa iAT ni en búsquedas web, por lo que el precio queda null. Contenidos sin verificar.",
+      "etiqueta_precio": "UNA · Guion (no verificado)"
+    },
+    {
+      "institucion": "Universidad Nacional (UNA) · Programa iAT",
+      "programa": "Producción Audiovisual",
+      "tipo": "Institucional",
+      "modalidad": "Presencial",
+      "horas": 54,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": 155040,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "una_iat",
+      "nota": "₡155.040 IVI, 13 sesiones, cupo de 9 personas. Lenguaje audiovisual, herramientas básicas y realización de un cortometraje; sin temario detallado publicado.",
+      "etiqueta_precio": "UNA iAT · Producción AV (54 h)"
+    },
+    {
+      "institucion": "Universidad San Marcos",
+      "programa": "Certificación Internacional en Storytelling y Brand Storytelling",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Inscripciones abiertas; inicio 10/11/2026; 4 meses",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "usanmarcos_story",
+      "nota": "Competidor más cercano por tema (storytelling y brand storytelling, marketing de contenidos, audiencia). No publica horas, precio ni temario en la página (solo PDF de plan de estudio). No menciona audiovisual, IA ni analítica.",
+      "etiqueta_precio": "San Marcos · Brand Storytelling"
+    },
+    {
+      "institucion": "Universidad Creativa (UCreativa)",
+      "programa": "Técnico Superior en Producción Audiovisual",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "ucreativa_pa",
+      "nota": "Técnico superior bimodal de 4 cuatrimestres (el doble de StoryMakers). Contar historias con medios visuales y sonoros, guionismo y contenidos para plataformas. Sin precio publicado; menciona financiamiento sin matrícula y cuota fija. Existe también un Diplomado de 6 cuatrimestres.",
+      "etiqueta_precio": "UCreativa · Téc. Sup. AV"
+    },
+    {
+      "institucion": "Universidad Latina de Costa Rica (ULatina)",
+      "programa": "Técnico en Producción Audiovisual",
+      "tipo": "Oferta propia",
+      "modalidad": "Presencial",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ulatina_pa",
+      "nota": "9 módulos bimensuales en Campus Creativo (San Pedro y Heredia). Edición de video, posproducción, realización audiovisual y producción en redes; no menciona storytelling, guion, audiencias, IA ni analítica. Riesgo de canibalización interna.",
+      "etiqueta_precio": "ULatina · Téc. Producción AV"
+    },
+    {
+      "institucion": "Universidad Latina de Costa Rica (ULatina)",
+      "programa": "Técnico en Marketing y Creatividad Digital",
+      "tipo": "Oferta propia",
+      "modalidad": "Presencial",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ulatina_mkt",
+      "nota": "8 módulos bimensuales en Campus Creativo; perfil de productor de contenidos para redes y campañas digitales con producción audiovisual in house. No publica temario, precio ni modalidad explícita (se infiere presencial por sede). Solapamiento con StoryMakers en contenidos y audiovisual.",
+      "etiqueta_precio": "ULatina · Téc. Marketing digital"
+    },
+    {
+      "institucion": "Coursera · IE Business School",
+      "programa": "Storytelling in Branding and Content Marketing",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 13,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; autoritmo",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_ie",
+      "nota": "49.317 inscripciones acumuladas. Horas estimadas por la plataforma (la cabecera dice 10 h; los módulos suman 13 h). Inscripción gratuita o Coursera Plus; no hay precio de curso individual verificable.",
+      "etiqueta_precio": "Coursera · IE"
+    },
+    {
+      "institucion": "Coursera · Adobe",
+      "programa": "Multimedia Content Creation",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 18,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; autoritmo",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_adobe",
+      "nota": "20.487 inscripciones acumuladas; módulos suman 18 h estimadas. Storytelling, storyboarding, video, podcast y estrategia de medios con Adobe Express. Certificado de pago sin precio visible.",
+      "etiqueta_precio": "Coursera · Adobe"
+    },
+    {
+      "institucion": "Domestika",
+      "programa": "Storytelling aplicado a marcas",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 2.8,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; autoritmo",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "domestika_marcas",
+      "nota": "13.339 estudiantes y 535 opiniones; 2 h 48 min de vídeo. Relato de marca, arquetipos, audiencia y brand voice. Precio no visible en la página consultada.",
+      "etiqueta_precio": "Domestika · Storytelling marcas"
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 60,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "Los cursos de storytelling y creación de contenido acumulan decenas de miles de inscripciones internacionales (IESE 67.601, IE 49.317, Adobe 20.487, Domestika 13.339) y en Costa Rica la UCR mantiene ediciones recurrentes de su curso de storytelling. Sin embargo, son cifras globales y acumuladas en cursos cortos y gratuitos, sin evidencia de búsquedas locales ni de disposición a matricular un técnico presencial de 2 cuatrimestres. Se asigna 60: interés temático consistente, demanda local no validada.",
+      "fuentes": [
+        "coursera_iese",
+        "coursera_ie",
+        "coursera_adobe",
+        "domestika_marcas",
+        "coursera_sae",
+        "domestika_redes",
+        "ucr_storytelling"
+      ],
+      "nivel_evidencia": "Indirecta internacional + recurrencia de oferta local"
+    },
+    "empleabilidad": {
+      "puntaje": 68,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Ocho publicaciones abiertas de empleadores distintos en Costa Rica piden creación de contenido, edición audiovisual, copy y, en varios casos, IA generativa y medición, lo que coincide con el perfil de StoryMakers; dos nombran storytelling de forma explícita. Al mismo tiempo, la mayoría exige 2–7 años de experiencia, inglés avanzado o licenciatura, y varias reciben 100–200+ solicitudes, lo que limita el acceso de un egresado técnico sin portafolio. Se asigna 68: pertinencia alta de habilidades, inserción inicial condicionada a portafolio e inglés.",
+      "fuentes": [
+        "li_kma",
+        "li_roche",
+        "li_cordillera",
+        "li_instacredit",
+        "li_virtustant",
+        "li_publicis_sapient",
+        "li_expanish",
+        "li_formulated"
+      ],
+      "nivel_evidencia": "Documental local (muestra exploratoria de LinkedIn)"
+    },
+    "competencia": {
+      "puntaje": 48,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "Existen alternativas locales en casi cada tema: UCR (storytelling 12 h y especialización de 420 h con IA), San Marcos (brand storytelling, inicio noviembre 2026), CENFOTEC (data storytelling con IA), UNA iAT y UCreativa (producción audiovisual, este último técnico superior con guion), además de plataformas de bajo costo y dos técnicos de la propia ULatina que se solapan en contenido y audiovisual. Ninguna oferta revisada declara a la vez los seis temas (storytelling, guion, producción multiplataforma, audiencias, IA y analítica) en formato técnico presencial corto, lo que abre un espacio de diferenciación. Se asigna 48: mercado mixto con alta presión y riesgo de canibalización interna.",
+      "fuentes": [
+        "ucr_storytelling",
+        "ucr_esp_contenidos",
+        "usanmarcos_story",
+        "cenfotec_ds_ia",
+        "una_iat",
+        "ucreativa_pa",
+        "ulatina_pa",
+        "ulatina_mkt",
+        "coursera_ie",
+        "domestika_marcas"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "precio": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "Las referencias verificadas van de ₡61.200 por 12 h (UCR) y ₡155.040 por 54 h presenciales (UNA iAT) a US$220 + IVA por 16 h (CENFOTEC); la especialización UCR suma ₡1.137.300 por 420 h en 18 meses según sus componentes publicados. Los competidores más cercanos en formato técnico (UCreativa, ULatina) y San Marcos no publican precio, y las plataformas ofrecen acceso gratuito o por suscripción. Se asigna 55: hay un rango de referencia por hora utilizable, pero falta precio de técnicos comparables y del propio StoryMakers.",
+      "fuentes": [
+        "ucr_storytelling",
+        "una_iat",
+        "cenfotec_ds_ia",
+        "ucr_esp_contenidos",
+        "ucreativa_pa",
+        "usanmarcos_story",
+        "coursera_ie"
+      ],
+      "nivel_evidencia": "Documental local parcial"
+    },
+    "sector": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "IMAE sectorial BCCR · juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "El brief declara «Información y comunicación» y «Enseñanza»; el programa produce contenidos y narrativas. El IMAE de «Edición, producción de contenidos, telecomunicaciones y servicios de información» (base 2022 = 100) promedia 118.5 en enero–agosto de 2026 frente a 114.2 en el mismo periodo de 2025 (+3.8 %): actividad sostenida. Es un agregado amplio, no ventas ni demanda del programa. Se asigna 75 con el mismo criterio de las fichas ya investigadas de Costa Rica (75 para un agregado con crecimiento sostenido vinculado al núcleo del programa; 70 cuando el agregado es más amplio), sin convertir el índice en puntaje por regla de tres."
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Validar interés local con una preventa o lista de espera y revisar la matrícula histórica de los técnicos del Campus Creativo; las cifras de plataformas solo prueban interés temático internacional."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Incluir un portafolio publicado (reels, guiones, campaña con métricas), práctica con herramientas de IA usadas en las ofertas (Runway, Midjourney, Firefly, ChatGPT) y un componente de contenido en inglés."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Comunicar la integración de storytelling, audiencias, IA y analítica como diferencial y delimitar el programa frente a los técnicos propios de Producción Audiovisual y Marketing y Creatividad Digital."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Situar el precio por hora entre las referencias de UNA iAT (≈₡2.900/h) y UCR (≈₡5.100/h en curso corto) y obtener por mystery shopping el precio de UCreativa y San Marcos antes de fijar tarifa."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "El sector económico (Información y comunicación) no se investigó en este archivo; se calcula con el IMAE del BCCR en el proceso de integración."
+    }
+  ],
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · The Art of Storytelling (IESE)",
+          "valor": 67601,
+          "fuente": "coursera_iese"
+        },
+        {
+          "etiqueta": "Coursera · Storytelling in Branding and Content Marketing (IE)",
+          "valor": 49317,
+          "fuente": "coursera_ie"
+        },
+        {
+          "etiqueta": "Coursera · Multimedia Content Creation (Adobe)",
+          "valor": 20487,
+          "fuente": "coursera_adobe"
+        },
+        {
+          "etiqueta": "Domestika · Storytelling aplicado a marcas",
+          "valor": 13339,
+          "fuente": "domestika_marcas"
+        },
+        {
+          "etiqueta": "Coursera · Storytelling y medios digitales (SAE)",
+          "valor": 3187,
+          "fuente": "coursera_sae"
+        },
+        {
+          "etiqueta": "Domestika · Estrategias de storytelling para redes sociales",
+          "valor": 1179,
+          "fuente": "domestika_redes"
+        }
+      ],
+      "fuentes": [
+        "coursera_iese",
+        "coursera_ie",
+        "coursera_adobe",
+        "domestika_marcas",
+        "coursera_sae",
+        "domestika_redes",
+        "ucr_storytelling"
+      ],
+      "nota": "Cifras acumuladas e internacionales publicadas en las páginas de cada curso a la fecha de consulta; no se pueden atribuir a Costa Rica. Las páginas de Udemy devolvieron error 403 y no se registran sus cifras. No se obtuvo serie de búsquedas locales (Google Trends) verificable.",
+      "lectura": "Hay interés internacional sostenido por storytelling de marca y creación de contenido (decenas de miles de inscripciones en cursos introductorios), y en Costa Rica la UCR ha repetido su curso de storytelling en varias ediciones. Son señales de interés en la temática, no de matrícula local en un técnico presencial.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_kma",
+          "identificador_linkedin": "4481286806",
+          "empresa": "KMA Design Group Costa Rica",
+          "cargo": "Creative Storyteller | Visual Communication & Digital Presence",
+          "ciudad": "Escazú, San José",
+          "pais": "Costa Rica",
+          "area": "Marketing y comunicación visual",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 2 semanas; más de 200 solicitudes",
+          "habilidades": [
+            "storytelling",
+            "contenido",
+            "creatividad",
+            "diseno",
+            "seo",
+            "ingles",
+            "portafolio",
+            "audiovisual"
+          ],
+          "resumen": "Narrativa de marca y presentaciones de proyectos de arquitectura, contenido gráfico para redes y sitio web con SEO. Pide redacción y capacidad de contar historias, Adobe/Figma, bilingüe; fotografía o video como deseable.",
+          "fuente": "li_kma"
+        },
+        {
+          "id": "li_roche",
+          "identificador_linkedin": "4488139585",
+          "empresa": "Roche",
+          "cargo": "Digital Content Creation Associate (Copywriter)",
+          "ciudad": "Sabana Norte, San José",
+          "pais": "Costa Rica",
+          "area": "Contenido digital y copywriting",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 4 horas",
+          "habilidades": [
+            "contenido",
+            "guion_copy",
+            "audiencias",
+            "analitica",
+            "seo",
+            "ingles",
+            "portafolio"
+          ],
+          "resumen": "Contenido digital de brief a publicación: posts, emails, web, guiones de screencast; SEO y optimización con datos de rendimiento e insights de audiencia. Requiere 3+ años, portafolio e inglés excelente.",
+          "fuente": "li_roche"
+        },
+        {
+          "id": "li_cordillera",
+          "identificador_linkedin": "4486893252",
+          "empresa": "Proyectos Cordillera",
+          "cargo": "Creativo/a de Marketing y Contenido",
+          "ciudad": "San José (Santa Ana, presencial)",
+          "pais": "Costa Rica",
+          "area": "Marketing inmobiliario y contenido",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 17 horas; 82 solicitudes",
+          "habilidades": [
+            "creatividad",
+            "guion_copy",
+            "audiovisual",
+            "contenido",
+            "audiencias",
+            "analitica",
+            "diseno"
+          ],
+          "resumen": "Conceptos creativos, guiones y briefs para producciones, sesiones de foto y video, reels y videos para Instagram, TikTok y YouTube; análisis de resultados. Pide 1–3 años, edición básica de video y Canva/CapCut/Adobe.",
+          "fuente": "li_cordillera"
+        },
+        {
+          "id": "li_instacredit",
+          "identificador_linkedin": "4486498385",
+          "empresa": "Instacredit",
+          "cargo": "Productor(a) Creativo(a) Digital",
+          "ciudad": "San Pedro, San José",
+          "pais": "Costa Rica",
+          "area": "Producción audiovisual digital",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 3 días; 97 solicitudes",
+          "habilidades": [
+            "audiovisual",
+            "contenido",
+            "ia",
+            "diseno"
+          ],
+          "resumen": "Grabación y edición de contenido audiovisual para Reels y TikTok con After Effects, Premiere y herramientas de IA (Runway, Midjourney, DALL·E, ChatGPT). Requiere 4 años de experiencia y licenciatura afín.",
+          "fuente": "li_instacredit"
+        },
+        {
+          "id": "li_virtustant",
+          "identificador_linkedin": "4485893714",
+          "empresa": "Virtustant",
+          "cargo": "Digital Content Creator",
+          "ciudad": "Costa Rica (remoto)",
+          "pais": "Costa Rica",
+          "area": "Creación de contenido para e-commerce",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 10 horas",
+          "habilidades": [
+            "contenido",
+            "audiovisual",
+            "ia",
+            "diseno",
+            "guion_copy"
+          ],
+          "resumen": "Gráficos, videos promocionales y cortos para redes, anuncios y fichas de e-commerce de marcas de EE. UU., con creación asistida por IA (Midjourney, Firefly, Runway, Synthesia). Requiere 2+ años con marcas estadounidenses; copywriting básico.",
+          "fuente": "li_virtustant"
+        },
+        {
+          "id": "li_publicis_sapient",
+          "identificador_linkedin": "4475616308",
+          "empresa": "Publicis Sapient",
+          "cargo": "Senior Copywriter",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Copywriting y contenido digital",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 5 días; 71 solicitudes",
+          "habilidades": [
+            "guion_copy",
+            "contenido",
+            "storytelling",
+            "seo",
+            "ingles"
+          ],
+          "resumen": "Blogs SEO, copy para eCRM, SMS, newsletters y formatos sociales (reels, carruseles, stories) convirtiendo pilares estratégicos en historias. Requiere 7+ años e inglés nativo o avanzado.",
+          "fuente": "li_publicis_sapient"
+        },
+        {
+          "id": "li_expanish",
+          "identificador_linkedin": "4455533363",
+          "empresa": "Expanish - Cultural Immersion Programs",
+          "cargo": "Freelance Part-Time Social Media Content Creator",
+          "ciudad": "Sámara, Guanacaste",
+          "pais": "Costa Rica",
+          "area": "Redes sociales y contenido audiovisual",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 2 meses; 107 solicitudes",
+          "habilidades": [
+            "contenido",
+            "audiovisual",
+            "audiencias",
+            "ingles"
+          ],
+          "resumen": "Producción diaria para Instagram, TikTok y YouTube retratando la experiencia de estudiantes extranjeros; requiere experiencia como creador o cineasta, edición audiovisual, soltura frente a cámara e inglés y español. Medio tiempo, freelance.",
+          "fuente": "li_expanish"
+        },
+        {
+          "id": "li_formulated",
+          "identificador_linkedin": "4486344208",
+          "empresa": "Formulated Automation",
+          "cargo": "AI Performance Video Designer",
+          "ciudad": "San José (remoto LATAM)",
+          "pais": "Costa Rica",
+          "area": "Video publicitario para redes",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 2 días; menos de 25 solicitantes",
+          "habilidades": [
+            "storytelling",
+            "creatividad",
+            "audiovisual",
+            "ia",
+            "audiencias",
+            "analitica",
+            "ingles",
+            "portafolio"
+          ],
+          "resumen": "Conceptos, hooks y producción de anuncios de video para paid social con assets generados por IA, edición con foco en storytelling y ritmo; deseable métricas de pruebas creativas. Requiere 2–3+ años, portafolio e inglés excelente.",
+          "fuente": "li_formulated"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "storytelling",
+          "habilidad": "Storytelling y narrativa de marca",
+          "cobertura": "Explícita",
+          "criterio": "Menciona storytelling, contar historias o narrativa de marca."
+        },
+        {
+          "id": "contenido",
+          "habilidad": "Creación de contenidos para redes y plataformas",
+          "cobertura": "Explícita",
+          "criterio": "Creación de posts, reels, stories, videos cortos o calendario editorial."
+        },
+        {
+          "id": "guion_copy",
+          "habilidad": "Guion y redacción creativa (copy)",
+          "cobertura": "Explícita",
+          "criterio": "Guiones, briefs creativos, copywriting o redacción de piezas."
+        },
+        {
+          "id": "audiovisual",
+          "habilidad": "Producción y edición audiovisual",
+          "cobertura": "Explícita",
+          "criterio": "Grabación, edición de video, fotografía o herramientas como Premiere, CapCut, DaVinci."
+        },
+        {
+          "id": "creatividad",
+          "habilidad": "Conceptualización creativa",
+          "cobertura": "Explícita",
+          "criterio": "Desarrollo de conceptos, ideas de campaña, hooks o ángulos creativos."
+        },
+        {
+          "id": "audiencias",
+          "habilidad": "Investigación y comprensión de audiencias",
+          "cobertura": "Explícita",
+          "criterio": "Insights de audiencia, adaptación a públicos o engagement de audiencias."
+        },
+        {
+          "id": "ia",
+          "habilidad": "IA generativa aplicada al contenido",
+          "cobertura": "Explícita",
+          "criterio": "Uso de herramientas de IA (Midjourney, Runway, ChatGPT, Firefly, etc.) para producir contenido."
+        },
+        {
+          "id": "analitica",
+          "habilidad": "Analítica y medición del desempeño",
+          "cobertura": "Explícita",
+          "criterio": "Análisis de resultados, métricas, datos de rendimiento o Google Analytics."
+        },
+        {
+          "id": "portafolio",
+          "habilidad": "Portafolio de proyectos publicado",
+          "cobertura": "Explícita",
+          "criterio": "La publicación exige o prioriza portafolio."
+        },
+        {
+          "id": "seo",
+          "habilidad": "SEO y gestión de contenido web",
+          "cobertura": "Por contrastar",
+          "criterio": "SEO on-page, metadatos o gestión de sitios web."
+        },
+        {
+          "id": "diseno",
+          "habilidad": "Diseño gráfico y herramientas visuales",
+          "cobertura": "Por contrastar",
+          "criterio": "Adobe Suite, Canva, Figma o diseño de piezas estáticas."
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés avanzado",
+          "cobertura": "Por contrastar",
+          "criterio": "Requisito de inglés fluido, bilingüe o CV en inglés."
+        }
+      ],
+      "fuentes": [
+        "li_kma",
+        "li_roche",
+        "li_cordillera",
+        "li_instacredit",
+        "li_virtustant",
+        "li_publicis_sapient",
+        "li_expanish",
+        "li_formulated"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Se revisaron los listados públicos de LinkedIn Jobs Costa Rica para «Copywriter», «Content Writing» y «Productor audiovisual» y se abrieron 8 publicaciones de empleadores distintos vinculadas a creación de contenido, copy, producción audiovisual y storytelling. Todas mostraban botón «Solicitar» el 2026-11-06 (la vista pública de LinkedIn rotula erróneamente «en Quito» en el encabezado; se usó la ubicación del cuerpo). Es una muestra exploratoria de habilidades, no un conteo de vacantes ni de salarios; varias piden 2–7 años de experiencia, inglés avanzado o licenciatura, por encima del perfil de egreso de un técnico de 2 cuatrimestres."
+      },
+      "habilidades": [
+        {
+          "id": "contenido",
+          "habilidad": "Creación de contenidos para redes y plataformas",
+          "cobertura": "Explícita",
+          "criterio": "Creación de posts, reels, stories, videos cortos o calendario editorial.",
+          "menciones": 7,
+          "muestra": 8,
+          "porcentaje": 87.5,
+          "fuentes": [
+            "li_kma",
+            "li_roche",
+            "li_cordillera",
+            "li_instacredit",
+            "li_virtustant",
+            "li_publicis_sapient",
+            "li_expanish"
+          ]
+        },
+        {
+          "id": "audiovisual",
+          "habilidad": "Producción y edición audiovisual",
+          "cobertura": "Explícita",
+          "criterio": "Grabación, edición de video, fotografía o herramientas como Premiere, CapCut, DaVinci.",
+          "menciones": 6,
+          "muestra": 8,
+          "porcentaje": 75.0,
+          "fuentes": [
+            "li_kma",
+            "li_cordillera",
+            "li_instacredit",
+            "li_virtustant",
+            "li_expanish",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés avanzado",
+          "cobertura": "Por contrastar",
+          "criterio": "Requisito de inglés fluido, bilingüe o CV en inglés.",
+          "menciones": 5,
+          "muestra": 8,
+          "porcentaje": 62.5,
+          "fuentes": [
+            "li_kma",
+            "li_roche",
+            "li_publicis_sapient",
+            "li_expanish",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "guion_copy",
+          "habilidad": "Guion y redacción creativa (copy)",
+          "cobertura": "Explícita",
+          "criterio": "Guiones, briefs creativos, copywriting o redacción de piezas.",
+          "menciones": 4,
+          "muestra": 8,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_roche",
+            "li_cordillera",
+            "li_virtustant",
+            "li_publicis_sapient"
+          ]
+        },
+        {
+          "id": "audiencias",
+          "habilidad": "Investigación y comprensión de audiencias",
+          "cobertura": "Explícita",
+          "criterio": "Insights de audiencia, adaptación a públicos o engagement de audiencias.",
+          "menciones": 4,
+          "muestra": 8,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_roche",
+            "li_cordillera",
+            "li_expanish",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "diseno",
+          "habilidad": "Diseño gráfico y herramientas visuales",
+          "cobertura": "Por contrastar",
+          "criterio": "Adobe Suite, Canva, Figma o diseño de piezas estáticas.",
+          "menciones": 4,
+          "muestra": 8,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_kma",
+            "li_cordillera",
+            "li_instacredit",
+            "li_virtustant"
+          ]
+        },
+        {
+          "id": "storytelling",
+          "habilidad": "Storytelling y narrativa de marca",
+          "cobertura": "Explícita",
+          "criterio": "Menciona storytelling, contar historias o narrativa de marca.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_kma",
+            "li_publicis_sapient",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "creatividad",
+          "habilidad": "Conceptualización creativa",
+          "cobertura": "Explícita",
+          "criterio": "Desarrollo de conceptos, ideas de campaña, hooks o ángulos creativos.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_kma",
+            "li_cordillera",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "ia",
+          "habilidad": "IA generativa aplicada al contenido",
+          "cobertura": "Explícita",
+          "criterio": "Uso de herramientas de IA (Midjourney, Runway, ChatGPT, Firefly, etc.) para producir contenido.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_instacredit",
+            "li_virtustant",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "analitica",
+          "habilidad": "Analítica y medición del desempeño",
+          "cobertura": "Explícita",
+          "criterio": "Análisis de resultados, métricas, datos de rendimiento o Google Analytics.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_roche",
+            "li_cordillera",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "portafolio",
+          "habilidad": "Portafolio de proyectos publicado",
+          "cobertura": "Explícita",
+          "criterio": "La publicación exige o prioriza portafolio.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_kma",
+            "li_roche",
+            "li_formulated"
+          ]
+        },
+        {
+          "id": "seo",
+          "habilidad": "SEO y gestión de contenido web",
+          "cobertura": "Por contrastar",
+          "criterio": "SEO on-page, metadatos o gestión de sitios web.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_kma",
+            "li_roche",
+            "li_publicis_sapient"
+          ]
+        }
+      ],
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada"
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "ucr_storytelling",
+        "ucr_esp_contenidos",
+        "usanmarcos_story",
+        "cenfotec_ds_ia",
+        "una_iat",
+        "ucreativa_pa",
+        "ulatina_pa",
+        "ulatina_mkt",
+        "coursera_ie",
+        "domestika_marcas"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "USD",
+      "fuentes": [
+        "ucr_storytelling",
+        "una_iat",
+        "cenfotec_ds_ia",
+        "ucr_esp_contenidos",
+        "ucreativa_pa",
+        "usanmarcos_story",
+        "coursera_ie"
+      ],
+      "nota": "Precios en moneda original sin convertir. CENFOTEC publica US$220 antes del 2% de IVA. UNA iAT publica ₡155.040 IVI. El total UCR de ₡1.137.300 es la suma de matrícula y 18 mensualidades publicadas, no un total impreso en la página. El curso UCR de ₡61.200 corresponde a una convocatoria de julio de 2026 ya pasada; el ₡56.000 del brief es de una edición anterior. El curso UNA «Guion para Producción Audiovisual» (₡122.400 según el brief) no se localizó y queda sin precio. Las plataformas no muestran precio de curso individual.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Edición, producción de contenidos, telecomunicaciones y servicios de información",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 101.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 99.92,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 101.87,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 103.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 105.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 107.02,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 104.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 105.97,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 109.27,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 107.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 106.23,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 108.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 106.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 106.75,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 106.09,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 113.2,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 111.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 112.56,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 111.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 110.48,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 111.83,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 111.91,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 113.83,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 110.52,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 113.6,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 109.16,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 109.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 117.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 116.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 116.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 115.8,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 115.31,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 118.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 117.18,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 118.87,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 115.88,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 119.06,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 112.9,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 113.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 120.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 121.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 120.18,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 120.66,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 119.62,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94981,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-11-06",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "storytelling",
+        "etiqueta": "Storytelling y<br>narrativa de marca",
+        "criterio": "Presencia explícita de storytelling y narrativa de marca en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "contenido_guion",
+        "etiqueta": "Contenidos<br>y guion",
+        "criterio": "Presencia explícita de contenidos y guion en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "audiovisual",
+        "etiqueta": "Producción<br>multiplataforma",
+        "criterio": "Presencia explícita de producción multiplataforma en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "audiencias",
+        "etiqueta": "Investigación<br>de audiencias",
+        "criterio": "Presencia explícita de investigación de audiencias en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "ia",
+        "etiqueta": "IA<br>generativa",
+        "criterio": "Presencia explícita de ia generativa en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "analitica",
+        "etiqueta": "Analítica y<br>medición digital",
+        "criterio": "Presencia explícita de analítica y medición digital en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "storytelling": true,
+        "contenido_guion": true,
+        "audiovisual": true,
+        "audiencias": true,
+        "ia": true,
+        "analitica": true
+      }
+    },
+    "ofertas": {
+      "ucr_storytelling": {
+        "revisado": true,
+        "etiqueta": "UCR · Storytelling (12 h)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Precio ₡61.200 visible en la página oficial (4 clases de 3 h por Zoom). El brief menciona también ₡56.000, que corresponde a una edición anterior no verificada en página abierta. Temario: poder de las historias y esencia de marca, estructuras narrativas y cliente como héroe, storytelling en redes por plataforma, medición y optimización. No menciona producción audiovisual ni IA.",
+        "contenidos": {
+          "storytelling": true,
+          "contenido_guion": true,
+          "audiovisual": false,
+          "audiencias": true,
+          "ia": false,
+          "analitica": true
+        }
+      },
+      "ucr_esp_contenidos": {
+        "revisado": true,
+        "etiqueta": "UCR · Especialización (420 h)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "La página oficial publica matrícula ₡35.700 y 18 mensualidades de ₡61.200; el total ₡1.137.300 es la suma de esos componentes (coincide con el brief), pero no aparece como total en la página y la matrícula figura también como «No disponible», por eso no se marca verificado. 9 cursos (producción audiovisual multimedia, creatividad, estrategia para medios digitales, diseño, fotografía, audio, video, taller y proyecto final) con IA generativa transversal; no nombra storytelling, guion ni analítica.",
+        "contenidos": {
+          "storytelling": false,
+          "contenido_guion": true,
+          "audiovisual": true,
+          "audiencias": true,
+          "ia": true,
+          "analitica": false
+        }
+      },
+      "cenfotec_ds_ia": {
+        "revisado": true,
+        "etiqueta": "CENFOTEC · Data Storytelling IA",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Precio US$220 + 2% IVA (≈US$224,40 con IVA) en la página oficial; coincide con el brief. Enfoque en narrativa con datos para ejecutivos (Power BI, dashboards, IA para hallazgos), no en storytelling creativo ni producción de contenido; competidor parcial.",
+        "contenidos": {
+          "storytelling": true,
+          "contenido_guion": false,
+          "audiovisual": false,
+          "audiencias": true,
+          "ia": true,
+          "analitica": true
+        }
+      },
+      "una_iat": {
+        "revisado": true,
+        "etiqueta": "UNA iAT · Producción AV (54 h)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "₡155.040 IVI, 13 sesiones, cupo de 9 personas. Lenguaje audiovisual, herramientas básicas y realización de un cortometraje; sin temario detallado publicado.",
+        "contenidos": {
+          "storytelling": null,
+          "contenido_guion": false,
+          "audiovisual": true,
+          "audiencias": false,
+          "ia": false,
+          "analitica": false
+        }
+      },
+      "usanmarcos_story": {
+        "revisado": true,
+        "etiqueta": "San Marcos · Brand Storytelling",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Competidor más cercano por tema (storytelling y brand storytelling, marketing de contenidos, audiencia). No publica horas, precio ni temario en la página (solo PDF de plan de estudio). No menciona audiovisual, IA ni analítica.",
+        "contenidos": {
+          "storytelling": true,
+          "contenido_guion": true,
+          "audiovisual": false,
+          "audiencias": true,
+          "ia": false,
+          "analitica": false
+        }
+      },
+      "ucreativa_pa": {
+        "revisado": true,
+        "etiqueta": "UCreativa · Téc. Sup. AV",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Técnico superior bimodal de 4 cuatrimestres (el doble de StoryMakers). Contar historias con medios visuales y sonoros, guionismo y contenidos para plataformas. Sin precio publicado; menciona financiamiento sin matrícula y cuota fija. Existe también un Diplomado de 6 cuatrimestres.",
+        "contenidos": {
+          "storytelling": true,
+          "contenido_guion": true,
+          "audiovisual": true,
+          "audiencias": false,
+          "ia": false,
+          "analitica": false
+        }
+      },
+      "ulatina_pa": {
+        "revisado": true,
+        "etiqueta": "ULatina · Téc. Producción AV",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "9 módulos bimensuales en Campus Creativo (San Pedro y Heredia). Edición de video, posproducción, realización audiovisual y producción en redes; no menciona storytelling, guion, audiencias, IA ni analítica. Riesgo de canibalización interna.",
+        "contenidos": {
+          "storytelling": false,
+          "contenido_guion": true,
+          "audiovisual": true,
+          "audiencias": false,
+          "ia": false,
+          "analitica": false
+        }
+      },
+      "ulatina_mkt": {
+        "revisado": true,
+        "etiqueta": "ULatina · Téc. Marketing digital",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "8 módulos bimensuales en Campus Creativo; perfil de productor de contenidos para redes y campañas digitales con producción audiovisual in house. No publica temario, precio ni modalidad explícita (se infiere presencial por sede). Solapamiento con StoryMakers en contenidos y audiovisual.",
+        "contenidos": {
+          "storytelling": false,
+          "contenido_guion": true,
+          "audiovisual": true,
+          "audiencias": false,
+          "ia": false,
+          "analitica": false
+        }
+      },
+      "coursera_ie": {
+        "revisado": true,
+        "etiqueta": "Coursera · IE",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "49.317 inscripciones acumuladas. Horas estimadas por la plataforma (la cabecera dice 10 h; los módulos suman 13 h). Inscripción gratuita o Coursera Plus; no hay precio de curso individual verificable.",
+        "contenidos": {
+          "storytelling": true,
+          "contenido_guion": true,
+          "audiovisual": false,
+          "audiencias": true,
+          "ia": false,
+          "analitica": false
+        }
+      },
+      "coursera_adobe": {
+        "revisado": true,
+        "etiqueta": "Coursera · Adobe",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "20.487 inscripciones acumuladas; módulos suman 18 h estimadas. Storytelling, storyboarding, video, podcast y estrategia de medios con Adobe Express. Certificado de pago sin precio visible.",
+        "contenidos": {
+          "storytelling": true,
+          "contenido_guion": true,
+          "audiovisual": true,
+          "audiencias": false,
+          "ia": false,
+          "analitica": false
+        }
+      },
+      "domestika_marcas": {
+        "revisado": true,
+        "etiqueta": "Domestika · Storytelling marcas",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "13.339 estudiantes y 535 opiniones; 2 h 48 min de vídeo. Relato de marca, arquetipos, audiencia y brand voice. Precio no visible en la página consultada.",
+        "contenidos": {
+          "storytelling": true,
+          "contenido_guion": false,
+          "audiovisual": false,
+          "audiencias": true,
+          "ia": false,
+          "analitica": false
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por integración",
+        "texto": "Ninguna alternativa revisada combina storytelling, guion, producción multiplataforma, audiencias, IA y analítica en un técnico presencial de 2 cuatrimestres; ese paquete integrado es el argumento central frente a UCR, San Marcos y UCreativa."
+      },
+      {
+        "titulo": "Mercado laboral pide contenido + IA + portafolio",
+        "texto": "Las publicaciones de Costa Rica piden reels, video corto, copy y herramientas de IA generativa, pero exigen experiencia y portafolio; el programa debe cerrar con proyectos publicables."
+      },
+      {
+        "titulo": "Inglés como brecha",
+        "texto": "Cinco de ocho publicaciones exigen inglés avanzado o bilingüe, porque muchas vacantes atienden marcas de EE. UU.; conviene considerar producción de contenido en inglés."
+      },
+      {
+        "titulo": "Riesgo de canibalización interna",
+        "texto": "Los técnicos de ULatina en Producción Audiovisual y en Marketing y Creatividad Digital comparten público y temas; StoryMakers debe posicionarse en narrativa, audiencias y medición más que en técnica audiovisual."
+      }
+    ]
+  }
+}

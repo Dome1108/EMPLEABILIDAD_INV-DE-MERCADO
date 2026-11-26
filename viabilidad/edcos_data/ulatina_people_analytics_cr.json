@@ -1,0 +1,1339 @@
+{
+  "id": "people_analytics_cr",
+  "nombre": "Certificación Ejecutiva People Analytics y talent strategy",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-10-26",
+  "version_investigacion": "2026-10-26-mercado-cr-v2-actualizado",
+  "brief": {
+    "archivo": "Certificación Ejecutiva People Analytics y talent strategy.pdf",
+    "copia_local": "edcos_fuentes/brief_people_analytics_cr.pdf",
+    "fecha_propuesta": null,
+    "tipo": "Certificación ejecutiva · Educación continua",
+    "pais": "Costa Rica",
+    "facultad": "Facultad de Ciencias Empresariales y Hospitalidad",
+    "unidad": "No informada",
+    "duracion": "1.5 cuatrimestres",
+    "horas_totales": null,
+    "modalidad": "100% en línea",
+    "experto": "No definido en el brief",
+    "objetivo": "Preparar, explorar y analizar datos de talento humano y construir modelos predictivos para fundamentar decisiones y estrategias organizacionales.",
+    "diferenciadores": [
+      "Secuencia progresiva de exploración de datos, analítica predictiva y analítica de recursos humanos.",
+      "Aplicación a rotación, capacitación, selección, diversidad, desempeño, bienestar y planificación de la fuerza laboral.",
+      "Visualización, modelos predictivos y aprendizaje supervisado y no supervisado orientados a decisiones estratégicas de talento."
+    ],
+    "ejes": [
+      "Secuencia progresiva de exploración de datos, analítica predictiva y analítica de recursos humanos.",
+      "Aplicación a rotación, capacitación, selección, diversidad, desempeño, bienestar y planificación de la fuerza laboral.",
+      "Visualización, modelos predictivos y aprendizaje supervisado y no supervisado orientados a decisiones estratégicas de talento."
+    ],
+    "habilidades": [
+      "Análisis de datos",
+      "Visualización de datos",
+      "Modelado predictivo",
+      "Pensamiento estratégico",
+      "Toma de decisiones"
+    ],
+    "nombres_alternativos": [
+      "Certificación Ejecutiva en People Analytics y Gestión del Talento",
+      "Certificación Ejecutiva en Analítica y Estrategia de Talento"
+    ],
+    "palabras_clave": [
+      "People Analytics",
+      "Talento humano",
+      "Exploración de datos",
+      "Analítica predictiva",
+      "Visualización de datos",
+      "Modelos predictivos",
+      "Rotación laboral",
+      "Fuerza laboral",
+      "Desempeño laboral",
+      "Toma de decisiones"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Actividades profesionales, científicas y técnicas",
+    "paginas": {
+      "identificacion": 2,
+      "competencias": "2–3",
+      "diferenciadores": 3,
+      "competencia_declarada": 4
+    },
+    "pilares": [
+      "De datos a predicciones",
+      "Casos de talento",
+      "Decisiones estratégicas"
+    ]
+  },
+  "audiencia_propuesta": {
+    "origen": "Segmentos sugeridos a partir del brief, pendientes de contraste con el mercado de Costa Rica.",
+    "segmentos": [
+      "Profesionales de recursos humanos",
+      "Analistas de datos aplicados al talento",
+      "Responsables de estrategia y gestión de personas"
+    ],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Certificación Ejecutiva People Analytics y talent strategy",
+      "archivo": "Certificación Ejecutiva People Analytics y talent strategy.pdf",
+      "paginas": "2–4",
+      "fecha": "2026-10-26"
+    },
+    {
+      "id": "san_marcos",
+      "titulo": "Universidad San Marcos · Diplomado en People Analytics",
+      "url": "https://internacional.usanmarcos.ac.cr/product/diplomado-en-people-analytics/",
+      "fecha": "2026-10-26",
+      "observacion": "Cuatro meses online; dedica 6–8 horas semanales, sin total de horas ni precio publicado. Capabilia es aliado de la misma oferta, no otro competidor."
+    },
+    {
+      "id": "ttu",
+      "titulo": "Texas Tech Costa Rica · People Analytics",
+      "url": "https://www.ttu.edu/costa-rica/executive-education/2026/people-analytics.php",
+      "fecha": "2026-10-26",
+      "observacion": "Publica USD 1.000. La cabecera indica 7 semanas y el temario 8; no se infieren horas totales. Enfoque en métricas, calidad de datos y comunicación con el negocio."
+    },
+    {
+      "id": "cedeso",
+      "titulo": "CEDESO · People Analytics",
+      "url": "https://www.cedeso.co.cr/eventos-cursos-y-seminarios/1143-people-analytics",
+      "fecha": "2026-10-26",
+      "observacion": "Seminario ejecutivo de seis horas, con indicadores y plan de implementación. Tarifa base antes de IVA."
+    },
+    {
+      "id": "cedeso_ia",
+      "titulo": "CEDESO · People Analytics con IA",
+      "url": "https://www.cedeso.co.cr/eventos-cursos-y-seminarios/1163-people-analytics-con-ia",
+      "fecha": "2026-10-26",
+      "observacion": "Doce horas declaradas, nueve sincrónicas y tres asincrónicas. Tres casos prácticos y validación de prototipos. Tarifa base antes de IVA."
+    },
+    {
+      "id": "iniciativas",
+      "titulo": "Iniciativas Empresariales · People Analytics",
+      "url": "https://costarica.iniciativasempresariales.com/ficha_curso.php?c=1161",
+      "fecha": "2026-10-26",
+      "observacion": "Proveedor internacional con catálogo para Costa Rica: 50 horas, USD 290 y soporte docente. Publica edición de noviembre de 2026; no se utiliza su conversión aproximada a colones."
+    },
+    {
+      "id": "iniciativas_ia",
+      "titulo": "Iniciativas Empresariales · People Analytics con Inteligencia Artificial",
+      "url": "https://costarica.iniciativasempresariales.com/ficha_curso.php?c=2106",
+      "fecha": "2026-10-26",
+      "observacion": "Ochenta horas e-learning con acompañamiento. USD 450, dashboards y predicción; edición publicada para noviembre de 2026."
+    },
+    {
+      "id": "tec_talento",
+      "titulo": "Tecnológico de Costa Rica · Especialización en Liderazgo y Gestión del Talento",
+      "url": "https://tec.ac.cr/especializacion-liderazgo-gestion-talento",
+      "fecha": "2026-10-26",
+      "observacion": "Alternativa de liderazgo y desarrollo de personas: cuatro módulos de seis semanas. No se equipara con formación técnica en People Analytics."
+    },
+    {
+      "id": "coursera",
+      "titulo": "Coursera · Wharton · People Analytics",
+      "url": "https://www.coursera.org/learn/wharton-people-analytics",
+      "fecha": "2026-10-26",
+      "observacion": "Introducción conceptual internacional: 159.605 inscripciones acumuladas. No acredita formación técnica avanzada ni público costarricense. Tarifa total no verificable sin elegir plan."
+    },
+    {
+      "id": "udemy",
+      "titulo": "Udemy · People Analytics: Aplicaciones en Recursos Humanos",
+      "url": "https://www.udemy.com/course/people-analytics-recursos-humanos/",
+      "fecha": "2026-10-26",
+      "observacion": "Introducción en español: 655 participantes, 1 h 25 min de vídeo. La descripción lo presenta como gratuito; no se obtuvo una tarifa verificable de compra o certificado."
+    },
+    {
+      "id": "li_insight",
+      "titulo": "Insight Global · People Analytics Administrator",
+      "url": "https://cr.linkedin.com/jobs/view/people-analytics-administrator-at-insight-global-4443165891",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_veeam",
+      "titulo": "Veeam Software · People Data Analyst",
+      "url": "https://cr.linkedin.com/jobs/view/people-data-analyst-at-veeam-software-4479693078",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_workday",
+      "titulo": "Workday · People Analytics Data Scientist",
+      "url": "https://cr.linkedin.com/jobs/view/people-analytics-data-scientist-at-workday-4313090970",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_ricoh",
+      "titulo": "Ricoh LATAM · People Analytics and Compensation Analyst",
+      "url": "https://cr.linkedin.com/jobs/view/people-analytics-and-compensation-analyst-at-ricoh-latin-america-inc-4010607194",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "li_omnidian",
+      "titulo": "Omnidian · People Analytics Manager",
+      "url": "https://cr.linkedin.com/jobs/view/people-analytics-manager-at-omnidian-4470736974",
+      "fecha": "2026-10-26",
+      "observacion": ""
+    },
+    {
+      "id": "google_demanda",
+      "titulo": "Google Trends · consulta territorial Costa Rica",
+      "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=CR&q=People%20Analytics,recursos%20humanos,anal%C3%ADtica%20de%20datos",
+      "fecha": "2026-10-26",
+      "observacion": "Consulta intentada: no se obtuvo una serie descargable/verificable con la herramienta disponible. No se asigna volumen a resultados indexados."
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-10-26",
+      "observacion": "Serie vigente del grupo 939. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-10-26",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial histórica."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Universidad San Marcos",
+      "programa": "Diplomado en People Analytics",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "san_marcos",
+      "nota": "Cuatro meses online; dedica 6–8 horas semanales, sin total de horas ni precio publicado. Capabilia es aliado de la misma oferta, no otro competidor.",
+      "etiqueta_precio": "Universidad San Marcos"
+    },
+    {
+      "institucion": "Texas Tech Costa Rica",
+      "programa": "People Analytics",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": 1000,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Cohorte histórica · inicio 03/08/2026",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "ttu",
+      "nota": "Publica USD 1.000. La cabecera indica 7 semanas y el temario 8; no se infieren horas totales. Enfoque en métricas, calidad de datos y comunicación con el negocio.",
+      "etiqueta_precio": "Texas Tech Costa Rica"
+    },
+    {
+      "institucion": "CEDESO",
+      "programa": "People Analytics",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 6,
+      "precio_usd": 145,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Registro cerrado · 19 y 21/10/2026 · USD 145 + 2% IVA",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "cedeso",
+      "nota": "Seminario ejecutivo de seis horas, con indicadores y plan de implementación. Tarifa base antes de IVA.",
+      "etiqueta_precio": "CEDESO · seminario"
+    },
+    {
+      "institucion": "CEDESO",
+      "programa": "People Analytics con IA",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 12,
+      "precio_usd": 250,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Convocatoria 19, 24 y 26/11/2026 · USD 250 + 2% IVA",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "cedeso_ia",
+      "nota": "Doce horas declaradas, nueve sincrónicas y tres asincrónicas. Tres casos prácticos y validación de prototipos. Tarifa base antes de IVA.",
+      "etiqueta_precio": "CEDESO · IA"
+    },
+    {
+      "institucion": "Iniciativas Empresariales",
+      "programa": "People Analytics",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 50,
+      "precio_usd": 290,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "iniciativas",
+      "nota": "Proveedor internacional con catálogo para Costa Rica: 50 horas, USD 290 y soporte docente. Publica edición de noviembre de 2026; no se utiliza su conversión aproximada a colones.",
+      "etiqueta_precio": "Iniciativas · PA"
+    },
+    {
+      "institucion": "Iniciativas Empresariales",
+      "programa": "People Analytics con Inteligencia Artificial",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 80,
+      "precio_usd": 450,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "iniciativas_ia",
+      "nota": "Ochenta horas e-learning con acompañamiento. USD 450, dashboards y predicción; edición publicada para noviembre de 2026.",
+      "etiqueta_precio": "Iniciativas · IA"
+    },
+    {
+      "institucion": "Tecnológico de Costa Rica",
+      "programa": "Especialización en Liderazgo y Gestión del Talento",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "tec_talento",
+      "nota": "Alternativa de liderazgo y desarrollo de personas: cuatro módulos de seis semanas. No se equipara con formación técnica en People Analytics.",
+      "etiqueta_precio": "Tecnológico de Costa Rica"
+    },
+    {
+      "institucion": "Coursera · Wharton",
+      "programa": "People Analytics",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera",
+      "nota": "Introducción conceptual internacional: 159.605 inscripciones acumuladas. No acredita formación técnica avanzada ni público costarricense. Tarifa total no verificable sin elegir plan.",
+      "etiqueta_precio": "Coursera · Wharton"
+    },
+    {
+      "institucion": "Udemy",
+      "programa": "People Analytics: Aplicaciones en Recursos Humanos",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 1.4166666666666667,
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; próxima cohorte por confirmar",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "udemy",
+      "nota": "Introducción en español: 655 participantes, 1 h 25 min de vídeo. La descripción lo presenta como gratuito; no se obtuvo una tarifa verificable de compra o certificado.",
+      "etiqueta_precio": "Udemy"
+    },
+    {
+      "institucion": "Universidad Fidélitas",
+      "programa": "Técnico en Gestión del Talento Humano",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Sin precio informado.",
+      "precio_verificado": false
+    },
+    {
+      "institucion": "Tecnológico de Costa Rica",
+      "programa": "Especialización en Estrategia y Liderazgo en Ciencia de Datos",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Sin precio informado.",
+      "precio_verificado": false
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 65,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "La participación internacional registrada en Coursera y Udemy y la oferta de formación específica en Costa Rica sustentan interés por la temática. Google Trends no entregó una serie verificable para CR: no se presentan estas cifras como búsquedas locales ni intención de matrícula. Se asigna 65 por señales indirectas consistentes, sin validación de compra local.",
+      "fuentes": [
+        "coursera",
+        "udemy",
+        "san_marcos",
+        "google_demanda"
+      ],
+      "nivel_evidencia": "Indirecta internacional + oferta local"
+    },
+    "competencia": {
+      "puntaje": 50,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "Existen alternativas locales de San Marcos, Texas Tech y CEDESO, además del proveedor internacional Iniciativas y cursos de plataformas. Varias referencias son del mismo oferente y no se cuentan como instituciones distintas. La presión competitiva y el solapamiento en analítica e IA sustentan 50; el diferencial debe demostrarse en un proyecto de talento.",
+      "fuentes": [
+        "san_marcos",
+        "ttu",
+        "cedeso",
+        "cedeso_ia",
+        "iniciativas",
+        "iniciativas_ia",
+        "coursera",
+        "udemy",
+        "brief"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "empleabilidad": {
+      "puntaje": 80,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Cinco publicaciones públicas de Costa Rica vinculan datos de personas con reporting, compensación y ciencia de datos. Se incorpora Omnidian con botón de solicitud visible en la consulta actual. Los requisitos técnicos y de experiencia varían; una certificación no sustituye títulos o experiencia. La correspondencia de habilidades con el brief sustenta 80 como juicio de pertinencia, no tasa de empleo.",
+      "fuentes": [
+        "li_insight",
+        "li_veeam",
+        "li_workday",
+        "li_ricoh",
+        "li_omnidian",
+        "brief"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "precio": {
+      "puntaje": 65,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "Se observaron referencias institucionales de USD 145 a 1.000, con duración y acompañamiento diferentes. Los valores de CEDESO son base antes del 2% IVA y TTU corresponde a una cohorte pasada. Esta amplitud permite explorar segmentos, sin fijar precio propio ni inferir disposición a pagar. Juicio de posicionamiento intermedio: 65.",
+      "fuentes": [
+        "ttu",
+        "cedeso",
+        "cedeso_ia",
+        "iniciativas",
+        "iniciativas_ia"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "sector": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "La serie vigente del BCCR, base 2022 = 100, se consultó hasta 2026-08. Se reemplazó toda la serie histórica para conservar una base homogénea. El agregado profesional y administrativo mantiene actividad; el informe de agosto de 2026 reporta una moderación de su crecimiento. Es un contexto sectorial amplio, no ventas específicas ni demanda de matrícula. Se conserva la valoración analítica de 75; actualizar observaciones no implica una conversión automática del índice a puntaje.",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    }
+  },
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · People Analytics (Wharton)",
+          "valor": 159605,
+          "fuente": "coursera"
+        },
+        {
+          "etiqueta": "Udemy · Aplicaciones en Recursos Humanos",
+          "valor": 655,
+          "fuente": "udemy"
+        }
+      ],
+      "fuentes": [
+        "coursera",
+        "udemy",
+        "san_marcos",
+        "google_demanda"
+      ],
+      "nota": "Consulta Google Trends para Costa Rica sin serie verificable. Las participaciones publicadas son internacionales y acumuladas, no búsquedas ni matrículas locales.",
+      "lectura": "Existe participación en formación relacionada. Es una señal internacional; el interés pagador en Costa Rica debe distinguirse de estas inscripciones.",
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_insight",
+          "identificador_linkedin": "4443165891",
+          "empresa": "Insight Global",
+          "cargo": "People Analytics Administrator",
+          "ciudad": "Costa Rica",
+          "pais": "Costa Rica",
+          "area": "Operaciones y reporting de RR. HH.",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "datos",
+            "calidad",
+            "decision",
+            "colaborar"
+          ],
+          "resumen": "Informes de personal, conciliaciones en Excel, validación de calidad y planificación de fuerza laboral.",
+          "fuente": "li_insight",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_veeam",
+          "identificador_linkedin": "4479693078",
+          "empresa": "Veeam Software",
+          "cargo": "People Data Analyst",
+          "ciudad": "San José, Heredia",
+          "pais": "Costa Rica",
+          "area": "Analítica de talento",
+          "estado_clasificacion": "No confirmada",
+          "estado": "Descripción pública; vigencia de la contratación no confirmada.",
+          "habilidades": [
+            "datos",
+            "calidad",
+            "visual",
+            "decision",
+            "sql",
+            "python",
+            "comunicar",
+            "ia",
+            "privacidad",
+            "colaborar"
+          ],
+          "resumen": "Prepara datos con SQL y Python, desarrolla tableros y presenta recomendaciones de talento con controles de privacidad.",
+          "fuente": "li_veeam",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_workday",
+          "identificador_linkedin": "4313090970",
+          "empresa": "Workday",
+          "cargo": "People Analytics Data Scientist",
+          "ciudad": "Heredia",
+          "pais": "Costa Rica",
+          "area": "Ciencia de datos de personas",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "datos",
+            "calidad",
+            "visual",
+            "decision",
+            "predictiva",
+            "sql",
+            "python",
+            "comunicar",
+            "ia",
+            "colaborar"
+          ],
+          "resumen": "Investigación analítica y modelos predictivos de talento; comunicación al negocio y uso de SQL, R o Python.",
+          "fuente": "li_workday",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_ricoh",
+          "identificador_linkedin": "4010607194",
+          "empresa": "Ricoh LATAM",
+          "cargo": "People Analytics and Compensation Analyst",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Compensación y analítica",
+          "estado_clasificacion": "Cerrada",
+          "estado": "LinkedIn indica que no acepta solicitudes; referencia de habilidades.",
+          "habilidades": [
+            "datos",
+            "calidad",
+            "decision",
+            "predictiva"
+          ],
+          "resumen": "Recopilación y perfilado de datos de RR. HH., proyección de dotación y análisis de compensaciones. Publicación histórica.",
+          "fuente": "li_ricoh",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "id": "li_omnidian",
+          "identificador_linkedin": "4470736974",
+          "empresa": "Omnidian",
+          "cargo": "People Analytics Manager",
+          "ciudad": "Hojancha, Guanacaste",
+          "pais": "Costa Rica",
+          "area": "Analítica de talento",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón Solicitar visible al consultar el 26/10/2026; no confirma que el puesto siga abierto posteriormente.",
+          "habilidades": [
+            "datos",
+            "calidad",
+            "decision",
+            "ia",
+            "colaborar",
+            "comunicar"
+          ],
+          "resumen": "Integra información de sistemas de personas, analiza compensación y planificación, y comunica recomendaciones. Requiere experiencia; contratación remota en Costa Rica.",
+          "fuente": "li_omnidian",
+          "fecha_consulta": "2026-10-26"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "datos",
+          "habilidad": "Análisis de datos",
+          "cobertura": "Explícita",
+          "criterio": "Analizar datos de personal y métricas."
+        },
+        {
+          "id": "calidad",
+          "habilidad": "Preparación y calidad de datos",
+          "cobertura": "Explícita",
+          "criterio": "Limpiar, validar e integrar conjuntos de datos."
+        },
+        {
+          "id": "visual",
+          "habilidad": "Visualización y dashboards",
+          "cobertura": "Explícita",
+          "criterio": "Diseñar visualizaciones y tableros."
+        },
+        {
+          "id": "decision",
+          "habilidad": "Decisiones y estrategia de talento",
+          "cobertura": "Explícita",
+          "criterio": "Traducir resultados en decisiones de talento."
+        },
+        {
+          "id": "predictiva",
+          "habilidad": "Modelado predictivo",
+          "cobertura": "Explícita",
+          "criterio": "Desarrollar modelos o predicciones."
+        },
+        {
+          "id": "sql",
+          "habilidad": "SQL",
+          "cobertura": "Por contrastar",
+          "criterio": "Herramienta observada; no nombrada en el brief."
+        },
+        {
+          "id": "python",
+          "habilidad": "Python / R",
+          "cobertura": "Por contrastar",
+          "criterio": "Programación observada; herramienta no explicitada."
+        },
+        {
+          "id": "comunicar",
+          "habilidad": "Comunicación de resultados",
+          "cobertura": "Por contrastar",
+          "criterio": "Exponer hallazgos ante responsables del negocio."
+        },
+        {
+          "id": "ia",
+          "habilidad": "IA y aprendizaje automático",
+          "cobertura": "Explícita",
+          "criterio": "Aplicar IA o machine learning a análisis."
+        },
+        {
+          "id": "privacidad",
+          "habilidad": "Privacidad y gobierno del dato",
+          "cobertura": "Por contrastar",
+          "criterio": "Proteger información y definir controles de datos."
+        },
+        {
+          "id": "colaborar",
+          "habilidad": "Colaboración con áreas de negocio",
+          "cobertura": "Por contrastar",
+          "criterio": "Trabajo con responsables funcionales y equipos técnicos."
+        }
+      ],
+      "fuentes": [
+        "li_insight",
+        "li_veeam",
+        "li_workday",
+        "li_ricoh",
+        "li_omnidian",
+        "brief"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Publicaciones identificadas mediante búsquedas públicas en LinkedIn para Costa Rica. Se distinguen referencias cerradas y de vigencia no confirmada; no es un censo de vacantes actuales."
+      },
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada",
+      "habilidades": [
+        {
+          "id": "datos",
+          "habilidad": "Análisis de datos",
+          "cobertura": "Explícita",
+          "criterio": "Analizar datos de personal y métricas.",
+          "menciones": 5,
+          "muestra": 5,
+          "porcentaje": 100.0,
+          "fuentes": [
+            "li_insight",
+            "li_veeam",
+            "li_workday",
+            "li_ricoh",
+            "li_omnidian"
+          ]
+        },
+        {
+          "id": "calidad",
+          "habilidad": "Preparación y calidad de datos",
+          "cobertura": "Explícita",
+          "criterio": "Limpiar, validar e integrar conjuntos de datos.",
+          "menciones": 5,
+          "muestra": 5,
+          "porcentaje": 100.0,
+          "fuentes": [
+            "li_insight",
+            "li_veeam",
+            "li_workday",
+            "li_ricoh",
+            "li_omnidian"
+          ]
+        },
+        {
+          "id": "decision",
+          "habilidad": "Decisiones y estrategia de talento",
+          "cobertura": "Explícita",
+          "criterio": "Traducir resultados en decisiones de talento.",
+          "menciones": 5,
+          "muestra": 5,
+          "porcentaje": 100.0,
+          "fuentes": [
+            "li_insight",
+            "li_veeam",
+            "li_workday",
+            "li_ricoh",
+            "li_omnidian"
+          ]
+        },
+        {
+          "id": "colaborar",
+          "habilidad": "Colaboración con áreas de negocio",
+          "cobertura": "Por contrastar",
+          "criterio": "Trabajo con responsables funcionales y equipos técnicos.",
+          "menciones": 4,
+          "muestra": 5,
+          "porcentaje": 80.0,
+          "fuentes": [
+            "li_insight",
+            "li_veeam",
+            "li_workday",
+            "li_omnidian"
+          ]
+        },
+        {
+          "id": "comunicar",
+          "habilidad": "Comunicación de resultados",
+          "cobertura": "Por contrastar",
+          "criterio": "Exponer hallazgos ante responsables del negocio.",
+          "menciones": 3,
+          "muestra": 5,
+          "porcentaje": 60.0,
+          "fuentes": [
+            "li_veeam",
+            "li_workday",
+            "li_omnidian"
+          ]
+        },
+        {
+          "id": "ia",
+          "habilidad": "IA y aprendizaje automático",
+          "cobertura": "Explícita",
+          "criterio": "Aplicar IA o machine learning a análisis.",
+          "menciones": 3,
+          "muestra": 5,
+          "porcentaje": 60.0,
+          "fuentes": [
+            "li_veeam",
+            "li_workday",
+            "li_omnidian"
+          ]
+        },
+        {
+          "id": "visual",
+          "habilidad": "Visualización y dashboards",
+          "cobertura": "Explícita",
+          "criterio": "Diseñar visualizaciones y tableros.",
+          "menciones": 2,
+          "muestra": 5,
+          "porcentaje": 40.0,
+          "fuentes": [
+            "li_veeam",
+            "li_workday"
+          ]
+        },
+        {
+          "id": "predictiva",
+          "habilidad": "Modelado predictivo",
+          "cobertura": "Explícita",
+          "criterio": "Desarrollar modelos o predicciones.",
+          "menciones": 2,
+          "muestra": 5,
+          "porcentaje": 40.0,
+          "fuentes": [
+            "li_workday",
+            "li_ricoh"
+          ]
+        },
+        {
+          "id": "sql",
+          "habilidad": "SQL",
+          "cobertura": "Por contrastar",
+          "criterio": "Herramienta observada; no nombrada en el brief.",
+          "menciones": 2,
+          "muestra": 5,
+          "porcentaje": 40.0,
+          "fuentes": [
+            "li_veeam",
+            "li_workday"
+          ]
+        },
+        {
+          "id": "python",
+          "habilidad": "Python / R",
+          "cobertura": "Por contrastar",
+          "criterio": "Programación observada; herramienta no explicitada.",
+          "menciones": 2,
+          "muestra": 5,
+          "porcentaje": 40.0,
+          "fuentes": [
+            "li_veeam",
+            "li_workday"
+          ]
+        },
+        {
+          "id": "privacidad",
+          "habilidad": "Privacidad y gobierno del dato",
+          "cobertura": "Por contrastar",
+          "criterio": "Proteger información y definir controles de datos.",
+          "menciones": 1,
+          "muestra": 5,
+          "porcentaje": 20.0,
+          "fuentes": [
+            "li_veeam"
+          ]
+        }
+      ]
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "san_marcos",
+        "ttu",
+        "cedeso",
+        "cedeso_ia",
+        "iniciativas",
+        "iniciativas_ia",
+        "coursera",
+        "udemy",
+        "brief"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "USD",
+      "fuentes": [
+        "ttu",
+        "cedeso",
+        "cedeso_ia",
+        "iniciativas",
+        "iniciativas_ia"
+      ],
+      "nota": "Precios en moneda original, sin conversión. CEDESO: tarifa base antes de IVA; incluye cohortes históricas y programas de diferente intensidad.",
+      "fecha_consulta": "2026-10-26",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Profesionales, científicas, técnicas, administrativas y servicios de apoyo",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 97.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 101.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 126.44,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 110.05,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 105.27,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 107.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 113.3,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 113.72,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 101.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 111.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 116.96,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 116.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 105.95,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 106.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 131.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 119.46,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 112.09,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 112.28,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 123.11,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 118.15,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 111.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 116.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 121.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 130.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 113.72,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 114.02,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 139.42,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 126.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 118.51,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 117.43,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 130.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 126.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 116.35,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 122.05,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 126.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 138.41,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 116.78,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 119.13,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 147.08,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 129.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 123.81,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 123.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 133.54,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 128.77,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94984,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-10-26",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Comunicar problemas concretos de rotación y planificación de talento, vinculados al perfil del participante."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Vincular el proyecto final con datos, visualización y una recomendación para el negocio."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Diferenciar la profundidad de modelos y la revisión de casos frente a cursos introductorios y seminarios."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Posicionar por intensidad y acompañamiento. La poca oferta acompañada de baja demanda no garantiza una oportunidad."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "Usar casos de servicios profesionales y otros sectores empleadores; People Analytics es una función transversal."
+    }
+  ],
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "datos",
+        "etiqueta": "Preparación<br>de datos",
+        "criterio": "Presencia explícita de preparación de datos en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "visual",
+        "etiqueta": "Visualización",
+        "criterio": "Presencia explícita de visualización en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "predictiva",
+        "etiqueta": "Analítica<br>predictiva",
+        "criterio": "Presencia explícita de analítica predictiva en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "ia",
+        "etiqueta": "IA / ML",
+        "criterio": "Presencia explícita de ia / ml en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "talento",
+        "etiqueta": "Aplicación<br>a talento",
+        "criterio": "Presencia explícita de aplicación a talento en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "estrategia",
+        "etiqueta": "Decisión<br>estratégica",
+        "criterio": "Presencia explícita de decisión estratégica en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "datos": true,
+        "visual": true,
+        "predictiva": true,
+        "ia": true,
+        "talento": true,
+        "estrategia": true
+      }
+    },
+    "ofertas": {
+      "san_marcos": {
+        "revisado": true,
+        "etiqueta": "Universidad San Marcos",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Cuatro meses online; dedica 6–8 horas semanales, sin total de horas ni precio publicado. Capabilia es aliado de la misma oferta, no otro competidor.",
+        "contenidos": {
+          "datos": true,
+          "visual": true,
+          "predictiva": true,
+          "ia": false,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "ttu": {
+        "revisado": true,
+        "etiqueta": "Texas Tech Costa Rica",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Publica USD 1.000. La cabecera indica 7 semanas y el temario 8; no se infieren horas totales. Enfoque en métricas, calidad de datos y comunicación con el negocio.",
+        "contenidos": {
+          "datos": true,
+          "visual": true,
+          "predictiva": false,
+          "ia": false,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "cedeso": {
+        "revisado": true,
+        "etiqueta": "CEDESO · seminario",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Seminario ejecutivo de seis horas, con indicadores y plan de implementación. Tarifa base antes de IVA.",
+        "contenidos": {
+          "datos": true,
+          "visual": true,
+          "predictiva": true,
+          "ia": true,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "cedeso_ia": {
+        "revisado": true,
+        "etiqueta": "CEDESO · IA",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Doce horas declaradas, nueve sincrónicas y tres asincrónicas. Tres casos prácticos y validación de prototipos. Tarifa base antes de IVA.",
+        "contenidos": {
+          "datos": true,
+          "visual": false,
+          "predictiva": false,
+          "ia": true,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "iniciativas": {
+        "revisado": true,
+        "etiqueta": "Iniciativas · PA",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Proveedor internacional con catálogo para Costa Rica: 50 horas, USD 290 y soporte docente. Publica edición de noviembre de 2026; no se utiliza su conversión aproximada a colones.",
+        "contenidos": {
+          "datos": true,
+          "visual": false,
+          "predictiva": true,
+          "ia": false,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "iniciativas_ia": {
+        "revisado": true,
+        "etiqueta": "Iniciativas · IA",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Ochenta horas e-learning con acompañamiento. USD 450, dashboards y predicción; edición publicada para noviembre de 2026.",
+        "contenidos": {
+          "datos": true,
+          "visual": true,
+          "predictiva": true,
+          "ia": true,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "tec_talento": {
+        "revisado": true,
+        "etiqueta": "Tecnológico de Costa Rica",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Alternativa de liderazgo y desarrollo de personas: cuatro módulos de seis semanas. No se equipara con formación técnica en People Analytics.",
+        "contenidos": {
+          "datos": false,
+          "visual": false,
+          "predictiva": false,
+          "ia": false,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "coursera": {
+        "revisado": true,
+        "etiqueta": "Coursera · Wharton",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Introducción conceptual internacional: 159.605 inscripciones acumuladas. No acredita formación técnica avanzada ni público costarricense. Tarifa total no verificable sin elegir plan.",
+        "contenidos": {
+          "datos": false,
+          "visual": false,
+          "predictiva": false,
+          "ia": false,
+          "talento": true,
+          "estrategia": true
+        }
+      },
+      "udemy": {
+        "revisado": true,
+        "etiqueta": "Udemy",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Introducción en español: 655 participantes, 1 h 25 min de vídeo. La descripción lo presenta como gratuito; no se obtuvo una tarifa verificable de compra o certificado.",
+        "contenidos": {
+          "datos": false,
+          "visual": false,
+          "predictiva": false,
+          "ia": true,
+          "talento": true,
+          "estrategia": true
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por aplicación",
+        "texto": "Convertir una base de talento en un diagnóstico, una predicción validada y una decisión defendible; distinguirlo de una introducción a indicadores."
+      },
+      {
+        "titulo": "Alternativas distintas",
+        "texto": "Separar seminarios ejecutivos, formación técnica y cursos autogestionados al definir intensidad y acompañamiento."
+      }
+    ]
+  }
+}

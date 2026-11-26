@@ -1,0 +1,1626 @@
+{
+  "id": "manufactura_avanzada_cr",
+  "nombre": "Técnico en Manufactura Avanzada",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-11-24",
+  "version_investigacion": "2026-11-06-mercado-v1",
+  "brief": {
+    "archivo": "Brief CR Manufactura Avanzada.pdf",
+    "copia_local": "edcos_fuentes/brief_manufactura_avanzada_cr.pdf",
+    "fecha_propuesta": "2026-11-16",
+    "tipo": "Técnico · Apertura de nuevo programa",
+    "pais": "Costa Rica",
+    "area_estudio": "Ingeniería",
+    "facultad": "Facultad de Ingenierías y TICs",
+    "unidad": "Técnicos",
+    "duracion": "3 cuatrimestres",
+    "horas_totales": null,
+    "modalidad": "Presencial (100% presencial)",
+    "experto": "No definido en el brief",
+    "objetivo": "Comprender los principios de los procesos de manufactura, calidad, productividad, mejora continua, seguridad ocupacional, mantenimiento, automatización y tecnologías aplicadas a la manufactura moderna; ejecutar procedimientos de producción, utilizar herramientas y equipos básicos, registrar información de procesos, identificar oportunidades de mejora y aplicar controles básicos de calidad y seguridad.",
+    "diferenciadores": [
+      "Enfoque práctico en manufactura moderna: materias orientadas a producción, calidad, mejora continua, seguridad, mantenimiento y automatización.",
+      "Aprendizaje aplicado en laboratorio: uso de equipos, herramientas y tecnologías asociadas con Industria 4.0 y procesos de manufactura.",
+      "Giras y visitas técnicas a plantas y empresas para conocer procesos productivos reales y buenas prácticas industriales.",
+      "Resolución de problemas reales: talleres enfocados en productividad, reducción de desperdicios y mejora de procesos."
+    ],
+    "ejes": [
+      "No informado en el brief"
+    ],
+    "habilidades": [
+      "Mejora continua y optimización de procesos",
+      "Control de calidad y estandarización",
+      "Automatización y uso de tecnologías de manufactura",
+      "Resolución de problemas y análisis de datos",
+      "Seguridad, mantenimiento y trabajo en equipo"
+    ],
+    "nombres_alternativos": [
+      "Técnico en Procesos de Manufactura e Industria 4.0"
+    ],
+    "palabras_clave": [
+      "Manufactura avanzada",
+      "Industria 4.0",
+      "Automatización",
+      "Producción",
+      "Calidad",
+      "Mejora continua",
+      "Mantenimiento",
+      "Productividad",
+      "Procesos industriales",
+      "Seguridad ocupacional"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Industrias manufactureras",
+    "interes_investigacion": "Interés y disposición de matrícula, perfil del estudiante potencial (edad, experiencia, nivel educativo, sector), áreas de mayor interés, modalidad y horarios, rango de precio, razones de elección, empresas y sectores que demandarían el perfil y percepción de la duración de un año.",
+    "competencia_declarada": "4 alternativa(s) mencionada(s) por el proponente; ver Oferta y plataformas.",
+    "nota_registro": "El brief también menciona el nombre «Técnico en Manufactura Moderna» al describir la investigación solicitada."
+  },
+  "audiencia_propuesta": {
+    "origen": "El brief no describe segmentos de audiencia; se definirán en la investigación de mercado.",
+    "segmentos": [],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Técnico en Manufactura Avanzada",
+      "archivo": "Brief CR Manufactura Avanzada.pdf",
+      "paginas": "1–4",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "cenfotec_cyo_web",
+      "titulo": "Universidad CENFOTEC · Técnico en Calidad y Operaciones 4.0 (página del programa)",
+      "url": "https://ucenfotec.ac.cr/tecnico-en-calidad-y-operaciones/",
+      "observacion": "Escuela de Ingeniería Industrial. «Precio del programa $2.193*», precios sujetos a cambios sin previo aviso; pago en 3 tractos sin intereses. 10 cursos, 9 créditos, 12 meses, virtual en vivo. Normas ISO 13485, FDA 21 CFR 820, GMP; SPC, IoT industrial, RFID, Machine Vision y Digital Twins.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "cenfotec_cyo_folleto",
+      "titulo": "Universidad CENFOTEC · Técnico en Calidad y Operaciones 4.0 (folleto, diciembre de 2025)",
+      "url": "https://ucenfotec.ac.cr/wp-content/uploads/2025/12/Tecnico-en-Calidad-y-Operaciones-4.0.pdf",
+      "observacion": "9 microcursos, 12 meses, virtual en vivo: IoT industrial y adquisición de datos, manufactura regulada, gestión de riesgos, integridad de datos, SPC y capacidad, trazabilidad digital, validaciones IQ/OQ/PQ, analítica operativa y proyecto integrador. Requisito: título de tercer ciclo. Sin precio en el folleto.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "cenfotec_precios",
+      "titulo": "Universidad CENFOTEC · Precios",
+      "url": "https://ucenfotec.ac.cr/precios/",
+      "observacion": "Lista oficial: «Técnico en Calidad y Operaciones 4.0 USD $ 2 193» y «Técnico en Ingeniería Robótica CRC ₡ 3 774 720». «Precios vigentes, sujetos a cambios sin previo aviso». No indica IVA para estos dos programas (sí añade «+2% IVA» en otros).",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "cenfotec_robotica",
+      "titulo": "Universidad CENFOTEC · Técnico en Ingeniería Robótica (folleto, octubre de 2025)",
+      "url": "https://ucenfotec.ac.cr/wp-content/uploads/2025/10/Tecnico-en-Ingenieria-Robotica-V1.pdf",
+      "observacion": "18 cursos, 61 créditos, 2 años (6 cuatrimestres), modalidad híbrida. Electrónica y control, programación de robots, prototipado 3D y manufactura aditiva, IoT y sistemas ciberfísicos, operación y mantenimiento de sistemas robóticos. El tarifario detallado (Plan-de-Estudios-y-Tarifario-Tecnico-en-Ingenieria-Robotica.pdf) devolvió 404.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "tec_catalogo",
+      "titulo": "TEC · FUNDATEC · Catálogo de técnicos e idiomas 2026",
+      "url": "https://www.tec.ac.cr/sites/default/files/2026-02/catalogo-tecnicos-e-idiomas-fundatec-2026-1.pdf",
+      "observacion": "Técnico en Supervisión de Producción: mensual, 312 horas, virtual o presencial, 12 cursos y proyecto. Técnico 3 en Calidad: bimestral, 2 376 horas, virtual o presencial (Seis Sigma, análisis de datos, gráficos de control, sistemas de medición, técnicas para la mejora). Técnico en Electromecánica: bimestral, 594 horas, mixto en Cartago (neumática, principios de automatización, PLC). Ninguno publica precio.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "tec_supervision",
+      "titulo": "TEC · Técnico en Supervisión de Producción",
+      "url": "https://www.tec.ac.cr/programas-academicos/tecnico-supervision-produccion",
+      "observacion": "«Más de 25 años de experiencia» formando supervisores en más de 150 empresas de Costa Rica. Título al finalizar 12 cursos y proyecto de graduación. Dirigido a jefes de producción, supervisores y líderes de procesos. No publica monto; la matrícula remite a tienda.fundatec.ac.cr/supervisiondeproduccion, que falló por error de certificado.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "tec_supervision_matricula",
+      "titulo": "TEC · Técnico en Supervisión de Producción · Matrícula",
+      "url": "https://www.tec.ac.cr/tecnico-supervision-produccion/matricula",
+      "observacion": "Modalidad virtual; inicio de lecciones la semana del 22 de febrero de 2027. Requisito: noveno año aprobado o bachillerato. Sin costo publicado.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "tec_calidad",
+      "titulo": "TEC · Técnico en Calidad",
+      "url": "https://www.tec.ac.cr/tecnico-calidad",
+      "observacion": "Alineado al Técnico 3 en Gestión de Calidad del Marco Nacional de Cualificaciones (aprobación CONARE de mayo de 2024), 2 376 horas; ofrecido desde septiembre de 2017. Matrícula en tienda.fundatec.ac.cr/calidad, que falló por error de certificado. Sin costo publicado.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "fidelitas_supervision",
+      "titulo": "Universidad Fidélitas · Técnico en Supervisión de la Producción (folleto de educación continua)",
+      "url": "https://cdn.ufidelitas.ac.cr/wp-content/uploads/2025/07/14150815/Supervision-de-la-Produccion.pdf",
+      "observacion": "12 meses, 12 módulos de un mes, en línea sincrónica, teórico-práctico: estadística, tiempos y métodos, costos, metrología, control estadístico de proceso, control de la producción, liderazgo. Becas disponibles; sin precio.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "ipa_dispositivos",
+      "titulo": "Delfino · IPA lanza nueva carrera técnica en Manufactura de Dispositivos Médicos (11/06/2025)",
+      "url": "https://delfino.cr/2025/06/ipa-lanza-nueva-carrera-tecnica-en-manufactura-de-dispositivos-medicos",
+      "observacion": "Instituto Parauniversitario ASEMECO: «Manufactura y Excelencia de Dispositivos Médicos», año y medio, virtual y presencial; GMP, regulación, esterilización, Lean y Six Sigma; prácticas supervisadas en la industria. Sin precio. Nota de prensa, no página oficial.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "ina_cuarto_limpio",
+      "titulo": "Delfino · INA inaugura su primer cuarto limpio para capacitar en industria médica (29/01/2025)",
+      "url": "https://delfino.cr/2025/01/ina-inaugura-su-primer-cuarto-limpio-para-capacitar-a-personas-en-industria-medica",
+      "observacion": "Cuarto limpio didáctico en San Ramón (₡45 millones), capacidad para unas 350 personas por año. Cursos: buenas prácticas de manufactura en dispositivos médicos, competencias actitudinales, motricidad fina, supervisión de producción e inspector de calidad. Sin horas ni costo. La ficha del programa «Operador de Procesos Productivos» del INA en dual.mep.go.cr no respondió (dominio no resuelto).",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "ulatina_semiconductores",
+      "titulo": "Delfino · Abren convocatoria para 25 becas en certificación técnica de manufactura avanzada de semiconductores (13/04/2026)",
+      "url": "https://www.delfino.cr/2026/04/abren-convocatoria-para-25-becas-en-certificacion-tecnica-de-manufactura-avanzada-de-semiconductores",
+      "observacion": "ULatina y Fundación CRUSA. 8 módulos: inglés, habilidades socioemocionales, principios de manufactura, estadística, electricidad y electrónica, fabricación, empaque, ensamble y pruebas de semiconductores. Dirigida a quienes estén dispuestos a aprender en entornos virtuales; microcredenciales Credly. Sin horas ni precio.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "ulatina_portafolio",
+      "titulo": "Delfino · ULatina fortalece su centro de innovación con certificaciones para manufactura avanzada, dispositivos médicos y semiconductores (10/12/2025)",
+      "url": "https://delfino.cr/2025/12/ulatina-fortalece-su-centro-de-innovacion-con-certificaciones-clave-para-los-sectores-de-manufactura-avanzada-dispositivos-medicos-semiconductores-y-tecnologia",
+      "observacion": "Portafolio del Innovation & Technological Development Hub by ULATINA: certificaciones en manufactura avanzada para la industria y semiconductores y en manufactura de dispositivos médicos. Cita la necesidad de personal formado en Lean Manufacturing, control estadístico de procesos y procedimientos de cuarto limpio. Sin modalidad, horas ni precio.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "utn_procesos_calidad",
+      "titulo": "UTN · Plan de estudios Ingeniería en Procesos y Calidad 2025 (salida de Diplomado)",
+      "url": "https://utn.ac.cr/sites/default/files/carreras/field_plan_estudios_actual/Diplomado%20en%20Control%20de%20Calidad%202025.pdf",
+      "observacion": "Plan L06 con salida de Diplomado: gestión de calidad I–III, control estadístico de calidad I–II, metrología industrial, ingeniería del trabajo y factores humanos, gestión de procesos. Carrera universitaria por niveles; sin precio en el documento.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_ssp",
+      "titulo": "Coursera · Kennesaw State University · Six Sigma Principles",
+      "url": "https://www.coursera.org/learn/six-sigma-principles2",
+      "observacion": "61 511 already enrolled; principiante; 1 semana a 10 horas por semana.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_ss_dm",
+      "titulo": "Coursera · Kennesaw State University · Six Sigma Tools for Define and Measure",
+      "url": "https://www.coursera.org/learn/six-sigma-tools-define-measure",
+      "observacion": "76 321 already enrolled; principiante; 7 horas.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_dmd",
+      "titulo": "Coursera · University at Buffalo · Digital Manufacturing & Design",
+      "url": "https://www.coursera.org/learn/digital-manufacturing-design",
+      "observacion": "67 379 already enrolled; principiante; 1 semana a 10 horas por semana; inscripción gratuita, certificado de pago o vía Coursera Plus (promoción de USD 143 al año).",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_iiot",
+      "titulo": "Coursera · University of Colorado Boulder · Industrial IoT Markets and Security",
+      "url": "https://www.coursera.org/learn/industrial-iot-markets-security",
+      "observacion": "39 257 already enrolled; intermedio; 1 semana a 10 horas por semana.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_i40_plm",
+      "titulo": "Coursera · L&T EduTech · Industry 4.0: PLM, Value Chain, and Smart Factory",
+      "url": "https://www.coursera.org/learn/industry-4-plm-value-chain-and-smart-factory",
+      "observacion": "5 808 already enrolled; intermedio; 8 horas.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_dm_intro",
+      "titulo": "Coursera · L&T EduTech · Digital Manufacturing: Introduction and Smart Design",
+      "url": "https://www.coursera.org/learn/digital-technology-and-smart-design-for-manufacturing",
+      "observacion": "4 796 already enrolled; intermedio; 8 horas.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_lean",
+      "titulo": "Coursera · Simplilearn · Lean Management Course",
+      "url": "https://www.coursera.org/learn/lean-management-course",
+      "observacion": "4 512 already enrolled; principiante; 2 semanas a 10 horas por semana.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "coursera_lss_intro",
+      "titulo": "Coursera · SkillUp · Intro to Lean Six Sigma and Project Identification Methods",
+      "url": "https://www.coursera.org/learn/introduction-to-lean-six-sigma-and-project-identification-methods",
+      "observacion": "4 010 already enrolled; principiante; 7 horas.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_busqueda",
+      "titulo": "LinkedIn · Búsqueda pública «manufacturing technician» en Costa Rica",
+      "url": "https://cr.linkedin.com/jobs/search?keywords=manufacturing%20technician&location=Costa%20Rica",
+      "observacion": "El 2026-11-24 la vista pública mostraba 60 de 485 resultados (el resto requiere iniciar sesión), dominados por empresas de dispositivos médicos en zonas francas de Alajuela, Heredia y Cartago: Medtronic, Johnson & Johnson MedTech, Heraeus Medevio, Coloplast, Abbott, Philips, Penumbra, Viant, Zimmer Biomet, Smith+Nephew. Los resultados incluyen duplicados y puestos de operario; no es un conteo de vacantes.",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_terumo",
+      "titulo": "LinkedIn · Terumo Neuro · Manufacturing Technician",
+      "url": "https://cr.linkedin.com/jobs/view/manufacturing-technician-at-terumo-neuro-4493256437",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_jnj",
+      "titulo": "LinkedIn · Johnson & Johnson · Manufacturing Process Improvement Technician",
+      "url": "https://cr.linkedin.com/jobs/view/manufacturing-process-improvement-technician-at-johnson-johnson-4491541665",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_viant",
+      "titulo": "LinkedIn · Viant Medical · Automation Eng/Production Technician 2",
+      "url": "https://cr.linkedin.com/jobs/view/automation-eng-production-technician-2-4x3-dom-mierc-dom-mart-de-6-00am-a-6-00pm-at-viant-medical-4493952136",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_philips",
+      "titulo": "LinkedIn · Philips · Molding Process Technician I",
+      "url": "https://cr.linkedin.com/jobs/view/molding-process-technician-i-at-philips-4462974842",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_zimmer",
+      "titulo": "LinkedIn · Zimmer Biomet · Maintenance Sr Technician",
+      "url": "https://cr.linkedin.com/jobs/view/maintenance-sr-technician-at-zimmer-biomet-4469723054",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_heraeus",
+      "titulo": "LinkedIn · Heraeus Medevio · Manufacturing Engineering Technician",
+      "url": "https://cr.linkedin.com/jobs/view/manufacturing-engineering-technician-at-heraeus-medevio-4446105957",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "li_yara",
+      "titulo": "LinkedIn · Yara International · Production Formulator (Diplomado en Procesos Industriales o formación técnica)",
+      "url": "https://cr.linkedin.com/jobs/view/production-formulator-associate-degree-in-industrial-processes-or-technical-diploma-at-yara-international-4466133082",
+      "fecha": "2026-11-24"
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-11-06",
+      "observacion": "Grupo 939, indicador 94949. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-11-06",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Calidad y Operaciones 4.0",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": 2193,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; precio total en la página del programa y en la lista oficial de precios, sujeto a cambios sin previo aviso",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "cenfotec_cyo_web",
+      "nota": "Coincide con el precio declarado por el proponente (US$2 193). Virtual en vivo, 12 meses; la página indica 10 cursos y 9 créditos y el folleto, 9 microcursos. Enfocado en dispositivos médicos, semiconductores y manufactura avanzada: normas ISO 13485 y FDA, SPC, validaciones, IoT industrial, Machine Vision y Digital Twins. No menciona Lean, mantenimiento ni seguridad ocupacional, y no es presencial. No indica si el monto incluye IVA.",
+      "etiqueta_precio": "CENFOTEC Calidad y Operaciones 4.0"
+    },
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Ingeniería Robótica",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": 3774720,
+      "precio_verificado": true,
+      "estado": "Precio total en la lista oficial de precios, sujeto a cambios; tarifario detallado no disponible (404)",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "cenfotec_precios",
+      "nota": "Coincide con el monto declarado por el proponente (₡3 774 720). Dura 2 años (6 cuatrimestres, 18 cursos, 61 créditos), el doble que la propuesta, y se centra en programación y operación de robots, electrónica, prototipado 3D e IoT; incluye mantenimiento de sistemas robóticos. Competidor indirecto: comparte automatización pero no el eje de calidad y productividad. No indica si el monto incluye IVA.",
+      "etiqueta_precio": "CENFOTEC Ingeniería Robótica"
+    },
+    {
+      "institucion": "TEC · FUNDATEC (Escuela de Ingeniería en Producción Industrial)",
+      "programa": "Técnico en Supervisión de Producción",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 312,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; próxima cohorte virtual la semana del 22 de febrero de 2027; monto no publicado",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "tec_supervision",
+      "nota": "El catálogo 2026 lo presenta como virtual o presencial, mensual, 312 horas, 12 cursos y proyecto (liderazgo, estadística, costos de producción, estudio del trabajo, metrología, control y administración de la calidad, programación y control de la producción); la página de matrícula indica modalidad virtual. Más de 25 años de trayectoria. El proponente cita ₡1 155 732 aproximado, pero la tienda de FUNDATEC falló por error de certificado y no se pudo verificar.",
+      "etiqueta_precio": "TEC Supervisión de Producción"
+    },
+    {
+      "institucion": "TEC · FUNDATEC (Escuela de Ingeniería en Producción Industrial)",
+      "programa": "Técnico 3 en Calidad",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": 2376,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada en catálogo 2026; formulario de información cerrado; monto no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "tec_calidad",
+      "nota": "Virtual o presencial, bimestral, siete bimestres con Seis Sigma, costos de calidad, análisis de datos, herramientas para solución de problemas, sistemas de medición, gráficos de control, normalización y técnicas para la mejora. Alineado al Nivel 3 del Marco Nacional de Cualificaciones; las 2 376 horas parecen incluir trabajo total, no solo horas de clase. El proponente cita ₡1 215 000 aproximado; la tienda de FUNDATEC falló y no se pudo verificar.",
+      "etiqueta_precio": "TEC Técnico en Calidad"
+    },
+    {
+      "institucion": "TEC (Escuela de Ingeniería Electromecánica)",
+      "programa": "Técnico en Electromecánica",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": 594,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada en catálogo 2026; monto no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "tec_catalogo",
+      "nota": "Mixto (presencial y virtual) en Cartago, bimestral: corriente directa y alterna, bombas, aire comprimido, motores, neumática, principios de automatización, calderas y PLC, con talleres de mecánica de banco y soldadura. Cubre el eje de mantenimiento y automatización, no el de calidad y productividad.",
+      "etiqueta_precio": "TEC Electromecánica"
+    },
+    {
+      "institucion": "Universidad Fidélitas",
+      "programa": "Técnico en Supervisión de la Producción",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Folleto publicado (2025); precio no publicado; becas disponibles",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "fidelitas_supervision",
+      "nota": "12 meses (12 módulos de un mes), en línea sincrónica: matemáticas, Excel, estadística, tiempos y métodos, costos, almacenamiento, metrología, control estadístico de proceso, control de la producción, recurso humano y liderazgo. Misma duración que la propuesta, pero virtual y sin automatización.",
+      "etiqueta_precio": "Fidélitas Supervisión Producción"
+    },
+    {
+      "institucion": "Instituto Parauniversitario ASEMECO (IPA)",
+      "programa": "Manufactura y Excelencia de Dispositivos Médicos",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Lanzamiento anunciado en junio de 2025; precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "ipa_dispositivos",
+      "nota": "Año y medio, virtual y presencial, con prácticas supervisadas en la industria: GMP, regulación de dispositivos médicos, esterilización, Lean y Six Sigma. Evidencia de nota de prensa; no se consultó la página oficial del IPA.",
+      "etiqueta_precio": "IPA Dispositivos Médicos"
+    },
+    {
+      "institucion": "INA",
+      "programa": "Cursos de manufactura médica en cuarto limpio didáctico (BPM, supervisión de producción, inspector de calidad)",
+      "tipo": "Institucional",
+      "modalidad": "Presencial",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Cuarto limpio inaugurado en enero de 2025 en San Ramón; costo no publicado en la fuente",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "ina_cuarto_limpio",
+      "nota": "Cursos cortos presenciales en un cuarto limpio que replica condiciones de la industria médica, con capacidad para unas 350 personas por año. Es la alternativa presencial pública más cercana; no se verificaron horas ni costo. La ficha del programa INA «Operador de Procesos Productivos» (683 horas según resultados de búsqueda) no pudo abrirse.",
+      "etiqueta_precio": "INA cuarto limpio"
+    },
+    {
+      "institucion": "Universidad Latina de Costa Rica (ULatina)",
+      "programa": "Certificación técnica especializada en manufactura avanzada de semiconductores",
+      "tipo": "Oferta propia",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Convocatoria de 25 becas con CRUSA (abril de 2026); precio no publicado",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "ulatina_semiconductores",
+      "nota": "8 módulos: inglés, habilidades socioemocionales, principios de manufactura, estadística, electricidad y electrónica, y fabricación, empaque, ensamble y pruebas de semiconductores; microcredenciales Credly. Forma parte del portafolio del Innovation & Technological Development Hub, que también anuncia una certificación en manufactura de dispositivos médicos. Ruta complementaria o de entrada al técnico, no competidor.",
+      "etiqueta_precio": "ULatina Cert. Semiconductores"
+    },
+    {
+      "institucion": "Universidad Técnica Nacional (UTN)",
+      "programa": "Ingeniería en Procesos y Calidad (salida de Diplomado)",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Plan de estudios 2025 publicado; precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "utn_procesos_calidad",
+      "nota": "Carrera universitaria pública con salida de Diplomado: gestión de calidad, control estadístico, metrología industrial, ingeniería del trabajo y factores humanos, gestión de procesos. Otro nivel y más larga; relevante porque empleadores como Yara piden «Diplomado en Procesos Industriales».",
+      "etiqueta_precio": "UTN Procesos y Calidad"
+    },
+    {
+      "institucion": "Coursera (Kennesaw State University)",
+      "programa": "Six Sigma Principles",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 10,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Inscripción gratuita; certificado de pago o vía Coursera Plus (sin precio individual en la página)",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_ssp",
+      "nota": "Primer curso de la especialización Six Sigma Yellow Belt; 1 semana a 10 horas por semana. Sustituto de bajo costo para la parte de mejora continua, sin práctica en planta.",
+      "etiqueta_precio": "Coursera Six Sigma Principles"
+    },
+    {
+      "institucion": "Coursera (University at Buffalo)",
+      "programa": "Digital Manufacturing & Design",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 10,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Inscripción gratuita; certificado de pago o vía Coursera Plus (sin precio individual en la página)",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_dmd",
+      "nota": "Introducción a la manufactura digital e Industria 4.0; dos módulos de unas 5 horas. Complemento introductorio, no sustituto de un técnico con laboratorio.",
+      "etiqueta_precio": "Coursera Digital Manufacturing"
+    },
+    {
+      "institucion": "Tecnológico de Costa Rica (TEC)",
+      "programa": "Técnico en Supervisión de Producción",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": 1155732,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Programa completo aproximado, según el brief.",
+      "precio_verificado": false
+    },
+    {
+      "institucion": "Tecnológico de Costa Rica (TEC)",
+      "programa": "Técnico en Calidad",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": 1215000,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Programa completo aproximado, según el brief.",
+      "precio_verificado": false
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "Los cursos introductorios de Six Sigma y manufactura digital suman decenas de miles de inscritos en Coursera (76 321 en Six Sigma Tools for Define and Measure, 67 379 en Digital Manufacturing & Design y 61 511 en Six Sigma Principles), lo que confirma interés internacional en los temas centrales. Los cursos de Industria 4.0 y Lean de proveedores corporativos muestran volúmenes menores (4 000–6 000). Son cifras acumuladas internacionales; no hay datos locales de interés, perfil, horario preferido ni disposición de pago, que son justamente las preguntas del proponente. Por eso el puntaje queda intermedio bajo.",
+      "fuentes": [
+        "coursera_ss_dm",
+        "coursera_dmd",
+        "coursera_ssp",
+        "coursera_iiot",
+        "coursera_i40_plm",
+        "coursera_lean"
+      ],
+      "nivel_evidencia": "Indirecta: inscripciones internacionales acumuladas, sin evidencia local"
+    },
+    "empleabilidad": {
+      "puntaje": 68,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "La búsqueda pública de LinkedIn mostraba 485 resultados para «manufacturing technician» en Costa Rica, concentrados en dispositivos médicos en zonas francas, y las siete publicaciones revisadas estaban abiertas y piden lo que propone el programa: mejora continua (Lean, Six Sigma, OEE), control de calidad, mantenimiento, automatización y seguridad EHS. El límite es la experiencia: cinco piden entre 2 y 5 años, Viant exige técnico en mecatrónica o electromecánica con PLC y robótica, y varias piden inglés y GMP, que el brief no menciona. Philips (0–2 años, noveno año) y Yara (diplomado o formación técnica, sin años mínimos) muestran puertas de entrada reales. Es una inserción plausible como técnico junior u operario técnico, con ascenso posterior.",
+      "fuentes": [
+        "li_busqueda",
+        "li_terumo",
+        "li_jnj",
+        "li_viant",
+        "li_philips",
+        "li_zimmer",
+        "li_heraeus",
+        "li_yara"
+      ],
+      "nivel_evidencia": "Muestra exploratoria de 7 publicaciones de LinkedIn más el recuento del buscador público"
+    },
+    "competencia": {
+      "puntaje": 50,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "El TEC tiene más de 25 años con el Técnico en Supervisión de Producción (312 horas) y un Técnico 3 en Calidad con Seis Sigma, ambos virtuales o presenciales; CENFOTEC ofrece el Técnico en Calidad y Operaciones 4.0, el competidor más directo en Industria 4.0, aunque virtual; Fidélitas tiene un técnico de supervisión de 12 meses en línea, el IPA uno de dispositivos médicos con Lean y prácticas, y el INA cursos presenciales en un cuarto limpio. Ninguna alternativa verificada combina mejora continua, calidad, mantenimiento, automatización y seguridad en un técnico 100 % presencial de un año con laboratorio de Industria 4.0 y visitas a plantas, lo que deja espacio de diferenciación. Pero la oferta es densa, varias alternativas tienen marca consolidada y el INA es público, por lo que el puntaje es mixto.",
+      "fuentes": [
+        "tec_catalogo",
+        "tec_supervision",
+        "tec_calidad",
+        "cenfotec_cyo_web",
+        "cenfotec_cyo_folleto",
+        "fidelitas_supervision",
+        "ipa_dispositivos",
+        "ina_cuarto_limpio",
+        "cenfotec_robotica"
+      ],
+      "nivel_evidencia": "Páginas, catálogos y folletos oficiales más dos notas de prensa; precios disponibles solo para CENFOTEC"
+    },
+    "precio": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "Solo hay dos referencias verificadas, ambas de CENFOTEC: Técnico en Calidad y Operaciones 4.0 a USD 2 193 (12 meses, virtual) y Técnico en Ingeniería Robótica a ₡3 774 720 (2 años, híbrido). Los montos del TEC que cita el proponente (₡1 155 732 y ₡1 215 000) no se pudieron verificar porque la tienda de FUNDATEC falló, y Fidélitas, IPA e INA no publican precio. Un técnico presencial de un año con laboratorio cuesta más de operar que uno virtual, pero tendría que competir con la referencia de USD 2 193 y con el TEC, de menor costo aparente. El brief no declara precio y la disposición de pago local no está medida, por lo que el puntaje queda intermedio.",
+      "fuentes": [
+        "cenfotec_cyo_web",
+        "cenfotec_precios",
+        "tec_supervision",
+        "tec_calidad"
+      ],
+      "nivel_evidencia": "Dos referencias de precio verificadas; sin precio propuesto ni datos de disposición de pago"
+    },
+    "sector": {
+      "puntaje": 60,
+      "estado": "Juicio analítico preliminar",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "IMAE sectorial BCCR · juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "El brief declara únicamente «Industrias manufactureras»; el programa forma técnicos de producción, calidad y mantenimiento para ese sector. El IMAE de «Industria manufacturera» (base 2022 = 100) promedia 118.4 en enero–agosto de 2026 frente a 120.8 en el mismo periodo de 2025 (-1.9 %): contracción interanual del agregado. Es un agregado amplio, no ventas ni demanda del programa. Se asigna 60 con el mismo criterio de las fichas ya investigadas de Costa Rica (75 con crecimiento sostenido; 60, banda intermedia, cuando el agregado vinculado al núcleo del programa se contrae), sin convertir el índice en puntaje por regla de tres."
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Validar interés con una encuesta o sesión informativa entre operarios de zonas francas, egresados de colegios técnicos y estudiantes de Ingeniería de ULatina, midiendo horario preferido (nocturno o fin de semana, compatible con turnos 4x3), disposición a pagar y percepción de un año presencial."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Incluir GMP, documentación en entornos regulados y nociones de cuarto limpio, además de inglés técnico, porque aparecen en casi todas las publicaciones de dispositivos médicos. Orientar la salida a técnico junior de producción, calidad o mejora de procesos y buscar convenios de práctica con empresas de zonas francas para acortar el escalón de experiencia."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Comunicar la presencialidad, el laboratorio de Industria 4.0 y las visitas a plantas frente a CENFOTEC y el TEC. Confirmar por consulta directa los precios del TEC (FUNDATEC), Fidélitas e IPA y la oferta vigente del INA. Articular con las certificaciones del Innovation & Technological Development Hub de ULatina como ruta propia."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Usar como referencia el Técnico en Calidad y Operaciones 4.0 de CENFOTEC (USD 2 193, virtual) y justificar cualquier precio superior con laboratorio y práctica presencial. Ofrecer pago por cuatrimestre y explorar becas o patrocinio empresarial, como el esquema CRUSA–ULatina."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "El sector económico no se investigó aquí; se calcula con el IMAE del BCCR para la actividad declarada (industria manufacturera)."
+    }
+  ],
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · Six Sigma Tools for Define and Measure (Kennesaw State)",
+          "valor": 76321,
+          "fuente": "coursera_ss_dm"
+        },
+        {
+          "etiqueta": "Coursera · Digital Manufacturing & Design (U. at Buffalo)",
+          "valor": 67379,
+          "fuente": "coursera_dmd"
+        },
+        {
+          "etiqueta": "Coursera · Six Sigma Principles (Kennesaw State)",
+          "valor": 61511,
+          "fuente": "coursera_ssp"
+        },
+        {
+          "etiqueta": "Coursera · Industrial IoT Markets and Security (CU Boulder)",
+          "valor": 39257,
+          "fuente": "coursera_iiot"
+        },
+        {
+          "etiqueta": "Coursera · Industry 4.0: PLM, Value Chain and Smart Factory (L&T)",
+          "valor": 5808,
+          "fuente": "coursera_i40_plm"
+        },
+        {
+          "etiqueta": "Coursera · Digital Manufacturing: Intro and Smart Design (L&T)",
+          "valor": 4796,
+          "fuente": "coursera_dm_intro"
+        },
+        {
+          "etiqueta": "Coursera · Lean Management Course (Simplilearn)",
+          "valor": 4512,
+          "fuente": "coursera_lean"
+        },
+        {
+          "etiqueta": "Coursera · Intro to Lean Six Sigma (SkillUp)",
+          "valor": 4010,
+          "fuente": "coursera_lss_intro"
+        }
+      ],
+      "fuentes": [
+        "coursera_ss_dm",
+        "coursera_dmd",
+        "coursera_ssp",
+        "coursera_iiot",
+        "coursera_i40_plm",
+        "coursera_lean"
+      ],
+      "nota": "Cifras acumuladas internacionales publicadas en las páginas de Coursera el 2026-11-24; no son demanda local ni intención de pago en Costa Rica. No se obtuvieron datos de edX ni de Udemy, ni encuestas locales. El brief pide medir interés, perfil, horarios, precio y percepción de la duración de un año, pero no aporta datos; ninguna de esas preguntas puede responderse con evidencia web.",
+      "lectura": "Hay interés internacional sostenido en Six Sigma introductorio y en manufactura digital (más de 60 000 inscritos en cada uno de los tres cursos universitarios principales), mientras que los cursos de Industria 4.0 y Lean de proveedores corporativos rondan entre 4 000 y 6 000. El interés es por fundamentos de calidad y manufactura digital más que por tecnologías específicas.",
+      "fecha_consulta": "2026-11-24",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_terumo",
+          "identificador_linkedin": "4493256437",
+          "empresa": "Terumo Neuro",
+          "cargo": "Manufacturing Technician (Technician II, Manufacturing)",
+          "ciudad": "Alajuela",
+          "pais": "Costa Rica",
+          "area": "Técnico de manufactura",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 3 días; 131 solicitudes; botón de solicitar visible",
+          "habilidades": [
+            "hab_mantenimiento",
+            "hab_problemas",
+            "hab_gmp",
+            "hab_equipo",
+            "hab_cad"
+          ],
+          "resumen": "Opera equipos de proceso, apoya validaciones, repara fallas comunes de equipo y capacita operarios en un fabricante de dispositivos médicos. Pide diplomado o bachillerato de secundaria y al menos 3 años de experiencia; valora AutoCAD o SolidWorks.",
+          "fuente": "li_terumo"
+        },
+        {
+          "id": "li_jnj",
+          "identificador_linkedin": "4491541665",
+          "empresa": "Johnson & Johnson",
+          "cargo": "Manufacturing Process Improvement Technician",
+          "ciudad": "Grecia, Alajuela",
+          "pais": "Costa Rica",
+          "area": "Mejora de procesos de manufactura",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 semana; más de 200 solicitudes; botón de solicitar visible",
+          "habilidades": [
+            "hab_problemas",
+            "hab_calidad",
+            "hab_datos",
+            "hab_mejora",
+            "hab_gmp",
+            "hab_seguridad",
+            "hab_equipo",
+            "hab_ingles"
+          ],
+          "resumen": "Resuelve problemas de manufactura, analiza producto no conforme y propone acciones correctivas, registra datos de pruebas y auditorías y sigue GMP y EHS en cuarto limpio. Pide certificado técnico y de 2 a 4 años de experiencia; valora inglés, análisis de datos y optimización de procesos.",
+          "fuente": "li_jnj"
+        },
+        {
+          "id": "li_viant",
+          "identificador_linkedin": "4493952136",
+          "empresa": "Viant Medical",
+          "cargo": "Automation Eng/Production Technician 2 (4x3, 6:00 a. m.–6:00 p. m.)",
+          "ciudad": "Heredia (Zona Franca Metropolitana)",
+          "pais": "Costa Rica",
+          "area": "Automatización y producción",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 15 horas; menos de 25 solicitudes; botón de solicitar visible",
+          "habilidades": [
+            "hab_automatizacion",
+            "hab_mantenimiento",
+            "hab_mejora",
+            "hab_problemas",
+            "hab_gmp",
+            "hab_seguridad",
+            "hab_cad",
+            "hab_ingles",
+            "hab_equipo"
+          ],
+          "resumen": "Instala y mantiene sistemas automatizados (PLC/HMI, robots, visión, neumática), mejora OEE y coordina mantenimiento preventivo bajo EHS y GMP. Pide técnico en mecatrónica, electrónica o electromecánica, 3–4 años en manufactura y automatización e inglés técnico intermedio.",
+          "fuente": "li_viant"
+        },
+        {
+          "id": "li_philips",
+          "identificador_linkedin": "4462974842",
+          "empresa": "Philips",
+          "cargo": "Molding Process Technician I",
+          "ciudad": "Alajuela",
+          "pais": "Costa Rica",
+          "area": "Procesos de moldeo",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 semana; más de 200 solicitudes; botón de solicitar visible",
+          "habilidades": [
+            "hab_maquinado",
+            "hab_mejora",
+            "hab_calidad",
+            "hab_mantenimiento",
+            "hab_problemas",
+            "hab_seguridad",
+            "hab_equipo",
+            "hab_ingles"
+          ],
+          "resumen": "Opera y mantiene máquinas de inyección, determina causas de defectos y aplica herramientas Lean para mejorar procesos, siguiendo prácticas EHS. Puesto de entrada: noveno año como mínimo, 0–2 años de experiencia; valora certificación en procesos plásticos, inglés básico y Excel.",
+          "fuente": "li_philips"
+        },
+        {
+          "id": "li_zimmer",
+          "identificador_linkedin": "4469723054",
+          "empresa": "Zimmer Biomet",
+          "cargo": "Maintenance Sr Technician",
+          "ciudad": "Grecia, Alajuela",
+          "pais": "Costa Rica",
+          "area": "Mantenimiento",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 2 semanas; más de 200 solicitudes; botón de solicitar visible",
+          "habilidades": [
+            "hab_mantenimiento",
+            "hab_maquinado",
+            "hab_problemas",
+            "hab_gmp",
+            "hab_equipo",
+            "hab_ingles"
+          ],
+          "resumen": "Repara y da mantenimiento preventivo a máquinas CNC, hidráulica y neumática, documenta según el sistema de calidad en áreas de ambiente controlado y capacita operarios. Pide formación técnica eléctrica o mecánica, al menos 5 años de experiencia e inglés escrito y oral.",
+          "fuente": "li_zimmer"
+        },
+        {
+          "id": "li_heraeus",
+          "identificador_linkedin": "4446105957",
+          "empresa": "Heraeus Medevio",
+          "cargo": "Manufacturing Engineering Technician",
+          "ciudad": "Cartago",
+          "pais": "Costa Rica",
+          "area": "Ingeniería de manufactura",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 semana; más de 200 solicitudes; botón de solicitar visible",
+          "habilidades": [
+            "hab_maquinado",
+            "hab_mejora",
+            "hab_calidad",
+            "hab_datos",
+            "hab_mantenimiento",
+            "hab_gmp",
+            "hab_cad",
+            "hab_equipo",
+            "hab_ingles"
+          ],
+          "resumen": "Prepara y resuelve fallas de máquinas CNC, analiza datos para prevenir problemas de calidad y aplica Six Sigma DMAIC, Lean, SPC y SMED; apoya validaciones y revisa mantenimiento preventivo. Pide colegio técnico o grado técnico y 2–3 años en dispositivos médicos; inglés básico deseable.",
+          "fuente": "li_heraeus"
+        },
+        {
+          "id": "li_yara",
+          "identificador_linkedin": "4466133082",
+          "empresa": "Yara International",
+          "cargo": "Production Formulator (Diplomado en Procesos Industriales o formación técnica)",
+          "ciudad": "Barranca, Puntarenas",
+          "pais": "Costa Rica",
+          "area": "Producción",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 5 días; 100 solicitudes; botón de solicitar visible",
+          "habilidades": [
+            "hab_calidad",
+            "hab_seguridad",
+            "hab_datos"
+          ],
+          "resumen": "Dosifica y mezcla materias primas según fórmulas, hace controles de calidad en proceso y mantiene la trazabilidad de lotes bajo estándares HESQ. Pide diplomado en procesos industriales o formación técnica afín y experiencia en producción u operación de planta, sin años mínimos.",
+          "fuente": "li_yara"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "hab_mejora",
+          "habilidad": "Mejora continua y optimización de procesos (Lean, Six Sigma, OEE)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona Lean, Six Sigma/DMAIC, SMED, OEE, reducción de costos o rendimiento, u optimización de procesos."
+        },
+        {
+          "id": "hab_calidad",
+          "habilidad": "Control de calidad e inspección (SPC, auditorías, no conformidades)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona controles de calidad en proceso, SPC, inspección, auditorías, CAPA o producto no conforme."
+        },
+        {
+          "id": "hab_automatizacion",
+          "habilidad": "Automatización y tecnologías de manufactura (PLC, robótica, visión)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona PLC/HMI, robots, sistemas de visión, redes industriales o equipos automatizados."
+        },
+        {
+          "id": "hab_problemas",
+          "habilidad": "Resolución de problemas y análisis de causa raíz",
+          "cobertura": "Explícita",
+          "criterio": "Menciona diagnóstico de fallas, causa raíz, troubleshooting o acciones correctivas."
+        },
+        {
+          "id": "hab_datos",
+          "habilidad": "Registro y análisis de datos de proceso",
+          "cobertura": "Explícita",
+          "criterio": "Menciona registrar resultados, trazabilidad, análisis de datos o Excel para datos de proceso."
+        },
+        {
+          "id": "hab_seguridad",
+          "habilidad": "Seguridad ocupacional y ambiente (EHS/HESQ)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona EHS, HESQ, equipo de protección personal o prácticas de seguridad."
+        },
+        {
+          "id": "hab_mantenimiento",
+          "habilidad": "Mantenimiento preventivo y correctivo de equipos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona reparar, ajustar o dar mantenimiento a máquinas, órdenes de trabajo o rutinas de mantenimiento preventivo."
+        },
+        {
+          "id": "hab_equipo",
+          "habilidad": "Trabajo en equipo y capacitación de operarios",
+          "cobertura": "Explícita",
+          "criterio": "Menciona trabajo con ingeniería, calidad y supervisión, o entrenar a operarios y técnicos."
+        },
+        {
+          "id": "hab_gmp",
+          "habilidad": "Buenas prácticas de manufactura, documentación y validaciones en entornos regulados",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona GMP/GDP, FDA/ISO, cuarto limpio o ambiente controlado, validaciones o documentación del sistema de calidad."
+        },
+        {
+          "id": "hab_maquinado",
+          "habilidad": "Operación de procesos específicos (CNC, moldeo por inyección)",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona máquinas CNC, tornos, fresadoras, EDM o moldeo por inyección."
+        },
+        {
+          "id": "hab_cad",
+          "habilidad": "Lectura de planos y CAD (AutoCAD, SolidWorks)",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona leer planos o diagramas, o usar AutoCAD o SolidWorks."
+        },
+        {
+          "id": "hab_ingles",
+          "habilidad": "Inglés técnico",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide o valora inglés (básico, intermedio o comunicación técnica)."
+        }
+      ],
+      "fuentes": [
+        "li_busqueda",
+        "li_terumo",
+        "li_jnj",
+        "li_viant",
+        "li_philips",
+        "li_zimmer",
+        "li_heraeus",
+        "li_yara"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Muestra exploratoria de 7 publicaciones públicas de LinkedIn Jobs en Costa Rica de empleadores distintos, tomadas el 2026-11-24 de la búsqueda pública «manufacturing technician» (60 de 485 resultados visibles sin sesión). Todas mostraban el botón de solicitar. Seis son de dispositivos médicos en zonas francas de Alajuela, Heredia y Cartago y una de manufactura química en Puntarenas. No es un conteo de vacantes: el listado incluye duplicados y muchos puestos de operario. Una segunda búsqueda («técnico de producción») fue bloqueada por LinkedIn (HTTP 429). Las publicaciones de Medtronic, Abbott, Boston Scientific, Intel y Hologic no se revisaron en detalle."
+      },
+      "habilidades": [
+        {
+          "id": "hab_equipo",
+          "habilidad": "Trabajo en equipo y capacitación de operarios",
+          "cobertura": "Explícita",
+          "criterio": "Menciona trabajo con ingeniería, calidad y supervisión, o entrenar a operarios y técnicos.",
+          "menciones": 6,
+          "muestra": 7,
+          "porcentaje": 85.71428571428571,
+          "fuentes": [
+            "li_terumo",
+            "li_jnj",
+            "li_viant",
+            "li_philips",
+            "li_zimmer",
+            "li_heraeus"
+          ]
+        },
+        {
+          "id": "hab_problemas",
+          "habilidad": "Resolución de problemas y análisis de causa raíz",
+          "cobertura": "Explícita",
+          "criterio": "Menciona diagnóstico de fallas, causa raíz, troubleshooting o acciones correctivas.",
+          "menciones": 5,
+          "muestra": 7,
+          "porcentaje": 71.42857142857143,
+          "fuentes": [
+            "li_terumo",
+            "li_jnj",
+            "li_viant",
+            "li_philips",
+            "li_zimmer"
+          ]
+        },
+        {
+          "id": "hab_mantenimiento",
+          "habilidad": "Mantenimiento preventivo y correctivo de equipos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona reparar, ajustar o dar mantenimiento a máquinas, órdenes de trabajo o rutinas de mantenimiento preventivo.",
+          "menciones": 5,
+          "muestra": 7,
+          "porcentaje": 71.42857142857143,
+          "fuentes": [
+            "li_terumo",
+            "li_viant",
+            "li_philips",
+            "li_zimmer",
+            "li_heraeus"
+          ]
+        },
+        {
+          "id": "hab_gmp",
+          "habilidad": "Buenas prácticas de manufactura, documentación y validaciones en entornos regulados",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona GMP/GDP, FDA/ISO, cuarto limpio o ambiente controlado, validaciones o documentación del sistema de calidad.",
+          "menciones": 5,
+          "muestra": 7,
+          "porcentaje": 71.42857142857143,
+          "fuentes": [
+            "li_terumo",
+            "li_jnj",
+            "li_viant",
+            "li_zimmer",
+            "li_heraeus"
+          ]
+        },
+        {
+          "id": "hab_ingles",
+          "habilidad": "Inglés técnico",
+          "cobertura": "Por contrastar",
+          "criterio": "Pide o valora inglés (básico, intermedio o comunicación técnica).",
+          "menciones": 5,
+          "muestra": 7,
+          "porcentaje": 71.42857142857143,
+          "fuentes": [
+            "li_jnj",
+            "li_viant",
+            "li_philips",
+            "li_zimmer",
+            "li_heraeus"
+          ]
+        },
+        {
+          "id": "hab_mejora",
+          "habilidad": "Mejora continua y optimización de procesos (Lean, Six Sigma, OEE)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona Lean, Six Sigma/DMAIC, SMED, OEE, reducción de costos o rendimiento, u optimización de procesos.",
+          "menciones": 4,
+          "muestra": 7,
+          "porcentaje": 57.142857142857146,
+          "fuentes": [
+            "li_jnj",
+            "li_viant",
+            "li_philips",
+            "li_heraeus"
+          ]
+        },
+        {
+          "id": "hab_calidad",
+          "habilidad": "Control de calidad e inspección (SPC, auditorías, no conformidades)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona controles de calidad en proceso, SPC, inspección, auditorías, CAPA o producto no conforme.",
+          "menciones": 4,
+          "muestra": 7,
+          "porcentaje": 57.142857142857146,
+          "fuentes": [
+            "li_jnj",
+            "li_philips",
+            "li_heraeus",
+            "li_yara"
+          ]
+        },
+        {
+          "id": "hab_seguridad",
+          "habilidad": "Seguridad ocupacional y ambiente (EHS/HESQ)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona EHS, HESQ, equipo de protección personal o prácticas de seguridad.",
+          "menciones": 4,
+          "muestra": 7,
+          "porcentaje": 57.142857142857146,
+          "fuentes": [
+            "li_jnj",
+            "li_viant",
+            "li_philips",
+            "li_yara"
+          ]
+        },
+        {
+          "id": "hab_datos",
+          "habilidad": "Registro y análisis de datos de proceso",
+          "cobertura": "Explícita",
+          "criterio": "Menciona registrar resultados, trazabilidad, análisis de datos o Excel para datos de proceso.",
+          "menciones": 3,
+          "muestra": 7,
+          "porcentaje": 42.857142857142854,
+          "fuentes": [
+            "li_jnj",
+            "li_heraeus",
+            "li_yara"
+          ]
+        },
+        {
+          "id": "hab_maquinado",
+          "habilidad": "Operación de procesos específicos (CNC, moldeo por inyección)",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona máquinas CNC, tornos, fresadoras, EDM o moldeo por inyección.",
+          "menciones": 3,
+          "muestra": 7,
+          "porcentaje": 42.857142857142854,
+          "fuentes": [
+            "li_philips",
+            "li_zimmer",
+            "li_heraeus"
+          ]
+        },
+        {
+          "id": "hab_cad",
+          "habilidad": "Lectura de planos y CAD (AutoCAD, SolidWorks)",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona leer planos o diagramas, o usar AutoCAD o SolidWorks.",
+          "menciones": 3,
+          "muestra": 7,
+          "porcentaje": 42.857142857142854,
+          "fuentes": [
+            "li_terumo",
+            "li_viant",
+            "li_heraeus"
+          ]
+        },
+        {
+          "id": "hab_automatizacion",
+          "habilidad": "Automatización y tecnologías de manufactura (PLC, robótica, visión)",
+          "cobertura": "Explícita",
+          "criterio": "Menciona PLC/HMI, robots, sistemas de visión, redes industriales o equipos automatizados.",
+          "menciones": 1,
+          "muestra": 7,
+          "porcentaje": 14.285714285714286,
+          "fuentes": [
+            "li_viant"
+          ]
+        }
+      ],
+      "fecha_consulta": "2026-11-24",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada"
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "tec_catalogo",
+        "tec_supervision",
+        "tec_calidad",
+        "cenfotec_cyo_web",
+        "cenfotec_cyo_folleto",
+        "fidelitas_supervision",
+        "ipa_dispositivos",
+        "ina_cuarto_limpio",
+        "cenfotec_robotica"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-11-24",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "USD",
+      "fuentes": [
+        "cenfotec_cyo_web",
+        "cenfotec_precios",
+        "tec_supervision",
+        "tec_calidad"
+      ],
+      "nota": "Montos en moneda original y sin convertir. CENFOTEC publica USD 2 193 para el Técnico en Calidad y Operaciones 4.0 y ₡3 774 720 para el Técnico en Ingeniería Robótica en su lista oficial de precios, «sujetos a cambios sin previo aviso» y sin indicar IVA (la misma lista añade «+2% IVA» solo a algunos programas). Los montos del TEC citados por el proponente (₡1 155 732 y ₡1 215 000) no se verificaron porque la tienda de FUNDATEC falló por error de certificado. Coursera permite inscripción gratuita y cobra el certificado mediante Coursera Plus, sin precio individual en la página. Las demás ofertas no publican precio y figuran como nulas, no como cero.",
+      "fecha_consulta": "2026-11-24",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Industria manufacturera",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 101.67,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 106.77,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 112.88,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 87.64,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 110.54,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 106.98,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 98.31,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 103.57,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 104.51,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 114.16,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 117.35,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 110.76,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 103.15,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 111.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 114.37,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 102.94,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 117.58,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 107.06,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 108.79,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 101.74,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 113.34,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 120.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 124.17,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 120.37,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 105.7,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 122.2,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 129.48,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 110.52,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 124.76,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 124.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 133.81,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 115.32,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 121.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 133.43,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 131.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 122.74,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 109.02,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 119.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 133.38,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 105.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 123.22,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 124.77,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 121.35,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 110.21,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94949,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-11-06",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "tema1",
+        "etiqueta": "Mejora continua<br>y Lean",
+        "criterio": "Presencia explícita de mejora continua y lean en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema2",
+        "etiqueta": "Control<br>de calidad",
+        "criterio": "Presencia explícita de control de calidad en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema3",
+        "etiqueta": "Automatización<br>e Industria 4.0",
+        "criterio": "Presencia explícita de automatización e industria 4.0 en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema4",
+        "etiqueta": "Mantenimiento<br>de equipos",
+        "criterio": "Presencia explícita de mantenimiento de equipos en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema5",
+        "etiqueta": "Seguridad<br>ocupacional",
+        "criterio": "Presencia explícita de seguridad ocupacional en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema6",
+        "etiqueta": "Laboratorio y<br>práctica en planta",
+        "criterio": "Presencia explícita de laboratorio y práctica en planta en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "tema1": true,
+        "tema2": true,
+        "tema3": true,
+        "tema4": true,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    "ofertas": {
+      "cenfotec_cyo_web": {
+        "revisado": true,
+        "etiqueta": "CENFOTEC Calidad y Operaciones 4.0",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Coincide con el precio declarado por el proponente (US$2 193). Virtual en vivo, 12 meses; la página indica 10 cursos y 9 créditos y el folleto, 9 microcursos. Enfocado en dispositivos médicos, semiconductores y manufactura avanzada: normas ISO 13485 y FDA, SPC, validaciones, IoT industrial, Machine Vision y Digital Twins. No menciona Lean, mantenimiento ni seguridad ocupacional, y no es presencial. No indica si el monto incluye IVA.",
+        "contenidos": {
+          "tema1": null,
+          "tema2": true,
+          "tema3": true,
+          "tema4": false,
+          "tema5": false,
+          "tema6": null
+        }
+      },
+      "cenfotec_precios": {
+        "revisado": true,
+        "etiqueta": "CENFOTEC Ingeniería Robótica",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Coincide con el monto declarado por el proponente (₡3 774 720). Dura 2 años (6 cuatrimestres, 18 cursos, 61 créditos), el doble que la propuesta, y se centra en programación y operación de robots, electrónica, prototipado 3D e IoT; incluye mantenimiento de sistemas robóticos. Competidor indirecto: comparte automatización pero no el eje de calidad y productividad. No indica si el monto incluye IVA.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": false,
+          "tema3": true,
+          "tema4": true,
+          "tema5": false,
+          "tema6": true
+        }
+      },
+      "tec_supervision": {
+        "revisado": true,
+        "etiqueta": "TEC Supervisión de Producción",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "El catálogo 2026 lo presenta como virtual o presencial, mensual, 312 horas, 12 cursos y proyecto (liderazgo, estadística, costos de producción, estudio del trabajo, metrología, control y administración de la calidad, programación y control de la producción); la página de matrícula indica modalidad virtual. Más de 25 años de trayectoria. El proponente cita ₡1 155 732 aproximado, pero la tienda de FUNDATEC falló por error de certificado y no se pudo verificar.",
+        "contenidos": {
+          "tema1": null,
+          "tema2": true,
+          "tema3": false,
+          "tema4": false,
+          "tema5": false,
+          "tema6": null
+        }
+      },
+      "tec_calidad": {
+        "revisado": true,
+        "etiqueta": "TEC Técnico en Calidad",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Virtual o presencial, bimestral, siete bimestres con Seis Sigma, costos de calidad, análisis de datos, herramientas para solución de problemas, sistemas de medición, gráficos de control, normalización y técnicas para la mejora. Alineado al Nivel 3 del Marco Nacional de Cualificaciones; las 2 376 horas parecen incluir trabajo total, no solo horas de clase. El proponente cita ₡1 215 000 aproximado; la tienda de FUNDATEC falló y no se pudo verificar.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": true,
+          "tema3": false,
+          "tema4": false,
+          "tema5": false,
+          "tema6": null
+        }
+      },
+      "tec_catalogo": {
+        "revisado": true,
+        "etiqueta": "TEC Electromecánica",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Mixto (presencial y virtual) en Cartago, bimestral: corriente directa y alterna, bombas, aire comprimido, motores, neumática, principios de automatización, calderas y PLC, con talleres de mecánica de banco y soldadura. Cubre el eje de mantenimiento y automatización, no el de calidad y productividad.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": false,
+          "tema3": true,
+          "tema4": true,
+          "tema5": null,
+          "tema6": true
+        }
+      },
+      "fidelitas_supervision": {
+        "revisado": true,
+        "etiqueta": "Fidélitas Supervisión Producción",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "12 meses (12 módulos de un mes), en línea sincrónica: matemáticas, Excel, estadística, tiempos y métodos, costos, almacenamiento, metrología, control estadístico de proceso, control de la producción, recurso humano y liderazgo. Misma duración que la propuesta, pero virtual y sin automatización.",
+        "contenidos": {
+          "tema1": null,
+          "tema2": true,
+          "tema3": false,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "ipa_dispositivos": {
+        "revisado": true,
+        "etiqueta": "IPA Dispositivos Médicos",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Año y medio, virtual y presencial, con prácticas supervisadas en la industria: GMP, regulación de dispositivos médicos, esterilización, Lean y Six Sigma. Evidencia de nota de prensa; no se consultó la página oficial del IPA.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": true,
+          "tema3": null,
+          "tema4": null,
+          "tema5": null,
+          "tema6": true
+        }
+      },
+      "ina_cuarto_limpio": {
+        "revisado": true,
+        "etiqueta": "INA cuarto limpio",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Cursos cortos presenciales en un cuarto limpio que replica condiciones de la industria médica, con capacidad para unas 350 personas por año. Es la alternativa presencial pública más cercana; no se verificaron horas ni costo. La ficha del programa INA «Operador de Procesos Productivos» (683 horas según resultados de búsqueda) no pudo abrirse.",
+        "contenidos": {
+          "tema1": null,
+          "tema2": true,
+          "tema3": null,
+          "tema4": null,
+          "tema5": null,
+          "tema6": true
+        }
+      },
+      "ulatina_semiconductores": {
+        "revisado": true,
+        "etiqueta": "ULatina Cert. Semiconductores",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "8 módulos: inglés, habilidades socioemocionales, principios de manufactura, estadística, electricidad y electrónica, y fabricación, empaque, ensamble y pruebas de semiconductores; microcredenciales Credly. Forma parte del portafolio del Innovation & Technological Development Hub, que también anuncia una certificación en manufactura de dispositivos médicos. Ruta complementaria o de entrada al técnico, no competidor.",
+        "contenidos": {
+          "tema1": null,
+          "tema2": true,
+          "tema3": null,
+          "tema4": false,
+          "tema5": false,
+          "tema6": null
+        }
+      },
+      "coursera_ssp": {
+        "revisado": true,
+        "etiqueta": "Coursera Six Sigma Principles",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Primer curso de la especialización Six Sigma Yellow Belt; 1 semana a 10 horas por semana. Sustituto de bajo costo para la parte de mejora continua, sin práctica en planta.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": true,
+          "tema3": false,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "coursera_dmd": {
+        "revisado": true,
+        "etiqueta": "Coursera Digital Manufacturing",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Introducción a la manufactura digital e Industria 4.0; dos módulos de unas 5 horas. Complemento introductorio, no sustituto de un técnico con laboratorio.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": false,
+          "tema3": true,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por presencialidad y práctica en planta",
+        "texto": "Las alternativas más cercanas (CENFOTEC, TEC, Fidélitas) son virtuales o mixtas y se enfocan en calidad o supervisión. Un técnico 100 % presencial con laboratorio de Industria 4.0 y visitas a plantas no tiene un equivalente verificado."
+      },
+      {
+        "titulo": "CENFOTEC es el competidor directo en Industria 4.0",
+        "texto": "Su Técnico en Calidad y Operaciones 4.0 (USD 2 193, 12 meses, virtual) apunta a los mismos empleadores con normas ISO 13485 y FDA, SPC e IoT industrial. La propuesta de ULatina suma mantenimiento, seguridad y práctica presencial, pero no menciona GMP ni entornos regulados."
+      },
+      {
+        "titulo": "Empleo abundante en zonas francas, con escalón de experiencia",
+        "texto": "Las empresas de dispositivos médicos publican muchos puestos técnicos, pero la mayoría pide 2–5 años de experiencia, GMP e inglés. Los puestos de entrada (Philips, Yara) aceptan formación técnica con poca experiencia."
+      },
+      {
+        "titulo": "Las preguntas del proponente siguen sin respuesta local",
+        "texto": "Interés, perfil, horario, precio aceptable y percepción de un año no pueden medirse con fuentes web; solo hay interés internacional en Six Sigma y manufactura digital."
+      }
+    ]
+  }
+}

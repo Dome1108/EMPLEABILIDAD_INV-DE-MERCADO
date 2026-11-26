@@ -1,0 +1,1381 @@
+{
+  "id": "eventos_corporativos_cr",
+  "nombre": "Dirección y Gestión de Eventos Corporativos",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-11-06",
+  "version_investigacion": "2026-11-06-mercado-v1",
+  "brief": {
+    "archivo": "Brief CR Dirección y Gestión de Eventos Corporativos.pdf",
+    "copia_local": "edcos_fuentes/brief_eventos_corporativos_cr.pdf",
+    "fecha_propuesta": "2026-10-19",
+    "tipo": "Técnico · Apertura de nuevo programa",
+    "pais": "Costa Rica",
+    "area_estudio": "Comunicación colectiva",
+    "facultad": "Facultad de Arte, Diseño y Comunicación Colectiva",
+    "unidad": "Otro · Academia",
+    "duracion": "2 cuatrimestres",
+    "horas_totales": null,
+    "modalidad": "Presencial (100% presencial)",
+    "experto": "No definido en el brief",
+    "objetivo": "Quien se certifique desarrollará habilidades de liderazgo y dirección, así como la capacidad de planificar y ejecutar eventos especiales creando relaciones saludables con las organizaciones, proveedores y productoras. También desarrollará habilidades analíticas y podrá ofrecer al mundo laboral el perfil de un productor de eventos integral.",
+    "diferenciadores": [
+      "Habilidades gerenciales.",
+      "Bases en finanzas y presupuestos para eventos.",
+      "Contacto directo con productoras activas en el mercado actual.",
+      "Relación con la industria creativa.",
+      "Taller de liderazgo participativo."
+    ],
+    "ejes": [
+      "No informado en el brief"
+    ],
+    "habilidades": [
+      "Capacidad de investigación",
+      "Detección de cambios",
+      "Toma de decisiones",
+      "Creatividad e innovación",
+      "Resolución de problemas"
+    ],
+    "nombres_alternativos": [
+      "Dirección y Gestión de Eventos Corporativos",
+      "Ejecutivo de Eventos Especiales"
+    ],
+    "palabras_clave": [
+      "Evento",
+      "Presupuesto",
+      "Protocolo",
+      "Innovación",
+      "Planificación",
+      "Liderazgo",
+      "Gastronomía",
+      "Marketing",
+      "Creatividad",
+      "Dirección"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Información y comunicación · Actividades financieras y de seguros · Actividades profesionales, científicas y técnicas · Actividades de servicios administrativos y de apoyo · Enseñanza · Actividades artísticas, de entretenimiento y recreativas · Otras actividades de servicio",
+    "interes_investigacion": "Las aspiraciones del prospecto; demografía y estado socioeconómico del público objetivo.",
+    "competencia_declarada": "3 alternativa(s) mencionada(s) por el proponente; ver Oferta y plataformas."
+  },
+  "audiencia_propuesta": {
+    "origen": "El brief no describe segmentos de audiencia; se definirán en la investigación de mercado.",
+    "segmentos": [],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Dirección y Gestión de Eventos Corporativos",
+      "archivo": "Brief CR Dirección y Gestión de Eventos Corporativos.pdf",
+      "paginas": "1–4",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucreativa_eventos",
+      "titulo": "Universidad Creativa · Curso libre Planificación y producción de eventos",
+      "url": "https://ucreativa.ac.cr/product/curso-libre/planificacion-y-produccion-de-eventos/",
+      "observacion": "Virtual, 6 semanas, «Matrícula abierta». El bloque «Inversión» muestra «C 240» sin unidad clara; el código de la página registra un valor de producto de 102000 CRC. Ninguna de las dos cifras se toma como precio verificado.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucreativa_protocolo",
+      "titulo": "Universidad Creativa · Curso libre Etiqueta y protocolo",
+      "url": "https://ucreativa.ac.cr/product/curso-libre/etiquetayprotocolo/",
+      "observacion": "Virtual, 6 semanas; protocolo en ceremonias oficiales, sociales, empresariales y académicas y planificación, dirección y ejecución de eventos. Misma ambigüedad de precio («C 240» visible; 102000 CRC en metadatos).",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucr_eccc",
+      "titulo": "UCR · Escuela de Ciencias de la Comunicación Colectiva · Especialización en Organización y Producción de eventos",
+      "url": "https://eccc.ucr.ac.cr/educacion-continua/organizacion-y-produccion-de-eventos-13510/",
+      "observacion": "Bimodal (6 clases virtuales y 1 presencial por módulo), 8 meses, certificado de aprovechamiento de 84 horas. Matrícula ₡35.700, trámite de certificado ₡35.700 y 8 mensualidades de ₡61.200; inicio 13 de enero de 2027. Cuatro módulos: Organización de Eventos y Protocolo; Eventos Corporativos Internos; Eventos Publicitarios y BTL; Eventos Culturales, artísticos y masivos.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "utur_virtuales",
+      "titulo": "Universidad del Turismo (UTUR) · Talleres profesionales y técnicos virtuales",
+      "url": "https://www.utur.ac.cr/programas-tecnicos-virtuales",
+      "observacion": "Lista el Taller de Organización de Bodas y el Técnico Superior en Organización de Congresos y Eventos con la leyenda de programas «en actualización».",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "utur_bodas_pdf",
+      "titulo": "UTUR · Taller Profesional de Organización de Bodas (folleto PDF)",
+      "url": "https://www.utur.ac.cr/_files/ugd/11d0a6_fcb34d878e82420686d9414c45fbc0e8.pdf",
+      "observacion": "Folleto «Inscripción abierta 2021»: 5 sesiones, modalidad virtual, inversión ₡86.700 con IVA incluido. Temario con protocolo en ceremonia y banquete, montaje, cronograma y contrataciones y proveedores.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "utur_congresos_pdf",
+      "titulo": "UTUR · Técnico Superior en Organización de Congresos y Eventos (folleto PDF)",
+      "url": "https://www.utur.ac.cr/_files/ugd/11d0a6_83bc945ea35c4671921d2135b9b17a05.pdf",
+      "observacion": "11 módulos mensuales de 24 horas lectivas; ₡77.500 por módulo (precio oferta), sin matrícula; semipresencial; inicio 24 de febrero de 2020. Referencia histórica.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "utur_presenciales",
+      "titulo": "UTUR · Programas técnicos presenciales",
+      "url": "https://www.utur.ac.cr/programas-tecnicos-presenciales",
+      "observacion": "Indica «Programas en actualización, por el momento no disponibles para matrícula» para el Técnico Superior en Organización de Congresos y Eventos.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "iseie_eventos",
+      "titulo": "ISEIE Innovation School · Curso Organización de Eventos",
+      "url": "https://iseie.com/cursos/curso-organizacion-de-eventos/",
+      "observacion": "Online, 1 mes, 100 horas, 4 ECTS, inicio 15-01-2027. En la consulta la página mostró «300 €» (no los USD 344 del brief; el precio parece depender de la ubicación del visitante). Temario con presupuesto, gestión de proveedores, marketing y evaluación.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ulatina_mice",
+      "titulo": "Delfino.cr · Costa Rica lanza su primera certificación profesional en turismo MICE (ULatina)",
+      "url": "https://delfino.cr/2025/05/costa-rica-lanza-su-primera-certificacion-profesional-en-turismo-mice-para-impulsar-la-competitividad-global-del-pais-en-la-industria-de-reuniones",
+      "observacion": "Nota de prensa: certificación de ULatina, 100% virtual asincrónica, 8 meses (4 bimestres), con aval del ICT y del Costa Rica Convention Bureau; incluye planificación de eventos, liderazgo y presupuestos. Sin precio publicado. No se localizó la ficha en ulatina.ac.cr.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_intro",
+      "titulo": "Coursera · Introduction to Events Management",
+      "url": "https://www.coursera.org/learn/introduction-to-events-management",
+      "observacion": "Ofrecido por Coursera; 2 horas; «24,949 already enrolled». Incluye presupuesto, gestión de proveedores, sedes y marketing.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_palermo",
+      "titulo": "Coursera · Universidad de Palermo · Management de Eventos",
+      "url": "https://www.coursera.org/learn/management-de-eventos",
+      "observacion": "En español; 10 horas; «4,087 already enrolled». Eventos sociales, empresariales y culturales, proveedores y presupuesto.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_suny",
+      "titulo": "Coursera · The State University of New York · Multi-Event Facility Enterprises Management",
+      "url": "https://www.coursera.org/learn/multi-event-facility-enterprises-management",
+      "observacion": "6 horas; «1,504 already enrolled». Gestión de recintos multiuso; se usa solo como señal de demanda.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_armadillo",
+      "titulo": "LinkedIn Jobs · Armadillo CR · Asistente de producción de Eventos",
+      "url": "https://cr.linkedin.com/jobs/view/asistente-de-producci%C3%B3n-de-eventos-at-armadillo-cr-4462984105",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_chefexpress",
+      "titulo": "LinkedIn Jobs · Chef Express Costa Rica · Supervisor de evento",
+      "url": "https://cr.linkedin.com/jobs/view/supervisor-de-evento-at-chef-express-costa-rica-4469574191",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_andaz",
+      "titulo": "LinkedIn Jobs · Andaz (Andaz Papagayo) · Sub gerente de Eventos",
+      "url": "https://cr.linkedin.com/jobs/view/sub-gerente-de-eventos-at-andaz-4476523914",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_ritz",
+      "titulo": "LinkedIn Jobs · The Ritz-Carlton Hotel Company · Banquet Manager",
+      "url": "https://cr.linkedin.com/jobs/view/banquet-manager-at-the-ritz-carlton-hotel-company-l-l-c-4485224456",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_deloitte",
+      "titulo": "LinkedIn Jobs · Deloitte · Greenhouse Senior Event Planner",
+      "url": "https://cr.linkedin.com/jobs/view/greenhouse-senior-event-planner-at-deloitte-4486520070",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_artflower",
+      "titulo": "LinkedIn Jobs · ArtFlower · Event/Wedding - Creative Designer",
+      "url": "https://cr.linkedin.com/jobs/view/event-wedding-creative-designer-at-artflower-4488152993",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_roche",
+      "titulo": "LinkedIn Jobs · Roche · Intern - Site Services / Admin assistant / Event Management",
+      "url": "https://cr.linkedin.com/jobs/view/intern-site-services-admin-assistant-event-management-at-roche-4486462725",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_visitorg",
+      "titulo": "LinkedIn Jobs · Visit.org · Freelance In-Person Event Specialist - San Francisco de Heredia",
+      "url": "https://cr.linkedin.com/jobs/view/freelance-in-person-event-specialist-san-francisco-de-heredia-costa-rica-at-visit-org-4475866348",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-11-06",
+      "observacion": "Grupo 939, indicador 94984. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-11-06",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Universidad Creativa",
+      "programa": "Planificación y producción de eventos · curso libre",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; «Matrícula abierta» sin fecha de inicio",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "ucreativa_eventos",
+      "nota": "Alternativa citada en el brief, verificada en la página oficial: 6 semanas, virtual; preproducción, producción y posproducción de conciertos, desfiles y eventos deportivos, logística, locaciones, contratos y personal técnico. El rótulo «Inversión: C 240» no tiene unidad clara y el código de la página registra 102000 CRC; no se toma como precio verificado. No declara presupuesto, protocolo ni liderazgo.",
+      "etiqueta_precio": "Precio ambiguo"
+    },
+    {
+      "institucion": "Universidad Creativa",
+      "programa": "Etiqueta y protocolo · curso libre",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; «Matrícula abierta» sin fecha de inicio",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "ucreativa_protocolo",
+      "nota": "6 semanas, virtual; normas de etiqueta y protocolo en ceremonias oficiales, sociales, empresariales y académicas, con planificación, dirección y ejecución de eventos. Mismo rótulo de precio ambiguo («C 240»; 102000 CRC en metadatos), no verificado.",
+      "etiqueta_precio": "Precio ambiguo"
+    },
+    {
+      "institucion": "Universidad de Costa Rica · Escuela de Ciencias de la Comunicación Colectiva",
+      "programa": "Especialización en Organización y Producción de eventos",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": 84,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": 561000,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; inicio de lecciones 13 de enero de 2027, sujeto a matrícula mínima",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "ucr_eccc",
+      "nota": "Bimodal, miércoles 6–9 p. m., 8 meses; certificado de aprovechamiento de 84 horas (VAS). Precio total calculado como suma de los cargos publicados en la página oficial: matrícula ₡35.700 + trámite de certificado ₡35.700 + 8 mensualidades de ₡61.200; la página no imprime el total. Módulos de protocolo, eventos corporativos internos, publicitarios/BTL y culturales, artísticos y masivos; no declara presupuesto, liderazgo ni proveedores.",
+      "etiqueta_precio": "₡561.000 (suma de cargos)"
+    },
+    {
+      "institucion": "Universidad del Turismo (UTUR)",
+      "programa": "Taller Profesional de Organización de Bodas",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": 86700,
+      "precio_verificado": true,
+      "estado": "Precio histórico (folleto «Inscripción abierta 2021»); programa listado «en actualización»",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "utur_bodas_pdf",
+      "nota": "Alternativa citada en el brief (presencial según el brief; el folleto oficial indica modalidad virtual y 5 sesiones). ₡86.700 con IVA incluido en folleto de 2021 alojado en utur.ac.cr. Especializado en bodas, no en eventos corporativos; incluye protocolo, montaje y contratación de proveedores. Página de listado: utur_virtuales.",
+      "etiqueta_precio": "₡86.700 (2021, IVA incl.)"
+    },
+    {
+      "institucion": "Universidad del Turismo (UTUR)",
+      "programa": "Técnico Superior en Organización de Congresos y Eventos",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": 264,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": 852500,
+      "precio_verificado": false,
+      "estado": "Precio histórico (cohorte de febrero de 2020, precio oferta); «no disponible para matrícula»",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": true,
+      "fuente": "utur_congresos_pdf",
+      "nota": "Técnico del mismo nivel que la propuesta: 11 módulos mensuales de 24 horas lectivas (264 h calculadas), semipresencial. Total calculado: 11 × ₡77.500 por módulo, sin matrícula, según folleto oficial de 2020. La página de técnicos presenciales (utur_presenciales) indica que no está disponible para matrícula. Enfoque MICE: planificación, montajes, audiovisual y etiqueta y protocolo. Total calculado a partir de un folleto de 2020 y programa no disponible para matrícula: no se usa como precio verificado.",
+      "etiqueta_precio": "₡852.500 (2020, 11 módulos)"
+    },
+    {
+      "institucion": "ISEIE Innovation School",
+      "programa": "Curso Organización de Eventos",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 100,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; inicio 15-01-2027",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "iseie_eventos",
+      "nota": "Alternativa citada en el brief (USD 344). En la consulta la página mostró «300 €» (euros, no convertidos), lo que sugiere precio según ubicación; no se pudo ver la cifra en USD, por eso no se marca como verificado. 1 mes, 100 horas, 4 ECTS, online; presupuesto, proveedores, marketing y evaluación. «Protocolos» se refiere a seguridad, no a protocolo ceremonial.",
+      "etiqueta_precio": "USD 344 según brief (no verificado)"
+    },
+    {
+      "institucion": "Universidad Latina de Costa Rica",
+      "programa": "Certificación Profesional en Turismo de Reuniones MICE",
+      "tipo": "Oferta propia",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Lanzada en 2025 (inicio 14 de julio de 2025); cohorte vigente por confirmar",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ulatina_mice",
+      "nota": "Oferta propia de ULatina (Facultad de Ciencias Empresariales y Hospitalidad), 100% virtual asincrónica, 8 meses. Datos tomados de nota de prensa; no se localizó la ficha oficial ni el precio. Contenidos declarados: planificación estratégica de eventos, liderazgo y trabajo en equipo, presupuestos. Puede canibalizar o complementar el técnico presencial.",
+      "etiqueta_precio": "Sin precio publicado"
+    },
+    {
+      "institucion": "Coursera",
+      "programa": "Introduction to Events Management",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 2,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso abierto; incluido en Coursera Plus",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_intro",
+      "nota": "Sustituto de bajo costo y corta duración (2 horas estimadas). Presupuesto, gestión de proveedores, sedes y marketing. Precio depende de suscripción; no se registra.",
+      "etiqueta_precio": "Suscripción"
+    },
+    {
+      "institucion": "Coursera · Universidad de Palermo",
+      "programa": "Management de Eventos",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 10,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso abierto",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_palermo",
+      "nota": "Curso en español (10 horas estimadas): eventos sociales, empresariales y culturales, coordinación con proveedores, presupuesto y tablero de control. Precio depende de suscripción/certificado; no se registra.",
+      "etiqueta_precio": "Suscripción"
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 45,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "Los cursos introductorios de Coursera acumulan 24.949, 4.087 y 1.504 inscripciones, una señal internacional de interés que se concentra en formatos cortos y de bajo costo. El curso en español tiene una cifra modesta. No se obtuvo evidencia de demanda local (búsquedas o matrícula) y Udemy no pudo consultarse. Se asigna 45 (débil o mixto) porque el interés existe, pero no prueba disposición a cursar un técnico presencial de dos cuatrimestres.",
+      "fuentes": [
+        "coursera_intro",
+        "coursera_palermo",
+        "coursera_suny"
+      ],
+      "nivel_evidencia": "Indirecta internacional"
+    },
+    "empleabilidad": {
+      "puntaje": 62,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Ocho publicaciones activas en Costa Rica (productora BTL, catering, hoteles de lujo, Deloitte, Roche, diseño de bodas, freelance corporativo) piden planificación, proveedores, presupuesto y liderazgo, que coinciden con el brief. Sin embargo, la mitad exige inglés avanzado, varias piden 1–3 años de experiencia o formación en hotelería, y dos son pasantía o freelance. Se asigna 62 (intermedio): hay pertinencia de habilidades, pero el técnico por sí solo no cubre requisitos de idioma y experiencia; no es tasa de empleo.",
+      "fuentes": [
+        "li_armadillo",
+        "li_chefexpress",
+        "li_andaz",
+        "li_ritz",
+        "li_deloitte",
+        "li_artflower",
+        "li_roche",
+        "li_visitorg"
+      ],
+      "nivel_evidencia": "Documental local · muestra exploratoria"
+    },
+    "competencia": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "En Costa Rica hay alternativas activas: la especialización bimodal de la UCR (84 h, 8 meses, módulo de eventos corporativos), cursos libres virtuales de Universidad Creativa y el curso online de ISEIE, además de cursos de plataforma y la certificación MICE propia de ULatina. El técnico de UTUR, el más parecido en nivel, figura no disponible para matrícula. No se encontró un técnico presencial de dos cuatrimestres que combine dirección, finanzas de eventos, liderazgo y vínculo con productoras. Se asigna 55 (intermedio): hay espacio de diferenciación, con solapamiento real en producción y protocolo.",
+      "fuentes": [
+        "ucr_eccc",
+        "ucreativa_eventos",
+        "ucreativa_protocolo",
+        "iseie_eventos",
+        "utur_presenciales",
+        "utur_congresos_pdf",
+        "ulatina_mice",
+        "coursera_intro",
+        "coursera_palermo"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "precio": {
+      "puntaje": 50,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "La referencia local vigente más sólida es la UCR, cuyo total calculado es ₡561.000 por 84 horas en 8 meses. UTUR solo ofrece precios históricos (₡86.700 por un taller de bodas en 2021 y ₡852.500 por el técnico de 11 módulos en 2020). El precio de Universidad Creativa es ambiguo y el de ISEIE se vio en euros (300 €). Las plataformas son mucho más baratas. Se asigna 50 (mixto) porque hay pocas referencias comparables vigentes y ULatina no tiene precio propuesto con el cual contrastarlas.",
+      "fuentes": [
+        "ucr_eccc",
+        "utur_bodas_pdf",
+        "utur_congresos_pdf",
+        "ucreativa_eventos",
+        "iseie_eventos",
+        "coursera_intro"
+      ],
+      "nivel_evidencia": "Documental local parcial · precios históricos"
+    },
+    "sector": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "IMAE sectorial BCCR · juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "El brief declara actividades profesionales y de servicios administrativos y de apoyo; la organización de eventos pertenece a ese agregado. El IMAE de «Profesionales, científicas, técnicas, administrativas y servicios de apoyo» (base 2022 = 100) promedia 127.7 en enero–agosto de 2026 frente a 123.4 en el mismo periodo de 2025 (+3.5 %): actividad sostenida. Es un agregado amplio, no ventas ni demanda del programa. Se asigna 75 con el mismo criterio de las fichas ya investigadas de Costa Rica (75 para un agregado con crecimiento sostenido vinculado al núcleo del programa; 70 cuando el agregado es más amplio), sin convertir el índice en puntaje por regla de tres."
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Validar interés local con un sondeo o lista de espera entre egresados de comunicación, mercadeo y hotelería, y con productoras aliadas, antes de abrir la cohorte."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Incorporar inglés para eventos, prácticas con productoras y hoteles y un portafolio de eventos ejecutados, dado que las plazas exigen experiencia demostrable."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Destacar el componente de presupuesto/finanzas, liderazgo y contacto directo con productoras, y diferenciarse de la certificación MICE propia por modalidad presencial y foco corporativo."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Ubicar el precio en relación con la especialización de la UCR (₡561.000 por 84 h) y confirmar precios vigentes de Universidad Creativa y UTUR."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "El sector económico se calcula aparte con IMAE BCCR; no forma parte de esta investigación."
+    }
+  ],
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · Introduction to Events Management",
+          "valor": 24949,
+          "fuente": "coursera_intro"
+        },
+        {
+          "etiqueta": "Coursera · Management de Eventos (U. Palermo)",
+          "valor": 4087,
+          "fuente": "coursera_palermo"
+        },
+        {
+          "etiqueta": "Coursera · Multi-Event Facility Management (SUNY)",
+          "valor": 1504,
+          "fuente": "coursera_suny"
+        }
+      ],
+      "fuentes": [
+        "coursera_intro",
+        "coursera_palermo",
+        "coursera_suny"
+      ],
+      "nota": "Inscripciones acumuladas publicadas en Coursera (participación internacional, no Costa Rica). Udemy bloqueó la consulta (HTTP 403), por lo que no se registran cifras de esa plataforma. No se obtuvo serie de búsquedas locales ni datos de matrícula de las ofertas costarricenses.",
+      "lectura": "Hay interés internacional acumulado en formación introductoria de gestión de eventos, concentrado en cursos cortos de bajo costo; la cifra del curso en español es modesta. No equivale a demanda local por un técnico presencial de dos cuatrimestres.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_armadillo",
+          "identificador_linkedin": "4462984105",
+          "empresa": "Armadillo CR",
+          "cargo": "Asistente de producción de Eventos",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Producción de eventos y BTL",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 2 meses; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "presupuesto",
+            "proveedores",
+            "creatividad",
+            "btl",
+            "cliente"
+          ],
+          "resumen": "Apoya a ejecutivos de cuenta en planificación, montaje y desmontaje de eventos y activaciones BTL, supervisa proveedores y gestiona cotizaciones y presupuestos. Pide 1–2 años en producción BTL y licencia B1.",
+          "fuente": "li_armadillo"
+        },
+        {
+          "id": "li_chefexpress",
+          "identificador_linkedin": "4469574191",
+          "empresa": "Chef Express Costa Rica",
+          "cargo": "Supervisor de evento",
+          "ciudad": "Uruca, San José",
+          "pais": "Costa Rica",
+          "area": "Catering y eventos",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 mes; 189 solicitudes; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "liderazgo",
+            "resolucion",
+            "cliente",
+            "hospitalidad"
+          ],
+          "resumen": "Coordina y supervisa la ejecución de eventos de catering, el personal y el menaje, con comunicación con clientes. Pide 3 años en supervisión de eventos y menciona liderazgo y resolución de eventualidades.",
+          "fuente": "li_chefexpress"
+        },
+        {
+          "id": "li_andaz",
+          "identificador_linkedin": "4476523914",
+          "empresa": "Andaz Papagayo",
+          "cargo": "Sub gerente de Eventos",
+          "ciudad": "Guanacaste",
+          "pais": "Costa Rica",
+          "area": "Hotelería · eventos sociales y corporativos",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 semana; 125 solicitudes; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "presupuesto",
+            "proveedores",
+            "liderazgo",
+            "resolucion",
+            "cliente",
+            "ingles"
+          ],
+          "resumen": "Coordina logística y ejecución de eventos sociales, corporativos y grupos, con proveedores, presupuesto y control de costos. Pide estudios en hotelería/turismo/administración, 2 años de experiencia e inglés avanzado.",
+          "fuente": "li_andaz"
+        },
+        {
+          "id": "li_ritz",
+          "identificador_linkedin": "4485224456",
+          "empresa": "The Ritz-Carlton Hotel Company",
+          "cargo": "Banquet Manager",
+          "ciudad": "Liberia, Guanacaste",
+          "pais": "Costa Rica",
+          "area": "Hotelería · gestión de banquetes y eventos",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 semana; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "presupuesto",
+            "liderazgo",
+            "cliente",
+            "ingles",
+            "hospitalidad"
+          ],
+          "resumen": "Dirige y motiva al equipo de banquetes, controla responsabilidades financieras y administrativas y se comunica con meeting planners. Pide 2 años en gestión de eventos o A&B y dominio de inglés y español.",
+          "fuente": "li_ritz"
+        },
+        {
+          "id": "li_deloitte",
+          "identificador_linkedin": "4486520070",
+          "empresa": "Deloitte",
+          "cargo": "Greenhouse Senior Event Planner",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Eventos corporativos · experiencia de cliente",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 día; 61 solicitudes; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "proveedores",
+            "cliente",
+            "ingles"
+          ],
+          "resumen": "Coordina eventos presenciales y virtuales para academias de ejecutivos, con abastecimiento de materiales y seguimiento de diseño, impresión y entrega, enlazando equipos de India y Estados Unidos.",
+          "fuente": "li_deloitte"
+        },
+        {
+          "id": "li_artflower",
+          "identificador_linkedin": "4488152993",
+          "empresa": "ArtFlower",
+          "cargo": "Event/Wedding - Creative Designer",
+          "ciudad": "Sardinal (Playas del Coco), Guanacaste",
+          "pais": "Costa Rica",
+          "area": "Diseño y coordinación de bodas y eventos de lujo",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 hora; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "proveedores",
+            "creatividad",
+            "ingles"
+          ],
+          "resumen": "Combina diseño creativo de eventos (conceptos, mood boards, propuestas) con coordinación de proveedores, cronogramas y ejecución en sitio. Exige inglés avanzado, vehículo y portátil propios.",
+          "fuente": "li_artflower"
+        },
+        {
+          "id": "li_roche",
+          "identificador_linkedin": "4486462725",
+          "empresa": "Roche",
+          "cargo": "Intern - Site Services / Admin assistant / Event Management",
+          "ciudad": "Sabana Norte, San José",
+          "pais": "Costa Rica",
+          "area": "Servicios de sede · eventos internos",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 3 días; 59 solicitudes; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "proveedores",
+            "cliente"
+          ],
+          "resumen": "Pasantía que apoya la planificación y ejecución de eventos internos: montajes, audiovisuales, coordinación con proveedores externos y encuestas post-evento.",
+          "fuente": "li_roche"
+        },
+        {
+          "id": "li_visitorg",
+          "identificador_linkedin": "4475866348",
+          "empresa": "Visit.org",
+          "cargo": "Freelance In-Person Event Specialist",
+          "ciudad": "San Francisco de Heredia",
+          "pais": "Costa Rica",
+          "area": "Eventos corporativos de voluntariado",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 1 mes; enlace de solicitud visible",
+          "habilidades": [
+            "planificacion",
+            "cliente",
+            "ingles"
+          ],
+          "resumen": "Coordinación en sitio, por evento y como freelance, de actividades corporativas de team building e impacto social; pide experiencia en eventos corporativos.",
+          "fuente": "li_visitorg"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "planificacion",
+          "habilidad": "Planificación y producción de eventos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona planificar, coordinar logística, montaje/desmontaje o ejecución de eventos."
+        },
+        {
+          "id": "presupuesto",
+          "habilidad": "Presupuesto y control de costos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona presupuesto, cotizaciones, costos, ingresos o responsabilidades financieras del evento."
+        },
+        {
+          "id": "proveedores",
+          "habilidad": "Gestión de proveedores",
+          "cobertura": "Explícita",
+          "criterio": "Menciona coordinar, supervisar o negociar con proveedores, contratistas o vendors."
+        },
+        {
+          "id": "liderazgo",
+          "habilidad": "Liderazgo y supervisión de equipos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona liderazgo, dirigir o supervisar personal."
+        },
+        {
+          "id": "resolucion",
+          "habilidad": "Resolución de problemas y toma de decisiones",
+          "cobertura": "Explícita",
+          "criterio": "Menciona resolver situaciones operativas, eventualidades o imprevistos."
+        },
+        {
+          "id": "creatividad",
+          "habilidad": "Creatividad e innovación",
+          "cobertura": "Explícita",
+          "criterio": "Menciona aportar ideas, diseño creativo o conceptos del evento."
+        },
+        {
+          "id": "cliente",
+          "habilidad": "Comunicación y servicio al cliente",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona comunicación con clientes antes, durante y después del evento o atención a invitados."
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés avanzado",
+          "cobertura": "Por contrastar",
+          "criterio": "Exige inglés avanzado o profesional."
+        },
+        {
+          "id": "hospitalidad",
+          "habilidad": "Operación de alimentos y bebidas / banquetes",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona banquetes, catering, menaje o servicio de A&B."
+        },
+        {
+          "id": "btl",
+          "habilidad": "Activaciones BTL y marca",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona activaciones BTL, eventos de marca o montaje de marca."
+        }
+      ],
+      "fuentes": [
+        "li_armadillo",
+        "li_chefexpress",
+        "li_andaz",
+        "li_ritz",
+        "li_deloitte",
+        "li_artflower",
+        "li_roche",
+        "li_visitorg"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Búsqueda en el listado público de LinkedIn Jobs para Costa Rica (cr.linkedin.com/jobs/search) con los términos «coordinador de eventos», «event coordinator», «productor de eventos», «event planner» y «protocolo», el 2026-11-06; se seleccionaron 8 empleadores distintos vinculados a producción y coordinación de eventos. Es una muestra exploratoria de habilidades, no un conteo de vacantes ni una tasa de empleo. No apareció ninguna publicación específica de protocolo. Varias plazas son de hotelería en Guanacaste, exigen inglés avanzado o son pasantía/freelance."
+      },
+      "habilidades": [
+        {
+          "id": "planificacion",
+          "habilidad": "Planificación y producción de eventos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona planificar, coordinar logística, montaje/desmontaje o ejecución de eventos.",
+          "menciones": 8,
+          "muestra": 8,
+          "porcentaje": 100.0,
+          "fuentes": [
+            "li_armadillo",
+            "li_chefexpress",
+            "li_andaz",
+            "li_ritz",
+            "li_deloitte",
+            "li_artflower",
+            "li_roche",
+            "li_visitorg"
+          ]
+        },
+        {
+          "id": "cliente",
+          "habilidad": "Comunicación y servicio al cliente",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona comunicación con clientes antes, durante y después del evento o atención a invitados.",
+          "menciones": 7,
+          "muestra": 8,
+          "porcentaje": 87.5,
+          "fuentes": [
+            "li_armadillo",
+            "li_chefexpress",
+            "li_andaz",
+            "li_ritz",
+            "li_deloitte",
+            "li_roche",
+            "li_visitorg"
+          ]
+        },
+        {
+          "id": "proveedores",
+          "habilidad": "Gestión de proveedores",
+          "cobertura": "Explícita",
+          "criterio": "Menciona coordinar, supervisar o negociar con proveedores, contratistas o vendors.",
+          "menciones": 5,
+          "muestra": 8,
+          "porcentaje": 62.5,
+          "fuentes": [
+            "li_armadillo",
+            "li_andaz",
+            "li_deloitte",
+            "li_artflower",
+            "li_roche"
+          ]
+        },
+        {
+          "id": "ingles",
+          "habilidad": "Inglés avanzado",
+          "cobertura": "Por contrastar",
+          "criterio": "Exige inglés avanzado o profesional.",
+          "menciones": 5,
+          "muestra": 8,
+          "porcentaje": 62.5,
+          "fuentes": [
+            "li_andaz",
+            "li_ritz",
+            "li_deloitte",
+            "li_artflower",
+            "li_visitorg"
+          ]
+        },
+        {
+          "id": "presupuesto",
+          "habilidad": "Presupuesto y control de costos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona presupuesto, cotizaciones, costos, ingresos o responsabilidades financieras del evento.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_armadillo",
+            "li_andaz",
+            "li_ritz"
+          ]
+        },
+        {
+          "id": "liderazgo",
+          "habilidad": "Liderazgo y supervisión de equipos",
+          "cobertura": "Explícita",
+          "criterio": "Menciona liderazgo, dirigir o supervisar personal.",
+          "menciones": 3,
+          "muestra": 8,
+          "porcentaje": 37.5,
+          "fuentes": [
+            "li_chefexpress",
+            "li_andaz",
+            "li_ritz"
+          ]
+        },
+        {
+          "id": "resolucion",
+          "habilidad": "Resolución de problemas y toma de decisiones",
+          "cobertura": "Explícita",
+          "criterio": "Menciona resolver situaciones operativas, eventualidades o imprevistos.",
+          "menciones": 2,
+          "muestra": 8,
+          "porcentaje": 25.0,
+          "fuentes": [
+            "li_chefexpress",
+            "li_andaz"
+          ]
+        },
+        {
+          "id": "creatividad",
+          "habilidad": "Creatividad e innovación",
+          "cobertura": "Explícita",
+          "criterio": "Menciona aportar ideas, diseño creativo o conceptos del evento.",
+          "menciones": 2,
+          "muestra": 8,
+          "porcentaje": 25.0,
+          "fuentes": [
+            "li_armadillo",
+            "li_artflower"
+          ]
+        },
+        {
+          "id": "hospitalidad",
+          "habilidad": "Operación de alimentos y bebidas / banquetes",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona banquetes, catering, menaje o servicio de A&B.",
+          "menciones": 2,
+          "muestra": 8,
+          "porcentaje": 25.0,
+          "fuentes": [
+            "li_chefexpress",
+            "li_ritz"
+          ]
+        },
+        {
+          "id": "btl",
+          "habilidad": "Activaciones BTL y marca",
+          "cobertura": "Por contrastar",
+          "criterio": "Menciona activaciones BTL, eventos de marca o montaje de marca.",
+          "menciones": 1,
+          "muestra": 8,
+          "porcentaje": 12.5,
+          "fuentes": [
+            "li_armadillo"
+          ]
+        }
+      ],
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada"
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "ucr_eccc",
+        "ucreativa_eventos",
+        "ucreativa_protocolo",
+        "iseie_eventos",
+        "utur_presenciales",
+        "utur_congresos_pdf",
+        "ulatina_mice",
+        "coursera_intro",
+        "coursera_palermo"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "CRC",
+      "fuentes": [
+        "ucr_eccc",
+        "utur_bodas_pdf",
+        "utur_congresos_pdf",
+        "ucreativa_eventos",
+        "iseie_eventos",
+        "coursera_intro"
+      ],
+      "nota": "Precios en moneda original sin convertir. UCR y el técnico de UTUR muestran totales calculados como suma de cargos publicados en la página oficial (matrícula, certificado y mensualidades, o módulos). Los precios de UTUR son históricos (2020 y 2021); el del taller de bodas incluye IVA. Universidad Creativa muestra «C 240» sin unidad clara, por lo que no se usa. ISEIE mostró 300 € en la consulta (el brief indica USD 344, posiblemente por ubicación), por lo que no se marca como verificado. Plataformas: precio por suscripción, no registrado.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Profesionales, científicas, técnicas, administrativas y servicios de apoyo",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 97.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 101.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 126.44,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 110.05,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 105.27,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 107.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 113.3,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 113.72,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 101.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 111.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 116.96,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 116.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 105.95,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 106.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 131.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 119.46,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 112.09,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 112.28,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 123.11,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 118.15,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 111.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 116.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 121.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 130.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 113.72,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 114.02,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 139.42,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 126.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 118.51,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 117.43,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 130.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 126.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 116.35,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 122.05,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 126.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 138.41,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 116.78,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 119.13,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 147.08,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 129.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 123.81,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 123.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 133.54,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 128.77,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94984,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-11-06",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "produccion",
+        "etiqueta": "Dirección y<br>producción",
+        "criterio": "Presencia explícita de dirección y producción en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "presupuesto",
+        "etiqueta": "Presupuesto y<br>finanzas",
+        "criterio": "Presencia explícita de presupuesto y finanzas en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "protocolo",
+        "etiqueta": "Protocolo y<br>etiqueta",
+        "criterio": "Presencia explícita de protocolo y etiqueta en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "liderazgo",
+        "etiqueta": "Liderazgo y<br>equipos",
+        "criterio": "Presencia explícita de liderazgo y equipos en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "proveedores",
+        "etiqueta": "Proveedores y<br>productoras",
+        "criterio": "Presencia explícita de proveedores y productoras en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "creativa",
+        "etiqueta": "Industria<br>creativa",
+        "criterio": "Presencia explícita de industria creativa en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "produccion": true,
+        "presupuesto": true,
+        "protocolo": true,
+        "liderazgo": true,
+        "proveedores": true,
+        "creativa": true
+      }
+    },
+    "ofertas": {
+      "ucreativa_eventos": {
+        "revisado": true,
+        "etiqueta": "Precio ambiguo",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Alternativa citada en el brief, verificada en la página oficial: 6 semanas, virtual; preproducción, producción y posproducción de conciertos, desfiles y eventos deportivos, logística, locaciones, contratos y personal técnico. El rótulo «Inversión: C 240» no tiene unidad clara y el código de la página registra 102000 CRC; no se toma como precio verificado. No declara presupuesto, protocolo ni liderazgo.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": false,
+          "protocolo": false,
+          "liderazgo": false,
+          "proveedores": null,
+          "creativa": true
+        }
+      },
+      "ucreativa_protocolo": {
+        "revisado": true,
+        "etiqueta": "Precio ambiguo",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "6 semanas, virtual; normas de etiqueta y protocolo en ceremonias oficiales, sociales, empresariales y académicas, con planificación, dirección y ejecución de eventos. Mismo rótulo de precio ambiguo («C 240»; 102000 CRC en metadatos), no verificado.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": false,
+          "protocolo": true,
+          "liderazgo": false,
+          "proveedores": false,
+          "creativa": false
+        }
+      },
+      "ucr_eccc": {
+        "revisado": true,
+        "etiqueta": "₡561.000 (suma de cargos)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Bimodal, miércoles 6–9 p. m., 8 meses; certificado de aprovechamiento de 84 horas (VAS). Precio total calculado como suma de los cargos publicados en la página oficial: matrícula ₡35.700 + trámite de certificado ₡35.700 + 8 mensualidades de ₡61.200; la página no imprime el total. Módulos de protocolo, eventos corporativos internos, publicitarios/BTL y culturales, artísticos y masivos; no declara presupuesto, liderazgo ni proveedores.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": false,
+          "protocolo": true,
+          "liderazgo": false,
+          "proveedores": false,
+          "creativa": true
+        }
+      },
+      "utur_bodas_pdf": {
+        "revisado": true,
+        "etiqueta": "₡86.700 (2021, IVA incl.)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Alternativa citada en el brief (presencial según el brief; el folleto oficial indica modalidad virtual y 5 sesiones). ₡86.700 con IVA incluido en folleto de 2021 alojado en utur.ac.cr. Especializado en bodas, no en eventos corporativos; incluye protocolo, montaje y contratación de proveedores. Página de listado: utur_virtuales.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": false,
+          "protocolo": true,
+          "liderazgo": false,
+          "proveedores": true,
+          "creativa": false
+        }
+      },
+      "utur_congresos_pdf": {
+        "revisado": true,
+        "etiqueta": "₡852.500 (2020, 11 módulos)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Técnico del mismo nivel que la propuesta: 11 módulos mensuales de 24 horas lectivas (264 h calculadas), semipresencial. Total calculado: 11 × ₡77.500 por módulo, sin matrícula, según folleto oficial de 2020. La página de técnicos presenciales (utur_presenciales) indica que no está disponible para matrícula. Enfoque MICE: planificación, montajes, audiovisual y etiqueta y protocolo. Total calculado a partir de un folleto de 2020 y programa no disponible para matrícula: no se usa como precio verificado.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": false,
+          "protocolo": true,
+          "liderazgo": false,
+          "proveedores": false,
+          "creativa": false
+        }
+      },
+      "iseie_eventos": {
+        "revisado": true,
+        "etiqueta": "USD 344 según brief (no verificado)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Alternativa citada en el brief (USD 344). En la consulta la página mostró «300 €» (euros, no convertidos), lo que sugiere precio según ubicación; no se pudo ver la cifra en USD, por eso no se marca como verificado. 1 mes, 100 horas, 4 ECTS, online; presupuesto, proveedores, marketing y evaluación. «Protocolos» se refiere a seguridad, no a protocolo ceremonial.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": true,
+          "protocolo": false,
+          "liderazgo": false,
+          "proveedores": true,
+          "creativa": false
+        }
+      },
+      "ulatina_mice": {
+        "revisado": true,
+        "etiqueta": "Sin precio publicado",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Oferta propia de ULatina (Facultad de Ciencias Empresariales y Hospitalidad), 100% virtual asincrónica, 8 meses. Datos tomados de nota de prensa; no se localizó la ficha oficial ni el precio. Contenidos declarados: planificación estratégica de eventos, liderazgo y trabajo en equipo, presupuestos. Puede canibalizar o complementar el técnico presencial.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": true,
+          "protocolo": false,
+          "liderazgo": true,
+          "proveedores": false,
+          "creativa": false
+        }
+      },
+      "coursera_intro": {
+        "revisado": true,
+        "etiqueta": "Suscripción",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Sustituto de bajo costo y corta duración (2 horas estimadas). Presupuesto, gestión de proveedores, sedes y marketing. Precio depende de suscripción; no se registra.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": true,
+          "protocolo": false,
+          "liderazgo": false,
+          "proveedores": true,
+          "creativa": false
+        }
+      },
+      "coursera_palermo": {
+        "revisado": true,
+        "etiqueta": "Suscripción",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Curso en español (10 horas estimadas): eventos sociales, empresariales y culturales, coordinación con proveedores, presupuesto y tablero de control. Precio depende de suscripción/certificado; no se registra.",
+        "contenidos": {
+          "produccion": true,
+          "presupuesto": true,
+          "protocolo": false,
+          "liderazgo": null,
+          "proveedores": true,
+          "creativa": null
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por gestión y finanzas",
+        "texto": "Las alternativas locales se centran en producción, protocolo o MICE; ninguna verificada combina presupuesto, liderazgo y relación con productoras en un técnico presencial."
+      },
+      {
+        "titulo": "Competidor de referencia: UCR",
+        "texto": "La especialización bimodal de la UCR (84 h, ₡561.000, con módulo de eventos corporativos) es la comparación más directa en contenido y precio."
+      },
+      {
+        "titulo": "Empleo ligado a hotelería e inglés",
+        "texto": "Las publicaciones valoran proveedores, presupuesto y liderazgo, pero suelen exigir inglés avanzado y experiencia previa, sobre todo en hoteles de Guanacaste."
+      },
+      {
+        "titulo": "Posible canibalización interna",
+        "texto": "La certificación MICE virtual de ULatina comparte planificación, presupuesto y liderazgo; conviene definir públicos y rutas de articulación."
+      }
+    ]
+  }
+}

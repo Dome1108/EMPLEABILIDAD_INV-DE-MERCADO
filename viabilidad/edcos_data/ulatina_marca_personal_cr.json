@@ -1,0 +1,1483 @@
+{
+  "id": "marca_personal_cr",
+  "nombre": "Marca Personal",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-11-06",
+  "version_investigacion": "2026-11-06-mercado-v1",
+  "brief": {
+    "archivo": "Brief CR Marca Personal.pdf",
+    "copia_local": "edcos_fuentes/brief_marca_personal_cr.pdf",
+    "fecha_propuesta": "2026-10-20",
+    "tipo": "Técnico · Apertura de nuevo programa",
+    "pais": "Costa Rica",
+    "area_estudio": "Comunicación colectiva",
+    "facultad": "Facultad de Arte, Diseño y Comunicación Colectiva",
+    "unidad": "Otro · Campus Creativo",
+    "duracion": "2 cuatrimestres",
+    "horas_totales": null,
+    "modalidad": "Presencial (100% presencial)",
+    "experto": "No definido en el brief",
+    "objetivo": "Definir la marca personal y la propuesta de valor; aplicar dicción, manejo de la voz, expresión oral, lenguaje corporal y presencia frente a cámaras; planificar, producir y editar contenidos digitales con storytelling; desarrollar una estrategia básica de posicionamiento digital apoyada en herramientas de inteligencia artificial.",
+    "diferenciadores": [
+      "Integra la comunicación personal, la expresión corporal y oral, y la producción de contenido digital en una sola experiencia formativa.",
+      "A diferencia de propuestas centradas en marketing digital o redes sociales, trabaja cómo se presenta y comunica la persona y cómo proyecta su identidad en medios digitales."
+    ],
+    "ejes": [
+      "No informado en el brief"
+    ],
+    "habilidades": [
+      "Marca personal para diferenciación profesional y emprendimiento",
+      "Creación de contenido audiovisual para redes y plataformas",
+      "Comunicación frente a cámaras",
+      "Manejo del lenguaje corporal",
+      "Storytelling y comunicación auténtica"
+    ],
+    "nombres_alternativos": [
+      "Posicionamiento Profesional y Marca Personal",
+      "Gestión de Marca Personal"
+    ],
+    "palabras_clave": [
+      "Marca",
+      "Personal",
+      "Imagen",
+      "Profesional",
+      "Digital",
+      "Posicionamiento",
+      "Networking",
+      "Contenido",
+      "Storytelling",
+      "Comunicación"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Información y comunicación · Actividades financieras y de seguros · Actividades inmobiliarias · Enseñanza · Actividades artísticas, de entretenimiento y recreativas",
+    "interes_investigacion": "Preferencia por modalidad presencial o híbrida, horario y frecuencia (uno o dos días por semana).",
+    "competencia_declarada": "3 alternativa(s) mencionada(s) por el proponente; ver Oferta y plataformas."
+  },
+  "audiencia_propuesta": {
+    "origen": "El brief no describe segmentos de audiencia; se definirán en la investigación de mercado.",
+    "segmentos": [],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Marca Personal",
+      "archivo": "Brief CR Marca Personal.pdf",
+      "paginas": "1–4",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "fundepos",
+      "titulo": "FUNDEPOS · Marca Personal Innovadora",
+      "url": "https://web.archive.org/web/20230316230751/https://fundepos.ac.cr/marca-personal-innovadora/",
+      "observacion": "Página oficial de FUNDEPOS consultada en su copia archivada (marzo de 2023). Publica inicio 27 de julio de 2022, 40 horas, modalidad bimodal (lunes y miércoles virtual, sábado presencial) e inversión de $400. La URL vigente del evento (fundepos.ac.cr/events/programa-marca-personal-innovadora/) devuelve 404 en la consulta actual.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucr_fcs_marca",
+      "titulo": "UCR · Facultad de Ciencias Sociales · Boletín 4-2023 · Taller virtual de marca personal (ECCC)",
+      "url": "https://fcs.ucr.ac.cr/index.php/component/content/article?id=215&Itemid=101",
+      "observacion": "Taller de la Escuela de Ciencias de la Comunicación Colectiva con Laura Montero: ₡51.000 con certificado, por Zoom, 20, 22, 27 y 29 de marzo de 2023, de 6:00 a 9:00 p. m. Convocatoria histórica; no se encontró edición vigente.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "tech_marca",
+      "titulo": "TECH Global University Costa Rica · Curso Universitario en Desarrollo de Marca Personal",
+      "url": "https://www.techtitute.com/es-cr/escuela-de-negocios/diplomado/desarrollo-de-marca-personal",
+      "observacion": "150 horas, 6 semanas, 100% online, 6 ECTS. El precio aparece como «Ver precio» y no se muestra en la página.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucr_locucion",
+      "titulo": "UCR · ECCC · Locución básica",
+      "url": "https://eccc.ucr.ac.cr/educacion-continua/locucion-basica-10083/",
+      "observacion": "Presencial, 4 clases de 3 horas (25 de enero y 1, 8 y 15 de febrero de 2027), inversión ₡61.200 con certificado de participación.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "ucr_videos",
+      "titulo": "UCR · ECCC · Creación de videos para redes sociales",
+      "url": "https://eccc.ucr.ac.cr/educacion-continua/creacion-de-videos-para-redes-sociales-12723/",
+      "observacion": "Virtual, 6 clases de 2 horas con CapCut, inversión ₡20.400. Fechas publicadas sin año (miércoles 3, 10, 17 y 24 de febrero y 3 de marzo).",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "tec_mkt_ia",
+      "titulo": "TEC · Cursos Libres · Marketing Digital con IA: creación de contenido y planeamiento de marca",
+      "url": "https://tec.ac.cr/sites/default/files/media/doc/tec-marketing-digital-con-ia.pdf",
+      "observacion": "Folleto oficial del Programa de Capacitación en Computación: 24 horas, 100% virtual sincrónico, inversión regular ₡143.000 + 2% IVA, «Matrícula abierta» sin fechas de cohorte.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_uva",
+      "titulo": "Coursera · University of Virginia · Introduction to Personal Branding",
+      "url": "https://www.coursera.org/learn/personal-branding",
+      "observacion": "318.005 inscripciones acumuladas; 7 horas para completar; 6 módulos.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_umich",
+      "titulo": "Coursera · University of Michigan · Personal Branding: Stand Out and Succeed",
+      "url": "https://www.coursera.org/learn/personal-branding-success",
+      "observacion": "18.781 inscripciones acumuladas; módulos estimados en unas 10 horas; incluye redacción de una historia de marca.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "domestika_linkedin",
+      "titulo": "Domestika · LinkedIn: construye tu marca personal (Núria Mañé)",
+      "url": "https://www.domestika.org/es/courses/672-linkedin-build-your-personal-brand",
+      "observacion": "19.550 estudiantes; 14 lecciones (2 h 46 min). Precio no visible en la página consultada.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "domestika_redes",
+      "titulo": "Domestika · Personal branding estratégico para redes sociales (Dot Lung)",
+      "url": "https://www.domestika.org/es/courses/1487-personal-branding-strategy-for-social-media",
+      "observacion": "21.005 estudiantes; 17 lecciones (1 h 43 min). Precio no visible.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "domestika_camara",
+      "titulo": "Domestika · El arte de la comunicación: presenta frente a una cámara (Domingas Person)",
+      "url": "https://www.domestika.org/es/courses/2784-presenting-on-camera-the-art-of-communication",
+      "observacion": "12.708 estudiantes; 15 lecciones (1 h 55 min). Voz, comunicación no verbal, cámara y storytelling. Precio no visible.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "domestika_directo",
+      "titulo": "Domestika · Técnicas de comunicación en directo y ante la cámara (Marina Person)",
+      "url": "https://www.domestika.org/es/courses/2764-communication-techniques-speaking-live-and-on-camera",
+      "observacion": "8.140 estudiantes; 17 lecciones (3 h 59 min). Dicción, ritmo, calentamiento vocal, encuadre y guion. Precio no visible.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_publicis",
+      "titulo": "Publicis Groupe Costa Rica · Community Manager",
+      "url": "https://cr.linkedin.com/jobs/view/community-manager-at-publicis-groupe-costa-rica-4414172731",
+      "observacion": "Heredia; publicada hace 4 días; más de 200 solicitudes; botón «Solicitar» visible.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_ollyolly",
+      "titulo": "Olly Olly · Junior Social Media Specialist",
+      "url": "https://cr.linkedin.com/jobs/view/junior-social-media-specialist-at-olly-olly-4487204702",
+      "observacion": "San José (remoto); publicada hace 2 días; 87 solicitudes; botón «Solicitar» visible; salario publicado USD 500 mensuales.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_searchapi",
+      "titulo": "SearchApi · YouTube Technical Content Creator",
+      "url": "https://cr.linkedin.com/jobs/view/youtube-technical-content-creator-at-searchapi-4432271782",
+      "observacion": "Costa Rica (remoto); publicada hace 4 meses; 70 solicitudes; botón «Solicitar» visible. La página contiene instrucciones dirigidas a postulantes que no se siguieron ni se registran.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_expanish",
+      "titulo": "Expanish · Freelance Part-Time Social Media Content Creator",
+      "url": "https://cr.linkedin.com/jobs/view/freelance-part-time-social-media-content-creator-at-expanish-cultural-immersion-programs-4455533363",
+      "observacion": "Sámara, Guanacaste; publicada hace 2 meses; 107 solicitudes; botón «Solicitar» visible; media jornada.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_cordillera",
+      "titulo": "Proyectos Cordillera · Creativo/a de Marketing y Contenido",
+      "url": "https://cr.linkedin.com/jobs/view/creativo-a-de-marketing-y-contenido-at-proyectos-cordillera-4486893252",
+      "observacion": "Santa Ana, San José (presencial); publicada hace 17 horas; 82 solicitudes; botón «Solicitar» visible.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_deloitte",
+      "titulo": "Deloitte · Manager, Value Capture & Strategic Storytelling",
+      "url": "https://cr.linkedin.com/jobs/view/manager-value-capture-strategic-storytelling-at-deloitte-4475473119",
+      "observacion": "San José; publicada hace 4 semanas; 122 solicitudes; botón «Solicitar» visible; requiere 8+ años de experiencia.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_busqueda",
+      "titulo": "LinkedIn Jobs · listado público «community manager» en Costa Rica",
+      "url": "https://cr.linkedin.com/jobs/community-manager-empleos",
+      "observacion": "Listado público usado para identificar publicaciones; mostraba 60 de 151 resultados. No se usa como conteo de vacantes.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-11-06",
+      "observacion": "Grupo 939, indicador 94981. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-11-06",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "FUNDEPOS",
+      "programa": "Marca Personal Innovadora",
+      "tipo": "Institucional",
+      "modalidad": "Híbrida",
+      "horas": 40,
+      "tipo_horas": "No especificado",
+      "precio_usd": 400,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Convocatoria histórica (inicio 27 de julio de 2022); la página vigente del programa no está disponible (404)",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": true,
+      "fuente": "fundepos",
+      "nota": "Precio, horas y temario verificados en la página oficial archivada en marzo de 2023. Coincide con el brief ($400, 40 h). Plan con módulos de marca personal, imagen del éxito, hablar en público y dicción, marketing personal, imagen digital y storytelling; no se observó IA ni producción de contenido. El temario consultado se corta en el módulo 9.",
+      "etiqueta_precio": "FUNDEPOS · USD 400 (2022)"
+    },
+    {
+      "institucion": "Universidad de Costa Rica (UCR) · ECCC",
+      "programa": "Taller virtual de marca personal",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 12,
+      "tipo_horas": "sincrónicas",
+      "precio_usd": null,
+      "precio_crc": 51000,
+      "precio_verificado": true,
+      "estado": "Convocatoria histórica (marzo de 2023); no se encontró edición vigente",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": true,
+      "fuente": "ucr_fcs_marca",
+      "nota": "Cuatro sesiones por Zoom de 6:00 a 9:00 p. m. (12 horas calculadas a partir del horario publicado). El brief lo reporta como USD 100; la fuente oficial publica ₡51.000 y no se convierte. Solo se verificó el título; el temario está en un enlace no consultado.",
+      "etiqueta_precio": "UCR · ₡51.000 (2023)"
+    },
+    {
+      "institucion": "TECH Global University",
+      "programa": "Curso Universitario en Desarrollo de Marca Personal",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 150,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada en el sitio de Costa Rica; 6 semanas, 6 ECTS; precio oculto tras «Ver precio»",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "tech_marca",
+      "nota": "Coincide con el brief (150 h, 6 semanas, precio no especificado). Temario: propuesta de valor y pitch, relato personal, plan de contenidos, monetización, copywriting y estrategias de IA aplicadas a contenidos e imagen. No incluye voz, oratoria ni presencia frente a cámara.",
+      "etiqueta_precio": "TECH · precio no publicado"
+    },
+    {
+      "institucion": "Universidad de Costa Rica (UCR) · ECCC",
+      "programa": "Locución básica",
+      "tipo": "Institucional",
+      "modalidad": "Presencial",
+      "horas": 12,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": 61200,
+      "precio_verificado": true,
+      "estado": "Oferta publicada para enero-febrero de 2027",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "ucr_locucion",
+      "nota": "Sustituto parcial: cubre solo el componente de voz (instrumento fonador, técnica vocal, proyección, herramientas para locutar). 4 clases de 3 horas.",
+      "etiqueta_precio": "UCR Locución · ₡61.200"
+    },
+    {
+      "institucion": "Universidad de Costa Rica (UCR) · ECCC",
+      "programa": "Creación de videos para redes sociales",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 12,
+      "tipo_horas": "sincrónicas",
+      "precio_usd": null,
+      "precio_crc": 20400,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; fechas sin año indicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ucr_videos",
+      "nota": "Sustituto parcial centrado en grabación y edición móvil con CapCut. Declara 6 clases de 2 horas, aunque lista 5 fechas.",
+      "etiqueta_precio": "UCR Videos · ₡20.400"
+    },
+    {
+      "institucion": "Tecnológico de Costa Rica (TEC)",
+      "programa": "Marketing Digital con IA: creación de contenido y planeamiento de marca",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 24,
+      "tipo_horas": "sincrónicas",
+      "precio_usd": null,
+      "precio_crc": 143000,
+      "precio_verificado": true,
+      "estado": "«Matrícula abierta» en el folleto; sin fecha de cohorte; precio antes del 2% de IVA",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "tec_mkt_ia",
+      "nota": "Enfocado en marca de emprendimientos o empresas, no en marca personal. Incluye storytelling de marca, plan de contenidos (blogs, videos) e IA para crear contenido. Precio regular ₡143.000 + 2% IVA.",
+      "etiqueta_precio": "TEC · ₡143.000 + IVA"
+    },
+    {
+      "institucion": "Coursera · University of Virginia",
+      "programa": "Introduction to Personal Branding",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 7,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso autodirigido disponible",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_uva",
+      "nota": "Sustituto de bajo costo en inglés. Módulos sobre infraestructura de marca, presencia web, mantenimiento y reputación en línea. Precio no verificable sin elegir plan.",
+      "etiqueta_precio": "Coursera · precio por plan"
+    },
+    {
+      "institucion": "Coursera · University of Michigan",
+      "programa": "Personal Branding: Stand Out and Succeed",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 10,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso autodirigido disponible",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_umich",
+      "nota": "Unas 10 horas estimadas por módulo (3+3+2+2). Valores personales, marca como persona e historia de marca. Precio no verificable sin elegir plan.",
+      "etiqueta_precio": "Coursera · precio por plan"
+    },
+    {
+      "institucion": "Domestika",
+      "programa": "LinkedIn: construye tu marca personal",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso grabado disponible (2 h 46 min de vídeo)",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "domestika_linkedin",
+      "nota": "Duración en vídeo de 2 h 46 min; no se registra como horas enteras. Fundamentos de marca personal, optimización de perfil, red de contactos y difusión de contenido en LinkedIn. Precio no visible.",
+      "etiqueta_precio": "Domestika · precio no visible"
+    },
+    {
+      "institucion": "Domestika",
+      "programa": "Personal branding estratégico para redes sociales",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso grabado disponible (1 h 43 min de vídeo)",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "domestika_redes",
+      "nota": "Identidad de marca, estrategia en redes, contenidos virales, educativos, narrativos y de venta. No trata voz ni cámara. Precio no visible.",
+      "etiqueta_precio": "Domestika · precio no visible"
+    },
+    {
+      "institucion": "Domestika",
+      "programa": "El arte de la comunicación: presenta frente a una cámara",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso grabado disponible (1 h 55 min de vídeo)",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "domestika_camara",
+      "nota": "Tono de voz, comunicación no verbal (postura, contacto visual, gestos), mirada a cámara, encuadre e iluminación, storytelling y guion. Precio no visible.",
+      "etiqueta_precio": "Domestika · precio no visible"
+    },
+    {
+      "institucion": "Domestika",
+      "programa": "Técnicas de comunicación en directo y ante la cámara",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Curso grabado disponible (3 h 59 min de vídeo)",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "domestika_directo",
+      "nota": "Tipos de discurso, imagen y encuadre, estructura de guion, memorización e improvisación, dicción, ritmo y calentamiento vocal; proyecto final en vídeo de 2-3 minutos. Precio no visible.",
+      "etiqueta_precio": "Domestika · precio no visible"
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 58,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "Las inscripciones publicadas muestran interés internacional amplio en marca personal (318.005 en Coursera UVA; 18.781 en Coursera UMich; 19.550 y 21.005 en Domestika) y uno menor en comunicación ante cámara (8.140 y 12.708). Son cifras acumuladas, internacionales y de cursos cortos de bajo costo, sin datos de Costa Rica ni de intención de cursar un técnico presencial de dos cuatrimestres. La persistencia de talleres locales (FUNDEPOS, UCR) sugiere interés, pero las convocatorias encontradas de marca personal son históricas. Se asigna 58: intermedio por señales indirectas consistentes, sin validación local.",
+      "fuentes": [
+        "coursera_uva",
+        "coursera_umich",
+        "domestika_linkedin",
+        "domestika_redes",
+        "domestika_camara",
+        "domestika_directo",
+        "fundepos",
+        "ucr_fcs_marca"
+      ],
+      "nivel_evidencia": "Indirecta internacional + oferta local histórica"
+    },
+    "empleabilidad": {
+      "puntaje": 58,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Seis publicaciones públicas de LinkedIn en Costa Rica, de empleadores distintos y con solicitud visible, piden creación de contenido para redes, edición de vídeo, presencia ante cámara, storytelling e IA, que coinciden con el perfil del brief. Sin embargo, la marca personal aparece solo de forma indirecta (canal propio en SearchApi), varias plazas exigen títulos en marketing o comunicación, experiencia de 1-3 años o inglés avanzado, y el salario de entrada observado es bajo (USD 500 en Olly Olly). La competencia aporta valor complementario y para emprendimiento más que una ocupación definida. Se asigna 58 como pertinencia intermedia, no tasa de empleo.",
+      "fuentes": [
+        "li_publicis",
+        "li_ollyolly",
+        "li_searchapi",
+        "li_expanish",
+        "li_cordillera",
+        "li_deloitte",
+        "li_busqueda"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "competencia": {
+      "puntaje": 60,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "No se encontró en Costa Rica una oferta vigente que integre marca personal, voz, lenguaje corporal y cámara, contenido, storytelling e IA en formato presencial prolongado: FUNDEPOS (la más cercana) y el taller de UCR son convocatorias históricas, y TECH es virtual y sin componente oral o de cámara. Sí existen sustitutos parciales baratos y vigentes (UCR Locución y Videos, TEC Marketing con IA) y cursos de plataforma con decenas de miles de estudiantes que cubren cada tema por separado. La presión es moderada y el diferencial integrador del brief es plausible pero debe demostrarse; se asigna 60.",
+      "fuentes": [
+        "fundepos",
+        "ucr_fcs_marca",
+        "tech_marca",
+        "ucr_locucion",
+        "ucr_videos",
+        "tec_mkt_ia",
+        "coursera_uva",
+        "domestika_camara",
+        "domestika_directo",
+        "domestika_redes"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "precio": {
+      "puntaje": 48,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "Las referencias verificadas son de cursos cortos: ₡20.400 (12 h) y ₡61.200 (12 h) en UCR, ₡143.000 + 2% IVA (24 h) en TEC, ₡51.000 (12 h, 2023) en UCR y USD 400 (40 h, 2022) en FUNDEPOS; TECH y las plataformas no publican precio visible. Un técnico de dos cuatrimestres tendrá un costo total muy superior a estas anclas, y los sustitutos en línea son de bajo costo. La disposición a pagar por un programa largo de marca personal no está evidenciada; se asigna 48 (débil o mixto) hasta validar precio con el público objetivo.",
+      "fuentes": [
+        "ucr_videos",
+        "ucr_locucion",
+        "tec_mkt_ia",
+        "ucr_fcs_marca",
+        "fundepos",
+        "tech_marca"
+      ],
+      "nivel_evidencia": "Documental local · juicio analítico preliminar"
+    },
+    "sector": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "IMAE sectorial BCCR · juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "El brief declara primero «Información y comunicación»; el programa se centra en comunicación y contenido digital. El IMAE de «Edición, producción de contenidos, telecomunicaciones y servicios de información» (base 2022 = 100) promedia 118.5 en enero–agosto de 2026 frente a 114.2 en el mismo periodo de 2025 (+3.8 %): actividad sostenida. Es un agregado amplio, no ventas ni demanda del programa. Se asigna 75 con el mismo criterio de las fichas ya investigadas de Costa Rica (75 para un agregado con crecimiento sostenido vinculado al núcleo del programa; 70 cuando el agregado es más amplio), sin convertir el índice en puntaje por regla de tres."
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Validar interés local con una encuesta o preinscripción en Costa Rica, incluyendo la preferencia por presencial o híbrido y uno o dos días por semana, como pide el brief."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Orientar el portafolio final a piezas demostrables (vídeo ante cámara, plan de contenidos, perfil optimizado) y articularlo con roles junior de social media, creación de contenido y comunicación; considerar inglés aplicado y edición de vídeo."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Explicitar el diferencial frente a TECH, TEC y los cursos de UCR: práctica presencial de voz, cuerpo y cámara con retroalimentación, integrada con contenido e IA; evaluar alianzas o convalidación con cursos cortos existentes."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Probar precios por cuatrimestre o por módulo frente a las anclas locales de cursos cortos (₡20.400–₡143.000) y considerar opciones de pago fraccionado o certificaciones intermedias."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "El sector se calcula con IMAE BCCR; no se investigó en este archivo."
+    }
+  ],
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · Introduction to Personal Branding (UVA)",
+          "valor": 318005,
+          "fuente": "coursera_uva"
+        },
+        {
+          "etiqueta": "Domestika · Personal branding estratégico para redes",
+          "valor": 21005,
+          "fuente": "domestika_redes"
+        },
+        {
+          "etiqueta": "Domestika · LinkedIn: construye tu marca personal",
+          "valor": 19550,
+          "fuente": "domestika_linkedin"
+        },
+        {
+          "etiqueta": "Coursera · Personal Branding: Stand Out and Succeed (UMich)",
+          "valor": 18781,
+          "fuente": "coursera_umich"
+        },
+        {
+          "etiqueta": "Domestika · Presenta frente a una cámara",
+          "valor": 12708,
+          "fuente": "domestika_camara"
+        },
+        {
+          "etiqueta": "Domestika · Comunicación en directo y ante la cámara",
+          "valor": 8140,
+          "fuente": "domestika_directo"
+        }
+      ],
+      "fuentes": [
+        "coursera_uva",
+        "coursera_umich",
+        "domestika_linkedin",
+        "domestika_redes",
+        "domestika_camara",
+        "domestika_directo",
+        "fundepos",
+        "ucr_fcs_marca"
+      ],
+      "nota": "Cifras acumuladas publicadas en las páginas de los cursos (Coursera «already enrolled», Domestika «estudiantes») al 2026-11-06. Son participación internacional, en su mayoría en cursos gratuitos o de bajo costo y de pocas horas. No se obtuvieron cifras de Udemy (la página no fue accesible) ni series de búsqueda locales; tampoco hay datos de matrícula de las ofertas costarricenses.",
+      "lectura": "Hay interés internacional sostenido por la marca personal y, en menor escala, por la comunicación frente a cámara: un curso introductorio de Coursera supera las 318.000 inscripciones y varios cursos de Domestika en español reúnen entre 8.000 y 21.000 estudiantes. No equivale a demanda costarricense ni a intención de matrícula en un técnico presencial.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_publicis",
+          "identificador_linkedin": "4414172731",
+          "empresa": "Publicis Groupe Costa Rica",
+          "cargo": "Community Manager",
+          "ciudad": "Heredia",
+          "pais": "Costa Rica",
+          "area": "Comunicación digital / agencia",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 4 días; más de 200 solicitudes; botón «Solicitar» visible",
+          "habilidades": [
+            "hab_contenido",
+            "hab_redes",
+            "hab_oral",
+            "hab_analitica"
+          ],
+          "resumen": "Crear y publicar contenido atractivo en redes sociales y gestionar comunidades en línea. Pide comunicación escrita y verbal sólida y manejo de Hootsuite, Buffer y Google Analytics.",
+          "fuente": "li_publicis"
+        },
+        {
+          "id": "li_ollyolly",
+          "identificador_linkedin": "4487204702",
+          "empresa": "Olly Olly",
+          "cargo": "Junior Social Media Specialist",
+          "ciudad": "San José (remoto)",
+          "pais": "Costa Rica",
+          "area": "Redes sociales / agencia",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 2 días; 87 solicitudes; botón «Solicitar» visible",
+          "habilidades": [
+            "hab_redes",
+            "hab_ia",
+            "hab_contenido"
+          ],
+          "resumen": "Diagramar, programar y publicar contenido mensual en Facebook, Instagram y LinkedIn para más de 200 cuentas, revisando campañas generadas con IA. Puesto de entrada con 1-2 años de experiencia y salario publicado de USD 500 mensuales.",
+          "fuente": "li_ollyolly"
+        },
+        {
+          "id": "li_searchapi",
+          "identificador_linkedin": "4432271782",
+          "empresa": "SearchApi",
+          "cargo": "YouTube Technical Content Creator",
+          "ciudad": "Costa Rica (remoto)",
+          "pais": "Costa Rica",
+          "area": "Creación de contenido / tecnología",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 4 meses; 70 solicitudes; botón «Solicitar» visible",
+          "habilidades": [
+            "hab_camara",
+            "hab_contenido",
+            "hab_edicion",
+            "hab_marca",
+            "hab_bilingue"
+          ],
+          "resumen": "Producir vídeos técnicos para YouTube apareciendo ante cámara; pide dos vídeos propios como muestra, valora canal o audiencia existente y buena edición, e inglés nativo o C2. Exige perfil técnico capaz de construir las demostraciones.",
+          "fuente": "li_searchapi"
+        },
+        {
+          "id": "li_expanish",
+          "identificador_linkedin": "4455533363",
+          "empresa": "Expanish - Cultural Immersion Programs",
+          "cargo": "Freelance Part-Time Social Media Content Creator",
+          "ciudad": "Sámara, Guanacaste",
+          "pais": "Costa Rica",
+          "area": "Creación de contenido / educación",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 2 meses; 107 solicitudes; botón «Solicitar» visible",
+          "habilidades": [
+            "hab_contenido",
+            "hab_camara",
+            "hab_corporal",
+            "hab_edicion",
+            "hab_storytelling",
+            "hab_redes",
+            "hab_bilingue"
+          ],
+          "resumen": "Crear contenido educativo y social para Instagram, TikTok y YouTube contando experiencias de estudiantes. Pide personalidad extrovertida dispuesta a aparecer ante cámara y entrevistar, edición audiovisual avanzada y fluidez en inglés y español.",
+          "fuente": "li_expanish"
+        },
+        {
+          "id": "li_cordillera",
+          "identificador_linkedin": "4486893252",
+          "empresa": "Proyectos Cordillera",
+          "cargo": "Creativo/a de Marketing y Contenido",
+          "ciudad": "Santa Ana, San José",
+          "pais": "Costa Rica",
+          "area": "Marketing / bienes raíces",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 17 horas; 82 solicitudes; botón «Solicitar» visible",
+          "habilidades": [
+            "hab_contenido",
+            "hab_edicion",
+            "hab_presentaciones",
+            "hab_oral"
+          ],
+          "resumen": "Crear contenido para marcas y campañas con fotografía, grabación y edición de vídeo básicas (Canva, CapCut, Adobe). Pide 1-3 años de experiencia, formación en marketing, comunicación o audiovisual y capacidad de presentar propuestas.",
+          "fuente": "li_cordillera"
+        },
+        {
+          "id": "li_deloitte",
+          "identificador_linkedin": "4475473119",
+          "empresa": "Deloitte (DSS Delivery Costa Rica)",
+          "cargo": "Manager, Value Capture & Strategic Storytelling",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Comunicación corporativa / consultoría",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Publicada hace 4 semanas; 122 solicitudes; botón «Solicitar» visible",
+          "habilidades": [
+            "hab_storytelling",
+            "hab_oral",
+            "hab_presentaciones",
+            "hab_corporal",
+            "hab_ia",
+            "hab_bilingue"
+          ],
+          "resumen": "Convertir información compleja en narrativas estratégicas, presentaciones ejecutivas y un informe anual de impacto, con presencia profesional ante líderes y herramientas habilitadas por IA. Rol senior (8+ años); sirve como referencia de habilidades, no como salida directa de un técnico.",
+          "fuente": "li_deloitte"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "hab_marca",
+          "habilidad": "Marca personal y propuesta de valor",
+          "cobertura": "Explícita",
+          "criterio": "Mención de marca personal, audiencia o comunidad propia, perfil público o canal propio del candidato."
+        },
+        {
+          "id": "hab_contenido",
+          "habilidad": "Creación de contenido audiovisual para redes",
+          "cobertura": "Explícita",
+          "criterio": "Crear, producir o publicar contenido para redes sociales o plataformas."
+        },
+        {
+          "id": "hab_camara",
+          "habilidad": "Comunicación frente a cámaras",
+          "cobertura": "Explícita",
+          "criterio": "Aparecer, hablar o presentar ante cámara, o entrevistar en vídeo."
+        },
+        {
+          "id": "hab_corporal",
+          "habilidad": "Lenguaje corporal y presencia",
+          "cobertura": "Explícita",
+          "criterio": "Mención de presencia profesional o ejecutiva, comunicación no verbal o personalidad extrovertida ante públicos."
+        },
+        {
+          "id": "hab_storytelling",
+          "habilidad": "Storytelling y comunicación auténtica",
+          "cobertura": "Explícita",
+          "criterio": "Construir narrativas, historias o relatos de experiencias."
+        },
+        {
+          "id": "hab_oral",
+          "habilidad": "Expresión oral y comunicación verbal",
+          "cobertura": "Explícita",
+          "criterio": "Comunicación oral o verbal sólida, vocería o presentación de propuestas."
+        },
+        {
+          "id": "hab_ia",
+          "habilidad": "Uso de herramientas de IA para contenido y posicionamiento",
+          "cobertura": "Explícita",
+          "criterio": "Uso o familiaridad con IA generativa o herramientas habilitadas por IA."
+        },
+        {
+          "id": "hab_redes",
+          "habilidad": "Gestión de redes sociales y comunidades",
+          "cobertura": "Por contrastar",
+          "criterio": "Programar, publicar, gestionar comunidades o plataformas (Instagram, TikTok, LinkedIn, YouTube)."
+        },
+        {
+          "id": "hab_edicion",
+          "habilidad": "Edición de vídeo y herramientas de diseño",
+          "cobertura": "Por contrastar",
+          "criterio": "Edición de vídeo, fotografía o uso de Canva, CapCut, Adobe u otras herramientas."
+        },
+        {
+          "id": "hab_analitica",
+          "habilidad": "Métricas y analítica digital",
+          "cobertura": "Por contrastar",
+          "criterio": "Google Analytics, métricas de redes o herramientas de medición."
+        },
+        {
+          "id": "hab_presentaciones",
+          "habilidad": "Presentaciones y propuestas",
+          "cobertura": "Por contrastar",
+          "criterio": "Elaborar o presentar propuestas o presentaciones ejecutivas."
+        },
+        {
+          "id": "hab_bilingue",
+          "habilidad": "Comunicación bilingüe (inglés-español)",
+          "cobertura": "Por contrastar",
+          "criterio": "Requisito de inglés avanzado o comunicación en ambos idiomas."
+        }
+      ],
+      "fuentes": [
+        "li_publicis",
+        "li_ollyolly",
+        "li_searchapi",
+        "li_expanish",
+        "li_cordillera",
+        "li_deloitte",
+        "li_busqueda"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Se revisó el listado público de LinkedIn Jobs en Costa Rica para «community manager» (151 resultados, 60 visibles) y se abrieron publicaciones de empleadores distintos vinculadas a creación de contenido, redes sociales, presencia ante cámara y storytelling. Todas mostraban botón «Solicitar» el 2026-11-06. Es una muestra exploratoria de habilidades: no representa el número de vacantes, la tasa de empleo de egresados ni salarios del mercado. No se encontraron en la muestra puestos de presentador o vocería, ni ventas consultivas que pidan marca personal de forma explícita; la búsqueda web adicional quedó limitada por el cupo de consultas."
+      },
+      "habilidades": [
+        {
+          "id": "hab_contenido",
+          "habilidad": "Creación de contenido audiovisual para redes",
+          "cobertura": "Explícita",
+          "criterio": "Crear, producir o publicar contenido para redes sociales o plataformas.",
+          "menciones": 5,
+          "muestra": 6,
+          "porcentaje": 83.33333333333333,
+          "fuentes": [
+            "li_publicis",
+            "li_ollyolly",
+            "li_searchapi",
+            "li_expanish",
+            "li_cordillera"
+          ]
+        },
+        {
+          "id": "hab_oral",
+          "habilidad": "Expresión oral y comunicación verbal",
+          "cobertura": "Explícita",
+          "criterio": "Comunicación oral o verbal sólida, vocería o presentación de propuestas.",
+          "menciones": 3,
+          "muestra": 6,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_publicis",
+            "li_cordillera",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "hab_redes",
+          "habilidad": "Gestión de redes sociales y comunidades",
+          "cobertura": "Por contrastar",
+          "criterio": "Programar, publicar, gestionar comunidades o plataformas (Instagram, TikTok, LinkedIn, YouTube).",
+          "menciones": 3,
+          "muestra": 6,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_publicis",
+            "li_ollyolly",
+            "li_expanish"
+          ]
+        },
+        {
+          "id": "hab_edicion",
+          "habilidad": "Edición de vídeo y herramientas de diseño",
+          "cobertura": "Por contrastar",
+          "criterio": "Edición de vídeo, fotografía o uso de Canva, CapCut, Adobe u otras herramientas.",
+          "menciones": 3,
+          "muestra": 6,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_searchapi",
+            "li_expanish",
+            "li_cordillera"
+          ]
+        },
+        {
+          "id": "hab_bilingue",
+          "habilidad": "Comunicación bilingüe (inglés-español)",
+          "cobertura": "Por contrastar",
+          "criterio": "Requisito de inglés avanzado o comunicación en ambos idiomas.",
+          "menciones": 3,
+          "muestra": 6,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_searchapi",
+            "li_expanish",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "hab_camara",
+          "habilidad": "Comunicación frente a cámaras",
+          "cobertura": "Explícita",
+          "criterio": "Aparecer, hablar o presentar ante cámara, o entrevistar en vídeo.",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_searchapi",
+            "li_expanish"
+          ]
+        },
+        {
+          "id": "hab_corporal",
+          "habilidad": "Lenguaje corporal y presencia",
+          "cobertura": "Explícita",
+          "criterio": "Mención de presencia profesional o ejecutiva, comunicación no verbal o personalidad extrovertida ante públicos.",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_expanish",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "hab_storytelling",
+          "habilidad": "Storytelling y comunicación auténtica",
+          "cobertura": "Explícita",
+          "criterio": "Construir narrativas, historias o relatos de experiencias.",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_expanish",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "hab_ia",
+          "habilidad": "Uso de herramientas de IA para contenido y posicionamiento",
+          "cobertura": "Explícita",
+          "criterio": "Uso o familiaridad con IA generativa o herramientas habilitadas por IA.",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_ollyolly",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "hab_presentaciones",
+          "habilidad": "Presentaciones y propuestas",
+          "cobertura": "Por contrastar",
+          "criterio": "Elaborar o presentar propuestas o presentaciones ejecutivas.",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_cordillera",
+            "li_deloitte"
+          ]
+        },
+        {
+          "id": "hab_marca",
+          "habilidad": "Marca personal y propuesta de valor",
+          "cobertura": "Explícita",
+          "criterio": "Mención de marca personal, audiencia o comunidad propia, perfil público o canal propio del candidato.",
+          "menciones": 1,
+          "muestra": 6,
+          "porcentaje": 16.666666666666668,
+          "fuentes": [
+            "li_searchapi"
+          ]
+        },
+        {
+          "id": "hab_analitica",
+          "habilidad": "Métricas y analítica digital",
+          "cobertura": "Por contrastar",
+          "criterio": "Google Analytics, métricas de redes o herramientas de medición.",
+          "menciones": 1,
+          "muestra": 6,
+          "porcentaje": 16.666666666666668,
+          "fuentes": [
+            "li_publicis"
+          ]
+        }
+      ],
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada"
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "fundepos",
+        "ucr_fcs_marca",
+        "tech_marca",
+        "ucr_locucion",
+        "ucr_videos",
+        "tec_mkt_ia",
+        "coursera_uva",
+        "domestika_camara",
+        "domestika_directo",
+        "domestika_redes"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "USD",
+      "fuentes": [
+        "ucr_videos",
+        "ucr_locucion",
+        "tec_mkt_ia",
+        "ucr_fcs_marca",
+        "fundepos",
+        "tech_marca"
+      ],
+      "nota": "Precios en moneda original sin convertir. UCR (₡20.400, ₡61.200, ₡51.000) y TEC (₡143.000 + 2% IVA, precio antes de IVA) en colones; FUNDEPOS en USD (USD 400, convocatoria de 2022 en página archivada). El taller UCR de marca personal es de 2023 y el brief lo reporta como USD 100. TECH, Coursera y Domestika no muestran precio verificable. Todas las referencias locales corresponden a cursos de 12 a 40 horas, no comparables directamente con un técnico de dos cuatrimestres.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Edición, producción de contenidos, telecomunicaciones y servicios de información",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 101.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 99.92,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 101.87,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 103.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 105.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 107.02,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 104.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 105.97,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 109.27,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 107.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 106.23,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 108.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 106.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 106.75,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 106.09,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 113.2,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 111.36,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 112.56,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 111.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 110.48,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 111.83,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 111.91,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 113.83,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 110.52,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 113.6,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 109.16,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 109.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 117.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 116.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 116.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 115.8,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 115.31,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 118.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 117.18,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 118.87,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 115.88,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 119.06,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 112.9,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 113.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 120.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 121.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 120.18,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 120.66,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 119.62,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94981,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-11-06",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "tema1",
+        "etiqueta": "Marca personal y<br>propuesta de valor",
+        "criterio": "Presencia explícita de marca personal y propuesta de valor en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema2",
+        "etiqueta": "Expresión oral<br>y voz",
+        "criterio": "Presencia explícita de expresión oral y voz en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema3",
+        "etiqueta": "Lenguaje corporal<br>y cámara",
+        "criterio": "Presencia explícita de lenguaje corporal y cámara en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema4",
+        "etiqueta": "Creación de<br>contenido digital",
+        "criterio": "Presencia explícita de creación de contenido digital en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema5",
+        "etiqueta": "Storytelling",
+        "criterio": "Presencia explícita de storytelling en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "tema6",
+        "etiqueta": "Posicionamiento<br>digital con IA",
+        "criterio": "Presencia explícita de posicionamiento digital con ia en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "tema1": true,
+        "tema2": true,
+        "tema3": true,
+        "tema4": true,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    "ofertas": {
+      "fundepos": {
+        "revisado": true,
+        "etiqueta": "FUNDEPOS · USD 400 (2022)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Precio, horas y temario verificados en la página oficial archivada en marzo de 2023. Coincide con el brief ($400, 40 h). Plan con módulos de marca personal, imagen del éxito, hablar en público y dicción, marketing personal, imagen digital y storytelling; no se observó IA ni producción de contenido. El temario consultado se corta en el módulo 9.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": true,
+          "tema3": null,
+          "tema4": false,
+          "tema5": true,
+          "tema6": false
+        }
+      },
+      "ucr_fcs_marca": {
+        "revisado": true,
+        "etiqueta": "UCR · ₡51.000 (2023)",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Cuatro sesiones por Zoom de 6:00 a 9:00 p. m. (12 horas calculadas a partir del horario publicado). El brief lo reporta como USD 100; la fuente oficial publica ₡51.000 y no se convierte. Solo se verificó el título; el temario está en un enlace no consultado.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": null,
+          "tema3": null,
+          "tema4": null,
+          "tema5": null,
+          "tema6": null
+        }
+      },
+      "tech_marca": {
+        "revisado": true,
+        "etiqueta": "TECH · precio no publicado",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Coincide con el brief (150 h, 6 semanas, precio no especificado). Temario: propuesta de valor y pitch, relato personal, plan de contenidos, monetización, copywriting y estrategias de IA aplicadas a contenidos e imagen. No incluye voz, oratoria ni presencia frente a cámara.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": true,
+          "tema5": true,
+          "tema6": true
+        }
+      },
+      "ucr_locucion": {
+        "revisado": true,
+        "etiqueta": "UCR Locución · ₡61.200",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Sustituto parcial: cubre solo el componente de voz (instrumento fonador, técnica vocal, proyección, herramientas para locutar). 4 clases de 3 horas.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": true,
+          "tema3": false,
+          "tema4": false,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "ucr_videos": {
+        "revisado": true,
+        "etiqueta": "UCR Videos · ₡20.400",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Sustituto parcial centrado en grabación y edición móvil con CapCut. Declara 6 clases de 2 horas, aunque lista 5 fechas.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": false,
+          "tema3": false,
+          "tema4": true,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "tec_mkt_ia": {
+        "revisado": true,
+        "etiqueta": "TEC · ₡143.000 + IVA",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Enfocado en marca de emprendimientos o empresas, no en marca personal. Incluye storytelling de marca, plan de contenidos (blogs, videos) e IA para crear contenido. Precio regular ₡143.000 + 2% IVA.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": false,
+          "tema3": false,
+          "tema4": true,
+          "tema5": true,
+          "tema6": true
+        }
+      },
+      "coursera_uva": {
+        "revisado": true,
+        "etiqueta": "Coursera · precio por plan",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Sustituto de bajo costo en inglés. Módulos sobre infraestructura de marca, presencia web, mantenimiento y reputación en línea. Precio no verificable sin elegir plan.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": null,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "coursera_umich": {
+        "revisado": true,
+        "etiqueta": "Coursera · precio por plan",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Unas 10 horas estimadas por módulo (3+3+2+2). Valores personales, marca como persona e historia de marca. Precio no verificable sin elegir plan.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": false,
+          "tema5": true,
+          "tema6": false
+        }
+      },
+      "domestika_linkedin": {
+        "revisado": true,
+        "etiqueta": "Domestika · precio no visible",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Duración en vídeo de 2 h 46 min; no se registra como horas enteras. Fundamentos de marca personal, optimización de perfil, red de contactos y difusión de contenido en LinkedIn. Precio no visible.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": true,
+          "tema5": false,
+          "tema6": false
+        }
+      },
+      "domestika_redes": {
+        "revisado": true,
+        "etiqueta": "Domestika · precio no visible",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Identidad de marca, estrategia en redes, contenidos virales, educativos, narrativos y de venta. No trata voz ni cámara. Precio no visible.",
+        "contenidos": {
+          "tema1": true,
+          "tema2": false,
+          "tema3": false,
+          "tema4": true,
+          "tema5": true,
+          "tema6": null
+        }
+      },
+      "domestika_camara": {
+        "revisado": true,
+        "etiqueta": "Domestika · precio no visible",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Tono de voz, comunicación no verbal (postura, contacto visual, gestos), mirada a cámara, encuadre e iluminación, storytelling y guion. Precio no visible.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": true,
+          "tema3": true,
+          "tema4": null,
+          "tema5": true,
+          "tema6": false
+        }
+      },
+      "domestika_directo": {
+        "revisado": true,
+        "etiqueta": "Domestika · precio no visible",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Tipos de discurso, imagen y encuadre, estructura de guion, memorización e improvisación, dicción, ritmo y calentamiento vocal; proyecto final en vídeo de 2-3 minutos. Precio no visible.",
+        "contenidos": {
+          "tema1": false,
+          "tema2": true,
+          "tema3": true,
+          "tema4": null,
+          "tema5": null,
+          "tema6": false
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por integración presencial",
+        "texto": "La oferta local cubre los temas por separado (voz, vídeo, marketing con IA) o en talleres cortos ya cerrados; el técnico se distingue si integra comunicación oral, corporal y ante cámara con producción de contenido y posicionamiento con IA en un portafolio práctico."
+      },
+      {
+        "titulo": "Interés amplio pero de bajo costo",
+        "texto": "Los cursos de marca personal y presencia ante cámara acumulan decenas de miles de inscripciones internacionales, casi siempre en formatos cortos y económicos, lo que no prueba disposición a pagar por dos cuatrimestres."
+      },
+      {
+        "titulo": "Empleabilidad complementaria",
+        "texto": "Las publicaciones en Costa Rica valoran creación de contenido, cámara, storytelling, edición e IA, pero suelen pedir formación en marketing o comunicación y experiencia; el técnico funciona mejor como complemento profesional o para emprendimiento."
+      },
+      {
+        "titulo": "Precio como principal riesgo",
+        "texto": "Las anclas locales verificadas van de ₡20.400 a ₡143.000 + IVA por cursos de 12 a 24 horas y USD 400 por 40 horas (2022); el precio total del técnico requiere validación explícita."
+      }
+    ]
+  }
+}

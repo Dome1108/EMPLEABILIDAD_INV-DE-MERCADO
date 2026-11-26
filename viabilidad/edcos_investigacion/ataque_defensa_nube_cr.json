@@ -1,0 +1,817 @@
+{
+  "id": "ataque_defensa_nube_cr",
+  "fecha_consulta": "2026-11-06",
+  "fuentes": [
+    {
+      "id": "cenfotec_cib",
+      "titulo": "Universidad CENFOTEC · Técnico en Ciberseguridad (CIBN2)",
+      "url": "https://ucenfotec.ac.cr/Carreras/tecnico-en-ciberseguridad-2/",
+      "observacion": "Virtual en vivo, 1 año y 4 meses (4 cuatrimestres). Inversión publicada ₡2 026 812, «precios sujetos a cambios». Plan: gestión de riesgos, seguridad en redes y sistemas operativos, continuidad de negocios, seguridad de operaciones."
+    },
+    {
+      "id": "cenfotec_redteam",
+      "titulo": "Universidad CENFOTEC · Técnico en Seguridad Ofensiva (Red Team), folleto",
+      "url": "https://ucenfotec.ac.cr/wp-content/uploads/2025/08/Tecnico-en-Seguridad-Ofensiva-Red-Team.pdf",
+      "observacion": "8 cursos, 9,5 créditos, 12 meses, virtual en vivo. Ethical hacking, análisis de vulnerabilidades práctico, aplicaciones web y SQL, OSINT, scripting. Sin precio en el folleto; el tarifario de agosto de 2025 devuelve 404."
+    },
+    {
+      "id": "cenfotec_blueteam",
+      "titulo": "Universidad CENFOTEC · Técnico en Seguridad Defensiva (Blue Team), folleto",
+      "url": "https://ucenfotec.ac.cr/wp-content/uploads/2025/08/Tecnico-en-Seguridad-Defensiva-Blue-Team.pdf",
+      "observacion": "8 cursos, 10 meses, virtual en vivo. Incluye seguridad en ambientes nube y gestión de riesgos. Sin precio en el folleto."
+    },
+    {
+      "id": "cenfotec_ocitec",
+      "titulo": "Universidad CENFOTEC · Plan de estudios y tarifario Técnico en Operaciones de Ciberseguridad con IA (OCITEC)",
+      "url": "https://ucenfotec.ac.cr/wp-content/uploads/2026/03/Plan-de-Estudios-Tecnico-en-Operaciones-de-Cibereguridad-con-IA-OCITEC.pdf",
+      "observacion": "Tarifario de marzo de 2026: 10 meses de 16 horas, USD 214,20 por mes, total USD 2 142,00 con IVA incluido. Incluye «Automatización y DevSecOps»."
+    },
+    {
+      "id": "tec_catalogo",
+      "titulo": "TEC · FUNDATEC · Catálogo de técnicos e idiomas 2026",
+      "url": "https://www.tec.ac.cr/sites/default/files/2026-02/catalogo-tecnicos-e-idiomas-fundatec-2026-1.pdf",
+      "observacion": "Técnico en Ciberseguridad Empresarial: 336 horas, bimestral, virtual. Bloques de ataque (pirateando una empresa, métodos de ataque, ataque a servicios web), nube e IoT, gestión de incidentes y riesgo. Sin precio."
+    },
+    {
+      "id": "tec_cibemp",
+      "titulo": "TEC · Técnico en Ciberseguridad Empresarial",
+      "url": "https://www.tec.ac.cr/carreras/tecnico-ciberseguridad-empresarial",
+      "observacion": "Horario nocturno (lunes y miércoles o martes y jueves, 6–9 p. m.). Requiere bachillerato e inglés de lectura. No publica monto."
+    },
+    {
+      "id": "fidelitas_esp",
+      "titulo": "Universidad Fidélitas · Especialización en Ciberseguridad (folleto)",
+      "url": "https://cdn.ufidelitas.ac.cr/wp-content/uploads/2025/07/14142513/FV-Flyer-Esp.-Ciberseguridad-2.pdf",
+      "observacion": "4 meses, 100 % virtual autogestionable. Módulos: principios, ethical hacking, informática forense, criptografía. No publica precio."
+    },
+    {
+      "id": "usanmarcos_cib",
+      "titulo": "Universidad San Marcos · Certificación de Especialización Técnica en Ciberseguridad",
+      "url": "https://www.usanmarcos.ac.cr/programa-tecnico/especializacion-tecnica-en-ciberseguridad",
+      "observacion": "Un año, virtual; inicio publicado 11 de enero de 2027. Perfil: incidentes, controles, evaluación de riesgos digitales. Sin horas ni precio."
+    },
+    {
+      "id": "ulatina_ciber",
+      "titulo": "La República · ULatina impulsa la formación en ciberseguridad (24/08/2026)",
+      "url": "https://www.larepublica.net/ulatina-impulsa-la-formacion-en-ciberseguridad-con-una-oferta-academica-especializada-2677764532/",
+      "observacion": "Nota de prensa sobre la oferta de ULatina: Licenciatura en Seguridad Informática y Máster Ejecutivo en Ciberseguridad (Cloud, IoT y 5G), 100 % virtual, un año. Sin precios."
+    },
+    {
+      "id": "eccouncil_ehe",
+      "titulo": "EC-Council · Ethical Hacking Essentials (EHE)",
+      "url": "https://www.eccouncil.org/train-certify/ethical-hacking-essentials-ehe/",
+      "observacion": "USD 299; vídeos autodirigidos, 47 laboratorios (35 + 12), capstone CTF y examen supervisado. La cifra «213 000+ learners» se refiere a toda la serie Essentials."
+    },
+    {
+      "id": "eccouncil_cse",
+      "titulo": "EC-Council · Cloud Security Essentials (CSE)",
+      "url": "https://www.eccouncil.org/train-certify/cloud-security-essentials-cse/",
+      "observacion": "USD 299; 10+ horas de vídeo, 6 laboratorios, capstone y voucher de examen 112-54."
+    },
+    {
+      "id": "eccouncil_dse",
+      "titulo": "EC-Council · DevSecOps Essentials (DSE)",
+      "url": "https://www.eccouncil.org/train-certify/devsecops-essentials-dse/",
+      "observacion": "USD 299; 7+ horas de vídeo, 7 laboratorios, 10 módulos, capstone y voucher de examen 112-55. Página declara «213,000+ Learners» para la serie."
+    },
+    {
+      "id": "coursera_ehe",
+      "titulo": "Coursera · EC-Council · Ethical Hacking Essentials (EHE)",
+      "url": "https://www.coursera.org/learn/ethical-hacking-essentials-ehe",
+      "observacion": "82 403 already enrolled; nivel principiante; 3 semanas a 10 horas por semana; inscripción gratuita o con Coursera Plus."
+    },
+    {
+      "id": "coursera_ehe_ho",
+      "titulo": "Coursera · EC-Council · Ethical Hacking Essentials: Hands-On Edition",
+      "url": "https://www.coursera.org/learn/ethical-hacking-essentials-hands-on-edition",
+      "observacion": "2 923 already enrolled."
+    },
+    {
+      "id": "coursera_gcloud",
+      "titulo": "Coursera · Google Cloud · Introduction to Security Principles in Cloud Computing",
+      "url": "https://www.coursera.org/learn/introduction-to-security-principles-in-cloud-computing",
+      "observacion": "47 199 already enrolled; 2 semanas a 10 horas por semana."
+    },
+    {
+      "id": "coursera_appsec",
+      "titulo": "Coursera · Application Security for Developers and DevOps Professionals",
+      "url": "https://www.coursera.org/learn/application-security-for-developers-devops",
+      "observacion": "32 531 already enrolled; 2 semanas a 10 horas por semana."
+    },
+    {
+      "id": "coursera_umn",
+      "titulo": "Coursera · University of Minnesota · Cloud Security Basics",
+      "url": "https://www.coursera.org/learn/cloud-security-basics",
+      "observacion": "19 437 already enrolled; 1 semana a 10 horas por semana."
+    },
+    {
+      "id": "coursera_mq",
+      "titulo": "Coursera · Macquarie University · Cyber Security: DevSecOps",
+      "url": "https://www.coursera.org/learn/mq-csa-devsecops",
+      "observacion": "1 769 already enrolled."
+    },
+    {
+      "id": "li_solucionesseguras",
+      "titulo": "LinkedIn · Soluciones Seguras · Ingeniero/a DevSecOps",
+      "url": "https://cr.linkedin.com/jobs/view/ingeniero-a-devsecops-at-soluciones-seguras-4473554102"
+    },
+    {
+      "id": "li_bcd",
+      "titulo": "LinkedIn · BCD Travel · Cloud Security Engineer Remote",
+      "url": "https://cr.linkedin.com/jobs/view/cloud-security-engineer-remote-at-bcd-travel-4477650039"
+    },
+    {
+      "id": "li_gbm",
+      "titulo": "LinkedIn · GBM · Ingeniero en seguridad para monitoreo SOC L1",
+      "url": "https://cr.linkedin.com/jobs/view/ingeniero-en-seguridad-para-monitoreo-soc-l1-at-gbm-4471517410"
+    },
+    {
+      "id": "li_applaudo",
+      "titulo": "LinkedIn · Applaudo · Senior Offensive Security Engineer (Web & API)",
+      "url": "https://cr.linkedin.com/jobs/view/senior-offensive-security-engineer-web-api-at-applaudo-4485249469"
+    },
+    {
+      "id": "li_wbl",
+      "titulo": "LinkedIn · World Business Lenders · Cyber Security Analyst",
+      "url": "https://cr.linkedin.com/jobs/view/cyber-security-analyst-at-world-business-lenders-llc-4479201918"
+    },
+    {
+      "id": "li_experian",
+      "titulo": "LinkedIn · Experian · Information Security Analyst",
+      "url": "https://cr.linkedin.com/jobs/view/information-security-analyst-at-experian-4482193980"
+    },
+    {
+      "id": "li_bairesdev",
+      "titulo": "LinkedIn · BairesDev · Analista de Seguridad de Aplicaciones (Code Review)",
+      "url": "https://cr.linkedin.com/jobs/view/analista-de-seguridad-de-aplicaciones-code-review-trabajo-remoto-at-bairesdev-4485747202"
+    }
+  ],
+  "temas": [
+    {
+      "id": "tema1",
+      "etiqueta": "Seguridad<br>en la nube"
+    },
+    {
+      "id": "tema2",
+      "etiqueta": "DevSecOps<br>y CI/CD"
+    },
+    {
+      "id": "tema3",
+      "etiqueta": "Hacking ético<br>y pentesting"
+    },
+    {
+      "id": "tema4",
+      "etiqueta": "Análisis de<br>vulnerabilidades"
+    },
+    {
+      "id": "tema5",
+      "etiqueta": "Gestión<br>de riesgos"
+    },
+    {
+      "id": "tema6",
+      "etiqueta": "Laboratorios<br>prácticos"
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Ciberseguridad (CIBN2)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": 2026812,
+      "precio_verificado": true,
+      "estado": "Oferta publicada; inversión total publicada, sujeta a cambios sin previo aviso",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "cenfotec_cib",
+      "nota": "Virtual en vivo, 4 cuatrimestres (1 año y 4 meses), el doble de duración que la propuesta. La página no indica si el monto incluye IVA. El plan visible no menciona nube, DevSecOps ni laboratorios específicos.",
+      "etiqueta_precio": "CENFOTEC Técnico Ciberseguridad",
+      "contenidos": {
+        "tema1": false,
+        "tema2": false,
+        "tema3": null,
+        "tema4": null,
+        "tema5": true,
+        "tema6": null
+      }
+    },
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Operaciones de Ciberseguridad con IA (OCITEC)",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": 160,
+      "tipo_horas": "académicas",
+      "precio_usd": 2142,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Tarifario de marzo de 2026, IVA incluido; precios pueden cambiar sin previo aviso",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "cenfotec_ocitec",
+      "nota": "Diez meses de 16 horas (USD 214,20 por mes). Incluye «Automatización y DevSecOps», ingeniería social, ransomware, forense y respuesta a incidentes. El tarifario no indica modalidad y la correspondencia entre códigos y nombres de asignaturas está desalineada en el PDF.",
+      "etiqueta_precio": "CENFOTEC OCITEC (IA)",
+      "contenidos": {
+        "tema1": false,
+        "tema2": true,
+        "tema3": false,
+        "tema4": null,
+        "tema5": null,
+        "tema6": null
+      }
+    },
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Seguridad Ofensiva (Red Team)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Folleto publicado; tarifario de agosto de 2025 ya no disponible (404)",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "cenfotec_redteam",
+      "nota": "8 cursos, 12 meses, virtual en vivo: ethical hacking, análisis de vulnerabilidades práctico, aplicaciones web y SQL, OSINT, scripting y proyecto integrador; describe simulaciones de ciberataques controlados y análisis de riesgos. Es el competidor más cercano en el eje ofensivo, sin componente de nube ni DevSecOps.",
+      "etiqueta_precio": "CENFOTEC Red Team",
+      "contenidos": {
+        "tema1": false,
+        "tema2": false,
+        "tema3": true,
+        "tema4": true,
+        "tema5": true,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "Universidad CENFOTEC",
+      "programa": "Técnico en Seguridad Defensiva (Blue Team)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Folleto publicado; precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "cenfotec_blueteam",
+      "nota": "8 cursos, 10 meses, virtual en vivo: defensa en profundidad, Active Directory, seguridad en ambientes nube, gestión de riesgos, continuidad y auditoría. Complementa el eje defensivo de la propuesta.",
+      "etiqueta_precio": "CENFOTEC Blue Team",
+      "contenidos": {
+        "tema1": true,
+        "tema2": false,
+        "tema3": false,
+        "tema4": null,
+        "tema5": true,
+        "tema6": null
+      }
+    },
+    {
+      "institucion": "TEC · FUNDATEC (Actualización Empresarial)",
+      "programa": "Técnico en Ciberseguridad Empresarial",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 336,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada en catálogo 2026; monto no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "tec_catalogo",
+      "nota": "Siete bloques bimestrales, horario nocturno. Incluye ataque a empresas, servicios web y redes, IoT y computación en la nube, gestión de incidentes y del riesgo empresarial. Requiere bachillerato e inglés de lectura.",
+      "etiqueta_precio": "TEC Ciberseguridad Empresarial",
+      "contenidos": {
+        "tema1": true,
+        "tema2": false,
+        "tema3": true,
+        "tema4": null,
+        "tema5": true,
+        "tema6": null
+      }
+    },
+    {
+      "institucion": "Universidad Fidélitas",
+      "programa": "Especialización en Ciberseguridad",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Folleto publicado (2025); precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "fidelitas_esp",
+      "nota": "4 meses, 100 % virtual y autogestionable. Módulos de principios, ethical hacking, forense y criptografía; menciona análisis de riesgo y corrección de vulnerabilidades. No aborda nube ni DevSecOps.",
+      "etiqueta_precio": "Fidélitas Especialización",
+      "contenidos": {
+        "tema1": false,
+        "tema2": false,
+        "tema3": true,
+        "tema4": true,
+        "tema5": true,
+        "tema6": null
+      }
+    },
+    {
+      "institucion": "Universidad San Marcos",
+      "programa": "Certificación de Especialización Técnica en Ciberseguridad",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Oferta publicada; inicio 11 de enero de 2027; precio no publicado",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": true,
+      "fuente": "usanmarcos_cib",
+      "nota": "Un año, virtual. El perfil de salida menciona incidentes, controles, sistemas de gestión y evaluación de riesgos digitales; la página no detalla cursos.",
+      "etiqueta_precio": "San Marcos Especialización",
+      "contenidos": {
+        "tema1": null,
+        "tema2": null,
+        "tema3": null,
+        "tema4": null,
+        "tema5": true,
+        "tema6": null
+      }
+    },
+    {
+      "institucion": "Universidad Latina de Costa Rica (ULatina)",
+      "programa": "Máster Ejecutivo en Ciberseguridad con énfasis en Tecnologías Emergentes: Cloud, IoT y 5G",
+      "tipo": "Oferta propia",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Mencionado en nota de prensa de agosto de 2026; precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "ulatina_ciber",
+      "nota": "Posgrado de un año, 100 % virtual, con nube, IoT, 5G y gestión de riesgos. Ruta de continuidad posible para egresados del técnico, no competidor. La misma nota cita la Licenciatura en Seguridad Informática con laboratorios en el Hub de Innovación.",
+      "etiqueta_precio": "ULatina Máster Ciberseguridad",
+      "contenidos": {
+        "tema1": true,
+        "tema2": false,
+        "tema3": null,
+        "tema4": null,
+        "tema5": true,
+        "tema6": null
+      }
+    },
+    {
+      "institucion": "EC-Council",
+      "programa": "Ethical Hacking Essentials (EHE)",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "de vídeo",
+      "precio_usd": 299,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Precio de lista publicado en la página oficial",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "eccouncil_ehe",
+      "nota": "Autodirigido con 47 laboratorios, capstone CTF y examen supervisado. Es una de las tres credenciales con las que se alinea la propuesta: sustituto para autodidactas y complemento potencial si el técnico incluye vouchers.",
+      "etiqueta_precio": "EC-Council EHE",
+      "contenidos": {
+        "tema1": null,
+        "tema2": false,
+        "tema3": true,
+        "tema4": null,
+        "tema5": null,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "EC-Council",
+      "programa": "Cloud Security Essentials (CSE)",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 10,
+      "tipo_horas": "de vídeo",
+      "precio_usd": 299,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Precio de lista publicado en la página oficial",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "eccouncil_cse",
+      "nota": "10+ horas de vídeo, 6 laboratorios con acceso de 6 meses, capstone y voucher de examen. Horas mínimas declaradas («10+»).",
+      "etiqueta_precio": "EC-Council CSE",
+      "contenidos": {
+        "tema1": true,
+        "tema2": null,
+        "tema3": null,
+        "tema4": null,
+        "tema5": null,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "EC-Council",
+      "programa": "DevSecOps Essentials (DSE)",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 7,
+      "tipo_horas": "de vídeo",
+      "precio_usd": 299,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Precio de lista publicado en la página oficial",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "eccouncil_dse",
+      "nota": "7+ horas de vídeo, 7 laboratorios, 10 módulos, capstone y voucher de examen. Horas mínimas declaradas («7+»).",
+      "etiqueta_precio": "EC-Council DSE",
+      "contenidos": {
+        "tema1": null,
+        "tema2": true,
+        "tema3": null,
+        "tema4": null,
+        "tema5": null,
+        "tema6": true
+      }
+    },
+    {
+      "institucion": "Coursera (EC-Council)",
+      "programa": "Ethical Hacking Essentials (EHE)",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": 30,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Inscripción gratuita; certificado incluido en Coursera Plus (sin precio individual en la página)",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_ehe",
+      "nota": "Dedicación estimada de 3 semanas a 10 horas por semana (30 horas). Versión de bajo costo del mismo contenido EHE; los laboratorios se ofrecen en una edición «Hands-On» aparte.",
+      "etiqueta_precio": "Coursera EHE",
+      "contenidos": {
+        "tema1": null,
+        "tema2": false,
+        "tema3": true,
+        "tema4": null,
+        "tema5": null,
+        "tema6": null
+      }
+    }
+  ],
+  "demanda": {
+    "observaciones": [
+      {
+        "etiqueta": "Coursera · Ethical Hacking Essentials (EC-Council)",
+        "valor": 82403,
+        "fuente": "coursera_ehe"
+      },
+      {
+        "etiqueta": "Coursera · Security Principles in Cloud Computing (Google Cloud)",
+        "valor": 47199,
+        "fuente": "coursera_gcloud"
+      },
+      {
+        "etiqueta": "Coursera · Application Security for Developers and DevOps",
+        "valor": 32531,
+        "fuente": "coursera_appsec"
+      },
+      {
+        "etiqueta": "Coursera · Cloud Security Basics (U. Minnesota)",
+        "valor": 19437,
+        "fuente": "coursera_umn"
+      },
+      {
+        "etiqueta": "Coursera · EHE Hands-On Edition (EC-Council)",
+        "valor": 2923,
+        "fuente": "coursera_ehe_ho"
+      },
+      {
+        "etiqueta": "Coursera · Cyber Security: DevSecOps (Macquarie)",
+        "valor": 1769,
+        "fuente": "coursera_mq"
+      }
+    ],
+    "lectura": "Hay interés internacional sostenido en ethical hacking introductorio y fundamentos de seguridad en la nube (decenas de miles de inscritos), mientras que los cursos específicos de DevSecOps muestran volúmenes mucho menores. Las versiones con laboratorios atraen menos inscritos que las de solo vídeo.",
+    "nota": "Cifras acumuladas internacionales publicadas en las páginas de los cursos el 2026-11-06; no son demanda local ni intención de pago en Costa Rica. La cifra de EC-Council es una declaración de marketing para toda la serie Essentials («213,000+»). No se obtuvieron cifras de Udemy (el sitio bloqueó la consulta) ni datos locales de interés; el brief tampoco aporta encuestas."
+  },
+  "empleabilidad": {
+    "catalogo": [
+      {
+        "id": "hab_cloud",
+        "habilidad": "Seguridad en la nube (AWS, Azure, GCP, CNAPP)",
+        "cobertura": "Explícita",
+        "criterio": "Menciona proteger entornos cloud, herramientas de postura de nube o familiaridad con nubes públicas."
+      },
+      {
+        "id": "hab_hacking",
+        "habilidad": "Hacking ético y pruebas de penetración",
+        "cobertura": "Explícita",
+        "criterio": "Menciona pentesting, explotación controlada, seguridad ofensiva o red team."
+      },
+      {
+        "id": "hab_vuln",
+        "habilidad": "Análisis y gestión de vulnerabilidades",
+        "cobertura": "Explícita",
+        "criterio": "Menciona escaneos de vulnerabilidades, validación o seguimiento de remediación, scoring CVSS."
+      },
+      {
+        "id": "hab_riesgo",
+        "habilidad": "Gestión de riesgos y cumplimiento",
+        "cobertura": "Explícita",
+        "criterio": "Menciona riesgo, cumplimiento, auditoría o marcos como SOC 2, NIST o CIS."
+      },
+      {
+        "id": "hab_devsecops",
+        "habilidad": "Automatización DevSecOps en CI/CD (SAST, DAST, SCA)",
+        "cobertura": "Explícita",
+        "criterio": "Menciona integrar seguridad en pipelines, herramientas SAST/DAST o «shift left»."
+      },
+      {
+        "id": "hab_iam",
+        "habilidad": "Identidades y accesos (IAM, MFA, SSO)",
+        "cobertura": "Explícita",
+        "criterio": "Menciona control de accesos, revisiones de acceso, MFA, mínimo privilegio u OAuth/SAML."
+      },
+      {
+        "id": "hab_appsec",
+        "habilidad": "Seguridad de aplicaciones web y API (OWASP)",
+        "cobertura": "Explícita",
+        "criterio": "Menciona OWASP, pruebas de aplicaciones o APIs, revisión de código seguro."
+      },
+      {
+        "id": "hab_soc",
+        "habilidad": "Monitoreo SOC/SIEM y respuesta a incidentes",
+        "cobertura": "Por contrastar",
+        "criterio": "Menciona monitoreo de alertas, SIEM, SOC, investigación o escalamiento de incidentes."
+      },
+      {
+        "id": "hab_contenedores",
+        "habilidad": "Contenedores e infraestructura como código (Docker, Kubernetes, Terraform)",
+        "cobertura": "Por contrastar",
+        "criterio": "Menciona Docker, Kubernetes, Terraform, Ansible o CloudFormation."
+      },
+      {
+        "id": "hab_scripting",
+        "habilidad": "Scripting para automatización (Python, PowerShell, Bash)",
+        "cobertura": "Por contrastar",
+        "criterio": "Menciona lenguajes de scripting o automatización de procesos de seguridad."
+      },
+      {
+        "id": "hab_ingles",
+        "habilidad": "Inglés profesional",
+        "cobertura": "Por contrastar",
+        "criterio": "Exige inglés (nivel B2 o comunicación técnica escrita y oral)."
+      },
+      {
+        "id": "hab_cert",
+        "habilidad": "Certificaciones de la industria (Security+, SC-200, nube)",
+        "cobertura": "Por contrastar",
+        "criterio": "Pide o valora certificaciones nombradas; las de EC-Council no aparecieron en la muestra."
+      }
+    ],
+    "publicaciones": [
+      {
+        "id": "li_solucionesseguras",
+        "identificador_linkedin": "4473554102",
+        "empresa": "Soluciones Seguras",
+        "cargo": "Ingeniero/a DevSecOps",
+        "ciudad": "Escazú, San José",
+        "pais": "Costa Rica",
+        "area": "DevSecOps",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 mes; botón de solicitar visible",
+        "habilidades": [
+          "hab_devsecops",
+          "hab_appsec",
+          "hab_contenedores",
+          "hab_cloud",
+          "hab_scripting"
+        ],
+        "resumen": "Integra SAST, DAST y escaneo de dependencias en pipelines CI/CD, IaC con Terraform/Ansible y seguridad en Docker y Kubernetes. Acepta formación técnica o estudios en curso, con 2 a 4 años en DevOps o seguridad de infraestructura.",
+        "fuente": "li_solucionesseguras"
+      },
+      {
+        "id": "li_bcd",
+        "identificador_linkedin": "4477650039",
+        "empresa": "BCD Travel",
+        "cargo": "Cloud Security Engineer (Remote)",
+        "ciudad": "Costa Rica (remoto)",
+        "pais": "Costa Rica",
+        "area": "Seguridad en la nube",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 semana; botón de solicitar visible",
+        "habilidades": [
+          "hab_cloud",
+          "hab_vuln",
+          "hab_devsecops",
+          "hab_contenedores",
+          "hab_scripting",
+          "hab_riesgo",
+          "hab_cert"
+        ],
+        "resumen": "Monitorea alertas, vulnerabilidades y cumplimiento en Prisma/Cortex Cloud y apoya llevar la seguridad a los pipelines. Pide experiencia extensa, marcos CIS/OWASP/NIST y valora certificaciones de nube (PCCSE, AWS/Azure, CCSK).",
+        "fuente": "li_bcd"
+      },
+      {
+        "id": "li_gbm",
+        "identificador_linkedin": "4471517410",
+        "empresa": "GBM",
+        "cargo": "Ingeniero en seguridad para monitoreo SOC L1",
+        "ciudad": "Paseo Colón, San José",
+        "pais": "Costa Rica",
+        "area": "Operaciones de seguridad (SOC)",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 mes; botón de solicitar visible",
+        "habilidades": [
+          "hab_soc",
+          "hab_cloud",
+          "hab_cert",
+          "hab_ingles"
+        ],
+        "resumen": "Opera el SOC analizando eventos y dando seguimiento a incidentes, en modalidad presencial y horario rotativo. Pide 1 año en ciberseguridad, cloud o redes, bachiller universitario, Security+, SC-200 e inglés B2.",
+        "fuente": "li_gbm"
+      },
+      {
+        "id": "li_applaudo",
+        "identificador_linkedin": "4485249469",
+        "empresa": "Applaudo",
+        "cargo": "Senior Offensive Security Engineer (Web & API)",
+        "ciudad": "San José",
+        "pais": "Costa Rica",
+        "area": "Seguridad ofensiva",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 1 semana; botón de solicitar visible",
+        "habilidades": [
+          "hab_hacking",
+          "hab_appsec",
+          "hab_vuln",
+          "hab_iam"
+        ],
+        "resumen": "Pentesting manual de aplicaciones web y APIs con OWASP, Burp Suite y pruebas de autorización en SSO (OAuth, SAML, Entra ID). Exige 5+ años de pentesting; contrato inicial de 2 meses.",
+        "fuente": "li_applaudo"
+      },
+      {
+        "id": "li_wbl",
+        "identificador_linkedin": "4479201918",
+        "empresa": "World Business Lenders, LLC",
+        "cargo": "Cyber Security Analyst",
+        "ciudad": "San José (remoto)",
+        "pais": "Costa Rica",
+        "area": "Análisis de ciberseguridad",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 3 semanas; botón de solicitar visible",
+        "habilidades": [
+          "hab_soc",
+          "hab_vuln",
+          "hab_iam",
+          "hab_scripting",
+          "hab_ingles",
+          "hab_cert"
+        ],
+        "resumen": "Rol de entrada: monitoreo de alertas, escaneos de vulnerabilidades, MFA y revisiones de acceso. No exige experiencia profesional previa y acepta exposición práctica mediante cursos, laboratorios o proyectos; requiere inglés fuerte.",
+        "fuente": "li_wbl"
+      },
+      {
+        "id": "li_experian",
+        "identificador_linkedin": "4482193980",
+        "empresa": "Experian",
+        "cargo": "Information Security Analyst (Senior)",
+        "ciudad": "Heredia",
+        "pais": "Costa Rica",
+        "area": "Gobierno y protección de datos",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 2 semanas; botón de solicitar visible",
+        "habilidades": [
+          "hab_cloud",
+          "hab_iam",
+          "hab_vuln",
+          "hab_riesgo",
+          "hab_scripting",
+          "hab_cert"
+        ],
+        "resumen": "Gestiona gobierno de accesos, reportes de vulnerabilidades y protección de datos en AWS, y apoya auditorías SOC 2. Pide 5–7 años de experiencia; Security+ o CISA son deseables.",
+        "fuente": "li_experian"
+      },
+      {
+        "id": "li_bairesdev",
+        "identificador_linkedin": "4485747202",
+        "empresa": "BairesDev",
+        "cargo": "Analista de Seguridad de Aplicaciones (Code Review), remoto",
+        "ciudad": "San José (remoto)",
+        "pais": "Costa Rica",
+        "area": "Seguridad de aplicaciones",
+        "estado_clasificacion": "Solicitud visible",
+        "estado": "Publicada hace 4 días; botón de solicitar visible",
+        "habilidades": [
+          "hab_appsec",
+          "hab_vuln",
+          "hab_devsecops",
+          "hab_riesgo"
+        ],
+        "resumen": "Revisión manual de código seguro y triage de hallazgos SAST con documentación para auditoría en entornos regulados. Pide 5+ años de experiencia.",
+        "fuente": "li_bairesdev"
+      }
+    ],
+    "alcance": "Muestra exploratoria de 7 publicaciones públicas de LinkedIn Jobs en Costa Rica (empleadores distintos), seleccionadas el 2026-11-06 en los resultados públicos para «cloud security», «devsecops», «penetration tester» y «cybersecurity analyst». Todas mostraban el botón de solicitar. No es un conteo de vacantes: el listado está dominado por cargos senior y remotos para empresas globales, y solo dos (World Business Lenders y GBM SOC L1) son de entrada; Soluciones Seguras acepta formación técnica con 2–4 años de experiencia."
+  },
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 58,
+      "justificacion": "Los cursos introductorios de ethical hacking y seguridad en la nube suman decenas de miles de inscritos en Coursera (82 403 en EHE y 47 199 en el curso de Google Cloud), lo que confirma interés internacional en los temas centrales. DevSecOps muestra volúmenes mucho menores (1 769 en Macquarie). Son cifras acumuladas internacionales; no hay datos locales de interés ni disposición de pago, y no se obtuvieron cifras de Udemy. Por eso se asigna un puntaje intermedio bajo.",
+      "fuentes": [
+        "coursera_ehe",
+        "coursera_gcloud",
+        "coursera_appsec",
+        "coursera_umn",
+        "coursera_mq",
+        "eccouncil_dse"
+      ],
+      "nivel_evidencia": "Indirecta: inscripciones internacionales acumuladas, sin evidencia local"
+    },
+    "empleabilidad": {
+      "puntaje": 60,
+      "justificacion": "Las siete publicaciones de Costa Rica estaban activas y piden exactamente las habilidades del programa: nube, DevSecOps/CI-CD, pentesting, vulnerabilidades e identidades. Sin embargo, cinco exigen entre 2 y 7 años de experiencia o perfil senior, y varias piden bachillerato universitario, inglés B2 y certificaciones como Security+ o SC-200, no las de EC-Council. Solo World Business Lenders (entrada, acepta laboratorios como experiencia) y GBM SOC L1 son accesibles a un egresado técnico. Es una inserción plausible como escalón inicial, no un empleo directo garantizado.",
+      "fuentes": [
+        "li_solucionesseguras",
+        "li_bcd",
+        "li_gbm",
+        "li_applaudo",
+        "li_wbl",
+        "li_experian",
+        "li_bairesdev"
+      ],
+      "nivel_evidencia": "Muestra exploratoria de 7 publicaciones de LinkedIn"
+    },
+    "competencia": {
+      "puntaje": 45,
+      "justificacion": "La oferta de técnicos en ciberseguridad en Costa Rica es densa: CENFOTEC sola publica al menos cuatro técnicos relacionados (general, Red Team, Blue Team, OCITEC con DevSecOps), y TEC, Fidélitas y San Marcos tienen programas virtuales. A esto se suman los propios Essentials de EC-Council (USD 299 cada uno) y Coursera con inscripción gratuita. Ninguna alternativa verificada combina nube, DevSecOps y hacking ético en un formato presencial de dos cuatrimestres, lo que deja un espacio de diferenciación, pero casi todas son virtuales y más flexibles.",
+      "fuentes": [
+        "cenfotec_cib",
+        "cenfotec_redteam",
+        "cenfotec_blueteam",
+        "cenfotec_ocitec",
+        "tec_catalogo",
+        "fidelitas_esp",
+        "usanmarcos_cib",
+        "eccouncil_ehe",
+        "eccouncil_cse",
+        "eccouncil_dse"
+      ],
+      "nivel_evidencia": "Páginas y folletos oficiales; precios disponibles para pocos competidores"
+    },
+    "precio": {
+      "puntaje": 55,
+      "justificacion": "Solo hay tres referencias verificadas: CENFOTEC Técnico en Ciberseguridad (₡2 026 812, 4 cuatrimestres), CENFOTEC OCITEC (USD 2 142 con IVA, 160 horas) y los tres Essentials de EC-Council (USD 299 cada uno, USD 897 en total, con voucher de examen). Un técnico presencial de dos cuatrimestres alineado con tres credenciales podría ubicarse entre el costo de los tres Essentials y el de los técnicos de CENFOTEC, sobre todo si incluye vouchers. El brief no declara precio, Red Team, Blue Team, TEC y Fidélitas no publican montos, y la disposición de pago local no está medida, por lo que el puntaje queda intermedio.",
+      "fuentes": [
+        "cenfotec_cib",
+        "cenfotec_ocitec",
+        "eccouncil_ehe",
+        "eccouncil_cse",
+        "eccouncil_dse"
+      ],
+      "nivel_evidencia": "Tres referencias de precio verificadas; sin precio propuesto ni datos de disposición de pago"
+    }
+  },
+  "lectura_ejecutiva": [
+    {
+      "titulo": "Diferenciación por combinación y presencialidad",
+      "texto": "Ninguna alternativa verificada en Costa Rica integra nube, DevSecOps y hacking ético en un técnico presencial corto. CENFOTEC separa ofensiva, defensiva y DevSecOps en técnicos virtuales distintos."
+    },
+    {
+      "titulo": "Las credenciales EC-Council son un arma de doble filo",
+      "texto": "La alineación con CSE, DSE y EHE da reconocimiento, pero el mismo contenido se compra en línea por USD 299 por curso o se audita gratis en Coursera. El valor del técnico debe estar en laboratorios guiados, presencialidad y vouchers incluidos."
+    },
+    {
+      "titulo": "Empleo real, pero con escalón de experiencia",
+      "texto": "Las vacantes de nube, DevSecOps y pentesting en Costa Rica son mayoritariamente senior. Los puestos accesibles a un egresado técnico son de SOC o análisis de entrada y suelen pedir inglés y Security+."
+    },
+    {
+      "titulo": "Demanda internacional visible, local sin medir",
+      "texto": "Hay interés internacional alto en ethical hacking y fundamentos de nube, y bajo en DevSecOps puro. Falta evidencia local de volumen e intención de pago."
+    }
+  ],
+  "recomendaciones": {
+    "demanda": "Validar interés local con una encuesta o sesión informativa entre estudiantes de Ingeniería de ULatina y egresados de colegios técnicos, midiendo preferencia por presencialidad y disposición a pagar con vouchers EC-Council incluidos.",
+    "empleabilidad": "Orientar la salida hacia roles de entrada (analista SOC L1, asistente de pentesting, analista junior de vulnerabilidades), reforzar inglés técnico y considerar preparación para Security+ o SC-200, que aparecen en las vacantes más que las credenciales de EC-Council. Usar un portafolio de laboratorios como evidencia de experiencia práctica.",
+    "competencia": "Comunicar explícitamente la integración nube + DevSecOps + hacking ético y la presencialidad con laboratorios, frente a los técnicos virtuales de CENFOTEC, TEC y Fidélitas. Confirmar el precio de los técnicos Red Team y Blue Team de CENFOTEC y del TEC por consulta directa.",
+    "precio": "Definir un precio que se compare con el costo de los tres Essentials (USD 897) y con OCITEC (USD 2 142 con IVA), indicando si incluye los vouchers de examen. Ofrecer pago por cuatrimestre.",
+    "sector": "El sector económico no se investigó aquí; se calcula con el IMAE del BCCR para la actividad declarada (actividades profesionales, científicas y técnicas)."
+  },
+  "nota_precio": "Montos en moneda original y sin convertir. CENFOTEC Técnico en Ciberseguridad publica ₡2 026 812, sujeto a cambios y sin indicar IVA. CENFOTEC OCITEC publica USD 2 142 con IVA incluido (tarifario de marzo de 2026); la nota del tarifario añade un 2 % de IVA para técnicos ágiles. EC-Council publica USD 299 por cada Essentials, con voucher de examen, antes de impuestos locales. Coursera permite inscripción gratuita y cobra el certificado mediante Coursera Plus, sin precio individual en la página. Las demás ofertas no publican precio y figuran como nulas, no como cero."
+}

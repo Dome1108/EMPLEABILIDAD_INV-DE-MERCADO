@@ -1,3 +1,45 @@
+# Observatorio de empleabilidad y viabilidad académica
+
+Una sola aplicación Streamlit reúne tres áreas en la navegación superior:
+
+1. **Oferta de valor-empleabilidad:** empleo y salarios, educación, territorio, empresas y ventas SRI.
+2. **Viabilidad de carreras:** modelo comparativo de doce carreras, cinco dimensiones y pesos 30/22/28/12/8.
+3. **Viabilidad Educación Continua:** estudios de UDLA · Ecuador y ULatina · Costa Rica, con sus fuentes por programa.
+
+## Abrir el proyecto integrado
+
+Desde la raíz del repositorio:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501
+```
+
+También puede ejecutarse `iniciar_dashboard.bat`. La conexión institucional conserva la configuración existente. Las dos áreas de viabilidad pueden abrirse desde la navegación aunque SQL Server no esté disponible. La demostración sólo se activa explícitamente y conserva su identificación como datos sintéticos.
+
+## Compartir evidencia con viabilidad
+
+Consulta las carreras y el nivel en **Oferta de valor-empleabilidad**. El perfil en **Viabilidad de carreras** utiliza automáticamente esa selección. Los filtros de carrera, nivel, paleta y corte se conservan al navegar entre las tres pantallas.
+
+Se comparten exclusivamente agregados: graduados, empleo visible, bandas salariales, cobertura del cruce CIIU y ventas mensuales de los sectores. La aplicación no traslada identificaciones individuales ni RUC a la vista de viabilidad. Las ventas se toman del mismo cruce y archivo `data/consulta_sri_1.xlsx`, sin duplicarlas por empleador.
+
+La evidencia vinculada complementa el diagnóstico. **No reemplaza automáticamente los valores originales del índice**: empleo visible no equivale a alineación ocupacional y aún no se ha aprobado una regla de puntuación para crecimiento sectorial. Se conservan los pesos y fórmulas del modelo, incluida referencia contra sí misma = 100 y las reglas absolutas de precio/competencia.
+
+Los estudios de educación continua mantienen fuentes propias por país. El IMAE de Costa Rica no se sustituye por el SRI ecuatoriano. El detalle metodológico está en [viabilidad/EDCOS_METODOLOGIA.md](viabilidad/EDCOS_METODOLOGIA.md).
+
+Los tres PDF originales de los proponentes están incluidos en `viabilidad/edcos_fuentes/`. Las bases locales, fichas, fuentes y reglas analíticas forman parte del repositorio. Los Excel y scripts originales se conservan en `archivo_historico/`. Consulta [INSTALACION.md](INSTALACION.md) para replicar el proyecto en otro equipo.
+
+## Verificar la integración
+
+```powershell
+python -m unittest discover -s tests -v
+python -m unittest discover -s viabilidad/tests -v
+```
+
+`app.py` es la entrada única; `views/` contiene las tres pantallas; `integracion_viabilidad.py` gestiona la navegación del módulo y el intercambio de agregados. El tablero de viabilidad también se conserva ejecutable por separado en `viabilidad/app.py`.
+
+---
+
 # Observatorio de empleabilidad
 
 Dashboard ejecutivo en Streamlit con paleta de azules. Filtros de nivel académico y carreras homologadas, cuatro tarjetas de empleo visible y detalle por corte de empleo, salarios e instituciones.
@@ -20,6 +62,32 @@ python -m streamlit run app.py
 ```
 
 También puedes abrir `iniciar_dashboard.bat`. La aplicación estará en http://localhost:8501. Activa **Vista de demostración** para explorar datos sintéticos sin conexión. La aplicación nunca sustituye automáticamente datos reales por datos de ejemplo.
+
+## Presentación .pptx (worker de presentaciones)
+
+Los botones **Generar .pptx** y **Descargar .pptx** están en la esquina del recuadro **Área de análisis** de *Oferta de valor-empleabilidad*. La presentación usa los filtros que estén puestos en la app al pulsar **Generar .pptx**:
+
+- Empleabilidad: carreras, nivel académico, corte de análisis y zona del panel territorial (provincia, cantón, parroquia).
+- Demanda y precios: nivel académico de mercado, financiamiento, provincia de matriculados, método de proyección 2025* y semestre de precios.
+- Industrias y ventas SRI: CIIU elegidos y mes del acumulado comparable.
+- Google Trends: el proyecto elegido en *Demanda e interés académico* (o el más afín a la carrera).
+
+La genera un worker propio del observatorio (copia del worker de presentaciones del proyecto Tendencias, en `presentaciones/`), con la plantilla de Investigación de Mercados de Tendencias. Debe estar encendido mientras se usan los botones:
+
+```powershell
+python run_worker_presentaciones.py
+```
+
+o con doble clic en `iniciar_worker_presentaciones.bat`. Los pedidos se guardan en una cola SQLite local (`presentaciones/trabajo/cola.sqlite3`, fuera de git); el worker no escribe en SQL Server ni en la base de Tendencias. Si se cambian los filtros, **Descargar .pptx** se desactiva hasta generar la presentación de esos filtros.
+
+La presentación tiene las mismas 27 diapositivas que la de Tendencias. Cada sección sale de este dashboard con sus filtros:
+
+- Matriculados, titulados, Google Trends, empleabilidad, empresas, precios y ventas SRI: las pestañas del observatorio.
+- Cuadrante demanda vs. competencia, radar, índice, fortalezas, debilidades y recomendaciones: la pestaña «Viabilidad de carreras» (primera referencia, con sus pesos, umbral y nivel). Si la carrera no está entre las 12 del modelo, se usa el radar guardado en el proyecto de Tendencias.
+- LinkedIn (aptitudes, habilidades de los anuncios, mapa LATAM, cargos) y alternativas de nombre con IA: el dashboard no los tiene, así que se buscan como en Tendencias, en su base (solo lectura) y para el mismo proyecto elegido en Google Trends.
+- «Avances / Next Steps» y «Detalle del estudio»: se conservan como en la plantilla.
+
+El mapa LATAM usa `cartopy` (incluido en `requirements.txt`).
 
 ## SQL Server
 

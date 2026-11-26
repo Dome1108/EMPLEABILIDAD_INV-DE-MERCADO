@@ -1,0 +1,1358 @@
+{
+  "id": "cooperacion_internacional_cr",
+  "nombre": "Técnico en Gestión de la Cooperación Internacional y Proyectos de Desarrollo",
+  "institucion_id": "ulatina_cr",
+  "fecha_revision": "2026-11-06",
+  "version_investigacion": "2026-11-06-mercado-v1",
+  "brief": {
+    "archivo": "Brief CR Gestión de la Cooperación Internacional y Proyectos de Desarrollo.pdf",
+    "copia_local": "edcos_fuentes/brief_cooperacion_internacional_cr.pdf",
+    "fecha_propuesta": "2026-10-26",
+    "tipo": "Técnico · Apertura de nuevo programa",
+    "pais": "Costa Rica",
+    "area_estudio": "Comunicación colectiva",
+    "facultad": "Facultad de Arte, Diseño y Comunicación Colectiva",
+    "unidad": "Técnicos",
+    "duracion": "3 cuatrimestres",
+    "horas_totales": null,
+    "modalidad": "Flex (educación presencial o en línea de acuerdo con las necesidades del estudiante)",
+    "experto": "No definido en el brief",
+    "objetivo": "Comprender el sistema de cooperación internacional para el desarrollo, la Agenda 2030 y las fuentes de financiamiento; formular, presupuestar, monitorear y evaluar proyectos (marco lógico, teoría del cambio, gestión por resultados), identificar cooperantes, movilizar recursos y negociar alianzas, con ética, transparencia y respeto intercultural.",
+    "diferenciadores": [
+      "Formación práctica orientada a proyectos: los seis módulos articulan una propuesta de cooperación internacional desde el diagnóstico hasta su presentación final.",
+      "Talleres de formulación y gestión de proyectos: marco lógico, teoría del cambio, gestión por resultados y presupuestos.",
+      "Simulaciones de negociación y búsqueda de financiamiento: identificación de cooperantes, convocatorias, presentación de propuestas y alianzas.",
+      "Enfoque territorial y regional: Costa Rica y Centroamérica, con énfasis en gobiernos locales, organizaciones sociales e instituciones públicas.",
+      "Vinculación con actores de la cooperación: conversatorios, visitas y talleres con agencias, organismos internacionales, ONG y especialistas.",
+      "Proyecto integrador y portafolio profesional: diagnóstico, cooperantes, propuesta, presupuesto, indicadores y estrategia de seguimiento."
+    ],
+    "ejes": [
+      "No informado en el brief"
+    ],
+    "habilidades": [
+      "Formulación y gestión de proyectos",
+      "Identificación de oportunidades de financiamiento",
+      "Negociación y gestión de alianzas",
+      "Planificación estratégica y gestión por resultados",
+      "Comunicación técnica y gestión intercultural"
+    ],
+    "nombres_alternativos": [
+      "Técnico en Formulación y Gestión de Proyectos de Cooperación Internacional",
+      "Técnico en Cooperación Internacional y Movilización de Recursos para el Desarrollo"
+    ],
+    "palabras_clave": [
+      "Cooperación Internacional",
+      "Gestión de Proyectos",
+      "Desarrollo Sostenible",
+      "Formulación de Proyectos",
+      "Movilización de Recursos",
+      "Financiamiento Internacional",
+      "Gestión por Resultados",
+      "Marco Lógico",
+      "Alianzas Estratégicas",
+      "Monitoreo y Evaluación"
+    ],
+    "ciiu": null,
+    "sector_declarado": "Información y comunicación · Actividades profesionales, científicas y técnicas · Actividades de servicios administrativos y de apoyo · Administración pública y defensa · Otras actividades de servicio",
+    "interes_investigacion": "Demanda e intención de matrícula, necesidades de capacitación, pertinencia laboral, aceptación de la tarifa preliminar (₡150.000 por módulo y ₡900.000 por el programa), preferencias académicas, competencia, empleabilidad y viabilidad con un mínimo de 10 estudiantes.",
+    "competencia_declarada": "6 alternativa(s) mencionada(s) por el proponente; ver Oferta y plataformas.",
+    "tarifa_preliminar": "₡150.000 por módulo · ₡900.000 programa completo (tarifa preliminar mencionada por el proponente, por validar)"
+  },
+  "audiencia_propuesta": {
+    "origen": "Segmentos mencionados por el proponente en el brief; pendientes de contraste con el mercado.",
+    "segmentos": [
+      "Profesionales",
+      "Funcionarios públicos",
+      "Estudiantes",
+      "Colaboradores de organizaciones sociales"
+    ],
+    "tamano": null,
+    "pagador": "No definido"
+  },
+  "fuentes": [
+    {
+      "id": "brief",
+      "titulo": "Brief del proponente · Técnico en Gestión de la Cooperación Internacional y Proyectos de Desarrollo",
+      "archivo": "Brief CR Gestión de la Cooperación Internacional y Proyectos de Desarrollo.pdf",
+      "paginas": "1–5",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "icap_mgpd",
+      "titulo": "ICAP · Programa Maestría en Gerencia de Proyectos para el Desarrollo (noviembre 2025)",
+      "url": "https://icap.ac.cr/wp-content/uploads/2026/08/Maestria-Gerencia-de-Proyectos-para-el-Desarrollo.pdf",
+      "observacion": "Virtual, 20 meses (17 de cursos y 3 de TFG), 68 créditos de 45 horas académicas cada uno. Costo total USD 5.980 más USD 300 de matrícula; residentes fiscales en Costa Rica agregan 2% de IVA. Incluye marco lógico, MEL y modalidades de financiamiento.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "cepal_marco_logico",
+      "titulo": "CEPAL/ILPES · Marco Lógico para la Formulación de Programas y Proyectos Públicos 2026 (programa del curso)",
+      "url": "https://www.cepal.org/sites/default/files/courses/files/programa-marco-logico-2026-v2-coordinador-adm.pdf",
+      "observacion": "Virtual del 6 de abril al 1 de mayo de 2026 (40 horas) o híbrido con semana presencial en México (60 horas). US$ 250 virtual y US$ 425 híbrido por alumno; inscripción hasta el 23 de marzo de 2026 (convocatoria cerrada a la fecha de consulta).",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "bid_indes_coop",
+      "titulo": "BID/INDES · Curso La Evaluación y la Gestión del Conocimiento en la Cooperación Internacional, edición 1",
+      "url": "https://cursos.iadb.org/sites/default/files/Evaluac%C3%ADon%20y%20Gesti%C3%B3n%20de%20Proyectos%20de%20Cooperaci%C3%B3n%20Internacional%201ra%20edici%C3%B3n.pdf",
+      "observacion": "Edición del 5 de noviembre al 16 de diciembre de 2018, virtual, 6 semanas (4 lectivas), solo por invitación a funcionarios públicos. Precio sin beca USD 3.000; el BID otorgó 45 becas. Convocatoria histórica.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_diseno",
+      "titulo": "Coursera · BID · Diseño de proyectos de desarrollo",
+      "url": "https://www.coursera.org/learn/diseno-de-proyectos-de-desarrollo",
+      "observacion": "14.992 personas ya inscritas; 2 semanas a 10 horas por semana; valoración 4,8 (524 reseñas). Curso 1 de la especialización Diseño y Gestión de Proyectos de Desarrollo.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_herramientas",
+      "titulo": "Coursera · BID · Herramientas de gestión de proyectos de desarrollo",
+      "url": "https://www.coursera.org/learn/herramientas-de-gestion-de-proyectos-de-desarrollo",
+      "observacion": "6.890 personas ya inscritas; 2 semanas a 10 horas por semana.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_riesgos",
+      "titulo": "Coursera · BID · Gestión con enfoque en riesgos en proyectos de desarrollo",
+      "url": "https://www.coursera.org/learn/gestion-con-enfoque-en-riesgos-en-proyectos-de-desarrollo",
+      "observacion": "5.476 personas ya inscritas; 3 módulos de 5 horas.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "coursera_final",
+      "titulo": "Coursera · BID · Proyecto Final: Diseño y Gestión de Proyectos de Desarrollo",
+      "url": "https://www.coursera.org/learn/proyecto-final-en-diseno-y-gestion-de-proyectos-de-desarrollo",
+      "observacion": "4.596 personas ya inscritas; enumera los cuatro cursos de la especialización.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "tec_tap_catalogo",
+      "titulo": "TEC/FUNDATEC · Catálogo de técnicos e idiomas 2026-1",
+      "url": "https://www.tec.ac.cr/sites/default/files/2026-02/catalogo-tecnicos-e-idiomas-fundatec-2026-1.pdf",
+      "observacion": "Técnico 2 en Administración de Proyectos: virtual, bimestral, 1216 horas declaradas, ocho bloques con enfoque PMBOK 7, predictivo y ágil. No publica precio.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "tec_tap",
+      "titulo": "TEC · Técnico en Administración de Proyectos (página del programa)",
+      "url": "https://www.tec.ac.cr/programas-academicos/tecnico-administracion-proyectos",
+      "observacion": "Bloques de seis semanas con horario nocturno y sábado. No muestra montos de matrícula ni costo por bloque; remite a capacita@tec.ac.cr.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "cce_proyectos",
+      "titulo": "Colegio de Ciencias Económicas de Costa Rica · Descriptor del curso virtual Administración de Proyectos",
+      "url": "https://colegiocienciaseconomicas.cr/cursos/admin/virtuales/Descriptor_Administracion_de_Proyectos.pdf",
+      "observacion": "Curso virtual de aprovechamiento, 40 horas en cuatro semanas, con enfoque de Marco Lógico, matriz de riesgos, monitoreo y control y valor ganado. Documento de 2021 sin precio.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "uned_tgl",
+      "titulo": "UNED · Técnico en Gestión Local (folleto de convocatoria)",
+      "url": "https://uned.cr/centros/images/lacruz/FINAL_Tecnico_Gestion_Local_v2.0.pdf",
+      "observacion": "Seis cursos virtuales en tres cuatrimestres, con iniciativa comunitaria; dirigido a personas de organizaciones de base. Convocatoria 2021; sin precio publicado.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "uci_map",
+      "titulo": "UCI · Master's Degree in Project Management (MAP)",
+      "url": "https://uci.ac.cr/en/product/maestria-en-administracion-de-proyectos/",
+      "observacion": "Virtual, 20 meses, 65 créditos. Matrícula única USD 540 y USD 518 por curso; no publica costo total. No menciona marco lógico, ODS ni monitoreo y evaluación.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_onu_mujeres",
+      "titulo": "LinkedIn Jobs · ONU Mujeres · Programme Analyst (Innovation and Entrepreneurship), NPPSA-9",
+      "url": "https://cr.linkedin.com/jobs/view/un-women-programme-analyst-innovation-and-enterpreneurship-nppsa-9-san-jose-costa-rica-at-un-women-4485376382",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_oim",
+      "titulo": "LinkedIn Jobs · OIM · Consultoría Tipo A: Asistente para apoyo a la Integración Socioeconómica de personas migrantes en CR",
+      "url": "https://cr.linkedin.com/jobs/view/consultor%C3%ADa-tipo-a-asistente-para-apoyo-a-la-integraci%C3%B3n-socioecon%C3%B3mica-de-personas-migrantes-en-cr-at-iom-un-migration-4486445957",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_olgoonik",
+      "titulo": "LinkedIn Jobs · Olgoonik Corporation · Specialist Advisor IV - Design Monitoring & Evaluation",
+      "url": "https://cr.linkedin.com/jobs/view/specialist-advisor-iv-design-monitoring-evaluation-at-olgoonik-corporation-4473029640",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_bid",
+      "titulo": "LinkedIn Jobs · Banco Interamericano de Desarrollo · Consultor PEC - Evaluación de Impacto Socioeconómico de Sobrevivientes de Trata de Personas",
+      "url": "https://cr.linkedin.com/jobs/view/consultor-pec-evaluaci%C3%B3n-de-impacto-socioecon%C3%B3mico-de-sobrevivientes-de-trata-de-personas-at-inter-american-development-bank-4484373453",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_uicn",
+      "titulo": "LinkedIn Jobs · UICN · Asistente Especialista en Gestión Ambiental y Social (Salvaguardas)",
+      "url": "https://cr.linkedin.com/jobs/view/asistente-especialista-en-gesti%C3%B3n-ambiental-y-social-salvaguardas-at-iucn-world-commission-on-environmental-law-4486469502",
+      "observacion": "LinkedIn rotula el empleador como «IUCN World Commission on Environmental Law»; la descripción corresponde a la oficina regional ORMACC de la UICN.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_unicef",
+      "titulo": "LinkedIn Jobs · UNICEF · Consultoría para elaborar el CPD de UNICEF Costa Rica 2028–2032",
+      "url": "https://cr.linkedin.com/jobs/view/consultor%C3%ADa-para-elaborar-el-cpd-de-unicef-costa-rica-2028%E2%80%932032-unicef-programas-san-jos%C3%A9-costa-rica-5-5-meses-remoto-con-viajes-at-unicef-chad-4481050619",
+      "observacion": "LinkedIn rotula el empleador como «UNICEF Tchad»; el puesto es de la oficina de UNICEF Costa Rica. Plazo de postulación: 6 de noviembre de 2026.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "li_busqueda",
+      "titulo": "LinkedIn Jobs · Búsqueda pública «cooperación internacional» en Costa Rica",
+      "url": "https://cr.linkedin.com/jobs/cooperaci%C3%B3n-internacional-empleos",
+      "observacion": "El encabezado indicaba 65 resultados (60 visibles), la mayoría sin relación con cooperación (desarrollo de software, atención médica remota, consultoría privada). Se usó solo para identificar publicaciones; no es un conteo de vacantes del perfil.",
+      "fecha": "2026-11-06"
+    },
+    {
+      "id": "bccr_imae",
+      "titulo": "BCCR · IMAE por industrias, serie original 2022 = 100",
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fecha": "2026-11-06",
+      "observacion": "Grupo 939, indicador 94984. Datos desde enero de 2023 hasta 2026-08-01; sujetos a revisión."
+    },
+    {
+      "id": "bccr_2026",
+      "titulo": "BCCR · Informe IMAE agosto 2026, publicado 13/10/2026",
+      "url": "https://www.bccr.fi.cr/cr/es/noticias/listado-de-noticias/2026/indice-mensual-de-actividad-economica-para-agosto-de-2026.html",
+      "fecha": "2026-11-06",
+      "observacion": "Contexto macroeconómico de 2026, separado de la serie sectorial."
+    }
+  ],
+  "ofertas": [
+    {
+      "institucion": "Instituto Centroamericano de Administración Pública (ICAP)",
+      "programa": "Maestría en Gerencia de Proyectos para el Desarrollo",
+      "tipo": "Otro nivel",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": 5980,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Programa publicado (documento de noviembre 2025); USD 5.980 más USD 300 de matrícula; IVA de 2% para residentes fiscales en Costa Rica",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "icap_mgpd",
+      "nota": "El ICAP figura en el brief. Se verificó la maestría porque no se encontró en línea un curso corto vigente del ICAP con precio (el PDF del programa de capacitación «Proyectos para el Desarrollo: Herramientas de Formulación, Evaluación y Cooperación» devolvió error 404). 68 créditos de 45 horas académicas; no se informa un total de horas, por lo que no se calcula. Es de nivel posgrado y duración de 20 meses: referencia de techo, no sustituto directo de un técnico.",
+      "etiqueta_precio": "ICAP · maestría"
+    },
+    {
+      "institucion": "CEPAL / ILPES",
+      "programa": "Marco Lógico para la Formulación de Programas y Proyectos Públicos (2026)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 40,
+      "tipo_horas": "académicas",
+      "precio_usd": 250,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Edición virtual del 6 de abril al 1 de mayo de 2026; la modalidad híbrida cuesta US$ 425 (60 horas). Inscripciones cerradas el 23 de marzo de 2026",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": true,
+      "fuente": "cepal_marco_logico",
+      "nota": "Oferente regional de referencia en marco lógico para el sector público. Cubre árboles de problemas, matriz de marco lógico, indicadores y medios de verificación; no trata financiamiento, cooperantes ni negociación. Se usa como referencia de precio de un módulo temático corto.",
+      "etiqueta_precio": "CEPAL · marco lógico"
+    },
+    {
+      "institucion": "Banco Interamericano de Desarrollo (BID/INDES)",
+      "programa": "La Evaluación y la Gestión del Conocimiento en la Cooperación Internacional (edición 1)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": 3000,
+      "precio_crc": null,
+      "precio_verificado": true,
+      "estado": "Precio histórico sin beca (edición noviembre–diciembre 2018); el BID becó a los 45 participantes seleccionados",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": false,
+      "fuente": "bid_indes_coop",
+      "nota": "Curso de 6 semanas por invitación para funcionarios con responsabilidades en proyectos de cooperación. Trata teoría del cambio, marco lógico, métodos y fases de evaluación. Es una referencia histórica de valor de lista, no un precio pagado ni una alternativa abierta.",
+      "etiqueta_precio": "BID/INDES · 2018"
+    },
+    {
+      "institucion": "Coursera · Banco Interamericano de Desarrollo",
+      "programa": "Especialización Diseño y Gestión de Proyectos de Desarrollo (4 cursos)",
+      "tipo": "Plataforma",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "de vídeo",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Cursos publicados y abiertos; precio del certificado no visible en la consulta",
+      "disponibilidad": "Inscripción declarada",
+      "competidor_directo": false,
+      "fuente": "coursera_final",
+      "nota": "Cursos: Diseño de proyectos de desarrollo, Herramientas de gestión (metodología PM4R), Gestión con enfoque en riesgos y Proyecto final. Cada página estima entre 1 y 2 semanas a 10 horas semanales; no se suma un total. No se verificó en la página la cobertura de marco lógico ni de M&E; se marca diseño de proyectos por el título del curso.",
+      "etiqueta_precio": "Coursera · BID"
+    },
+    {
+      "institucion": "Tecnológico de Costa Rica (TEC/FUNDATEC)",
+      "programa": "Técnico en Administración de Proyectos",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 1216,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Programa publicado en el catálogo 2026-1; precio no publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "tec_tap_catalogo",
+      "nota": "Técnico del mismo nivel, orientado a PMBOK 7 (predictivo y ágil), con un curso de principios de formulación. No trata cooperación internacional, cooperantes ni ODS. La página del programa (tec_tap) tampoco publica costos.",
+      "etiqueta_precio": "TEC · técnico"
+    },
+    {
+      "institucion": "Universidad Estatal a Distancia (UNED) · Programa de Gestión Local",
+      "programa": "Técnico en Gestión Local",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Folleto de convocatoria 2021 (seis cursos en tres cuatrimestres más una iniciativa comunitaria de seis meses)",
+      "disponibilidad": "Convocatoria histórica",
+      "competidor_directo": true,
+      "fuente": "uned_tgl",
+      "nota": "La UNED figura en el brief («gestión de proyectos y desarrollo local»). Tiene una estructura parecida a la propuesta (tres cuatrimestres y un proyecto aplicado), pero se dirige a organizaciones de base y exige cartas de respaldo. No se encontró una convocatoria vigente ni un precio.",
+      "etiqueta_precio": "UNED · TGL"
+    },
+    {
+      "institucion": "Colegio de Ciencias Económicas de Costa Rica",
+      "programa": "Administración de Proyectos (curso virtual con enfoque de Marco Lógico)",
+      "tipo": "Institucional",
+      "modalidad": "Virtual",
+      "horas": 40,
+      "tipo_horas": "académicas",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Descriptor publicado (2021); precio y próxima edición no publicados",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": true,
+      "fuente": "cce_proyectos",
+      "nota": "Colegio profesional. Curso de cuatro semanas: matriz de resultados, interesados, riesgos, monitoreo y control y valor ganado. No trata cooperación, financiamiento ni alianzas.",
+      "etiqueta_precio": "CCE · proyectos"
+    },
+    {
+      "institucion": "Universidad para la Cooperación Internacional (UCI)",
+      "programa": "Maestría en Administración de Proyectos (MAP)",
+      "tipo": "Otro nivel",
+      "modalidad": "Virtual",
+      "horas": null,
+      "tipo_horas": "No especificado",
+      "precio_usd": null,
+      "precio_crc": null,
+      "precio_verificado": false,
+      "estado": "Programa publicado; matrícula USD 540 y USD 518 por curso, sin costo total publicado",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "uci_map",
+      "nota": "Posgrado de 20 meses y 65 créditos. No se registra precio total porque la página solo da montos unitarios y no indica el número exacto de cursos facturables. No menciona marco lógico, ODS ni M&E.",
+      "etiqueta_precio": "UCI · maestría"
+    },
+    {
+      "institucion": "Universidad Nacional (UNA)",
+      "programa": "Relaciones Internacionales y formación en cooperación internacional",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Lista preliminar del proponente; costo por verificar.",
+      "precio_verificado": false
+    },
+    {
+      "institucion": "Universidad de Costa Rica (UCR)",
+      "programa": "Administración Pública y formación en gestión de proyectos",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Lista preliminar del proponente; costo por verificar.",
+      "precio_verificado": false
+    },
+    {
+      "institucion": "ULACIT",
+      "programa": "Relaciones Internacionales y programas afines",
+      "tipo": "Otro nivel",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Lista preliminar del proponente; costo por verificar.",
+      "precio_verificado": false
+    },
+    {
+      "institucion": "INCAE Business School",
+      "programa": "Dirección y gestión de proyectos",
+      "tipo": "Institucional",
+      "modalidad": "Por verificar",
+      "horas": null,
+      "precio_usd": null,
+      "precio_crc": null,
+      "estado": "Declarado por el proponente; sin verificación externa",
+      "disponibilidad": "Por confirmar",
+      "competidor_directo": false,
+      "fuente": "brief",
+      "nota": "Referencia del brief, no verificada. Lista preliminar del proponente; costo por verificar.",
+      "precio_verificado": false
+    }
+  ],
+  "evaluacion": {
+    "demanda": {
+      "puntaje": 48,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Interés en la habilidad",
+        "Intención de capacitación",
+        "Necesidad de aplicación"
+      ],
+      "justificacion": "La especialización del BID en Coursera registra entre 4.596 y 14.992 inscritos por curso, una señal de interés regional real pero moderada y concentrada en un solo oferente gratuito. No hay datos locales de búsqueda ni de intención de matrícula en Costa Rica, y no se pudieron agregar cifras de edX, Udemy ni de cursos de ODS. Se asigna 48 (débil o mixto) porque la evidencia es indirecta e internacional y describe un nicho; la meta de 10 estudiantes podría alcanzarse, pero falta validarla con el segmento de funcionarios públicos y ONG.",
+      "fuentes": [
+        "coursera_diseno",
+        "coursera_herramientas",
+        "coursera_riesgos",
+        "coursera_final"
+      ],
+      "nivel_evidencia": "Indirecta internacional (inscripciones acumuladas en plataforma)"
+    },
+    "empleabilidad": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Aplicación profesional de las competencias",
+        "Relevancia para los perfiles destinatarios",
+        "Valor del resultado práctico"
+      ],
+      "justificacion": "Seis publicaciones vigentes en San José (ONU Mujeres, UNICEF, OIM, UICN, BID y un contratista de INL) piden justamente lo que el brief declara: gestión por resultados, teoría del cambio, indicadores y M&E, informes a donantes, alianzas y movilización de recursos. Sin embargo, casi todas exigen título universitario o maestría, de 2 a 10 años de experiencia e inglés avanzado, y reciben entre 29 y 119 solicitudes. Se asigna 55 (intermedio): las competencias son pertinentes y complementan un perfil profesional, pero un técnico por sí solo difícilmente abre estos puestos.",
+      "fuentes": [
+        "li_onu_mujeres",
+        "li_unicef",
+        "li_olgoonik",
+        "li_bid",
+        "li_uicn",
+        "li_oim",
+        "li_busqueda"
+      ],
+      "nivel_evidencia": "Documental local · muestra exploratoria de LinkedIn"
+    },
+    "competencia": {
+      "puntaje": 66,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Oferta institucional comparable",
+        "Plataformas y sustitutos",
+        "Diferenciación práctica"
+      ],
+      "justificacion": "No se halló en Costa Rica un técnico o diplomado vigente centrado en cooperación internacional que combine cooperantes, financiamiento, marco lógico, M&E y negociación. Las alternativas verificadas cubren partes: el técnico del TEC (PMBOK, sin cooperación), el curso de 40 horas del Colegio de Ciencias Económicas, el Técnico en Gestión Local de la UNED (convocatoria 2021), el curso de marco lógico de CEPAL y las maestrías de ICAP y UCI de otro nivel. La especialización gratuita del BID en Coursera es un sustituto de bajo costo. Se asigna 66 (intermedio alto) por el espacio de diferenciación; no llega a favorable porque no se pudieron verificar la oferta vigente de UNA, UCR, ULACIT ni INCAE, y los cursos gratuitos de organismos son sustitutos fuertes.",
+      "fuentes": [
+        "tec_tap_catalogo",
+        "tec_tap",
+        "cce_proyectos",
+        "uned_tgl",
+        "cepal_marco_logico",
+        "icap_mgpd",
+        "uci_map",
+        "coursera_final"
+      ],
+      "nivel_evidencia": "Documental local y regional · juicio analítico preliminar"
+    },
+    "precio": {
+      "puntaje": 55,
+      "estado": "Juicio analítico preliminar",
+      "subcategorias": [
+        "Rangos publicados del mercado",
+        "Intensidad y acompañamiento de las alternativas",
+        "Posicionamiento de valor"
+      ],
+      "justificacion": "La tarifa preliminar (₡150.000 por módulo, ₡900.000 en total) queda muy por debajo de las referencias de posgrado verificadas (ICAP USD 5.980 más USD 300 de matrícula; UCI USD 518 por curso más USD 540 de matrícula) y del valor de lista histórico del BID/INDES (USD 3.000 en 2018). En cursos cortos, CEPAL cobró US$ 250 por 40 horas virtuales de marco lógico en 2026. Los técnicos locales más comparables (TEC, UNED, CCE) no publican precio y la especialización del BID es de acceso gratuito, lo que impide ubicar la tarifa frente al competidor directo. Se asigna 55 (intermedio): el monto parece razonable frente a las referencias disponibles, pero sin precios locales de técnicos la aceptación queda por validar.",
+      "fuentes": [
+        "icap_mgpd",
+        "uci_map",
+        "bid_indes_coop",
+        "cepal_marco_logico",
+        "tec_tap",
+        "cce_proyectos",
+        "coursera_final"
+      ],
+      "nivel_evidencia": "Precios oficiales de otro nivel y regionales; sin precio de técnicos locales"
+    },
+    "sector": {
+      "puntaje": 75,
+      "estado": "Juicio analítico preliminar",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nivel_evidencia": "IMAE sectorial BCCR · juicio analítico preliminar",
+      "subcategorias": [
+        "Actividad del sector en Costa Rica",
+        "Evolución del entorno económico",
+        "Aplicación de las competencias del programa"
+      ],
+      "justificacion": "El brief declara actividades profesionales, servicios administrativos y administración pública; la formulación y gestión de proyectos corresponde al agregado profesional y de apoyo. El IMAE de «Profesionales, científicas, técnicas, administrativas y servicios de apoyo» (base 2022 = 100) promedia 127.7 en enero–agosto de 2026 frente a 123.4 en el mismo periodo de 2025 (+3.5 %): actividad sostenida. Es un agregado amplio, no ventas ni demanda del programa. Se asigna 75 con el mismo criterio de las fichas ya investigadas de Costa Rica (75 para un agregado con crecimiento sostenido vinculado al núcleo del programa; 70 cuando el agregado es más amplio), sin convertir el índice en puntaje por regla de tres."
+    }
+  },
+  "recomendaciones": [
+    {
+      "titulo": "Demanda e interés",
+      "texto": "Encuestar a funcionarios de municipalidades, instituciones públicas (enlaces de cooperación), ONG y asociaciones de desarrollo sobre intención de matrícula y pago; explorar convenios con MIDEPLAN, IFAM o federaciones municipales para alcanzar el mínimo de 10 estudiantes."
+    },
+    {
+      "titulo": "Empleabilidad y valor",
+      "texto": "Incluir redacción de informes a donantes, indicadores y líneas base, salvaguardas y un componente de inglés técnico, y articular el portafolio con el proyecto integrador. Comunicar que el técnico complementa un título universitario y la experiencia."
+    },
+    {
+      "titulo": "Competencia",
+      "texto": "Pedir precio y calendario vigentes a TEC/FUNDATEC, UNED (Programa de Gestión Local), Colegio de Ciencias Económicas e ICAP (curso corto de proyectos para el desarrollo), y verificar oferta de educación continua de UNA, UCR, ULACIT e INCAE, que no se pudo confirmar en línea. Diferenciarse de los MOOC gratuitos del BID con acompañamiento, simulaciones de negociación y contacto con cooperantes."
+    },
+    {
+      "titulo": "Precio frente al mercado",
+      "texto": "Mantener la tarifa preliminar como hipótesis y probar en la encuesta un rango por módulo. Considerar descuentos institucionales o pago por módulo para funcionarios y ONG, y precisar el tratamiento del IVA."
+    },
+    {
+      "titulo": "Sector económico",
+      "texto": "El sector económico no se investiga en este archivo; se calcula con IMAE del BCCR. Conviene leerlo junto con la evolución de la cooperación internacional recibida por Costa Rica, cuya tendencia no se verificó aquí."
+    }
+  ],
+  "evidencia_visual": {
+    "demanda": {
+      "titulo": "Participación registrada en formación relacionada",
+      "serie": [],
+      "observaciones": [
+        {
+          "etiqueta": "Coursera · BID · Diseño de proyectos de desarrollo",
+          "valor": 14992,
+          "fuente": "coursera_diseno"
+        },
+        {
+          "etiqueta": "Coursera · BID · Herramientas de gestión de proyectos",
+          "valor": 6890,
+          "fuente": "coursera_herramientas"
+        },
+        {
+          "etiqueta": "Coursera · BID · Gestión con enfoque en riesgos",
+          "valor": 5476,
+          "fuente": "coursera_riesgos"
+        },
+        {
+          "etiqueta": "Coursera · BID · Proyecto final de la especialización",
+          "valor": 4596,
+          "fuente": "coursera_final"
+        }
+      ],
+      "fuentes": [
+        "coursera_diseno",
+        "coursera_herramientas",
+        "coursera_riesgos",
+        "coursera_final"
+      ],
+      "nota": "Las cuatro cifras provienen de una misma especialización del BID; son inscripciones internacionales acumuladas, no demanda local ni intención de pago en Costa Rica. No se obtuvo cifra de edX (la ficha de IDBx no cargó) ni de Udemy (página bloqueada), y el límite de búsquedas impidió ampliar a cursos de ODS u otros oferentes. Falta validar la demanda con una encuesta a funcionarios públicos, ONG y gobiernos locales.",
+      "lectura": "Hay interés hispanohablante sostenido por la gestión de proyectos de desarrollo, aunque en volúmenes moderados: entre unas 4.600 y 15.000 personas inscritas por curso, con abandono a lo largo de la secuencia de la especialización. Es un nicho, no un tema masivo.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Participaciones acumuladas · alcance internacional"
+    },
+    "empleabilidad": {
+      "titulo": "Top 10 habilidades · participaciones",
+      "origen": "linkedin",
+      "publicaciones": [
+        {
+          "id": "li_onu_mujeres",
+          "identificador_linkedin": "4485376382",
+          "empresa": "ONU Mujeres",
+          "cargo": "Programme Analyst (Innovation and Entrepreneurship), NPPSA-9",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Gestión de programas de cooperación",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 2 días; 108 solicitudes",
+          "habilidades": [
+            "hab_formulacion",
+            "hab_gpr",
+            "hab_mye",
+            "hab_reportes",
+            "hab_financiamiento",
+            "hab_alianzas",
+            "hab_ingles"
+          ],
+          "resumen": "Apoya el diseño, los planes de trabajo y presupuestos, el monitoreo con gestión basada en resultados y los informes a donantes de un portafolio de emprendimiento de mujeres, además de movilización de recursos y alianzas (programa conjunto del Fondo ODS). Pide maestría, 2 años de experiencia, inglés y español.",
+          "fuente": "li_onu_mujeres"
+        },
+        {
+          "id": "li_unicef",
+          "identificador_linkedin": "4481050619",
+          "empresa": "UNICEF Costa Rica",
+          "cargo": "Consultoría para elaborar el CPD de UNICEF Costa Rica 2028–2032",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Planificación estratégica de programas",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; anunciada el 24 de octubre de 2026, cierre el 6 de noviembre de 2026; 29 solicitudes",
+          "habilidades": [
+            "hab_toc",
+            "hab_gpr",
+            "hab_financiamiento",
+            "hab_alianzas",
+            "hab_ingles"
+          ],
+          "resumen": "Consultoría de 5,5 meses para diseñar el documento de programa de país: teoría del cambio, plan de resultados y recursos con indicadores y líneas base, alianzas y movilización de recursos. Exige 10 años de experiencia en planificación o diseño de programas.",
+          "fuente": "li_unicef"
+        },
+        {
+          "id": "li_olgoonik",
+          "identificador_linkedin": "4473029640",
+          "empresa": "Olgoonik Corporation (para INL Costa Rica)",
+          "cargo": "Specialist Advisor IV - Design Monitoring & Evaluation",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Monitoreo y evaluación",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 1 mes; 61 solicitudes",
+          "habilidades": [
+            "hab_mye",
+            "hab_toc",
+            "hab_reportes",
+            "hab_datos",
+            "hab_ingles"
+          ],
+          "resumen": "Apoya el diseño de indicadores, la teoría del cambio, la recolección y el reporte de datos y la revisión de informes de implementadores de programas de cooperación de EE. UU. Pide 3 años en M&E, inglés y español de nivel FSI 4/4 y, deseable, Power BI o Tableau.",
+          "fuente": "li_olgoonik"
+        },
+        {
+          "id": "li_bid",
+          "identificador_linkedin": "4484373453",
+          "empresa": "Banco Interamericano de Desarrollo",
+          "cargo": "Consultor PEC - Evaluación de Impacto Socioeconómico de Sobrevivientes de Trata de Personas",
+          "ciudad": "San José (remoto)",
+          "pais": "Costa Rica",
+          "area": "Evaluación de impacto",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 3 días; 39 solicitudes",
+          "habilidades": [
+            "hab_mye",
+            "hab_toc",
+            "hab_ingles"
+          ],
+          "resumen": "Diseña y ejecuta la evaluación de impacto de un piloto en Costa Rica: indicadores, matriz de evaluación, instrumentos y levantamientos de línea base y seguimiento. Requiere maestría o doctorado y 5 a 9 años de experiencia; perfil por encima del nivel técnico.",
+          "fuente": "li_bid"
+        },
+        {
+          "id": "li_uicn",
+          "identificador_linkedin": "4486469502",
+          "empresa": "UICN · Oficina Regional (ORMACC)",
+          "cargo": "Asistente Especialista en Gestión Ambiental y Social (Salvaguardas)",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Gestión de proyectos financiados por donantes",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 3 días; 119 solicitudes",
+          "habilidades": [
+            "hab_salvaguardas",
+            "hab_formulacion",
+            "hab_reportes",
+            "hab_alianzas",
+            "hab_ingles"
+          ],
+          "resumen": "Apoya la aplicación de salvaguardas ambientales y sociales en proyectos financiados por KfW: evaluaciones de riesgo, planes de gestión, quejas, reportes a donantes y apoyo a equipos de proyecto y socios. Pide título en ciencias sociales o naturales y 3 años de experiencia; inglés deseable.",
+          "fuente": "li_uicn"
+        },
+        {
+          "id": "li_oim",
+          "identificador_linkedin": "4486445957",
+          "empresa": "OIM - ONU Migración",
+          "cargo": "Consultoría Tipo A: Asistente para apoyo a la Integración Socioeconómica de personas migrantes en CR",
+          "ciudad": "San José",
+          "pais": "Costa Rica",
+          "area": "Implementación de proyectos de cooperación",
+          "estado_clasificacion": "Solicitud visible",
+          "estado": "Botón «Solicitar» visible; publicada hace 3 días; 85 solicitudes",
+          "habilidades": [
+            "hab_reportes",
+            "hab_comunicacion",
+            "hab_ingles"
+          ],
+          "resumen": "Consultoría de 11 meses en un proyecto de integración de personas migrantes: gestión de casos, diagnóstico de necesidades, referencias, apoyo a la inserción laboral e informes. Pide bachillerato universitario afín, 2 años de experiencia e inglés B2.",
+          "fuente": "li_oim"
+        }
+      ],
+      "catalogo_habilidades": [
+        {
+          "id": "hab_formulacion",
+          "habilidad": "Formulación y gestión de proyectos",
+          "cobertura": "Explícita",
+          "criterio": "Diseño, planes de trabajo, presupuestos o gestión del ciclo del proyecto"
+        },
+        {
+          "id": "hab_toc",
+          "habilidad": "Teoría del cambio y marcos de resultados",
+          "cobertura": "Explícita",
+          "criterio": "Mención de teoría del cambio, marco lógico, matriz o plan de resultados"
+        },
+        {
+          "id": "hab_gpr",
+          "habilidad": "Planificación estratégica y gestión por resultados",
+          "cobertura": "Explícita",
+          "criterio": "Gestión basada en resultados o planificación estratégica de programas"
+        },
+        {
+          "id": "hab_mye",
+          "habilidad": "Monitoreo y evaluación",
+          "cobertura": "Explícita",
+          "criterio": "Indicadores, líneas base, recolección de datos, evaluación de impacto o seguimiento de resultados"
+        },
+        {
+          "id": "hab_financiamiento",
+          "habilidad": "Identificación de financiamiento y movilización de recursos",
+          "cobertura": "Explícita",
+          "criterio": "Movilización de recursos, plan de recursos o búsqueda de fondos"
+        },
+        {
+          "id": "hab_alianzas",
+          "habilidad": "Negociación y gestión de alianzas",
+          "cobertura": "Explícita",
+          "criterio": "Coordinación con socios, contrapartes, donantes o creación de alianzas"
+        },
+        {
+          "id": "hab_comunicacion",
+          "habilidad": "Comunicación técnica y gestión intercultural",
+          "cobertura": "Explícita",
+          "criterio": "Trabajo con poblaciones diversas, facilitación o comunicación con actores"
+        },
+        {
+          "id": "hab_reportes",
+          "habilidad": "Informes a donantes y socios",
+          "cobertura": "Por contrastar",
+          "criterio": "Redacción de informes de avance, cumplimiento o resultados para financiadores"
+        },
+        {
+          "id": "hab_ingles",
+          "habilidad": "Inglés profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "Inglés requerido o deseable (incluye niveles B2 o FSI 4/4)"
+        },
+        {
+          "id": "hab_salvaguardas",
+          "habilidad": "Salvaguardas ambientales y sociales y gestión de riesgos",
+          "cobertura": "Por contrastar",
+          "criterio": "Evaluación de riesgos, planes de gestión o mecanismos de quejas en proyectos financiados"
+        },
+        {
+          "id": "hab_datos",
+          "habilidad": "Análisis y visualización de datos",
+          "cobertura": "Por contrastar",
+          "criterio": "Herramientas como Power BI o Tableau para reportar indicadores"
+        }
+      ],
+      "fuentes": [
+        "li_onu_mujeres",
+        "li_unicef",
+        "li_olgoonik",
+        "li_bid",
+        "li_uicn",
+        "li_oim",
+        "li_busqueda"
+      ],
+      "nota": "Habilidades codificadas a partir de las funciones y requisitos publicados.",
+      "busqueda": {
+        "alcance": "Seis publicaciones públicas de LinkedIn Jobs Costa Rica, todas de empleadores distintos, identificadas desde la búsqueda pública «cooperación internacional» (li_busqueda) y abiertas una por una el 2026-11-06. Todas mostraban botón «Solicitar», que en la vista pública pide iniciar sesión. El título de las páginas decía «en Quito», aparentemente por un error de visualización de LinkedIn; la ubicación declarada es San José. Los empleadores son organismos internacionales y contratistas de cooperación que suelen pedir título universitario (a menudo maestría), experiencia de 2 a 10 años e inglés. Es una muestra exploratoria de habilidades, no un conteo de vacantes ni evidencia de inserción para egresados de un técnico."
+      },
+      "habilidades": [
+        {
+          "id": "hab_ingles",
+          "habilidad": "Inglés profesional",
+          "cobertura": "Por contrastar",
+          "criterio": "Inglés requerido o deseable (incluye niveles B2 o FSI 4/4)",
+          "menciones": 6,
+          "muestra": 6,
+          "porcentaje": 100.0,
+          "fuentes": [
+            "li_onu_mujeres",
+            "li_unicef",
+            "li_olgoonik",
+            "li_bid",
+            "li_uicn",
+            "li_oim"
+          ]
+        },
+        {
+          "id": "hab_reportes",
+          "habilidad": "Informes a donantes y socios",
+          "cobertura": "Por contrastar",
+          "criterio": "Redacción de informes de avance, cumplimiento o resultados para financiadores",
+          "menciones": 4,
+          "muestra": 6,
+          "porcentaje": 66.66666666666667,
+          "fuentes": [
+            "li_onu_mujeres",
+            "li_olgoonik",
+            "li_uicn",
+            "li_oim"
+          ]
+        },
+        {
+          "id": "hab_toc",
+          "habilidad": "Teoría del cambio y marcos de resultados",
+          "cobertura": "Explícita",
+          "criterio": "Mención de teoría del cambio, marco lógico, matriz o plan de resultados",
+          "menciones": 3,
+          "muestra": 6,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_unicef",
+            "li_olgoonik",
+            "li_bid"
+          ]
+        },
+        {
+          "id": "hab_mye",
+          "habilidad": "Monitoreo y evaluación",
+          "cobertura": "Explícita",
+          "criterio": "Indicadores, líneas base, recolección de datos, evaluación de impacto o seguimiento de resultados",
+          "menciones": 3,
+          "muestra": 6,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_onu_mujeres",
+            "li_olgoonik",
+            "li_bid"
+          ]
+        },
+        {
+          "id": "hab_alianzas",
+          "habilidad": "Negociación y gestión de alianzas",
+          "cobertura": "Explícita",
+          "criterio": "Coordinación con socios, contrapartes, donantes o creación de alianzas",
+          "menciones": 3,
+          "muestra": 6,
+          "porcentaje": 50.0,
+          "fuentes": [
+            "li_onu_mujeres",
+            "li_unicef",
+            "li_uicn"
+          ]
+        },
+        {
+          "id": "hab_formulacion",
+          "habilidad": "Formulación y gestión de proyectos",
+          "cobertura": "Explícita",
+          "criterio": "Diseño, planes de trabajo, presupuestos o gestión del ciclo del proyecto",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_onu_mujeres",
+            "li_uicn"
+          ]
+        },
+        {
+          "id": "hab_gpr",
+          "habilidad": "Planificación estratégica y gestión por resultados",
+          "cobertura": "Explícita",
+          "criterio": "Gestión basada en resultados o planificación estratégica de programas",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_onu_mujeres",
+            "li_unicef"
+          ]
+        },
+        {
+          "id": "hab_financiamiento",
+          "habilidad": "Identificación de financiamiento y movilización de recursos",
+          "cobertura": "Explícita",
+          "criterio": "Movilización de recursos, plan de recursos o búsqueda de fondos",
+          "menciones": 2,
+          "muestra": 6,
+          "porcentaje": 33.333333333333336,
+          "fuentes": [
+            "li_onu_mujeres",
+            "li_unicef"
+          ]
+        },
+        {
+          "id": "hab_comunicacion",
+          "habilidad": "Comunicación técnica y gestión intercultural",
+          "cobertura": "Explícita",
+          "criterio": "Trabajo con poblaciones diversas, facilitación o comunicación con actores",
+          "menciones": 1,
+          "muestra": 6,
+          "porcentaje": 16.666666666666668,
+          "fuentes": [
+            "li_oim"
+          ]
+        },
+        {
+          "id": "hab_salvaguardas",
+          "habilidad": "Salvaguardas ambientales y sociales y gestión de riesgos",
+          "cobertura": "Por contrastar",
+          "criterio": "Evaluación de riesgos, planes de gestión o mecanismos de quejas en proyectos financiados",
+          "menciones": 1,
+          "muestra": 6,
+          "porcentaje": 16.666666666666668,
+          "fuentes": [
+            "li_uicn"
+          ]
+        },
+        {
+          "id": "hab_datos",
+          "habilidad": "Análisis y visualización de datos",
+          "cobertura": "Por contrastar",
+          "criterio": "Herramientas como Power BI o Tableau para reportar indicadores",
+          "menciones": 1,
+          "muestra": 6,
+          "porcentaje": 16.666666666666668,
+          "fuentes": [
+            "li_olgoonik"
+          ]
+        }
+      ],
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Publicaciones observadas · incluye cerradas y de vigencia no confirmada"
+    },
+    "competencia": {
+      "titulo": "Contenidos y posicionamiento competitivo",
+      "matriz": [],
+      "fuentes": [
+        "tec_tap_catalogo",
+        "tec_tap",
+        "cce_proyectos",
+        "uned_tgl",
+        "cepal_marco_logico",
+        "icap_mgpd",
+        "uci_map",
+        "coursera_final"
+      ],
+      "nota": "Comparación de oferta documentada; no se inventan posiciones de búsquedas.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Oferta publicada · vigencia detallada por programa"
+    },
+    "precio": {
+      "titulo": "Distribución de aranceles publicados",
+      "moneda": "USD",
+      "fuentes": [
+        "icap_mgpd",
+        "uci_map",
+        "bid_indes_coop",
+        "cepal_marco_logico",
+        "tec_tap",
+        "cce_proyectos",
+        "coursera_final"
+      ],
+      "nota": "Precios en la moneda original publicada, sin convertir. ICAP: USD 5.980 total más USD 300 de matrícula (2% de IVA para residentes fiscales en Costa Rica), posgrado. CEPAL: US$ 250 virtual, convocatoria abril–mayo 2026 ya cerrada. BID/INDES: USD 3.000 es un precio histórico de lista (2018) con beca total para los seleccionados. UCI publica solo montos unitarios (USD 540 de matrícula y USD 518 por curso), por lo que no se registra un total. TEC, UNED, Colegio de Ciencias Económicas y Coursera no muestran precio en las páginas consultadas. La tarifa preliminar de ULatina (₡150.000 por módulo y ₡900.000 en total) proviene del brief y está por validar.",
+      "fecha_consulta": "2026-11-06",
+      "actualidad": "Precios documentados · incluye referencias históricas o sin nueva cohorte confirmada"
+    },
+    "sector": {
+      "titulo": "Actividad económica del sector · Costa Rica",
+      "origen": "bccr",
+      "actividad": "Profesionales, científicas, técnicas, administrativas y servicios de apoyo",
+      "base": 2022,
+      "serie_indice": [
+        {
+          "fecha": "2023-01-01",
+          "valor": 97.47,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-02-01",
+          "valor": 101.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-03-01",
+          "valor": 126.44,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-04-01",
+          "valor": 110.05,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-05-01",
+          "valor": 105.27,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-06-01",
+          "valor": 107.68,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-07-01",
+          "valor": 113.3,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-08-01",
+          "valor": 113.72,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-09-01",
+          "valor": 101.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-10-01",
+          "valor": 111.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-11-01",
+          "valor": 116.96,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2023-12-01",
+          "valor": 116.24,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-01-01",
+          "valor": 105.95,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-02-01",
+          "valor": 106.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-03-01",
+          "valor": 131.0,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-04-01",
+          "valor": 119.46,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-05-01",
+          "valor": 112.09,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-06-01",
+          "valor": 112.28,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-07-01",
+          "valor": 123.11,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-08-01",
+          "valor": 118.15,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-09-01",
+          "valor": 111.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-10-01",
+          "valor": 116.14,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-11-01",
+          "valor": 121.65,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2024-12-01",
+          "valor": 130.63,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-01-01",
+          "valor": 113.72,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-02-01",
+          "valor": 114.02,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-03-01",
+          "valor": 139.42,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-04-01",
+          "valor": 126.33,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-05-01",
+          "valor": 118.51,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-06-01",
+          "valor": 117.43,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-07-01",
+          "valor": 130.5,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-08-01",
+          "valor": 126.93,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-09-01",
+          "valor": 116.35,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-10-01",
+          "valor": 122.05,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-11-01",
+          "valor": 126.85,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2025-12-01",
+          "valor": 138.41,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-01-01",
+          "valor": 116.78,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-02-01",
+          "valor": 119.13,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-03-01",
+          "valor": 147.08,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-04-01",
+          "valor": 129.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-05-01",
+          "valor": 123.81,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-06-01",
+          "valor": 123.26,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-07-01",
+          "valor": 133.54,
+          "fuente": "bccr_imae"
+        },
+        {
+          "fecha": "2026-08-01",
+          "valor": 128.77,
+          "fuente": "bccr_imae"
+        }
+      ],
+      "periodo_hasta": "2026-08-01",
+      "indicador": 94984,
+      "url": "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/1581?Cuadro=939",
+      "fuentes": [
+        "bccr_imae",
+        "bccr_2026"
+      ],
+      "nota": "Índice de producción, no ventas ni recaudación. Serie original sujeta a estacionalidad y revisión.",
+      "alcance": "Agregado sectorial; no mide exclusivamente la actividad del programa.",
+      "fecha_consulta": "2026-11-06",
+      "archivo_datos": "edcos_fuentes/bccr_imae_grupo_939.json",
+      "actualidad": "Datos hasta 2026-08 · serie vigente, base 2022 = 100"
+    }
+  },
+  "comparativa_contenidos": {
+    "temas": [
+      {
+        "id": "sistema",
+        "etiqueta": "Sistema de<br>cooperación",
+        "criterio": "Presencia explícita de sistema de cooperación en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "formulacion",
+        "etiqueta": "Marco lógico y<br>teoría del cambio",
+        "criterio": "Presencia explícita de marco lógico y teoría del cambio en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "financiamiento",
+        "etiqueta": "Financiamiento y<br>mov. de recursos",
+        "criterio": "Presencia explícita de financiamiento y mov. de recursos en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "mye",
+        "etiqueta": "Monitoreo y<br>evaluación",
+        "criterio": "Presencia explícita de monitoreo y evaluación en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "alianzas",
+        "etiqueta": "Negociación<br>y alianzas",
+        "criterio": "Presencia explícita de negociación y alianzas en la descripción revisada; no identificado no significa ausente."
+      },
+      {
+        "id": "ods",
+        "etiqueta": "ODS /<br>Agenda 2030",
+        "criterio": "Presencia explícita de ods / agenda 2030 en la descripción revisada; no identificado no significa ausente."
+      }
+    ],
+    "propuesta": {
+      "etiqueta": "ULatina · Programa propuesto",
+      "detalle": "Contenidos declarados en el brief del proponente.",
+      "contenidos": {
+        "sistema": true,
+        "formulacion": true,
+        "financiamiento": true,
+        "mye": true,
+        "alianzas": true,
+        "ods": true
+      }
+    },
+    "ofertas": {
+      "cepal_marco_logico": {
+        "revisado": true,
+        "etiqueta": "CEPAL · marco lógico",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Oferente regional de referencia en marco lógico para el sector público. Cubre árboles de problemas, matriz de marco lógico, indicadores y medios de verificación; no trata financiamiento, cooperantes ni negociación. Se usa como referencia de precio de un módulo temático corto.",
+        "contenidos": {
+          "sistema": false,
+          "formulacion": true,
+          "financiamiento": false,
+          "mye": true,
+          "alianzas": false,
+          "ods": null
+        }
+      },
+      "bid_indes_coop": {
+        "revisado": true,
+        "etiqueta": "BID/INDES · 2018",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Curso de 6 semanas por invitación para funcionarios con responsabilidades en proyectos de cooperación. Trata teoría del cambio, marco lógico, métodos y fases de evaluación. Es una referencia histórica de valor de lista, no un precio pagado ni una alternativa abierta.",
+        "contenidos": {
+          "sistema": true,
+          "formulacion": true,
+          "financiamiento": false,
+          "mye": true,
+          "alianzas": false,
+          "ods": null
+        }
+      },
+      "coursera_final": {
+        "revisado": true,
+        "etiqueta": "Coursera · BID",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Cursos: Diseño de proyectos de desarrollo, Herramientas de gestión (metodología PM4R), Gestión con enfoque en riesgos y Proyecto final. Cada página estima entre 1 y 2 semanas a 10 horas semanales; no se suma un total. No se verificó en la página la cobertura de marco lógico ni de M&E; se marca diseño de proyectos por el título del curso.",
+        "contenidos": {
+          "sistema": null,
+          "formulacion": true,
+          "financiamiento": null,
+          "mye": null,
+          "alianzas": false,
+          "ods": null
+        }
+      },
+      "tec_tap_catalogo": {
+        "revisado": true,
+        "etiqueta": "TEC · técnico",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Técnico del mismo nivel, orientado a PMBOK 7 (predictivo y ágil), con un curso de principios de formulación. No trata cooperación internacional, cooperantes ni ODS. La página del programa (tec_tap) tampoco publica costos.",
+        "contenidos": {
+          "sistema": false,
+          "formulacion": true,
+          "financiamiento": false,
+          "mye": null,
+          "alianzas": false,
+          "ods": false
+        }
+      },
+      "uned_tgl": {
+        "revisado": true,
+        "etiqueta": "UNED · TGL",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "La UNED figura en el brief («gestión de proyectos y desarrollo local»). Tiene una estructura parecida a la propuesta (tres cuatrimestres y un proyecto aplicado), pero se dirige a organizaciones de base y exige cartas de respaldo. No se encontró una convocatoria vigente ni un precio.",
+        "contenidos": {
+          "sistema": false,
+          "formulacion": true,
+          "financiamiento": null,
+          "mye": null,
+          "alianzas": null,
+          "ods": null
+        }
+      },
+      "cce_proyectos": {
+        "revisado": true,
+        "etiqueta": "CCE · proyectos",
+        "base": "Descripción publicada por el oferente",
+        "detalle": "Colegio profesional. Curso de cuatro semanas: matriz de resultados, interesados, riesgos, monitoreo y control y valor ganado. No trata cooperación, financiamiento ni alianzas.",
+        "contenidos": {
+          "sistema": false,
+          "formulacion": true,
+          "financiamiento": false,
+          "mye": true,
+          "alianzas": false,
+          "ods": false
+        }
+      }
+    },
+    "lectura_ejecutiva": [
+      {
+        "titulo": "Diferenciación por especialización en cooperación",
+        "texto": "La oferta local verificada enseña gestión de proyectos genérica (PMBOK, marco lógico) o es de posgrado. El técnico puede diferenciarse por integrar cooperantes, convocatorias, presupuesto y negociación en un proyecto aplicado."
+      },
+      {
+        "titulo": "Demanda de nicho",
+        "texto": "Las inscripciones del BID en Coursera (de 4.600 a 15.000 por curso) muestran interés regional moderado. La base local probable son funcionarios públicos, gobiernos locales y ONG, un segmento que hay que validar directamente."
+      },
+      {
+        "titulo": "Empleabilidad como complemento",
+        "texto": "Los organismos internacionales en San José piden las competencias del programa, pero con título universitario, experiencia e inglés. Conviene presentar el técnico como mejora de un perfil profesional, no como vía de entrada única."
+      },
+      {
+        "titulo": "Precio razonable pero sin ancla local",
+        "texto": "₡900.000 queda muy por debajo de las maestrías regionales. Falta el precio de técnicos locales y existe un sustituto gratuito del BID."
+      }
+    ]
+  }
+}

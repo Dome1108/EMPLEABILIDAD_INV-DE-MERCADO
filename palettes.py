@@ -7,6 +7,37 @@ PALETTES = {
 }
 
 
+# El primaryColor de .streamlit/config.toml (azul) no se puede cambiar en ejecución; con la
+# paleta Vino se recolorean con CSS los controles de Streamlit que lo usan, en todas las pestañas.
+VINO_CSS = """<style>
+.stApp {--primary-color:#A5133D;}
+[data-testid="stBaseButton-primary"] {background-color:#A5133D!important;border-color:#A5133D!important;color:#FFFFFF!important;}
+[data-testid="stBaseButton-primary"]:hover {background-color:#8A0F33!important;border-color:#8A0F33!important;}
+[data-testid="stBaseButton-primary"]:disabled {background-color:#E4B6C2!important;border-color:#E4B6C2!important;}
+[data-testid="stBaseButton-secondary"]:hover, [data-testid="stBaseButton-secondary"]:focus-visible,
+[data-testid="stDownloadButton"] button:hover {border-color:#A5133D!important;color:#A5133D!important;}
+[data-testid="stMultiSelectTagsContainer"] [data-tag] {background-color:#A5133D!important;color:#FFFFFF!important;}
+[data-testid="stTab"] .react-aria-SelectionIndicator {background-color:#A5133D!important;}
+[data-testid="stRadioOption"][data-selected="true"] > div:first-of-type > div:first-child {background-color:#A5133D!important;border-color:#A5133D!important;}
+[data-testid="stCheckbox"][data-selected="true"] label > div:nth-child(2) {background-color:#A5133D!important;border-color:#A5133D!important;}
+[data-testid="stSlider"] [style*="touch-action"] > div:first-child {filter:hue-rotate(140deg) saturate(1.25) brightness(.7);}
+[data-testid="stSlider"] [style*="translate(-50%, -50%)"] {background-color:#A5133D!important;}
+[data-testid="stSliderThumbValue"], [data-testid="stSliderThumbValue"] p {color:#A5133D!important;}
+[data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {background-color:#F8E9EE!important;}
+[data-testid="stAlertContentInfo"], [data-testid="stAlertContentInfo"] p,
+[data-testid="stAlertContentInfo"] li {color:#65132D!important;}
+[data-baseweb="tab-highlight"] {background-color:#A5133D!important;}
+[data-testid="stTabs"] [role="tab"][aria-selected="true"], [data-testid="stTabs"] [role="tab"][aria-selected="true"] p {color:#A5133D!important;}
+[data-testid="stTabs"] [role="tab"]:hover p {color:#A5133D!important;}
+[data-baseweb="select"] > div:focus-within, [data-baseweb="input"]:focus-within,
+[data-baseweb="textarea"]:focus-within {border-color:#A5133D!important;}
+
+
+[data-testid="stMarkdownContainer"] a {color:#A5133D;}
+[data-testid="stNavigation"] a[aria-current="page"], header a[aria-current="page"] {color:#A5133D!important;}
+</style>"""
+
+
 def theme_colors(text, palette="Azul"):
     if palette == "Azul":
         return text
